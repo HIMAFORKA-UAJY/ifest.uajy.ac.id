@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Retroica";
+    src: url("/fonts/Retroica.woff2") format("woff2"),
+        url("/fonts/Retroica.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Game Of Squids";
+    src: url("/fonts/Game Of Squids.ttf");
+}
+
+@font-face {
+    font-family: "Retron2000";
+    src: url("/fonts/Retron2000.ttf");
+}
+
+@font-face {
+    font-family: "Louis George Cafe";
+    src: url("/fonts/Louis George Cafe.ttf");
+}

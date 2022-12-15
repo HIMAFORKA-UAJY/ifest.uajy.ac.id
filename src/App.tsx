@@ -1,13 +1,24 @@
-import { motion } from "framer-motion";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import I2C from "./pages/I2C";
+import WDC from "./pages/WDC";
+import Seminar from "./pages/Seminar";
+import Hackathon from "./pages/Hackathon";
+import Error404 from "./pages/Error404";
 
 export default function App() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <h1 className="text-4xl">Hello World!</h1>
-      /</motion.div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/i2c" element={<I2C />} />
+          <Route path="/wdc" element={<WDC />} />
+          <Route path="/hackathon" element={<Hackathon />} />
+          <Route path="/seminar" element={<Seminar />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
