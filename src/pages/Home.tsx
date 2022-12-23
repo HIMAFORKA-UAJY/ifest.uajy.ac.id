@@ -52,13 +52,13 @@ export default function Home() {
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
                             <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
-                                <div className="bg-[#110545] p-1 rounded-full">Rp. 50.000</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full">Rp. 50.000</div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
-                                <div className="bg-[#110545] p-1 rounded-full">SMA/Sederajat</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full">SMA/Sederajat</div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
-                                <div className="bg-[#110545] p-1 rounded-full">Max. 3 orang</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full">Max. 3 orang</div>
                             </div>
                         </div>
                         <div className="pt-2"></div>
@@ -79,7 +79,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="bg-[#110545] h-screen w-screen">
+                <div className="bg-[#2b2265] h-screen w-screen">
                     <div className="flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png" alt="wdc" />
                         <div className="text-center">
@@ -88,15 +88,16 @@ export default function Home() {
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
                             <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
-                                <div className="bg-[#110545] p-1 rounded-full">Rp. 50.000</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full">Rp. 50.000</div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
-                                <div className="bg-[#110545] p-1 rounded-full">Mahasiswa</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full">Mahasiswa</div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
-                                <div className="bg-[#110545] p-1 rounded-full">Max. 2 orang</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full">Max. 2 orang</div>
                             </div>
                         </div>
+                        <div className="pt-2"></div>
                         <div className="p-4 font-retroica text-white">
                             <p className="text-justify">
                                 <strong>Web Design Competition</strong> (WDC) 2022 adalah perlombaan merancang desain visual yang ditampilkan di media digital yaitu situs web. WDC 2022 mengangkat tema "Advancing Together With Credible Information".
@@ -114,7 +115,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="bg-[#110545] h-screen w-screen">
+                <div className="bg-[#2b2265] h-screen w-screen">
                     <div className="flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-cp.png" alt="cp" />
                         <div className="text-center">
@@ -123,15 +124,16 @@ export default function Home() {
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
                             <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
-                                <div className="bg-[#110545] p-1 rounded-full">Rp. 50.000</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full">Rp. 50.000</div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
-                                <div className="bg-[#110545] p-1 rounded-full">Mahasiswa</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full">Mahasiswa</div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
-                                <div className="bg-[#110545] p-1 rounded-full">Max. 3 orang</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full">Max. 3 orang</div>
                             </div>
                         </div>
+                        <div className="pt-2"></div>
                         <div className="p-4 font-retroica text-white">
                             <p className="text-justify">
                                 <strong>Competitive Programming</strong> (CP) merupakan suatu perlombaan yang terfokus terhadap pemecahan masalah atau algoritma matematika. Competitive Programming 2022 mengangkat tema "Programming Breaks Through The Limitations of Life.
@@ -149,7 +151,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="bg-[#110545] h-screen">
+                <div className="bg-[#2b2265] h-screen">
                     <div className="flex flex-col gap-10 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">Publikasi</div>
                         <div className="h-[40rem] w-80">
@@ -157,32 +159,36 @@ export default function Home() {
                                 leftControl=" "
                                 rightControl=" "
                             >
-                                <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#110560]">
+                                <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#352A7C]">
                                     <img className="w-64" src="https://ifest.uajy.ac.id/assets/images/event/ill-cp.png" alt="/" />
-                                    <div className="font-retroica text-[#ff69b4]">Joshua Puniwan Yahya - Ketua</div>
-                                    <div className="font-retroica text-[#f5894d]">Welcome to IFest#11</div>
-                                    <div className="font-retroica text-[#c5c5c5]">28 Desember 2022, 12.00 WIB</div>
+                                    <div className="font-retroica text-[#ffffff]">Joshua Puniwan Yahya - Ketua</div>
+                                    <div className="font-retroica text-[#9C8DFC]">Welcome to IFest#11</div>
+                                    <div className="font-retroica text-[#7364D2]">28 Desember 2022, 12.00 WIB</div>
+                                    <button className="font-retroica text-[#9C8DFC] pt-4">Find out more</button>
                                 </div>
-                                <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#110560]">
+                                <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#352A7C]">
                                     <img className="w-64" src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png" alt="/" />
-                                    <div className="font-retroica text-[#ff69b4]">Joshua Puniwan Yahya - Ketua</div>
-                                    <div className="font-retroica text-[#f5894d]">Pengumuman Finalis WDC</div>
-                                    <div className="font-retroica text-[#c5c5c5]">29 Desember 2022, 12.00 WIB</div>
+                                    <div className="font-retroica text-[#ffffff]">Joshua Puniwan Yahya - Ketua</div>
+                                    <div className="font-retroica text-[#9C8DFC]">Pengumuman Finalis WDC</div>
+                                    <div className="font-retroica text-[#7364D2]">29 Desember 2022, 12.00 WIB</div>
+                                    <button className="font-retroica text-[#9C8DFC] pt-4">Find out more</button>
                                 </div>
-                                <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#110560]">
+                                <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#352A7C]">
                                     <img className="w-64" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="/" />
-                                    <div className="font-retroica text-[#ff69b4]">Joshua Puniwan Yahya - Ketua</div>
-                                    <div className="font-retroica text-[#f5894d]">Pengumuman Lolos Ke Tahap Virtual Expo I2C</div>
-                                    <div className="font-retroica text-[#c5c5c5]">30 Desember 2022, 12.00 WIB</div>
+                                    <div className="font-retroica text-[#ffffff]">Joshua Puniwan Yahya - Ketua</div>
+                                    <div className="font-retroica text-[#9C8DFC]">Pengumuman Lolos Ke Tahap Virtual Expo I2C</div>
+                                    <div className="font-retroica text-[#7364D2]">30 Desember 2022, 12.00 WIB</div>
+                                    <button className="font-retroica text-[#9C8DFC] pt-4">Find out more</button>
                                 </div>
                             </Carousel>
                         </div>
                     </div>
                 </div>
 
-                <div className="bg-[#110545] h-screen">
-                    <div className="flex flex-col gap-10 justify-center items-center h-screen w-screen">
+                <div className="bg-[#2b2265] h-screen">
+                    <div className="flex flex-col gap-4 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">FAQ</div>
+                        <div className="font-retroica text-base text-white">Pertanyaan mengenai IFest#11</div>
                         <div className="w-80">
                             <Accordion>
                                 <Accordion.Panel>
@@ -226,7 +232,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="bg-[#110545] h-screen">
+                <div className="bg-[#2b2265] h-screen">
                     <div className="flex flex-col gap-6 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">Sponsors</div>
                         <div className="h-64 w-64">
@@ -306,10 +312,10 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="bg-[#110545]">
+                <div className="bg-[#2b2265]">
                     <div className="flex flex-col gap-0 justify-center items-center w-screen">
                         <div className="font-retroica text-4xl text-white">Contact Us</div>
-                        <div className="font-retroica text-base text-white">Kamu nanya?</div>
+                        <div className="font-retroica text-base text-white">Ada pertanyaan? Silakan ajukan ^_^</div>
                         <div className="h-56 w-64">
                             <Carousel
                                 leftControl=" "
@@ -317,10 +323,10 @@ export default function Home() {
                                 indicators={false}
                             >
                                 <div className="text-white text-center flex justify-center">
-                                    <table className="table-cell border-separate border-[6px] border-[#2b2265] rounded-xl p-2">
+                                    <table className="table-cell border-separate border-[6px] border-[#ba87fb] rounded-xl p-2">
                                         <thead>
                                             <tr>
-                                                <th className="border-b-[6px] border-[#2b2265]">I2C</th>
+                                                <th className="border-b-[6px] border-[#ba87fb]">I2C</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -408,85 +414,46 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-t from-black to-[#110545]">
-                    <Footer container={false}>
-                        <div className="w-full p-4 bg-[#110545]">
-                            <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-                                <div>
-                                    <Footer.Brand
-                                        href="https://ifest.uajy.ac.id"
-                                        src="https://ifest.uajy.ac.id/assets/images/branding/logo-ifest_generic.png"
-                                        alt="IFest Logo"
-                                        name="IFest"
-                                    />
-                                </div>
-                                <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
-                                    <div>
-                                        <Footer.Title title="about" />
-                                        <Footer.Title className="normal-case" title="IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak tahun 2013 yang lalu." />
-                                    </div>
-                                    <div>
-                                        <Footer.Title title="kompetisi" />
-                                        <Footer.LinkGroup col={true}>
-                                            <Footer.Link href="#">
-                                                Innovative Informatics Contest (I2C)
-                                            </Footer.Link>
-                                            <Footer.Link href="#">
-                                                Web Design Competition (WDC)
-                                            </Footer.Link>
-                                            <Footer.Link href="#">
-                                                Competitive Programming (CP)
-                                            </Footer.Link>
-                                        </Footer.LinkGroup>
-                                    </div>
-                                    <div>
-                                        <Footer.Title title="acara" />
-                                        <Footer.LinkGroup col={true}>
-                                            <Footer.Link href="#">
-                                                Seminar Nasional
-                                            </Footer.Link>
-                                            <Footer.Link href="#">
-                                                Donor Darah
-                                            </Footer.Link>
-                                        </Footer.LinkGroup>
-                                    </div>
-                                    <div>
-                                        <Footer.Title title="akses" />
-                                        <Footer.LinkGroup col={true}>
-                                            <Footer.Link href="#">
-                                                Daftar
-                                            </Footer.Link>
-                                            <Footer.Link href="#">
-                                                Masuk
-                                            </Footer.Link>
-                                        </Footer.LinkGroup>
-                                    </div>
-                                </div>
+                <div className="bg-gradient-to-b from-[#2b2265] to-[#0E0538] p-4">
+                    <div className="flex flex-col gap-6 justify-center border-t-2 pt-4">
+                        <img className="w-24" src="https://ifest.uajy.ac.id/assets/images/branding/logo-ifest_generic.png" alt="ifest-logo" />
+                        <div className="flex flex-col gap-2 text-left">
+                            <div className="font-retroica text-xl text-white">IFest#11</div>
+                            <div className="font-louisgeorgecafe text-white opacity-70">IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak tahun 2013 yang lalu.</div>
+                        </div>
+                        <div className="flex flex-col gap-2 text-left">
+                            <div className="font-retroica text-xl text-white">Kompetisi</div>
+                            <div className="font-louisgeorgecafe text-white opacity-70">Innovative Informatics Contest (I2C)</div>
+                            <div className="font-louisgeorgecafe text-white opacity-70">Web Design Competition (WDC)</div>
+                            <div className="font-louisgeorgecafe text-white opacity-70">Competitive Programming (CP)</div>
+                        </div>
+                        <div className="flex flex-col gap-2 text-left">
+                            <div className="font-retroica text-xl text-white">Acara</div>
+                            <div className="font-louisgeorgecafe text-white opacity-70">Seminar Nasional</div>
+                            <div className="font-louisgeorgecafe text-white opacity-70">Donor Darah</div>
+                        </div>
+                        <div className="flex flex-col gap-2 text-left">
+                            <div className="font-retroica text-xl text-white">Akses</div>
+                            <div className="font-louisgeorgecafe text-white opacity-70">Daftar</div>
+                            <div className="font-louisgeorgecafe text-white opacity-70">Masuk</div>
+                        </div>
+                        <div className="flex flex-col gap-2 text-left">
+                            <div className="font-retroica text-xl text-white">Sosial Media</div>
+                            <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
+                                <SiInstagram /> Instagram
                             </div>
-                            <Footer.Divider />
-                            <div className="w-full sm:flex sm:items-center sm:justify-between">
-                                <Footer.Copyright
-                                    href="#"
-                                    by="SI x Muldok IFest#11"
-                                    year={new Date().getFullYear()}
-                                />
-                                <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-                                    <Footer.Icon
-                                        href="#"
-                                        icon={SiInstagram}
-                                    />
-                                    <Footer.Icon
-                                        href="#"
-                                        icon={SiLine}
-                                    />
-                                    <Footer.Icon
-                                        href="#"
-                                        icon={MdEmail}
-                                    />
-                                </div>
+                            <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
+                                <SiLine /> LINE
+                            </div>
+                            <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
+                                <MdEmail /> Email
                             </div>
                         </div>
-                    </Footer>
+                        <div className="border-t-2"></div>
+                        <div className="flex flex-col gap-2 text-center">
+                            <div className="font-retroica text-sm text-white opacity-80">Design by SI x Muldok IFest#11</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Layout >
