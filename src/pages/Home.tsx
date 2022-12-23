@@ -51,13 +51,13 @@ export default function Home() {
                             <div className="font-retroica text-2xl text-white">Innovative Informatics Contest</div>
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
-                            <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
+                            <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
                                 <div className="bg-[#2b2265] p-1 rounded-full">Rp. 50.000</div>
                             </div>
-                            <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
+                            <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
                                 <div className="bg-[#2b2265] p-1 rounded-full">SMA/Sederajat</div>
                             </div>
-                            <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
+                            <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
                                 <div className="bg-[#2b2265] p-1 rounded-full">Max. 3 orang</div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@ export default function Home() {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.0, duration: 0.25 }}
-                                className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-r from-[#b05f30] to-[#bd37bd]">
+                                className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-br from-[#7fa2fe] bg-[#ba87fb]">
                                 <Link to="/i2c">Read More</Link >
                             </motion.button>
                         </div>
@@ -87,13 +87,13 @@ export default function Home() {
                             <div className="font-retroica text-2xl text-white">Web Design Competition</div>
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
-                            <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
+                            <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
                                 <div className="bg-[#2b2265] p-1 rounded-full">Rp. 50.000</div>
                             </div>
-                            <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
+                            <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
                                 <div className="bg-[#2b2265] p-1 rounded-full">Mahasiswa</div>
                             </div>
-                            <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
+                            <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
                                 <div className="bg-[#2b2265] p-1 rounded-full">Max. 2 orang</div>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ export default function Home() {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.0, duration: 0.25 }}
-                                className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-r from-[#b05f30] to-[#bd37bd]">
+                                className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-br from-[#9dcd6c] bg-[#6ca0af]">
                                 Read More
                             </motion.button>
                         </div>
@@ -123,13 +123,13 @@ export default function Home() {
                             <div className="font-retroica text-2xl text-white">Competitive Programming</div>
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
-                            <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
+                            <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
                                 <div className="bg-[#2b2265] p-1 rounded-full">Rp. 50.000</div>
                             </div>
-                            <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
+                            <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
                                 <div className="bg-[#2b2265] p-1 rounded-full">Mahasiswa</div>
                             </div>
-                            <div className="bg-gradient-to-r from-[#ffa655] to-[#ff82e4] p-1 rounded-full">
+                            <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
                                 <div className="bg-[#2b2265] p-1 rounded-full">Max. 3 orang</div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@ export default function Home() {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.0, duration: 0.25 }}
-                                className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-r from-[#b05f30] to-[#bd37bd]">
+                                className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-br from-[#fe8064] bg-[#feb783]">
                                 Read More
                             </motion.button>
                         </div>
