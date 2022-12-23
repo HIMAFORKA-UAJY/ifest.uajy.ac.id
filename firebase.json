@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "ifest11",
     "public": "dist",
     "ignore": [
       "firebase.json",

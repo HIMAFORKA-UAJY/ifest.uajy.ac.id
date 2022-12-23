@@ -18,19 +18,23 @@ const Layout: FC<Props> = (props: Props) => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
             onAnimationComplete={() => setOpenNav(true)}
-            className="bg-[url('/images/bg.webp')] bg-no-repeat bg-cover bg-center bg-scroll min-h-screen grid">
+        >
+            <>
+                {openNav &&
+                    <header>
+                        <NavBar />
+                    </header>
+                    || setTimeout(() => {
+                        setOpenMain(true);
+                    }, 1000)
+                }
 
-            {openNav &&
-                <header>
-                    <NavBar />
-                </header>
-            }
-
-            {openNav &&
-                <main>
-                    {props.children}
-                </main>
-            }
+                {openMain &&
+                    <main>
+                        {props.children}
+                    </main>
+                }
+            </>
 
         </motion.div>
     );
