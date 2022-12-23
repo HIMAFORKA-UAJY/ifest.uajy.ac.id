@@ -1,14 +1,14 @@
 import { FC } from "react";
 import Layout from "../components/Layout";
 
-import { Carousel, Footer, Tabs, Timeline } from "flowbite-react";
+import { Carousel, Tabs, Timeline } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FaBook, FaMale, FaWallet, MdEmail, SiInstagram, SiLine } from "react-icons/all";
+import { FaBook, FaMale, FaWallet, FaWhatsapp, MdEmail, SiInstagram, SiLine } from "react-icons/all";
 
 const I2C: FC = () => {
     return (
         <Layout>
-            <div className="bg-[#332550] -z-10 absolute top-0 h-screen w-screen">
+            <div className="bg-[#2A2F59] -z-10 absolute top-0 h-screen w-screen">
                 <motion.div
                     className="flex flex-col justify-center items-center h-screen"
                 >
@@ -20,19 +20,19 @@ const I2C: FC = () => {
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
                             <div className="bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1 rounded-full">
-                                <div className="bg-[#332550] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2A2F59] p-1 rounded-full flex gap-1 items-center">
                                     <FaWallet />
                                     Gratis
                                 </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1 rounded-full">
-                                <div className="bg-[#332550] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2A2F59] p-1 rounded-full flex gap-1 items-center">
                                     <FaBook />
                                     SMA/Sederajat
                                 </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1 rounded-full">
-                                <div className="bg-[#332550] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2A2F59] p-1 rounded-full flex gap-1 items-center">
                                     <FaMale />
                                     Max. 3 orang
                                 </div>
@@ -59,7 +59,7 @@ const I2C: FC = () => {
                     </div>
                 </motion.div>
 
-                <div id="content" className="bg-[#332550]">
+                <div id="content" className="bg-[#2A2F59]">
                     <div className="flex flex-col items-center gap-2 pt-4 pl-4 pr-4">
                         <div className="font-retroica text-lg text-white font-bold">
                             MORE ABOUT I2C
@@ -69,17 +69,17 @@ const I2C: FC = () => {
                         </div>
                         <div className="flex flex-row gap-4">
                             <div className="bg-[#6c6486] p-1 rounded-full">
-                                <div className="bg-[#332550] p-2 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2A2F59] p-2 rounded-full flex gap-1 items-center">
                                     <div className="opacity-70 text-white">Lihat Poster</div>
                                 </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1 rounded-full">
-                                <div className="bg-[#332550] p-2 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2A2F59] p-2 rounded-full flex gap-1 items-center">
                                     <div className="opacity-100 text-white">DAFTAR</div>
                                 </div>
                             </div>
                             <div className="bg-[#6c6486] p-1 rounded-full">
-                                <div className="bg-[#332550] p-2 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2A2F59] p-2 rounded-full flex gap-1 items-center">
                                     <div className="opacity-70 text-white">Lihat Aturan</div>
                                 </div>
                             </div>
@@ -295,98 +295,88 @@ const I2C: FC = () => {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-6 justify-center items-center w-screen">
+                        <div className="flex flex-col gap-2 justify-center items-center w-screen">
                             <div className="font-retroica text-4xl text-white">Contact Us</div>
+                            <div className="font-retroica text-base text-white">Masih ada yang bingung? Yuk kontak kami.</div>
                             <div className="h-64 w-64">
                                 <Carousel
                                     leftControl=" "
                                     rightControl=" "
                                     indicators={false}
                                 >
-                                    <div className="text-white text-center">I2C</div>
+                                    <div className="text-white text-center flex justify-center">
+                                        <table className="table-cell border-separate border-[6px] border-[#ba87fb] rounded-xl p-2">
+                                            <thead>
+                                                <tr>
+                                                    <th className="border-b-[6px] border-[#ba87fb]">I2C</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div>0821 7782 1792</div>
+                                                        <button className="bg-gradient-to-br from-[#7fa2fe] bg-[#ba87fb] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                            <FaWhatsapp />
+                                                            Vila
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div>0821 7782 1792</div>
+                                                        <button className="bg-gradient-to-br from-[#7fa2fe] bg-[#ba87fb] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                            <FaWhatsapp />
+                                                            Vila
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </Carousel>
                             </div>
                         </div>
 
-                        <div className="bg-[#2a2f29]">
-                            <Footer container={false}>
-                                <div className="w-screen p-4 bg-slate-100">
-                                    <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-                                        <div>
-                                            <Footer.Brand
-                                                href="https://ifest.uajy.ac.id"
-                                                src="https://ifest.uajy.ac.id/assets/images/branding/logo-ifest_generic.png"
-                                                alt="IFest Logo"
-                                                name="IFest"
-                                            />
-                                        </div>
-                                        <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
-                                            <div>
-                                                <Footer.Title title="about" />
-                                                <Footer.Title className="normal-case" title="IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak tahun 2013 yang lalu." />
-                                            </div>
-                                            <div>
-                                                <Footer.Title title="kompetisi" />
-                                                <Footer.LinkGroup col={true}>
-                                                    <Footer.Link href="#">
-                                                        Innovative Informatics Contest (I2C)
-                                                    </Footer.Link>
-                                                    <Footer.Link href="#">
-                                                        Web Design Competition (WDC)
-                                                    </Footer.Link>
-                                                    <Footer.Link href="#">
-                                                        Competitive Programming (CP)
-                                                    </Footer.Link>
-                                                </Footer.LinkGroup>
-                                            </div>
-                                            <div>
-                                                <Footer.Title title="acara" />
-                                                <Footer.LinkGroup col={true}>
-                                                    <Footer.Link href="#">
-                                                        Seminar Nasional
-                                                    </Footer.Link>
-                                                    <Footer.Link href="#">
-                                                        Donor Darah
-                                                    </Footer.Link>
-                                                </Footer.LinkGroup>
-                                            </div>
-                                            <div>
-                                                <Footer.Title title="akses" />
-                                                <Footer.LinkGroup col={true}>
-                                                    <Footer.Link href="#">
-                                                        Daftar
-                                                    </Footer.Link>
-                                                    <Footer.Link href="#">
-                                                        Masuk
-                                                    </Footer.Link>
-                                                </Footer.LinkGroup>
-                                            </div>
-                                        </div>
+                        <div className="bg-[#2A2F59] p-4">
+                            <div className="flex flex-col gap-6 justify-center border-t-2 pt-4">
+                                <img className="w-24" src="https://ifest.uajy.ac.id/assets/images/branding/logo-ifest_generic.png" alt="ifest-logo" />
+                                <div className="flex flex-col gap-2 text-left">
+                                    <div className="font-retroica text-xl text-white">IFest#11</div>
+                                    <div className="font-louisgeorgecafe text-white opacity-70">IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak tahun 2013 yang lalu.</div>
+                                </div>
+                                <div className="flex flex-col gap-2 text-left">
+                                    <div className="font-retroica text-xl text-white">Kompetisi</div>
+                                    <div className="font-louisgeorgecafe text-white opacity-70">Innovative Informatics Contest (I2C)</div>
+                                    <div className="font-louisgeorgecafe text-white opacity-70">Web Design Competition (WDC)</div>
+                                    <div className="font-louisgeorgecafe text-white opacity-70">Competitive Programming (CP)</div>
+                                </div>
+                                <div className="flex flex-col gap-2 text-left">
+                                    <div className="font-retroica text-xl text-white">Acara</div>
+                                    <div className="font-louisgeorgecafe text-white opacity-70">Seminar Nasional</div>
+                                    <div className="font-louisgeorgecafe text-white opacity-70">Donor Darah</div>
+                                </div>
+                                <div className="flex flex-col gap-2 text-left">
+                                    <div className="font-retroica text-xl text-white">Akses</div>
+                                    <div className="font-louisgeorgecafe text-white opacity-70">Daftar</div>
+                                    <div className="font-louisgeorgecafe text-white opacity-70">Masuk</div>
+                                </div>
+                                <div className="flex flex-col gap-2 text-left">
+                                    <div className="font-retroica text-xl text-white">Sosial Media</div>
+                                    <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
+                                        <SiInstagram /> Instagram
                                     </div>
-                                    <Footer.Divider />
-                                    <div className="w-full sm:flex sm:items-center sm:justify-between">
-                                        <Footer.Copyright
-                                            href="#"
-                                            by="SI x Muldok IFest#11"
-                                            year={new Date().getFullYear()}
-                                        />
-                                        <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-                                            <Footer.Icon
-                                                href="#"
-                                                icon={SiInstagram}
-                                            />
-                                            <Footer.Icon
-                                                href="#"
-                                                icon={SiLine}
-                                            />
-                                            <Footer.Icon
-                                                href="#"
-                                                icon={MdEmail}
-                                            />
-                                        </div>
+                                    <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
+                                        <SiLine /> LINE
+                                    </div>
+                                    <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
+                                        <MdEmail /> Email
                                     </div>
                                 </div>
-                            </Footer>
+                                <div className="border-t-2"></div>
+                                <div className="flex flex-col gap-2 text-center">
+                                    <div className="font-retroica text-sm text-white opacity-80">Design by SI x Muldok IFest#11</div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>

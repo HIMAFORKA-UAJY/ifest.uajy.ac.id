@@ -1,4 +1,4 @@
-import { Accordion, Carousel, Footer } from "flowbite-react";
+import { Accordion, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FaWhatsapp, MdEmail, SiInstagram, SiLine } from "react-icons/all";
 import { Link } from "react-router-dom";
