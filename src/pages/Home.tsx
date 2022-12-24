@@ -1,11 +1,33 @@
 import { Accordion, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FaWhatsapp, MdEmail, SiInstagram, SiLine } from "react-icons/all";
+import { FaWhatsapp } from "react-icons/all";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
+import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 
 export default function Home() {
+    const publications = [
+        {
+            img: "https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png",
+            author: "Joshua Puniwan Yahya - Ketua",
+            title: "Welcome to IFEST#11",
+            date: "28 Desember 2022, 12.00 WIB"
+        },
+        {
+            img: "https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png",
+            author: "Joshua Puniwan Yahya - Ketua",
+            title: "Pengumuman Finalis WDC",
+            date: "29 Desember 2022, 12.00 WIB"
+        },
+        {
+            img: "https://ifest.uajy.ac.id/assets/images/event/ill-cp.png",
+            author: "Joshua Puniwan Yahya - Ketua",
+            title: "Pengumuman Lolos Ke Tahap Virtual Expo I2C",
+            date: "30 Desember 2022, 12.00 WIB"
+        }
+    ];
+
     return (
         <Layout>
             <div className="bg-[url('/images/bg-no-flip.png')] bg-center bg-cover bg-no-repeat -z-10 absolute top-0 h-screen w-screen">
@@ -52,7 +74,7 @@ export default function Home() {
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
                             <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full">Rp. 50.000</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full">Gratis</div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
                                 <div className="bg-[#2b2265] p-1 rounded-full">SMA/Sederajat</div>
@@ -154,32 +176,22 @@ export default function Home() {
                 <div className="bg-[#2b2265] h-screen">
                     <div className="flex flex-col gap-10 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">Publikasi</div>
-                        <div className="h-[40rem] w-80">
+                        <div className="h-[40rem] w-80 lg:hidden">
                             <Carousel
                                 leftControl=" "
                                 rightControl=" "
                             >
-                                <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#352A7C]">
-                                    <img className="w-64" src="https://ifest.uajy.ac.id/assets/images/event/ill-cp.png" alt="/" />
-                                    <div className="font-retroica text-[#ffffff]">Joshua Puniwan Yahya - Ketua</div>
-                                    <div className="font-retroica text-[#9C8DFC]">Welcome to IFest#11</div>
-                                    <div className="font-retroica text-[#7364D2]">28 Desember 2022, 12.00 WIB</div>
-                                    <button className="font-retroica text-[#9C8DFC] pt-4">Find out more</button>
-                                </div>
-                                <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#352A7C]">
-                                    <img className="w-64" src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png" alt="/" />
-                                    <div className="font-retroica text-[#ffffff]">Joshua Puniwan Yahya - Ketua</div>
-                                    <div className="font-retroica text-[#9C8DFC]">Pengumuman Finalis WDC</div>
-                                    <div className="font-retroica text-[#7364D2]">29 Desember 2022, 12.00 WIB</div>
-                                    <button className="font-retroica text-[#9C8DFC] pt-4">Find out more</button>
-                                </div>
-                                <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#352A7C]">
-                                    <img className="w-64" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="/" />
-                                    <div className="font-retroica text-[#ffffff]">Joshua Puniwan Yahya - Ketua</div>
-                                    <div className="font-retroica text-[#9C8DFC]">Pengumuman Lolos Ke Tahap Virtual Expo I2C</div>
-                                    <div className="font-retroica text-[#7364D2]">30 Desember 2022, 12.00 WIB</div>
-                                    <button className="font-retroica text-[#9C8DFC] pt-4">Find out more</button>
-                                </div>
+                                {publications.map((publication) => {
+                                    return (
+                                        <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#352A7C]">
+                                            <img className="w-64" src={publication.img} alt="/" />
+                                            <div className="font-retroica text-[#ffffff]">{publication.author}</div>
+                                            <div className="font-retroica text-xl text-[#9C8DFC]">{publication.title}</div>
+                                            <div className="font-retroica text-[#7364D2]">{publication.date}</div>
+                                            <button className="font-retroica text-[#9C8DFC] pt-4">Find out more</button>
+                                        </div>
+                                    );
+                                })}
                             </Carousel>
                         </div>
                     </div>
@@ -414,47 +426,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-b from-[#2b2265] to-[#0E0538] p-4">
-                    <div className="flex flex-col gap-6 justify-center border-t-2 pt-4">
-                        <img className="w-24" src="https://ifest.uajy.ac.id/assets/images/branding/logo-ifest_generic.png" alt="ifest-logo" />
-                        <div className="flex flex-col gap-2 text-left">
-                            <div className="font-retroica text-xl text-white">IFest#11</div>
-                            <div className="font-louisgeorgecafe text-white opacity-70">IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak tahun 2013 yang lalu.</div>
-                        </div>
-                        <div className="flex flex-col gap-2 text-left">
-                            <div className="font-retroica text-xl text-white">Kompetisi</div>
-                            <div className="font-louisgeorgecafe text-white opacity-70">Innovative Informatics Contest (I2C)</div>
-                            <div className="font-louisgeorgecafe text-white opacity-70">Web Design Competition (WDC)</div>
-                            <div className="font-louisgeorgecafe text-white opacity-70">Competitive Programming (CP)</div>
-                        </div>
-                        <div className="flex flex-col gap-2 text-left">
-                            <div className="font-retroica text-xl text-white">Acara</div>
-                            <div className="font-louisgeorgecafe text-white opacity-70">Seminar Nasional</div>
-                            <div className="font-louisgeorgecafe text-white opacity-70">Donor Darah</div>
-                        </div>
-                        <div className="flex flex-col gap-2 text-left">
-                            <div className="font-retroica text-xl text-white">Akses</div>
-                            <div className="font-louisgeorgecafe text-white opacity-70">Daftar</div>
-                            <div className="font-louisgeorgecafe text-white opacity-70">Masuk</div>
-                        </div>
-                        <div className="flex flex-col gap-2 text-left">
-                            <div className="font-retroica text-xl text-white">Sosial Media</div>
-                            <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
-                                <SiInstagram /> Instagram
-                            </div>
-                            <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
-                                <SiLine /> LINE
-                            </div>
-                            <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
-                                <MdEmail /> Email
-                            </div>
-                        </div>
-                        <div className="border-t-2"></div>
-                        <div className="flex flex-col gap-2 text-center">
-                            <div className="font-retroica text-sm text-white opacity-80">Design by SI x Muldok IFest#11</div>
-                        </div>
-                    </div>
-                </div>
+                <Footer className={"bg-gradient-to-b from-[#2b2265] to-[#0E0538] p-4"} />
             </div>
         </Layout >
     );
