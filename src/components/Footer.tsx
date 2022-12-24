@@ -59,10 +59,10 @@ const Footer: FC<Props> = (props: Props) => {
                 </div>
                 <div className="border-t-2"></div>
                 <div className="flex flex-col gap-2 text-center lg:hidden">
-                    <div className="font-retroica text-sm text-white opacity-80">Design by SI x Muldok IFest#11</div>
+                    <div className="font-retroica text-sm text-white opacity-80">2023 Design by SI x Muldok IFest#11</div>
                 </div>
             </div>
-            <div className="hidden lg:flex lg:justify-center pt-6 font-retroica text-sm  text-white opacity-80">Design by SI x Muldok IFest#11</div>
+            <div className="hidden lg:flex lg:justify-center pt-6 font-retroica text-sm  text-white opacity-80">2023 Design by SI x Muldok IFest#11</div>
         </div>
     );
 };

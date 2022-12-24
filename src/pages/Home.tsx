@@ -1,6 +1,6 @@
 import { Accordion, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FC } from "react";
+import { FC, useRef } from "react";
 import { FaBook, FaMale, FaWallet, FaWhatsapp } from "react-icons/all";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
@@ -28,6 +28,7 @@ const Home: FC = () => {
             date: "30 Desember 2022, 12.00 WIB"
         }
     ];
+    const i2cRef = useRef<HTMLDivElement>(null);
 
     return (
         <Layout>
@@ -56,6 +57,7 @@ const Home: FC = () => {
                         className="font-retrons2000 text-xl lg:text-3xl font-light text-white text-center"
                     />
                     <motion.button
+                        onClick={() => i2cRef.current?.scrollIntoView({ behavior: "smooth" })}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 4.0, duration: 0.25 }}
@@ -66,7 +68,14 @@ const Home: FC = () => {
                     </motion.button>
                 </motion.div>
 
-                <div className="bg-[url('/images/bg-flip.png')] bg-no-repeat bg-cover bg-center h-screen w-screen">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    ref={i2cRef}
+                    className="bg-[url('/images/bg-flip.png')] bg-no-repeat bg-cover bg-center h-screen w-screen"
+                >
                     <div className="flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="i2c" />
                         <div className="text-center">
@@ -109,9 +118,15 @@ const Home: FC = () => {
                             </motion.button>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="bg-[#2b2265] h-screen w-screen">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className="bg-[#2b2265] h-screen w-screen"
+                >
                     <div className="flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png" alt="wdc" />
                         <div className="text-center">
@@ -154,9 +169,15 @@ const Home: FC = () => {
                             </motion.button>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="bg-[#2b2265] h-screen w-screen">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className="bg-[#2b2265] h-screen w-screen"
+                >
                     <div className="flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-cp.png" alt="cp" />
                         <div className="text-center">
@@ -199,9 +220,15 @@ const Home: FC = () => {
                             </motion.button>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="bg-[#2b2265] h-screen">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className="bg-[#2b2265] h-screen"
+                >
                     <div className="flex flex-col gap-10 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">Publikasi</div>
                         <div className="h-[40rem] w-80 lg:hidden">
@@ -223,9 +250,15 @@ const Home: FC = () => {
                             </Carousel>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="bg-[#2b2265] h-screen">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className="bg-[#2b2265] h-screen"
+                >
                     <div className="flex flex-col gap-4 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">FAQ</div>
                         <div className="font-retroica text-base text-white">Pertanyaan mengenai IFest#11</div>
@@ -276,9 +309,15 @@ const Home: FC = () => {
                             </Accordion>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="bg-[#2b2265] h-screen">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className="bg-[#2b2265] h-screen"
+                >
                     <div className="flex flex-col gap-6 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">Sponsors</div>
                         <div className="h-64 w-64">
@@ -298,7 +337,6 @@ const Home: FC = () => {
                                 </div>
                             </Carousel>
                         </div>
-                        <div className="p-2"></div>
                         <div className="font-retroica text-4xl text-white">Media Partners</div>
                         <div className="h-64 w-64">
                             <Carousel
@@ -356,9 +394,15 @@ const Home: FC = () => {
                             </Carousel>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="bg-[#2b2265]">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className="bg-[#2b2265]"
+                >
                     <div className="flex flex-col gap-0 justify-center items-center w-screen">
                         <div className="font-retroica text-4xl text-white">Contact Us</div>
                         <div className="font-retroica text-base text-white">Ada pertanyaan? Silakan ajukan ^_^</div>
@@ -378,19 +422,19 @@ const Home: FC = () => {
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <div>0821 7782 1792</div>
+                                                    <div>0822 2555 3400</div>
                                                     <button className="bg-gradient-to-br from-[#7fa2fe] bg-[#ba87fb] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
                                                         <FaWhatsapp />
-                                                        Vila
+                                                        Lala
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <div>0821 7782 1792</div>
+                                                    <div>0852 1024 5177</div>
                                                     <button className="bg-gradient-to-br from-[#7fa2fe] bg-[#ba87fb] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
                                                         <FaWhatsapp />
-                                                        Vila
+                                                        Kevin
                                                     </button>
                                                 </td>
                                             </tr>
@@ -407,19 +451,19 @@ const Home: FC = () => {
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <div>0821 7782 1792</div>
+                                                    <div>0812 3470 303</div>
                                                     <button className="bg-gradient-to-br from-[#9dcd6c] bg-[#6ca0af] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
                                                         <FaWhatsapp />
-                                                        Vila
+                                                        Andreas
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <div>0821 7782 1792</div>
+                                                    <div>0821 7237 5366</div>
                                                     <button className="bg-gradient-to-br from-[#9dcd6c] bg-[#6ca0af] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
                                                         <FaWhatsapp />
-                                                        Vila
+                                                        Wahyu
                                                     </button>
                                                 </td>
                                             </tr>
@@ -436,19 +480,19 @@ const Home: FC = () => {
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <div>0821 7782 1792</div>
+                                                    <div>0895 3695 59006</div>
                                                     <button className="bg-gradient-to-br from-[#fe8064] bg-[#feb783] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
                                                         <FaWhatsapp />
-                                                        Vila
+                                                        Joshua
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <div>0821 7782 1792</div>
+                                                    <div>0856 0011 9070</div>
                                                     <button className="bg-gradient-to-br from-[#fe8064] bg-[#feb783] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
                                                         <FaWhatsapp />
-                                                        Vila
+                                                        Dewi
                                                     </button>
                                                 </td>
                                             </tr>
@@ -458,9 +502,16 @@ const Home: FC = () => {
                             </Carousel>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <Footer className={"bg-gradient-to-b from-[#2b2265] to-[#0E0538] p-4"} />
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                >
+                    <Footer className={"bg-gradient-to-b from-[#2b2265] to-[#0E0538] p-4"} />
+                </motion.div>
             </div>
         </Layout >
     );

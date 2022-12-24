@@ -1,7 +1,7 @@
-import { Menu, Popover } from '@headlessui/react';
+import { Popover } from '@headlessui/react';
+import { Accordion } from "flowbite-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
 import logo from "../assets/images/logo.png";
 
 export default function NavBar() {
@@ -16,7 +16,7 @@ export default function NavBar() {
                 <img src={logo} />
             </Link>
             <div className="text-white text-lg tracking-[0.2em] lg:hidden">IFEST#11</div>
-            <div className="hidden lg:flex flex-row items-center gap-12">
+            {/* <div className="hidden lg:flex flex-row items-center gap-12">
                 <div>
 
                     <Menu>
@@ -75,7 +75,7 @@ export default function NavBar() {
                 <button className="bg-[#3d3474] rounded-[2.0em] inline-block px-4 py-2 cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
                     <Link to="/dashboard">Dashboard</Link>
                 </button>
-            </div>
+            </div> */}
 
             <Popover className="lg:hidden text-white">
                 <Popover.Button className="focus:outline-none">
@@ -95,38 +95,36 @@ export default function NavBar() {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </Popover.Button>
-                        <div>
-                            <div className="flex flex-col gap-2 p-8">
-                                <h2 className="text-2xl">Kompetisi</h2>
-                                <div className="p-2 bg-[#49436a] flex gap-4 items-center">
-                                    <div className="bg-slate-400 w-16 h-16"></div>
-                                    <div>
-                                        <Link to="/i2c">I2C</Link>
-                                        <p>
-                                            Mari keluarkan ide kreatif kalian dalam dunia IT disini.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="p-2 bg-[#49436a] flex gap-4 items-center">
-                                    <div className="bg-slate-400 w-16 h-16"></div>
-                                    <div>
-                                        <Link to="/i2c">WDC</Link>
-                                        <p>
-                                            Mari keluarkan ide kreatif kalian dalam dunia IT disini.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="p-2 bg-[#49436a] flex gap-4 items-center">
-                                    <div className="bg-slate-400 w-16 h-16"></div>
-                                    <div>
-                                        <Link to="/i2c">Hackathon</Link>
-                                        <p>
-                                            Mari keluarkan ide kreatif kalian dalam dunia IT disini.
-                                        </p>
-                                    </div>
-                                </div>
-
+                        <div className="flex flex-col items-center gap-2">
+                            <div className="font-retroica text-xl tracking-widest text-[#bfb2ff]">Kompetisi</div>
+                            <div className="flex gap-2">
+                                <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                                    <Link to="/i2c">I2C</Link>
+                                </button>
+                                <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                                    <Link to="/wdc">WDC</Link>
+                                </button>
+                                <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                                    <Link to="/hackathon">CP</Link>
+                                </button>
                             </div>
+                        </div>
+                        <div className="flex flex-col items-center gap-2">
+                            <div className="font-retroica text-xl tracking-widest text-[#bfb2ff]">Acara</div>
+                            <div className="flex gap-2">
+                                <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                                    <Link to="/seminar">Seminar</Link>
+                                </button>
+                                <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                                    <Link to="/donor-darah">Donor Darah</Link>
+                                </button>
+                            </div>
+                        </div>
+                        <div className="flex flex-col items-center gap-2">
+                            <div className="font-retroica text-xl tracking-widest text-[#bfb2ff]">Akses</div>
+                            <button className="bg-[#3d3474] rounded-[2.0em] w-full inline-block px-4 py-2 cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                                <Link to="/dashboard">Dashboard</Link>
+                            </button>
                         </div>
                     </motion.div>
                 </Popover.Panel>
