@@ -121,6 +121,12 @@ export default function NavBar() {
                             </div>
                         </div>
                         <div className="flex flex-col items-center gap-2">
+                            <div className="font-retroica text-xl tracking-widest text-[#bfb2ff]">Bisnis</div>
+                            <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                                <Link to="/sponsor">Sponsor</Link>
+                            </button>
+                        </div>
+                        <div className="flex flex-col items-center gap-2">
                             <div className="font-retroica text-xl tracking-widest text-[#bfb2ff]">Akses</div>
                             <button className="bg-[#3d3474] rounded-[2.0em] w-full inline-block px-4 py-2 cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
                                 <Link to="/dashboard">Dashboard</Link>

@@ -499,6 +499,35 @@ const Home: FC = () => {
                                         </tbody>
                                     </table>
                                 </div>
+                                <div className="text-white text-center flex justify-center">
+                                    <table className="table-cell border-separate border-[6px] border-[#926DAE] rounded-xl p-2">
+                                        <thead>
+                                            <tr>
+                                                <th className="border-b-[6px] border-[#926DAE]">Sponsor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div>0882 1609 9529</div>
+                                                    <button className="bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                        <FaWhatsapp />
+                                                        Tessa
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>0895 6221 76067</div>
+                                                    <button className="bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                        <FaWhatsapp />
+                                                        Rinn
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </Carousel>
                         </div>
                     </div>

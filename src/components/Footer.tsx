@@ -37,6 +37,12 @@ const Footer: FC<Props> = (props: Props) => {
                     </div>
                 </div>
                 <div className="flex flex-col gap-2 text-left">
+                    <div className="font-retroica text-xl text-white">Bisnis</div>
+                    <div className="font-louisgeorgecafe text-white opacity-70">
+                        <Link to="/sponsor">Sponsor</Link >
+                    </div>
+                </div>
+                <div className="flex flex-col gap-2 text-left">
                     <div className="font-retroica text-xl text-white">Akses</div>
                     <div className="font-louisgeorgecafe text-white opacity-70">
                         <a href="/dashboard/daftar" target="_blank" rel="noopener noreferrer">Daftar</a>
