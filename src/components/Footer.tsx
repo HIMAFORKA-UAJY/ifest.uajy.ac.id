@@ -48,13 +48,16 @@ const Footer: FC<Props> = (props: Props) => {
                 <div className="flex flex-col gap-2 text-left">
                     <div className="font-retroica text-xl text-white">Sosial Media</div>
                     <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
-                        <SiInstagram /> Instagram
+                        <SiInstagram />
+                        <a href="https://www.instagram.com/ifest_uajy/" target="_blank" rel="noopener noreferrer">Instagram</a>
                     </div>
                     <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
-                        <SiLine /> LINE
+                        <SiLine />
+                        <a href="https://line.me/ti/p/~@ykb1847q" target="_blank" rel="noopener noreferrer">LINE</a>
                     </div>
                     <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
-                        <MdEmail /> Email
+                        <MdEmail />
+                        <a href="mailto:ifest@uajy.ac.id" target="_blank" rel="noopener noreferrer">Email</a>
                     </div>
                 </div>
                 <div className="border-t-2"></div>
