@@ -1,12 +1,13 @@
 import { Accordion, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FaWhatsapp } from "react-icons/all";
+import { FC } from "react";
+import { FaBook, FaMale, FaWallet, FaWhatsapp } from "react-icons/all";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 
-export default function Home() {
+const Home: FC = () => {
     const publications = [
         {
             img: "https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png",
@@ -74,13 +75,22 @@ export default function Home() {
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
                             <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full">Gratis</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                    <FaWallet />
+                                    Gratis
+                                </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full">SMA/Sederajat</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                    <FaBook />
+                                    SMA/Sederajat
+                                </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full">Max. 3 orang</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                    <FaMale />
+                                    Max. 3 orang
+                                </div>
                             </div>
                         </div>
                         <div className="pt-2"></div>
@@ -110,13 +120,22 @@ export default function Home() {
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
                             <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full">Rp. 50.000</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                    <FaWallet />
+                                    Rp. 50.000
+                                </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full">Mahasiswa</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                    <FaBook />
+                                    Mahasiswa
+                                </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full">Max. 2 orang</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                    <FaMale />
+                                    Max. 2 orang
+                                </div>
                             </div>
                         </div>
                         <div className="pt-2"></div>
@@ -131,7 +150,7 @@ export default function Home() {
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.0, duration: 0.25 }}
                                 className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-br from-[#9dcd6c] bg-[#6ca0af]">
-                                Read More
+                                <Link to="/wdc">Read More</Link >
                             </motion.button>
                         </div>
                     </div>
@@ -146,13 +165,22 @@ export default function Home() {
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
                             <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full">Rp. 50.000</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                    <FaWallet />
+                                    Rp. 50.000
+                                </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full">Mahasiswa</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                    <FaBook />
+                                    Mahasiswa
+                                </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full">Max. 3 orang</div>
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                    <FaMale />
+                                    Max. 3 orang
+                                </div>
                             </div>
                         </div>
                         <div className="pt-2"></div>
@@ -167,7 +195,7 @@ export default function Home() {
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.0, duration: 0.25 }}
                                 className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-br from-[#fe8064] bg-[#feb783]">
-                                Read More
+                                <Link to="/hackathon">Read More</Link >
                             </motion.button>
                         </div>
                     </div>
@@ -204,23 +232,27 @@ export default function Home() {
                         <div className="w-80">
                             <Accordion>
                                 <Accordion.Panel>
-                                    <Accordion.Title>
-                                        Apa itu IFest?
+                                    <Accordion.Title className="bg-transparent focus:bg-transparent focus:ring-0">
+                                        <p className="text-white">
+                                            Apa itu IFest?
+                                        </p>
                                     </Accordion.Title>
                                     <Accordion.Content>
-                                        <p className="mb-2 text-gray-500 text-justify">
+                                        <p className="mb-2 text-white text-justify">
                                             Informatics Festival atau IFest adalah acara tahunan Himpunan Mahasiswa Informatika (HIMAFORKA) Universitas Atma Jaya Yogyakarta. Pada tahun 2022 ini, IFest#10 mengambil tema "Technology Rebuild Our Country" dengan berbagai susunan kompetisi dan acara yang tentunya menarik!
                                         </p>
                                     </Accordion.Content>
                                 </Accordion.Panel>
                                 <Accordion.Panel>
-                                    <Accordion.Title>
-                                        Apa saja yang diselenggarakan di IFest#11?
+                                    <Accordion.Title className="bg-transparent focus:bg-transparent focus:ring-0">
+                                        <p className="text-white">
+                                            Apa saja yang diselenggarakan di IFest#11?
+                                        </p>
                                     </Accordion.Title>
                                     <Accordion.Content>
-                                        <p className="mb-2 text-gray-500 text-justify">
+                                        <p className="mb-2 text-white text-justify">
                                             IFest#10 menyelenggarakan beberapa kompetisi dan acara, antara lain:
-                                            <ul className="pt-2">
+                                            <ul className="pt-2 list-disc">
                                                 <li>Innovative Informatics Contest (I2C)</li>
                                                 <li>Web Design Competition (WDC)</li>
                                                 <li>Competitive Programming (CP)</li>
@@ -230,11 +262,13 @@ export default function Home() {
                                     </Accordion.Content>
                                 </Accordion.Panel>
                                 <Accordion.Panel>
-                                    <Accordion.Title>
-                                        Bagaimana cara mendaftar untuk setiap event IFest?
+                                    <Accordion.Title className="bg-transparent focus:bg-transparent focus:ring-0">
+                                        <p className="text-white">
+                                            Bagaimana cara mendaftar untuk setiap event IFest?
+                                        </p>
                                     </Accordion.Title>
                                     <Accordion.Content>
-                                        <p className="mb-2 text-gray-500 dark:text-gray-400">
+                                        <p className="mb-2 text-white dark:text-gray-400">
                                             Pendaftaran diri dan tim dapat dilakukan melalui situs https://ifest.uajy.ac.id/dash/register. Kamu bisa mendaftarkan diri dan tim selama masa pendaftaran (masa pendaftaran untuk setiap kompetisi dan acara berbeda-beda).
                                         </p>
                                     </Accordion.Content>
@@ -430,4 +464,6 @@ export default function Home() {
             </div>
         </Layout >
     );
-}
+};
+
+export default Home;

@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { MdEmail, SiInstagram, SiLine } from "react-icons/all";
+import { Link } from "react-router-dom";
 
 interface Props {
     className: string;
@@ -16,19 +17,33 @@ const Footer: FC<Props> = (props: Props) => {
                 </div>
                 <div className="flex flex-col gap-2 text-left">
                     <div className="font-retroica text-xl text-white">Kompetisi</div>
-                    <div className="font-louisgeorgecafe text-white opacity-70">Innovative Informatics Contest (I2C)</div>
-                    <div className="font-louisgeorgecafe text-white opacity-70">Web Design Competition (WDC)</div>
-                    <div className="font-louisgeorgecafe text-white opacity-70">Competitive Programming (CP)</div>
+                    <div className="font-louisgeorgecafe text-white opacity-70">
+                        <Link to="/i2c">Innovative Informatics Contest (I2C)</Link >
+                    </div>
+                    <div className="font-louisgeorgecafe text-white opacity-70">
+                        <Link to="/wdc">Web Design Competition (WDC)</Link >
+                    </div>
+                    <div className="font-louisgeorgecafe text-white opacity-70">
+                        <Link to="/hackathon">Competitive Programming (CP)</Link >
+                    </div>
                 </div>
                 <div className="flex flex-col gap-2 text-left">
                     <div className="font-retroica text-xl text-white">Acara</div>
-                    <div className="font-louisgeorgecafe text-white opacity-70">Seminar Nasional</div>
-                    <div className="font-louisgeorgecafe text-white opacity-70">Donor Darah</div>
+                    <div className="font-louisgeorgecafe text-white opacity-70">
+                        <Link to="/seminar">Seminar Nasional</Link >
+                    </div>
+                    <div className="font-louisgeorgecafe text-white opacity-70">
+                        <Link to="/donor-darah">Donor Darah</Link >
+                    </div>
                 </div>
                 <div className="flex flex-col gap-2 text-left">
                     <div className="font-retroica text-xl text-white">Akses</div>
-                    <div className="font-louisgeorgecafe text-white opacity-70">Daftar</div>
-                    <div className="font-louisgeorgecafe text-white opacity-70">Masuk</div>
+                    <div className="font-louisgeorgecafe text-white opacity-70">
+                        <a href="/dashboard/daftar" target="_blank" rel="noopener noreferrer">Daftar</a>
+                    </div>
+                    <div className="font-louisgeorgecafe text-white opacity-70">
+                        <a href="/dashboard/masuk" target="_blank" rel="noopener noreferrer">Masuk</a>
+                    </div>
                 </div>
                 <div className="flex flex-col gap-2 text-left">
                     <div className="font-retroica text-xl text-white">Sosial Media</div>
