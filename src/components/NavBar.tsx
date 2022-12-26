@@ -89,14 +89,14 @@ export default function NavBar() {
                         animate={{ y: 0 }}
                         exit={{ y: -1024 }}
                         transition={{ type: "spring", stiffness: 100, damping: 25 }}
-                        className="bg-[#211a44] z-10 flex flex-col justify-center items-center gap-8 fixed left-0 top-0 h-screen w-screen">
+                        className="bg-[#211a44] z-10 flex flex-col justify-center items-center gap-10 fixed left-0 top-0 h-screen w-screen">
                         <Popover.Button className="focus:outline-none">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </Popover.Button>
                         <div className="flex flex-col items-center gap-2">
-                            <div className="font-retroica text-xl tracking-widest text-[#bfb2ff]">Kompetisi</div>
+                            <div className="font-retroica text-xl tracking-[12px] text-[#bfb2ff]">Kompetisi</div>
                             <div className="flex gap-2">
                                 <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
                                     <Link to="/i2c">I2C</Link>
@@ -110,7 +110,7 @@ export default function NavBar() {
                             </div>
                         </div>
                         <div className="flex flex-col items-center gap-2">
-                            <div className="font-retroica text-xl tracking-widest text-[#bfb2ff]">Acara</div>
+                            <div className="font-retroica text-xl tracking-[12px] text-[#bfb2ff]">Acara</div>
                             <div className="flex gap-2">
                                 <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
                                     <Link to="/seminar">Seminar</Link>
@@ -121,13 +121,13 @@ export default function NavBar() {
                             </div>
                         </div>
                         <div className="flex flex-col items-center gap-2">
-                            <div className="font-retroica text-xl tracking-widest text-[#bfb2ff]">Bisnis</div>
+                            <div className="font-retroica text-xl tracking-[12px] text-[#bfb2ff]">Bisnis</div>
                             <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
                                 <Link to="/sponsor">Sponsor</Link>
                             </button>
                         </div>
                         <div className="flex flex-col items-center gap-2">
-                            <div className="font-retroica text-xl tracking-widest text-[#bfb2ff]">Akses</div>
+                            <div className="font-retroica text-xl tracking-[12px] text-[#bfb2ff]">Akses</div>
                             <button className="bg-[#3d3474] rounded-[2.0em] w-full inline-block px-4 py-2 cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
                                 <Link to="/dashboard">Dashboard</Link>
                             </button>

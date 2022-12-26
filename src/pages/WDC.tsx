@@ -90,6 +90,7 @@ const WDC: FC = () => {
                         <div className="py-12">
                             <Tabs.Group
                                 style="pills"
+                                className="mx-auto"
                             >
                                 <Tabs.Item
                                     title="Ketentuan Umum"

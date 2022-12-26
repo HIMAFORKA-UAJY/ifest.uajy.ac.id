@@ -87,9 +87,10 @@ const I2C: FC = () => {
                             </div>
                         </div>
 
-                        <div className="py-12">
+                        <div className="py-12 ">
                             <Tabs.Group
                                 style="pills"
+                                className="mx-auto"
                             >
                                 <Tabs.Item
                                     title="Ketentuan Umum"
