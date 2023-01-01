@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import I2C from "./pages/I2C";
 import WDC from "./pages/WDC";
-import Hackathon from "./pages/Hackathon";
+import CP from "./pages/CP";
 
 import DonorDarah from "./pages/DonorDarah";
 import Seminar from "./pages/Seminar";
@@ -20,7 +20,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/i2c" element={<I2C />} />
           <Route path="/wdc" element={<WDC />} />
-          <Route path="/hackathon" element={<Hackathon />} />
+          <Route path="/cp" element={<CP />} />
           <Route path="/donor-darah" element={<DonorDarah />} />
           <Route path="/seminar" element={<Seminar />} />
           <Route path="/sponsor" element={<Sponsor />} />
