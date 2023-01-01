@@ -76,7 +76,50 @@ const Home: FC = () => {
                     ref={i2cRef}
                     className="bg-[url('/images/bg-flip-fix.png')] bg-no-repeat bg-cover bg-center h-screen w-screen"
                 >
-                    <div className="flex flex-col justify-center items-center h-screen w-screen">
+                    <div className="hidden lg:flex flex-col justify-center items-center h-screen w-screen">
+                        <div className="flex justify-center items-center">
+                            <img className="w-[600px]" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="i2c" />
+                            <div className="flex flex-col">
+                                <div className="font-retroica text-2xl text-white">I2C</div>
+                                <div className="font-retroica text-2xl text-white">Innovative Informatics Contest</div>
+                                <div className="flex gap-4 font-retroica text-sm text-white">
+                                    <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                            <FaWallet />
+                                            Gratis
+                                        </div>
+                                    </div>
+                                    <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                            <FaBook />
+                                            SMA/Sederajat
+                                        </div>
+                                    </div>
+                                    <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                            <FaMale />
+                                            Max. 3 orang
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="p-4 font-retroica text-white w-[32em]">
+                                    <p className="text-justify">
+                                        <strong>Innovative Informatics Contest</strong> (I2C) 2022 adalah sebuah kompetisi ide kreatif untuk merancang aplikasi yang inovatif secara berkelompok beranggotakan 3 orang. I2C 2022 ini mengusung tema "A Journey To Better Home Living".
+                                    </p>
+                                </div>
+                                <div>
+                                    <motion.button
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 0.0, duration: 0.25 }}
+                                        className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-br from-[#7fa2fe] bg-[#ba87fb]">
+                                        <Link to="/i2c">Read More</Link >
+                                    </motion.button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="lg:hidden flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="i2c" />
                         <div className="text-center">
                             <div className="font-retroica text-2xl text-white">I2C</div>
@@ -262,7 +305,7 @@ const Home: FC = () => {
                     <div className="flex flex-col gap-4 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">FAQ</div>
                         <div className="font-retroica text-base text-white">Pertanyaan mengenai IFest#11</div>
-                        <div className="w-80">
+                        <div className="w-80 lg:w-5/6">
                             <Accordion>
                                 <Accordion.Panel>
                                     <Accordion.Title className="bg-transparent focus:bg-transparent focus:ring-0">
