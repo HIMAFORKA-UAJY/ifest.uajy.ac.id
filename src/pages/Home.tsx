@@ -74,7 +74,7 @@ const Home: FC = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 1, ease: "easeInOut" }}
                     ref={i2cRef}
-                    className="bg-[url('/images/bg-flip.png')] bg-no-repeat bg-cover bg-center h-screen w-screen"
+                    className="bg-[url('/images/bg-flip-fix.png')] bg-no-repeat bg-cover bg-center h-screen w-screen"
                 >
                     <div className="flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="i2c" />
