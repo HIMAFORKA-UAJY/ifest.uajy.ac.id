@@ -170,7 +170,50 @@ const Home: FC = () => {
                     transition={{ duration: 1, ease: "easeInOut" }}
                     className="bg-[#2b2265] h-screen w-screen"
                 >
-                    <div className="flex flex-col justify-center items-center h-screen w-screen">
+                    <div className="hidden lg:flex flex-col justify-center items-center h-screen w-screen">
+                        <div className="flex justify-center items-center">
+                            <img className="w-[600px]" src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png" alt="wdc" />
+                            <div className="flex flex-col">
+                                <div className="font-retroica text-2xl text-white">WDC</div>
+                                <div className="font-retroica text-2xl text-white">Web Design Competition</div>
+                                <div className="flex gap-4 font-retroica text-sm text-white">
+                                    <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                            <FaWallet />
+                                            Rp. 50.000
+                                        </div>
+                                    </div>
+                                    <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                            <FaBook />
+                                            Mahasiswa
+                                        </div>
+                                    </div>
+                                    <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                            <FaMale />
+                                            Max. 2 orang
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="p-4 font-retroica text-white w-[32em]">
+                                    <p className="text-justify">
+                                        <strong>Web Design Competition</strong> (WDC) 2022 adalah perlombaan merancang desain visual yang ditampilkan di media digital yaitu situs web. WDC 2022 mengangkat tema "Advancing Together With Credible Information".
+                                    </p>
+                                </div>
+                                <div>
+                                    <motion.button
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 0.0, duration: 0.25 }}
+                                        className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-br from-[#9dcd6c] bg-[#6ca0af]">
+                                        <Link to="/wdc">Read More</Link >
+                                    </motion.button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="lg:hidden flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png" alt="wdc" />
                         <div className="text-center">
                             <div className="font-retroica text-2xl text-white">WDC</div>
@@ -221,7 +264,50 @@ const Home: FC = () => {
                     transition={{ duration: 1, ease: "easeInOut" }}
                     className="bg-[#2b2265] h-screen w-screen"
                 >
-                    <div className="flex flex-col justify-center items-center h-screen w-screen">
+                    <div className="hidden lg:flex flex-col justify-center items-center h-screen w-screen">
+                        <div className="flex justify-center items-center">
+                            <img className="w-[600px]" src="https://ifest.uajy.ac.id/assets/images/event/ill-cp.png" alt="cp" />
+                            <div className="flex flex-col">
+                                <div className="font-retroica text-2xl text-white">CP</div>
+                                <div className="font-retroica text-2xl text-white">Competitive Programming</div>
+                                <div className="flex gap-4 font-retroica text-sm text-white">
+                                    <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                            <FaWallet />
+                                            Rp. 50.000
+                                        </div>
+                                    </div>
+                                    <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                            <FaBook />
+                                            Mahasiswa
+                                        </div>
+                                    </div>
+                                    <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                            <FaMale />
+                                            Max. 3 orang
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="p-4 font-retroica text-white w-[32em]">
+                                    <p className="text-justify">
+                                        <strong>Competitive Programming</strong> (CP) merupakan suatu perlombaan yang terfokus terhadap pemecahan masalah atau algoritma matematika. Competitive Programming 2022 mengangkat tema "Programming Breaks Through The Limitations of Life.
+                                    </p>
+                                </div>
+                                <div>
+                                    <motion.button
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 0.0, duration: 0.25 }}
+                                        className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-br from-[#fe8064] bg-[#feb783]">
+                                        <Link to="/hackathon">Read More</Link >
+                                    </motion.button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="lg:hidden flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-cp.png" alt="cp" />
                         <div className="text-center">
                             <div className="font-retroica text-2xl text-white">CP</div>
@@ -274,6 +360,19 @@ const Home: FC = () => {
                 >
                     <div className="flex flex-col gap-10 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">Publikasi</div>
+                        <div className="hidden lg:flex gap-8 h-full">
+                            {publications.map((publication) => {
+                                return (
+                                    <div className="text-center flex gap-2 flex-col h-5/6 items-center justify-center bg-[#352A7C] w-[27rem] p-4">
+                                        <img className="w-64" src={publication.img} alt="/" />
+                                        <div className="font-retroica text-[#ffffff]">{publication.author}</div>
+                                        <div className="font-retroica text-xl text-[#9C8DFC]">{publication.title}</div>
+                                        <div className="font-retroica text-[#7364D2]">{publication.date}</div>
+                                        <button className="font-retroica text-[#9C8DFC] pt-4">Find out more</button>
+                                    </div>
+                                );
+                            })}
+                        </div>
                         <div className="h-[40rem] w-80 lg:hidden">
                             <Carousel
                                 leftControl=" "
@@ -449,7 +548,126 @@ const Home: FC = () => {
                     <div className="flex flex-col gap-0 justify-center items-center w-screen">
                         <div className="font-retroica text-4xl text-white">Contact Us</div>
                         <div className="font-retroica text-base text-white">Ada pertanyaan? Silakan ajukan ^_^</div>
-                        <div className="h-56 w-64">
+                        <div className="hidden lg:flex gap-8 pt-8">
+                            <div className="text-white text-center flex justify-center">
+                                <table className="table-cell border-separate border-[6px] border-[#ba87fb] rounded-xl p-2">
+                                    <thead>
+                                        <tr>
+                                            <th className="border-b-[6px] border-[#ba87fb]">I2C</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div>0822 2555 3400</div>
+                                                <button className="bg-gradient-to-br from-[#7fa2fe] bg-[#ba87fb] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                    <FaWhatsapp />
+                                                    Lala
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div>0852 1024 5177</div>
+                                                <button className="bg-gradient-to-br from-[#7fa2fe] bg-[#ba87fb] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                    <FaWhatsapp />
+                                                    Kevin
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className="text-white text-center flex justify-center">
+                                <table className="table-cell border-separate border-[6px] border-[#9DCE6D] rounded-xl p-2">
+                                    <thead>
+                                        <tr>
+                                            <th className="border-b-[6px] border-[#9DCE6D]">WDC</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div>0812 3470 303</div>
+                                                <button className="bg-gradient-to-br from-[#9dcd6c] bg-[#6ca0af] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                    <FaWhatsapp />
+                                                    Andreas
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div>0821 7237 5366</div>
+                                                <button className="bg-gradient-to-br from-[#9dcd6c] bg-[#6ca0af] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                    <FaWhatsapp />
+                                                    Wahyu
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className="text-white text-center flex justify-center">
+                                <table className="table-cell border-separate border-[6px] border-[#ff8064] rounded-xl p-2">
+                                    <thead>
+                                        <tr>
+                                            <th className="border-b-[6px] border-[#ff8064]">CP</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div>0895 3695 59006</div>
+                                                <button className="bg-gradient-to-br from-[#fe8064] bg-[#feb783] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                    <FaWhatsapp />
+                                                    Joshua
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div>0856 0011 9070</div>
+                                                <button className="bg-gradient-to-br from-[#fe8064] bg-[#feb783] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                    <FaWhatsapp />
+                                                    Dewi
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className="text-white text-center flex justify-center">
+                                <table className="table-cell border-separate border-[6px] border-[#926DAE] rounded-xl p-2">
+                                    <thead>
+                                        <tr>
+                                            <th className="border-b-[6px] border-[#926DAE]">Sponsor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div>0882 1609 9529</div>
+                                                <button className="bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                    <FaWhatsapp />
+                                                    Tessa
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div>0895 6221 76067</div>
+                                                <button className="bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
+                                                    <FaWhatsapp />
+                                                    Rinn
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div className="h-56 w-64 lg:hidden">
                             <Carousel
                                 leftControl=" "
                                 rightControl=" "
