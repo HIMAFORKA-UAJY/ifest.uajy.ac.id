@@ -80,23 +80,23 @@ const Home: FC = () => {
                         <div className="flex justify-center items-center">
                             <img className="w-[600px]" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="i2c" />
                             <div className="flex flex-col">
-                                <div className="font-retroica text-2xl text-white">I2C</div>
-                                <div className="font-retroica text-2xl text-white">Innovative Informatics Contest</div>
-                                <div className="flex gap-4 font-retroica text-sm text-white">
+                                <div className="font-retroica text-4xl text-white pl-[1rem]">I2C</div>
+                                <div className="font-retroica text-2xl text-white pl-[1rem] pb-[0.5rem]">Innovative Informatics Contest</div>
+                                <div className="flex gap-4 font-retroica text-sm text-white pl-[1rem]">
                                     <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
-                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                             <FaWallet />
                                             Gratis
                                         </div>
                                     </div>
                                     <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
-                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                             <FaBook />
                                             SMA/Sederajat
                                         </div>
                                     </div>
                                     <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
-                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                             <FaMale />
                                             Max. 3 orang
                                         </div>
@@ -107,7 +107,7 @@ const Home: FC = () => {
                                         <strong>Innovative Informatics Contest</strong> (I2C) 2022 adalah sebuah kompetisi ide kreatif untuk merancang aplikasi yang inovatif secara berkelompok beranggotakan 3 orang. I2C 2022 ini mengusung tema "A Journey To Better Home Living".
                                     </p>
                                 </div>
-                                <div>
+                                <div className="pl-[1rem]">
                                     <motion.button
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
@@ -122,7 +122,7 @@ const Home: FC = () => {
                     <div className="lg:hidden flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="i2c" />
                         <div className="text-center">
-                            <div className="font-retroica text-2xl text-white">I2C</div>
+                            <div className="font-retroica text-4xl text-white">I2C</div>
                             <div className="font-retroica text-2xl text-white">Innovative Informatics Contest</div>
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
@@ -174,23 +174,23 @@ const Home: FC = () => {
                         <div className="flex justify-center items-center">
                             <img className="w-[600px]" src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png" alt="wdc" />
                             <div className="flex flex-col">
-                                <div className="font-retroica text-2xl text-white">WDC</div>
-                                <div className="font-retroica text-2xl text-white">Web Design Competition</div>
-                                <div className="flex gap-4 font-retroica text-sm text-white">
+                                <div className="font-retroica text-4xl text-white pl-[1rem]">WDC</div>
+                                <div className="font-retroica text-2xl text-white pl-[1rem] pb-[0.5rem]">Web Design Competition</div>
+                                <div className="flex gap-4 font-retroica text-sm text-white pl-[1rem]">
                                     <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
-                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                             <FaWallet />
                                             Rp. 50.000
                                         </div>
                                     </div>
                                     <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
-                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                             <FaBook />
                                             Mahasiswa
                                         </div>
                                     </div>
                                     <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
-                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                             <FaMale />
                                             Max. 2 orang
                                         </div>
@@ -201,7 +201,7 @@ const Home: FC = () => {
                                         <strong>Web Design Competition</strong> (WDC) 2022 adalah perlombaan merancang desain visual yang ditampilkan di media digital yaitu situs web. WDC 2022 mengangkat tema "Advancing Together With Credible Information".
                                     </p>
                                 </div>
-                                <div>
+                                <div className="pl-[1rem]">
                                     <motion.button
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
@@ -268,23 +268,23 @@ const Home: FC = () => {
                         <div className="flex justify-center items-center">
                             <img className="w-[600px]" src="https://ifest.uajy.ac.id/assets/images/event/ill-cp.png" alt="cp" />
                             <div className="flex flex-col">
-                                <div className="font-retroica text-2xl text-white">CP</div>
-                                <div className="font-retroica text-2xl text-white">Competitive Programming</div>
-                                <div className="flex gap-4 font-retroica text-sm text-white">
+                                <div className="font-retroica text-4xl text-white pl-[1rem]">CP</div>
+                                <div className="font-retroica text-2xl text-white pl-[1rem] pb-[0.5rem]">Competitive Programming</div>
+                                <div className="flex gap-4 font-retroica text-sm text-white pl-[1rem]">
                                     <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
-                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                             <FaWallet />
                                             Rp. 50.000
                                         </div>
                                     </div>
                                     <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
-                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                             <FaBook />
                                             Mahasiswa
                                         </div>
                                     </div>
                                     <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
-                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                        <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                             <FaMale />
                                             Max. 3 orang
                                         </div>
@@ -295,7 +295,7 @@ const Home: FC = () => {
                                         <strong>Competitive Programming</strong> (CP) merupakan suatu perlombaan yang terfokus terhadap pemecahan masalah atau algoritma matematika. Competitive Programming 2022 mengangkat tema "Programming Breaks Through The Limitations of Life.
                                     </p>
                                 </div>
-                                <div>
+                                <div className="pl-[1rem]">
                                     <motion.button
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
@@ -349,7 +349,7 @@ const Home: FC = () => {
                             </motion.button>
                         </div>
                     </div>
-                </motion.div>
+                </motion.div >
 
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -802,7 +802,7 @@ const Home: FC = () => {
                 >
                     <Footer className={"bg-gradient-to-b from-[#2b2265] to-[#0E0538] p-4"} />
                 </motion.div>
-            </div>
+            </div >
         </Layout >
     );
 };
