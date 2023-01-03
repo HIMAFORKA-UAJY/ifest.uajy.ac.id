@@ -123,23 +123,23 @@ const Home: FC = () => {
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="i2c" />
                         <div className="text-center">
                             <div className="font-retroica text-4xl text-white">I2C</div>
-                            <div className="font-retroica text-2xl text-white">Innovative Informatics Contest</div>
+                            <div className="font-retroica text-2xl text-white pb-[1rem]">Innovative Informatics Contest</div>
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
                             <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                     <FaWallet />
                                     Gratis
                                 </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                     <FaBook />
                                     SMA/Sederajat
                                 </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                     <FaMale />
                                     Max. 3 orang
                                 </div>
@@ -216,24 +216,24 @@ const Home: FC = () => {
                     <div className="lg:hidden flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png" alt="wdc" />
                         <div className="text-center">
-                            <div className="font-retroica text-2xl text-white">WDC</div>
-                            <div className="font-retroica text-2xl text-white">Web Design Competition</div>
+                            <div className="font-retroica text-4xl text-white">WDC</div>
+                            <div className="font-retroica text-2xl text-white pb-[1rem]">Web Design Competition</div>
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
                             <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                     <FaWallet />
                                     Rp. 50.000
                                 </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                     <FaBook />
                                     Mahasiswa
                                 </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                     <FaMale />
                                     Max. 2 orang
                                 </div>
@@ -310,24 +310,24 @@ const Home: FC = () => {
                     <div className="lg:hidden flex flex-col justify-center items-center h-screen w-screen">
                         <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-cp.png" alt="cp" />
                         <div className="text-center">
-                            <div className="font-retroica text-2xl text-white">CP</div>
-                            <div className="font-retroica text-2xl text-white">Competitive Programming</div>
+                            <div className="font-retroica text-4xl text-white">CP</div>
+                            <div className="font-retroica text-2xl text-white pb-[1rem]">Competitive Programming</div>
                         </div>
                         <div className="flex gap-4 font-retroica text-sm text-white">
                             <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                     <FaWallet />
                                     Rp. 50.000
                                 </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                     <FaBook />
                                     Mahasiswa
                                 </div>
                             </div>
                             <div className="bg-gradient-to-r from-[#ff8064] to-[#ff8064] p-1 rounded-full">
-                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center">
+                                <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.5rem]">
                                     <FaMale />
                                     Max. 3 orang
                                 </div>
