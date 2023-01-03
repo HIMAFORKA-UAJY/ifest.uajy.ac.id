@@ -6,6 +6,13 @@ import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Navigation, Grid } from "swiper";
+import 'swiper/css';
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import 'swiper/css/navigation';
+import "swiper/css/grid";
 
 const Home: FC = () => {
     const publications = [
@@ -33,6 +40,7 @@ const Home: FC = () => {
     return (
         <Layout>
             <div className="bg-[url('/images/bg-no-flip.png')] bg-center bg-cover bg-no-repeat -z-10 absolute top-0 h-screen w-screen">
+                {/* Header */}
                 <motion.div
                     className="flex flex-col justify-center items-center h-screen"
                 >
@@ -67,7 +75,9 @@ const Home: FC = () => {
                         </svg>
                     </motion.button>
                 </motion.div>
-
+                
+                {/* I2C Description */}
+                
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -163,6 +173,7 @@ const Home: FC = () => {
                     </div>
                 </motion.div>
 
+                {/* WDC Description */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -257,6 +268,7 @@ const Home: FC = () => {
                     </div>
                 </motion.div>
 
+                {/* Hackathon Description */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -351,6 +363,7 @@ const Home: FC = () => {
                     </div>
                 </motion.div >
 
+                {/* Publication */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -360,40 +373,43 @@ const Home: FC = () => {
                 >
                     <div className="flex flex-col gap-10 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">Publikasi</div>
-                        <div className="hidden lg:flex gap-8 h-full">
-                            {publications.map((publication) => {
-                                return (
-                                    <div className="text-center flex gap-2 flex-col h-5/6 items-center justify-center bg-[#352A7C] w-[27rem] p-4">
-                                        <img className="w-64" src={publication.img} alt="/" />
-                                        <div className="font-retroica text-[#ffffff]">{publication.author}</div>
-                                        <div className="font-retroica text-xl text-[#9C8DFC]">{publication.title}</div>
-                                        <div className="font-retroica text-[#7364D2]">{publication.date}</div>
-                                        <button className="font-retroica text-[#9C8DFC] pt-4">Find out more</button>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                        <div className="h-[40rem] w-80 lg:hidden">
-                            <Carousel
-                                leftControl=" "
-                                rightControl=" "
+                        <div>
+                            <Swiper
+                                effect={"coverflow"}
+                                navigation
+                                grabCursor={false}
+                                centeredSlides={true}
+                                slidesPerView={"auto"}
+                                coverflowEffect={{
+                                  rotate: 50,
+                                  stretch: 0,
+                                  depth: 100,
+                                  modifier: 1,
+                                  slideShadows: true
+                                }}
+                                pagination={true}
+                                modules={[EffectCoverflow, Pagination, Navigation]}
+                                className="mySwiper"
                             >
                                 {publications.map((publication) => {
                                     return (
-                                        <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#352A7C]">
-                                            <img className="w-64" src={publication.img} alt="/" />
-                                            <div className="font-retroica text-[#ffffff]">{publication.author}</div>
-                                            <div className="font-retroica text-xl text-[#9C8DFC]">{publication.title}</div>
-                                            <div className="font-retroica text-[#7364D2]">{publication.date}</div>
-                                            <button className="font-retroica text-[#9C8DFC] pt-4">Find out more</button>
-                                        </div>
+                                        <SwiperSlide className="w-[19rem] h-[31rem]">
+                                            <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#352A7C]">
+                                                <img className="w-64" src={publication.img} alt="/" />
+                                                <div className="font-retroica text-[#ffffff]">{publication.author}</div>
+                                                <div className="font-retroica text-xl text-[#9C8DFC]">{publication.title}</div>
+                                                <div className="font-retroica text-[#7364D2]">{publication.date}</div>
+                                                <button className="font-retroica text-[#9C8DFC] pt-4">Find out more</button>
+                                            </div>
+                                        </SwiperSlide>
                                     );
                                 })}
-                            </Carousel>
-                        </div>
+                            </Swiper>  
+                       	</div>
                     </div>
                 </motion.div>
 
+                {/* FAQ */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -453,6 +469,7 @@ const Home: FC = () => {
                     </div>
                 </motion.div>
 
+                {/* Sponsors & Media Partners */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -462,7 +479,7 @@ const Home: FC = () => {
                 >
                     <div className="flex flex-col gap-6 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">Sponsors</div>
-                        <div className="h-64 w-64">
+                        <div className="h-64 w-64 lg:hidden">
                             <Carousel
                                 leftControl=" "
                                 rightControl=" "
@@ -479,8 +496,59 @@ const Home: FC = () => {
                                 </div>
                             </Carousel>
                         </div>
+
+                        <div className="hidden lg:flex">
+                            <Swiper
+                                effect={"coverflow"}
+                                navigation
+                                grabCursor={false}
+                                centeredSlides={true}
+                                slidesPerView={"auto"}
+                                coverflowEffect={{
+                                  rotate: 0,
+                                  stretch: -50,
+                                  depth: 100,
+                                  modifier: 1,
+                                  slideShadows: false
+                                }}
+                                
+                                modules={[EffectCoverflow, Pagination, Navigation]}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide className="p-2 bg-[#352a7c] h-[19rem] w-[19rem] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/jagoanh-gold.png" alt="jagoan-hosting" />
+                                </SwiperSlide>
+                                <SwiperSlide className="p-2 bg-[#352a7c] h-[19rem] w-[19rem] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/ajaib-silver.jpg" alt="ajaib-silver" />
+                                </SwiperSlide>
+                                <SwiperSlide className="p-2 bg-[#352a7c] h-[19rem] w-[19rem] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/devcode-color-silver.png" alt="dev-code" />
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
+                        
+                        <div className="pl-[1rem]">
+                            <motion.button
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.0, duration: 0.25 }}
+                                className="mt-7 px-5 py-3 rounded-[2.0em] text-sm lg:text-base font-retroica text-white bg-gradient-to-br from-[#7fa2fe] bg-[#ba87fb]">
+                                <Link to="/sponsor">Become our sponsor</Link >
+                            </motion.button>
+                        </div>
+                    </div>
+                    
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className="bg-[#2b2265] h-screen"
+                >
+                    <div className="flex flex-col gap-6 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">Media Partners</div>
-                        <div className="h-64 w-64">
+                        <div className="h-64 w-64 lg:hidden">
                             <Carousel
                                 leftControl=" "
                                 rightControl=" "
@@ -494,50 +562,91 @@ const Home: FC = () => {
                                 </div>
                                 <div className="p-2 bg-[#352a7c] h-64 flex items-center">
                                     <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventdetect-medpart.png" alt="/" />
-
                                 </div>
                                 <div className="p-2 bg-[#352a7c] h-64 flex items-center">
-
                                     <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventhunterid-medpart.png" alt="/" />
                                 </div>
                                 <div className="p-2 bg-[#352a7c] h-64 flex items-center">
-
                                     <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/gudanglombaind-medpart.jpg" alt="/" />
                                 </div>
                                 <div className="p-2 bg-[#352a7c] h-64 flex items-center">
-
                                     <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/infomahasiswa-medpart.png" alt="/" />
                                 </div>
-
                                 <div className="p-2 bg-[#352a7c] h-64 flex items-center">
-
                                     <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/infolombaeventid-medpart.png" alt="/" />
                                 </div>
                                 <div className="p-2 bg-[#352a7c] h-64 flex items-center">
-
                                     <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/beritalomba-medpart.png" alt="/" />
                                 </div>
                                 <div className="p-2 bg-[#352a7c] h-64 flex items-center">
-
                                     <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/madingeventgelap-medpart.png" alt="/" />
                                 </div>
                                 <div className="p-2 bg-[#352a7c] h-64 flex items-center">
-
                                     <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/edaranevent-medpart.png" alt="/" />
                                 </div>
                                 <div className="p-2 bg-[#352a7c] h-64 flex items-center">
-
                                     <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/lombasma2-medpart.png" alt="/" />
                                 </div>
                                 <div className="p-2 bg-[#352a7c] h-64 flex items-center">
-
                                     <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/webinargratis-medpart.png" alt="/" />
                                 </div>
                             </Carousel>
                         </div>
+                        <div className="hidden lg:flex lg:w-[60rem] lg:h-[30rem]">
+                            <Swiper
+                                slidesPerView={4}
+                                grid={{
+                                    rows: 2,
+                                }}
+                                spaceBetween={30}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                modules={[Grid, Pagination]}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
+                                        <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventlombaindo-medpart.png" alt="/" />
+                                </SwiperSlide>
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/bncc-medpart.png" alt="/" />
+                                </SwiperSlide>
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventdetect-medpart.png" alt="/" />
+                                </SwiperSlide>
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventhunterid-medpart.png" alt="/" />
+                                </SwiperSlide>
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/gudanglombaind-medpart.jpg" alt="/" />
+                                </SwiperSlide>
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/infomahasiswa-medpart.png" alt="/" />
+                                </SwiperSlide>
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/infolombaeventid-medpart.png" alt="/" />
+                                </SwiperSlide>
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/beritalomba-medpart.png" alt="/" />
+                                </SwiperSlide>
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/madingeventgelap-medpart.png" alt="/" />
+                                </SwiperSlide>
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/edaranevent-medpart.png" alt="/" />
+                                </SwiperSlide>
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/lombasma2-medpart.png" alt="/" />
+                                </SwiperSlide>
+                                <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center" >
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/webinargratis-medpart.png" alt="/" />
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
                     </div>
                 </motion.div>
 
+                {/* CP */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -794,6 +903,7 @@ const Home: FC = () => {
                     </div>
                 </motion.div>
 
+                {/* Footer */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
