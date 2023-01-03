@@ -1,6 +1,8 @@
-import { Popover } from '@headlessui/react';
+import { Menu, Popover } from '@headlessui/react';
 import { Accordion } from "flowbite-react";
 import { motion } from "framer-motion";
+import { BiVector } from 'react-icons/bi';
+import { TbFileVector } from 'react-icons/tb';
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
@@ -16,66 +18,141 @@ export default function NavBar() {
                 <img src={logo} />
             </Link>
             <div className="text-white text-lg tracking-[0.2em] lg:hidden">IFEST#11</div>
-            {/* <div className="hidden lg:flex flex-row items-center gap-12">
+            <div className="hidden lg:flex flex-row items-center gap-12">
                 <div>
-
                     <Menu>
-                        <Menu.Button className="cursor-default font-retroica text-white text-xl tracking-[0.2em]" >Kompetisi</Menu.Button>
-                        <Menu.Items className="absolute flex flex-col gap-2 text-white">
-                            <Menu.Item>
-                                {({ active }) => (
-                                    <Link
-                                        className={`${active && 'bg-blue-500'}`}
-                                        to="/i2c"
-                                    >
-                                        I2C
-                                    </Link>
-                                )}
-                            </Menu.Item>
-                            <Menu.Item>
-                                {({ active }) => (
-                                    <Link
-                                        className={`${active && 'bg-blue-500'}`}
-                                        to="/wdc"
-                                    >
-                                        WDC
-                                    </Link>
-                                )}
-                            </Menu.Item>
-                            <Menu.Item>
-                                {({ active }) => (
-                                    <Link
-                                        className={`${active && 'bg-blue-500'}`}
-                                        to="/hackathon"
-                                    >
-                                        Hackathon
-                                    </Link>
-                                )}
-                            </Menu.Item>
+                        <Menu.Button className="cursor-default font-retroica text-[#ffffffb5] text-xl tracking-[0.2em]" >Kompetisi 
+                        <img src="/images/Vector.png" className="w-4 h-4 inline-block ml-2" />
+                        </Menu.Button>
+                        <Menu.Items>
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                className="absolute flex flex-col gap-3 text-gray-300 bg-[#211a44] rounded-[0.7em] px-8 py-4 shadow-lg font-retroica text-xl tracking-[0.2em] cursor-default text-[#bfb2ff] mt-4"
+                            >
+                                <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
+                                >
+                                    <Menu.Item>
+                                        {({ active }) => (
+                                            <Link
+                                                className={`${active && 'text-[#fff]'}`}
+                                                to="/i2c"
+                                            >
+                                                I2C
+                                            </Link>
+                                        )}
+                                    </Menu.Item>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
+                                >
+                                    <Menu.Item>
+                                        {({ active }) => (
+                                            <Link
+                                                className={`${active && 'text-[#fff]'}`}
+                                                to="/wdc"
+                                            >
+                                                WDC
+                                            </Link>
+                                        )}
+                                    </Menu.Item>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
+                                >
+                                    <Menu.Item>
+                                        {({ active }) => (
+                                            <Link
+                                                className={`${active && 'text-[#fff]'}`}
+                                                to="/hackathon"
+                                            >
+                                                Hackathon
+                                            </Link>
+                                        )}
+                                    </Menu.Item>
+                                </motion.div>
+                            </motion.div>
                         </Menu.Items>
                     </Menu>
                 </div>
                 <div>
                     <Menu>
-                        <Menu.Button className="cursor-default font-retroica text-white text-xl tracking-[0.2em]">Acara</Menu.Button>
-                        <Menu.Items className="absolute flex flex-col gap-2 text-white">
-                            <Menu.Item>
-                                {({ active }) => (
-                                    <Link
-                                        className={`${active && 'bg-blue-500'}`}
-                                        to="/seminar"
-                                    >
-                                        Seminar
-                                    </Link>
-                                )}
-                            </Menu.Item>
+                        <Menu.Button className="cursor-default font-retroica text-[#ffffffb5] text-xl tracking-[0.2em]">Acara
+                        <img src="/images/Vector.png" className="w-4 h-4 inline-block ml-2" />
+                        </Menu.Button>
+                        <Menu.Items>
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                className="absolute flex flex-col gap-3 text-gray-300 bg-[#211a44] rounded-[0.7em] px-8 py-4 shadow-lg font-retroica text-xl tracking-[0.2em] cursor-default text-[#bfb2ff] mt-4"
+                            >
+                                <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
+                                >
+                                    <Menu.Item>
+                                        {({ active }) => (
+                                            <Link
+                                                className={`${active && 'text-[#fff]'}`}
+                                                to="/seminar"
+                                            >
+                                                Seminar
+                                            </Link>
+                                        )}
+                                    </Menu.Item>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
+                                >
+                                    <Menu.Item>
+                                        {({ active }) => (
+                                            <Link
+                                                className={`${active && 'text-[#fff]'}`}
+                                                to="/seminar"
+                                            >
+                                                Bazaar
+                                            </Link>
+                                        )}
+                                    </Menu.Item>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
+                                >
+                                    <Menu.Item>
+                                        {({ active }) => (
+                                            <Link
+                                                className={`${active && 'text-[#fff]'}`}
+                                                to="/seminar"
+                                            >
+                                                Donor Darah
+                                            </Link>
+                                        )}
+                                    </Menu.Item>
+                                </motion.div>
+                            </motion.div>
                         </Menu.Items>
                     </Menu>
                 </div>
                 <button className="bg-[#3d3474] rounded-[2.0em] inline-block px-4 py-2 cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
                     <Link to="/dashboard">Dashboard</Link>
                 </button>
-            </div> */}
+            </div>
 
             <Popover className="lg:hidden text-white">
                 <Popover.Button className="focus:outline-none">
