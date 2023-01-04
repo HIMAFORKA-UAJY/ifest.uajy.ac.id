@@ -1,0 +1,13 @@
+.accordion-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bg-pur{
+    background-color:rgb(43,34,101) !important;
+}
+.bg-light-pur{
+    
+    background-color:rgb(54, 44, 117) !important;
+}
