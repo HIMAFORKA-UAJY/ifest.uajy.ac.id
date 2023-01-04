@@ -1,14 +1,11 @@
-import { FC, ReactNode, useState } from "react";
 import { motion } from "framer-motion";
-
+import { FC, ReactNode, useState } from "react";
 import NavBar from "./NavBar";
-import Footer from "./Footer";
-
 interface Props {
     children: ReactNode;
 }
 
-const Layout: FC<Props> = (props: Props) => {
+const Layout: FC<Props> = ({ children }) => {
     const [openNav, setOpenNav] = useState<boolean>(false);
     const [openMain, setOpenMain] = useState<boolean>(false);
 
@@ -31,7 +28,7 @@ const Layout: FC<Props> = (props: Props) => {
 
                 {openMain &&
                     <main>
-                        {props.children}
+                        {children}
                     </main>
                 }
             </>

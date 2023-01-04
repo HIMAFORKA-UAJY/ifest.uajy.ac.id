@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { FC, useRef } from "react";
+import { FC } from "react";
 
 import CP from "../components/CP";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import HackathonSection from "../components/HackathonSection";
-import HeroMain from "../components/HeroMain";
 import I2CSection from "../components/I2CSection";
 import Layout from "../components/Layout";
 import MediaPartner from "../components/MediaPartner";
@@ -14,13 +13,10 @@ import Sponsor from "../components/Sponsor";
 import WDCSection from "../components/WDCSection";
 
 const Home: FC = () => {
-  const i2cRef = useRef<HTMLDivElement>(null);
-
   return (
     <Layout>
       <div className="bg-[url('/images/bg-no-flip.png')] bg-center bg-cover bg-no-repeat -z-10 absolute top-0 h-screen w-screen overflow-x-hidden">
-        <HeroMain i2cRef={i2cRef} />
-        <I2CSection ref={i2cRef} />
+        <I2CSection />
         <WDCSection />
         <HackathonSection />
         <Publication />
