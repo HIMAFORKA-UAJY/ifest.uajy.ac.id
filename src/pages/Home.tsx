@@ -464,22 +464,16 @@ const Home: FC = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="bg-[#2b2265] h-screen"
         >
-
           <div className="flex flex-col lg:flex-row justify-center">
             <div className="flex justify-center lg:justify-center bg-pur lg:w-1/2">
               <div >
                 <div className="w-full p-4 bg-pur" >
-
                   <div className="shadow-lg p-3 bg-light-pur">
-                    <AccordionContainer></AccordionContainer>
+                    <AccordionContainer />
                   </div>
                 </div>
-
-
               </div>
             </div>
-
-
           </div>
         </motion.div>
 
