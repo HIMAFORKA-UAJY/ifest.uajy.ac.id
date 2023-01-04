@@ -1853,6 +1853,11 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-headless-accordion@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/react-headless-accordion/-/react-headless-accordion-1.0.2.tgz"
+  integrity sha512-wKBTB/+aAr9MGX5RYi3sdmKOSzevKdmbGRw9JTe7XONiHlTo+pC1OiggL9NUxp5QeQcTnX0rryhuySeGsqBfBg==
+
 react-icons@^4.6.0, react-icons@^4.7.1:
   version "4.7.1"
   resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.7.1.tgz"
