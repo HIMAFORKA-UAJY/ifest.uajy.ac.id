@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        retroica: ["Retroica", "sans-serif"],
         gameofsquids: ["Game Of Squids", "sans-serif"],
-        retrons2000: ["Retron2000", "sans-serif"],
         louisgeorgecafe: ["Louis George Cafe", "sans-serif"],
+        retroica: ["Retroica", "sans-serif"],
+        retron2000: ["Retron2000", "sans-serif"],
       }
     },
   },
