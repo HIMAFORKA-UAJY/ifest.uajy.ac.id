@@ -21,8 +21,8 @@ export default function NavBar() {
             <div className="hidden lg:flex flex-row items-center gap-12">
                 <div>
                     <Menu>
-                        <Menu.Button className="cursor-default font-retroica text-[#ffffffb5] text-xl tracking-[0.2em]" >Kompetisi 
-                        <img src="/images/Vector.png" className="w-4 h-4 inline-block ml-2" />
+                        <Menu.Button className="cursor-default font-retroica text-[#ffffffb5] text-xl tracking-[0.2em]" >Kompetisi
+                            <img src="/images/Vector.png" className="w-4 h-4 inline-block ml-2" />
                         </Menu.Button>
                         <Menu.Items>
                             <motion.div
@@ -30,7 +30,7 @@ export default function NavBar() {
                                 whileInView={{ opacity: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                                className="absolute flex flex-col gap-3 text-gray-300 bg-[#211a44] rounded-[0.7em] px-8 py-4 shadow-lg font-retroica text-xl tracking-[0.2em] cursor-default text-[#bfb2ff] mt-4"
+                                className="absolute flex flex-col gap-3 bg-[#211a44] rounded-[0.7em] px-8 py-4 shadow-lg font-retroica text-xl tracking-[0.2em] cursor-default text-[#bfb2ff] mt-4"
                             >
                                 <motion.div
                                     whileHover={{ scale: 1.1 }}
@@ -87,7 +87,7 @@ export default function NavBar() {
                 <div>
                     <Menu>
                         <Menu.Button className="cursor-default font-retroica text-[#ffffffb5] text-xl tracking-[0.2em]">Acara
-                        <img src="/images/Vector.png" className="w-4 h-4 inline-block ml-2" />
+                            <img src="/images/Vector.png" className="w-4 h-4 inline-block ml-2" />
                         </Menu.Button>
                         <Menu.Items>
                             <motion.div
@@ -95,7 +95,7 @@ export default function NavBar() {
                                 whileInView={{ opacity: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                                className="absolute flex flex-col gap-3 text-gray-300 bg-[#211a44] rounded-[0.7em] px-8 py-4 shadow-lg font-retroica text-xl tracking-[0.2em] cursor-default text-[#bfb2ff] mt-4"
+                                className="absolute flex flex-col gap-3 bg-[#211a44] rounded-[0.7em] px-8 py-4 shadow-lg font-retroica text-xl tracking-[0.2em] cursor-default text-[#bfb2ff] mt-4"
                             >
                                 <motion.div
                                     whileHover={{ scale: 1.1 }}
