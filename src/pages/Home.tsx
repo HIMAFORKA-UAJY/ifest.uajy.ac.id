@@ -75,9 +75,9 @@ const Home: FC = () => {
                         </svg>
                     </motion.button>
                 </motion.div>
-                
+
                 {/* I2C Description */}
-                
+
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -373,7 +373,7 @@ const Home: FC = () => {
                 >
                     <div className="flex flex-col gap-10 justify-center items-center h-screen w-screen">
                         <div className="font-retroica text-4xl text-white">Publikasi</div>
-                        <div>
+                        <div className="w-[19rem] lg:w-5/6">
                             <Swiper
                                 effect={"coverflow"}
                                 navigation
@@ -381,11 +381,11 @@ const Home: FC = () => {
                                 centeredSlides={true}
                                 slidesPerView={"auto"}
                                 coverflowEffect={{
-                                  rotate: 50,
-                                  stretch: 0,
-                                  depth: 100,
-                                  modifier: 1,
-                                  slideShadows: true
+                                    rotate: 50,
+                                    stretch: 0,
+                                    depth: 100,
+                                    modifier: 1,
+                                    slideShadows: true
                                 }}
                                 pagination={true}
                                 modules={[EffectCoverflow, Pagination, Navigation]}
@@ -404,8 +404,8 @@ const Home: FC = () => {
                                         </SwiperSlide>
                                     );
                                 })}
-                            </Swiper>  
-                       	</div>
+                            </Swiper>
+                        </div>
                     </div>
                 </motion.div>
 
@@ -505,13 +505,13 @@ const Home: FC = () => {
                                 centeredSlides={true}
                                 slidesPerView={"auto"}
                                 coverflowEffect={{
-                                  rotate: 0,
-                                  stretch: -50,
-                                  depth: 100,
-                                  modifier: 1,
-                                  slideShadows: false
+                                    rotate: 0,
+                                    stretch: -50,
+                                    depth: 100,
+                                    modifier: 1,
+                                    slideShadows: false
                                 }}
-                                
+
                                 modules={[EffectCoverflow, Pagination, Navigation]}
                                 className="mySwiper"
                             >
@@ -526,7 +526,7 @@ const Home: FC = () => {
                                 </SwiperSlide>
                             </Swiper>
                         </div>
-                        
+
                         <div className="pl-[1rem]">
                             <motion.button
                                 initial={{ opacity: 0 }}
@@ -537,7 +537,7 @@ const Home: FC = () => {
                             </motion.button>
                         </div>
                     </div>
-                    
+
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -606,7 +606,7 @@ const Home: FC = () => {
                                 className="mySwiper"
                             >
                                 <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
-                                        <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventlombaindo-medpart.png" alt="/" />
+                                    <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventlombaindo-medpart.png" alt="/" />
                                 </SwiperSlide>
                                 <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
                                     <img src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/bncc-medpart.png" alt="/" />
