@@ -11,9 +11,9 @@ const Layout: FC<Props> = ({ children }) => {
 
     return (
         <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            initial="hidden"
+            animate="visible"
+            exit={{ opacity: 0, transition: { duration: 0.5 } }}
             onAnimationComplete={() => setOpenNav(true)}
         >
             <>
