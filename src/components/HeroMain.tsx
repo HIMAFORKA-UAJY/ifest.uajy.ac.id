@@ -26,7 +26,7 @@ const HeroMain: FC<Props> = ({ i2cRef }) => {
                     2000,
                     "Higher Steps, Higher Purpose with Informatics"
                 ]}
-                speed={45}
+                speed={60}
                 wrapper="div"
                 cursor={false}
                 className="font-retron2000 text-xl lg:text-3xl font-light text-white text-center"
@@ -35,7 +35,7 @@ const HeroMain: FC<Props> = ({ i2cRef }) => {
                 onClick={() => i2cRef.current?.scrollIntoView({ behavior: "smooth" })}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 4.0, duration: 0.25 }}
+                transition={{ delay: 4.5, duration: 0.25 }}
                 className="mt-12 transition-transform hover:scale-125">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="stroke-white w-10 h-10">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />

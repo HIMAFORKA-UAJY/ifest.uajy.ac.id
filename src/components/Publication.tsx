@@ -59,9 +59,9 @@ const Publication: FC = () => {
                         modules={[EffectCoverflow, Pagination, Navigation]}
                         className="mySwiper"
                     >
-                        {publications.map((publication) => {
+                        {publications.map((publication, index) => {
                             return (
-                                <SwiperSlide className="w-[20rem] h-[32rem]">
+                                <SwiperSlide className="w-[20rem] h-[32rem]" key={index}>
                                     <div className="text-center flex gap-2 flex-col h-full items-center justify-center bg-[#352A7C]">
                                         <img className="w-64" src={publication.img} alt="/" />
                                         <div className="font-retroica text-[#ffffff]">{publication.author}</div>

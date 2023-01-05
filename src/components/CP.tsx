@@ -204,7 +204,7 @@ const Sponsor: FC = () => {
                                 </tbody>
                             </table>
                         </div>
-                        <div className="text-white text-center flex justify-center">
+                        {/* <div className="text-white text-center flex justify-center">
                             <table className="table-cell border-separate border-[6px] border-[#ff8064] rounded-xl p-2">
                                 <thead>
                                     <tr>
@@ -234,7 +234,7 @@ const Sponsor: FC = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
+                        </div> */}
                         <div className="text-white text-center flex justify-center">
                             <table className="table-cell border-separate border-[6px] border-[#926DAE] rounded-xl p-2">
                                 <thead>

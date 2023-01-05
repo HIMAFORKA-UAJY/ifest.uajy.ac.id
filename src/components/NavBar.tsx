@@ -1,9 +1,10 @@
 import { Menu, Popover } from '@headlessui/react';
 import { motion } from "framer-motion";
+import { FC } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
-export default function NavBar() {
+const NavBar: FC = () => {
     return (
         <motion.div
             className="flex justify-between items-center p-4 lg:px-16 z-10"
@@ -20,7 +21,7 @@ export default function NavBar() {
                     <Menu>
                         <Menu.Button className="cursor-default font-retroica text-[#ffffffb5] text-xl tracking-[0.2em] flex items-center gap-2" >Kompetisi
                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.96497 0H12.085C16.5116 0 18.3116 3.13333 16.1116 6.96L15.125 8.66667C14.885 9.08 14.445 9.33333 13.965 9.33333H3.08497C2.60497 9.33333 2.16497 9.08 1.92497 8.66667L0.938298 6.96C-1.2617 3.13333 0.538299 0 4.96497 0ZM4.24763 10.6667H12.821C13.341 10.6667 13.661 11.2267 13.3943 11.6667L12.541 13.1333C10.341 16.96 6.7143 16.96 4.5143 13.1333L3.66097 11.6667C3.40763 11.2267 3.72763 10.6667 4.24763 10.6667Z" fill="white" fill-opacity="0.72" />
+                                <path d="M4.96497 0H12.085C16.5116 0 18.3116 3.13333 16.1116 6.96L15.125 8.66667C14.885 9.08 14.445 9.33333 13.965 9.33333H3.08497C2.60497 9.33333 2.16497 9.08 1.92497 8.66667L0.938298 6.96C-1.2617 3.13333 0.538299 0 4.96497 0ZM4.24763 10.6667H12.821C13.341 10.6667 13.661 11.2267 13.3943 11.6667L12.541 13.1333C10.341 16.96 6.7143 16.96 4.5143 13.1333L3.66097 11.6667C3.40763 11.2267 3.72763 10.6667 4.24763 10.6667Z" fill="white" fillOpacity="0.72" />
                             </svg>
                         </Menu.Button>
                         <Menu.Items>
@@ -87,7 +88,7 @@ export default function NavBar() {
                     <Menu>
                         <Menu.Button className="cursor-default font-retroica text-[#ffffffb5] text-xl tracking-[0.2em] flex items-center gap-2">Acara
                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.96497 0H12.085C16.5116 0 18.3116 3.13333 16.1116 6.96L15.125 8.66667C14.885 9.08 14.445 9.33333 13.965 9.33333H3.08497C2.60497 9.33333 2.16497 9.08 1.92497 8.66667L0.938298 6.96C-1.2617 3.13333 0.538299 0 4.96497 0ZM4.24763 10.6667H12.821C13.341 10.6667 13.661 11.2267 13.3943 11.6667L12.541 13.1333C10.341 16.96 6.7143 16.96 4.5143 13.1333L3.66097 11.6667C3.40763 11.2267 3.72763 10.6667 4.24763 10.6667Z" fill="white" fill-opacity="0.72" />
+                                <path d="M4.96497 0H12.085C16.5116 0 18.3116 3.13333 16.1116 6.96L15.125 8.66667C14.885 9.08 14.445 9.33333 13.965 9.33333H3.08497C2.60497 9.33333 2.16497 9.08 1.92497 8.66667L0.938298 6.96C-1.2617 3.13333 0.538299 0 4.96497 0ZM4.24763 10.6667H12.821C13.341 10.6667 13.661 11.2267 13.3943 11.6667L12.541 13.1333C10.341 16.96 6.7143 16.96 4.5143 13.1333L3.66097 11.6667C3.40763 11.2267 3.72763 10.6667 4.24763 10.6667Z" fill="white" fillOpacity="0.72" />
                             </svg>
                         </Menu.Button>
                         <Menu.Items>
@@ -139,7 +140,7 @@ export default function NavBar() {
                                         {({ active }) => (
                                             <Link
                                                 className={`${active && 'text-[#fff]'}`}
-                                                to="/seminar"
+                                                to="/donor-darah"
                                             >
                                                 Donor Darah
                                             </Link>
@@ -215,4 +216,6 @@ export default function NavBar() {
             </Popover>
         </motion.div>
     );
-}
+};
+
+export default NavBar;

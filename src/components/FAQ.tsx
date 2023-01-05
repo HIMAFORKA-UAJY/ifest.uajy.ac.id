@@ -15,7 +15,7 @@ const FAQ: FC = () => {
       "question": "Apa itu IFest?",
       "answer":
         `
-      Informatics Festival atau IFest adalah acara tahunan Himpunan Mahasiswa Informatika (HIMAFORKA) Universitas Atma Jaya Yogyakarta. Pada tahun 2022 ini, IFest#10 mengambil tema "Technology Rebuild Our Country" dengan berbagai susunan kompetisi dan acara yang tentunya menarik!
+      Informatics Festival atau IFest adalah acara tahunan Himpunan Mahasiswa Informatika (HIMAFORKA) Universitas Atma Jaya Yogyakarta. Pada tahun 2023 ini, IFest#10 mengambil tema "Higher Steps, Higher Purpose with Informatics" dengan berbagai susunan kompetisi dan acara yang tentunya menarik!
         `
     },
     {
@@ -31,14 +31,59 @@ const FAQ: FC = () => {
           Web Design Competition (WDC)
         </li>
         <li>
-          Competitive Programming (CP)
+          Food Bazaar
         </li>
         <li>
-          Seminar Nasional
+          Donor Darah
         </li>
       </ul>
         `
-    }
+    },
+    {
+      "question": "Bagaimana cara mendaftar untuk setiap event IFest?",
+      "answer":
+        `
+      Pendaftaran diri dan tim dapat dilakukan melalui situs https://ifest.uajy.ac.id/dash/register. Kamu bisa mendaftarkan diri dan tim selama masa pendaftaran (masa pendaftaran untuk setiap kompetisi dan acara berbeda-beda).
+      `
+    },
+    {
+      "question": "Apa tujuan diselenggarakannya IFest?",
+      "answer":
+        `
+      IFest diselenggarakan dengan tujuan sebagai berikut:
+      <ul className="list-outside list-disc pl-4">
+        <li>
+          Dapat memupuk dan mengembangkan minat dan bakat generasi muda dalam bidang teknologi informasi,
+        </li>
+        <li>
+          Dapat mengembangkan pola pikir yang maju terhadap teknologi tanpa mengesampingkan nilai-nilai kemanusiaan,
+        </li>
+        <li>
+          Membangun semangat berkompetisi yang positif sebagai manusia yang utuh dan sebagai generasi penerus bangsa yang menjunjung nilai kejujuran,
+        </li>
+        <li>
+          Sebagai sarana untuk menuangkan ide-ide dan kreatifitas peserta, serta
+        </li>
+        <li>
+          Menggali, menampung, menyalurkan, dan mengembangkan kemampuan serta pengetahuan mahasiswa sekaligus mencari bibit-bibit unggul.
+        </li>
+      </ul>
+        `
+    },
+    {
+      "question": "Dimana bisa mencari informasi seputar IFest?",
+      "answer":
+        `
+        Situs web ini telah menyajikan informasi mendetil terkait event-event yang diselenggarakan. Namun untuk mengajukan pertanyaan dan informasi lebih lanjut silakan hubungi kami melalui Instagram @ifest_uajy atau melalui LINE OA @ykb1847q. 
+        `
+    },
+    {
+      "question": "Siapa penyelenggara IFest#11 2023?",
+      "answer":
+        `
+        Rangkaian kegiatan Informatics Festival (IFest) #11 tahun 2023 diselenggarakan oleh Program Studi Informatika Universitas Atma Jaya Yogyakarta, bekerjasama dengan Himpunan Mahasiswa Informatika (HIMAFORKA).
+        `
+    },
   ];
 
 

@@ -1,16 +1,17 @@
 import { FC } from "react";
 import { MdEmail, SiInstagram, SiLine } from "react-icons/all";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
 interface Props {
     className: string;
 }
 
-const Footer: FC<Props> = (props: Props) => {
+const Footer: FC<Props> = ({ className }) => {
     return (
-        <div className={props.className}>
+        <div className={className}>
             <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 justify-center border-t-2 pt-8">
-                <img className="w-24 lg:h-16" src="https://ifest.uajy.ac.id/assets/images/branding/logo-ifest_generic.png" alt="ifest-logo" />
+                <img className="w-24 lg:h-16" src={logo} alt="ifest-logo" />
                 <div className="flex flex-col gap-2 text-left">
                     <div className="font-retroica text-xl text-white">IFest#11</div>
                     <div className="font-louisgeorgecafe text-white opacity-70">IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak tahun 2013 yang lalu.</div>
@@ -24,7 +25,7 @@ const Footer: FC<Props> = (props: Props) => {
                         <Link to="/wdc">Web Design Competition (WDC)</Link >
                     </div>
                     {/* <div className="font-louisgeorgecafe text-white opacity-70">
-                        <Link to="/hackathon">Competitive Programming (CP)</Link >
+                        <Link to="/hackathon">Hackathon</Link >
                     </div> */}
                 </div>
                 <div className="flex flex-col gap-2 text-left">
@@ -53,18 +54,18 @@ const Footer: FC<Props> = (props: Props) => {
                 </div>
                 <div className="flex flex-col gap-2 text-left">
                     <div className="font-retroica text-xl text-white">Sosial Media</div>
-                    <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
+                    <a className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2" href="https://www.instagram.com/ifest_uajy/" target="_blank" rel="noopener noreferrer">
                         <SiInstagram />
-                        <a href="https://www.instagram.com/ifest_uajy/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    </div>
-                    <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
+                        Instagram
+                    </a>
+                    <a className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2" href="https://line.me/ti/p/~@ykb1847q" target="_blank" rel="noopener noreferrer">
                         <SiLine />
-                        <a href="https://line.me/ti/p/~@ykb1847q" target="_blank" rel="noopener noreferrer">LINE</a>
-                    </div>
-                    <div className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2">
+                        LINE
+                    </a>
+                    <a className="font-louisgeorgecafe text-white opacity-70 flex items-center gap-2" href="mailto:ifest@uajy.ac.id" target="_blank" rel="noopener noreferrer">
                         <MdEmail />
-                        <a href="mailto:ifest@uajy.ac.id" target="_blank" rel="noopener noreferrer">Email</a>
-                    </div>
+                        Email
+                    </a>
                 </div>
                 <div className="border-t-2"></div>
                 <div className="flex flex-col gap-2 text-center lg:hidden">
