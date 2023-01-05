@@ -603,8 +603,7 @@ const Home: FC = () => {
                                 pagination={{
                                     clickable: true,
                                 }}
-                                navigation
-                                modules={[Grid, Pagination, Navigation]}
+                                modules={[Grid, Pagination]}
                                 className="mySwiper"
                             >
                                 <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
