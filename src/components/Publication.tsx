@@ -37,7 +37,7 @@ const Publication: FC = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="bg-[#2b2265] lg:pt-24"
+            className="bg-[#2b2265] lg:pt-24 pt-16"
         >
             <div className="flex flex-col gap-10 justify-center items-center w-screen">
                 <div className="font-retroica text-4xl text-white">Publikasi</div>

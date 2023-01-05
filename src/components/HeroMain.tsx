@@ -9,7 +9,7 @@ interface Props {
 const HeroMain: FC<Props> = ({ i2cRef }) => {
     return (
         <motion.div
-            className="flex flex-col justify-center items-center h-screen"
+            className="flex flex-col justify-center items-center h-screen px-8"
         >
             <TypeAnimation
                 sequence={[
@@ -24,7 +24,7 @@ const HeroMain: FC<Props> = ({ i2cRef }) => {
             <TypeAnimation
                 sequence={[
                     2000,
-                    "Technology Rebuild Our Country"
+                    "Higher Steps, Higher Purpose with Informatics"
                 ]}
                 speed={45}
                 wrapper="div"

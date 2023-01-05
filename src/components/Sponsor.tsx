@@ -18,7 +18,7 @@ const Sponsor: FC = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="bg-[#2b2265] pt-12"
+            className="bg-[#2b2265] pt-20"
         >
             <div className="flex flex-col gap-6 justify-center items-center w-screen">
                 <div className="font-retroica text-4xl text-white">Sponsors</div>

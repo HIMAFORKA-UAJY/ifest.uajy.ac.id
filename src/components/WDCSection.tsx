@@ -15,7 +15,7 @@ const WDCSection: FC = () => {
             <div className="hidden lg:flex flex-col justify-center items-center w-screen">
                 <div className="flex justify-center items-center">
                     <div className="flex flex-col">
-                        <div className="font-retroica text-4xl text-white pl-[1rem]">
+                        <div className="font-retroica text-4xl text-white pl-[1rem] tracking-wide">
                             WDC
                         </div>
                         <div className="font-retroica text-2xl text-white pl-[1rem] pb-[0.5rem]">
@@ -67,19 +67,19 @@ const WDCSection: FC = () => {
                     />
                 </div>
             </div>
-            <div className="lg:hidden flex flex-col justify-center items-center h-screen w-screen">
+            <div className="lg:hidden flex flex-col justify-center items-center h-screen w-screen px-4">
                 <img
                     className="w-72"
                     src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png"
                     alt="wdc"
                 />
                 <div className="text-center">
-                    <div className="font-retroica text-4xl text-white">WDC</div>
+                    <div className="font-retroica text-4xl text-white tracking-wide">WDC</div>
                     <div className="font-retroica text-2xl text-white pb-[1rem]">
                         Web Design Competition
                     </div>
                 </div>
-                <div className="flex gap-4 font-retroica text-sm text-white">
+                <div className="flex gap-2 font-retroica text-sm text-white px-2">
                     <div className="bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 rounded-full">
                         <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.35rem] flex-wrap justify-center">
                             <FaWallet />

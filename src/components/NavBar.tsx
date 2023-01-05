@@ -63,7 +63,7 @@ export default function NavBar() {
                                         )}
                                     </Menu.Item>
                                 </motion.div>
-                                <motion.div
+                                {/* <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
                                     className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
@@ -78,7 +78,7 @@ export default function NavBar() {
                                             </Link>
                                         )}
                                     </Menu.Item>
-                                </motion.div>
+                                </motion.div> */}
                             </motion.div>
                         </Menu.Items>
                     </Menu>
@@ -98,7 +98,7 @@ export default function NavBar() {
                                 transition={{ duration: 0.3, ease: "easeInOut" }}
                                 className="absolute flex flex-col gap-3 bg-[#211a44] rounded-[0.7em] px-8 py-4 shadow-lg font-retroica text-xl tracking-[0.2em] cursor-default text-[#bfb2ff] mt-4"
                             >
-                                <motion.div
+                                {/* <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
                                     className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
@@ -113,7 +113,7 @@ export default function NavBar() {
                                             </Link>
                                         )}
                                     </Menu.Item>
-                                </motion.div>
+                                </motion.div> */}
                                 <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
@@ -123,9 +123,9 @@ export default function NavBar() {
                                         {({ active }) => (
                                             <Link
                                                 className={`${active && 'text-[#fff]'}`}
-                                                to="/seminar"
+                                                to="/food-bazaar"
                                             >
-                                                Bazaar
+                                                Food Bazaar
                                             </Link>
                                         )}
                                     </Menu.Item>
@@ -174,39 +174,39 @@ export default function NavBar() {
                             </svg>
                         </Popover.Button>
                         <div className="flex flex-col items-center gap-2">
-                            <div className="font-retroica text-xl tracking-[12px] text-[#bfb2ff]">Kompetisi</div>
+                            <div className="font-retroica text-xl tracking-[6px] text-[#bfb2ff] font-bold">Kompetisi</div>
                             <div className="flex gap-2">
-                                <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                                <button className="border-[#3d3474] border-4 px-4 py- rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-wide">
                                     <Link to="/i2c">I2C</Link>
                                 </button>
-                                <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                                <button className="border-[#3d3474] border-4 px-4 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-wide">
                                     <Link to="/wdc">WDC</Link>
                                 </button>
-                                <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                                {/* <button className="border-[#3d3474] border-4 px-4 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-wide">
                                     <Link to="/hackathon">CP</Link>
-                                </button>
+                                </button> */}
                             </div>
                         </div>
                         <div className="flex flex-col items-center gap-2">
-                            <div className="font-retroica text-xl tracking-[12px] text-[#bfb2ff]">Acara</div>
+                            <div className="font-retroica text-xl tracking-[6px] text-[#bfb2ff] font-bold">Acara</div>
                             <div className="flex gap-2">
-                                <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
-                                    <Link to="/seminar">Seminar</Link>
+                                <button className="border-[#3d3474] border-4 px-4 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-wide">
+                                    <Link to="/food-bazaar">Food Bazaar</Link>
                                 </button>
-                                <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                                <button className="border-[#3d3474] border-4 px-4 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-wide">
                                     <Link to="/donor-darah">Donor Darah</Link>
                                 </button>
                             </div>
                         </div>
                         <div className="flex flex-col items-center gap-2">
-                            <div className="font-retroica text-xl tracking-[12px] text-[#bfb2ff]">Bisnis</div>
-                            <button className="border-[#3d3474] border-4 px-2 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                            <div className="font-retroica text-xl tracking-[6px] text-[#bfb2ff] font-bold">Bisnis</div>
+                            <button className="border-[#3d3474] border-4 px-4 py-1 rounded-full cursor-default font-retroica text-[#bfb2ff] text-xl tracking-wide">
                                 <Link to="/sponsor">Sponsor</Link>
                             </button>
                         </div>
                         <div className="flex flex-col items-center gap-2">
-                            <div className="font-retroica text-xl tracking-[12px] text-[#bfb2ff]">Akses</div>
-                            <button className="bg-[#3d3474] rounded-[2.0em] w-full inline-block px-4 py-2 cursor-default font-retroica text-[#bfb2ff] text-xl tracking-[0.2em]">
+                            <div className="font-retroica text-xl tracking-[6px] text-[#bfb2ff] font-bold">Akses</div>
+                            <button className="bg-[#3d3474] rounded-[2.0em] w-full inline-block px-4 py-2 cursor-default font-retroica text-[#bfb2ff] text-xl tracking-wide">
                                 <Link to="/dashboard">Dashboard</Link>
                             </button>
                         </div>
