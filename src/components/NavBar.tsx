@@ -33,7 +33,7 @@ const NavBar: FC = () => {
                 break;
 
             default:
-                setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#FFFFFF" });
+                setColor({ bg1: "#8E332DF2", bg2: "#DB7F58CC", fg: "#FFFFFF" });
                 break;
         }
     }, []);
