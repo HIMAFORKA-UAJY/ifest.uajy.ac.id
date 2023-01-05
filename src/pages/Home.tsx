@@ -62,7 +62,7 @@ const Home: FC = () => {
                         speed={45}
                         wrapper="h2"
                         cursor={false}
-                        className="font-retrons2000 text-xl lg:text-3xl font-light text-white text-center"
+                        className="font-retron2000 text-xl lg:text-3xl font-light text-white text-center"
                     />
                     <motion.button
                         onClick={() => i2cRef.current?.scrollIntoView({ behavior: "smooth" })}
@@ -506,8 +506,8 @@ const Home: FC = () => {
                                 slidesPerView={"auto"}
                                 coverflowEffect={{
                                   rotate: 0,
-                                  stretch: -50,
-                                  depth: 100,
+                                  stretch: 0,
+                                  depth: 200,
                                   modifier: 1,
                                   slideShadows: false
                                 }}
@@ -593,6 +593,7 @@ const Home: FC = () => {
                             </Carousel>
                         </div>
                         <div className="hidden lg:flex lg:w-[60rem] lg:h-[30rem]">
+                            
                             <Swiper
                                 slidesPerView={4}
                                 grid={{
@@ -602,7 +603,8 @@ const Home: FC = () => {
                                 pagination={{
                                     clickable: true,
                                 }}
-                                modules={[Grid, Pagination]}
+                                navigation
+                                modules={[Grid, Pagination, Navigation]}
                                 className="mySwiper"
                             >
                                 <SwiperSlide className="h-[12rem] w-[12rem] p-2 bg-[#352a7c] flex items-center">
