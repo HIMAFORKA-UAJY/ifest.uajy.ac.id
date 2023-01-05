@@ -153,7 +153,7 @@ const I2C: FC = () => {
 
                 <div ref={contentRef} className="bg-gradient-to-t from-[#2A2F59] to-[#332550]">
                     <div className="flex flex-col items-center gap-2 pt-4 pl-4 pr-4">
-                        <div className="font-retroica text-4xl text-white font-thin tracking-wider">
+                        <div className="font-retroica text-3xl text-white font-thin tracking-wider">
                             MORE ABOUT I2C
                         </div>
                         <div className="font-louisgeorgecafe text-md text-white font-thin lg:text-center my-4 w-screen px-8 text-justify lg:px-[10rem]">
