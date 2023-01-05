@@ -23,14 +23,14 @@ const Footer: FC<Props> = (props: Props) => {
                     <div className="font-louisgeorgecafe text-white opacity-70">
                         <Link to="/wdc">Web Design Competition (WDC)</Link >
                     </div>
-                    <div className="font-louisgeorgecafe text-white opacity-70">
+                    {/* <div className="font-louisgeorgecafe text-white opacity-70">
                         <Link to="/hackathon">Competitive Programming (CP)</Link >
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-col gap-2 text-left">
                     <div className="font-retroica text-xl text-white">Acara</div>
                     <div className="font-louisgeorgecafe text-white opacity-70">
-                        <Link to="/seminar">Seminar Nasional</Link >
+                        <Link to="/food-bazaar">Food Bazaar</Link >
                     </div>
                     <div className="font-louisgeorgecafe text-white opacity-70">
                         <Link to="/donor-darah">Donor Darah</Link >

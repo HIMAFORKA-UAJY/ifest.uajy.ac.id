@@ -24,7 +24,7 @@ const HeroMain: FC<Props> = ({ i2cRef }) => {
             <TypeAnimation
                 sequence={[
                     2000,
-                    "Technology Rebuild Our Country"
+                    "Higher Steps, Higher Purpose with Informatics"
                 ]}
                 speed={45}
                 wrapper="div"
