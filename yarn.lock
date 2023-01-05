@@ -307,6 +307,18 @@
   dependencies:
     "@emotion/memoize" "0.7.4"
 
+"@emotion/is-prop-valid@^1.1.0":
+  "integrity" "sha512-3aDpDprjM0AwaxGE09bOPkNxHpBd+kA6jty3RnaEXdweX1DF1U3VQpPYb0g1IStAuK7SVQ1cy+bNBBKp4W3Fjg=="
+  "resolved" "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-1.2.0.tgz"
+  "version" "1.2.0"
+  dependencies:
+    "@emotion/memoize" "^0.8.0"
+
+"@emotion/memoize@^0.8.0":
+  "integrity" "sha512-G/YwXTkv7Den9mXDO7AhLWkE3q+I92B+VqAE+dYG4NGPaHZGvt3G8Q0p9vmE+sq7rTGphUbAvmQ9YpbfMQGGlA=="
+  "resolved" "https://registry.npmjs.org/@emotion/memoize/-/memoize-0.8.0.tgz"
+  "version" "0.8.0"
+
 "@emotion/memoize@0.7.4":
   version "0.7.4"
   resolved "https://registry.npmjs.org/@emotion/memoize/-/memoize-0.7.4.tgz"
@@ -321,6 +333,16 @@
   version "0.15.18"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.15.18.tgz#128b76ecb9be48b60cf5cfc1c63a4f00691a3239"
   integrity sha512-L4jVKS82XVhw2nvzLg/19ClLWg0y27ulRwuP7lcyL6AbUWB5aPglXY3M21mauDQMDfRLs8cQmeT03r/+X3cZYQ==
+
+"@emotion/stylis@^0.8.4":
+  "integrity" "sha512-h6KtPihKFn3T9fuIrwvXXUOwlx3rfUvfZIcP5a6rh8Y7zjE3O06hT5Ss4S/YI1AYhuZ1kjaE/5EaOOI2NqSylQ=="
+  "resolved" "https://registry.npmjs.org/@emotion/stylis/-/stylis-0.8.5.tgz"
+  "version" "0.8.5"
+
+"@emotion/unitless@^0.7.4":
+  "integrity" "sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg=="
+  "resolved" "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.7.5.tgz"
+  "version" "0.7.5"
 
 "@floating-ui/core@^1.0.5":
   version "1.1.0"
