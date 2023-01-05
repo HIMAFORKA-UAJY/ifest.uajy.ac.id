@@ -21,7 +21,7 @@ const I2CSection: FC = () => {
                     <div className="flex justify-center items-center">
                         <img className="w-[600px]" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="i2c" />
                         <div className="flex flex-col">
-                            <div className="font-retroica text-4xl text-white pl-[1rem]">I2C</div>
+                            <div className="font-retroica text-4xl text-white pl-[1rem] tracking-wide">I2C</div>
                             <div className="font-retroica text-2xl text-white pl-[1rem] pb-[0.5rem]">Innovative Informatics Contest</div>
                             <div className="flex gap-4 font-retroica text-sm text-white pl-[1rem]">
                                 <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
@@ -60,13 +60,13 @@ const I2CSection: FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="lg:hidden flex flex-col justify-center items-center h-screen w-screen">
+                <div className="lg:hidden flex flex-col justify-center items-center h-screen w-screen px-4">
                     <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="i2c" />
                     <div className="text-center">
-                        <div className="font-retroica text-4xl text-white">I2C</div>
-                        <div className="font-retroica text-2xl text-white pb-[1rem]">Innovative Informatics Contest</div>
+                        <div className="font-retroica text-4xl text-white tracking-wide">I2C</div>
+                        <div className="font-retroica text-2xl text-white pb-[1rem] px-4">Innovative Informatics Contest</div>
                     </div>
-                    <div className="flex gap-4 font-retroica text-sm text-white">
+                    <div className="flex gap-2 font-retroica text-sm text-white px-2">
                         <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
                             <div className="bg-[#2b2265] p-1 rounded-full flex gap-1 items-center px-[0.35rem] flex-wrap justify-center">
                                 <FaWallet />

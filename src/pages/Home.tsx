@@ -15,10 +15,10 @@ import WDCSection from "../components/WDCSection";
 const Home: FC = () => {
   return (
     <Layout>
-      <div className="bg-[url('/images/bg-no-flip.png')] bg-center bg-cover bg-no-repeat -z-10 absolute top-0 h-screen w-screen overflow-x-hidden">
+      <div className="bg-[url('/images/bg-no-flip.png')] bg-center bg-cover bg-no-repeat -z-10 absolute top-0 h-screen w-screen">
         <I2CSection />
         <WDCSection />
-        <HackathonSection />
+        {/* <HackathonSection /> */}
         <Publication />
         <FAQ />
         <Sponsor />

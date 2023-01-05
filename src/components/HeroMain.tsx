@@ -9,7 +9,7 @@ interface Props {
 const HeroMain: FC<Props> = ({ i2cRef }) => {
     return (
         <motion.div
-            className="flex flex-col justify-center items-center h-screen"
+            className="flex flex-col justify-center items-center h-screen px-8"
         >
             <TypeAnimation
                 sequence={[

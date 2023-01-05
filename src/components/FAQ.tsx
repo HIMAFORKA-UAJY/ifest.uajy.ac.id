@@ -48,7 +48,7 @@ const FAQ: FC = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1, ease: "easeInOut" }}
-      className="bg-[#2b2265] pt-12"
+      className="bg-[#2b2265] pt-24"
     >
       <div className="flex flex-col lg:flex-row justify-center">
         <div className="flex flex-col items-center justify-center lg:justify-center bg-[#2b2265] lg:w-1/2">
