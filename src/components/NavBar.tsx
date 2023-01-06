@@ -21,7 +21,8 @@ const NavBar: FC = () => {
                 break;
 
             case "/i2c":
-                setColor({ bg1: "#2A2F59", bg2: "#BA87FB", fg: "#FFFFFF" });
+                // setColor({ bg1: "#2A2F59", bg2: "#BA87FB", fg: "#FFFFFF" });
+                setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
                 break;
 
             case "/wdc":

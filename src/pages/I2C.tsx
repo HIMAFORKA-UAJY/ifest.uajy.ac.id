@@ -1,15 +1,34 @@
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FC, useRef } from "react";
+import { FC, useRef, useState } from "react";
+import React from "react";
 import { Chrono } from "react-chrono";
-import { FaBook, FaCertificate, FaMale, FaMoneyBillWave, FaWallet, FaWhatsapp } from "react-icons/all";
+import { FaBook, FaCertificate, FaMale, FaMoneyBillWave, FaWallet, FaWhatsapp, FaRegWindowClose } from "react-icons/all";
 import { Link } from "react-router-dom";
+import { Modal, Box, IconButton, Typography } from '@mui/material';
 import 'react-vertical-timeline-component/style.min.css';
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 
+const style = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 900,
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    p: 4,
+    pt: 2
+    
+};
+
 const I2C: FC = () => {
     const contentRef = useRef<HTMLDivElement>(null);
+    const [open, setOpen] = useState(false);
+    const onClick = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
     const dataSeleksi = [
         {
             title: "16 Januari - 17 Februari 2023",
@@ -64,7 +83,7 @@ const I2C: FC = () => {
                 <motion.div
                     className="flex flex-col justify-center items-center h-screen"
                 >
-                    <div className="hidden lg:flex flex-col justify-center items-center h-screen w-screen">
+                    <div className="hidden lg:flex flex-col justify-center items-center h-fit w-screen">
                         <div className="flex flex-col justify-center items-center">
                             <div className="flex gap-8 justify-center items-center">
                                 <img className="w-[600px]" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="i2c" />
@@ -94,13 +113,13 @@ const I2C: FC = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div>
+                            <div className="relative bottom-16">
                                 <motion.button
                                     onClick={() => contentRef.current?.scrollIntoView({ behavior: "smooth" })}
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 0.75 }}
                                     transition={{ delay: 0.0, duration: 0.25 }}
-                                    className="mt-12 transition-transform hover:scale-125">
+                                    className="transition-transform hover:scale-125">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="stroke-white w-10 h-10">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
                                     </svg>
@@ -161,9 +180,23 @@ const I2C: FC = () => {
                         </div>
                         <div className="flex flex-row gap-4 font-louisgeorgecafe">
                             <div className="bg-[#6c6486] p-1 rounded-full">
-                                <button className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
+                                <button onClick={onClick} className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
                                     <div className="opacity-70 text-white">Lihat Poster</div>
                                 </button>
+                                <Modal
+                                    open={open}
+                                    onClose={handleClose}
+                                    aria-labelledby="modal-modal-title"
+                                    aria-describedby="modal-modal-description"
+                                    
+                                >
+                                    <Box sx={style} className="overflow-auto h-screen">
+                                        <Typography className="text-right" id="modal-modal-title" variant="h6" component="h2" >
+                                            <button onClick={handleClose}> <FaRegWindowClose/> </button>
+                                        </Typography>
+                                        <img src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png" alt="" />
+                                    </Box>
+                                </Modal>
                             </div>
                             <div className="bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1 rounded-full">
                                 <button className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
@@ -171,9 +204,40 @@ const I2C: FC = () => {
                                 </button>
                             </div>
                             <div className="bg-[#6c6486] p-1 rounded-full">
-                                <button className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
+                                {/* <React.Fragment>
+                                    <button onClick={onClick} className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
+                                        <div className="opacity-70 text-white">Lihat Aturan</div>
+                                    </button>
+                                    <Modal
+                                        show={open}
+                                        onClose={handleClose}       
+                                    >
+                                        <Modal.Header>
+                                            Aturan Innovative Informatics Contest
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            <img src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png" alt="" />
+                                        </Modal.Body>
+                                    </Modal>
+                                </React.Fragment> */}
+                                <button onClick={onClick} className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
                                     <div className="opacity-70 text-white">Lihat Aturan</div>
                                 </button>
+                                <Modal
+                                    open={open}
+                                    onClose={handleClose}
+                                    aria-labelledby="modal-modal-title"
+                                    aria-describedby="modal-modal-description"
+                                    
+                                >
+                                    <Box sx={style} className="overflow-auto h-screen">
+                                        <Typography className="text-right" id="modal-modal-title" variant="h6" component="h2" >
+                                            <button onClick={handleClose}> <FaRegWindowClose/> </button>
+                                        </Typography>
+                                        <img src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png" alt="" />
+                                    </Box>
+                                </Modal>
+                                
                             </div>
                         </div>
 
