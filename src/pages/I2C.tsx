@@ -26,8 +26,13 @@ const style = {
 const I2C: FC = () => {
     const contentRef = useRef<HTMLDivElement>(null);
     const [open, setOpen] = useState(false);
+    const [openPDF, setOpenPDF] = useState(false);
+
     const onClick = () => setOpen(true);
+    const onClickPDF = () => setOpenPDF(true);
+
     const handleClose = () => setOpen(false);
+    const handleClosePDF = () => setOpenPDF(false);
 
     const dataSeleksi = [
         {
@@ -220,21 +225,21 @@ const I2C: FC = () => {
                                         </Modal.Body>
                                     </Modal>
                                 </React.Fragment> */}
-                                <button onClick={onClick} className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
+                                <button onClick={onClickPDF} className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
                                     <div className="opacity-70 text-white">Lihat Aturan</div>
                                 </button>
                                 <Modal
-                                    open={open}
-                                    onClose={handleClose}
+                                    open={openPDF}
+                                    onClose={handleClosePDF}
                                     aria-labelledby="modal-modal-title"
                                     aria-describedby="modal-modal-description"
                                     
                                 >
                                     <Box sx={style} className="overflow-auto h-screen">
                                         <Typography className="text-right" id="modal-modal-title" variant="h6" component="h2" >
-                                            <button onClick={handleClose}> <FaRegWindowClose/> </button>
+                                            <button onClick={handleClosePDF}> <FaRegWindowClose/> </button>
                                         </Typography>
-                                        <img src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png" alt="" />
+                                         <iframe  src="public\rulebook\rulebook-i2c.pdf" style={{width: '100%', height: '95%'}}></iframe>
                                     </Box>
                                 </Modal>
                                 
