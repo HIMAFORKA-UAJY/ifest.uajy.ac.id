@@ -101,6 +101,23 @@ const NavBar: FC = () => {
                                             )}
                                         </Menu.Item>
                                     </motion.div>
+                                    <motion.div
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.9 }}
+                                        className={`rounded-[0.7em] font-retroica text-xl cursor-default`}
+                                        style={{ color: color.fg }}
+                                    >
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <Link
+                                                    className={`${active && 'text-[#fff]'}`}
+                                                    to="/hackathon"
+                                                >
+                                                    Hackathon
+                                                </Link>
+                                            )}
+                                        </Menu.Item>
+                                    </motion.div>
                                     {/* <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
@@ -183,6 +200,23 @@ const NavBar: FC = () => {
                                                     to="/donor-darah"
                                                 >
                                                     Donor Darah
+                                                </Link>
+                                            )}
+                                        </Menu.Item>
+                                    </motion.div>
+                                    <motion.div
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.9 }}
+                                        className={`rounded-[0.7em] font-retroica text-xl cursor-default`}
+                                        style={{ color: color.fg }}
+                                    >
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <Link
+                                                    className={`${active && 'text-[#fff]'}`}
+                                                    to="/seminar"
+                                                >
+                                                    Seminar Nasional
                                                 </Link>
                                             )}
                                         </Menu.Item>

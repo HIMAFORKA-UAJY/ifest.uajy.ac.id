@@ -41,7 +41,7 @@ const WDC: FC = () => {
     ];
     return (
       <Layout>
-        <div className="bg-gradient-to-t from-[#2C2E56] via-[#311D38] to-[#2C2E56] -z-10 absolute top-0 h-screen w-screen">
+        <div className="bg-gradient-to-t from-[#2C2E56] via-[#311D38] to-[#311D38] -z-10 absolute top-0 h-screen w-screen">
           <motion.div className="flex flex-col justify-center items-center h-screen">
             <div className="hidden lg:flex flex-col justify-center items-center h-screen w-screen">
               <div className="flex flex-col justify-center items-center">
