@@ -443,7 +443,7 @@ const WDC: FC = () => {
                 </div>
                 <div>
                   <div className="hidden lg:flex flex-row gap-8 pt-10">
-                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#ffe279] hover:text-[#311D38] transition ease-in duration-300 w-[30%] bg-custom-ungu">
+                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#ffe279] hover:text-[#311D38] transition ease-in duration-300 w-[30%] bg-custom-ungu juara-i">
                       <div className="">
                         <img
                           className="w-52 block m-auto"
@@ -461,7 +461,7 @@ const WDC: FC = () => {
                         <FaCertificate /> Sertifikat Nasional
                       </div>
                     </Card>
-                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#cacaca] hover:text-[#311D38] transition ease-in duration-300 w-[30%] bg-custom-ungu">
+                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#cacaca] hover:text-[#311D38] transition ease-in duration-300 w-[30%] bg-custom-ungu juara-ii">
                       <div className="">
                         <img
                           className="w-52 block m-auto"
@@ -479,7 +479,7 @@ const WDC: FC = () => {
                         <FaCertificate /> Sertifikat Nasional
                       </div>
                     </Card>
-                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#ffb050] hover:text-[#311D38] transition ease-in duration-300 w-[30%] bg-custom-ungu">
+                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#ffb050] hover:text-[#311D38] transition ease-in duration-300 w-[30%] bg-custom-ungu juara-iii">
                       <div className="">
                         <img
                           className="w-52 block m-auto"
@@ -488,7 +488,7 @@ const WDC: FC = () => {
                         />
                       </div>
                       <div className="font-retroica text-center text-2xl">
-                        Juara II
+                        Juara III
                       </div>
                       <div className="font-retroica flex gap-3">
                         <FaMoneyBillWave /> Rp1.000.000
