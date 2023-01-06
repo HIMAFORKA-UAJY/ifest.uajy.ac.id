@@ -8,6 +8,7 @@ import {
 } from "react-headless-accordion";
 
 import { motion } from "framer-motion";
+import './faq.css'
 
 const FAQ: FC = () => {
   const faqs = [
@@ -97,27 +98,39 @@ const FAQ: FC = () => {
     >
       <div className="flex flex-col lg:flex-row justify-center">
         <div className="flex flex-col items-center justify-center lg:justify-center bg-[#2b2265] lg:w-1/2">
-          <div className="font-retroica text-4xl text-white">
-            FAQ
-          </div>
+          <div className="font-retroica text-4xl text-white">FAQ</div>
           <div className="font-retroica text-base text-white">
             Pertanyaan yang sering diajukan
           </div>
-          <div >
-            <div className="w-full p-4 bg-[#2b2265]" >
+          <div>
+            <div className="w-full p-4 bg-[#2b2265]">
               <div className="shadow-lg p-3 bg-[#362c75]">
-                <Accordion className="rounded-md overflow-hidden border" alwaysOpen={false}>
+                <Accordion
+                  className="rounded-md overflow-hidden border new-bord"
+                  
+                  alwaysOpen={false}
+                >
                   {faqs.map((faq, index) => {
                     return (
                       <AccordionItem key={index}>
-                        {({ open }: { open: boolean; }) => (
+                        {({ open }: { open: boolean }) => (
                           <>
-                            <AccordionHeader className={`transition-[background] flex items-center justify-between w-full px-4 py-3 ${open ? "border-b" : ""} ${open ? "bg-gray-400/30" : "bg-[#2b2265]"}`}>
-                              <span className={`font-retroica tracking-[0.1em] text-sm font-semibold text-left ${open ? "text-white" : "text-gray-400"}`}>
+                            <AccordionHeader
+                              className={`transition-[background] flex items-center justify-between w-full px-4 py-3  ${
+                                open ? "" : ""
+                              } ${open ? "bg-gray-400/30" : "bg-[#2b2265]"}`}
+                            >
+                              <span
+                                className={`font-retroica tracking-[0.1em] text-sm font-semibold text-left ${
+                                  open ? "text-white" : "text-gray-400"
+                                }`}
+                              >
                                 {faq.question}
                               </span>
                               <svg
-                                className={`w-6 h-6 text-gray-500 transition duration-300 ${open ? "rotate-90" : ""}`}
+                                className={`w-6 h-6 text-gray-500 transition duration-300 ${
+                                  open ? "rotate-90" : ""
+                                }`}
                                 fill="currentColor"
                                 viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +142,7 @@ const FAQ: FC = () => {
                                 ></path>
                               </svg>
                             </AccordionHeader>
-                            <AccordionBody className={`open ? "border-b" : ""`}>
+                            <AccordionBody className={`open ? "" : ""`}>
                               <div className="font-retroica p-4 text-sm text-gray-200 text-left">
                                 <Fragment>{parse(faq.answer)}</Fragment>
                               </div>
@@ -146,8 +159,6 @@ const FAQ: FC = () => {
         </div>
       </div>
     </motion.div>
-
-
   );
 };
 
