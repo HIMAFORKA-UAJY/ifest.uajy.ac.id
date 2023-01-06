@@ -189,9 +189,9 @@ const WDC: FC = () => {
               dua orang berlomba untuk membuat desain web sebaik mungkin agar
               dapat mempermudah setiap pengguna web atau pencari informasi
               mendapatkan informasi yang jelas dan tepat. Dengan adanya Web
-              Design Competition (WDC) 2022 diharapkan dapat menjadi wadah
-              untuk para mahasiswa/i yang ada di Indonesia dalam menuangkan
-              ide-ide kreatif mereka.
+              Design Competition (WDC) 2022 diharapkan dapat menjadi wadah untuk
+              para mahasiswa/i yang ada di Indonesia dalam menuangkan ide-ide
+              kreatif mereka.
             </div>
             <div className="flex flex-row gap-4 font-louisgeorgecafe">
               <div className="bg-[#6c6486] p-1 rounded-full">
@@ -228,25 +228,23 @@ const WDC: FC = () => {
                       </li>
                       <li>
                         Melakukan pendaftaran online melalui
-                        https://ifest.uajy.ac.id/dash/daftar, pendaftaraan
-                        akan dibuka dari 15 Februari 2022 sampai dengan 15
-                        Maret 2022.
+                        https://ifest.uajy.ac.id/dash/daftar, pendaftaraan akan
+                        dibuka dari 15 Februari 2022 sampai dengan 15 Maret
+                        2022.
                       </li>
                       <li>
                         Melampirkan scan atau foto Kartu Tanda Mahasiswa dan
                         Bukti Pembayaran pada formulir pendaftaran online.
                       </li>
-                      <li>
-                        Peserta lomba adalah satu tim (maksimal 2 orang).
-                      </li>
+                      <li>Peserta lomba adalah satu tim (maksimal 2 orang).</li>
                       <li>Biaya pendaftaran adalah Rp50.000,00 per tim.</li>
                       <li>
                         Tidak diperkenan ada peserta yang terdaftar dalam dua
                         tim atau lebih yang berbeda.
                       </li>
                       <li>
-                        Setiap perguruan tinggi yang berpartisipasi hanya
-                        dapat mengirimkan maksimal 3 tim.
+                        Setiap perguruan tinggi yang berpartisipasi hanya dapat
+                        mengirimkan maksimal 3 tim.
                       </li>
                       <li>
                         Peserta yang telah mendaftar harus mengumpulkan hasil
@@ -282,23 +280,20 @@ const WDC: FC = () => {
                         Teknik pembuatan desain bebas menggunakan software
                         apapun.
                       </li>
-                      <li>
-                        Peserta wajib menyertakan code desain situs web.
-                      </li>
+                      <li>Peserta wajib menyertakan code desain situs web.</li>
                       <li>Hasil karya sesuai dengan tema.</li>
                       <li>
                         Desain situs web dilarang mengandung unsur SARA,
                         kekerasan, pornografi, dan melanggar UU yang berlaku.
                       </li>
                       <li>
-                        Desain situs web yang diperlombakan menjadi hak
-                        panitia.
+                        Desain situs web yang diperlombakan menjadi hak panitia.
                       </li>
                       <li>
                         Panitia WDC 2022 berhak mendiskualifikasi peserta jika
                         diketahui Hak Atas Kekayaan Intelektualnya diragukan,
-                        sedang dalam sengketa, mengambil karya orang lain,
-                        atau mendapat klaim dari pihak lain.
+                        sedang dalam sengketa, mengambil karya orang lain, atau
+                        mendapat klaim dari pihak lain.
                       </li>
                       <li>
                         Keputusan panitia bersifat mutlak dan tidak dapat
@@ -501,7 +496,7 @@ const WDC: FC = () => {
                 <div className="flex lg:hidden flex-col gap-8">
                   <Card
                     horizontal
-                    className="bg-[#311D38] !border-gray-700 text-white hover:scale-110 hover:bg-[#ffba57] hover:text-[#311D38] transition ease-in duration-300"
+                    className="bg-[#311D38] !border-gray-700 text-black hover:scale-110 hover:bg-[#ffba57] hover:text-[#311D38] transition ease-in duration-300 !bg-[#ffe279] "
                   >
                     <div className="flex gap-4">
                       <div>
@@ -524,11 +519,11 @@ const WDC: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d] transition ease-in duration-300"
+                    className="bg-[#241f3d] !border-gray-700 text-black hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d] transition ease-in duration-300 !bg-[#cacaca]"
                   >
                     <div className="flex gap-4">
                       <div>
-                        <div className="font-retroica text-right text-2xl">
+                        <div className="font-retroica text-left text-2xl">
                           Juara II
                         </div>
                         <div className="font-retroica flex gap-3">
@@ -549,7 +544,7 @@ const WDC: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d] transition ease-in duration-300"
+                    className="bg-[#241f3d] !border-gray-700 text-black hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d] transition ease-in duration-300 !bg-[#ffb050]"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -582,7 +577,8 @@ const WDC: FC = () => {
                 <div className="flex flex-col lg:flex-row text-center justify-center items-center lg:justify-start">
                   <img
                     className="lg:w-[30%] w-32"
-                    src="public\images\announce.svg" style={{ width: '10rem', marginRight: '2rem' }}
+                    src="public\images\announce.svg"
+                    style={{ width: "10rem", marginRight: "2rem" }}
                     alt=""
                   />
                   <div className="flex flex-col gap-4  items-center lg:items-start">
@@ -590,8 +586,8 @@ const WDC: FC = () => {
                       Tertarik? Ayo mendaftar!
                     </div>
                     <div className="font-louisgeorgecafe text-white text-center lg:text-left">
-                      Ayo buktikan bakat dan kreativitasmu! Jangan cepat
-                      berpuas diri!
+                      Ayo buktikan bakat dan kreativitasmu! Jangan cepat berpuas
+                      diri!
                     </div>
                     <div className="bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1 rounded-full w-fit">
                       <button className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">

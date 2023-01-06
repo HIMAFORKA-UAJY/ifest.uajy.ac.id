@@ -12,7 +12,7 @@ const Footer: FC<Props> = ({ className }) => {
       <div className={className}>
         <div
           className="flex flex-col lg:flex-row gap-6 lg:gap-12 justify-center border-t-2 pt-8"
-          style={{ borderColor: "#3d2e7c" }}
+          style={{ borderColor: "rgb(0 0 0 / 9%)" }}
         >
           <img className="w-24 lg:h-16" src={logo} alt="ifest-logo" />
           <div className="flex flex-col gap-2 text-left">
@@ -100,7 +100,10 @@ const Footer: FC<Props> = ({ className }) => {
               Email
             </a>
           </div>
-          <div className="border-t-2" style={{ borderColor: "#3d2e7c" }}></div>
+          <div
+            className="border-t-2"
+            style={{ borderColor: "rgb(0 0 0 / 9%)" }}
+          ></div>
           <div className="flex flex-col gap-2 text-center lg:hidden">
             <div className="font-retroica text-sm text-white opacity-80">
               2023 Design by SI x Muldok IFest#11
