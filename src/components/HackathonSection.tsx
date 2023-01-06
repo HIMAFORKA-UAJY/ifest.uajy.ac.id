@@ -95,7 +95,7 @@ const HackathonSection: FC = () => {
             </div>
           </div>
         </div>
-        <div className="pt-2"></div>
+        <div className="pt-2" />
         <div className="p-4 font-retroica text-white">
           <p className="text-justify">
             <strong>Competitive Programming</strong> (CP) merupakan suatu perlombaan yang terfokus

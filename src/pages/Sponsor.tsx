@@ -1,8 +1,6 @@
-import { Carousel } from "flowbite-react";
-import { Card } from "flowbite-react";
+import { Card, Carousel } from "flowbite-react";
 import { FC } from "react";
-import { FaWhatsapp } from "react-icons/all";
-import { FaMoneyBillWave } from "react-icons/all";
+import { FaMoneyBillWave, FaWhatsapp } from "react-icons/all";
 import "react-vertical-timeline-component/style.min.css";
 import { Autoplay, EffectCoverflow } from "swiper";
 import "swiper/css";
@@ -25,14 +23,14 @@ const Sponsor: FC = () => {
           <div className="text-center font-retroica text-sm text-white">
             Tertarik dengan acara kami? Dukung kami dengan menjadi sponsor.
           </div>
-          <div className="p-2"></div>
+          <div className="p-2" />
           <div className="w-full px-4 xl:hidden">
             <Swiper
               autoplay={{ delay: 2000 }}
-              effect={"coverflow"}
+              effect="coverflow"
               grabCursor={false}
-              centeredSlides={true}
-              slidesPerView={"auto"}
+              centeredSlides
+              slidesPerView="auto"
               coverflowEffect={{
                 rotate: 50,
                 stretch: 0,

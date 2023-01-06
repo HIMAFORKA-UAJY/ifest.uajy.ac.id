@@ -7,7 +7,6 @@ import Layout from "../components/Layout";
 
 const DonorDarah: FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
-
   return (
     <Layout>
       <div className="absolute top-0 left-0 -z-10 h-screen w-screen">
@@ -264,7 +263,7 @@ const DonorDarah: FC = () => {
             </div>
           </div>
 
-          <Footer className={"bg-none p-4"} />
+          <Footer className="bg-none p-4" />
         </div>
       </div>
     </Layout>

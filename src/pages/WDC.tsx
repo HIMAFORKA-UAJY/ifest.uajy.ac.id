@@ -583,7 +583,7 @@ const WDC: FC = () => {
                       <tbody>
                         <tr>
                           <td>
-                            <a href="" target="_blank">
+                            <a href="#f" target="_blank">
                               <div style={{ marginTop: ".5rem", marginBottom: ".5rem" }}>
                                 0812 3470 303
                               </div>
@@ -596,7 +596,7 @@ const WDC: FC = () => {
                         </tr>
                         <tr>
                           <td>
-                            <a href="" target="_blank">
+                            <a href="#f" target="_blank">
                               <div style={{ marginTop: ".5rem", marginBottom: ".5rem" }}>
                                 0812 3470 303
                               </div>
@@ -614,7 +614,7 @@ const WDC: FC = () => {
               </div>
             </div>
 
-            <Footer className={"bg-none p-4"} />
+            <Footer className="bg-none p-4" />
           </div>
         </div>
       </div>

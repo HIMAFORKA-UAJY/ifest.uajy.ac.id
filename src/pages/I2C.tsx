@@ -1,8 +1,7 @@
-import { Box, IconButton, Modal, Typography } from "@mui/material";
+import { Box, Modal, Typography } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FC, useRef, useState } from "react";
-import React from "react";
 import { Chrono } from "react-chrono";
 import {
   FaBook,
@@ -20,7 +19,7 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 
 const style = {
-  position: "absolute" as "absolute",
+  position: "absolute" as const,
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
@@ -319,7 +318,8 @@ const I2C: FC = () => {
                     <iframe
                       src="public\rulebook\rulebook-i2c.pdf"
                       style={{ width: "100%", height: "95%" }}
-                    ></iframe>
+                      title="I2C Rulebook"
+                    />
                   </Box>
                 </Modal>
               </div>
@@ -820,7 +820,7 @@ const I2C: FC = () => {
               </div>
             </div>
 
-            <Footer className={"bg-none p-4"} />
+            <Footer className="bg-none p-4" />
           </div>
         </div>
       </div>
