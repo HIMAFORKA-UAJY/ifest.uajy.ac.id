@@ -92,7 +92,7 @@ const Footer: FC<Props> = ({ className }) => {
             Email
           </a>
         </div>
-        <div className="border-t-2" style={{ borderColor: "rgb(0 0 0 / 9%)" }}></div>
+        <div className="border-t-2" style={{ borderColor: "rgb(0 0 0 / 9%)" }} />
         <div className="flex flex-col gap-2 text-center lg:hidden">
           <div className="font-retroica text-sm text-white opacity-80">
             2023 Design by SI x Muldok IFest#11

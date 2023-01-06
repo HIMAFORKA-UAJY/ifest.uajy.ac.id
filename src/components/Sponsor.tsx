@@ -45,11 +45,11 @@ const Sponsor: FC = () => {
         </div>
         <div className="hidden lg:flex">
           <Swiper
-            effect={"coverflow"}
+            effect="coverflow"
             navigation
             grabCursor={false}
-            centeredSlides={true}
-            slidesPerView={"auto"}
+            centeredSlides
+            slidesPerView="auto"
             coverflowEffect={{
               rotate: 0,
               stretch: -50,

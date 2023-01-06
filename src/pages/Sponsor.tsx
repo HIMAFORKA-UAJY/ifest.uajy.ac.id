@@ -1,8 +1,6 @@
-import { Carousel } from "flowbite-react";
-import { Card } from "flowbite-react";
+import { Card, Carousel } from "flowbite-react";
 import { FC } from "react";
-import { FaWhatsapp } from "react-icons/all";
-import { FaCertificate, FaMoneyBillWave } from "react-icons/all";
+import { FaMoneyBillWave, FaWhatsapp } from "react-icons/all";
 import "react-vertical-timeline-component/style.min.css";
 import { Autoplay, EffectCoverflow } from "swiper";
 import "swiper/css";
@@ -25,14 +23,14 @@ const Sponsor: FC = () => {
           <div className="text-center font-retroica text-sm text-white">
             Tertarik dengan acara kami? Dukung kami dengan menjadi sponsor.
           </div>
-          <div className="p-2"></div>
+          <div className="p-2" />
           <div className="w-full px-4 xl:hidden">
             <Swiper
               autoplay={{ delay: 2000 }}
-              effect={"coverflow"}
+              effect="coverflow"
               grabCursor={false}
-              centeredSlides={true}
-              slidesPerView={"auto"}
+              centeredSlides
+              slidesPerView="auto"
               coverflowEffect={{
                 rotate: 50,
                 stretch: 0,
@@ -50,7 +48,7 @@ const Sponsor: FC = () => {
                 <div className="flex h-full flex-col items-center justify-center gap-2 text-center ">
                   <img
                     className="w-32"
-                    src="public\images\starslash.svg"
+                    src="images/starslash.svg"
                     style={{ width: "3rem" }}
                     alt="/"
                   />
@@ -95,7 +93,7 @@ const Sponsor: FC = () => {
                 <div className="flex h-full flex-col items-center justify-center gap-2 text-center ">
                   <img
                     className="w-32"
-                    src="public\images\starslash.svg"
+                    src="images/starslash.svg"
                     style={{ width: "3rem" }}
                     alt="/"
                   />
@@ -122,7 +120,7 @@ const Sponsor: FC = () => {
                 <div className="flex h-full flex-col items-center justify-center gap-2 text-center ">
                   <img
                     className="w-32"
-                    src="public\images\starslash.svg"
+                    src="images/starslash.svg"
                     style={{ width: "3rem" }}
                     alt="/"
                   />
@@ -151,7 +149,7 @@ const Sponsor: FC = () => {
                 <div className="flex h-full flex-col items-center justify-center gap-2 text-center ">
                   <img
                     className="w-32"
-                    src="public\images\starslash.svg"
+                    src="images/starslash.svg"
                     style={{ width: "3rem" }}
                     alt="/"
                   />
@@ -184,7 +182,7 @@ const Sponsor: FC = () => {
                 <div>
                   <img
                     className="m-auto block w-52 drop-shadow-lg"
-                    src="public\images\starslash.svg"
+                    src="images/starslash.svg"
                     style={{ width: "4rem" }}
                     alt="/"
                   />
@@ -235,7 +233,7 @@ const Sponsor: FC = () => {
                 <div>
                   <img
                     className="m-auto block w-52 drop-shadow-lg"
-                    src="public\images\starslash.svg"
+                    src="images/starslash.svg"
                     style={{ width: "4rem" }}
                     alt="/"
                   />
@@ -268,7 +266,7 @@ const Sponsor: FC = () => {
                 <div>
                   <img
                     className="m-auto block w-52 drop-shadow-lg"
-                    src="public\images\starslash.svg"
+                    src="images/starslash.svg"
                     style={{ width: "4rem" }}
                     alt="/"
                   />
@@ -303,7 +301,7 @@ const Sponsor: FC = () => {
                 <div>
                   <img
                     className="m-auto block w-52 drop-shadow-lg"
-                    src="public\images\starslash.svg"
+                    src="images/starslash.svg"
                     style={{ width: "4rem" }}
                     alt="/"
                   />

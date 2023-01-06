@@ -42,11 +42,11 @@ const Publication: FC = () => {
         <div className="font-retroica text-4xl text-white">Publikasi</div>
         <div className="w-full lg:px-12">
           <Swiper
-            effect={"coverflow"}
+            effect="coverflow"
             navigation
             grabCursor={false}
-            centeredSlides={true}
-            slidesPerView={"auto"}
+            centeredSlides
+            slidesPerView="auto"
             coverflowEffect={{
               rotate: 50,
               stretch: 0,
@@ -54,13 +54,13 @@ const Publication: FC = () => {
               modifier: 1,
               slideShadows: true,
             }}
-            pagination={true}
+            pagination
             modules={[EffectCoverflow, Pagination, Navigation]}
             className="mySwiper"
           >
-            {publications.map((publication, index) => {
+            {publications.map((publication) => {
               return (
-                <SwiperSlide className="h-[32rem] w-[20rem]" key={index}>
+                <SwiperSlide className="h-[32rem] w-[20rem]" key={publication.title}>
                   <div className="flex h-full flex-col items-center justify-center gap-2 bg-[#352A7C] text-center">
                     <img className="w-64" src={publication.img} alt="/" />
                     <div className="font-retroica text-[#ffffff]">{publication.author}</div>
