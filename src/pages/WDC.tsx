@@ -616,7 +616,7 @@ const WDC: FC = () => {
                     <table className="table-cell border-separate border-[6px] border-[#9DCE6D] rounded-xl p-2">
                       <thead>
                         <tr>
-                          <th className="border-b-[6px] border-[#9DCE6D]">
+                          <th >
                             WDC
                           </th>
                         </tr>
@@ -624,22 +624,41 @@ const WDC: FC = () => {
                       <tbody>
                         <tr>
                           <td>
-                            <div>0812 3470 303</div>
+                            <a href="" target='_blank'>
+
+                            
+                            <div style={{marginTop: '.5rem', marginBottom: '.5rem'}}>
+                              
+                                0812 3470 303
+                              
+                              
+                              </div>
                             <button className="bg-gradient-to-br from-[#9dcd6c] bg-[#6ca0af] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
                               <FaWhatsapp />
                               Andreas
                             </button>
+                            </a>
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <div>0821 7237 5366</div>
+                            <a href="" target='_blank'>
+
+                            
+                            <div style={{marginTop: '.5rem', marginBottom: '.5rem'}}>
+                              
+                                0812 3470 303
+                              
+                              
+                              </div>
                             <button className="bg-gradient-to-br from-[#9dcd6c] bg-[#6ca0af] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
                               <FaWhatsapp />
-                              Wahyu
+                              Andreas
                             </button>
+                            </a>
                           </td>
                         </tr>
+                       
                       </tbody>
                     </table>
                   </div>
