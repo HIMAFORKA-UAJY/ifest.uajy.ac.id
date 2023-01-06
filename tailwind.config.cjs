@@ -3,7 +3,7 @@ module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
@@ -12,7 +12,7 @@ module.exports = {
         louisgeorgecafe: ["Louis George Cafe", "sans-serif"],
         retroica: ["Retroica", "sans-serif"],
         retron2000: ["Retron2000", "sans-serif"],
-      }
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

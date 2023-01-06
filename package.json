@@ -1,22 +1,22 @@
 {
   "name": "ifest.uajy.ac.id",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
+    "dev": "vite",
     "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@headlessui/react": "^1.7.5",
+    "@headlessui/react": "^1.7.7",
     "@mui/material": "^5.11.3",
-    "flowbite": "^1.5.5",
+    "flowbite": "^1.6.0",
     "flowbite-react": "^0.3.7",
-    "framer-motion": "^7.6.18",
-    "html-react-parser": "^3.0.6",
+    "framer-motion": "^8.2.4",
+    "html-react-parser": "^3.0.7",
     "react": "^18.2.0",
     "react-chrono": "^1.20.0",
     "react-dom": "^18.2.0",
@@ -29,14 +29,18 @@
     "swiper": "^8.4.5"
   },
   "devDependencies": {
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
+    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
     "@types/react-vertical-timeline-component": "^3.3.3",
-    "@vitejs/plugin-react": "^2.2.0",
+    "@vitejs/plugin-react": "^3.0.1",
     "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.19",
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "prettier-plugin-packagejson": "^2.3.0",
+    "prettier-plugin-tailwindcss": "^0.2.1",
     "tailwindcss": "^3.2.4",
-    "typescript": "^4.6.4",
-    "vite": "^3.2.3"
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4"
   }
 }
