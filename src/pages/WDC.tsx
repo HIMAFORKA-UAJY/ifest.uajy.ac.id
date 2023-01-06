@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import 'react-vertical-timeline-component/style.min.css';
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
-
+import './Wdc.css'
 const WDC: FC = () => {
     const contentRef = useRef<HTMLDivElement>(null);
     const tahapEliminasi = [
@@ -443,7 +443,7 @@ const WDC: FC = () => {
                 </div>
                 <div>
                   <div className="hidden lg:flex flex-row gap-8 pt-10">
-                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#ffe279] hover:text-[#311D38] transition ease-in duration-300 w-[30%]">
+                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#ffe279] hover:text-[#311D38] transition ease-in duration-300 w-[30%] bg-custom-ungu">
                       <div className="">
                         <img
                           className="w-52 block m-auto"
@@ -461,7 +461,7 @@ const WDC: FC = () => {
                         <FaCertificate /> Sertifikat Nasional
                       </div>
                     </Card>
-                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#cacaca] hover:text-[#311D38] transition ease-in duration-300 w-[30%]">
+                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#cacaca] hover:text-[#311D38] transition ease-in duration-300 w-[30%] bg-custom-ungu">
                       <div className="">
                         <img
                           className="w-52 block m-auto"
@@ -479,7 +479,7 @@ const WDC: FC = () => {
                         <FaCertificate /> Sertifikat Nasional
                       </div>
                     </Card>
-                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#ffb050] hover:text-[#311D38] transition ease-in duration-300 w-[30%]">
+                    <Card className="bg-[rgb(60,42,78)] !border-gray-700 text-white hover:scale-110 hover:bg-[#ffb050] hover:text-[#311D38] transition ease-in duration-300 w-[30%] bg-custom-ungu">
                       <div className="">
                         <img
                           className="w-52 block m-auto"
@@ -582,7 +582,7 @@ const WDC: FC = () => {
                   <div className="flex flex-col lg:flex-row text-center justify-center items-center lg:justify-start">
                     <img
                       className="lg:w-[30%] w-32"
-                      src="https://ifest.uajy.ac.id/assets/images/ill4-icon.png"
+                      src="public\images\announce.svg" style={{width: '10rem', marginRight: '2rem'}}
                       alt=""
                     />
                     <div className="flex flex-col gap-4  items-center lg:items-start">

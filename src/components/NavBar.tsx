@@ -29,7 +29,7 @@ const NavBar: FC = () => {
                 break;
 
             case "/sponsor":
-                setColor({ bg1: "#0A1828", bg2: "#926DAE", fg: "#FFFFFF" });
+                setColor({ bg1: "#182E47", bg2: "#182E47", fg: "#479EC6" });
                 break;
 
             default:
