@@ -8,7 +8,6 @@ import {
 } from "react-headless-accordion";
 
 import { motion } from "framer-motion";
-import './faq.css'
 
 const FAQ: FC = () => {
   const faqs = [
@@ -106,31 +105,28 @@ const FAQ: FC = () => {
             <div className="w-full p-4 bg-[#2b2265]">
               <div className="shadow-lg p-3 bg-[#362c75]">
                 <Accordion
-                  className="rounded-md overflow-hidden border new-bord"
-                  
+                  className="rounded-md overflow-hidden border-[#3d2e7c]"
+
                   alwaysOpen={false}
                 >
                   {faqs.map((faq, index) => {
                     return (
                       <AccordionItem key={index}>
-                        {({ open }: { open: boolean }) => (
+                        {({ open }: { open: boolean; }) => (
                           <>
                             <AccordionHeader
-                              className={`transition-[background] flex items-center justify-between w-full px-4 py-3  ${
-                                open ? "" : ""
-                              } ${open ? "bg-gray-400/30" : "bg-[#2b2265]"}`}
+                              className={`transition-[background] flex items-center justify-between w-full px-4 py-3  ${open ? "" : ""
+                                } ${open ? "bg-gray-400/30" : "bg-[#2b2265]"}`}
                             >
                               <span
-                                className={`font-retroica tracking-[0.1em] text-sm font-semibold text-left ${
-                                  open ? "text-white" : "text-gray-400"
-                                }`}
+                                className={`font-retroica tracking-[0.1em] text-sm font-semibold text-left ${open ? "text-white" : "text-gray-400"
+                                  }`}
                               >
                                 {faq.question}
                               </span>
                               <svg
-                                className={`w-6 h-6 text-gray-500 transition duration-300 ${
-                                  open ? "rotate-90" : ""
-                                }`}
+                                className={`w-6 h-6 text-gray-500 transition duration-300 ${open ? "rotate-90" : ""
+                                  }`}
                                 fill="currentColor"
                                 viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg"
