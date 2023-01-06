@@ -6,8 +6,8 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 
 const DonorDarah: FC = () => {
-  const contentRef = useRef<HTMLDivElement>(null);
-
+  const ref1 = useRef<HTMLDivElement>(null);
+  const ref2 = useRef<HTMLDivElement>(null);
   return (
     <Layout>
       <div className="absolute top-0 left-0 -z-10 h-screen w-screen">
@@ -24,18 +24,32 @@ const DonorDarah: FC = () => {
               Donor darah adalah suatu aksi kebaikan yang dilakukan dengan cara menyumbangkan
               sebagian darah kepada orang lain yang membutuhkan.
             </div>
-            <div className="flex gap-4 p-10 font-retroica text-sm text-white">
-              <div className="rounded-full bg-[#CE5866] p-1">
-                <div className="flex items-center gap-1 rounded-full bg-[#CE5866] px-5 py-3">
+            <div className="flex gap-8 p-10 font-retroica text-sm text-white">
+              <div className="rounded-full bg-[#CE5866] p-1 transition-transform hover:scale-110">
+                <motion.button
+                  onClick={() => ref1.current?.scrollIntoView({ behavior: "smooth" })}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 0.75 }}
+                  transition={{ delay: 0.0, duration: 0.25 }}
+                  className="flex items-center gap-1 rounded-full bg-[#CE5866] px-5 py-3"
+                >
                   Cara Daftar
-                </div>
+                </motion.button>
               </div>
-              <div className="flex items-center gap-1 rounded-full border-2 border-[#CE5866] px-5">
-                <div className="text-[#fff]">Ketahui lebih lanjut</div>
+              <div className="flex items-center gap-1 rounded-full border-2 border-[#CE5866] px-5 transition-transform hover:scale-110">
+                <motion.button
+                  onClick={() => ref2.current?.scrollIntoView({ behavior: "smooth" })}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 0.75 }}
+                  transition={{ delay: 0.0, duration: 0.25 }}
+                  className="text-[#fff]"
+                >
+                  Ketahui lebih lanjut
+                </motion.button>
               </div>
             </div>
           </div>
-          <div className="flex animate-pulse items-center justify-center text-center">
+          {/* <div className="flex animate-pulse items-center justify-center text-center">
             <motion.button
               onClick={() => contentRef.current?.scrollIntoView({ behavior: "smooth" })}
               initial={{ opacity: 0 }}
@@ -59,10 +73,10 @@ const DonorDarah: FC = () => {
                 />
               </svg>
             </motion.button>
-          </div>
+          </div> */}
         </div>
 
-        <div ref={contentRef} className="w-screen bg-gradient-to-t from-[#000] to-[#4A2B52] py-2">
+        <div className="w-screen bg-gradient-to-t from-[#000] to-[#4A2B52] py-2">
           <div className="flex flex-col items-center justify-center text-center">
             <h1 className="font-retroica text-4xl font-bold text-[#fff]">Sponsor Kami</h1>
           </div>
@@ -78,7 +92,7 @@ const DonorDarah: FC = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center pt-20 text-center">
+          <div ref={ref2} className="flex flex-col items-center justify-center pt-20 text-center">
             <h1 className="font-retroica text-4xl font-bold text-[#fff]">
               Apa sih manfaat donor darah?
             </h1>
@@ -165,7 +179,10 @@ const DonorDarah: FC = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center bg-gradient-to-r from-[#9B2A5A] to-[#B3362E] py-10 text-center">
+          <div
+            ref={ref1}
+            className="flex flex-col items-center justify-center bg-gradient-to-r from-[#9B2A5A] to-[#B3362E] py-10 text-center"
+          >
             <h1 className="font-retroica text-4xl font-bold text-[#fff]">
               Bagaimana sih prosesnya?
             </h1>
@@ -264,7 +281,7 @@ const DonorDarah: FC = () => {
             </div>
           </div>
 
-          <Footer className={"bg-none p-4"} />
+          <Footer className="bg-none p-4" />
         </div>
       </div>
     </Layout>

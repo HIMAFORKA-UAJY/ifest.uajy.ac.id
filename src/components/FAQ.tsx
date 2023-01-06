@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import parse from "html-react-parser";
-import { FC, Fragment } from "react";
+import { FC } from "react";
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
 
 const FAQ: FC = () => {
@@ -93,9 +93,9 @@ const FAQ: FC = () => {
                   className="overflow-hidden rounded-md border-[#3d2e7c]"
                   alwaysOpen={false}
                 >
-                  {faqs.map((faq, index) => {
+                  {faqs.map((faq) => {
                     return (
-                      <AccordionItem key={index}>
+                      <AccordionItem key={faq.answer}>
                         {({ open }: { open: boolean }) => (
                           <>
                             <AccordionHeader
@@ -122,12 +122,12 @@ const FAQ: FC = () => {
                                   fillRule="evenodd"
                                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                   clipRule="evenodd"
-                                ></path>
+                                />
                               </svg>
                             </AccordionHeader>
                             <AccordionBody className={`open ? "" : ""`}>
                               <div className="p-4 text-left font-retroica text-sm text-gray-200">
-                                <Fragment>{parse(faq.answer)}</Fragment>
+                                {parse(faq.answer)}
                               </div>
                             </AccordionBody>
                           </>

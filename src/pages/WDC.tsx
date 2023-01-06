@@ -1,12 +1,14 @@
+import { Box, Modal, Typography } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FC, useRef } from "react";
+import { FC, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
 import {
   FaBook,
   FaCertificate,
   FaMale,
   FaMoneyBillWave,
+  FaRegWindowClose,
   FaWallet,
   FaWhatsapp,
 } from "react-icons/all";
@@ -16,8 +18,38 @@ import "react-vertical-timeline-component/style.min.css";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 
+const style = {
+  position: "absolute" as const,
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 900,
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  p: 4,
+  pt: 2,
+};
+
 const WDC: FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
+
+  const [openPoster, setOpenPoster] = useState(false);
+  const [openPDF, setOpenPDF] = useState(false);
+
+  const openHandler = () => {
+    setOpenPoster(true);
+  };
+  const openPDFHandler = () => {
+    setOpenPDF(true);
+  };
+
+  const closeHandler = () => {
+    setOpenPoster(false);
+  };
+  const closePDFHandler = () => {
+    setOpenPDF(false);
+  };
+
   const tahapEliminasi = [
     {
       title: "30 Januari - 16 Maret 2023",
@@ -196,9 +228,36 @@ const WDC: FC = () => {
             </div>
             <div className="flex flex-row gap-4 font-louisgeorgecafe">
               <div className="rounded-full bg-[#6c6486] p-1">
-                <button className="flex items-center gap-1 rounded-full bg-[#2A2F59] p-2 transition hover:bg-transparent">
+                <button
+                  onClick={openHandler}
+                  className="flex items-center gap-1 rounded-full bg-[#2C2B53] p-2 transition hover:bg-transparent"
+                >
                   <div className="text-white opacity-70">Lihat Poster</div>
                 </button>
+                <Modal
+                  open={openPoster}
+                  onClose={closeHandler}
+                  aria-labelledby="modal-modal-title"
+                  aria-describedby="modal-modal-description"
+                >
+                  <Box sx={style} className="h-screen overflow-auto">
+                    <Typography
+                      className="text-right"
+                      id="modal-modal-title"
+                      variant="h6"
+                      component="h2"
+                    >
+                      <button onClick={closeHandler}>
+                        {" "}
+                        <FaRegWindowClose />{" "}
+                      </button>
+                    </Typography>
+                    <img
+                      src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png"
+                      alt=""
+                    />
+                  </Box>
+                </Modal>
               </div>
               <div className="rounded-full bg-gradient-to-br from-[#6EA5B1] to-[#9B68CE] p-1">
                 <button className="flex items-center gap-1 rounded-full bg-[#2A2F59] p-2 transition hover:bg-transparent">
@@ -208,9 +267,37 @@ const WDC: FC = () => {
                 </button>
               </div>
               <div className="rounded-full bg-[#6c6486] p-1">
-                <button className="flex items-center gap-1 rounded-full bg-[#2A2F59] p-2 transition hover:bg-transparent">
+                <button
+                  onClick={openPDFHandler}
+                  className="flex items-center gap-1 rounded-full bg-[#2C2B53] p-2 transition hover:bg-transparent"
+                >
                   <div className="text-white opacity-70">Lihat Aturan</div>
                 </button>
+                <Modal
+                  open={openPDF}
+                  onClose={closePDFHandler}
+                  aria-labelledby="modal-modal-title"
+                  aria-describedby="modal-modal-description"
+                >
+                  <Box sx={style} className="h-screen overflow-auto">
+                    <Typography
+                      className="text-right"
+                      id="modal-modal-title"
+                      variant="h6"
+                      component="h2"
+                    >
+                      <button onClick={closePDFHandler}>
+                        {" "}
+                        <FaRegWindowClose />{" "}
+                      </button>
+                    </Typography>
+                    <iframe
+                      src="rulebook/rulebook-i2c.pdf"
+                      style={{ width: "100%", height: "95%" }}
+                      title="I2C Rulebook"
+                    />
+                  </Box>
+                </Modal>
               </div>
             </div>
 
@@ -466,7 +553,7 @@ const WDC: FC = () => {
                 <div className="flex flex-col gap-8 lg:hidden">
                   <Card
                     horizontal
-                    className="!border-gray-700 bg-[#311D38] !bg-[#ffe279] text-black transition duration-300 ease-in hover:scale-110 hover:bg-[#ffba57] hover:text-[#311D38] "
+                    className="!border-gray-700 !bg-[#ffe279] text-black transition duration-300 ease-in hover:scale-110 hover:bg-[#ffba57] hover:text-[#311D38] "
                   >
                     <div className="flex gap-4">
                       <div>
@@ -489,7 +576,7 @@ const WDC: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 bg-[#241f3d] !bg-[#cacaca] text-black transition duration-300 ease-in hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#cacaca] text-black transition duration-300 ease-in hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -512,7 +599,7 @@ const WDC: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 bg-[#241f3d] !bg-[#ffb050] text-black transition duration-300 ease-in hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#ffb050] text-black transition duration-300 ease-in hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -543,7 +630,7 @@ const WDC: FC = () => {
                 <div className="flex flex-col items-center justify-center text-center lg:flex-row lg:justify-start">
                   <img
                     className="w-32 lg:w-[30%]"
-                    src="public\images\announce.svg"
+                    src="images/announce.svg"
                     style={{ width: "10rem", marginRight: "2rem" }}
                     alt=""
                   />
@@ -583,7 +670,7 @@ const WDC: FC = () => {
                       <tbody>
                         <tr>
                           <td>
-                            <a href="" target="_blank">
+                            <a href="#f" target="_blank">
                               <div style={{ marginTop: ".5rem", marginBottom: ".5rem" }}>
                                 0812 3470 303
                               </div>
@@ -596,7 +683,7 @@ const WDC: FC = () => {
                         </tr>
                         <tr>
                           <td>
-                            <a href="" target="_blank">
+                            <a href="#f" target="_blank">
                               <div style={{ marginTop: ".5rem", marginBottom: ".5rem" }}>
                                 0812 3470 303
                               </div>
@@ -614,7 +701,7 @@ const WDC: FC = () => {
               </div>
             </div>
 
-            <Footer className={"bg-none p-4"} />
+            <Footer className="bg-none p-4" />
           </div>
         </div>
       </div>

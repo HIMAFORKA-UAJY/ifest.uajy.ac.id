@@ -103,7 +103,7 @@ const I2CSection: FC = () => {
               </div>
             </div>
           </div>
-          <div className="pt-2"></div>
+          <div className="pt-2" />
           <div className="p-4 font-retroica text-white">
             <p className="text-justify">
               <strong>Innovative Informatics Contest</strong> (I2C) 2022 adalah sebuah kompetisi ide

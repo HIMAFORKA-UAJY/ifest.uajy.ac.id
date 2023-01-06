@@ -1,8 +1,7 @@
-import { Box, IconButton, Modal, Typography } from "@mui/material";
+import { Box, Modal, Typography } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FC, useRef, useState } from "react";
-import React from "react";
 import { Chrono } from "react-chrono";
 import {
   FaBook,
@@ -20,7 +19,7 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 
 const style = {
-  position: "absolute" as "absolute",
+  position: "absolute" as const,
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
@@ -34,13 +33,8 @@ const style = {
 const I2C: FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
-  const [openPDF, setOpenPDF] = useState(false);
-
   const onClick = () => setOpen(true);
-  const onClickPDF = () => setOpenPDF(true);
-
   const handleClose = () => setOpen(false);
-  const handleClosePDF = () => setOpenPDF(false);
 
   const dataSeleksi = [
     {
@@ -175,21 +169,21 @@ const I2C: FC = () => {
                 Innovative Informatics Contest
               </div>
             </div>
-            <div className="flex gap-4 font-retroica text-sm text-white">
-              <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
+            <div className="flex gap-4 font-retroica text-sm text-white sm:text-xs">
+              <div className="h-fit rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
                 <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]">
                   <FaWallet />
                   Gratis
                 </div>
               </div>
-              <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
+              <div className="h-fit rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
                 <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]">
                   <FaBook />
                   SMA/Sederajat
                 </div>
               </div>
-              <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]">
+              <div className="h-fit rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
+                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center">
                   <FaMale />
                   Max. 3 orang
                 </div>
@@ -293,14 +287,14 @@ const I2C: FC = () => {
                                     </Modal>
                                 </React.Fragment> */}
                 <button
-                  onClick={onClickPDF}
+                  onClick={onClick}
                   className="flex items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent"
                 >
                   <div className="text-white opacity-70">Lihat Aturan</div>
                 </button>
                 <Modal
-                  open={openPDF}
-                  onClose={handleClosePDF}
+                  open={open}
+                  onClose={handleClose}
                   aria-labelledby="modal-modal-title"
                   aria-describedby="modal-modal-description"
                 >
@@ -311,15 +305,15 @@ const I2C: FC = () => {
                       variant="h6"
                       component="h2"
                     >
-                      <button onClick={handleClosePDF}>
+                      <button onClick={handleClose}>
                         {" "}
                         <FaRegWindowClose />{" "}
                       </button>
                     </Typography>
-                    <iframe
-                      src="public\rulebook\rulebook-i2c.pdf"
-                      style={{ width: "100%", height: "95%" }}
-                    ></iframe>
+                    <img
+                      src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png"
+                      alt=""
+                    />
                   </Box>
                 </Modal>
               </div>
@@ -586,7 +580,7 @@ const I2C: FC = () => {
                 <div className="my-10 hidden lg:flex">
                   <Card
                     horizontal
-                    className="m-auto w-[30%] !border-gray-700 bg-[#241f3d] pt-0 text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#ffba57] hover:text-[#241f3d]"
+                    className="m-auto w-[30%] !border-gray-700 !bg-[#241f3d] pt-0 text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ffba57] hover:text-[#241f3d]"
                   >
                     <div>
                       <img
@@ -606,7 +600,7 @@ const I2C: FC = () => {
                 </div>
 
                 <div className="hidden flex-row gap-8 lg:flex">
-                  <Card className="w-[30%] !border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d]">
+                  <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#9e9e9e] hover:text-[#241f3d]">
                     <div className="">
                       <img
                         className="m-auto block w-52"
@@ -622,7 +616,7 @@ const I2C: FC = () => {
                       <FaCertificate /> Sertifikat Nasional
                     </div>
                   </Card>
-                  <Card className="w-[30%] !border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#ce7430] hover:text-[#241f3d]">
+                  <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ce7430] hover:text-[#241f3d]">
                     <div className="">
                       <img
                         className="m-auto block w-52"
@@ -638,7 +632,7 @@ const I2C: FC = () => {
                       <FaCertificate /> Sertifikat Nasional
                     </div>
                   </Card>
-                  <Card className="w-[30%] !border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d]">
+                  <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#00B8B0] hover:text-[#241f3d]">
                     <div className="">
                       <img
                         className="m-auto block w-52"
@@ -820,7 +814,7 @@ const I2C: FC = () => {
               </div>
             </div>
 
-            <Footer className={"bg-none p-4"} />
+            <Footer className="bg-none p-4" />
           </div>
         </div>
       </div>
