@@ -21,3 +21,28 @@
     font-family: "Louis George Cafe";
     src: url("/fonts/Louis George Cafe.ttf") format("truetype");
 }
+
+body{
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(44,35,102);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(76, 64, 157);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(90, 77, 179);
+}
+
