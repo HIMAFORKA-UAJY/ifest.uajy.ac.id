@@ -25,7 +25,7 @@ const NavBar: FC = () => {
                 break;
 
             case "/wdc":
-                setColor({ bg1: "#311D38", bg2: "#9DCE6D", fg: "#FFFFFF" });
+                setColor({ bg1: "#311D38", bg2: "#4E4074", fg: "#E7A3FF" });
                 break;
 
             case "/sponsor":
