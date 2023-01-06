@@ -29,7 +29,7 @@ const Sponsor: FC = () => {
               Tertarik dengan acara kami? Dukung kami dengan menjadi sponsor.
             </div>
             <div className="p-2"></div>
-            <div className="lg:hidden w-full px-4">
+            <div className="xl:hidden w-full px-4">
               <Swiper
                 autoplay={{ delay: 2000 }}
                 effect={"coverflow"}
@@ -41,16 +41,20 @@ const Sponsor: FC = () => {
                   stretch: 0,
                   depth: 100,
                   modifier: 1,
-                  slideShadows: true,
+                  slideShadows: false,
                 }}
                 modules={[Autoplay, EffectCoverflow]}
                 className="mySwiper"
               >
-                <SwiperSlide className="w-[20rem] h-[32rem]">
+                <SwiperSlide
+                  className="w-[20rem] h-[32rem]"
+                  style={{ border: "3px solid #5AA7C0", padding: "1rem" }}
+                >
                   <div className="text-center flex gap-2 flex-col h-full items-center justify-center ">
                     <img
                       className="w-32"
-                      src="https://ifest.uajy.ac.id/assets/images/medal-3.png"
+                      src="public\images\starslash.svg"
+                      style={{ width: "3rem" }}
                       alt="/"
                     />
                     <div className="font-retroica text-[#ffffff62] text-center">
@@ -127,11 +131,15 @@ const Sponsor: FC = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="w-[20rem] h-[32rem]">
+                <SwiperSlide
+                  className="w-[20rem] h-[32rem]"
+                  style={{ border: "3px solid #5AA7C0", padding: "1rem" }}
+                >
                   <div className="text-center flex gap-2 flex-col h-full items-center justify-center ">
                     <img
                       className="w-32"
-                      src="https://ifest.uajy.ac.id/assets/images/medal-2.png"
+                      src="public\images\starslash.svg"
+                      style={{ width: "3rem" }}
                       alt="/"
                     />
                     <div className="font-retroica text-[#ff69b4] text-center">
@@ -154,11 +162,48 @@ const Sponsor: FC = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="w-[20rem] h-[32rem]">
+                <SwiperSlide
+                  className="w-[20rem] h-[32rem]"
+                  style={{ border: "3px solid #5AA7C0", padding: "1rem" }}
+                >
                   <div className="text-center flex gap-2 flex-col h-full items-center justify-center ">
                     <img
                       className="w-32"
-                      src="https://ifest.uajy.ac.id/assets/images/medal-1.png"
+                      src="public\images\starslash.svg"
+                      style={{ width: "3rem" }}
+                      alt="/"
+                    />
+                    <div className="font-retroica text-[#ff69b4] text-center">
+                      Platinum
+                    </div>
+                    <div className="font-retroica text-[#ffffff62]">
+                      Rp. 4.000.000
+                    </div>
+                    <div className="font-retroica text-[#c5c5c5]">Benefits</div>
+                    <div className="font-retroica text-[#c5c5c5] overflow-x-auto text-left">
+                      <ul className="list-inside list-disc">
+                        <li>Semua benefit dari Gold Sponsorship.</li>
+                        <li>Iklan adlibs oleh MC.</li>
+                        <li>Paid promote oleh akun panitia.</li>
+                        <li>Slot iklan khusus di website.</li>
+                      </ul>
+                    </div>
+                    <div className="bg-gradient-to-b from-[#5AA7C0] via-[#926DAE] to-[#C76F89] p-1 rounded-md">
+                      <button className="bg-[#0A1828] px-4 py-1 rounded-md flex gap-1 items-center text-white">
+                        Order
+                      </button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide
+                  className="w-[20rem] h-[32rem]"
+                  style={{ border: "3px solid #5AA7C0", padding: "1rem" }}
+                >
+                  <div className="text-center flex gap-2 flex-col h-full items-center justify-center ">
+                    <img
+                      className="w-32"
+                      src="public\images\starslash.svg"
+                      style={{ width: "3rem" }}
                       alt="/"
                     />
                     <div className="font-retroica text-[#ff69b4] text-center">
@@ -185,11 +230,11 @@ const Sponsor: FC = () => {
                 </SwiperSlide>
               </Swiper>
             </div>
-            <div className="hidden lg:flex w-full justify-center gap-12 pt-10">
+            <div className="hidden xl:flex w-full justify-center gap-8 pt-10">
               <div>
                 <Card
                   horizontal
-                  className="h-[40rem] w-96 flex justify-center !bg-[#0A1828] !border-[#5AA7C0] border-4 text-white hover:scale-110 transition ease-in duration-300 m-auto pt-0"
+                  className="h-[40rem] w-80 flex justify-center !bg-[#0A1828] !border-[#5AA7C0] border-4 text-white hover:scale-110 transition ease-in duration-300 m-auto pt-0"
                 >
                   <div>
                     <img
@@ -268,7 +313,7 @@ const Sponsor: FC = () => {
               <div>
                 <Card
                   horizontal
-                  className="h-[40rem] w-96 flex justify-center !bg-[#0A1828] !border-[#5AA7C0] border-4 text-white hover:scale-110 transition ease-in duration-300 m-auto pt-0"
+                  className="h-[40rem] w-80 flex justify-center !bg-[#0A1828] !border-[#5AA7C0] border-4 text-white hover:scale-110 transition ease-in duration-300 m-auto pt-0"
                 >
                   <div>
                     <img
@@ -301,7 +346,42 @@ const Sponsor: FC = () => {
               <div>
                 <Card
                   horizontal
-                  className="h-[40rem] w-96 flex justify-center !bg-[#0A1828] !border-[#5AA7C0] border-4 text-white hover:scale-110 transition ease-in duration-300 m-auto pt-0"
+                  className="h-[40rem] w-80 flex justify-center !bg-[#0A1828] !border-[#5AA7C0] border-4 text-white hover:scale-110 transition ease-in duration-300 m-auto pt-0"
+                >
+                  <div>
+                    <img
+                      className="w-52 block m-auto drop-shadow-lg"
+                      src="public\images\starslash.svg"
+                      style={{ width: "4rem" }}
+                      alt="/"
+                    />
+                  </div>
+                  <div className="font-retroica text-center text-2xl text-[#ffffff62]">
+                    Sponsor Sultan
+                  </div>
+                  <div className="font-retroica flex gap-3 text-[#ffffff] mx-auto">
+                    <FaMoneyBillWave /> Rp4.000.000
+                  </div>
+                  <div className="font-retroica text-[#c5c5c5]">Benefits</div>
+                  <div className="font-retroica text-[#c5c5c5] overflow-x-auto text-left h-40">
+                    <ul className="list-inside list-disc">
+                      <li>Semua benefit dari Gold Sponsorship.</li>
+                      <li>Iklan adlibs oleh MC.</li>
+                      <li>Paid promote oleh akun panitia.</li>
+                      <li>Slot iklan khusus di website.</li>
+                    </ul>
+                  </div>
+                  <div className="bg-gradient-to-b from-[#5AA7C0] via-[#926DAE] to-[#C76F89] p-1 rounded-md">
+                    <button className="bg-[#0A1828] px-4 py-2 rounded-md flex gap-1 items-center text-white w-full justify-center text-lg tracking-wide">
+                      Order
+                    </button>
+                  </div>
+                </Card>
+              </div>
+              <div>
+                <Card
+                  horizontal
+                  className="h-[40rem] w-80 flex justify-center !bg-[#0A1828] !border-[#5AA7C0] border-4 text-white hover:scale-110 transition ease-in duration-300 m-auto pt-0"
                 >
                   <div>
                     <img
