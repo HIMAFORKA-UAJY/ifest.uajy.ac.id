@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FC, useRef } from "react";
+import { FC, useEffect, useRef } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
 import Footer from "../components/Footer";
@@ -8,6 +8,9 @@ import Layout from "../components/Layout";
 const DonorDarah: FC = () => {
   const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout>
       <div className="absolute top-0 left-0 -z-10 h-screen w-screen">

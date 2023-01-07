@@ -1,7 +1,7 @@
 import { Box, Modal, Typography } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FC, useRef, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
 import {
   FaBook,
@@ -80,6 +80,11 @@ const WDC: FC = () => {
         "Auditorium Lt. 4 Kampus 3 Gedung Bonaventura Universitas Atma Jaya Yogyakarta",
     },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       <div className="absolute top-0 -z-10 h-screen w-screen bg-gradient-to-t from-[#2C2E56] via-[#311D38] to-[#311D38]">

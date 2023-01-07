@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 
 import CP from "../components/CP";
 import FAQ from "../components/FAQ";
@@ -13,6 +13,9 @@ import Sponsor from "../components/Sponsor";
 import WDCSection from "../components/WDCSection";
 
 const Home: FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout>
       <div className="absolute top-0 -z-10 h-screen w-screen bg-[url('/images/bg-no-flip.png')] bg-cover bg-center bg-no-repeat">

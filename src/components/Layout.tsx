@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { FC, ReactNode, useState } from "react";
+import { LazyMotion, domAnimation, m } from "framer-motion";
+import { FC, ReactNode } from "react";
 
 import NavBar from "./NavBar";
 
@@ -8,29 +8,19 @@ interface Props {
 }
 
 const Layout: FC<Props> = ({ children }) => {
-  const [openNav, setOpenNav] = useState<boolean>(false);
-  const [openMain, setOpenMain] = useState<boolean>(false);
-
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      exit={{ opacity: 0, transition: { duration: 0.5 } }}
-      onAnimationComplete={() => setOpenNav(true)}
-    >
-      <>
-        {(openNav && (
-          <header>
-            <NavBar />
-          </header>
-        )) ||
-          setTimeout(() => {
-            setOpenMain(true);
-          }, 1000)}
-
-        {openMain && <main>{children}</main>}
-      </>
-    </motion.div>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 0.5 } }}
+        exit={{ opacity: 0, transition: { duration: 0.5 } }}
+      >
+        <header>
+          <NavBar />
+        </header>
+        <main>{children}</main>
+      </m.div>
+    </LazyMotion>
   );
 };
 
