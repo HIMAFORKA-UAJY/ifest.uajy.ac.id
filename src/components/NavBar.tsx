@@ -29,6 +29,10 @@ const NavBar: FC = () => {
         setColor({ bg1: "#311D38", bg2: "#4E4074", fg: "#E7A3FF" });
         break;
 
+      case "/donor-darah":
+        setColor({ bg1: "#4A2B52", bg2: "#CE5866", fg: "#FFF" });
+        break;
+
       case "/sponsor":
         setColor({ bg1: "#182E47", bg2: "#182E47", fg: "#479EC6" });
         break;

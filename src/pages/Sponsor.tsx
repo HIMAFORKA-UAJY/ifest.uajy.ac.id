@@ -27,7 +27,7 @@ const Sponsor: FC = () => {
             Tertarik dengan acara kami? Dukung kami dengan menjadi sponsor!
           </div>
           <div className="p-2" />
-          <div className="w-full px-4">
+          <div className="w-full p-8 lg:w-1/2">
             <Swiper
               autoplay={{ delay: 2000 }}
               effect="coverflow"
