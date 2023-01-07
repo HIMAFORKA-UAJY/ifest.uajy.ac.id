@@ -1,9 +1,9 @@
-import logo from "../assets/images/logo.png";
 import { Menu, Popover } from "@headlessui/react";
 import { motion } from "framer-motion";
 import { FC, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import logo from "../assets/images/logo.png";
 
 interface Color {
   bg1: string;
@@ -30,15 +30,13 @@ const NavBar: FC = () => {
         break;
 
       case "/donor-darah":
-        setColor({ bg1: "#4A2B52", bg2: "#CE5866", fg: "#FFF" });
+        setColor({ bg1: "rgb(110 110 159)", bg2: "rgb(110 110 159)", fg: "rgb(192 190 255)" });
         break;
 
       case "/sponsor":
         setColor({ bg1: "#182E47", bg2: "#182E47", fg: "#479EC6" });
         break;
-      case "/donor-darah":
-        setColor({ bg1: "rgb(110 110 159)", bg2: "rgb(110 110 159)", fg: "rgb(192 190 255)" });
-        break;
+
       default:
         setColor({ bg1: "#8E332DF2", bg2: "#DB7F58CC", fg: "#FFFFFF" });
         break;

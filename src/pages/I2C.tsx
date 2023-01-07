@@ -315,7 +315,7 @@ const I2C: FC = () => {
                         <FaRegWindowClose />{" "}
                       </button>
                     </Typography>
-                   <iframe
+                    <iframe
                       src="rulebook/rulebook-i2c.pdf"
                       style={{ width: "100%", height: "95%" }}
                       title="I2C Rulebook"
