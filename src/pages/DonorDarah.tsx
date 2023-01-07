@@ -30,7 +30,9 @@ const DonorDarah: FC = () => {
             <div className="flex gap-8 p-10 font-retroica text-sm text-white">
               <div className="rounded-full bg-[#CE5866] p-1 transition-transform hover:scale-110">
                 <motion.button
-                  onClick={() => ref1.current?.scrollIntoView({ behavior: "smooth" })}
+                  onClick={() =>
+                    ref1.current?.scrollIntoView({ block: "center", behavior: "smooth" })
+                  }
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 0.75 }}
                   transition={{ delay: 0.0, duration: 0.25 }}
@@ -41,7 +43,9 @@ const DonorDarah: FC = () => {
               </div>
               <div className="flex items-center gap-1 rounded-full border-2 border-[#CE5866] px-5 transition-transform hover:scale-110">
                 <motion.button
-                  onClick={() => ref2.current?.scrollIntoView({ behavior: "smooth" })}
+                  onClick={() =>
+                    ref2.current?.scrollIntoView({ block: "center", behavior: "smooth" })
+                  }
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 0.75 }}
                   transition={{ delay: 0.0, duration: 0.25 }}
