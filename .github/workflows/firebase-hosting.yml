@@ -1,0 +1,41 @@
+name: Deploy to Firebase Hosting
+"on":
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: yarn
+      - name: Build
+        run: yarn build
+      - name: Archive Production Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: Download Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: dist
+      - name: Deploy
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_HIMAFORKA_UAJY_1994 }}"
+          channelId: live
+          projectId: himaforka-uajy-1994
