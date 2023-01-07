@@ -134,22 +134,23 @@ const I2C: FC = () => {
                             <div className="font-retroica text-4xl text-white tracking-wide">I2C</div>
                             <div className="font-retroica text-2xl text-white pb-[1rem] px-4">Innovative Informatics Contest</div>
                         </div>
-                        <div className="flex gap-4 font-retroica text-sm text-white">
-                            <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
+                        <div className="flex gap-4 font-retroica text-sm sm:text-xs text-white">
+                            <div className="bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1 rounded-full h-fit">
                                 <div className="bg-[#332550] p-1 rounded-full flex gap-1 items-center px-[0.35rem] flex-wrap justify-center">
                                     <FaWallet />
                                     Gratis
                                 </div>
                             </div>
-                            <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
+                            <div className="bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1 rounded-full h-fit">
                                 <div className="bg-[#332550] p-1 rounded-full flex gap-1 items-center px-[0.35rem] flex-wrap justify-center">
                                     <FaBook />
                                     SMA/Sederajat
                                 </div>
                             </div>
-                            <div className="bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1 rounded-full">
-                                <div className="bg-[#332550] p-1 rounded-full flex gap-1 items-center px-[0.35rem] flex-wrap justify-center">
+                            <div className="bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1 rounded-full h-fit">
+                                <div className="bg-[#332550] p-1 rounded-full flex gap-1 text-center items-center px-[0.35rem] flex-wrap justify-center">
                                     <FaMale />
+
                                     Max. 3 orang
                                 </div>
                             </div>
@@ -461,7 +462,7 @@ const I2C: FC = () => {
                             <div className="font-retroica text-[#ffba57] text-center"> <span className="font-louisgeorgecafe text-white">Total hadiah</span> Rp10.500.000</div>
                             <div>
                                 <div className="my-10 hidden lg:flex">
-                                    <Card horizontal className="bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:bg-[#ffba57] hover:text-[#241f3d] transition ease-in duration-300 w-[30%] m-auto pt-0">
+                                    <Card horizontal className="!bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:!bg-[#ffba57] hover:text-[#241f3d] transition ease-in duration-300 w-[30%] m-auto pt-0">
                                         <div>
                                             <img className="w-52 block m-auto drop-shadow-lg" src="https://ifest.uajy.ac.id/assets/images/medal-1.png" alt="/" />
                                         </div>
@@ -472,7 +473,7 @@ const I2C: FC = () => {
                                 </div>
 
                                 <div className="hidden lg:flex flex-row gap-8">
-                                    <Card className="bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d] transition ease-in duration-300 w-[30%]">
+                                    <Card className="!bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:!bg-[#9e9e9e] hover:text-[#241f3d] transition ease-in duration-300 w-[30%]">
                                         <div className="">
                                             <img className="w-52 block m-auto" src="https://ifest.uajy.ac.id/assets/images/medal-2.png" alt="/" />
                                         </div>
@@ -480,7 +481,7 @@ const I2C: FC = () => {
                                         <div className="font-retroica flex gap-3"><FaMoneyBillWave /> Rp3.000.000</div>
                                         <div className="font-retroica flex gap-3"><FaCertificate /> Sertifikat Nasional</div>
                                     </Card>
-                                    <Card className="bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:bg-[#ce7430] hover:text-[#241f3d] transition ease-in duration-300 w-[30%]">
+                                    <Card className="!bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:!bg-[#ce7430] hover:text-[#241f3d] transition ease-in duration-300 w-[30%]">
                                         <div className="">
                                             <img className="w-52 block m-auto" src="https://ifest.uajy.ac.id/assets/images/medal-3.png" alt="/" />
                                         </div>
@@ -488,7 +489,7 @@ const I2C: FC = () => {
                                         <div className="font-retroica flex gap-3"><FaMoneyBillWave /> Rp2.000.000</div>
                                         <div className="font-retroica flex gap-3"><FaCertificate /> Sertifikat Nasional</div>
                                     </Card>
-                                    <Card className="bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d] transition ease-in duration-300 w-[30%]">
+                                    <Card className="!bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:!bg-[#00B8B0] hover:text-[#241f3d] transition ease-in duration-300 w-[30%]">
                                         <div className="">
                                             <img className="w-52 block m-auto" src="https://ifest.uajy.ac.id/assets/images/medal-favorit.png" alt="/" />
                                         </div>
