@@ -78,16 +78,16 @@ const DonorDarah: FC = () => {
 
         <div className="w-screen bg-gradient-to-t from-[#000] to-[#4A2B52] py-2">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="font-retroica text-4xl font-bold text-[#fff]">Sponsor Kami</h1>
+            <h1 className="font-retroica text-4xl font-bold text-[#fff]">Diselenggarakan Oleh</h1>
           </div>
           <div className="py-10 lg:grid lg:grid-cols-3 lg:gap-4 lg:px-20 lg:py-20">
-            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-0">
+            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-4" style={{backgroundColor: '#53305a'}}>
               <img src="/images/sponsor-1.png" alt="sponsor-1" className="w-1/3" />
             </div>
-            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-0">
+            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-4" style={{backgroundColor: '#53305a'}}>
               <img src="/images/logo.png" alt="sponsor-2" className="w-1/3" />
             </div>
-            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-0">
+            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-4" style={{backgroundColor: '#53305a'}}>
               <img src="/images/sponsor-3.png" alt="sponsor-3" className="w-1/2" />
             </div>
           </div>
@@ -106,7 +106,7 @@ const DonorDarah: FC = () => {
               <div className="flex flex-col items-center justify-center bg-[#1a203f42] p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
-                    <img src="images/not-icon.png" alt="not-icon" className="w-10" />
+                    <img src="images/icon_dondar_1.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#FF95C1]">
@@ -124,7 +124,7 @@ const DonorDarah: FC = () => {
               <div className="flex flex-col items-center justify-center bg-[#1a203f42] p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
-                    <img src="images/not-icon.png" alt="not-icon" className="w-10" />
+                    <img src="images/icon_dondar_2.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#FF95C1]">
@@ -142,7 +142,7 @@ const DonorDarah: FC = () => {
               <div className="flex flex-col items-center justify-center bg-[#1a203f42] p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
-                    <img src="images/not-icon.png" alt="not-icon" className="w-10" />
+                    <img src="images/icon_dondar_3.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#FF95C1]">
@@ -160,7 +160,7 @@ const DonorDarah: FC = () => {
               <div className="flex flex-col items-center justify-center bg-[#1a203f42] p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
-                    <img src="images/not-icon.png" alt="not-icon" className="w-10" />
+                    <img src="images/icon_dondar_4.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#FF95C1]">

@@ -117,7 +117,9 @@ const Sponsor: FC = () => {
                   </div>
                   <div className="rounded-md bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] p-1">
                     <button className="flex items-center gap-1 rounded-md bg-[#0A1828] px-4 py-1 font-retroica text-white transition hover:bg-transparent">
-                      Order
+                      <a href="https://wa.me/62895401144676?text=halo saya ingin memesan jasa pijat">
+                        order
+                      </a>
                     </button>
                   </div>
                 </div>

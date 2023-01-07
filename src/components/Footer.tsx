@@ -15,7 +15,7 @@ const Footer: FC<Props> = ({ className }) => {
         className="flex flex-col justify-center gap-6 border-t-2 pt-8 lg:flex-row lg:gap-12"
         style={{ borderColor: "rgb(0 0 0 / 9%)" }}
       >
-        <img className="w-24 lg:h-16" src={logo} alt="ifest-logo" />
+        <img src={logo} alt="ifest-logo" style={{height: '100%', width: '4rem'}}/>
         <div className="flex flex-col gap-2 text-left">
           <div className="font-retroica text-xl text-white">IFest#11</div>
           <div className="font-louisgeorgecafe text-white opacity-70">

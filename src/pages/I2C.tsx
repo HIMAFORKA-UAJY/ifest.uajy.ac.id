@@ -32,9 +32,15 @@ const style = {
 
 const I2C: FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
+
   const [open, setOpen] = useState(false);
+  const [openPDF, setOpenPDF] = useState(false);
+
   const onClick = () => setOpen(true);
+  const onClickPDF = () => setOpenPDF(true);
+
   const handleClose = () => setOpen(false);
+  const handleClosePDF = () => setOpenPDF(false);
 
   const dataSeleksi = [
     {
@@ -287,14 +293,14 @@ const I2C: FC = () => {
                                     </Modal>
                                 </React.Fragment> */}
                 <button
-                  onClick={onClick}
+                  onClick={onClickPDF}
                   className="flex items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent"
                 >
                   <div className="text-white opacity-70">Lihat Aturan</div>
                 </button>
                 <Modal
-                  open={open}
-                  onClose={handleClose}
+                  open={openPDF}
+                  onClose={handleClosePDF}
                   aria-labelledby="modal-modal-title"
                   aria-describedby="modal-modal-description"
                 >
@@ -305,14 +311,15 @@ const I2C: FC = () => {
                       variant="h6"
                       component="h2"
                     >
-                      <button onClick={handleClose}>
+                      <button onClick={handleClosePDF}>
                         {" "}
                         <FaRegWindowClose />{" "}
                       </button>
                     </Typography>
-                    <img
-                      src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png"
-                      alt=""
+                   <iframe
+                      src="rulebook/rulebook-i2c.pdf"
+                      style={{ width: "100%", height: "95%" }}
+                      title="I2C Rulebook"
                     />
                   </Box>
                 </Modal>
