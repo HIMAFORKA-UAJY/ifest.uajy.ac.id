@@ -8,9 +8,6 @@ import Layout from "../components/Layout";
 const DonorDarah: FC = () => {
   const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <Layout>
       <div className="absolute top-0 left-0 -z-10 h-screen w-screen">
@@ -30,9 +27,7 @@ const DonorDarah: FC = () => {
             <div className="flex gap-8 p-10 font-retroica text-sm text-white">
               <div className="rounded-full bg-[#CE5866] p-1 transition-transform hover:scale-110">
                 <motion.button
-                  onClick={() =>
-                    ref1.current?.scrollIntoView({ block: "center", behavior: "smooth" })
-                  }
+                  onClick={() => ref1.current?.scrollIntoView({ behavior: "smooth" })}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 0.75 }}
                   transition={{ delay: 0.0, duration: 0.25 }}
@@ -43,9 +38,7 @@ const DonorDarah: FC = () => {
               </div>
               <div className="flex items-center gap-1 rounded-full border-2 border-[#CE5866] px-5 transition-transform hover:scale-110">
                 <motion.button
-                  onClick={() =>
-                    ref2.current?.scrollIntoView({ block: "center", behavior: "smooth" })
-                  }
+                  onClick={() => ref2.current?.scrollIntoView({ behavior: "smooth" })}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 0.75 }}
                   transition={{ delay: 0.0, duration: 0.25 }}
@@ -56,20 +49,45 @@ const DonorDarah: FC = () => {
               </div>
             </div>
           </div>
+          {/* <div className="flex animate-pulse items-center justify-center text-center">
+            <motion.button
+              onClick={() => contentRef.current?.scrollIntoView({ behavior: "smooth" })}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.75 }}
+              transition={{ delay: 0.0, duration: 0.25 }}
+              className="mt-20 transition-transform hover:scale-125"
+            >
+              <div className="w-20 font-retroica text-sm text-white">Read More</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="ml-5 h-10 w-10 stroke-white"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 5.25l-7.5 7.5-7.5-7.1"
+                />
+              </svg>
+            </motion.button>
+          </div> */}
         </div>
 
         <div className="w-screen bg-gradient-to-t from-[#000] to-[#4A2B52] py-2">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="font-retroica text-4xl font-bold text-[#fff]">Diselenggarakan oleh</h1>
+            <h1 className="font-retroica text-4xl font-bold text-[#fff]">Diselenggarakan Oleh</h1>
           </div>
-          <div className="col flex flex-col gap-4 p-4 lg:grid lg:grid-cols-3 lg:gap-4 lg:px-20 lg:py-20">
-            <div className="flex flex-col items-center justify-center bg-[#512d59] py-12 text-center">
+          <div className="py-10 lg:grid lg:grid-cols-3 lg:gap-4 lg:px-20 lg:py-20">
+            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-4" style={{backgroundColor: '#53305a'}}>
               <img src="/images/sponsor-1.png" alt="sponsor-1" className="w-1/3" />
             </div>
-            <div className="flex flex-col items-center justify-center bg-[#512d59] py-12 text-center">
+            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-4" style={{backgroundColor: '#53305a'}}>
               <img src="/images/logo.png" alt="sponsor-2" className="w-1/3" />
             </div>
-            <div className="flex flex-col items-center justify-center bg-[#512d59] py-12 text-center">
+            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-4" style={{backgroundColor: '#53305a'}}>
               <img src="/images/sponsor-3.png" alt="sponsor-3" className="w-1/2" />
             </div>
           </div>
@@ -88,7 +106,7 @@ const DonorDarah: FC = () => {
               <div className="flex flex-col items-center justify-center bg-[#1a203f42] p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
-                    <img src="images/not-icon.png" alt="not-icon" className="w-10" />
+                    <img src="images/icon_dondar_1.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#FF95C1]">
@@ -106,7 +124,7 @@ const DonorDarah: FC = () => {
               <div className="flex flex-col items-center justify-center bg-[#1a203f42] p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
-                    <img src="images/not-icon.png" alt="not-icon" className="w-10" />
+                    <img src="images/icon_dondar_2.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#FF95C1]">
@@ -124,7 +142,7 @@ const DonorDarah: FC = () => {
               <div className="flex flex-col items-center justify-center bg-[#1a203f42] p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
-                    <img src="images/not-icon.png" alt="not-icon" className="w-10" />
+                    <img src="images/icon_dondar_4.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#FF95C1]">
@@ -142,7 +160,7 @@ const DonorDarah: FC = () => {
               <div className="flex flex-col items-center justify-center bg-[#1a203f42] p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
-                    <img src="images/not-icon.png" alt="not-icon" className="w-10" />
+                    <img src="images/icon_dondar_3.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#FF95C1]">
@@ -176,11 +194,67 @@ const DonorDarah: FC = () => {
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#fff]">
+                      Pergi ke Dashboard
+                    </div>
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
+                      Daftar melalui <a href="https://ifest.uajy.ac.id/dash/donor_darah" style={{textDecoration: 'underline'}}>Dashboard</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center p-20">
+                <div className="items-center justify-center">
+                  <div className="flex items-center justify-center">
+                    <img src="images/step-2.png" alt="step-2" className="w-10" />
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-2xl text-[#fff]">
+                      Isi form pendaftaran
+                    </div>
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
+                      Isi form secara online dan dapatkan bukti registrasi melalui email
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center p-20">
+                <div className="items-center justify-center">
+                  <div className="flex items-center justify-center">
+                    <img src="images/step-3.png" alt="step-3" className="w-10" />
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-2xl text-[#fff]">
+                      Donor darah
+                    </div>
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
+                      Menunjukkan bukti registrasi dan melakukan donor darah
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <h1 className="font-retroica text-4xl font-bold text-[#fff]">
+              ATAU
+            </h1>
+            <div className="lg:grid lg:grid-cols-3 lg:gap-4">
+              <div className="flex flex-col items-center justify-center p-20">
+                <div className="items-center justify-center">
+                  <div className="flex items-center justify-center">
+                    <img src="images/step-1.png" alt="step-1" className="w-10" />
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-2xl text-[#fff]">
                       Datang ke lokasi
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
                       Datang ke lokasi kami di {} dan mengambil form pendaftaran
                     </div>
                   </div>
@@ -197,7 +271,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
                       Setelah mengambil form, isi dengan data yang sebenar-benarnya
                     </div>
                   </div>
@@ -214,7 +288,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
                       Melakukan donor darah sesuai dengan petunjuk panitia
                     </div>
                   </div>

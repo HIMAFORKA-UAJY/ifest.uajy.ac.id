@@ -1,9 +1,9 @@
+import logo from "../assets/images/logo.png";
 import { Menu, Popover } from "@headlessui/react";
 import { motion } from "framer-motion";
 import { FC, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import logo from "../assets/images/logo.png";
 
 interface Color {
   bg1: string;
@@ -36,7 +36,9 @@ const NavBar: FC = () => {
       case "/sponsor":
         setColor({ bg1: "#182E47", bg2: "#182E47", fg: "#479EC6" });
         break;
-
+      case "/donor-darah":
+        setColor({ bg1: "rgb(110 110 159)", bg2: "rgb(110 110 159)", fg: "rgb(192 190 255)" });
+        break;
       default:
         setColor({ bg1: "#8E332DF2", bg2: "#DB7F58CC", fg: "#FFFFFF" });
         break;
@@ -124,6 +126,22 @@ const NavBar: FC = () => {
                     )}
                   </Menu.Item>
                 </motion.div>
+                {/* <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
+                                >
+                                    <Menu.Item>
+                                        {({ active }) => (
+                                            <Link
+                                                className={`${active && 'text-[#fff]'}`}
+                                                to="/hackathon"
+                                            >
+                                                Hackathon
+                                            </Link>
+                                        )}
+                                    </Menu.Item>
+                                </motion.div> */}
               </motion.div>
             </Menu.Items>
           </Menu>
@@ -155,6 +173,22 @@ const NavBar: FC = () => {
                 className="absolute mt-4 flex cursor-default flex-col gap-3 rounded-[0.7em] px-8 py-4 font-retroica text-xl tracking-[0.2em] shadow-lg"
                 style={{ backgroundColor: color.bg1, color: color.fg }}
               >
+                {/* <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
+                                >
+                                    <Menu.Item>
+                                        {({ active }) => (
+                                            <Link
+                                                className={`${active && 'text-[#fff]'}`}
+                                                to="/seminar"
+                                            >
+                                                Seminar
+                                            </Link>
+                                        )}
+                                    </Menu.Item>
+                                </motion.div> */}
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}

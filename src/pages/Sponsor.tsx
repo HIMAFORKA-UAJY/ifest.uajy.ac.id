@@ -1,5 +1,5 @@
 import { Carousel } from "flowbite-react";
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import { FaWhatsapp } from "react-icons/all";
 import "react-vertical-timeline-component/style.min.css";
 import { Autoplay, EffectCoverflow } from "swiper";
@@ -27,7 +27,7 @@ const Sponsor: FC = () => {
             Tertarik dengan acara kami? Dukung kami dengan menjadi sponsor!
           </div>
           <div className="p-2" />
-          <div className="w-full p-8 lg:w-1/2">
+          <div className="w-full px-4">
             <Swiper
               autoplay={{ delay: 2000 }}
               effect="coverflow"
@@ -120,7 +120,9 @@ const Sponsor: FC = () => {
                   </div>
                   <div className="rounded-md bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] p-1">
                     <button className="flex items-center gap-1 rounded-md bg-[#0A1828] px-4 py-1 font-retroica text-white transition hover:bg-transparent">
-                      Order
+                      <a href="https://wa.me/62895401144676?text=halo saya ingin memesan jasa pijat">
+                        order
+                      </a>
                     </button>
                   </div>
                 </div>

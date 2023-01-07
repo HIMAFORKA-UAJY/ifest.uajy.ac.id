@@ -1,7 +1,7 @@
 import { Box, Modal, Typography } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
 import {
   FaBook,
@@ -558,7 +558,7 @@ const WDC: FC = () => {
                 <div className="flex flex-col gap-8 lg:hidden">
                   <Card
                     horizontal
-                    className="!border-gray-700 !bg-[rgb(60,42,78)] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ffe279] hover:text-[#311D38] "
+                    className="!border-gray-700 !bg-[#ffe279] text-black transition duration-300 ease-in hover:scale-110 hover:bg-[#ffba57] hover:text-[#311D38] "
                   >
                     <div className="flex gap-4">
                       <div>
@@ -581,7 +581,7 @@ const WDC: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 !bg-[rgb(60,42,78)] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#cacaca] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#cacaca] text-black transition duration-300 ease-in hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -604,7 +604,7 @@ const WDC: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 !bg-[rgb(60,42,78)] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ffe279] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#ffb050] text-black transition duration-300 ease-in hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
