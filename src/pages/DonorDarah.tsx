@@ -194,11 +194,67 @@ const DonorDarah: FC = () => {
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#fff]">
+                      Pergi ke Dashboard
+                    </div>
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
+                      Daftar melalui <a href="https://ifest.uajy.ac.id/dash/donor_darah" style={{textDecoration: 'underline'}}>Dashboard</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center p-20">
+                <div className="items-center justify-center">
+                  <div className="flex items-center justify-center">
+                    <img src="images/step-2.png" alt="step-2" className="w-10" />
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-2xl text-[#fff]">
+                      Isi form pendaftaran
+                    </div>
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
+                      Isi form secara online dan dapatkan bukti registrasi melalui email
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center p-20">
+                <div className="items-center justify-center">
+                  <div className="flex items-center justify-center">
+                    <img src="images/step-3.png" alt="step-3" className="w-10" />
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-2xl text-[#fff]">
+                      Donor darah
+                    </div>
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
+                      Menunjukkan bukti registrasi dan melakukan donor darah
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <h1 className="font-retroica text-4xl font-bold text-[#fff]">
+              ATAU
+            </h1>
+            <div className="lg:grid lg:grid-cols-3 lg:gap-4">
+              <div className="flex flex-col items-center justify-center p-20">
+                <div className="items-center justify-center">
+                  <div className="flex items-center justify-center">
+                    <img src="images/step-1.png" alt="step-1" className="w-10" />
+                  </div>
+                  <div className="items-center justify-center">
+                    <div className="mt-2 text-center font-retroica text-2xl text-[#fff]">
                       Datang ke lokasi
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
                       Datang ke lokasi kami di {} dan mengambil form pendaftaran
                     </div>
                   </div>
@@ -215,7 +271,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
                       Setelah mengambil form, isi dengan data yang sebenar-benarnya
                     </div>
                   </div>
@@ -232,7 +288,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20 font-louisgeorgecafe">
                       Melakukan donor darah sesuai dengan petunjuk panitia
                     </div>
                   </div>
