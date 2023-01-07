@@ -1,7 +1,7 @@
 import { Box, Modal, Typography } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
 import {
   FaBook,
@@ -32,6 +32,7 @@ const style = {
 
 const I2C: FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
+
   const [open, setOpen] = useState(false);
   const onClick = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -314,9 +315,10 @@ const I2C: FC = () => {
                         <FaRegWindowClose />{" "}
                       </button>
                     </Typography>
-                    <img
-                      src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png"
-                      alt=""
+                   <iframe
+                      src="rulebook/rulebook-i2c.pdf"
+                      style={{ width: "100%", height: "95%" }}
+                      title="I2C Rulebook"
                     />
                   </Box>
                 </Modal>
