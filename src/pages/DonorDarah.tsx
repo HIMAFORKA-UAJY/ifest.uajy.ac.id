@@ -142,7 +142,7 @@ const DonorDarah: FC = () => {
               <div className="flex flex-col items-center justify-center bg-[#1a203f42] p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
-                    <img src="images/icon_dondar_3.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
+                    <img src="images/icon_dondar_4.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#FF95C1]">
@@ -160,7 +160,7 @@ const DonorDarah: FC = () => {
               <div className="flex flex-col items-center justify-center bg-[#1a203f42] p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
-                    <img src="images/icon_dondar_4.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
+                    <img src="images/icon_dondar_3.svg" style={{width: '4rem'}} alt="not-icon" className="w-10" />
                   </div>
                   <div className="items-center justify-center">
                     <div className="mt-2 text-center font-retroica text-2xl text-[#FF95C1]">
