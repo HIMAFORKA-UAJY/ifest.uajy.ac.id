@@ -33,13 +33,8 @@ const style = {
 const I2C: FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
-  const [openPDF, setOpenPDF] = useState(false);
-
   const onClick = () => setOpen(true);
-  const onClickPDF = () => setOpenPDF(true);
-
   const handleClose = () => setOpen(false);
-  const handleClosePDF = () => setOpenPDF(false);
 
   const dataSeleksi = [
     {
@@ -162,46 +157,64 @@ const I2C: FC = () => {
             </div>
           </div>
 
-                    <div className="lg:hidden flex flex-col justify-center items-center h-screen w-screen px-4">
-                        <img className="w-72" src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png" alt="i2c" />
-                        <div className="text-center">
-                            <div className="font-retroica text-4xl text-white tracking-wide">I2C</div>
-                            <div className="font-retroica text-2xl text-white pb-[1rem] px-4">Innovative Informatics Contest</div>
-                        </div>
-                        <div className="flex gap-4 font-retroica text-sm sm:text-xs text-white">
-                            <div className="bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1 rounded-full h-fit">
-                                <div className="bg-[#332550] p-1 rounded-full flex gap-1 items-center px-[0.35rem] flex-wrap justify-center">
-                                    <FaWallet />
-                                    Gratis
-                                </div>
-                            </div>
-                            <div className="bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1 rounded-full h-fit">
-                                <div className="bg-[#332550] p-1 rounded-full flex gap-1 items-center px-[0.35rem] flex-wrap justify-center">
-                                    <FaBook />
-                                    SMA/Sederajat
-                                </div>
-                            </div>
-                            <div className="bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1 rounded-full h-fit">
-                                <div className="bg-[#332550] p-1 rounded-full flex gap-1 text-center items-center px-[0.35rem] flex-wrap justify-center">
-                                    <FaMale />
-
-                                    Max. 3 orang
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <motion.button
-                                onClick={() => contentRef.current?.scrollIntoView({ behavior: "smooth" })}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 0.75 }}
-                                transition={{ delay: 0.0, duration: 0.25 }}
-                                className="mt-12 transition-transform hover:scale-125">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="stroke-white w-10 h-10">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
-                                </svg>
-                            </motion.button>
-                        </div>
-                    </div>
+          <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
+            <img
+              className="w-72"
+              src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png"
+              alt="i2c"
+            />
+            <div className="text-center">
+              <div className="font-retroica text-4xl tracking-wide text-white">I2C</div>
+              <div className="px-4 pb-[1rem] font-retroica text-2xl text-white">
+                Innovative Informatics Contest
+              </div>
+            </div>
+            <div className="flex gap-4 font-retroica text-sm text-white sm:text-xs">
+              <div className="h-fit rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
+                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]">
+                  <FaWallet />
+                  Gratis
+                </div>
+              </div>
+              <div className="h-fit rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
+                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]">
+                  <FaBook />
+                  SMA/Sederajat
+                </div>
+              </div>
+              <div className="h-fit rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
+                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center">
+                  <FaMale />
+                  Max. 3 orang
+                </div>
+              </div>
+            </div>
+            <div>
+              <motion.button
+                onClick={() => contentRef.current?.scrollIntoView({ behavior: "smooth" })}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.75 }}
+                transition={{ delay: 0.0, duration: 0.25 }}
+                className="mt-12 transition-transform hover:scale-125"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-10 w-10 stroke-white"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </motion.button>
+            </div>
+          </div>
+        </motion.div>
 
         <div ref={contentRef} className="bg-gradient-to-t from-[#2A2F59] to-[#332550]">
           <div className="flex flex-col items-center gap-2 pt-4 pl-4 pr-4">
@@ -274,14 +287,14 @@ const I2C: FC = () => {
                                     </Modal>
                                 </React.Fragment> */}
                 <button
-                  onClick={onClickPDF}
+                  onClick={onClick}
                   className="flex items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent"
                 >
                   <div className="text-white opacity-70">Lihat Aturan</div>
                 </button>
                 <Modal
-                  open={openPDF}
-                  onClose={handleClosePDF}
+                  open={open}
+                  onClose={handleClose}
                   aria-labelledby="modal-modal-title"
                   aria-describedby="modal-modal-description"
                 >
@@ -292,15 +305,14 @@ const I2C: FC = () => {
                       variant="h6"
                       component="h2"
                     >
-                      <button onClick={handleClosePDF}>
+                      <button onClick={handleClose}>
                         {" "}
                         <FaRegWindowClose />{" "}
                       </button>
                     </Typography>
-                    <iframe
-                      src="rulebook/rulebook-i2c.pdf"
-                      style={{ width: "100%", height: "95%" }}
-                      title="I2C Rulebook"
+                    <img
+                      src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png"
+                      alt=""
                     />
                   </Box>
                 </Modal>
@@ -419,302 +431,14 @@ const I2C: FC = () => {
               </div>
             </div>
 
-                            </div>
-                        </div>
-
-                        {/* Timeline */}
-                        <div className="flex flex-col justify-center lg:items-center w-full lg:w-[70%]">
-                            <div className="font-retroica text-[#87bbeb] text-4xl mb-8 mx-auto text-center">Timeline</div>
-                            <div className="rounded-xl bg-[#241f3d] pb-1 w-fit">
-                                <div className="rounded-xl font-retroica bg-[#716B90] p-4 text-white shadow-inner">Proposal Selection</div>
-                            </div>
-
-                            <span className="hidden lg:flex lg:w-full">
-                                <Chrono
-                                    items={dataSeleksi}
-                                    mode="VERTICAL_ALTERNATING"
-                                    cardHeight={50}
-                                    hideControls
-                                    disableClickOnCircle
-                                    theme={{
-                                        primary: '#716B90',
-                                        secondary: 'transparent',
-                                        cardBgColor: "#241f3d",
-                                        cardForeColor: "white",
-                                        titleColor: 'white',
-                                        titleColorActive: 'white'
-
-                                    }}
-
-                                />
-                            </span>
-                            <span className="lg:hidden flex">
-                                <Chrono
-                                    items={dataSeleksi}
-                                    mode="VERTICAL"
-                                    cardHeight={50}
-                                    hideControls
-                                    disableClickOnCircle
-                                    fontSizes={{
-                                        title: "0.8rem"
-                                    }}
-                                    theme={{
-                                        primary: '#716B90',
-                                        secondary: 'transparent',
-                                        cardBgColor: "#241f3d",
-                                        cardForeColor: "white",
-                                        titleColor: 'white',
-                                        titleColorActive: 'white'
-
-                                    }}
-                                />
-                            </span>
-
-                            <div className="rounded-xl bg-[#241f3d] pb-1 w-fit">
-                                <div className="rounded-xl font-retroica bg-[#716B90] p-4 text-white shadow-inner">Inventor Expo</div>
-                            </div>
-
-
-                            <span className="hidden lg:flex lg:w-full">
-                                <Chrono
-                                    items={dataExpo}
-                                    mode="VERTICAL_ALTERNATING"
-                                    cardHeight={50}
-                                    hideControls
-                                    disableClickOnCircle
-
-                                    theme={{
-                                        primary: '#716B90',
-                                        secondary: 'transparent',
-                                        cardBgColor: "#241f3d",
-                                        cardForeColor: "white",
-                                        titleColor: 'white',
-                                        titleColorActive: 'white'
-                                    }}
-                                />
-                            </span>
-                            <span className="lg:hidden flex">
-                                <Chrono
-                                    items={dataExpo}
-                                    mode="VERTICAL"
-                                    cardHeight={50}
-                                    hideControls
-                                    disableClickOnCircle
-                                    fontSizes={{
-                                        title: "0.8rem"
-                                    }}
-                                    theme={{
-                                        primary: '#716B90',
-                                        secondary: 'transparent',
-                                        cardBgColor: "#241f3d",
-                                        cardForeColor: "white",
-                                        titleColor: 'white',
-                                        titleColorActive: 'white'
-                                    }}
-                                />
-                            </span>
-
-                            <div className="rounded-xl bg-[#241f3d] pb-1 w-fit">
-                                <div className="rounded-xl font-retroica bg-[#716B90] p-4 text-white shadow-inner">Final Pitch Deck</div>
-                            </div>
-
-                            <span className="hidden lg:flex lg:w-full">
-                                <Chrono
-                                    items={dataFinal}
-                                    mode="VERTICAL_ALTERNATING"
-                                    cardHeight={50}
-                                    hideControls
-                                    disableClickOnCircle
-
-                                    theme={{
-                                        primary: '#716B90',
-                                        secondary: 'transparent',
-                                        cardBgColor: "#241f3d",
-                                        cardForeColor: "white",
-                                        titleColor: 'white',
-                                        titleColorActive: 'white'
-                                    }}
-                                />
-                            </span>
-                            <span className="lg:hidden flex">
-                                <Chrono
-                                    items={dataFinal}
-                                    mode="VERTICAL"
-                                    cardHeight={50}
-                                    hideControls
-                                    disableClickOnCircle
-                                    fontSizes={{
-                                        title: "0.8rem"
-                                    }}
-                                    theme={{
-                                        primary: '#716B90',
-                                        secondary: 'transparent',
-                                        cardBgColor: "#241f3d",
-                                        cardForeColor: "white",
-                                        titleColor: 'white',
-                                        titleColorActive: 'white'
-                                    }}
-                                />
-                            </span>
-                        </div>
-
-                        {/* Prize Pool */}
-                        <div className="pt-8 flex flex-col gap-4 justify-center items-center w-screen">
-                            <div className="font-retroica text-4xl text-[#87bbeb]">Prize Pool</div>
-                            <div className="font-retroica text-[#ffba57] text-center"> <span className="font-louisgeorgecafe text-white">Total hadiah</span> Rp10.500.000</div>
-                            <div>
-                                <div className="my-10 hidden lg:flex">
-                                    <Card horizontal className="!bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:!bg-[#ffba57] hover:text-[#241f3d] transition ease-in duration-300 w-[30%] m-auto pt-0">
-                                        <div>
-                                            <img className="w-52 block m-auto drop-shadow-lg" src="https://ifest.uajy.ac.id/assets/images/medal-1.png" alt="/" />
-                                        </div>
-                                        <div className="font-retroica text-center text-2xl">Juara I</div>
-                                        <div className="font-retroica flex gap-3"><FaMoneyBillWave /> Rp4.000.000</div>
-                                        <div className="font-retroica flex gap-3"><FaCertificate /> Sertifikat Nasional</div>
-                                    </Card>
-                                </div>
-
-                                <div className="hidden lg:flex flex-row gap-8">
-                                    <Card className="!bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:!bg-[#9e9e9e] hover:text-[#241f3d] transition ease-in duration-300 w-[30%]">
-                                        <div className="">
-                                            <img className="w-52 block m-auto" src="https://ifest.uajy.ac.id/assets/images/medal-2.png" alt="/" />
-                                        </div>
-                                        <div className="font-retroica text-center text-2xl">Juara II</div>
-                                        <div className="font-retroica flex gap-3"><FaMoneyBillWave /> Rp3.000.000</div>
-                                        <div className="font-retroica flex gap-3"><FaCertificate /> Sertifikat Nasional</div>
-                                    </Card>
-                                    <Card className="!bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:!bg-[#ce7430] hover:text-[#241f3d] transition ease-in duration-300 w-[30%]">
-                                        <div className="">
-                                            <img className="w-52 block m-auto" src="https://ifest.uajy.ac.id/assets/images/medal-3.png" alt="/" />
-                                        </div>
-                                        <div className="font-retroica text-center text-2xl">Juara III</div>
-                                        <div className="font-retroica flex gap-3"><FaMoneyBillWave /> Rp2.000.000</div>
-                                        <div className="font-retroica flex gap-3"><FaCertificate /> Sertifikat Nasional</div>
-                                    </Card>
-                                    <Card className="!bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:!bg-[#00B8B0] hover:text-[#241f3d] transition ease-in duration-300 w-[30%]">
-                                        <div className="">
-                                            <img className="w-52 block m-auto" src="https://ifest.uajy.ac.id/assets/images/medal-favorit.png" alt="/" />
-                                        </div>
-                                        <div className="font-retroica text-center text-2xl">Juara Favorit</div>
-                                        <div className="font-retroica flex gap-3"><FaMoneyBillWave /> Rp500.000</div>
-                                        <div className="font-retroica flex gap-3"><FaCertificate /> Sertifikat Nasional</div>
-                                    </Card>
-                                </div>
-                                <div className="flex lg:hidden flex-col gap-8">
-                                    <Card horizontal className="bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:bg-[#ffba57] hover:text-[#241f3d] transition ease-in duration-300">
-                                        <div className="flex gap-4">
-                                            <div>
-                                                <img className="w-20 block m-auto drop-shadow-lg" src="https://ifest.uajy.ac.id/assets/images/medal-1.png" alt="/" />
-                                            </div>
-                                            <div>
-                                                <div className="font-retroica text-2xl">Juara I</div>
-                                                <div className="font-retroica flex gap-3"><FaMoneyBillWave /> Rp4.000.000</div>
-                                                <div className="font-retroica flex gap-3"><FaCertificate /> Sertifikat Nasional</div>
-                                            </div>
-                                        </div>
-                                    </Card>
-                                    <Card horizontal className="bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d] transition ease-in duration-300">
-                                        <div className="flex gap-4">
-                                            <div>
-                                                <div className="font-retroica text-right text-2xl">Juara II</div>
-                                                <div className="font-retroica flex gap-3"><FaMoneyBillWave /> Rp3.000.000</div>
-                                                <div className="font-retroica flex gap-3"><FaCertificate /> Sertifikat Nasional</div>
-                                            </div>
-                                            <div>
-                                                <img className="w-20 block m-auto" src="https://ifest.uajy.ac.id/assets/images/medal-2.png" alt="/" />
-                                            </div>
-                                        </div>
-                                    </Card>
-                                    <Card horizontal className="bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:bg-[#ce7430] hover:text-[#241f3d] transition ease-in duration-300">
-                                        <div className="flex gap-4">
-                                            <div>
-                                                <img className="w-20 block m-auto" src="https://ifest.uajy.ac.id/assets/images/medal-3.png" alt="/" />
-                                            </div>
-                                            <div>
-                                                <div className="font-retroica text-left text-2xl">Juara III</div>
-                                                <div className="font-retroica flex gap-3"><FaMoneyBillWave /> Rp2.000.000</div>
-                                                <div className="font-retroica flex gap-3"><FaCertificate /> Sertifikat Nasional</div>
-                                            </div>
-                                        </div>
-                                    </Card>
-                                    <Card horizontal className="bg-[#241f3d] !border-gray-700 text-white hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d] transition ease-in duration-300">
-                                        <div className="flex gap-4">
-                                            <div>
-                                                <div className="font-retroica text-right text-2xl">Juara Favorit</div>
-                                                <div className="font-retroica flex gap-3"><FaMoneyBillWave /> Rp500.000</div>
-                                                <div className="font-retroica flex gap-3"><FaCertificate /> Sertifikat Nasional</div>
-                                            </div>
-                                            <div>
-                                                <img className="w-20 block m-auto" src="https://ifest.uajy.ac.id/assets/images/medal-favorit.png" alt="/" />
-                                            </div>
-                                        </div>
-                                    </Card>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Call To Action */}
-                        <div className="flex flex-col justify-center items-center w-screen my-12">
-                            <div className="bg-gradient-to-br from-[#463E74] to-[#332550] border-gray-200 max-w-[100%] w-[21rem] lg:w-[60%] rounded-xl p-8">
-                                <div className="flex flex-col lg:flex-row text-center justify-center items-center lg:justify-start">
-                                    <img className="lg:w-[30%] w-32" src="https://ifest.uajy.ac.id/assets/images/ill4-icon.png" alt="" />
-                                    <div className="flex flex-col gap-4  items-center lg:items-start">
-                                        <div className="font-retroica text-2xl lg:text-3xl text-[#87bbeb]">Tertarik? Ayo mendaftar!</div>
-                                        <div className="font-louisgeorgecafe text-white text-center lg:text-left">Ayo buktikan bakat dan kreativitasmu! Jangan cepat berpuas diri!</div>
-                                        <div className="bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1 rounded-full w-fit">
-                                            <button className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
-                                                <Link to="/dashboard"><div className="opacity-100 text-white font-retroica">DAFTAR</div></Link>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col gap-2 justify-center items-center w-screen">
-                            <div className="font-retroica text-4xl text-white">Contact Us</div>
-                            <div className="font-retroica text-base text-white">Masih ada yang bingung? Yuk kontak kami.</div>
-                            <div className="h-64 w-64">
-                                <Carousel
-                                    leftControl=" "
-                                    rightControl=" "
-                                    indicators={false}
-                                >
-                                    <div className="text-white text-center flex justify-center">
-                                        <table className="table-cell border-separate border-[6px] border-[#ba87fb] rounded-xl p-2">
-                                            <thead>
-                                                <tr>
-                                                    <th className="border-b-[6px] border-[#ba87fb]">I2C</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div>0822 2555 3400</div>
-                                                        <button className="bg-gradient-to-br from-[#7fa2fe] bg-[#ba87fb] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
-                                                            <FaWhatsapp />
-                                                            Lala
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div>0852 1024 5177</div>
-                                                        <button className="bg-gradient-to-br from-[#7fa2fe] bg-[#ba87fb] px-2 rounded-2xl flex items-center justify-center gap-1 mx-auto">
-                                                            <FaWhatsapp />
-                                                            Kevin
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </Carousel>
-                            </div>
-                        </div>
-
-                        <Footer className={"bg-none p-4"} />
-                    </div>
+            {/* Timeline */}
+            <div className="flex w-full flex-col justify-center lg:w-[70%] lg:items-center">
+              <div className="mx-auto mb-8 text-center font-retroica text-4xl text-[#87bbeb]">
+                Timeline
+              </div>
+              <div className="w-fit rounded-xl bg-[#241f3d] pb-1">
+                <div className="rounded-xl bg-[#716B90] p-4 font-retroica text-white shadow-inner">
+                  Proposal Selection
                 </div>
               </div>
 
@@ -856,7 +580,7 @@ const I2C: FC = () => {
                 <div className="my-10 hidden lg:flex">
                   <Card
                     horizontal
-                    className="m-auto w-[30%] !border-gray-700 !bg-[#ffba57] pt-0 text-white transition duration-300 ease-in hover:scale-110"
+                    className="m-auto w-[30%] !border-gray-700 !bg-[#241f3d] pt-0 text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ffba57] hover:text-[#241f3d]"
                   >
                     <div>
                       <img
@@ -876,7 +600,7 @@ const I2C: FC = () => {
                 </div>
 
                 <div className="hidden flex-row gap-8 lg:flex">
-                  <Card className="w-[30%] !border-gray-700 !bg-[#9e9e9e] text-white transition duration-300 ease-in hover:scale-110">
+                  <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#9e9e9e] hover:text-[#241f3d]">
                     <div className="">
                       <img
                         className="m-auto block w-52"
@@ -892,7 +616,7 @@ const I2C: FC = () => {
                       <FaCertificate /> Sertifikat Nasional
                     </div>
                   </Card>
-                  <Card className="w-[30%] !border-gray-700 !bg-[#ce7430] text-white transition duration-300 ease-in hover:scale-110">
+                  <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ce7430] hover:text-[#241f3d]">
                     <div className="">
                       <img
                         className="m-auto block w-52"
@@ -908,7 +632,7 @@ const I2C: FC = () => {
                       <FaCertificate /> Sertifikat Nasional
                     </div>
                   </Card>
-                  <Card className="w-[30%] !border-gray-700 !bg-[#00B8B0] text-white transition duration-300 ease-in hover:scale-110">
+                  <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#00B8B0] hover:text-[#241f3d]">
                     <div className="">
                       <img
                         className="m-auto block w-52"
@@ -928,7 +652,7 @@ const I2C: FC = () => {
                 <div className="flex flex-col gap-8 lg:hidden">
                   <Card
                     horizontal
-                    className="!border-gray-700 !bg-[#ffba57] text-white transition duration-300 ease-in hover:scale-110"
+                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#ffba57] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -951,7 +675,7 @@ const I2C: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 !bg-[#9e9e9e] text-white transition duration-300 ease-in hover:scale-110"
+                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -974,7 +698,7 @@ const I2C: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 !bg-[#ce7430] text-white transition duration-300 ease-in hover:scale-110"
+                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#ce7430] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -997,7 +721,7 @@ const I2C: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 !bg-[#00B8B0] text-white transition duration-300 ease-in hover:scale-110"
+                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
