@@ -56,45 +56,20 @@ const DonorDarah: FC = () => {
               </div>
             </div>
           </div>
-          {/* <div className="flex animate-pulse items-center justify-center text-center">
-            <motion.button
-              onClick={() => contentRef.current?.scrollIntoView({ behavior: "smooth" })}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.75 }}
-              transition={{ delay: 0.0, duration: 0.25 }}
-              className="mt-20 transition-transform hover:scale-125"
-            >
-              <div className="w-20 font-retroica text-sm text-white">Read More</div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="ml-5 h-10 w-10 stroke-white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19.5 5.25l-7.5 7.5-7.5-7.1"
-                />
-              </svg>
-            </motion.button>
-          </div> */}
         </div>
 
         <div className="w-screen bg-gradient-to-t from-[#000] to-[#4A2B52] py-2">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="font-retroica text-4xl font-bold text-[#fff]">Sponsor Kami</h1>
+            <h1 className="font-retroica text-4xl font-bold text-[#fff]">Diselenggarakan oleh</h1>
           </div>
-          <div className="py-10 lg:grid lg:grid-cols-3 lg:gap-4 lg:px-20 lg:py-20">
-            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-0">
+          <div className="col flex flex-col gap-4 p-4 lg:grid lg:grid-cols-3 lg:gap-4 lg:px-20 lg:py-20">
+            <div className="flex flex-col items-center justify-center bg-[#512d59] py-12 text-center">
               <img src="/images/sponsor-1.png" alt="sponsor-1" className="w-1/3" />
             </div>
-            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-0">
+            <div className="flex flex-col items-center justify-center bg-[#512d59] py-12 text-center">
               <img src="/images/logo.png" alt="sponsor-2" className="w-1/3" />
             </div>
-            <div className="flex flex-col items-center justify-center py-10 text-center lg:py-0">
+            <div className="flex flex-col items-center justify-center bg-[#512d59] py-12 text-center">
               <img src="/images/sponsor-3.png" alt="sponsor-3" className="w-1/2" />
             </div>
           </div>
@@ -267,7 +242,7 @@ const DonorDarah: FC = () => {
                     <tr>
                       <td>
                         <div className="mt-2 font-retroica text-[#ffffffcc]">0822 2555 3400</div>
-                        <button className="flex items-center justify-center gap-1 rounded bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-bold text-[#000]">
+                        <button className="mx-auto flex items-center justify-center gap-1 rounded bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-bold text-[#000]">
                           <FaWhatsapp />
                           Lala
                         </button>
@@ -276,7 +251,7 @@ const DonorDarah: FC = () => {
                     <tr className="mt-10">
                       <td>
                         <div className="mt-2 font-retroica text-[#ffffffcc]">0852 1024 5177</div>
-                        <button className="flex items-center justify-center gap-1 rounded bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-bold text-[#000]">
+                        <button className="mx-auto flex items-center justify-center gap-1 rounded bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-bold text-[#000]">
                           <FaWhatsapp />
                           Kevin
                         </button>

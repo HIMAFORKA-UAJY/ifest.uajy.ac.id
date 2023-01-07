@@ -1,5 +1,5 @@
 import { Carousel } from "flowbite-react";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { FaWhatsapp } from "react-icons/all";
 import "react-vertical-timeline-component/style.min.css";
 import { Autoplay, EffectCoverflow } from "swiper";
@@ -15,6 +15,9 @@ import Layout from "../components/Layout";
 import "./Sponsor.css";
 
 const Sponsor: FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout>
       <div className="absolute top-0 -z-10 w-screen bg-[#0A1828] pt-32">

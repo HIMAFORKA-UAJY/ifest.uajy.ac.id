@@ -15,7 +15,7 @@ const Footer: FC<Props> = ({ className }) => {
         className="flex flex-col justify-center gap-6 border-t-2 pt-8 lg:flex-row lg:gap-12"
         style={{ borderColor: "rgb(0 0 0 / 9%)" }}
       >
-        <img className="w-24 lg:h-16" src={logo} alt="ifest-logo" />
+        <img className="w-24 lg:w-32" src={logo} alt="ifest-logo" />
         <div className="flex flex-col gap-2 text-left">
           <div className="font-retroica text-xl text-white">IFest#11</div>
           <div className="font-louisgeorgecafe text-white opacity-70">
@@ -30,9 +30,9 @@ const Footer: FC<Props> = ({ className }) => {
           <div className="font-louisgeorgecafe text-white opacity-70">
             <Link to="/wdc">Web Design Competition (WDC)</Link>
           </div>
-          {/* <div className="font-louisgeorgecafe text-white opacity-70">
-                        <Link to="/hackathon">Hackathon</Link >
-                    </div> */}
+          <div className="font-louisgeorgecafe text-white opacity-70">
+            <Link to="/hackathon">Hackathon</Link>
+          </div>
         </div>
         <div className="flex flex-col gap-2 text-left">
           <div className="font-retroica text-xl text-white">Acara</div>
@@ -41,6 +41,9 @@ const Footer: FC<Props> = ({ className }) => {
           </div>
           <div className="font-louisgeorgecafe text-white opacity-70">
             <Link to="/donor-darah">Donor Darah</Link>
+          </div>
+          <div className="font-louisgeorgecafe text-white opacity-70">
+            <Link to="/seminar">Seminar Nasional</Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 text-left">

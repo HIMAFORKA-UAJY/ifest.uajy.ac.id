@@ -656,7 +656,7 @@ const I2C: FC = () => {
                 <div className="flex flex-col gap-8 lg:hidden">
                   <Card
                     horizontal
-                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#ffba57] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ffba57] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -679,7 +679,7 @@ const I2C: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#9e9e9e] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -702,7 +702,7 @@ const I2C: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#ce7430] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ce7430] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -725,7 +725,7 @@ const I2C: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#00B8B0] hover:text-[#241f3d]"
                   >
                     <div className="flex gap-4">
                       <div>
