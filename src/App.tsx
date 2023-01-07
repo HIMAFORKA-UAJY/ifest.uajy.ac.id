@@ -2,13 +2,15 @@ import { AnimatePresence } from "framer-motion";
 import { FC, Suspense, lazy } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
-const DonorDarah = lazy(() => import("./pages/DonorDarah"));
-const Error404 = lazy(() => import("./pages/Error404"));
+import Home from "./pages/Home";
+
 // const FoodBazaar = lazy(() => import("./pages/FoodBazaar"));
 // const Hackathon = lazy(() => import("./pages/Hackathon"));
-const Home = lazy(() => import("./pages/Home"));
-const I2C = lazy(() => import("./pages/I2C"));
+// const Home = lazy(() => import("./pages/Home"));
 // const Seminar = lazy(() => import("./pages/Seminar"));
+const DonorDarah = lazy(() => import("./pages/DonorDarah"));
+const Error404 = lazy(() => import("./pages/Error404"));
+const I2C = lazy(() => import("./pages/I2C"));
 const Sponsor = lazy(() => import("./pages/Sponsor"));
 const UnderDevelopment = lazy(() => import("./pages/UnderDevelopment"));
 const WDC = lazy(() => import("./pages/WDC"));

@@ -43,7 +43,7 @@ const Sponsor: FC = () => {
             </div>
           </Carousel>
         </div>
-        <div className="hidden w-1/4 lg:flex">
+        <div className="hidden lg:flex">
           <Swiper
             effect="coverflow"
             navigation
@@ -60,19 +60,19 @@ const Sponsor: FC = () => {
             modules={[EffectCoverflow, Pagination, Navigation]}
             className="mySwiper"
           >
-            <SwiperSlide className="flex h-[19rem] w-[19rem] items-center justify-center bg-[#352a7c] p-4 ">
+            <SwiperSlide className="flex h-[19rem] w-[19rem] items-center bg-[#352a7c] p-2">
               <img
                 src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/jagoanh-gold.png"
                 alt="jagoan-hosting"
               />
             </SwiperSlide>
-            <SwiperSlide className="flex h-[19rem] w-[19rem] items-center justify-center bg-[#352a7c] p-4 ">
+            <SwiperSlide className="flex h-[19rem] w-[19rem] items-center bg-[#352a7c] p-2">
               <img
                 src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/ajaib-silver.jpg"
                 alt="ajaib-silver"
               />
             </SwiperSlide>
-            <SwiperSlide className="flex h-[19rem] w-[19rem] items-center justify-center bg-[#352a7c] p-4 ">
+            <SwiperSlide className="flex h-[19rem] w-[19rem] items-center bg-[#352a7c] p-2">
               <img
                 src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/devcode-color-silver.png"
                 alt="dev-code"

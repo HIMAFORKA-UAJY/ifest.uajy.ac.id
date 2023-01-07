@@ -40,7 +40,7 @@ const Publication: FC = () => {
     >
       <div className="flex w-screen flex-col items-center justify-center gap-10">
         <div className="font-retroica text-4xl text-white">Publikasi</div>
-        <div className="">
+        <div className="w-full lg:px-12">
           <Swiper
             effect="coverflow"
             navigation
@@ -60,8 +60,8 @@ const Publication: FC = () => {
           >
             {publications.map((publication) => {
               return (
-                <SwiperSlide key={publication.title}>
-                  <div className="flex h-full flex-col items-center justify-center gap-2 bg-[#352A7C] py-24 text-center">
+                <SwiperSlide className="h-[32rem] w-[20rem]" key={publication.title}>
+                  <div className="flex h-full flex-col items-center justify-center gap-2 bg-[#352A7C] text-center">
                     <img className="w-64" src={publication.img} alt="/" />
                     <div className="font-retroica text-[#ffffff]">{publication.author}</div>
                     <div className="font-retroica text-xl text-[#9C8DFC]">{publication.title}</div>
