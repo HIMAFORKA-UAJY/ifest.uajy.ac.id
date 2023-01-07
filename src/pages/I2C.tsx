@@ -316,7 +316,7 @@ const I2C: FC = () => {
                       </button>
                     </Typography>
                     <iframe
-                      src="public\rulebook\rulebook-i2c.pdf"
+                      src="rulebook/rulebook-i2c.pdf"
                       style={{ width: "100%", height: "95%" }}
                       title="I2C Rulebook"
                     />
@@ -586,7 +586,7 @@ const I2C: FC = () => {
                 <div className="my-10 hidden lg:flex">
                   <Card
                     horizontal
-                    className="m-auto w-[30%] !border-gray-700 bg-[#241f3d] pt-0 text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#ffba57] hover:text-[#241f3d]"
+                    className="m-auto w-[30%] !border-gray-700 !bg-[#ffba57] pt-0 text-white transition duration-300 ease-in hover:scale-110"
                   >
                     <div>
                       <img
@@ -606,7 +606,7 @@ const I2C: FC = () => {
                 </div>
 
                 <div className="hidden flex-row gap-8 lg:flex">
-                  <Card className="w-[30%] !border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d]">
+                  <Card className="w-[30%] !border-gray-700 !bg-[#9e9e9e] text-white transition duration-300 ease-in hover:scale-110">
                     <div className="">
                       <img
                         className="m-auto block w-52"
@@ -622,7 +622,7 @@ const I2C: FC = () => {
                       <FaCertificate /> Sertifikat Nasional
                     </div>
                   </Card>
-                  <Card className="w-[30%] !border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#ce7430] hover:text-[#241f3d]">
+                  <Card className="w-[30%] !border-gray-700 !bg-[#ce7430] text-white transition duration-300 ease-in hover:scale-110">
                     <div className="">
                       <img
                         className="m-auto block w-52"
@@ -638,7 +638,7 @@ const I2C: FC = () => {
                       <FaCertificate /> Sertifikat Nasional
                     </div>
                   </Card>
-                  <Card className="w-[30%] !border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d]">
+                  <Card className="w-[30%] !border-gray-700 !bg-[#00B8B0] text-white transition duration-300 ease-in hover:scale-110">
                     <div className="">
                       <img
                         className="m-auto block w-52"
@@ -658,7 +658,7 @@ const I2C: FC = () => {
                 <div className="flex flex-col gap-8 lg:hidden">
                   <Card
                     horizontal
-                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#ffba57] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#ffba57] text-white transition duration-300 ease-in hover:scale-110"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -681,7 +681,7 @@ const I2C: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#9e9e9e] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#9e9e9e] text-white transition duration-300 ease-in hover:scale-110"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -704,7 +704,7 @@ const I2C: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#ce7430] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#ce7430] text-white transition duration-300 ease-in hover:scale-110"
                   >
                     <div className="flex gap-4">
                       <div>
@@ -727,7 +727,7 @@ const I2C: FC = () => {
                   </Card>
                   <Card
                     horizontal
-                    className="!border-gray-700 bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:bg-[#00B8B0] hover:text-[#241f3d]"
+                    className="!border-gray-700 !bg-[#00B8B0] text-white transition duration-300 ease-in hover:scale-110"
                   >
                     <div className="flex gap-4">
                       <div>
