@@ -17,3 +17,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #224369 !important;
 }
+
+li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  
+}
