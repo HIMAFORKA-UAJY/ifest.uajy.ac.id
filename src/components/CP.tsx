@@ -13,8 +13,10 @@ const CP: FC = () => {
       className="bg-[#2b2265] pt-24 lg:pb-12"
     >
       <div className="flex w-screen flex-col items-center justify-center gap-0">
-        <div className="font-retron2000 font-bold text-5xl text-white">Contact Us</div>
-        <div className="font-louisgeorgecafe text-base text-white p-5">Ada pertanyaan? Silakan ajukan ^_^</div>
+        <div className="font-retron2000 text-5xl font-bold text-white">Contact Us</div>
+        <div className="p-5 font-louisgeorgecafe text-base text-white">
+          Ada pertanyaan? Silakan ajukan ^_^
+        </div>
         <div className="hidden gap-8 pt-8 lg:flex">
           <div className="flex justify-center text-center text-white">
             <table className="table-cell border-separate rounded-xl border-[6px] border-[#ba87fb] p-2">

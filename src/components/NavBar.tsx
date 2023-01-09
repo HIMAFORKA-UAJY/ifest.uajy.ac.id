@@ -36,7 +36,7 @@ const NavBar: FC = () => {
       case "/sponsor":
         setColor({ bg1: "#182E47", bg2: "#182E47", fg: "#479EC6" });
         break;
-      
+
       case "/blog/finalis-wdc":
         setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
         break;

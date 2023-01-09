@@ -76,19 +76,19 @@ const WDCSection: FC = () => {
         </div>
         <div className="flex gap-2 px-2 font-retroica text-sm text-white">
           <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
-            <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem]">
+            <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center">
               <FaWallet />
               Rp. 50.000
             </div>
           </div>
-          <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1 h-fit">
+          <div className="h-fit rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
             <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem]">
               <FaBook />
               Mahasiswa
             </div>
           </div>
           <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
-            <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem]">
+            <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center">
               <FaMale />
               Max. 2 orang
             </div>

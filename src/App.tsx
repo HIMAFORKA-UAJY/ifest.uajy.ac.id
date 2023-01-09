@@ -2,6 +2,7 @@ import { AnimatePresence } from "framer-motion";
 import { FC } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
+import Blog from "./pages/Blog";
 import DonorDarah from "./pages/DonorDarah";
 import Error404 from "./pages/Error404";
 // import FoodBazaar from "./pages/FoodBazaar";
@@ -12,7 +13,6 @@ import I2C from "./pages/I2C";
 import Sponsor from "./pages/Sponsor";
 import UnderDevelopment from "./pages/UnderDevelopment";
 import WDC from "./pages/WDC";
-import Blog from "./pages/Blog";
 
 const App: FC = () => {
   const location = useLocation();
