@@ -104,7 +104,7 @@ const FAQ: FC = () => {
                               } ${open ? "bg-gray-400/30" : "bg-[#2b2265]"}`}
                             >
                               <span
-                                className={`text-left font-retroica text-sm font-semibold tracking-[0.1em] ${
+                                className={`text-left font-retroica text-sm font-medium tracking-[0.1em] ${
                                   open ? "text-white" : "text-gray-400"
                                 }`}
                               >
@@ -126,7 +126,7 @@ const FAQ: FC = () => {
                               </svg>
                             </AccordionHeader>
                             <AccordionBody className={`open ? "" : ""`}>
-                              <div className="p-4 text-left font-retroica text-sm text-gray-200">
+                              <div className="p-4 text-left font-louisgeorgecafe text-sm text-gray-200">
                                 {parse(faq.answer)}
                               </div>
                             </AccordionBody>

@@ -1,7 +1,7 @@
 import { Box, Modal, Typography } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FC, useRef, useState } from "react";
+import { FC, useRef, useState, useEffect } from "react";
 import { Chrono } from "react-chrono";
 import {
   FaBook,
@@ -659,7 +659,7 @@ const WDC: FC = () => {
             </div>
 
             <div className="flex w-screen flex-col items-center justify-center gap-2">
-              <div className="font-retroica text-4xl text-white">Contact Us</div>
+              <div className="font-retron2000 font-bold text-5xl text-white">Contact Us</div>
               <div className="font-retroica text-base text-white">
                 Masih ada yang bingung? Yuk kontak kami.
               </div>
