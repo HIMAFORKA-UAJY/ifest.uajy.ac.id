@@ -50,7 +50,7 @@ const I2CSection: FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[32em] p-4 font-retroica text-white">
+              <div className="w-[32em] p-4 font-louisgeorgecafe text-white">
                 <p className="text-justify">
                   <strong>Innovative Informatics Contest</strong> (I2C) 2022 adalah sebuah kompetisi
                   ide kreatif untuk merancang aplikasi yang inovatif secara berkelompok
@@ -84,27 +84,27 @@ const I2CSection: FC = () => {
             </div>
           </div>
           <div className="flex gap-2 px-2 font-retroica text-sm text-white">
-            <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
+            <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] h-fit p-1">
               <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem]">
                 <FaWallet />
                 Gratis
               </div>
             </div>
-            <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
+            <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] h-fit p-1">
               <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem]">
                 <FaBook />
                 SMA/Sederajat
               </div>
             </div>
-            <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
-              <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem]">
+            <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] h-fit p-1">
+              <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem]">
                 <FaMale />
                 Max. 3 orang
               </div>
             </div>
           </div>
           <div className="pt-2" />
-          <div className="p-4 font-retroica text-white">
+          <div className="p-4 font-louisgeorgecafe text-white">
             <p className="text-justify">
               <strong>Innovative Informatics Contest</strong> (I2C) 2022 adalah sebuah kompetisi ide
               kreatif untuk merancang aplikasi yang inovatif secara berkelompok beranggotakan 3

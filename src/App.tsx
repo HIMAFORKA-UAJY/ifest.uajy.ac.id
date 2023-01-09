@@ -12,6 +12,7 @@ import I2C from "./pages/I2C";
 import Sponsor from "./pages/Sponsor";
 import UnderDevelopment from "./pages/UnderDevelopment";
 import WDC from "./pages/WDC";
+import Blog from "./pages/Blog";
 
 const App: FC = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ const App: FC = () => {
         <Route path="/donor-darah" element={<DonorDarah />} />
         <Route path="/food-bazaar" element={<UnderDevelopment />} />
         <Route path="/sponsor" element={<Sponsor />} />
+        <Route path="/blog/finalis-wdc" element={<Blog />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </AnimatePresence>

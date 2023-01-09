@@ -131,7 +131,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-louisgeorgecafe text-base text-[#fff] lg:px-20">
                       Karena sebelum dilakukan proses donor, ada pengetesan untuk beberapa penyakit.
                       Hal ini dilakukan agar kualitas darah yang didonasikan terjaga.
                     </div>
@@ -154,7 +154,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-louisgeorgecafe text-base text-[#fff] lg:px-20">
                       Karena saat donasi darah, tubuh kita akan membentuk sel darah merah yang baru.
                       Donor darah secara rutin dapat menstimulasi pembentukan darah baru.
                     </div>
@@ -177,7 +177,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-louisgeorgecafe text-base text-[#fff] lg:px-20">
                       Karena menurut penelitian, berbuat baik dapat memperpanjang usia. Menurut
                       penelitian, donor darah dapat menjaga kesehatan emosional seseorang.{" "}
                     </div>
@@ -200,7 +200,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-retroica text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-louisgeorgecafe text-base text-[#fff] lg:px-20">
                       Karena donor darah dapat memperlancar dan mencegah penyumbatan arteri. Selain
                       itu, donor darah juga dapat meringankan resiko kanker, stroke, dan serangan
                       jantung.
@@ -230,7 +230,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-12">
                       Daftar melalui{" "}
                       <a
                         href="https://ifest.uajy.ac.id/dash/donor_darah"
@@ -253,7 +253,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-12">
                       Isi form secara online dan dapatkan bukti registrasi melalui email
                     </div>
                   </div>
@@ -270,7 +270,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-12">
                       Menunjukkan bukti registrasi dan melakukan donor darah
                     </div>
                   </div>
@@ -290,7 +290,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-12">
                       Datang ke lokasi kami di {} dan mengambil form pendaftaran
                     </div>
                   </div>
@@ -307,7 +307,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-12">
                       Setelah mengambil form, isi dengan data yang sebenar-benarnya
                     </div>
                   </div>
@@ -324,7 +324,7 @@ const DonorDarah: FC = () => {
                     </div>
                   </div>
                   <div className="items-center justify-center">
-                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-20">
+                    <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-12">
                       Melakukan donor darah sesuai dengan petunjuk panitia
                     </div>
                   </div>
@@ -334,7 +334,7 @@ const DonorDarah: FC = () => {
           </div>
 
           <div className="flex flex-col items-center justify-center p-24 text-center lg:mb-5 lg:pt-40 lg:pb-36">
-            <h1 className="font-retron2000 text-6xl font-bold text-[#fff]">Contact Person</h1>
+            <h1 className="font-retron2000 text-5xl font-bold text-[#fff]">Contact Person</h1>
             <div className="text-1xl font-thin-retroica gap-1 p-5 text-base text-[#ffffffcc]">
               Masih ada yang bingung? Yuk kontak kami.
             </div>

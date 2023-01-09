@@ -7,6 +7,7 @@ import "swiper/css/grid";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 const Publication: FC = () => {
   const publications = [
@@ -15,18 +16,21 @@ const Publication: FC = () => {
       author: "Joshua Puniwan Yahya - Ketua",
       title: "Welcome to IFEST#11",
       date: "28 Desember 2022, 12.00 WIB",
+      address: "/welcome"
     },
     {
       img: "https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png",
       author: "Joshua Puniwan Yahya - Ketua",
       title: "Pengumuman Finalis WDC",
       date: "29 Desember 2022, 12.00 WIB",
+      address: "/blog/finalis-wdc"
     },
     {
       img: "https://ifest.uajy.ac.id/assets/images/event/ill-cp.png",
       author: "Joshua Puniwan Yahya - Ketua",
       title: "Pengumuman Lolos Ke Tahap Virtual Expo I2C",
       date: "30 Desember 2022, 12.00 WIB",
+      address: "/pengumuman-expo"
     },
   ];
 
@@ -66,7 +70,11 @@ const Publication: FC = () => {
                     <div className="font-retroica text-[#ffffff]">{publication.author}</div>
                     <div className="font-retroica text-xl text-[#9C8DFC]">{publication.title}</div>
                     <div className="font-retroica text-[#7364D2]">{publication.date}</div>
-                    <button className="pt-4 font-retroica text-[#9C8DFC]">Find out more</button>
+                    <button className="pt-4 font-retroica text-[#9C8DFC]">
+                      <Link to={publication.address}>
+                        Find out more
+                      </Link>
+                    </button>
                   </div>
                 </SwiperSlide>
               );

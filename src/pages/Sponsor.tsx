@@ -1,5 +1,5 @@
 import { Carousel } from "flowbite-react";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { FaWhatsapp } from "react-icons/all";
 import "react-vertical-timeline-component/style.min.css";
 import { Autoplay, EffectCoverflow } from "swiper";
