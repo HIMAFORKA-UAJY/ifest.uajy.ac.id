@@ -30,11 +30,11 @@ const NavBar: FC = () => {
         break;
 
       case "/donor-darah":
-        setColor({ bg1: "rgb(110 110 159)", bg2: "rgb(110 110 159)", fg: "rgb(192 190 255)" });
+        setColor({ bg1: "#2d2544", bg2: "#54467d", fg: "#b7a5ec" });
         break;
 
       case "/sponsor":
-        setColor({ bg1: "#182E47", bg2: "#182E47", fg: "#479EC6" });
+        setColor({ bg1: "#152435", bg2: "#182E47", fg: "#479EC6" });
         break;
 
       case "/blog/finalis-wdc":
