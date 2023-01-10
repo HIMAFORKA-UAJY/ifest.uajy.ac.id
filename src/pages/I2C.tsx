@@ -1,4 +1,4 @@
-import { Box, Modal, Typography } from "@mui/material";
+import { Box, Modal, Typography, useStepContext } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FC, useEffect, useRef, useState } from "react";
@@ -34,8 +34,13 @@ const I2C: FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
 
   const [open, setOpen] = useState(false);
+  const [openPDF, setOpenPDF] = useState(false)
+
   const onClick = () => setOpen(true);
+  const onClickPDF = () => setOpenPDF(true);
+
   const handleClose = () => setOpen(false);
+  const handleClosePDF= () => setOpenPDF(false);
 
   const dataSeleksi = [
     {
@@ -115,7 +120,7 @@ const I2C: FC = () => {
                   </div>
                   <div className="mt-8 flex gap-4 pl-[1rem] font-retroica text-sm text-white">
                     <div className="rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
-                      <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
+                      <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]" >
                         <FaWallet />
                         Rp. 150K / tim
                       </div>
@@ -176,19 +181,19 @@ const I2C: FC = () => {
             </div>
             <div className="flex gap-4 font-retroica text-sm text-white sm:text-xs">
               <div className="h-fit rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
-                <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]">
+                <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
                   <FaWallet />
                   Rp. 150K / tim
                 </div>
               </div>
               <div className="h-fit rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
-                <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]">
+                <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
                   <FaBook />
                   SMA /<br></br>Sederajat
                 </div>
               </div>
               <div className="h-fit rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center">
+                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center" style={{padding: '1rem'}}>
                   <FaMale />
                   3 peserta / tim
                 </div>
@@ -261,7 +266,7 @@ const I2C: FC = () => {
                       </button>
                     </Typography>
                     <img
-                      src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png"
+                      src="images/thumbnail.png"
                       alt=""
                     />
                   </Box>
@@ -292,14 +297,14 @@ const I2C: FC = () => {
                                     </Modal>
                                 </React.Fragment> */}
                 <button
-                  onClick={onClick}
+                  onClick={onClickPDF}
                   className="flex items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent"
                 >
                   <div className="text-white opacity-70">Lihat Aturan</div>
                 </button>
                 <Modal
-                  open={open}
-                  onClose={handleClose}
+                  open={openPDF}
+                  onClose={handleClosePDF}
                   aria-labelledby="modal-modal-title"
                   aria-describedby="modal-modal-description"
                 >
@@ -310,7 +315,7 @@ const I2C: FC = () => {
                       variant="h6"
                       component="h2"
                     >
-                      <button onClick={handleClose}>
+                      <button onClick={handleClosePDF}>
                         {" "}
                         <FaRegWindowClose />{" "}
                       </button>
