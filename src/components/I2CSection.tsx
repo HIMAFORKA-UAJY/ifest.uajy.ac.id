@@ -22,7 +22,7 @@ const I2CSection: FC = () => {
           <div className="flex items-center justify-center">
             <img
               className="w-[600px]"
-              src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png"
+              src="/public/images/ill-i2c.png"
               alt="i2c"
             />
             <div className="flex flex-col">
@@ -74,7 +74,7 @@ const I2CSection: FC = () => {
         <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
           <img
             className="w-72"
-            src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png"
+            src="/public/images/ill-i2c.png"
             alt="i2c"
           />
           <div className="text-center">
