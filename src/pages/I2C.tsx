@@ -99,8 +99,8 @@ const I2C: FC = () => {
             <div className="flex flex-col items-center justify-center">
               <div className="flex items-center justify-center gap-8">
                 <img
-                  className="w-[600px]"
-                  src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png"
+                  className="w-[28rem]"
+                  src="/public/images/ill-i2c.png"
                   alt="i2c"
                 />
                 <div className="flex flex-col">
@@ -164,12 +164,12 @@ const I2C: FC = () => {
 
           <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
             <img
-              className="w-72"
-              src="https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png"
+              className="w-72 "
+              src="/public/images/ill-i2c.png"
               alt="i2c"
             />
             <div className="text-center">
-              <div className="font-retroica text-4xl tracking-wide text-white">I2C</div>
+              <div className="font-retroica text-4xl tracking-wide text-white pt-4">I2C</div>
               <div className="px-4 pb-[1rem] font-retroica text-2xl text-white">
                 Innovative Informatics Contest
               </div>
