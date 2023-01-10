@@ -117,19 +117,19 @@ const I2C: FC = () => {
                     <div className="rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
                         <FaWallet />
-                        Gratis
+                        Rp. 150K / tim
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
                         <FaBook />
-                        SMA/Sederajat
+                        SMA / Sederajat
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
                         <FaMale />
-                        Max. 3 orang
+                        3 peserta / tim
                       </div>
                     </div>
                   </div>
@@ -176,21 +176,21 @@ const I2C: FC = () => {
             </div>
             <div className="flex gap-4 font-retroica text-sm text-white sm:text-xs">
               <div className="h-fit rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]">
+                <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]">
                   <FaWallet />
-                  Gratis
+                  Rp. 150K / tim
                 </div>
               </div>
               <div className="h-fit rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]">
+                <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]">
                   <FaBook />
-                  SMA/Sederajat
+                  SMA /<br></br>Sederajat
                 </div>
               </div>
               <div className="h-fit rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center">
+                <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center">
                   <FaMale />
-                  Max. 3 orang
+                  3 peserta / tim
                 </div>
               </div>
             </div>
