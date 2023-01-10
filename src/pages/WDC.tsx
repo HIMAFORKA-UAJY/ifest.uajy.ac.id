@@ -500,7 +500,7 @@ const WDC: FC = () => {
             {/* Prize Pool */}
             <div className="flex w-screen flex-col items-center justify-center gap-4 pt-8">
               <div className="font-retroica text-4xl text-[#E99CCE]">Prize Pool</div>
-              <div className="text-center font-retroica text-[#ffba57]">
+              <div className="text-center font-retroica text-[#ffba57]" style={{ fontSize: "1.5rem" }}>
                 {" "}
                 <span className="font-louisgeorgecafe text-white">Total hadiah</span> Rp6.000.000
               </div>
@@ -640,7 +640,7 @@ const WDC: FC = () => {
                     alt=""
                   />
                   <div className="flex flex-col items-center  gap-4 lg:items-start">
-                    <div className="font-retroica text-2xl text-[#7084bc] lg:text-3xl">
+                    <div className="font-retroica text-2xl text-[#9cb0e7] lg:text-3xl">
                       Tertarik? Ayo mendaftar!
                     </div>
                     <div className="text-center font-louisgeorgecafe text-white lg:text-left">

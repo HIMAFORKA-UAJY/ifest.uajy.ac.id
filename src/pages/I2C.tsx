@@ -188,7 +188,7 @@ const I2C: FC = () => {
                 </div>
               </div>
               <div className="h-fit rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
-                <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center">
+                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center">
                   <FaMale />
                   3 peserta / tim
                 </div>
@@ -578,9 +578,9 @@ const I2C: FC = () => {
             {/* Prize Pool */}
             <div className="flex w-screen flex-col items-center justify-center gap-4 pt-8">
               <div className="font-retroica text-4xl text-[#87bbeb]">Prize Pool</div>
-              <div className="text-center font-retroica text-[#ffba57]">
+              <div className="text-center font-retroica text-[#ffba57]" style={{ fontSize: "1.5rem" }}>
                 {" "}
-                <span className="font-louisgeorgecafe text-white">Total hadiah</span> Rp10.500.000
+                <span className="font-louisgeorgecafe text-white">Total hadiah</span> Rp 9.500.000
               </div>
               <div>
                 <div className="my-10 hidden lg:flex">
