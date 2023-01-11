@@ -1,7 +1,7 @@
 import { Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { FaWhatsapp, FaLine } from "react-icons/all";
+import { FaLine, FaWhatsapp } from "react-icons/all";
 
 const CP: FC = () => {
   return (
@@ -29,10 +29,16 @@ const CP: FC = () => {
                 <tr>
                   <td>
                     <div className="flex flex-col items-center">
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaWhatsapp />
+                        0822 2555 3400
+                      </div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaLine />
+                        id_line
+                      </div>
                     </div>
-                    <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2">
+                    <button className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe">
                       Lala
                     </button>
                   </td>
@@ -40,10 +46,16 @@ const CP: FC = () => {
                 <tr>
                   <td>
                     <div className="flex flex-col items-center">
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaWhatsapp />
+                        0822 2555 3400
+                      </div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaLine />
+                        id_line
+                      </div>
                     </div>
-                    <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2">
+                    <button className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe">
                       Kevin
                     </button>
                   </td>
@@ -62,10 +74,16 @@ const CP: FC = () => {
                 <tr>
                   <td>
                     <div className="flex flex-col items-center">
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaWhatsapp />
+                        0822 2555 3400
+                      </div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaLine />
+                        id_line
+                      </div>
                     </div>
-                    <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2">
+                    <button className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe">
                       Andreas
                     </button>
                   </td>
@@ -73,10 +91,16 @@ const CP: FC = () => {
                 <tr>
                   <td>
                     <div className="flex flex-col items-center">
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaWhatsapp />
+                        0822 2555 3400
+                      </div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaLine />
+                        id_line
+                      </div>
                     </div>
-                    <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2">
+                    <button className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe">
                       Wahyu
                     </button>
                   </td>
@@ -124,10 +148,16 @@ const CP: FC = () => {
                 <tr>
                   <td>
                     <div className="flex flex-col items-center">
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaWhatsapp />
+                        0822 2555 3400
+                      </div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaLine />
+                        id_line
+                      </div>
                     </div>
-                    <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2">
+                    <button className="mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe">
                       Tessa
                     </button>
                   </td>
@@ -135,10 +165,16 @@ const CP: FC = () => {
                 <tr>
                   <td>
                     <div className="flex flex-col items-center">
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                      <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaWhatsapp />
+                        0822 2555 3400
+                      </div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaLine />
+                        id_line
+                      </div>
                     </div>
-                    <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2">
+                    <button className="mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe">
                       Rinn
                     </button>
                   </td>
@@ -161,10 +197,16 @@ const CP: FC = () => {
                   <tr>
                     <td>
                       <div className="flex flex-col items-center">
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaWhatsapp />
+                          0822 2555 3400
+                        </div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaLine />
+                          id_line
+                        </div>
                       </div>
-                      <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2">
+                      <button className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe">
                         Lala
                       </button>
                     </td>
@@ -172,10 +214,16 @@ const CP: FC = () => {
                   <tr>
                     <td>
                       <div className="flex flex-col items-center">
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaWhatsapp />
+                          0822 2555 3400
+                        </div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaLine />
+                          id_line
+                        </div>
                       </div>
-                      <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2">
+                      <button className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe">
                         Kevin
                       </button>
                     </td>
@@ -194,10 +242,16 @@ const CP: FC = () => {
                   <tr>
                     <td>
                       <div className="flex flex-col items-center">
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaWhatsapp />
+                          0822 2555 3400
+                        </div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaLine />
+                          id_line
+                        </div>
                       </div>
-                      <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2">
+                      <button className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe">
                         Andreas
                       </button>
                     </td>
@@ -205,10 +259,16 @@ const CP: FC = () => {
                   <tr>
                     <td>
                       <div className="flex flex-col items-center">
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaWhatsapp />
+                          0822 2555 3400
+                        </div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaLine />
+                          id_line
+                        </div>
                       </div>
-                      <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2">
+                      <button className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe">
                         Wahyu
                       </button>
                     </td>
@@ -258,10 +318,16 @@ const CP: FC = () => {
                   <tr>
                     <td>
                       <div className="flex flex-col items-center">
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaWhatsapp />
+                          0822 2555 3400
+                        </div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaLine />
+                          id_line
+                        </div>
                       </div>
-                      <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2">
+                      <button className="mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe">
                         Tessa
                       </button>
                     </td>
@@ -269,10 +335,16 @@ const CP: FC = () => {
                   <tr>
                     <td>
                       <div className="flex flex-col items-center">
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                        <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaWhatsapp />
+                          0822 2555 3400
+                        </div>
+                        <div className="flex items-center gap-1 font-louisgeorgecafe">
+                          <FaLine />
+                          id_line
+                        </div>
                       </div>
-                      <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2">
+                      <button className="mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe">
                         Rinn
                       </button>
                     </td>

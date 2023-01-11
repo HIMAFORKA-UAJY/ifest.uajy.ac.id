@@ -6,12 +6,12 @@ import { Chrono } from "react-chrono";
 import {
   FaBook,
   FaCertificate,
+  FaLine,
   FaMale,
   FaMoneyBillWave,
   FaRegWindowClose,
   FaWallet,
   FaWhatsapp,
-  FaLine
 } from "react-icons/all";
 import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
@@ -105,11 +105,7 @@ const I2C: FC = () => {
           <div className="hidden h-fit w-screen flex-col items-center justify-center lg:flex">
             <div className="flex flex-col items-center justify-center">
               <div className="flex items-center justify-center gap-8">
-                <img
-                  className="w-[28rem]"
-                  src="/images/ill-i2c.png"
-                  alt="i2c"
-                />
+                <img className="w-[28rem]" src="/images/ill-i2c.png" alt="i2c" />
                 <div className="flex flex-col">
                   <div className="bg-gradient-to-r from-[#EFB6D5] to-[#81E3E0] bg-clip-text pl-[1rem] pb-[0.5rem] font-retroica text-6xl text-transparent">
                     Innovative
@@ -169,11 +165,7 @@ const I2C: FC = () => {
           </div>
 
           <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
-            <img
-              className="w-72 pt-24 "
-              src="/images/ill-i2c.png"
-              alt="i2c"
-            />
+            <img className="w-72 pt-24 " src="/images/ill-i2c.png" alt="i2c" />
             <div className="text-center">
               <div className="pt-4 font-retroica text-4xl tracking-wide text-white">I2C</div>
               <div className="px-4 pb-[1rem] font-retroica text-2xl text-white">
@@ -267,7 +259,11 @@ const I2C: FC = () => {
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                   >
-                    <Box sx={style} className="overflow-auto" style={{width: '90%', height: '90%', margin: 'auto'}}>
+                    <Box
+                      sx={style}
+                      className="overflow-auto"
+                      style={{ width: "90%", height: "90%", margin: "auto" }}
+                    >
                       <Typography
                         className="text-right"
                         id="modal-modal-title"
@@ -279,7 +275,7 @@ const I2C: FC = () => {
                           <FaRegWindowClose />{" "}
                         </button>
                       </Typography>
-                      <img src="images/poster-dondar.jpeg" style={{margin: 'auto'}} alt="" />
+                      <img src="images/poster-dondar.jpeg" style={{ margin: "auto" }} alt="" />
                     </Box>
                   </Modal>
                 </div>
@@ -598,196 +594,201 @@ const I2C: FC = () => {
 
             {/* Prize Pool */}
 
-            <div className="flex w-screen flex-col items-center justify-center gap-4 pt-12 pb-12" style={{backgroundImage: "url('/images/bg-prizepool.png')", backgroundPosition:'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
-
             <div
               className="flex w-screen flex-col items-center justify-center gap-4 pt-12 pb-12"
               style={{
-                backgroundImage: "url('public/images/bg-prizepool.png')",
+                backgroundImage: "url('/images/bg-prizepool.png')",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
               }}
             >
-
-              <div className="font-retroica text-4xl text-[#87bbeb]">Prize Pool</div>
               <div
-                className="text-center font-retroica text-[#ffba57]"
-                style={{ fontSize: "1.5rem" }}
+                className="flex w-screen flex-col items-center justify-center gap-4 pt-12 pb-12"
+                style={{
+                  backgroundImage: "url('public/images/bg-prizepool.png')",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                }}
               >
-                {" "}
-                <span className="font-louisgeorgecafe text-white">Total hadiah</span> Rp 9.500.000
-              </div>
-              <div>
-                <div className="my-10 hidden lg:flex">
-                  <Card
-                    horizontal
-                    className="m-auto w-[30%] !border-gray-700 !bg-[#241f3d] pt-0 text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ffba57] hover:text-[#241f3d]"
-                  >
-                    <div>
-                      <img
-                        className="m-auto block w-52 drop-shadow-lg"
-                        src="https://ifest.uajy.ac.id/assets/images/medal-1.png"
-                        alt="/"
-                      />
-                    </div>
-                    <div className="text-center font-retroica text-2xl">Juara I</div>
-                    <div className="flex gap-3 font-retroica">
-                      <FaMoneyBillWave /> Rp4.000.000
-                    </div>
-                    <div className="flex gap-3 font-retroica">
-                      <FaCertificate /> Sertifikat Nasional
-                    </div>
-                  </Card>
+                <div className="font-retroica text-4xl text-[#87bbeb]">Prize Pool</div>
+                <div
+                  className="text-center font-retroica text-[#ffba57]"
+                  style={{ fontSize: "1.5rem" }}
+                >
+                  {" "}
+                  <span className="font-louisgeorgecafe text-white">Total hadiah</span> Rp 9.500.000
                 </div>
-
-                <div className="hidden flex-row gap-8 lg:flex">
-                  <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#9e9e9e] hover:text-[#241f3d]">
-                    <div className="">
-                      <img
-                        className="m-auto block w-52"
-                        src="https://ifest.uajy.ac.id/assets/images/medal-2.png"
-                        alt="/"
-                      />
-                    </div>
-                    <div className="text-center font-retroica text-2xl">Juara II</div>
-                    <div className="flex gap-3 font-retroica">
-                      <FaMoneyBillWave /> Rp3.000.000
-                    </div>
-                    <div className="flex gap-3 font-retroica">
-                      <FaCertificate /> Sertifikat Nasional
-                    </div>
-                  </Card>
-                  <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ce7430] hover:text-[#241f3d]">
-                    <div className="">
-                      <img
-                        className="m-auto block w-52"
-                        src="https://ifest.uajy.ac.id/assets/images/medal-3.png"
-                        alt="/"
-                      />
-                    </div>
-                    <div className="text-center font-retroica text-2xl">Juara III</div>
-                    <div className="flex gap-3 font-retroica">
-                      <FaMoneyBillWave /> Rp2.000.000
-                    </div>
-                    <div className="flex gap-3 font-retroica">
-                      <FaCertificate /> Sertifikat Nasional
-                    </div>
-                  </Card>
-                  <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#00B8B0] hover:text-[#241f3d]">
-                    <div className="">
-                      <img
-                        className="m-auto block w-52"
-                        src="https://ifest.uajy.ac.id/assets/images/medal-favorit.png"
-                        alt="/"
-                      />
-                    </div>
-                    <div className="text-center font-retroica text-2xl">Juara Favorit</div>
-                    <div className="flex gap-3 font-retroica">
-                      <FaMoneyBillWave /> Rp500.000
-                    </div>
-                    <div className="flex gap-3 font-retroica">
-                      <FaCertificate /> Sertifikat Nasional
-                    </div>
-                  </Card>
-                </div>
-                <div className="flex flex-col gap-8 lg:hidden">
-                  <Card
-                    horizontal
-                    className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ffba57] hover:text-[#241f3d]"
-                  >
-                    <div className="flex gap-4">
+                <div>
+                  <div className="my-10 hidden lg:flex">
+                    <Card
+                      horizontal
+                      className="m-auto w-[30%] !border-gray-700 !bg-[#241f3d] pt-0 text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ffba57] hover:text-[#241f3d]"
+                    >
                       <div>
                         <img
-                          className="m-auto block w-20 drop-shadow-lg"
+                          className="m-auto block w-52 drop-shadow-lg"
                           src="https://ifest.uajy.ac.id/assets/images/medal-1.png"
                           alt="/"
                         />
                       </div>
-                      <div>
-                        <div className="font-retroica text-2xl">Juara I</div>
-                        <div className="flex gap-3 font-retroica">
-                          <FaMoneyBillWave /> Rp4.000.000
-                        </div>
-                        <div className="flex gap-3 font-retroica">
-                          <FaCertificate /> Sertifikat Nasional
-                        </div>
+                      <div className="text-center font-retroica text-2xl">Juara I</div>
+                      <div className="flex gap-3 font-retroica">
+                        <FaMoneyBillWave /> Rp4.000.000
                       </div>
-                    </div>
-                  </Card>
-                  <Card
-                    horizontal
-                    className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#9e9e9e] hover:text-[#241f3d]"
-                  >
-                    <div className="flex gap-4">
-                      <div>
-                        <div className="text-right font-retroica text-2xl">Juara II</div>
-                        <div className="flex gap-3 font-retroica">
-                          <FaMoneyBillWave /> Rp3.000.000
-                        </div>
-                        <div className="flex gap-3 font-retroica">
-                          <FaCertificate /> Sertifikat Nasional
-                        </div>
+                      <div className="flex gap-3 font-retroica">
+                        <FaCertificate /> Sertifikat Nasional
                       </div>
-                      <div>
+                    </Card>
+                  </div>
+
+                  <div className="hidden flex-row gap-8 lg:flex">
+                    <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#9e9e9e] hover:text-[#241f3d]">
+                      <div className="">
                         <img
-                          className="m-auto block w-20"
+                          className="m-auto block w-52"
                           src="https://ifest.uajy.ac.id/assets/images/medal-2.png"
                           alt="/"
                         />
                       </div>
-                    </div>
-                  </Card>
-                  <Card
-                    horizontal
-                    className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ce7430] hover:text-[#241f3d]"
-                  >
-                    <div className="flex gap-4">
-                      <div>
+                      <div className="text-center font-retroica text-2xl">Juara II</div>
+                      <div className="flex gap-3 font-retroica">
+                        <FaMoneyBillWave /> Rp3.000.000
+                      </div>
+                      <div className="flex gap-3 font-retroica">
+                        <FaCertificate /> Sertifikat Nasional
+                      </div>
+                    </Card>
+                    <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ce7430] hover:text-[#241f3d]">
+                      <div className="">
                         <img
-                          className="m-auto block w-20"
+                          className="m-auto block w-52"
                           src="https://ifest.uajy.ac.id/assets/images/medal-3.png"
                           alt="/"
                         />
                       </div>
-                      <div>
-                        <div className="text-left font-retroica text-2xl">Juara III</div>
-                        <div className="flex gap-3 font-retroica">
-                          <FaMoneyBillWave /> Rp2.000.000
-                        </div>
-                        <div className="flex gap-3 font-retroica">
-                          <FaCertificate /> Sertifikat Nasional
-                        </div>
+                      <div className="text-center font-retroica text-2xl">Juara III</div>
+                      <div className="flex gap-3 font-retroica">
+                        <FaMoneyBillWave /> Rp2.000.000
                       </div>
-                    </div>
-                  </Card>
-                  <Card
-                    horizontal
-                    className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#00B8B0] hover:text-[#241f3d]"
-                  >
-                    <div className="flex gap-4">
-                      <div>
-                        <div className="text-right font-retroica text-2xl">Juara Favorit</div>
-                        <div className="flex gap-3 font-retroica">
-                          <FaMoneyBillWave /> Rp500.000
-                        </div>
-                        <div className="flex gap-3 font-retroica">
-                          <FaCertificate /> Sertifikat Nasional
-                        </div>
+                      <div className="flex gap-3 font-retroica">
+                        <FaCertificate /> Sertifikat Nasional
                       </div>
-                      <div>
+                    </Card>
+                    <Card className="w-[30%] !border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#00B8B0] hover:text-[#241f3d]">
+                      <div className="">
                         <img
-                          className="m-auto block w-20"
+                          className="m-auto block w-52"
                           src="https://ifest.uajy.ac.id/assets/images/medal-favorit.png"
                           alt="/"
                         />
                       </div>
-                    </div>
-                  </Card>
+                      <div className="text-center font-retroica text-2xl">Juara Favorit</div>
+                      <div className="flex gap-3 font-retroica">
+                        <FaMoneyBillWave /> Rp500.000
+                      </div>
+                      <div className="flex gap-3 font-retroica">
+                        <FaCertificate /> Sertifikat Nasional
+                      </div>
+                    </Card>
+                  </div>
+                  <div className="flex flex-col gap-8 lg:hidden">
+                    <Card
+                      horizontal
+                      className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ffba57] hover:text-[#241f3d]"
+                    >
+                      <div className="flex gap-4">
+                        <div>
+                          <img
+                            className="m-auto block w-20 drop-shadow-lg"
+                            src="https://ifest.uajy.ac.id/assets/images/medal-1.png"
+                            alt="/"
+                          />
+                        </div>
+                        <div>
+                          <div className="font-retroica text-2xl">Juara I</div>
+                          <div className="flex gap-3 font-retroica">
+                            <FaMoneyBillWave /> Rp4.000.000
+                          </div>
+                          <div className="flex gap-3 font-retroica">
+                            <FaCertificate /> Sertifikat Nasional
+                          </div>
+                        </div>
+                      </div>
+                    </Card>
+                    <Card
+                      horizontal
+                      className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#9e9e9e] hover:text-[#241f3d]"
+                    >
+                      <div className="flex gap-4">
+                        <div>
+                          <div className="text-right font-retroica text-2xl">Juara II</div>
+                          <div className="flex gap-3 font-retroica">
+                            <FaMoneyBillWave /> Rp3.000.000
+                          </div>
+                          <div className="flex gap-3 font-retroica">
+                            <FaCertificate /> Sertifikat Nasional
+                          </div>
+                        </div>
+                        <div>
+                          <img
+                            className="m-auto block w-20"
+                            src="https://ifest.uajy.ac.id/assets/images/medal-2.png"
+                            alt="/"
+                          />
+                        </div>
+                      </div>
+                    </Card>
+                    <Card
+                      horizontal
+                      className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ce7430] hover:text-[#241f3d]"
+                    >
+                      <div className="flex gap-4">
+                        <div>
+                          <img
+                            className="m-auto block w-20"
+                            src="https://ifest.uajy.ac.id/assets/images/medal-3.png"
+                            alt="/"
+                          />
+                        </div>
+                        <div>
+                          <div className="text-left font-retroica text-2xl">Juara III</div>
+                          <div className="flex gap-3 font-retroica">
+                            <FaMoneyBillWave /> Rp2.000.000
+                          </div>
+                          <div className="flex gap-3 font-retroica">
+                            <FaCertificate /> Sertifikat Nasional
+                          </div>
+                        </div>
+                      </div>
+                    </Card>
+                    <Card
+                      horizontal
+                      className="!border-gray-700 !bg-[#241f3d] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#00B8B0] hover:text-[#241f3d]"
+                    >
+                      <div className="flex gap-4">
+                        <div>
+                          <div className="text-right font-retroica text-2xl">Juara Favorit</div>
+                          <div className="flex gap-3 font-retroica">
+                            <FaMoneyBillWave /> Rp500.000
+                          </div>
+                          <div className="flex gap-3 font-retroica">
+                            <FaCertificate /> Sertifikat Nasional
+                          </div>
+                        </div>
+                        <div>
+                          <img
+                            className="m-auto block w-20"
+                            src="https://ifest.uajy.ac.id/assets/images/medal-favorit.png"
+                            alt="/"
+                          />
+                        </div>
+                      </div>
+                    </Card>
+                  </div>
                 </div>
               </div>
-            </div>
-
             </div>
 
             {/* Call To Action */}
@@ -826,37 +827,49 @@ const I2C: FC = () => {
               <div className="h-64 w-64">
                 <Carousel leftControl=" " rightControl=" " indicators={false}>
                   <div className="flex justify-center text-center text-white">
-                  <table className="table-cell border-separate rounded-xl border-[6px] border-[#ba87fb] p-2">
-                    <thead>
-                      <tr>
-                        <th className="border-b-[6px] border-[#ba87fb]">I2C</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div className="flex flex-col items-center">
-                            <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                            <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
-                          </div>
-                          <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2">
-                            Lala
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div className="flex flex-col items-center">
-                            <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                            <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
-                          </div>
-                          <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2">
-                            Kevin
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                    <table className="table-cell border-separate rounded-xl border-[6px] border-[#ba87fb] p-2">
+                      <thead>
+                        <tr>
+                          <th className="border-b-[6px] border-[#ba87fb]">I2C</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div className="flex flex-col items-center">
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaWhatsapp />
+                                0822 2555 3400
+                              </div>
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaLine />
+                                id_line
+                              </div>
+                            </div>
+                            <button className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe">
+                              Lala
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="flex flex-col items-center">
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaWhatsapp />
+                                0822 2555 3400
+                              </div>
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaLine />
+                                id_line
+                              </div>
+                            </div>
+                            <button className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe">
+                              Kevin
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </Carousel>
               </div>

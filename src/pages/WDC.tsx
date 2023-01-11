@@ -6,12 +6,12 @@ import { Chrono } from "react-chrono";
 import {
   FaBook,
   FaCertificate,
+  FaLine,
   FaMale,
   FaMoneyBillWave,
   FaRegWindowClose,
   FaWallet,
   FaWhatsapp,
-  FaLine
 } from "react-icons/all";
 import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
@@ -97,7 +97,6 @@ const WDC: FC = () => {
                   className="w-[600px]"
                   src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png"
                   alt="wdc"
-                  
                 />
                 <div className="flex flex-col">
                   <div className="bg-gradient-to-r from-[#CDF9FF] to-[#F1D2FF] bg-clip-text pl-[1rem] pb-[0.5rem] font-retroica text-6xl text-transparent">
@@ -163,7 +162,7 @@ const WDC: FC = () => {
               className="w-72"
               src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png"
               alt="wdc"
-              style={{paddingTop: '6rem'}}
+              style={{ paddingTop: "6rem" }}
             />
             <div className="text-center">
               <div className="font-retroica text-4xl tracking-wide text-white">WDC</div>
@@ -173,19 +172,28 @@ const WDC: FC = () => {
             </div>
             <div className="m-auto flex flex-col gap-4 font-retroica text-sm text-white sm:text-xs lg:flex lg:items-center  ">
               <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
+                <div
+                  className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]"
+                  style={{ padding: "1rem" }}
+                >
                   <FaWallet />
                   Rp. 50.000
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
+                <div
+                  className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]"
+                  style={{ padding: "1rem" }}
+                >
                   <FaBook />
                   SMA/Sederajat
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
+                <div
+                  className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]"
+                  style={{ padding: "1rem" }}
+                >
                   <FaMale />
                   Max. 3 orang
                 </div>
@@ -224,101 +232,98 @@ const WDC: FC = () => {
         >
           <div className="flex flex-col items-center gap-2 pt-4 pl-4 pr-4">
             <div className="!border-gray-700 !bg-[#241f3d] pt-12 pb-12">
-            <div className="flex flex-col items-center">
-
-            
-            <div className="font-retroica text-3xl font-thin tracking-wider text-white">
-              MORE ABOUT WDC
-            </div>
-            <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
-              <strong>Web Design Competition</strong> (WDC) 2022 adalah sebuah lomba dimana para
-              mahasiswa/i dalam sebuah tim yang terdiri dari dua orang berlomba untuk membuat desain
-              web sebaik mungkin agar dapat mempermudah setiap pengguna web atau pencari informasi
-              mendapatkan informasi yang jelas dan tepat. Dengan adanya Web Design Competition (WDC)
-              2022 diharapkan dapat menjadi wadah untuk para mahasiswa/i yang ada di Indonesia dalam
-              menuangkan ide-ide kreatif mereka.
-            </div>
-            </div>
-            <div className="margin-auto flex-col items-center justify-center gap-4 font-louisgeorgecafe md:flex md:flex-row md:justify-center ">
-              <div className="rounded-full bg-[#6c6486] p-1">
-                <button
-                  onClick={openHandler}
-                  className="m-auto flex justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center "
-                  style={{width: '100%'}}
-
-                >
-                  <div className="text-white opacity-70">Lihat Poster</div>
-                </button>
-                <Modal
-                  open={openPoster}
-                  onClose={closeHandler}
-                  aria-labelledby="modal-modal-title"
-                  aria-describedby="modal-modal-description"
-                >
-                  <Box sx={style} className="h-screen overflow-auto">
-                    <Typography
-                      className="text-right"
-                      id="modal-modal-title"
-                      variant="h6"
-                      component="h2"
-                    >
-                      <button onClick={closeHandler}>
-                        {" "}
-                        <FaRegWindowClose />{" "}
-                      </button>
-                    </Typography>
-                    <img
-                      src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png"
-                      alt=""
-                    />
-                  </Box>
-                </Modal>
+              <div className="flex flex-col items-center">
+                <div className="font-retroica text-3xl font-thin tracking-wider text-white">
+                  MORE ABOUT WDC
+                </div>
+                <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
+                  <strong>Web Design Competition</strong> (WDC) 2022 adalah sebuah lomba dimana para
+                  mahasiswa/i dalam sebuah tim yang terdiri dari dua orang berlomba untuk membuat
+                  desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau pencari
+                  informasi mendapatkan informasi yang jelas dan tepat. Dengan adanya Web Design
+                  Competition (WDC) 2022 diharapkan dapat menjadi wadah untuk para mahasiswa/i yang
+                  ada di Indonesia dalam menuangkan ide-ide kreatif mereka.
+                </div>
               </div>
-              <div className="rounded-full bg-gradient-to-br from-[#6EA5B1] to-[#9B68CE] p-1 my-2">
-                <button
+              <div className="margin-auto flex-col items-center justify-center gap-4 font-louisgeorgecafe md:flex md:flex-row md:justify-center ">
+                <div className="rounded-full bg-[#6c6486] p-1">
+                  <button
+                    onClick={openHandler}
+                    className="m-auto flex justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center "
+                    style={{ width: "100%" }}
+                  >
+                    <div className="text-white opacity-70">Lihat Poster</div>
+                  </button>
+                  <Modal
+                    open={openPoster}
+                    onClose={closeHandler}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                  >
+                    <Box sx={style} className="h-screen overflow-auto">
+                      <Typography
+                        className="text-right"
+                        id="modal-modal-title"
+                        variant="h6"
+                        component="h2"
+                      >
+                        <button onClick={closeHandler}>
+                          {" "}
+                          <FaRegWindowClose />{" "}
+                        </button>
+                      </Typography>
+                      <img
+                        src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png"
+                        alt=""
+                      />
+                    </Box>
+                  </Modal>
+                </div>
+                <div className="my-2 rounded-full bg-gradient-to-br from-[#6EA5B1] to-[#9B68CE] p-1">
+                  <button
                     className="m-auto flex items-center justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
                     style={{ width: "100%" }}
-                    >
-                  <Link to="/dashboard">
-                    <div className="text-white opacity-100">DAFTAR</div>
-                  </Link>
-                </button>
-              </div>
-              <div className="rounded-full bg-[#6c6486] p-1">
-                <button
-                  onClick={openPDFHandler}
-                   className="m-auto flex justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
+                  >
+                    <Link to="/dashboard">
+                      <div className="text-white opacity-100">DAFTAR</div>
+                    </Link>
+                  </button>
+                </div>
+                <div className="rounded-full bg-[#6c6486] p-1">
+                  <button
+                    onClick={openPDFHandler}
+                    className="m-auto flex justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
                     style={{ width: "100%" }}
-                >
-                  <div className="text-white opacity-70">Lihat Aturan</div>
-                </button>
-                <Modal
-                  open={openPDF}
-                  onClose={closePDFHandler}
-                  aria-labelledby="modal-modal-title"
-                  aria-describedby="modal-modal-description"
-                >
-                  <Box sx={style} className="h-screen overflow-auto">
-                    <Typography
-                      className="text-right"
-                      id="modal-modal-title"
-                      variant="h6"
-                      component="h2"
-                    >
-                      <button onClick={closePDFHandler} >
-                        {" "}
-                        <FaRegWindowClose />{" "}
-                      </button>
-                    </Typography>
-                    <iframe
-                      src="rulebook/rulebook-i2c.pdf"
-                      style={{ width: "100%", height: "95%" }}
-                      title="I2C Rulebook"
-                    />
-                  </Box>
-                </Modal>
+                  >
+                    <div className="text-white opacity-70">Lihat Aturan</div>
+                  </button>
+                  <Modal
+                    open={openPDF}
+                    onClose={closePDFHandler}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                  >
+                    <Box sx={style} className="h-screen overflow-auto">
+                      <Typography
+                        className="text-right"
+                        id="modal-modal-title"
+                        variant="h6"
+                        component="h2"
+                      >
+                        <button onClick={closePDFHandler}>
+                          {" "}
+                          <FaRegWindowClose />{" "}
+                        </button>
+                      </Typography>
+                      <iframe
+                        src="rulebook/rulebook-i2c.pdf"
+                        style={{ width: "100%", height: "95%" }}
+                        title="I2C Rulebook"
+                      />
+                    </Box>
+                  </Modal>
+                </div>
               </div>
-            </div>
             </div>
 
             {/* Ketentuan */}
@@ -694,10 +699,16 @@ const WDC: FC = () => {
                         <tr>
                           <td>
                             <div className="flex flex-col items-center">
-                              <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                              <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaWhatsapp />
+                                0822 2555 3400
+                              </div>
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaLine />
+                                id_line
+                              </div>
                             </div>
-                            <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2">
+                            <button className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe">
                               Andreas
                             </button>
                           </td>
@@ -705,10 +716,16 @@ const WDC: FC = () => {
                         <tr>
                           <td>
                             <div className="flex flex-col items-center">
-                              <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                              <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaWhatsapp />
+                                0822 2555 3400
+                              </div>
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaLine />
+                                id_line
+                              </div>
                             </div>
-                            <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2">
+                            <button className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe">
                               Wahyu
                             </button>
                           </td>

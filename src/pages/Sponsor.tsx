@@ -1,6 +1,6 @@
 import { Carousel } from "flowbite-react";
 import { FC, useEffect } from "react";
-import { FaWhatsapp, FaLine } from "react-icons/all";
+import { FaLine, FaWhatsapp } from "react-icons/all";
 import "react-vertical-timeline-component/style.min.css";
 import { Autoplay, EffectCoverflow } from "swiper";
 import "swiper/css";
@@ -120,7 +120,11 @@ const Sponsor: FC = () => {
                   </div>
                   <div className="rounded-md bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] p-1">
                     <button className="flex items-center gap-1 rounded-md bg-[#0A1828] px-4 py-1 font-retroica text-white transition hover:bg-transparent">
-                      <a href='https://wa.me/628993694969?text=Hai%20Admin%20Sponsor%20IFEST%2011,%20Kami%20dari%20NAMA_ORGANISASI/PERUSAHAAN/DLL%20ingin%20menjadi%20"Sponsor%20Kaisar"%20pada%20kegiatan%20IFEST%2011' target='_blank'>
+                      <a
+                        href='https://wa.me/628993694969?text=Hai%20Admin%20Sponsor%20IFEST%2011,%20Kami%20dari%20NAMA_ORGANISASI/PERUSAHAAN/DLL%20ingin%20menjadi%20"Sponsor%20Kaisar"%20pada%20kegiatan%20IFEST%2011'
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         order
                       </a>
                     </button>
@@ -345,37 +349,49 @@ const Sponsor: FC = () => {
             <div className="h-64 w-64">
               <Carousel leftControl=" " rightControl=" " indicators={false}>
                 <div className="flex justify-center text-center text-white">
-                <table className="table-cell border-separate rounded-xl border-[6px] border-[#926DAE] p-2">
-                  <thead>
-                    <tr>
-                      <th className="border-b-[6px] border-[#926DAE]">Sponsor</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div className="flex flex-col items-center">
-                          <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                          <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
-                        </div>
-                        <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2">
-                          Tessa
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className="flex flex-col items-center">
-                          <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
-                          <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
-                        </div>
-                        <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2">
-                          Rinn
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                  <table className="table-cell border-separate rounded-xl border-[6px] border-[#926DAE] p-2">
+                    <thead>
+                      <tr>
+                        <th className="border-b-[6px] border-[#926DAE]">Sponsor</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div className="flex flex-col items-center">
+                            <div className="flex items-center gap-1 font-louisgeorgecafe">
+                              <FaWhatsapp />
+                              0822 2555 3400
+                            </div>
+                            <div className="flex items-center gap-1 font-louisgeorgecafe">
+                              <FaLine />
+                              id_line
+                            </div>
+                          </div>
+                          <button className="mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe">
+                            Tessa
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div className="flex flex-col items-center">
+                            <div className="flex items-center gap-1 font-louisgeorgecafe">
+                              <FaWhatsapp />
+                              0822 2555 3400
+                            </div>
+                            <div className="flex items-center gap-1 font-louisgeorgecafe">
+                              <FaLine />
+                              id_line
+                            </div>
+                          </div>
+                          <button className="mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe">
+                            Rinn
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </Carousel>
             </div>
