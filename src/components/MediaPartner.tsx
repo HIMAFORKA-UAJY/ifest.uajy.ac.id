@@ -9,6 +9,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import classes from "./swiper_nav.module.css"
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const MediaPartner: FC = () => {
@@ -110,7 +111,8 @@ const MediaPartner: FC = () => {
             }}
             navigation
             modules={[Grid, Pagination, Navigation]}
-            className="mySwiper"
+            style={{ "--swiper-pagination-color": "#C3AEFF" }}
+            className="mySwiper classes.swiper-button-prev classes.swiper-button-next"
           >
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
               <img
