@@ -36,13 +36,13 @@ const I2CSection: FC = () => {
                 <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
                   <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
                     <FaBook />
-                    SMA/Sederajat
+                    SMA / Sederajat
                   </div>
                 </div>
                 <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
                   <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
                     <FaMale />
-                    Max. 3 orang
+                    3 peserta / tim
                   </div>
                 </div>
               </div>
@@ -103,7 +103,7 @@ const I2CSection: FC = () => {
                 style={{ padding: "1rem" }}
               >
                 <FaMale />
-                Max. 3 orang
+                3 peserta / tim
               </div>
             </div>
           </div>
