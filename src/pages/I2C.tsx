@@ -11,6 +11,7 @@ import {
   FaRegWindowClose,
   FaWallet,
   FaWhatsapp,
+  FaLine
 } from "react-icons/all";
 import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
@@ -811,33 +812,37 @@ const I2C: FC = () => {
               <div className="h-64 w-64">
                 <Carousel leftControl=" " rightControl=" " indicators={false}>
                   <div className="flex justify-center text-center text-white">
-                    <table className="table-cell border-separate rounded-xl border-[6px] border-[#ba87fb] p-2">
-                      <thead>
-                        <tr>
-                          <th className="border-b-[6px] border-[#ba87fb]">I2C</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <div>0822 2555 3400</div>
-                            <button className="mx-auto flex items-center justify-center gap-1 rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2">
-                              <FaWhatsapp />
-                              Lala
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div>0852 1024 5177</div>
-                            <button className="mx-auto flex items-center justify-center gap-1 rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2">
-                              <FaWhatsapp />
-                              Kevin
-                            </button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <table className="table-cell border-separate rounded-xl border-[6px] border-[#ba87fb] p-2">
+                    <thead>
+                      <tr>
+                        <th className="border-b-[6px] border-[#ba87fb]">I2C</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div className="flex flex-col items-center">
+                            <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
+                            <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                          </div>
+                          <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2">
+                            Lala
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div className="flex flex-col items-center">
+                            <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
+                            <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                          </div>
+                          <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2">
+                            Kevin
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                   </div>
                 </Carousel>
               </div>

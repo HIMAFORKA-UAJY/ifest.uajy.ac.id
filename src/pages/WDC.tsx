@@ -11,6 +11,7 @@ import {
   FaRegWindowClose,
   FaWallet,
   FaWhatsapp,
+  FaLine
 } from "react-icons/all";
 import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
@@ -672,34 +673,30 @@ const WDC: FC = () => {
                     <table className="table-cell border-separate rounded-xl border-[6px] border-[#9DCE6D] p-2">
                       <thead>
                         <tr>
-                          <th>WDC</th>
+                          <th className="border-b-[6px] border-[#9DCE6D]">WDC</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>
-                            <a href="#f" target="_blank">
-                              <div style={{ marginTop: ".5rem", marginBottom: ".5rem" }}>
-                                0812 3470 303
-                              </div>
-                              <button className="mx-auto flex items-center justify-center gap-1 rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9dcd6c] px-2">
-                                <FaWhatsapp />
-                                Andreas
-                              </button>
-                            </a>
+                            <div className="flex flex-col items-center">
+                              <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
+                              <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                            </div>
+                            <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2">
+                              Andreas
+                            </button>
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="#f" target="_blank">
-                              <div style={{ marginTop: ".5rem", marginBottom: ".5rem" }}>
-                                0812 3470 303
-                              </div>
-                              <button className="mx-auto flex items-center justify-center gap-1 rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9dcd6c] px-2">
-                                <FaWhatsapp />
-                                Andreas
-                              </button>
-                            </a>
+                            <div className="flex flex-col items-center">
+                              <div className="font-louisgeorgecafe flex gap-1 items-center"><FaWhatsapp />0822 2555 3400</div>
+                              <div className="font-louisgeorgecafe flex gap-1 items-center"><FaLine />id_line</div>
+                            </div>
+                            <button className="font-louisgeorgecafe mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2">
+                              Wahyu
+                            </button>
                           </td>
                         </tr>
                       </tbody>
