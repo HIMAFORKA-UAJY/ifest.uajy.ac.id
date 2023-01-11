@@ -1,7 +1,9 @@
+import { margin } from "@mui/system";
 import { Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { Grid, Pagination } from "swiper";
+import { MdMargin } from "react-icons/md";
+import { Grid, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
@@ -106,7 +108,8 @@ const MediaPartner: FC = () => {
             pagination={{
               clickable: true,
             }}
-            modules={[Grid, Pagination]}
+            navigation
+            modules={[Grid, Pagination, Navigation]}
             className="mySwiper"
           >
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
