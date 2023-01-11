@@ -1,15 +1,23 @@
-import Footer from "../components/Footer";
-import Layout from "../components/Layout";
-import { Box, Modal, Typography, useStepContext } from "@mui/material";
+import { Box, Modal, Typography } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FC, useEffect, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
-import { FaBook, FaCertificate, FaMale, FaMoneyBillWave, FaRegWindowClose, FaWallet, FaWhatsapp } from "react-icons/all";
+import {
+  FaBook,
+  FaCertificate,
+  FaMale,
+  FaMoneyBillWave,
+  FaRegWindowClose,
+  FaWallet,
+  FaWhatsapp,
+} from "react-icons/all";
 import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
-import './I2C.css';
 
+import Footer from "../components/Footer";
+import Layout from "../components/Layout";
+import "./I2C.css";
 
 const style = {
   position: "absolute" as const,
@@ -27,13 +35,13 @@ const I2C: FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
 
   const [open, setOpen] = useState(false);
-  const [openPDF, setOpenPDF] = useState(false)
+  const [openPDF, setOpenPDF] = useState(false);
 
   const onClick = () => setOpen(true);
   const onClickPDF = () => setOpenPDF(true);
 
   const handleClose = () => setOpen(false);
-  const handleClosePDF= () => setOpenPDF(false);
+  const handleClosePDF = () => setOpenPDF(false);
 
   const dataSeleksi = [
     {
@@ -96,11 +104,7 @@ const I2C: FC = () => {
           <div className="hidden h-fit w-screen flex-col items-center justify-center lg:flex">
             <div className="flex flex-col items-center justify-center">
               <div className="flex items-center justify-center gap-8">
-                <img
-                  className="w-[28rem]"
-                  src="/public/images/ill-i2c.png"
-                  alt="i2c"
-                />
+                <img className="w-[28rem]" src="/public/images/ill-i2c.png" alt="i2c" />
                 <div className="flex flex-col">
                   <div className="bg-gradient-to-r from-[#EFB6D5] to-[#81E3E0] bg-clip-text pl-[1rem] pb-[0.5rem] font-retroica text-6xl text-transparent">
                     Innovative
@@ -113,7 +117,7 @@ const I2C: FC = () => {
                   </div>
                   <div className="mt-8 flex gap-4 pl-[1rem] font-retroica text-sm text-white">
                     <div className="rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
-                      <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]" >
+                      <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
                         <FaWallet />
                         Rp. 150K / tim
                       </div>
@@ -126,8 +130,7 @@ const I2C: FC = () => {
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <FaMale />
-                        3 peserta / tim
+                        <FaMale />3 peserta / tim
                       </div>
                     </div>
                   </div>
@@ -161,34 +164,38 @@ const I2C: FC = () => {
           </div>
 
           <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
-            <img
-              className="w-72 pt-24 "
-              src="/public/images/ill-i2c.png"
-              alt="i2c"
-            />
+            <img className="w-72 pt-24 " src="/public/images/ill-i2c.png" alt="i2c" />
             <div className="text-center">
-              <div className="font-retroica text-4xl tracking-wide text-white pt-4">I2C</div>
+              <div className="pt-4 font-retroica text-4xl tracking-wide text-white">I2C</div>
               <div className="px-4 pb-[1rem] font-retroica text-2xl text-white">
                 Innovative Informatics Contest
               </div>
             </div>
-            <div className="flex gap-4 font-retroica text-sm text-white sm:text-xs flex-col m-auto lg:flex lg:items-center  ">
+            <div className="m-auto flex flex-col gap-4 font-retroica text-sm text-white sm:text-xs lg:flex lg:items-center  ">
               <div className="h-fit rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
-                <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
+                <div
+                  className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center"
+                  style={{ padding: "1rem" }}
+                >
                   <FaWallet />
                   Rp. 150K / tim
                 </div>
               </div>
               <div className="h-fit rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
-                <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
+                <div
+                  className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center"
+                  style={{ padding: "1rem" }}
+                >
                   <FaBook />
                   SMA / Sederajat
                 </div>
               </div>
               <div className="h-fit rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center" style={{padding: '1rem'}}>
-                  <FaMale />
-                  3 peserta / tim
+                <div
+                  className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center"
+                  style={{ padding: "1rem" }}
+                >
+                  <FaMale />3 peserta / tim
                 </div>
               </div>
             </div>
@@ -227,20 +234,21 @@ const I2C: FC = () => {
                   MORE ABOUT I2C
                 </div>
                 <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
-                  <strong>Innovative Informatics Contest</strong> (I2C) 2022 adalah sebuah lomba dimana
-                  siswa/i SMA/SMK yang tergabung dalam satu tim berlomba untuk merancang suatu inovasi
-                  aplikasi (<i>mobile</i>) yang bertujuan membantu membantu mempermudah kegiatan berumah
-                  tangga sehingga terwujud keseimbangan kehidupan berkeluarga baik dari sisi keuangan,
-                  kebersihan, dan kenyamanan. Acara ini juga dimaksudkan untuk memberi kesempatan bagi
-                  siswa/i SMA/SMK di seluruh Indonesia untuk menunjukkan bakat, minat, dan pengetahuan.
+                  <strong>Innovative Informatics Contest</strong> (I2C) 2022 adalah sebuah lomba
+                  dimana siswa/i SMA/SMK yang tergabung dalam satu tim berlomba untuk merancang
+                  suatu inovasi aplikasi (<i>mobile</i>) yang bertujuan membantu membantu
+                  mempermudah kegiatan berumah tangga sehingga terwujud keseimbangan kehidupan
+                  berkeluarga baik dari sisi keuangan, kebersihan, dan kenyamanan. Acara ini juga
+                  dimaksudkan untuk memberi kesempatan bagi siswa/i SMA/SMK di seluruh Indonesia
+                  untuk menunjukkan bakat, minat, dan pengetahuan.
                 </div>
               </div>
-              <div className="gap-4 font-louisgeorgecafe justify-center flex-col items-center margin-auto md:justify-center md:flex md:flex-row ">
-                <div className="rounded-full bg-[#6c6486] p-1 flex justify-center m-2 lg:m-0"  >
+              <div className="margin-auto flex-col items-center justify-center gap-4 font-louisgeorgecafe md:flex md:flex-row md:justify-center ">
+                <div className="m-2 flex justify-center rounded-full bg-[#6c6486] p-1 lg:m-0">
                   <button
                     onClick={onClick}
-                    className="flex justify-center m-auto lg:flex lg:items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent "
-                    style={{width: '100%'}}
+                    className="m-auto flex justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center "
+                    style={{ width: "100%" }}
                   >
                     <div className="text-white opacity-70">Lihat Poster</div>
                   </button>
@@ -262,21 +270,21 @@ const I2C: FC = () => {
                           <FaRegWindowClose />{" "}
                         </button>
                       </Typography>
-                      <img
-                        src="images/thumbnail.png"
-                        alt=""
-                      />
+                      <img src="images/thumbnail.png" alt="" />
                     </Box>
                   </Modal>
                 </div>
                 <div className="rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
-                  <button className="flex justify-center lg:flex lg:items-center items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent m-auto" style={{width: '100%'}}>
+                  <button
+                    className="m-auto flex items-center justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
+                    style={{ width: "100%" }}
+                  >
                     <Link to="/dashboard">
-                      <div className="text-white opacity-100 m-auto">DAFTAR</div>
+                      <div className="m-auto text-white opacity-100">DAFTAR</div>
                     </Link>
                   </button>
                 </div>
-                <div className="rounded-full bg-[#6c6486] p-1 my-2 lg:my-0">
+                <div className="my-2 rounded-full bg-[#6c6486] p-1 lg:my-0">
                   {/* <React.Fragment>
                                       <button onClick={onClick} className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
                                           <div className="opacity-70 text-white">Lihat Aturan</div>
@@ -295,8 +303,8 @@ const I2C: FC = () => {
                                   </React.Fragment> */}
                   <button
                     onClick={onClickPDF}
-                    className="flex justify-center m-auto lg:flex lg:items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent"
-                    style={{width: '100%'}}
+                    className="m-auto flex justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
+                    style={{ width: "100%" }}
                   >
                     <div className="text-white opacity-70">Lihat Aturan</div>
                   </button>
@@ -442,7 +450,7 @@ const I2C: FC = () => {
             </div>
 
             {/* Timeline */}
-            <div className="flex w-full flex-col justify-center lg:w-[70%] lg:items-center pt-24 pb-24">
+            <div className="flex w-full flex-col justify-center pt-24 pb-24 lg:w-[70%] lg:items-center">
               <div className="mx-auto mb-8 text-center font-retroica text-4xl text-[#87bbeb]">
                 Timeline
               </div>
@@ -476,7 +484,6 @@ const I2C: FC = () => {
                   cardHeight={50}
                   hideControls
                   disableClickOnCircle
-                  
                   fontSizes={{
                     title: "0.8rem",
                   }}
@@ -581,9 +588,20 @@ const I2C: FC = () => {
             </div>
 
             {/* Prize Pool */}
-            <div className="flex w-screen flex-col items-center justify-center gap-4 pt-12 pb-12" style={{backgroundImage: "url('public/images/bg-prizepool.png')", backgroundPosition:'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+            <div
+              className="flex w-screen flex-col items-center justify-center gap-4 pt-12 pb-12"
+              style={{
+                backgroundImage: "url('public/images/bg-prizepool.png')",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+            >
               <div className="font-retroica text-4xl text-[#87bbeb]">Prize Pool</div>
-              <div className="text-center font-retroica text-[#ffba57]" style={{ fontSize: "1.5rem" }}>
+              <div
+                className="text-center font-retroica text-[#ffba57]"
+                style={{ fontSize: "1.5rem" }}
+              >
                 {" "}
                 <span className="font-louisgeorgecafe text-white">Total hadiah</span> Rp 9.500.000
               </div>
