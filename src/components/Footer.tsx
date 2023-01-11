@@ -24,42 +24,41 @@ const Footer: FC<Props> = ({ className }) => {
         </div>
         <div className="flex flex-col gap-2 text-left">
           <div className="font-retroica text-xl text-white">Kompetisi</div>
-          <div className="font-louisgeorgecafe text-white opacity-70">
-            <Link to="/i2c">Innovative Informatics Contest (I2C)</Link>
-          </div>
-          <div className="font-louisgeorgecafe text-white opacity-70">
+          <div className="font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out">
+            <Link to="/i2c">Innovative Informatics Contest (I2C)</Link></div>
+          <div className="font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out">
             <Link to="/wdc">Web Design Competition (WDC)</Link>
           </div>
-          <div className="font-louisgeorgecafe text-white opacity-70">
+          <div className="font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out">
             <Link to="/hackathon">Hackathon</Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 text-left">
           <div className="font-retroica text-xl text-white">Acara</div>
-          <div className="font-louisgeorgecafe text-white opacity-70">
+          <div className="font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out">
             <Link to="/food-bazaar">Food Bazaar</Link>
           </div>
-          <div className="font-louisgeorgecafe text-white opacity-70">
+          <div className="font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out">
             <Link to="/donor-darah">Donor Darah</Link>
           </div>
-          <div className="font-louisgeorgecafe text-white opacity-70">
+          <div className="font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out">
             <Link to="/seminar">Seminar Nasional</Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 text-left">
           <div className="font-retroica text-xl text-white">Bisnis</div>
-          <div className="font-louisgeorgecafe text-white opacity-70">
+          <div className="font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out">
             <Link to="/sponsor">Sponsor</Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 text-left">
           <div className="font-retroica text-xl text-white">Akses</div>
-          <div className="font-louisgeorgecafe text-white opacity-70">
+          <div className="font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out">
             <a href="/dashboard/daftar" target="_blank" rel="noopener noreferrer">
               Daftar
             </a>
           </div>
-          <div className="font-louisgeorgecafe text-white opacity-70">
+          <div className="font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out">
             <a href="/dashboard/masuk" target="_blank" rel="noopener noreferrer">
               Masuk
             </a>
@@ -68,7 +67,7 @@ const Footer: FC<Props> = ({ className }) => {
         <div className="flex flex-col gap-2 text-left">
           <div className="font-retroica text-xl text-white">Sosial Media</div>
           <a
-            className="flex items-center gap-2 font-louisgeorgecafe text-white opacity-70"
+            className="flex items-center gap-2 font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out"
             href="https://www.instagram.com/ifest_uajy/"
             target="_blank"
             rel="noopener noreferrer"
@@ -77,7 +76,7 @@ const Footer: FC<Props> = ({ className }) => {
             Instagram
           </a>
           <a
-            className="flex items-center gap-2 font-louisgeorgecafe text-white opacity-70"
+            className="flex items-center gap-2 font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out"
             href="https://line.me/ti/p/~@ykb1847q"
             target="_blank"
             rel="noopener noreferrer"
@@ -86,7 +85,7 @@ const Footer: FC<Props> = ({ className }) => {
             LINE
           </a>
           <a
-            className="flex items-center gap-2 font-louisgeorgecafe text-white opacity-70"
+            className="flex items-center gap-2 font-louisgeorgecafe text-white opacity-40 hover:translate-x-2 hover:opacity-90 transition ease-in-out"
             href="mailto:ifest@uajy.ac.id"
             target="_blank"
             rel="noopener noreferrer"
