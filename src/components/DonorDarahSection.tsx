@@ -17,7 +17,7 @@ const DonorDarahSection: FC = () => {
           <img
             className="w-[500px]"
             style={{ marginRight: "2rem" }}
-            src="public/images/dondar-section-bg.png"
+            src="images/dondar-section-bg.png"
             alt="wdc"
           />
           <div className="flex flex-col">
@@ -67,7 +67,7 @@ const DonorDarahSection: FC = () => {
       <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
         <img
           className="w-72"
-          src="public/images/dondar-section-bg.png"
+          src="images/dondar-section-bg.png"
           style={{ marginBottom: "3rem" }}
           alt="wdc"
         />
