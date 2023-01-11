@@ -266,7 +266,7 @@ const I2C: FC = () => {
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                   >
-                    <Box sx={style} className="h-screen overflow-auto">
+                    <Box sx={style} className="overflow-auto" style={{width: '90%', height: '90%', margin: 'auto'}}>
                       <Typography
                         className="text-right"
                         id="modal-modal-title"
@@ -278,7 +278,7 @@ const I2C: FC = () => {
                           <FaRegWindowClose />{" "}
                         </button>
                       </Typography>
-                      <img src="images/thumbnail.png" alt="" />
+                      <img src="images/poster-dondar.jpeg" style={{margin: 'auto'}} alt="" />
                     </Box>
                   </Modal>
                 </div>
