@@ -220,6 +220,10 @@ const WDC: FC = () => {
           className="bg-gradient-to-b from-[#2C2E56] via-[#311D38] to-[#2C2E56]"
         >
           <div className="flex flex-col items-center gap-2 pt-4 pl-4 pr-4">
+            <div className="!border-gray-700 !bg-[#241f3d] pt-12 pb-12">
+            <div className="flex flex-col items-center">
+
+            
             <div className="font-retroica text-3xl font-thin tracking-wider text-white">
               MORE ABOUT WDC
             </div>
@@ -230,6 +234,7 @@ const WDC: FC = () => {
               mendapatkan informasi yang jelas dan tepat. Dengan adanya Web Design Competition (WDC)
               2022 diharapkan dapat menjadi wadah untuk para mahasiswa/i yang ada di Indonesia dalam
               menuangkan ide-ide kreatif mereka.
+            </div>
             </div>
             <div className="flex flex-row gap-4 font-louisgeorgecafe">
               <div className="rounded-full bg-[#6c6486] p-1">
@@ -304,6 +309,7 @@ const WDC: FC = () => {
                   </Box>
                 </Modal>
               </div>
+            </div>
             </div>
 
             {/* Ketentuan */}

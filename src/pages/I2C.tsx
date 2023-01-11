@@ -98,7 +98,7 @@ const I2C: FC = () => {
               <div className="flex items-center justify-center gap-8">
                 <img
                   className="w-[28rem]"
-                  src="/public/images/ill-i2c.png"
+                  src="/images/ill-i2c.png"
                   alt="i2c"
                 />
                 <div className="flex flex-col">
@@ -163,7 +163,7 @@ const I2C: FC = () => {
           <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
             <img
               className="w-72 pt-24 "
-              src="/public/images/ill-i2c.png"
+              src="/images/ill-i2c.png"
               alt="i2c"
             />
             <div className="text-center">
@@ -581,7 +581,7 @@ const I2C: FC = () => {
             </div>
 
             {/* Prize Pool */}
-            <div className="flex w-screen flex-col items-center justify-center gap-4 pt-12 pb-12" style={{backgroundImage: "url('public/images/bg-prizepool.png')", backgroundPosition:'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+            <div className="flex w-screen flex-col items-center justify-center gap-4 pt-12 pb-12" style={{backgroundImage: "url('/images/bg-prizepool.png')", backgroundPosition:'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
               <div className="font-retroica text-4xl text-[#87bbeb]">Prize Pool</div>
               <div className="text-center font-retroica text-[#ffba57]" style={{ fontSize: "1.5rem" }}>
                 {" "}

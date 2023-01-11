@@ -18,11 +18,12 @@ const I2CSection: FC = () => {
         ref={i2cRef}
         className="w-screen bg-[url('/images/bg-flip-fix.png')] bg-cover bg-center bg-no-repeat"
       >
-        <div className="hidden w-screen flex-col items-center justify-center lg:flex">
+        <div className="hidden w-screen flex-col items-center justify-center lg:flex p-24">
           <div className="flex items-center justify-center">
             <img
               className="w-[600px]"
-              src="/public/images/ill-i2c.png"
+
+              src="/images/ill-i2c.png"
               alt="i2c"
             />
             <div className="flex flex-col">
@@ -74,7 +75,7 @@ const I2CSection: FC = () => {
         <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
           <img
             className="w-72"
-            src="/public/images/ill-i2c.png"
+            src="/images/ill-i2c.png"
             alt="i2c"
           />
           <div className="text-center">
