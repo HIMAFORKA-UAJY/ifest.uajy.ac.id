@@ -42,7 +42,7 @@ const Publication: FC = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
       className="bg-[#2b2265] pt-16 lg:pt-24"
     >
-      <div className="flex w-screen flex-col items-center justify-center gap-10">
+      <div className="flex w-screen flex-col items-center justify-center gap-10 pb-24">
         <div className="font-retroica text-4xl text-white">Publikasi</div>
         <div className="w-full lg:px-12">
           <Swiper
