@@ -84,21 +84,21 @@ const I2CSection: FC = () => {
               Innovative Informatics Contest
             </div>
           </div>
-          <div className="flex gap-2 px-2 font-retroica text-sm text-white">
+          <div className="flex gap-2 px-2 font-retroica text-sm text-white flex-col" style={{width: '70%'}}>
             <div className="h-fit rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
-              <div className="flex flex-col flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center" style={{padding: '1rem'}}>
+              <div className="flex flex-col flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center" style={{padding: '.5rem'}}>
                 <FaWallet />
                 Rp. 150k / tim
               </div>
             </div>
             <div className="h-fit rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
-              <div className="flex flex-col flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center" style={{padding: '1rem'}}>
+              <div className="flex flex-col flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center" style={{padding: '.5rem'}}>
                 <FaBook />
                 SMA / Sederajat
               </div>
             </div>
             <div className="h-fit rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
-              <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center" style={{padding: '1rem'}}>
+              <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center" style={{padding: '.5rem'}}>
                 <FaMale />
                 Max. 3 orang
               </div>
