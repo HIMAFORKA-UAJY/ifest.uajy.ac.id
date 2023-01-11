@@ -1,22 +1,15 @@
+import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 import { Box, Modal, Typography, useStepContext } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FC, useEffect, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
-import {
-  FaBook,
-  FaCertificate,
-  FaMale,
-  FaMoneyBillWave,
-  FaRegWindowClose,
-  FaWallet,
-  FaWhatsapp,
-} from "react-icons/all";
+import { FaBook, FaCertificate, FaMale, FaMoneyBillWave, FaRegWindowClose, FaWallet, FaWhatsapp } from "react-icons/all";
 import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
+import './I2C.css';
 
-import Footer from "../components/Footer";
-import Layout from "../components/Layout";
 
 const style = {
   position: "absolute" as const,
@@ -477,6 +470,7 @@ const I2C: FC = () => {
                   cardHeight={50}
                   hideControls
                   disableClickOnCircle
+                  
                   fontSizes={{
                     title: "0.8rem",
                   }}
