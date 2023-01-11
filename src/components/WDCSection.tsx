@@ -10,7 +10,7 @@ const WDCSection: FC = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1, ease: "easeInOut" }}
-      className="w-screen bg-[#2b2265]"
+      className="w-screen bg-[#3B3275]"
     >
       <div className="hidden w-screen flex-col items-center justify-center lg:flex">
         <div className="flex items-center justify-center">
