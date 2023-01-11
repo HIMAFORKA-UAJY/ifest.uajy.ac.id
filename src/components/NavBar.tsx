@@ -57,7 +57,6 @@ const NavBar: FC = () => {
       <Link className="w-14 text-2xl" to="/">
         <img src={logo} alt="ifest-logo" />
       </Link>
-      <div className="text-lg tracking-[0.2em] text-white lg:hidden">IFEST#11</div>
       <div className="hidden flex-row items-center gap-12 lg:flex">
         <div>
           <Menu>
