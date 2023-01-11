@@ -86,40 +86,28 @@ const I2CSection: FC = () => {
           </div>
           <div className="flex gap-2 px-2 font-retroica text-sm text-white flex-col" style={{width: '70%'}}>
             <div className="h-fit rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
-<<<<<<< HEAD
-              <div className="flex flex-col flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center" style={{padding: '.5rem'}}>
-=======
               <div
                 className="flex flex-col flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center"
                 style={{ padding: "1rem" }}
               >
->>>>>>> 98e8d950698d67a96b80ca1aa22e3df79e6d1a8b
                 <FaWallet />
                 Rp. 150k / tim
               </div>
             </div>
             <div className="h-fit rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
-<<<<<<< HEAD
-              <div className="flex flex-col flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center" style={{padding: '.5rem'}}>
-=======
               <div
                 className="flex flex-col flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center"
                 style={{ padding: "1rem" }}
               >
->>>>>>> 98e8d950698d67a96b80ca1aa22e3df79e6d1a8b
                 <FaBook />
                 SMA / Sederajat
               </div>
             </div>
             <div className="h-fit rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
-<<<<<<< HEAD
-              <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center" style={{padding: '.5rem'}}>
-=======
               <div
                 className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center"
                 style={{ padding: "1rem" }}
               >
->>>>>>> 98e8d950698d67a96b80ca1aa22e3df79e6d1a8b
                 <FaMale />
                 Max. 3 orang
               </div>

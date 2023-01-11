@@ -787,6 +787,8 @@ const I2C: FC = () => {
               </div>
             </div>
 
+            </div>
+
             {/* Call To Action */}
             <div className="my-12 flex w-screen flex-col items-center justify-center">
               <div className="w-[21rem] max-w-[100%] rounded-xl border-gray-200 bg-gradient-to-br from-[#463E74] to-[#332550] p-8 lg:w-[60%]">
