@@ -1,22 +1,15 @@
+import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 import { Box, Modal, Typography, useStepContext } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FC, useEffect, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
-import {
-  FaBook,
-  FaCertificate,
-  FaMale,
-  FaMoneyBillWave,
-  FaRegWindowClose,
-  FaWallet,
-  FaWhatsapp,
-} from "react-icons/all";
+import { FaBook, FaCertificate, FaMale, FaMoneyBillWave, FaRegWindowClose, FaWallet, FaWhatsapp } from "react-icons/all";
 import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
+import './I2C.css';
 
-import Footer from "../components/Footer";
-import Layout from "../components/Layout";
 
 const style = {
   position: "absolute" as const,
@@ -169,7 +162,7 @@ const I2C: FC = () => {
 
           <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
             <img
-              className="w-72 "
+              className="w-72 pt-24 "
               src="/public/images/ill-i2c.png"
               alt="i2c"
             />
@@ -179,7 +172,7 @@ const I2C: FC = () => {
                 Innovative Informatics Contest
               </div>
             </div>
-            <div className="flex gap-4 font-retroica text-sm text-white sm:text-xs">
+            <div className="flex gap-4 font-retroica text-sm text-white sm:text-xs flex-col m-auto lg:flex lg:items-center  ">
               <div className="h-fit rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
                 <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
                   <FaWallet />
@@ -189,7 +182,7 @@ const I2C: FC = () => {
               <div className="h-fit rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
                 <div className="flex flex-wrap items-center justify-center text-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
                   <FaBook />
-                  SMA /<br></br>Sederajat
+                  SMA / Sederajat
                 </div>
               </div>
               <div className="h-fit rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
@@ -228,105 +221,111 @@ const I2C: FC = () => {
 
         <div ref={contentRef} className="bg-gradient-to-t from-[#2A2F59] to-[#332550]">
           <div className="flex flex-col items-center gap-2 pt-4 pl-4 pr-4">
-            <div className="font-retroica text-3xl font-thin tracking-wider text-white">
-              MORE ABOUT I2C
-            </div>
-            <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
-              <strong>Innovative Informatics Contest</strong> (I2C) 2022 adalah sebuah lomba dimana
-              siswa/i SMA/SMK yang tergabung dalam satu tim berlomba untuk merancang suatu inovasi
-              aplikasi (<i>mobile</i>) yang bertujuan membantu membantu mempermudah kegiatan berumah
-              tangga sehingga terwujud keseimbangan kehidupan berkeluarga baik dari sisi keuangan,
-              kebersihan, dan kenyamanan. Acara ini juga dimaksudkan untuk memberi kesempatan bagi
-              siswa/i SMA/SMK di seluruh Indonesia untuk menunjukkan bakat, minat, dan pengetahuan.
-            </div>
-            <div className="flex flex-row gap-4 font-louisgeorgecafe">
-              <div className="rounded-full bg-[#6c6486] p-1">
-                <button
-                  onClick={onClick}
-                  className="flex items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent"
-                >
-                  <div className="text-white opacity-70">Lihat Poster</div>
-                </button>
-                <Modal
-                  open={open}
-                  onClose={handleClose}
-                  aria-labelledby="modal-modal-title"
-                  aria-describedby="modal-modal-description"
-                >
-                  <Box sx={style} className="h-screen overflow-auto">
-                    <Typography
-                      className="text-right"
-                      id="modal-modal-title"
-                      variant="h6"
-                      component="h2"
-                    >
-                      <button onClick={handleClose}>
-                        {" "}
-                        <FaRegWindowClose />{" "}
-                      </button>
-                    </Typography>
-                    <img
-                      src="images/thumbnail.png"
-                      alt=""
-                    />
-                  </Box>
-                </Modal>
+            <div className="!border-gray-700 !bg-[#241f3d] pt-12 pb-12">
+              <div className="flex flex-col items-center">
+                <div className="font-retroica text-3xl font-thin tracking-wider text-white">
+                  MORE ABOUT I2C
+                </div>
+                <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
+                  <strong>Innovative Informatics Contest</strong> (I2C) 2022 adalah sebuah lomba dimana
+                  siswa/i SMA/SMK yang tergabung dalam satu tim berlomba untuk merancang suatu inovasi
+                  aplikasi (<i>mobile</i>) yang bertujuan membantu membantu mempermudah kegiatan berumah
+                  tangga sehingga terwujud keseimbangan kehidupan berkeluarga baik dari sisi keuangan,
+                  kebersihan, dan kenyamanan. Acara ini juga dimaksudkan untuk memberi kesempatan bagi
+                  siswa/i SMA/SMK di seluruh Indonesia untuk menunjukkan bakat, minat, dan pengetahuan.
+                </div>
               </div>
-              <div className="rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
-                <button className="flex items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent">
-                  <Link to="/dashboard">
-                    <div className="text-white opacity-100">DAFTAR</div>
-                  </Link>
-                </button>
-              </div>
-              <div className="rounded-full bg-[#6c6486] p-1">
-                {/* <React.Fragment>
-                                    <button onClick={onClick} className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
-                                        <div className="opacity-70 text-white">Lihat Aturan</div>
-                                    </button>
-                                    <Modal
-                                        show={open}
-                                        onClose={handleClose}       
-                                    >
-                                        <Modal.Header>
-                                            Aturan Innovative Informatics Contest
-                                        </Modal.Header>
-                                        <Modal.Body>
-                                            <img src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png" alt="" />
-                                        </Modal.Body>
-                                    </Modal>
-                                </React.Fragment> */}
-                <button
-                  onClick={onClickPDF}
-                  className="flex items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent"
-                >
-                  <div className="text-white opacity-70">Lihat Aturan</div>
-                </button>
-                <Modal
-                  open={openPDF}
-                  onClose={handleClosePDF}
-                  aria-labelledby="modal-modal-title"
-                  aria-describedby="modal-modal-description"
-                >
-                  <Box sx={style} className="h-screen overflow-auto">
-                    <Typography
-                      className="text-right"
-                      id="modal-modal-title"
-                      variant="h6"
-                      component="h2"
-                    >
-                      <button onClick={handleClosePDF}>
-                        {" "}
-                        <FaRegWindowClose />{" "}
-                      </button>
-                    </Typography>
-                    <iframe
-                      src="rulebook/rulebook-i2c.pdf"
-                      style={{ width: "100%", height: "95%" }}
-                      title="I2C Rulebook"
-                    />
-                  </Box>
-                </Modal>
+              <div className="gap-4 font-louisgeorgecafe justify-center flex-col items-center margin-auto md:justify-center md:flex md:flex-row ">
+                <div className="rounded-full bg-[#6c6486] p-1 flex justify-center m-2 lg:m-0"  >
+                  <button
+                    onClick={onClick}
+                    className="flex justify-center m-auto lg:flex lg:items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent "
+                    style={{width: '100%'}}
+                  >
+                    <div className="text-white opacity-70">Lihat Poster</div>
+                  </button>
+                  <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                  >
+                    <Box sx={style} className="h-screen overflow-auto">
+                      <Typography
+                        className="text-right"
+                        id="modal-modal-title"
+                        variant="h6"
+                        component="h2"
+                      >
+                        <button onClick={handleClose}>
+                          {" "}
+                          <FaRegWindowClose />{" "}
+                        </button>
+                      </Typography>
+                      <img
+                        src="images/thumbnail.png"
+                        alt=""
+                      />
+                    </Box>
+                  </Modal>
+                </div>
+                <div className="rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
+                  <button className="flex justify-center lg:flex lg:items-center items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent m-auto" style={{width: '100%'}}>
+                    <Link to="/dashboard">
+                      <div className="text-white opacity-100 m-auto">DAFTAR</div>
+                    </Link>
+                  </button>
+                </div>
+                <div className="rounded-full bg-[#6c6486] p-1 my-2 lg:my-0">
+                  {/* <React.Fragment>
+                                      <button onClick={onClick} className="bg-[#332550] hover:bg-transparent transition p-2 rounded-full flex gap-1 items-center">
+                                          <div className="opacity-70 text-white">Lihat Aturan</div>
+                                      </button>
+                                      <Modal
+                                          show={open}
+                                          onClose={handleClose}       
+                                      >
+                                          <Modal.Header>
+                                              Aturan Innovative Informatics Contest
+                                          </Modal.Header>
+                                          <Modal.Body>
+                                              <img src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png" alt="" />
+                                          </Modal.Body>
+                                      </Modal>
+                                  </React.Fragment> */}
+                  <button
+                    onClick={onClickPDF}
+                    className="flex justify-center m-auto lg:flex lg:items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent"
+                    style={{width: '100%'}}
+                  >
+                    <div className="text-white opacity-70">Lihat Aturan</div>
+                  </button>
+                  <Modal
+                    open={openPDF}
+                    onClose={handleClosePDF}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                  >
+                    <Box sx={style} className="h-screen overflow-auto">
+                      <Typography
+                        className="text-right"
+                        id="modal-modal-title"
+                        variant="h6"
+                        component="h2"
+                      >
+                        <button onClick={handleClosePDF}>
+                          {" "}
+                          <FaRegWindowClose />{" "}
+                        </button>
+                      </Typography>
+                      <iframe
+                        src="rulebook/rulebook-i2c.pdf"
+                        style={{ width: "100%", height: "95%" }}
+                        title="I2C Rulebook"
+                      />
+                    </Box>
+                  </Modal>
+                </div>
               </div>
             </div>
 
@@ -443,7 +442,7 @@ const I2C: FC = () => {
             </div>
 
             {/* Timeline */}
-            <div className="flex w-full flex-col justify-center lg:w-[70%] lg:items-center">
+            <div className="flex w-full flex-col justify-center lg:w-[70%] lg:items-center pt-24 pb-24">
               <div className="mx-auto mb-8 text-center font-retroica text-4xl text-[#87bbeb]">
                 Timeline
               </div>
@@ -477,6 +476,7 @@ const I2C: FC = () => {
                   cardHeight={50}
                   hideControls
                   disableClickOnCircle
+                  
                   fontSizes={{
                     title: "0.8rem",
                   }}
@@ -581,7 +581,7 @@ const I2C: FC = () => {
             </div>
 
             {/* Prize Pool */}
-            <div className="flex w-screen flex-col items-center justify-center gap-4 pt-8">
+            <div className="flex w-screen flex-col items-center justify-center gap-4 pt-12 pb-12" style={{backgroundImage: "url('public/images/bg-prizepool.png')", backgroundPosition:'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
               <div className="font-retroica text-4xl text-[#87bbeb]">Prize Pool</div>
               <div className="text-center font-retroica text-[#ffba57]" style={{ fontSize: "1.5rem" }}>
                 {" "}

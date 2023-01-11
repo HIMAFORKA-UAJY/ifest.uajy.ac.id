@@ -19,7 +19,7 @@ const Sponsor: FC = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
       className="bg-[#2b2265] pt-20"
     >
-      <div className="flex w-screen flex-col items-center justify-center gap-6">
+      <div className="flex w-screen flex-col items-center justify-center gap-6 pb-24">
         <div className="font-retroica text-4xl text-white">Sponsors</div>
         <div className="h-64 w-64 lg:hidden">
           <Carousel leftControl=" " rightControl=" " indicators={false}>

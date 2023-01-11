@@ -11,6 +11,7 @@ import MediaPartner from "../components/MediaPartner";
 import Publication from "../components/Publication";
 import Sponsor from "../components/Sponsor";
 import WDCSection from "../components/WDCSection";
+import DonorDarahSection from "../components/DonorDarahSection";
 
 const Home: FC = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const Home: FC = () => {
       <div className="absolute top-0 -z-10 h-screen w-screen bg-[url('/images/bg-no-flip.png')] bg-cover bg-center bg-no-repeat">
         <I2CSection />
         <WDCSection />
+        <DonorDarahSection></DonorDarahSection>
         {/* <HackathonSection /> */}
         <Publication />
         <FAQ />
