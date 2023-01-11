@@ -1,5 +1,6 @@
-import Layout from "../components/Layout";
 import { FC } from "react";
+
+import Layout from "../components/Layout";
 
 const IfestStore: FC = () => {
   return (
