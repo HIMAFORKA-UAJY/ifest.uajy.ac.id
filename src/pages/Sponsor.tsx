@@ -120,7 +120,7 @@ const Sponsor: FC = () => {
                   </div>
                   <div className="rounded-md bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] p-1">
                     <button className="flex items-center gap-1 rounded-md bg-[#0A1828] px-4 py-1 font-retroica text-white transition hover:bg-transparent">
-                      <a href="https://wa.me/62895401144676?text=halo saya ingin memesan jasa pijat">
+                      <a href='https://wa.me/628993694969?text=Hai%20Admin%20Sponsor%20IFEST%2011,%20Kami%20dari%20NAMA_ORGANISASI/PERUSAHAAN/DLL%20ingin%20menjadi%20"Sponsor%20Kaisar"%20pada%20kegiatan%20IFEST%2011' target='_blank'>
                         order
                       </a>
                     </button>

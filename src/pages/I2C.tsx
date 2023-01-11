@@ -104,7 +104,11 @@ const I2C: FC = () => {
           <div className="hidden h-fit w-screen flex-col items-center justify-center lg:flex">
             <div className="flex flex-col items-center justify-center">
               <div className="flex items-center justify-center gap-8">
-                <img className="w-[28rem]" src="/public/images/ill-i2c.png" alt="i2c" />
+                <img
+                  className="w-[28rem]"
+                  src="/images/ill-i2c.png"
+                  alt="i2c"
+                />
                 <div className="flex flex-col">
                   <div className="bg-gradient-to-r from-[#EFB6D5] to-[#81E3E0] bg-clip-text pl-[1rem] pb-[0.5rem] font-retroica text-6xl text-transparent">
                     Innovative
@@ -164,7 +168,11 @@ const I2C: FC = () => {
           </div>
 
           <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
-            <img className="w-72 pt-24 " src="/public/images/ill-i2c.png" alt="i2c" />
+            <img
+              className="w-72 pt-24 "
+              src="/images/ill-i2c.png"
+              alt="i2c"
+            />
             <div className="text-center">
               <div className="pt-4 font-retroica text-4xl tracking-wide text-white">I2C</div>
               <div className="px-4 pb-[1rem] font-retroica text-2xl text-white">
@@ -588,6 +596,9 @@ const I2C: FC = () => {
             </div>
 
             {/* Prize Pool */}
+
+            <div className="flex w-screen flex-col items-center justify-center gap-4 pt-12 pb-12" style={{backgroundImage: "url('/images/bg-prizepool.png')", backgroundPosition:'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+
             <div
               className="flex w-screen flex-col items-center justify-center gap-4 pt-12 pb-12"
               style={{
@@ -597,6 +608,7 @@ const I2C: FC = () => {
                 backgroundSize: "cover",
               }}
             >
+
               <div className="font-retroica text-4xl text-[#87bbeb]">Prize Pool</div>
               <div
                 className="text-center font-retroica text-[#ffba57]"
@@ -773,6 +785,8 @@ const I2C: FC = () => {
                   </Card>
                 </div>
               </div>
+            </div>
+
             </div>
 
             {/* Call To Action */}

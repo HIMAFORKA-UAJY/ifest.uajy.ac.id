@@ -18,9 +18,14 @@ const I2CSection: FC = () => {
         ref={i2cRef}
         className="w-screen bg-[url('/images/bg-flip-fix.png')] bg-cover bg-center bg-no-repeat"
       >
-        <div className="hidden w-screen flex-col items-center justify-center lg:flex">
+        <div className="hidden w-screen flex-col items-center justify-center lg:flex p-24">
           <div className="flex items-center justify-center">
-            <img className="w-[600px]" src="/public/images/ill-i2c.png" alt="i2c" />
+            <img
+              className="w-[600px]"
+
+              src="/images/ill-i2c.png"
+              alt="i2c"
+            />
             <div className="flex flex-col">
               <div className="pl-[1rem] font-retroica text-4xl tracking-wide text-white">I2C</div>
               <div className="pl-[1rem] pb-[0.5rem] font-retroica text-2xl text-white">
@@ -68,14 +73,18 @@ const I2CSection: FC = () => {
           </div>
         </div>
         <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
-          <img className="w-72" src="/public/images/ill-i2c.png" alt="i2c" />
+          <img
+            className="w-72"
+            src="/images/ill-i2c.png"
+            alt="i2c"
+          />
           <div className="text-center">
             <div className="font-retroica text-4xl tracking-wide text-white">I2C</div>
             <div className="px-4 pb-[1rem] font-retroica text-2xl text-white">
               Innovative Informatics Contest
             </div>
           </div>
-          <div className="flex gap-2 px-2 font-retroica text-sm text-white">
+          <div className="flex gap-2 px-2 font-retroica text-sm text-white flex-col" style={{width: '70%'}}>
             <div className="h-fit rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
               <div
                 className="flex flex-col flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center"

@@ -96,6 +96,7 @@ const WDC: FC = () => {
                   className="w-[600px]"
                   src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png"
                   alt="wdc"
+                  
                 />
                 <div className="flex flex-col">
                   <div className="bg-gradient-to-r from-[#CDF9FF] to-[#F1D2FF] bg-clip-text pl-[1rem] pb-[0.5rem] font-retroica text-6xl text-transparent">
@@ -161,6 +162,7 @@ const WDC: FC = () => {
               className="w-72"
               src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png"
               alt="wdc"
+              style={{paddingTop: '6rem'}}
             />
             <div className="text-center">
               <div className="font-retroica text-4xl tracking-wide text-white">WDC</div>
@@ -168,21 +170,21 @@ const WDC: FC = () => {
                 Web Design Competition
               </div>
             </div>
-            <div className="flex gap-4 font-retroica text-sm text-white">
+            <div className="m-auto flex flex-col gap-4 font-retroica text-sm text-white sm:text-xs lg:flex lg:items-center  ">
               <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]">
+                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
                   <FaWallet />
                   Rp. 50.000
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]">
+                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
                   <FaBook />
                   SMA/Sederajat
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]">
+                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]" style={{padding: '1rem'}}>
                   <FaMale />
                   Max. 3 orang
                 </div>
@@ -220,6 +222,10 @@ const WDC: FC = () => {
           className="bg-gradient-to-b from-[#2C2E56] via-[#311D38] to-[#2C2E56]"
         >
           <div className="flex flex-col items-center gap-2 pt-4 pl-4 pr-4">
+            <div className="!border-gray-700 !bg-[#241f3d] pt-12 pb-12">
+            <div className="flex flex-col items-center">
+
+            
             <div className="font-retroica text-3xl font-thin tracking-wider text-white">
               MORE ABOUT WDC
             </div>
@@ -231,11 +237,14 @@ const WDC: FC = () => {
               2022 diharapkan dapat menjadi wadah untuk para mahasiswa/i yang ada di Indonesia dalam
               menuangkan ide-ide kreatif mereka.
             </div>
-            <div className="flex flex-row gap-4 font-louisgeorgecafe">
+            </div>
+            <div className="margin-auto flex-col items-center justify-center gap-4 font-louisgeorgecafe md:flex md:flex-row md:justify-center ">
               <div className="rounded-full bg-[#6c6486] p-1">
                 <button
                   onClick={openHandler}
-                  className="flex items-center gap-1 rounded-full bg-[#2C2B53] p-2 transition hover:bg-transparent"
+                  className="m-auto flex justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center "
+                  style={{width: '100%'}}
+
                 >
                   <div className="text-white opacity-70">Lihat Poster</div>
                 </button>
@@ -264,8 +273,11 @@ const WDC: FC = () => {
                   </Box>
                 </Modal>
               </div>
-              <div className="rounded-full bg-gradient-to-br from-[#6EA5B1] to-[#9B68CE] p-1">
-                <button className="flex items-center gap-1 rounded-full bg-[#2A2F59] p-2 transition hover:bg-transparent">
+              <div className="rounded-full bg-gradient-to-br from-[#6EA5B1] to-[#9B68CE] p-1 my-2">
+                <button
+                    className="m-auto flex items-center justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
+                    style={{ width: "100%" }}
+                    >
                   <Link to="/dashboard">
                     <div className="text-white opacity-100">DAFTAR</div>
                   </Link>
@@ -274,7 +286,8 @@ const WDC: FC = () => {
               <div className="rounded-full bg-[#6c6486] p-1">
                 <button
                   onClick={openPDFHandler}
-                  className="flex items-center gap-1 rounded-full bg-[#2C2B53] p-2 transition hover:bg-transparent"
+                   className="m-auto flex justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
+                    style={{ width: "100%" }}
                 >
                   <div className="text-white opacity-70">Lihat Aturan</div>
                 </button>
@@ -291,7 +304,7 @@ const WDC: FC = () => {
                       variant="h6"
                       component="h2"
                     >
-                      <button onClick={closePDFHandler}>
+                      <button onClick={closePDFHandler} >
                         {" "}
                         <FaRegWindowClose />{" "}
                       </button>
@@ -304,6 +317,7 @@ const WDC: FC = () => {
                   </Box>
                 </Modal>
               </div>
+            </div>
             </div>
 
             {/* Ketentuan */}
