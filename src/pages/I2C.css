@@ -2,3 +2,11 @@
 .card-sub-title {
   display: none !important;
 }
+
+.MuiBox-root{
+    background: #241f3d !important;
+}
+.MuiTypography-root button{
+    color: white !important;
+    font-size: 2rem;
+}
