@@ -82,9 +82,9 @@ const FAQ: FC = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
       className="bg-[#393072] pt-24"
     >
-      <div className="flex flex-col justify-center lg:flex-row pb-24">
+      <div className="flex flex-col justify-center pb-24 lg:flex-row">
         <div className="flex flex-col items-center justify-center bg-[#3B3275] lg:w-1/2 lg:justify-center">
-          <div className="font-retroica text-4xl text-white p-4">FAQ</div>
+          <div className="p-4 font-retroica text-4xl text-white">FAQ</div>
           <div className="font-retroica text-base text-white">Pertanyaan yang sering diajukan</div>
           <div>
             <div className="w-full bg-[#3B3275] p-4">

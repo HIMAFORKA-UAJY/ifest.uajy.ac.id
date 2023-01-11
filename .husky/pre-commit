@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn lint::fix
-yarn pretty
+pnpm lint::fix
+pnpm pretty
 git add .
