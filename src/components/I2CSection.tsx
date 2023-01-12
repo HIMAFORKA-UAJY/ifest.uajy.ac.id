@@ -29,26 +29,35 @@ const I2CSection: FC = () => {
               <div className="flex gap-4 pl-[1rem] font-retroica text-sm text-white">
                 <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
                   <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                    <div style={{ "margin-top": -0.1 + "rem" }}><FaBook /></div>
-                    <p style={{"margin-top":0.1+"rem"}}> SMA / Sederajat </p>
+                    <div style={{ "margin-top": `${-0.1}rem` }}>
+                      <FaBook />
+                    </div>
+                    <p style={{ "margin-top": `${0.1}rem` }}> SMA / Sederajat </p>
                   </div>
                 </div>
                 <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
                   <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                    <div style={{ "margin-top": -0.1 + "rem" }}><FaWallet /></div>
-                    <p style={{ "margin-top": 0.1 + "rem" }}> Rp. 150K / tim </p>
+                    <div style={{ "margin-top": `${-0.1}rem` }}>
+                      <FaWallet />
+                    </div>
+                    <p style={{ "margin-top": `${0.1}rem` }}> Rp. 150K / tim </p>
                   </div>
                 </div>
                 <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
                   <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                    <div style={{ "margin-top": -0.1 + "rem" }}><FaMale /></div>
-                    <p style={{ "margin-top": 0.1 + "rem" }}> 3 peserta / tim </p>
+                    <div style={{ "margin-top": `${-0.1}rem` }}>
+                      <FaMale />
+                    </div>
+                    <p style={{ "margin-top": `${0.1}rem` }}> 3 peserta / tim </p>
                   </div>
                 </div>
               </div>
               <div className="w-[32em] p-4 font-louisgeorgecafe text-white">
                 <p className="text-justify">
-                  <strong>Innovative Informatics Contest</strong> (I2C) adalah sebuah kompetisi yang menguji kemampuan peserta dalam menyusun ide untuk memecahkan berbagai permasalahan yang ada di dunia dengan memberikan solusi melalui pendekatan Teknologi Informasi.
+                  <strong>Innovative Informatics Contest</strong> (I2C) adalah sebuah kompetisi yang
+                  menguji kemampuan peserta dalam menyusun ide untuk memecahkan berbagai
+                  permasalahan yang ada di dunia dengan memberikan solusi melalui pendekatan
+                  Teknologi Informasi.
                 </p>
               </div>
               <div className="pl-[1rem]">
@@ -64,7 +73,10 @@ const I2CSection: FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex h-screen w-screen flex-col items-center justify-center px-4 py-4 lg:hidden" style={{paddingBottom: '6rem'}}>
+        <div
+          className="flex h-screen w-screen flex-col items-center justify-center px-4 py-4 lg:hidden"
+          style={{ paddingBottom: "6rem" }}
+        >
           <img className="w-72" src="/images/ill-i2c.png" alt="i2c" />
           <div className="text-center">
             <div className="font-retroica text-4xl tracking-wide text-white">I2C</div>
@@ -99,15 +111,16 @@ const I2CSection: FC = () => {
                 className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center"
                 style={{ padding: "1rem" }}
               >
-                <FaMale />
-                3 peserta / tim
+                <FaMale />3 peserta / tim
               </div>
             </div>
           </div>
           <div className="pt-2" />
           <div className="p-4 font-louisgeorgecafe text-white">
             <p className="text-justify">
-              <strong>Innovative Informatics Contest</strong> (I2C) adalah sebuah kompetisi yang menguji kemampuan peserta dalam menyusun ide untuk memecahkan berbagai permasalahan yang ada di dunia dengan memberikan solusi melalui pendekatan Teknologi Informasi.
+              <strong>Innovative Informatics Contest</strong> (I2C) adalah sebuah kompetisi yang
+              menguji kemampuan peserta dalam menyusun ide untuk memecahkan berbagai permasalahan
+              yang ada di dunia dengan memberikan solusi melalui pendekatan Teknologi Informasi.
             </p>
           </div>
           <div>

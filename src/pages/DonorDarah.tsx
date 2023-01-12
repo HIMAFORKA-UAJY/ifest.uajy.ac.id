@@ -2,8 +2,7 @@ import { Box, Modal, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { FC, useEffect, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
-import { FaWhatsapp, FaLine, FaRegWindowClose} from "react-icons/fa";
-
+import { FaLine, FaRegWindowClose, FaWhatsapp } from "react-icons/fa";
 
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
@@ -13,13 +12,13 @@ const DonorDarah: FC = () => {
   const ref2 = useRef<HTMLDivElement>(null);
 
   const [open, setOpen] = useState(false);
-  const [openPDF, setOpenPDF] = useState(false);
+  // const [openPDF, setOpenPDF] = useState(false);
 
   const onClick = () => setOpen(true);
-  const onClickPDF = () => setOpenPDF(true);
+  // const onClickPDF = () => setOpenPDF(true);
 
   const handleClose = () => setOpen(false);
-  const handleClosePDF = () => setOpenPDF(false);
+  // const handleClosePDF = () => setOpenPDF(false);
 
   const style = {
     position: "absolute" as const,
@@ -33,7 +32,6 @@ const DonorDarah: FC = () => {
     pt: 2,
   };
 
-
   const pdf = [
     {
       title: "17 Maret - 24 Maret 2023",
@@ -45,21 +43,24 @@ const DonorDarah: FC = () => {
     {
       title: "29 Maret 2023",
       cardTitle: "Aksi Donor Darah Hari Pertama",
-      cardDetailedText: "Lobby Fakultas Bisnis dan Ekonomika Gedung St. Bonaventura Universitas Atma Jaya Yogyakarta",
+      cardDetailedText:
+        "Lobby Fakultas Bisnis dan Ekonomika Gedung St. Bonaventura Universitas Atma Jaya Yogyakarta",
     },
   ];
   const pdf2 = [
     {
       title: "30 Maret 2023",
       cardTitle: "Donor Darah Hari Kedua",
-      cardDetailedText: "Lobby Fakultas Bisnis dan Ekonomika Gedung St. Bonaventura Universitas Atma Jaya Yogyakarta",
+      cardDetailedText:
+        "Lobby Fakultas Bisnis dan Ekonomika Gedung St. Bonaventura Universitas Atma Jaya Yogyakarta",
     },
   ];
   const pdf3 = [
     {
       title: "31 Maret 2023",
       cardTitle: "Donor Darah Hari Ketiga",
-      cardDetailedText: "Lobby Fakultas Bisnis dan Ekonomika Gedung St. Bonaventura Universitas Atma Jaya Yogyakarta",
+      cardDetailedText:
+        "Lobby Fakultas Bisnis dan Ekonomika Gedung St. Bonaventura Universitas Atma Jaya Yogyakarta",
     },
   ];
 
@@ -607,68 +608,75 @@ const DonorDarah: FC = () => {
             </div>
           </div>
 
-
-          
-
           <div className="flex flex-col items-center justify-center p-24 text-center lg:mb-5 lg:pt-40">
             <h1 className="font-retron2000 text-5xl font-bold text-[#fff]">Contact Person</h1>
             <div className="text-1xl font-thin-retroica gap-1 p-5 text-base text-[#ffffffcc]">
               Masih ada yang bingung? Yuk kontak kami.
             </div>
             <div className="h-64 w-64 py-5 lg:py-10">
-                <div className="flex justify-center text-center text-white">
-                  <table className="table-cell border-separate rounded-xl border-[6px] border-[#FF8064] p-5">
-                    <thead>
-                      <tr>
-                        <th className="border-b-[6px] border-[#FF8064] text-[#ffffffcc]">Donor Darah</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div className="flex flex-col items-center">
-                            <div className="flex items-center gap-1 font-louisgeorgecafe">
-                              <FaWhatsapp />
-                              0822 2555 3400
-                            </div>
-                            <div className="flex items-center gap-1 font-louisgeorgecafe">
-                              <FaLine />
-                              id_line
-                            </div>
+              <div className="flex justify-center text-center text-white">
+                <table className="table-cell border-separate rounded-xl border-[6px] border-[#FF8064] p-5">
+                  <thead>
+                    <tr>
+                      <th className="border-b-[6px] border-[#FF8064] text-[#ffffffcc]">
+                        Donor Darah
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div className="flex flex-col items-center">
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <FaWhatsapp />
+                            0822 2555 3400
                           </div>
-                          <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-[#000]">
-                            Lala
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>~
-                          <div className="flex flex-col items-center">
-                            <div className="flex items-center gap-1 font-louisgeorgecafe">
-                              <FaWhatsapp />
-                              0822 2555 3400
-                            </div>
-                            <div className="flex items-center gap-1 font-louisgeorgecafe">
-                              <FaLine />
-                              id_line
-                            </div>
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <FaLine />
+                            id_line
                           </div>
-                          <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-[#000]">
-                            Kevin
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                        </div>
+                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-[#000]">
+                          Lala
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        ~
+                        <div className="flex flex-col items-center">
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <FaWhatsapp />
+                            0822 2555 3400
+                          </div>
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <FaLine />
+                            id_line
+                          </div>
+                        </div>
+                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-[#000]">
+                          Kevin
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
 
           <div className="flex flex-col items-center justify-center pb-20 text-center lg:mb-5 lg:pb-72">
             <h1 className="font-retron2000 text-5xl font-bold text-[#fff]">Lokasi</h1>
-            <div className="py-5 lg:py-10 lg:w-[80%] w-[70%] lg:h-96 h-[20%]">
+            <div className="h-[20%] w-[70%] py-5 lg:h-96 lg:w-[80%] lg:py-10">
               <div className="flex justify-center text-center text-white">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.098178319926!2d110.4139404153825!3d-7.779414179341817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59f1fb2f2b45%3A0x20986e2fe9c79cdd!2sUniversitas%20Atma%20Jaya%20Yogyakarta%20-%20Kampus%203%20Gedung%20Bonaventura%20Babarsari!5e0!3m2!1sen!2sid!4v1673511394667!5m2!1sen!2sid" width="1920" height="600" className="rounded-xl" loading="lazy"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.098178319926!2d110.4139404153825!3d-7.779414179341817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59f1fb2f2b45%3A0x20986e2fe9c79cdd!2sUniversitas%20Atma%20Jaya%20Yogyakarta%20-%20Kampus%203%20Gedung%20Bonaventura%20Babarsari!5e0!3m2!1sen!2sid!4v1673511394667!5m2!1sen!2sid"
+                  width="1920"
+                  height="600"
+                  className="rounded-xl"
+                  loading="lazy"
+                  title="map"
+                />
 
                 <table className="table-cell border-separate rounded-xl border-[6px] border-[#FF8064] p-5">
                   <thead>
@@ -683,8 +691,18 @@ const DonorDarah: FC = () => {
                       <td>
                         <div className="flex flex-col items-center">
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
-                            <a style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} href="https://wa.me/6285714080699" target='_blank'>
-                              <FaWhatsapp className="mr-2" />+62 857-1408-0699
+                            <a
+                              style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                              }}
+                              href="https://wa.me/6285714080699"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaWhatsapp className="mr-2" />
+                              +62 857-1408-0699
                             </a>
                           </div>
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
@@ -692,7 +710,10 @@ const DonorDarah: FC = () => {
                             angelinaderrel
                           </div>
                         </div>
-                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-neutral-900" style={{ cursor: 'default' }}>
+                        <button
+                          className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-neutral-900"
+                          style={{ cursor: "default" }}
+                        >
                           Derrel
                         </button>
                       </td>
@@ -701,8 +722,18 @@ const DonorDarah: FC = () => {
                       <td>
                         <div className="flex flex-col items-center">
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
-                            <a style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} href="https://wa.me/6282334026619" target='_blank'>
-                              <FaWhatsapp className="mr-2" />+62 823-3402-6619
+                            <a
+                              style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                              }}
+                              href="https://wa.me/6282334026619"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaWhatsapp className="mr-2" />
+                              +62 823-3402-6619
                             </a>
                           </div>
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
@@ -710,7 +741,10 @@ const DonorDarah: FC = () => {
                             sa2st2ra
                           </div>
                         </div>
-                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-neutral-900" style={{ cursor: 'default' }}>
+                        <button
+                          className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-neutral-900"
+                          style={{ cursor: "default" }}
+                        >
                           Deta
                         </button>
                       </td>

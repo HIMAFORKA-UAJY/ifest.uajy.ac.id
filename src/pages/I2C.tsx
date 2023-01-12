@@ -119,22 +119,26 @@ const I2C: FC = () => {
                   <div className="mt-8 flex gap-4 pl-[1rem] font-retroica text-sm text-white">
                     <div className="rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div style={{ "margin-top": -0.1 + "rem" }}><FaBook /></div>
-                        <p style={{ "margin-top": 0.1 + "rem" }}> SMA / Sederajat</p>
+                        <div style={{ "margin-top": `${-0.1}rem` }}>
+                          <FaBook />
+                        </div>
+                        <p style={{ "margin-top": `${0.1}rem` }}> SMA / Sederajat</p>
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div style={{ "margin-top": -0.1 + "rem" }}><FaWallet /></div>
-                        <p style={{ "margin-top": 0.1 + "rem" }}> Rp. 150K / tim </p>
-                        
+                        <div style={{ "margin-top": `${-0.1}rem` }}>
+                          <FaWallet />
+                        </div>
+                        <p style={{ "margin-top": `${0.1}rem` }}> Rp. 150K / tim </p>
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div style={{ "margin-top": -0.1 + "rem" }}><FaMale /></div>
-                        <p style={{ "margin-top": 0.1 + "rem" }}> 3 peserta / tim </p>
-                        
+                        <div style={{ "margin-top": `${-0.1}rem` }}>
+                          <FaMale />
+                        </div>
+                        <p style={{ "margin-top": `${0.1}rem` }}> 3 peserta / tim </p>
                       </div>
                     </div>
                   </div>
@@ -238,13 +242,14 @@ const I2C: FC = () => {
                   MORE ABOUT I2C
                 </div>
                 <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
-                  <strong>Innovative Informatics Contest</strong> adalah sebuah kompetisi yang menguji kemampuan peserta dalam 
-                  menyusun ide untuk memecahkan berbagai permasalahan yang ada di dunia dengan memberikan solusi 
-                  melalui pendekatan Teknologi Informasi, yang dapat berbentuk aplikasi, web, dan juga <i>IoT</i>. 
-                  Pada tahun ini, I2C mengangkat tema "A Step Closer to Perfection" dengan harapan 
-                  peserta dapat membuat produk inovatif yang dapat membantu pengguna menguasai berbagai disiplin ilmu, 
-                  baik akademik maupun nonakademik, melalui media Teknologi Informasi.
-
+                  <strong>Innovative Informatics Contest</strong> adalah sebuah kompetisi yang
+                  menguji kemampuan peserta dalam menyusun ide untuk memecahkan berbagai
+                  permasalahan yang ada di dunia dengan memberikan solusi melalui pendekatan
+                  Teknologi Informasi, yang dapat berbentuk aplikasi, web, dan juga <i>IoT</i>. Pada
+                  tahun ini, I2C mengangkat tema "A Step Closer to Perfection" dengan harapan
+                  peserta dapat membuat produk inovatif yang dapat membantu pengguna menguasai
+                  berbagai disiplin ilmu, baik akademik maupun nonakademik, melalui media Teknologi
+                  Informasi.
                 </div>
               </div>
               <div className="margin-auto flex-col items-center justify-center gap-4 font-louisgeorgecafe md:flex md:flex-row md:justify-center ">
@@ -352,45 +357,36 @@ const I2C: FC = () => {
                   <h3 className="pl-6 font-retroica text-2xl text-[#87BBEB]">Ketentuan Umum</h3>
                   <div className="p-6 font-louisgeorgecafe leading-loose text-white">
                     <ol className="list-outside list-decimal">
-                      <li>
-                        Setiap peserta harus merupakan siswa aktif SMA/sederajat.
-                      </li>
+                      <li>Setiap peserta harus merupakan siswa aktif SMA/sederajat.</li>
                       <li>
                         Setiap peserta harus tergabung dalam tim yang beranggotakan tiga (3) orang.
                       </li>
+                      <li>Setiap peserta hanya boleh terdaftar dalam satu (1) tim.</li>
+                      <li>Setiap anggota tim harus berasal dari sekolah yang sama.</li>
+                      <li>Setiap tim harus memenuhi prosedur pendaftaran yang telah ditetapkan.</li>
                       <li>
-                        Setiap peserta hanya boleh terdaftar dalam satu (1) tim.
+                        Setiap tim tidak boleh mengganti anggota yang sudah terdaftar pada formulir
+                        pendaftaran.
+                      </li>
+                      <li>Setiap tim harus membayar biaya pendaftaran lomba sebesar Rp 150.000.</li>
+                      <li>
+                        Pengembalian (refund) biaya pendaftaran tidak dapat dilakukan dalam keadaan
+                        apa pun.
                       </li>
                       <li>
-                        Setiap anggota tim harus berasal dari sekolah yang sama.
+                        Setiap tim yang lolos ke tahap semifinal wajib berangkat ke Universitas Atma
+                        Jaya Yogyakarta.
                       </li>
                       <li>
-                        Setiap tim harus memenuhi prosedur pendaftaran yang telah ditetapkan.
+                        Setiap tim yang lolos ke tahap semifinal wajib didampingi oleh guru
+                        pembimbing yang berasal dari sekolah yang sama.
                       </li>
+                      <li>Setiap tim hanya boleh didampingi oleh satu (1) guru pembimbing.</li>
                       <li>
-                        Setiap tim tidak boleh mengganti anggota yang sudah terdaftar pada formulir pendaftaran.
+                        Setiap guru dapat membimbing lebih dari satu (1) tim, selama tim berasal
+                        dari sekolah yang sama.
                       </li>
-                      <li>
-                        Setiap tim harus membayar biaya pendaftaran lomba sebesar Rp 150.000.
-                      </li>
-                      <li>
-                        Pengembalian (refund) biaya pendaftaran tidak dapat dilakukan dalam keadaan apa pun.
-                      </li>
-                      <li>
-                        Setiap tim yang lolos ke tahap semifinal wajib berangkat ke Universitas Atma Jaya Yogyakarta.
-                      </li>
-                      <li>
-                        Setiap tim yang lolos ke tahap semifinal wajib didampingi oleh guru pembimbing yang berasal dari sekolah yang sama.
-                      </li>
-                      <li>
-                        Setiap tim hanya boleh didampingi oleh satu (1) guru pembimbing.
-                      </li>
-                      <li>
-                        Setiap guru dapat membimbing lebih dari satu (1) tim, selama tim berasal dari sekolah yang sama.
-                      </li>
-                      <li>
-                        Setiap sekolah bebas untuk mendaftarkan lebih dari satu (1) tim.
-                      </li>
+                      <li>Setiap sekolah bebas untuk mendaftarkan lebih dari satu (1) tim.</li>
                     </ol>
                   </div>
                 </Card>
@@ -401,18 +397,13 @@ const I2C: FC = () => {
                   <h3 className="pl-6 font-retroica text-2xl text-[#87BBEB]">Ketentuan Karya</h3>
                   <div className="p-6 font-louisgeorgecafe leading-loose text-white">
                     <ol className="list-outside list-decimal">
-                      <li>
-                        Setiap karya harus berkaitan dengan Teknologi Informasi.
-                      </li>
-                      <li>
-                        Setiap karya harus sesuai dengan tema yang diberikan.
-                      </li>
-                      <li>
-                        Setiap karya harus merupakan ide orisinal peserta.
-                      </li>
+                      <li>Setiap karya harus berkaitan dengan Teknologi Informasi.</li>
+                      <li>Setiap karya harus sesuai dengan tema yang diberikan.</li>
+                      <li>Setiap karya harus merupakan ide orisinal peserta.</li>
                       <li>Karya/proposal tidak mengandung unsur SARA dan pornografi.</li>
                       <li>
-                        Setiap karya tidak boleh menyinggung elemen yang berkaitan dengan etnis, suku, agama, tindakan perundangan, hingga SARA.
+                        Setiap karya tidak boleh menyinggung elemen yang berkaitan dengan etnis,
+                        suku, agama, tindakan perundangan, hingga SARA.
                       </li>
                       <li>
                         Setiap karya belum pernah dimasukkan dalam lomba yang sejenis sebelumnya.

@@ -378,8 +378,18 @@ const Sponsor: FC = () => {
                         <td>
                           <div className="flex flex-col items-center">
                             <div className="flex items-center gap-1 font-louisgeorgecafe">
-                              <a style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} href="https://wa.me/628993694969 " target='_blank'>
-                                <FaWhatsapp className="mr-2" />+62 899-3694-969 
+                              <a
+                                style={{
+                                  display: "flex",
+                                  justifyContent: "center",
+                                  alignItems: "center",
+                                }}
+                                href="https://wa.me/628993694969 "
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <FaWhatsapp className="mr-2" />
+                                +62 899-3694-969
                               </a>
                             </div>
                             <div className="flex items-center gap-1 font-louisgeorgecafe">
@@ -387,7 +397,10 @@ const Sponsor: FC = () => {
                               metiu321
                             </div>
                           </div>
-                          <button className="mx-auto rounded-2xl  bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe" style={{ cursor: 'default' }}>
+                          <button
+                            className="mx-auto rounded-2xl  bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe"
+                            style={{ cursor: "default" }}
+                          >
                             Matthew
                           </button>
                         </td>
@@ -396,8 +409,18 @@ const Sponsor: FC = () => {
                         <td>
                           <div className="flex flex-col items-center">
                             <div className="flex items-center gap-1 font-louisgeorgecafe">
-                              <a style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} href="https://wa.me/+628164258899" target='_blank'>
-                                <FaWhatsapp className="mr-2" />+62 816-4258-899
+                              <a
+                                style={{
+                                  display: "flex",
+                                  justifyContent: "center",
+                                  alignItems: "center",
+                                }}
+                                href="https://wa.me/+628164258899"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <FaWhatsapp className="mr-2" />
+                                +62 816-4258-899
                               </a>
                             </div>
                             <div className="flex items-center gap-1 font-louisgeorgecafe">
@@ -405,7 +428,10 @@ const Sponsor: FC = () => {
                               axel.ckd
                             </div>
                           </div>
-                          <button className="mx-auto rounded-2xl  bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe" style={{ cursor: 'default' }}>
+                          <button
+                            className="mx-auto rounded-2xl  bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe"
+                            style={{ cursor: "default" }}
+                          >
                             Axel
                           </button>
                         </td>
