@@ -1,6 +1,6 @@
 import { Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FC } from "react";
+import { CSSProperties, FC } from "react";
 import { Grid, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -108,7 +108,7 @@ const MediaPartner: FC = () => {
             }}
             navigation
             modules={[Grid, Pagination, Navigation]}
-            style={{ "--swiper-pagination-color": "#C3AEFF" }}
+            style={{ "--swiper-pagination-color": "#C3AEFF" } as CSSProperties}
             className="mySwiper classes.swiper-button-prev classes.swiper-button-next"
           >
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">

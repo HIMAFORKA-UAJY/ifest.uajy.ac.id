@@ -606,7 +606,7 @@ const I2C: FC = () => {
               <div
                 className="flex w-screen flex-col items-center justify-center gap-4 pt-12 pb-12"
                 style={{
-                  backgroundImage: "url('public/images/bg-prizepool.png')",
+                  backgroundImage: "url('/images/bg-prizepool.png')",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
