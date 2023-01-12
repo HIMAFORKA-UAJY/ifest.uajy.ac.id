@@ -834,44 +834,69 @@ const I2C: FC = () => {
                         </tr>
                       </thead>
                       <tbody>
-                <tr>
-                  <td>
-                    <div className="flex flex-col items-center">
-                      <div className="flex items-center gap-1 font-louisgeorgecafe">
-                        <a style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}} href="https://wa.me/6282259751239" target='_blank'>
-                          <FaWhatsapp className="mr-2"/>+62 822-5975-1239
-                        </a>
-                      </div>
-                      <div className="flex items-center gap-1 font-louisgeorgecafe">
-                        <FaLine />
-                        id_line
-                      </div>
-                    </div>
-                    <button className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe" style={{cursor: 'default'}}>
-                      Ariel
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div className="flex flex-col items-center">
-                      <div className="flex items-center gap-1 font-louisgeorgecafe">
-                        <a style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}} href="https://wa.me/6282225553400" target='_blank'>
-                        <FaWhatsapp className="mr-2"/>
-                        +62 822-2555-3400
-                        </a>
-                      </div>
-                      <div className="flex items-center gap-1 font-louisgeorgecafe">
-                        <FaLine />
-                        id_line
-                      </div>
-                    </div>
-                    <button className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe" style={{cursor: 'default'}}>
-                      Lala
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
+                        <tr>
+                          <td>
+                            <div className="flex flex-col items-center">
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <a
+                                  style={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                  }}
+                                  href="https://wa.me/6282259751239"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  <FaWhatsapp className="mr-2" />
+                                  +62 822-5975-1239
+                                </a>
+                              </div>
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaLine />
+                                id_line
+                              </div>
+                            </div>
+                            <button
+                              className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe"
+                              style={{ cursor: "default" }}
+                            >
+                              Ariel
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="flex flex-col items-center">
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <a
+                                  style={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                  }}
+                                  href="https://wa.me/6282225553400"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  <FaWhatsapp className="mr-2" />
+                                  +62 822-2555-3400
+                                </a>
+                              </div>
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaLine />
+                                id_line
+                              </div>
+                            </div>
+                            <button
+                              className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe"
+                              style={{ cursor: "default" }}
+                            >
+                              Lala
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
                   </div>
                 </Carousel>
