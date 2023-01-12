@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FC, useEffect, useRef } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaLine } from "react-icons/fa";
 
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
@@ -351,7 +351,7 @@ const DonorDarah: FC = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <div className="mt-2 font-retroica text-[#ffffffcc]">0822 2555 3400</div>
+                        {/* <div className="mt-2 font-retroica text-[#ffffffcc]">0822 2555 3400</div>
                         <button className="mx-auto flex items-center justify-center gap-1 rounded bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-bold text-[#000]">
                           <FaWhatsapp />
                           Lala
@@ -363,6 +363,36 @@ const DonorDarah: FC = () => {
                         <div className="mt-2 font-retroica text-[#ffffffcc]">0852 1024 5177</div>
                         <button className="mx-auto flex items-center justify-center gap-1 rounded bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-bold text-[#000]">
                           <FaWhatsapp />
+                          Kevin
+                        </button> */}
+                        <div className="flex flex-col items-center">
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <FaWhatsapp />
+                            0822 2555 3400
+                          </div>
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <FaLine />
+                            id_line
+                          </div>
+                        </div>
+                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe">
+                          Lala
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="flex flex-col items-center">
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <FaWhatsapp />
+                            0822 2555 3400
+                          </div>
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <FaLine />
+                            id_line
+                          </div>
+                        </div>
+                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe">
                           Kevin
                         </button>
                       </td>
