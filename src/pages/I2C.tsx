@@ -823,7 +823,7 @@ const I2C: FC = () => {
                               </div>
                               <div className="flex items-center gap-1 font-louisgeorgecafe">
                                 <FaLine />
-                                id_line
+                                lalariel
                               </div>
                             </div>
                             <button
@@ -854,7 +854,7 @@ const I2C: FC = () => {
                               </div>
                               <div className="flex items-center gap-1 font-louisgeorgecafe">
                                 <FaLine />
-                                id_line
+                                wibowolala31
                               </div>
                             </div>
                             <button
