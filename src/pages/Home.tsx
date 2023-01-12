@@ -1,23 +1,38 @@
 import { motion } from "framer-motion";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 
 import CP from "../components/CP";
+import DonorDarahSection from "../components/DonorDarahSection";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
-// import HackathonSection from "../components/HackathonSection";
 import I2CSection from "../components/I2CSection";
 import Layout from "../components/Layout";
 import MediaPartner from "../components/MediaPartner";
 import Publication from "../components/Publication";
+// import HackathonSection from "../components/HackathonSection";
+import ShootingStars from "../components/ShootingStars";
 import Sponsor from "../components/Sponsor";
 import WDCSection from "../components/WDCSection";
 
 const Home: FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout>
       <div className="absolute top-0 -z-10 h-screen w-screen bg-[url('/images/bg-no-flip.png')] bg-cover bg-center bg-no-repeat">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        >
+          <ShootingStars />
+        </motion.div>
+
         <I2CSection />
         <WDCSection />
+        <DonorDarahSection />
         {/* <HackathonSection /> */}
         <Publication />
         <FAQ />

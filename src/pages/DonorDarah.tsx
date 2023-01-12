@@ -4,6 +4,7 @@ import { FC, useEffect, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
 import { FaWhatsapp, FaLine, FaRegWindowClose} from "react-icons/fa";
 
+
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 
@@ -61,6 +62,7 @@ const DonorDarah: FC = () => {
       cardDetailedText: "Lobby Fakultas Bisnis dan Ekonomika Gedung St. Bonaventura Universitas Atma Jaya Yogyakarta",
     },
   ];
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -422,7 +424,6 @@ const DonorDarah: FC = () => {
             </div>
           </div>
 
-
           <div className="flex flex-col items-center justify-center">
             <div className="flex w-full flex-col justify-center pt-24 pb-24 lg:w-[70%] lg:items-center">
               <div className="mx-auto mb-8 text-center font-retroica text-4xl text-[#87bbeb]">
@@ -668,6 +669,54 @@ const DonorDarah: FC = () => {
             <div className="py-5 lg:py-10 lg:w-[80%] w-[70%] lg:h-96 h-[20%]">
               <div className="flex justify-center text-center text-white">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.098178319926!2d110.4139404153825!3d-7.779414179341817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59f1fb2f2b45%3A0x20986e2fe9c79cdd!2sUniversitas%20Atma%20Jaya%20Yogyakarta%20-%20Kampus%203%20Gedung%20Bonaventura%20Babarsari!5e0!3m2!1sen!2sid!4v1673511394667!5m2!1sen!2sid" width="1920" height="600" className="rounded-xl" loading="lazy"></iframe>
+
+                <table className="table-cell border-separate rounded-xl border-[6px] border-[#FF8064] p-5">
+                  <thead>
+                    <tr>
+                      <th className="border-b-[4px] border-[#FF8064] font-retroica text-[#ffffffcc]">
+                        Donor Darah
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div className="flex flex-col items-center">
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <a style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} href="https://wa.me/6285714080699" target='_blank'>
+                              <FaWhatsapp className="mr-2" />+62 857-1408-0699
+                            </a>
+                          </div>
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <FaLine />
+                            angelinaderrel
+                          </div>
+                        </div>
+                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-neutral-900" style={{ cursor: 'default' }}>
+                          Derrel
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="flex flex-col items-center">
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <a style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} href="https://wa.me/6282334026619" target='_blank'>
+                              <FaWhatsapp className="mr-2" />+62 823-3402-6619
+                            </a>
+                          </div>
+                          <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <FaLine />
+                            sa2st2ra
+                          </div>
+                        </div>
+                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-neutral-900" style={{ cursor: 'default' }}>
+                          Deta
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>

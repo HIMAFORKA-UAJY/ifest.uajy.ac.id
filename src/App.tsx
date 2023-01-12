@@ -2,6 +2,7 @@ import { AnimatePresence } from "framer-motion";
 import { FC } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
+import Blog from "./pages/Blog";
 import DonorDarah from "./pages/DonorDarah";
 import Error404 from "./pages/Error404";
 // import FoodBazaar from "./pages/FoodBazaar";
@@ -23,9 +24,11 @@ const App: FC = () => {
         <Route path="/wdc" element={<WDC />} />
         <Route path="/hackathon" element={<UnderDevelopment />} />
         <Route path="/seminar" element={<UnderDevelopment />} />
+        <Route path="/ui-ux" element={<UnderDevelopment />} />
         <Route path="/donor-darah" element={<DonorDarah />} />
-        <Route path="/food-bazaar" element={<UnderDevelopment />} />
+        <Route path="/ifest-store" element={<UnderDevelopment />} />
         <Route path="/sponsor" element={<Sponsor />} />
+        <Route path="/blog/finalis-wdc" element={<Blog />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </AnimatePresence>

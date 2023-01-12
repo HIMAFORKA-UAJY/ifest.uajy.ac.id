@@ -22,7 +22,6 @@ const NavBar: FC = () => {
         break;
 
       case "/i2c":
-        // setColor({ bg1: "#2A2F59", bg2: "#BA87FB", fg: "#FFFFFF" });
         setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
         break;
 
@@ -30,8 +29,16 @@ const NavBar: FC = () => {
         setColor({ bg1: "#311D38", bg2: "#4E4074", fg: "#E7A3FF" });
         break;
 
+      case "/donor-darah":
+        setColor({ bg1: "#2d2544", bg2: "#54467d", fg: "#b7a5ec" });
+        break;
+
       case "/sponsor":
-        setColor({ bg1: "#182E47", bg2: "#182E47", fg: "#479EC6" });
+        setColor({ bg1: "#152435", bg2: "#182E47", fg: "#479EC6" });
+        break;
+
+      case "/blog/finalis-wdc":
+        setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
         break;
 
       default:
@@ -50,26 +57,32 @@ const NavBar: FC = () => {
       <Link className="w-14 text-2xl" to="/">
         <img src={logo} alt="ifest-logo" />
       </Link>
-      <div className="text-lg tracking-[0.2em] text-white lg:hidden">IFEST#11</div>
       <div className="hidden flex-row items-center gap-12 lg:flex">
         <div>
           <Menu>
-            <Menu.Button className="flex cursor-pointer items-center gap-2 font-retroica text-xl tracking-[0.2em] text-[#ffffffb5]">
-              Kompetisi
-              <svg
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.96497 0H12.085C16.5116 0 18.3116 3.13333 16.1116 6.96L15.125 8.66667C14.885 9.08 14.445 9.33333 13.965 9.33333H3.08497C2.60497 9.33333 2.16497 9.08 1.92497 8.66667L0.938298 6.96C-1.2617 3.13333 0.538299 0 4.96497 0ZM4.24763 10.6667H12.821C13.341 10.6667 13.661 11.2267 13.3943 11.6667L12.541 13.1333C10.341 16.96 6.7143 16.96 4.5143 13.1333L3.66097 11.6667C3.40763 11.2267 3.72763 10.6667 4.24763 10.6667Z"
-                  fill="white"
-                  fillOpacity="0.72"
-                />
-              </svg>
-            </Menu.Button>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="cursor-default rounded-[0.7em] font-retroica text-xl"
+              style={{ color: "rgb(192,191,201)" }}
+            >
+              <Menu.Button className="flex cursor-pointer items-center gap-2 font-retroica text-xl tracking-[0.2em] text-[#ffffffb5]">
+                Kompetisi
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.96497 0H12.085C16.5116 0 18.3116 3.13333 16.1116 6.96L15.125 8.66667C14.885 9.08 14.445 9.33333 13.965 9.33333H3.08497C2.60497 9.33333 2.16497 9.08 1.92497 8.66667L0.938298 6.96C-1.2617 3.13333 0.538299 0 4.96497 0ZM4.24763 10.6667H12.821C13.341 10.6667 13.661 11.2267 13.3943 11.6667L12.541 13.1333C10.341 16.96 6.7143 16.96 4.5143 13.1333L3.66097 11.6667C3.40763 11.2267 3.72763 10.6667 4.24763 10.6667Z"
+                    fill="white"
+                    fillOpacity="0.72"
+                  />
+                </svg>
+              </Menu.Button>
+            </motion.div>
             <Menu.Items>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -115,8 +128,8 @@ const NavBar: FC = () => {
                 >
                   <Menu.Item>
                     {({ active }) => (
-                      <Link className={`${active && "text-[#fff]"}`} to="/hackathon">
-                        Hackathon
+                      <Link className={`${active && "text-[#fff]"}`} to="/ui-ux">
+                        UI / UX ...
                       </Link>
                     )}
                   </Menu.Item>
@@ -143,22 +156,29 @@ const NavBar: FC = () => {
         </div>
         <div>
           <Menu>
-            <Menu.Button className="flex cursor-default items-center gap-2 font-retroica text-xl tracking-[0.2em] text-[#ffffffb5]">
-              Acara
-              <svg
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.96497 0H12.085C16.5116 0 18.3116 3.13333 16.1116 6.96L15.125 8.66667C14.885 9.08 14.445 9.33333 13.965 9.33333H3.08497C2.60497 9.33333 2.16497 9.08 1.92497 8.66667L0.938298 6.96C-1.2617 3.13333 0.538299 0 4.96497 0ZM4.24763 10.6667H12.821C13.341 10.6667 13.661 11.2267 13.3943 11.6667L12.541 13.1333C10.341 16.96 6.7143 16.96 4.5143 13.1333L3.66097 11.6667C3.40763 11.2267 3.72763 10.6667 4.24763 10.6667Z"
-                  fill="white"
-                  fillOpacity="0.72"
-                />
-              </svg>
-            </Menu.Button>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="cursor-default rounded-[0.7em] font-retroica text-xl"
+              style={{ color: "rgb(192,191,201)" }}
+            >
+              <Menu.Button className="flex cursor-default items-center gap-2 font-retroica text-xl tracking-[0.2em] text-[#ffffffb5]">
+                Acara
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.96497 0H12.085C16.5116 0 18.3116 3.13333 16.1116 6.96L15.125 8.66667C14.885 9.08 14.445 9.33333 13.965 9.33333H3.08497C2.60497 9.33333 2.16497 9.08 1.92497 8.66667L0.938298 6.96C-1.2617 3.13333 0.538299 0 4.96497 0ZM4.24763 10.6667H12.821C13.341 10.6667 13.661 11.2267 13.3943 11.6667L12.541 13.1333C10.341 16.96 6.7143 16.96 4.5143 13.1333L3.66097 11.6667C3.40763 11.2267 3.72763 10.6667 4.24763 10.6667Z"
+                    fill="white"
+                    fillOpacity="0.72"
+                  />
+                </svg>
+              </Menu.Button>
+            </motion.div>
             <Menu.Items>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -184,20 +204,7 @@ const NavBar: FC = () => {
                                         )}
                                     </Menu.Item>
                                 </motion.div> */}
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="cursor-default rounded-[0.7em] font-retroica text-xl"
-                  style={{ color: color.fg }}
-                >
-                  <Menu.Item>
-                    {({ active }) => (
-                      <Link className={`${active && "text-[#fff]"}`} to="/food-bazaar">
-                        Food Bazaar
-                      </Link>
-                    )}
-                  </Menu.Item>
-                </motion.div>
+
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -230,12 +237,39 @@ const NavBar: FC = () => {
             </Menu.Items>
           </Menu>
         </div>
-        <button
-          className="inline-block cursor-default rounded-[2.0em] px-4 py-2 font-retroica text-xl tracking-[0.2em]"
-          style={{ backgroundColor: color.bg2, color: color.fg }}
+        <div>
+          <Menu>
+            <Menu.Button className="flex cursor-default items-center gap-2 font-retroica text-xl tracking-[0.2em] text-[#ffffff]">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="cursor-default rounded-[0.7em] font-retroica text-xl"
+                style={{ color: "rgb(192,191,201)" }}
+              >
+                <Menu.Item>
+                  {({ active }) => (
+                    <Link className={`${active && "text-[#fff]"}`} to="/ifest-store">
+                      IFEST Store
+                    </Link>
+                  )}
+                </Menu.Item>
+              </motion.div>
+            </Menu.Button>
+          </Menu>
+        </div>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="cursor-default rounded-[0.7em] font-retroica text-xl"
+          style={{ color: "rgb(192,191,201)" }}
         >
-          <Link to="/dashboard">Dashboard</Link>
-        </button>
+          <button
+            className="inline-block cursor-default rounded-[2.0em] px-4 py-2 font-retroica text-xl tracking-[0.2em]"
+            style={{ backgroundColor: color.bg2, color: color.fg }}
+          >
+            <Link to="/dashboard">Dashboard</Link>
+          </button>
+        </motion.div>
       </div>
 
       <Popover className="text-white lg:hidden">
@@ -281,7 +315,14 @@ const NavBar: FC = () => {
                 className="font-retroica text-xl font-bold tracking-[6px]"
                 style={{ color: color.fg }}
               >
-                Kompetisi
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="cursor-default rounded-[0.7em] font-retroica text-xl"
+                  style={{ color: "rgb(192,191,201)" }}
+                >
+                  Kompetisi
+                </motion.div>
               </div>
               <div className="flex gap-2">
                 <button
@@ -295,6 +336,12 @@ const NavBar: FC = () => {
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/wdc">WDC</Link>
+                </button>
+                <button
+                  className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
+                  style={{ borderColor: color.bg2, color: color.fg }}
+                >
+                  <Link to="/ui-ux">UI / UX</Link>
                 </button>
               </div>
             </div>
@@ -310,13 +357,29 @@ const NavBar: FC = () => {
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
-                  <Link to="/food-bazaar">Food Bazaar</Link>
+                  <Link to="/donor-darah">Donor Darah</Link>
                 </button>
                 <button
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
-                  <Link to="/donor-darah">Donor Darah</Link>
+                  <Link to="/seminar">Seminar Nasional</Link>
+                </button>
+              </div>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <div
+                className="font-retroica text-xl font-bold tracking-[6px]"
+                style={{ color: color.fg }}
+              >
+                Belanja
+              </div>
+              <div className="flex gap-2">
+                <button
+                  className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
+                  style={{ borderColor: color.bg2, color: color.fg }}
+                >
+                  <Link to="/ifest-store">IFEST Store</Link>
                 </button>
               </div>
             </div>

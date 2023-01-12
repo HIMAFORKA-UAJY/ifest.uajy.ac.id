@@ -1,11 +1,12 @@
 import { Box, Modal, Typography } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FC, useRef, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
 import {
   FaBook,
   FaCertificate,
+  FaLine,
   FaMale,
   FaMoneyBillWave,
   FaRegWindowClose,
@@ -80,6 +81,11 @@ const WDC: FC = () => {
         "Auditorium Lt. 4 Kampus 3 Gedung Bonaventura Universitas Atma Jaya Yogyakarta",
     },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       <div className="absolute top-0 -z-10 h-screen w-screen bg-gradient-to-t from-[#2C2E56] via-[#311D38] to-[#311D38]">
@@ -156,6 +162,7 @@ const WDC: FC = () => {
               className="w-72"
               src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png"
               alt="wdc"
+              style={{ paddingTop: "6rem" }}
             />
             <div className="text-center">
               <div className="font-retroica text-4xl tracking-wide text-white">WDC</div>
@@ -163,21 +170,30 @@ const WDC: FC = () => {
                 Web Design Competition
               </div>
             </div>
-            <div className="flex gap-4 font-retroica text-sm text-white">
+            <div className="m-auto flex flex-col gap-4 font-retroica text-sm text-white sm:text-xs lg:flex lg:items-center  ">
               <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]">
+                <div
+                  className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]"
+                  style={{ padding: "1rem" }}
+                >
                   <FaWallet />
                   Rp. 50.000
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]">
+                <div
+                  className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]"
+                  style={{ padding: "1rem" }}
+                >
                   <FaBook />
                   SMA/Sederajat
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
-                <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]">
+                <div
+                  className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]"
+                  style={{ padding: "1rem" }}
+                >
                   <FaMale />
                   Max. 3 orang
                 </div>
@@ -215,89 +231,98 @@ const WDC: FC = () => {
           className="bg-gradient-to-b from-[#2C2E56] via-[#311D38] to-[#2C2E56]"
         >
           <div className="flex flex-col items-center gap-2 pt-4 pl-4 pr-4">
-            <div className="font-retroica text-3xl font-thin tracking-wider text-white">
-              MORE ABOUT WDC
-            </div>
-            <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
-              <strong>Web Design Competition</strong> (WDC) 2022 adalah sebuah lomba dimana para
-              mahasiswa/i dalam sebuah tim yang terdiri dari dua orang berlomba untuk membuat desain
-              web sebaik mungkin agar dapat mempermudah setiap pengguna web atau pencari informasi
-              mendapatkan informasi yang jelas dan tepat. Dengan adanya Web Design Competition (WDC)
-              2022 diharapkan dapat menjadi wadah untuk para mahasiswa/i yang ada di Indonesia dalam
-              menuangkan ide-ide kreatif mereka.
-            </div>
-            <div className="flex flex-row gap-4 font-louisgeorgecafe">
-              <div className="rounded-full bg-[#6c6486] p-1">
-                <button
-                  onClick={openHandler}
-                  className="flex items-center gap-1 rounded-full bg-[#2C2B53] p-2 transition hover:bg-transparent"
-                >
-                  <div className="text-white opacity-70">Lihat Poster</div>
-                </button>
-                <Modal
-                  open={openPoster}
-                  onClose={closeHandler}
-                  aria-labelledby="modal-modal-title"
-                  aria-describedby="modal-modal-description"
-                >
-                  <Box sx={style} className="h-screen overflow-auto">
-                    <Typography
-                      className="text-right"
-                      id="modal-modal-title"
-                      variant="h6"
-                      component="h2"
-                    >
-                      <button onClick={closeHandler}>
-                        {" "}
-                        <FaRegWindowClose />{" "}
-                      </button>
-                    </Typography>
-                    <img
-                      src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png"
-                      alt=""
-                    />
-                  </Box>
-                </Modal>
+            <div className="!border-gray-700 !bg-[#241f3d] pt-12 pb-12">
+              <div className="flex flex-col items-center">
+                <div className="font-retroica text-3xl font-thin tracking-wider text-white">
+                  MORE ABOUT WDC
+                </div>
+                <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
+                  <strong>Web Design Competition</strong> (WDC) 2022 adalah sebuah lomba dimana para
+                  mahasiswa/i dalam sebuah tim yang terdiri dari dua orang berlomba untuk membuat
+                  desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau pencari
+                  informasi mendapatkan informasi yang jelas dan tepat. Dengan adanya Web Design
+                  Competition (WDC) 2022 diharapkan dapat menjadi wadah untuk para mahasiswa/i yang
+                  ada di Indonesia dalam menuangkan ide-ide kreatif mereka.
+                </div>
               </div>
-              <div className="rounded-full bg-gradient-to-br from-[#6EA5B1] to-[#9B68CE] p-1">
-                <button className="flex items-center gap-1 rounded-full bg-[#2A2F59] p-2 transition hover:bg-transparent">
-                  <Link to="/dashboard">
-                    <div className="text-white opacity-100">DAFTAR</div>
-                  </Link>
-                </button>
-              </div>
-              <div className="rounded-full bg-[#6c6486] p-1">
-                <button
-                  onClick={openPDFHandler}
-                  className="flex items-center gap-1 rounded-full bg-[#2C2B53] p-2 transition hover:bg-transparent"
-                >
-                  <div className="text-white opacity-70">Lihat Aturan</div>
-                </button>
-                <Modal
-                  open={openPDF}
-                  onClose={closePDFHandler}
-                  aria-labelledby="modal-modal-title"
-                  aria-describedby="modal-modal-description"
-                >
-                  <Box sx={style} className="h-screen overflow-auto">
-                    <Typography
-                      className="text-right"
-                      id="modal-modal-title"
-                      variant="h6"
-                      component="h2"
-                    >
-                      <button onClick={closePDFHandler}>
-                        {" "}
-                        <FaRegWindowClose />{" "}
-                      </button>
-                    </Typography>
-                    <iframe
-                      src="rulebook/rulebook-i2c.pdf"
-                      style={{ width: "100%", height: "95%" }}
-                      title="I2C Rulebook"
-                    />
-                  </Box>
-                </Modal>
+              <div className="margin-auto flex-col items-center justify-center gap-4 font-louisgeorgecafe md:flex md:flex-row md:justify-center ">
+                <div className="rounded-full bg-[#6c6486] p-1">
+                  <button
+                    onClick={openHandler}
+                    className="m-auto flex justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center "
+                    style={{ width: "100%" }}
+                  >
+                    <div className="text-white opacity-70">Lihat Poster</div>
+                  </button>
+                  <Modal
+                    open={openPoster}
+                    onClose={closeHandler}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                  >
+                    <Box sx={style} className="h-screen overflow-auto">
+                      <Typography
+                        className="text-right"
+                        id="modal-modal-title"
+                        variant="h6"
+                        component="h2"
+                      >
+                        <button onClick={closeHandler}>
+                          {" "}
+                          <FaRegWindowClose />{" "}
+                        </button>
+                      </Typography>
+                      <img
+                        src="https://ifest.uajy.ac.id/assets/images/event/poster-i2c-ext.png"
+                        alt=""
+                      />
+                    </Box>
+                  </Modal>
+                </div>
+                <div className="my-2 rounded-full bg-gradient-to-br from-[#6EA5B1] to-[#9B68CE] p-1">
+                  <button
+                    className="m-auto flex items-center justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
+                    style={{ width: "100%" }}
+                  >
+                    <Link to="/dashboard">
+                      <div className="text-white opacity-100">DAFTAR</div>
+                    </Link>
+                  </button>
+                </div>
+                <div className="rounded-full bg-[#6c6486] p-1">
+                  <button
+                    onClick={openPDFHandler}
+                    className="m-auto flex justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
+                    style={{ width: "100%" }}
+                  >
+                    <div className="text-white opacity-70">Lihat Aturan</div>
+                  </button>
+                  <Modal
+                    open={openPDF}
+                    onClose={closePDFHandler}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                  >
+                    <Box sx={style} className="h-screen overflow-auto">
+                      <Typography
+                        className="text-right"
+                        id="modal-modal-title"
+                        variant="h6"
+                        component="h2"
+                      >
+                        <button onClick={closePDFHandler}>
+                          {" "}
+                          <FaRegWindowClose />{" "}
+                        </button>
+                      </Typography>
+                      <iframe
+                        src="rulebook/rulebook-i2c.pdf"
+                        style={{ width: "100%", height: "95%" }}
+                        title="I2C Rulebook"
+                      />
+                    </Box>
+                  </Modal>
+                </div>
               </div>
             </div>
 
@@ -495,7 +520,10 @@ const WDC: FC = () => {
             {/* Prize Pool */}
             <div className="flex w-screen flex-col items-center justify-center gap-4 pt-8">
               <div className="font-retroica text-4xl text-[#E99CCE]">Prize Pool</div>
-              <div className="text-center font-retroica text-[#ffba57]">
+              <div
+                className="text-center font-retroica text-[#ffba57]"
+                style={{ fontSize: "1.5rem" }}
+              >
                 {" "}
                 <span className="font-louisgeorgecafe text-white">Total hadiah</span> Rp6.000.000
               </div>
@@ -533,7 +561,7 @@ const WDC: FC = () => {
                       <FaCertificate /> Sertifikat Nasional
                     </div>
                   </Card>
-                  <Card className="w-[30%] !border-gray-700 !bg-[rgb(60,42,78)] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ffb050] hover:text-[#311D38]">
+                  <Card className="w-[30%] !border-gray-700 !bg-[rgb(60,42,78)] text-white transition duration-300 ease-in hover:scale-110 hover:!bg-[#ffe279] hover:text-[#311D38]">
                     <div className="">
                       <img
                         className="m-auto block w-52"
@@ -635,7 +663,7 @@ const WDC: FC = () => {
                     alt=""
                   />
                   <div className="flex flex-col items-center  gap-4 lg:items-start">
-                    <div className="font-retroica text-2xl text-[#7084bc] lg:text-3xl">
+                    <div className="font-retroica text-2xl text-[#9cb0e7] lg:text-3xl">
                       Tertarik? Ayo mendaftar!
                     </div>
                     <div className="text-center font-louisgeorgecafe text-white lg:text-left">
@@ -654,7 +682,7 @@ const WDC: FC = () => {
             </div>
 
             <div className="flex w-screen flex-col items-center justify-center gap-2">
-              <div className="font-retroica text-4xl text-white">Contact Us</div>
+              <div className="font-retron2000 text-5xl font-bold text-white">Contact Us</div>
               <div className="font-retroica text-base text-white">
                 Masih ada yang bingung? Yuk kontak kami.
               </div>
@@ -664,34 +692,70 @@ const WDC: FC = () => {
                     <table className="table-cell border-separate rounded-xl border-[6px] border-[#9DCE6D] p-2">
                       <thead>
                         <tr>
-                          <th>WDC</th>
+                          <th className="border-b-[6px] border-[#9DCE6D]">WDC</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>
-                            <a href="#f" target="_blank">
-                              <div style={{ marginTop: ".5rem", marginBottom: ".5rem" }}>
-                                0812 3470 303
+                            <div className="flex flex-col items-center">
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <a
+                                  style={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                  }}
+                                  href="https://wa.me/6282151172630"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  <FaWhatsapp className="mr-2" />
+                                  +62 821-5117-2630
+                                </a>
                               </div>
-                              <button className="mx-auto flex items-center justify-center gap-1 rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9dcd6c] px-2">
-                                <FaWhatsapp />
-                                Andreas
-                              </button>
-                            </a>
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaLine />
+                                id_line
+                              </div>
+                            </div>
+                            <button
+                              className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe"
+                              style={{ cursor: "default" }}
+                            >
+                              Pasha
+                            </button>
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="#f" target="_blank">
-                              <div style={{ marginTop: ".5rem", marginBottom: ".5rem" }}>
-                                0812 3470 303
+                            <div className="flex flex-col items-center">
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <a
+                                  style={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                  }}
+                                  href="https://wa.me/628123470303"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  <FaWhatsapp className="mr-2" />
+                                  +62 812-3470-303
+                                </a>
                               </div>
-                              <button className="mx-auto flex items-center justify-center gap-1 rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9dcd6c] px-2">
-                                <FaWhatsapp />
-                                Andreas
-                              </button>
-                            </a>
+                              <div className="flex items-center gap-1 font-louisgeorgecafe">
+                                <FaLine />
+                                id_line
+                              </div>
+                            </div>
+                            <button
+                              className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe"
+                              style={{ cursor: "default" }}
+                            >
+                              Ayas
+                            </button>
                           </td>
                         </tr>
                       </tbody>

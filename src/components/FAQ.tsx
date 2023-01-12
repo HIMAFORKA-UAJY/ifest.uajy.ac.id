@@ -80,17 +80,17 @@ const FAQ: FC = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1, ease: "easeInOut" }}
-      className="bg-[#2b2265] pt-24"
+      className="bg-[#393072] pt-24"
     >
-      <div className="flex flex-col justify-center lg:flex-row">
-        <div className="flex flex-col items-center justify-center bg-[#2b2265] lg:w-1/2 lg:justify-center">
-          <div className="font-retroica text-4xl text-white">FAQ</div>
+      <div className="flex flex-col justify-center pb-24 lg:flex-row">
+        <div className="flex flex-col items-center justify-center bg-[#3B3275] lg:w-1/2 lg:justify-center">
+          <div className="p-4 font-retroica text-4xl text-white">FAQ</div>
           <div className="font-retroica text-base text-white">Pertanyaan yang sering diajukan</div>
           <div>
-            <div className="w-full bg-[#2b2265] p-4">
-              <div className="bg-[#362c75] p-3 shadow-lg">
+            <div className="w-full bg-[#3B3275] p-4">
+              <div className="bg-[#41387e] p-3 shadow-lg">
                 <Accordion
-                  className="overflow-hidden rounded-md border-[#3d2e7c]"
+                  className="overflow-hidden rounded-md border-[#3B3275]"
                   alwaysOpen={false}
                 >
                   {faqs.map((faq) => {
@@ -101,10 +101,10 @@ const FAQ: FC = () => {
                             <AccordionHeader
                               className={`flex w-full items-center justify-between px-4 py-3 transition-[background]  ${
                                 open ? "" : ""
-                              } ${open ? "bg-gray-400/30" : "bg-[#2b2265]"}`}
+                              } ${open ? "bg-gray-400/30" : "bg-[#41387e]"}`}
                             >
                               <span
-                                className={`text-left font-retroica text-sm font-semibold tracking-[0.1em] ${
+                                className={`text-left font-retroica text-sm font-medium tracking-[0.1em] ${
                                   open ? "text-white" : "text-gray-400"
                                 }`}
                               >
@@ -126,7 +126,7 @@ const FAQ: FC = () => {
                               </svg>
                             </AccordionHeader>
                             <AccordionBody className={`open ? "" : ""`}>
-                              <div className="p-4 text-left font-retroica text-sm text-gray-200">
+                              <div className="p-4 text-left font-louisgeorgecafe text-sm text-gray-200">
                                 {parse(faq.answer)}
                               </div>
                             </AccordionBody>
