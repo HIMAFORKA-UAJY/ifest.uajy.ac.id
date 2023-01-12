@@ -351,32 +351,19 @@ const DonorDarah: FC = () => {
                   <tbody>
                     <tr>
                       <td>
-                        {/* <div className="mt-2 font-retroica text-[#ffffffcc]">0822 2555 3400</div>
-                        <button className="mx-auto flex items-center justify-center gap-1 rounded bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-bold text-[#000]">
-                          <FaWhatsapp />
-                          Lala
-                        </button>
-                      </td>
-                    </tr>
-                    <tr className="mt-10">
-                      <td>
-                        <div className="mt-2 font-retroica text-[#ffffffcc]">0852 1024 5177</div>
-                        <button className="mx-auto flex items-center justify-center gap-1 rounded bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-bold text-[#000]">
-                          <FaWhatsapp />
-                          Kevin
-                        </button> */}
                         <div className="flex flex-col items-center">
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
-                            <FaWhatsapp />
-                            0822 2555 3400
+                            <a style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} href="https://wa.me/6285714080699" target='_blank'>
+                              <FaWhatsapp className="mr-2" />+62 857-1408-0699
+                            </a>
                           </div>
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
                             <FaLine />
-                            id_line
+                            angelinaderrel
                           </div>
                         </div>
-                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe">
-                          Lala
+                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-neutral-900" style={{ cursor: 'default' }}>
+                          Derrel
                         </button>
                       </td>
                     </tr>
@@ -384,16 +371,17 @@ const DonorDarah: FC = () => {
                       <td>
                         <div className="flex flex-col items-center">
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
-                            <FaWhatsapp />
-                            0822 2555 3400
+                            <a style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} href="https://wa.me/6282334026619" target='_blank'>
+                              <FaWhatsapp className="mr-2" />+62 823-3402-6619
+                            </a>
                           </div>
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
                             <FaLine />
-                            id_line
+                            sa2st2ra
                           </div>
                         </div>
-                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe">
-                          Kevin
+                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-neutral-900" style={{ cursor: 'default' }}>
+                          Deta
                         </button>
                       </td>
                     </tr>

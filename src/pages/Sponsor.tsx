@@ -378,16 +378,17 @@ const Sponsor: FC = () => {
                         <td>
                           <div className="flex flex-col items-center">
                             <div className="flex items-center gap-1 font-louisgeorgecafe">
-                              <FaWhatsapp />
-                              0822 2555 3400
+                              <a style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} href="https://wa.me/628993694969 " target='_blank'>
+                                <FaWhatsapp className="mr-2" />+62 899-3694-969 
+                              </a>
                             </div>
                             <div className="flex items-center gap-1 font-louisgeorgecafe">
                               <FaLine />
-                              id_line
+                              metiu321
                             </div>
                           </div>
-                          <button className="mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe">
-                            Tessa
+                          <button className="mx-auto rounded-2xl  bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe" style={{ cursor: 'default' }}>
+                            Matthew
                           </button>
                         </td>
                       </tr>
@@ -395,16 +396,17 @@ const Sponsor: FC = () => {
                         <td>
                           <div className="flex flex-col items-center">
                             <div className="flex items-center gap-1 font-louisgeorgecafe">
-                              <FaWhatsapp />
-                              0822 2555 3400
+                              <a style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} href="https://wa.me/+628164258899" target='_blank'>
+                                <FaWhatsapp className="mr-2" />+62 816-4258-899
+                              </a>
                             </div>
                             <div className="flex items-center gap-1 font-louisgeorgecafe">
                               <FaLine />
-                              id_line
+                              axel.ckd
                             </div>
                           </div>
-                          <button className="mx-auto rounded-2xl bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe">
-                            Rinn
+                          <button className="mx-auto rounded-2xl  bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] px-2 font-louisgeorgecafe" style={{ cursor: 'default' }}>
+                            Axel
                           </button>
                         </td>
                       </tr>

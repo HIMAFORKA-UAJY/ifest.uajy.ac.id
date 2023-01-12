@@ -119,19 +119,22 @@ const I2C: FC = () => {
                   <div className="mt-8 flex gap-4 pl-[1rem] font-retroica text-sm text-white">
                     <div className="rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <FaWallet />
-                        Rp. 150K / tim
+                        <div style={{ "margin-top": -0.1 + "rem" }}><FaBook /></div>
+                        <p style={{ "margin-top": 0.1 + "rem" }}> SMA / Sederajat</p>
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <FaBook />
-                        SMA / Sederajat
+                        <div style={{ "margin-top": -0.1 + "rem" }}><FaWallet /></div>
+                        <p style={{ "margin-top": 0.1 + "rem" }}> Rp. 150K / tim </p>
+                        
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <FaMale />3 peserta / tim
+                        <div style={{ "margin-top": -0.1 + "rem" }}><FaMale /></div>
+                        <p style={{ "margin-top": 0.1 + "rem" }}> 3 peserta / tim </p>
+                        
                       </div>
                     </div>
                   </div>
@@ -235,13 +238,13 @@ const I2C: FC = () => {
                   MORE ABOUT I2C
                 </div>
                 <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
-                  <strong>Innovative Informatics Contest</strong> (I2C) 2022 adalah sebuah lomba
-                  dimana siswa/i SMA/SMK yang tergabung dalam satu tim berlomba untuk merancang
-                  suatu inovasi aplikasi (<i>mobile</i>) yang bertujuan membantu membantu
-                  mempermudah kegiatan berumah tangga sehingga terwujud keseimbangan kehidupan
-                  berkeluarga baik dari sisi keuangan, kebersihan, dan kenyamanan. Acara ini juga
-                  dimaksudkan untuk memberi kesempatan bagi siswa/i SMA/SMK di seluruh Indonesia
-                  untuk menunjukkan bakat, minat, dan pengetahuan.
+                  <strong>Innovative Informatics Contest</strong> adalah sebuah kompetisi yang menguji kemampuan peserta dalam 
+                  menyusun ide untuk memecahkan berbagai permasalahan yang ada di dunia dengan memberikan solusi 
+                  melalui pendekatan Teknologi Informasi, yang dapat berbentuk aplikasi, web, dan juga <i>IoT</i>. 
+                  Pada tahun ini, I2C mengangkat tema "A Step Closer to Perfection" dengan harapan 
+                  peserta dapat membuat produk inovatif yang dapat membantu pengguna menguasai berbagai disiplin ilmu, 
+                  baik akademik maupun nonakademik, melalui media Teknologi Informasi.
+
                 </div>
               </div>
               <div className="margin-auto flex-col items-center justify-center gap-4 font-louisgeorgecafe md:flex md:flex-row md:justify-center ">
@@ -343,110 +346,76 @@ const I2C: FC = () => {
             </div>
 
             {/* Ketentuan */}
-            <div className="flex flex-col justify-center gap-8 py-12 lg:flex-row">
-              <div className="w-screen px-4 lg:w-[40%]">
+            <div className="flex flex-col justify-center gap-8 py-12">
+              <div className="w-screen px-4 lg:w-[100%]">
                 <Card className="!border-gray-700 !bg-[#241f3d]">
                   <h3 className="pl-6 font-retroica text-2xl text-[#87BBEB]">Ketentuan Umum</h3>
                   <div className="p-6 font-louisgeorgecafe leading-loose text-white">
                     <ol className="list-outside list-decimal">
                       <li>
-                        Peserta masih berstatus siswa di tingkat SMA/SMK sederajat se-Indonesia.
+                        Setiap peserta harus merupakan siswa aktif SMA/sederajat.
                       </li>
                       <li>
-                        Melakukan pendaftaran online melalui{" "}
-                        <a
-                          href="https://ifest.uajy.ac.id/dash/daftar"
-                          className="text-[#EFB6D5] underline hover:font-bold"
-                        >
-                          https://ifest.uajy.ac.id/dash/daftar
-                        </a>
-                        , pendaftaraan akan dibuka dari 15 Februari 2022 sampai dengan 13 Maret
-                        2022.
+                        Setiap peserta harus tergabung dalam tim yang beranggotakan tiga (3) orang.
                       </li>
                       <li>
-                        Melampirkan scan atau foto kartu pelajar dan surat persetujuan dari sekolah
-                        pada formulir pendaftaran online.
+                        Setiap peserta hanya boleh terdaftar dalam satu (1) tim.
                       </li>
                       <li>
-                        Setiap sekolah diperbolehkan mengirimkan 1 tim atau lebih (setiap timnya
-                        terdiri dari 3 anggota).
-                      </li>
-                      <li>Pendaftaran tidak dipungut biaya.</li>
-                      <li>
-                        Peserta yang telah mendaftar wajib mengumpulkan proposal ide dengan cara
-                        login melalui{" "}
-                        <a
-                          href="https://ifest.uajy.ac.id/dash/masuk"
-                          className="text-[#EFB6D5] underline hover:font-bold"
-                        >
-                          https://ifest.uajy.ac.id/dash/masuk
-                        </a>{" "}
-                        sebelum 13 Maret 2022 dengan format penamaan{" "}
-                        <span className="font-retron2000 text-[#87BBEB]">
-                          IFest#10UAJY_I2C_Nama Ide Aplikasi_Nama Kelompok_Nama Sekolah.pdf
-                        </span>{" "}
-                        (Format PDF).
+                        Setiap anggota tim harus berasal dari sekolah yang sama.
                       </li>
                       <li>
-                        Peserta yang sudah mendaftar tetapi tidak mengumpulkan proposal setelah
-                        batas waktu yang ditentukan dianggap mengundurkan diri dari perlombaan.
+                        Setiap tim harus memenuhi prosedur pendaftaran yang telah ditetapkan.
                       </li>
                       <li>
-                        Proposal dalam bentuk softcopy juga dikirimkan ke email{" "}
-                        <a
-                          href="mailto:ifest@uajy.ac.id"
-                          className="text-[#EFB6D5] underline hover:font-bold"
-                        >
-                          ifest@uajy.ac.id
-                        </a>{" "}
-                        dengan format penamaan file{" "}
-                        <span className="font-retron2000 text-[#87BBEB]">
-                          IFest#10UAJY_I2C_Nama Ide Aplikasi_Nama Kelompok_Nama Sekolah.pdf
-                        </span>{" "}
-                        (Format PDF).
+                        Setiap tim tidak boleh mengganti anggota yang sudah terdaftar pada formulir pendaftaran.
                       </li>
                       <li>
-                        Peserta yang lolos tahap seleksi proposal akan melanjutkan ke tahap pameran
-                        online untuk memamerkan ide aplikasinya
+                        Setiap tim harus membayar biaya pendaftaran lomba sebesar Rp 150.000.
                       </li>
                       <li>
-                        Lima kelompok dengan nilai akumulasi proposal dan pameran tertinggi akan
-                        melanjutkan ke tahap final yaitu presentasi di hadapan para juri
+                        Pengembalian (refund) biaya pendaftaran tidak dapat dilakukan dalam keadaan apa pun.
                       </li>
                       <li>
-                        Panitia berhak untuk mengeliminasi peserta yang tidak mematuhi ketentuan di
-                        atas.
+                        Setiap tim yang lolos ke tahap semifinal wajib berangkat ke Universitas Atma Jaya Yogyakarta.
+                      </li>
+                      <li>
+                        Setiap tim yang lolos ke tahap semifinal wajib didampingi oleh guru pembimbing yang berasal dari sekolah yang sama.
+                      </li>
+                      <li>
+                        Setiap tim hanya boleh didampingi oleh satu (1) guru pembimbing.
+                      </li>
+                      <li>
+                        Setiap guru dapat membimbing lebih dari satu (1) tim, selama tim berasal dari sekolah yang sama.
+                      </li>
+                      <li>
+                        Setiap sekolah bebas untuk mendaftarkan lebih dari satu (1) tim.
                       </li>
                     </ol>
                   </div>
                 </Card>
               </div>
 
-              <div className="w-screen px-4 lg:w-[40%]">
+              <div className="w-screen px-4 lg:w-[100%]">
                 <Card className="!border-gray-700 !bg-[#241f3d]">
-                  <h3 className="pl-6 font-retroica text-2xl text-[#87BBEB]">Ketentuan Proposal</h3>
+                  <h3 className="pl-6 font-retroica text-2xl text-[#87BBEB]">Ketentuan Karya</h3>
                   <div className="p-6 font-louisgeorgecafe leading-loose text-white">
                     <ol className="list-outside list-decimal">
-                      <li>Karya/proposal harus sesuai dengan tema yang telah ditentukan.</li>
                       <li>
-                        Karya/proposal yang dilombakan dalam kompetisi ini belum pernah mendapat
-                        penghargaan di kompetisi lain atau belum pernah digunakan di kompetisi lain.
+                        Setiap karya harus berkaitan dengan Teknologi Informasi.
                       </li>
-                      <li>Karya/proposal merupakan ide original peserta.</li>
+                      <li>
+                        Setiap karya harus sesuai dengan tema yang diberikan.
+                      </li>
+                      <li>
+                        Setiap karya harus merupakan ide orisinal peserta.
+                      </li>
                       <li>Karya/proposal tidak mengandung unsur SARA dan pornografi.</li>
                       <li>
-                        Lima belas proposal terbaik akan dipilih untuk masuk tahap berikutnya yaitu
-                        pameran. Dalam babak ini peserta akan memamerkan ide aplikasi mereka melalui
-                        media sosial, dan untuk tahap berikutnya merupakan nilai akumulasi dari
-                        proposal dan pameran.
+                        Setiap karya tidak boleh menyinggung elemen yang berkaitan dengan etnis, suku, agama, tindakan perundangan, hingga SARA.
                       </li>
                       <li>
-                        Tidak melanggar Hak Cipta, Hak Paten, dan Hak Merk. Hal tersebut menjadi
-                        tanggung jawab peserta. Panita tidak bertanggung jawab dalam masalah Hak
-                        Cipta, Hak Paten ataupun Hak Merk.
-                      </li>
-                      <li>
-                        Ketentuan lebih lengkap mengenai isi proposal dapat dilihat pada rulebook.
+                        Setiap karya belum pernah dimasukkan dalam lomba yang sejenis sebelumnya.
                       </li>
                     </ol>
                   </div>
@@ -854,7 +823,7 @@ const I2C: FC = () => {
                               </div>
                               <div className="flex items-center gap-1 font-louisgeorgecafe">
                                 <FaLine />
-                                id_line
+                                lalariel
                               </div>
                             </div>
                             <button
@@ -885,7 +854,7 @@ const I2C: FC = () => {
                               </div>
                               <div className="flex items-center gap-1 font-louisgeorgecafe">
                                 <FaLine />
-                                id_line
+                                wibowolala31
                               </div>
                             </div>
                             <button
