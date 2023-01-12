@@ -1,15 +1,12 @@
-import { margin } from "@mui/system";
 import { Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { MdMargin } from "react-icons/md";
 import { Grid, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import classes from "./swiper_nav.module.css"
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const MediaPartner: FC = () => {

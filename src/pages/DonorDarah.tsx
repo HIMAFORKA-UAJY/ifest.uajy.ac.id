@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FC, useEffect, useRef } from "react";
-import { FaWhatsapp, FaLine } from "react-icons/fa";
+import { FaLine, FaWhatsapp } from "react-icons/fa";
 
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
