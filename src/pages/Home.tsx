@@ -6,6 +6,7 @@ import DonorDarahSection from "../components/DonorDarahSection";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 // import HackathonSection from "../components/HackathonSection";
+import ShootingStars from "../components/ShootingStars";
 import I2CSection from "../components/I2CSection";
 import Layout from "../components/Layout";
 import MediaPartner from "../components/MediaPartner";
@@ -20,6 +21,15 @@ const Home: FC = () => {
   return (
     <Layout>
       <div className="absolute top-0 -z-10 h-screen w-screen bg-[url('/images/bg-no-flip.png')] bg-cover bg-center bg-no-repeat">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        >
+          <ShootingStars />
+        </motion.div>
+        
         <I2CSection />
         <WDCSection />
         <DonorDarahSection />

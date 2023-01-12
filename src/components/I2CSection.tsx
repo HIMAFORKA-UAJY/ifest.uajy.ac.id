@@ -16,9 +16,9 @@ const I2CSection: FC = () => {
         viewport={{ once: true }}
         transition={{ duration: 1, ease: "easeInOut" }}
         ref={i2cRef}
-        className="w-screen bg-[url('/images/bg-flip-fix.png')] bg-cover bg-center bg-no-repeat"
+        className="w-screen h-screen bg-[url('/images/bg-flip-fix.png')] bg-cover bg-center bg-no-repeat"
       >
-        <div className="hidden w-screen flex-col items-center justify-center p-24 lg:flex">
+        <div className="hidden w-screen flex-col items-center justify-center  lg:flex">
           <div className="flex items-center justify-center">
             <img className="w-[600px]" src="/images/ill-i2c.png" alt="i2c" />
             <div className="flex flex-col">
