@@ -66,7 +66,7 @@ const I2CSection: FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
+        <div className="flex h-screen w-screen flex-col items-center justify-center px-4 py-4 lg:hidden" style={{paddingBottom: '6rem'}}>
           <img className="w-72" src="/images/ill-i2c.png" alt="i2c" />
           <div className="text-center">
             <div className="font-retroica text-4xl tracking-wide text-white">I2C</div>
