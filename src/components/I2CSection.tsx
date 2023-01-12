@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FC, useRef } from "react";
+import { CSSProperties, FC, useRef } from "react";
 import { FaBook, FaMale, FaWallet } from "react-icons/all";
 import { Link } from "react-router-dom";
 
@@ -29,26 +29,26 @@ const I2CSection: FC = () => {
               <div className="flex gap-4 pl-[1rem] font-retroica text-sm text-white">
                 <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
                   <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                    <div style={{ "margin-top": `${-0.1}rem` }}>
+                    <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                       <FaBook />
                     </div>
-                    <p style={{ "margin-top": `${0.1}rem` }}> SMA / Sederajat </p>
+                    <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> SMA / Sederajat </p>
                   </div>
                 </div>
                 <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
                   <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                    <div style={{ "margin-top": `${-0.1}rem` }}>
+                    <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                       <FaWallet />
                     </div>
-                    <p style={{ "margin-top": `${0.1}rem` }}> Rp. 150K / tim </p>
+                    <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Rp. 150K / tim </p>
                   </div>
                 </div>
                 <div className="rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
                   <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                    <div style={{ "margin-top": `${-0.1}rem` }}>
+                    <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                       <FaMale />
                     </div>
-                    <p style={{ "margin-top": `${0.1}rem` }}> 3 peserta / tim </p>
+                    <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> 3 peserta / tim </p>
                   </div>
                 </div>
               </div>

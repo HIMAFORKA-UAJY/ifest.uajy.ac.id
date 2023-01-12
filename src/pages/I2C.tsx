@@ -1,7 +1,7 @@
 import { Box, Modal, Typography } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FC, useEffect, useRef, useState } from "react";
+import { CSSProperties, FC, useEffect, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
 import {
   FaBook,
@@ -119,26 +119,30 @@ const I2C: FC = () => {
                   <div className="mt-8 flex gap-4 pl-[1rem] font-retroica text-sm text-white">
                     <div className="rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div style={{ "margin-top": `${-0.1}rem` }}>
+                        <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                           <FaBook />
                         </div>
-                        <p style={{ "margin-top": `${0.1}rem` }}> SMA / Sederajat</p>
+                        <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}>
+                          SMA / Sederajat
+                        </p>
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div style={{ "margin-top": `${-0.1}rem` }}>
+                        <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                           <FaWallet />
                         </div>
-                        <p style={{ "margin-top": `${0.1}rem` }}> Rp. 150K / tim </p>
+                        <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}>Rp. 150K / tim</p>
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div style={{ "margin-top": `${-0.1}rem` }}>
+                        <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                           <FaMale />
                         </div>
-                        <p style={{ "margin-top": `${0.1}rem` }}> 3 peserta / tim </p>
+                        <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}>
+                          3 peserta / tim
+                        </p>
                       </div>
                     </div>
                   </div>
