@@ -696,41 +696,45 @@ const WDC: FC = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td>
-                            <div className="flex flex-col items-center">
-                              <div className="flex items-center gap-1 font-louisgeorgecafe">
-                                <FaWhatsapp />
-                                0822 2555 3400
-                              </div>
-                              <div className="flex items-center gap-1 font-louisgeorgecafe">
-                                <FaLine />
-                                id_line
-                              </div>
-                            </div>
-                            <button className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe">
-                              Andreas
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div className="flex flex-col items-center">
-                              <div className="flex items-center gap-1 font-louisgeorgecafe">
-                                <FaWhatsapp />
-                                0822 2555 3400
-                              </div>
-                              <div className="flex items-center gap-1 font-louisgeorgecafe">
-                                <FaLine />
-                                id_line
-                              </div>
-                            </div>
-                            <button className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe">
-                              Wahyu
-                            </button>
-                          </td>
-                        </tr>
-                      </tbody>
+                <tr>
+                  <td>
+                    <div className="flex flex-col items-center">
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <a style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}} href="https://wa.me/6282151172630" target='_blank'>
+                        <FaWhatsapp className="mr-2" />
+                        +62 821-5117-2630
+                        </a>
+                      </div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaLine />
+                        id_line
+                      </div>
+                    </div>
+                    <button className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe" style={{cursor: 'default'}}>
+                      Pasha
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className="flex flex-col items-center">
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <a style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}} href="https://wa.me/628123470303" target='_blank'>
+                        <FaWhatsapp className="mr-2" />
+                        +62 812-3470-303
+                        </a>
+                      </div>
+                      <div className="flex items-center gap-1 font-louisgeorgecafe">
+                        <FaLine />
+                        id_line
+                      </div>
+                    </div>
+                    <button className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe" style={{cursor: 'default'}}>
+                      Ayas
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
                     </table>
                   </div>
                 </Carousel>
