@@ -46,19 +46,14 @@ const I2C: FC = () => {
 
   const dataSeleksi = [
     {
-      title: "16 Januari - 17 Februari 2023",
-      cardTitle: "Pendaftaran Online",
+      title: "16 Januari - 16 Februari 2023",
+      cardTitle: "Pendaftaran, Pengumpulan Berkas, dan Pengumpulan Proposal & Poster",
       cardDetailedText: "Website I2C",
     },
     {
-      title: "17 Februari 2023",
+      title: "16 Februari 2023",
       cardTitle: "Batas Pengumpulan Proposal",
       cardDetailedText: "Website I2C",
-    },
-    {
-      title: "24 Februari - 28 Februari 2023",
-      cardTitle: "Penilaian Proposal",
-      cardDetailedText: "Online",
     },
     {
       title: "1 Maret 2023",
@@ -68,18 +63,23 @@ const I2C: FC = () => {
   ];
   const dataExpo = [
     {
-      title: "1 Maret 2023",
+      title: "2 Maret 2023",
       cardTitle: "Technical Meeting",
       cardDetailedText: "Zoom",
     },
     {
-      title: "6 Maret - 9 Maret 2023",
-      cardTitle: "Pameran Virtual",
+      title: "5 Maret - 8 Maret 2023",
+      cardTitle: "Pameran Poster",
       cardDetailedText: "Instagram IFest #11",
     },
     {
-      title: "10 Maret 2023",
-      cardTitle: "Pameran On-site",
+      title: "9 Maret 2023",
+      cardTitle: "Pengumpulan Pitch Deck",
+      cardDetailedText: "Instagram IFest #11",
+    },
+    {
+      title: "9 Maret 2023",
+      cardTitle: "Pameran Produk",
       cardDetailedText:
         "Auditorium Lt. 4 Kampus 3 Gedung Bonaventura Universitas Atma Jaya Yogyakarta",
     },
@@ -87,8 +87,8 @@ const I2C: FC = () => {
   const dataFinal = [
     {
       title: "11 Maret 2023",
-      cardTitle: "Final",
-      cardSubtitle: "Pengumuman Seleksi, Presentasi Pitch Deck, dan Pengumuman Pemenang",
+      cardTitle: "Pengumuman Babak Semifinal, Presentasi Pitch Deck, dan Pengumuman Pemenang",
+      cardSubtitle: "Pengumuman Babak Semifinal, Presentasi Pitch Deck, dan Pengumuman Pemenang",
       cardDetailedText:
         "Auditorium Lt. 4 Kampus 3 Gedung Bonaventura Universitas Atma Jaya Yogyakarta",
     },
@@ -119,30 +119,22 @@ const I2C: FC = () => {
                   <div className="mt-8 flex gap-4 pl-[1rem] font-retroica text-sm text-white">
                     <div className="rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
-                          <FaBook />
-                        </div>
-                        <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}>
-                          SMA / Sederajat
-                        </p>
+                        <div className="-mt-[0.1rem]"><FaBook /></div>
+                        <p className="mt-[0.1rem]"> SMA / Sederajat</p>
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
-                          <FaWallet />
-                        </div>
-                        <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}>Rp. 150K / tim</p>
+                        <div className="-mt-[0.1rem]"><FaWallet /></div>
+                        <p className="mt-[0.1rem]"> Rp. 150K / tim </p>
+                        
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
-                          <FaMale />
-                        </div>
-                        <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}>
-                          3 peserta / tim
-                        </p>
+                        <div className="-mt-[0.1rem]"><FaMale /></div>
+                        <p className="mt-[0.1rem]"> 3 peserta / tim </p>
+                        
                       </div>
                     </div>
                   </div>
@@ -189,8 +181,9 @@ const I2C: FC = () => {
                   className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center"
                   style={{ padding: "1rem" }}
                 >
-                  <FaWallet />
-                  Rp. 150K / tim
+                  
+                  <FaBook />
+                  SMA / Sederajat
                 </div>
               </div>
               <div className="h-fit rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
@@ -198,8 +191,8 @@ const I2C: FC = () => {
                   className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center"
                   style={{ padding: "1rem" }}
                 >
-                  <FaBook />
-                  SMA / Sederajat
+                  <FaWallet />
+                  Rp. 150K / tim
                 </div>
               </div>
               <div className="h-fit rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
@@ -576,13 +569,11 @@ const I2C: FC = () => {
                   backgroundSize: "cover",
                 }}
               >
-                <div className="font-retroica text-4xl text-[#87bbeb]">Prize Pool</div>
+                <div className="font-retroica text-6xl tracking-widest text-[#87bbeb]">PRIZE POOL</div>
                 <div
-                  className="text-center font-retroica text-[#ffba57]"
-                  style={{ fontSize: "1.5rem" }}
-                >
+                  className="text-center text-3xl font-retroica text-[#ffba57]">
                   {" "}
-                  <span className="font-louisgeorgecafe text-white">Total hadiah</span> Rp 9.500.000
+                  Rp9.500.000
                 </div>
                 <div>
                   <div className="my-10 hidden lg:flex">
