@@ -267,7 +267,9 @@ const NavBar: FC = () => {
             className="inline-block cursor-default rounded-[2.0em] px-4 py-2 font-retroica text-xl tracking-[0.2em]"
             style={{ backgroundColor: color.bg2, color: color.fg }}
           >
-            <Link to="/dash">Dashboard</Link>
+            <a href="/dash" target="_blank" rel="noopener noreferrer">
+              Dashboard
+            </a>
           </button>
         </motion.div>
       </div>
@@ -408,7 +410,9 @@ const NavBar: FC = () => {
                 className="inline-block w-full cursor-default rounded-[2.0em] px-4 py-2 font-retroica text-xl tracking-wide"
                 style={{ backgroundColor: color.bg2, color: color.fg }}
               >
-                <Link to="/dash">Dashboard</Link>
+                <a href="/dash" target="_blank" rel="noopener noreferrer">
+                  Dashboard
+                </a>
               </button>
             </div>
           </motion.div>
