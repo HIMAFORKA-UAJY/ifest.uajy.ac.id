@@ -427,7 +427,7 @@ const DonorDarah: FC = () => {
 
           <div className="flex flex-col items-center justify-center">
             <div className="flex w-full flex-col justify-center pt-24 pb-24 lg:w-[70%] lg:items-center">
-              <div className="mx-auto mb-8 text-center font-retroica text-4xl text-[#87bbeb]">
+              <div className="mx-auto mb-8 text-center font-retroica text-4xl text-[#FF95C1]">
                 Timeline
               </div>
               <div className="w-fit rounded-xl bg-[#241f3d] pb-1">
