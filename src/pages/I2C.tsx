@@ -1,7 +1,7 @@
 import { Box, Modal, Typography } from "@mui/material";
 import { Card, Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { CSSProperties, FC, useEffect, useRef, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
 import {
   FaBook,
@@ -119,22 +119,26 @@ const I2C: FC = () => {
                   <div className="mt-8 flex gap-4 pl-[1rem] font-retroica text-sm text-white">
                     <div className="rounded-full bg-gradient-to-r from-[#ff8064] to-[#ffb783] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div className="-mt-[0.1rem]"><FaBook /></div>
+                        <div className="-mt-[0.1rem]">
+                          <FaBook />
+                        </div>
                         <p className="mt-[0.1rem]"> SMA / Sederajat</p>
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#9dce6d] to-[#6ca0b0] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div className="-mt-[0.1rem]"><FaWallet /></div>
+                        <div className="-mt-[0.1rem]">
+                          <FaWallet />
+                        </div>
                         <p className="mt-[0.1rem]"> Rp. 150K / tim </p>
-                        
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#7fa3ff] to-[#bb88fc] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                        <div className="-mt-[0.1rem]"><FaMale /></div>
+                        <div className="-mt-[0.1rem]">
+                          <FaMale />
+                        </div>
                         <p className="mt-[0.1rem]"> 3 peserta / tim </p>
-                        
                       </div>
                     </div>
                   </div>
@@ -181,7 +185,6 @@ const I2C: FC = () => {
                   className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-1 px-[0.35rem] text-center"
                   style={{ padding: "1rem" }}
                 >
-                  
                   <FaBook />
                   SMA / Sederajat
                 </div>
@@ -569,9 +572,10 @@ const I2C: FC = () => {
                   backgroundSize: "cover",
                 }}
               >
-                <div className="font-retroica text-6xl tracking-widest text-[#87bbeb]">PRIZE POOL</div>
-                <div
-                  className="text-center text-3xl font-retroica text-[#ffba57]">
+                <div className="font-retroica text-6xl tracking-widest text-[#87bbeb]">
+                  PRIZE POOL
+                </div>
+                <div className="text-center font-retroica text-3xl text-[#ffba57]">
                   {" "}
                   Rp9.500.000
                 </div>

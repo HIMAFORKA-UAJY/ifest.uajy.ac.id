@@ -31,14 +31,14 @@ const Footer: FC<Props> = ({ className }) => {
             <Link to="/wdc">Web Design Competition (WDC)</Link>
           </div>
           <div className="font-louisgeorgecafe text-white opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90">
-            <Link to="/hackathon">Hackathon</Link>
+            <Link to="/ui-ux">UI / UX ..</Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 text-left">
           <div className="font-retroica text-xl text-white">Acara</div>
-          <div className="font-louisgeorgecafe text-white opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90">
+          {/* <div className="font-louisgeorgecafe text-white opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90">
             <Link to="/food-bazaar">Food Bazaar</Link>
-          </div>
+          </div> */}
           <div className="font-louisgeorgecafe text-white opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90">
             <Link to="/donor-darah">Donor Darah</Link>
           </div>

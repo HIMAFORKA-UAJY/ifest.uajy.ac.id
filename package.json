@@ -16,7 +16,7 @@
     "@emotion/styled": "^11.10.5",
     "@headlessui/react": "^1.7.7",
     "@mui/material": "^5.11.4",
-    "flowbite": "^1.6.1",
+    "flowbite": "^1.6.2",
     "flowbite-react": "^0.3.7",
     "framer-motion": "^8.4.2",
     "html-react-parser": "^3.0.7",
