@@ -138,7 +138,7 @@ const DonorDarah: FC = () => {
                         <FaRegWindowClose />{" "}
                       </button>
                     </Typography>
-                    <img src="{}" style={{ margin: "auto" }} alt="" />
+                    <img src="images/poster-dondar.jpeg" style={{ margin: "auto" }} alt="" />
                   </Box>
                 </Modal>
               </div>
@@ -427,7 +427,7 @@ const DonorDarah: FC = () => {
 
           <div className="flex flex-col items-center justify-center">
             <div className="flex w-full flex-col justify-center pt-24 pb-24 lg:w-[70%] lg:items-center">
-              <div className="mx-auto mb-8 text-center font-retroica text-4xl text-[#87bbeb]">
+              <div className="mx-auto mb-8 text-center font-retroica text-4xl text-[#FF95C1]">
                 Timeline
               </div>
               <div className="w-fit rounded-xl bg-[#241f3d] pb-1">
@@ -677,80 +677,6 @@ const DonorDarah: FC = () => {
                   loading="lazy"
                   title="map"
                 />
-
-                <table className="table-cell border-separate rounded-xl border-[6px] border-[#FF8064] p-5">
-                  <thead>
-                    <tr>
-                      <th className="border-b-[4px] border-[#FF8064] font-retroica text-[#ffffffcc]">
-                        Donor Darah
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div className="flex flex-col items-center">
-                          <div className="flex items-center gap-1 font-louisgeorgecafe">
-                            <a
-                              style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                              }}
-                              href="https://wa.me/6285714080699"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <FaWhatsapp className="mr-2" />
-                              +62 857-1408-0699
-                            </a>
-                          </div>
-                          <div className="flex items-center gap-1 font-louisgeorgecafe">
-                            <FaLine />
-                            angelinaderrel
-                          </div>
-                        </div>
-                        <button
-                          className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-neutral-900"
-                          style={{ cursor: "default" }}
-                        >
-                          Derrel
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className="flex flex-col items-center">
-                          <div className="flex items-center gap-1 font-louisgeorgecafe">
-                            <a
-                              style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                              }}
-                              href="https://wa.me/6282334026619"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <FaWhatsapp className="mr-2" />
-                              +62 823-3402-6619
-                            </a>
-                          </div>
-                          <div className="flex items-center gap-1 font-louisgeorgecafe">
-                            <FaLine />
-                            sa2st2ra
-                          </div>
-                        </div>
-                        <button
-                          className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-neutral-900"
-                          style={{ cursor: "default" }}
-                        >
-                          Deta
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
             </div>
           </div>
