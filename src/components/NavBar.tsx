@@ -268,7 +268,7 @@ const NavBar: FC = () => {
             className="inline-block cursor-default rounded-[2.0em] px-4 py-2 font-retroica text-xl tracking-[0.2em]"
             style={{ backgroundColor: color.bg2, color: color.fg }}
           >
-            <a href="/dash" target="_blank" rel="noopener noreferrer">
+            <a href="https://ifest.uajy.ac.id/dash" target="_blank" rel="noopener noreferrer">
               Dashboard
             </a>
           </button>
