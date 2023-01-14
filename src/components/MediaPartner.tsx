@@ -23,46 +23,25 @@ const MediaPartner: FC = () => {
         <div className="h-64 w-64 lg:hidden">
           <Carousel leftControl=" " rightControl=" " indicators={false}>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/lombasma2.png"
-                alt="/"
-              />
+              <img src="/images/medpart/lombasma2.png" alt="/" />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/Edaranevent.png"
-                alt="/"
-              />
+              <img src="/images/medpart/Edaranevent.png" alt="/" />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/media event.png"
-                alt="/"
-              />
+              <img src="/images/medpart/media event.png" alt="/" />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/infolomba.indonesia.jfif"
-                alt="/"
-              />
+              <img src="/images/medpart/infolomba.indonesia.jfif" alt="/" />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/eventcampus.co.png"
-                alt="/"
-              />
+              <img src="/images/medpart/eventcampus.co.png" alt="/" />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/seputar.infoid.jpg"
-                alt="/"
-              />
+              <img src="/images/medpart/seputar.infoid.jpg" alt="/" />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/eventcampus.png"
-                alt="/"
-              />
+              <img src="/images/medpart/eventcampus.png" alt="/" />
             </div>
           </Carousel>
         </div>
@@ -82,48 +61,29 @@ const MediaPartner: FC = () => {
             className="mySwiper classes.swiper-button-prev classes.swiper-button-next"
           >
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/lombasma2.png"
-                alt="/"
-              />
+              <img src="/images/medpart/lombasma2.png" alt="/" />
             </SwiperSlide>
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/Edaranevent.png"
-                alt="/"
-              />
+              <img src="/images/medpart/Edaranevent.png" alt="/" />
             </SwiperSlide>
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/media event.png"
-                alt="/"
-              />
+              <img src="/images/medpart/media event.png" alt="/" />
             </SwiperSlide>
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
               <img
                 src="/images/medpart/infolomba.indonesia.jfif"
                 alt="/"
-                className="h-[10rem] m-auto"
+                className="m-auto h-[10rem]"
               />
             </SwiperSlide>
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/eventcampus.co.png"
-                alt="/"
-                className="h-[10rem] m-auto"
-              />
+              <img src="/images/medpart/eventcampus.co.png" alt="/" className="m-auto h-[10rem]" />
             </SwiperSlide>
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/seputar.infoid.jpg"
-                alt="/"
-              />
+              <img src="/images/medpart/seputar.infoid.jpg" alt="/" />
             </SwiperSlide>
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="/images/medpart/eventcampus.png"
-                alt="/"
-              />
+              <img src="/images/medpart/eventcampus.png" alt="/" />
             </SwiperSlide>
           </Swiper>
         </div>

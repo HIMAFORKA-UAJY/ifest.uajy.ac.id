@@ -1,6 +1,5 @@
-import { Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { FC, CSSProperties } from "react";
+import { CSSProperties, FC } from "react";
 import { FaLine, FaWhatsapp } from "react-icons/all";
 import { Grid, Navigation, Pagination } from "swiper";
 import "swiper/css";
@@ -8,8 +7,9 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./CP.css"
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import "./CP.css";
 
 const CP: FC = () => {
   return (
@@ -25,7 +25,7 @@ const CP: FC = () => {
         <div className="p-5 font-louisgeorgecafe text-base text-white">
           Ada pertanyaan? Silakan ajukan ^_^
         </div>
-        <div className="lg-flex lg:w-[48rem] lg:h-[20rem] w-[24rem] h-[20rem]">
+        <div className="lg-flex h-[20rem] w-[24rem] lg:h-[20rem] lg:w-[48rem]">
           <Swiper
             breakpoints={{
               640: {
@@ -34,7 +34,7 @@ const CP: FC = () => {
               },
               768: {
                 slidesPerView: 3,
-              }
+              },
             }}
             grid={{
               rows: 1,
@@ -194,7 +194,7 @@ const CP: FC = () => {
                 </tbody>
               </table>
             </SwiperSlide>
-          {/* <div className="text-white text-center flex justify-center">
+            {/* <div className="text-white text-center flex justify-center">
                         <table className="table-cell border-separate border-[6px] border-[#ff8064] rounded-xl p-2">
                             <thead>
                                 <tr>
@@ -319,7 +319,7 @@ const CP: FC = () => {
                             rel="noreferrer"
                           >
                             <FaWhatsapp className="mr-2" />
-                            +62 857-1408-0699 
+                            +62 857-1408-0699
                           </a>
                         </div>
                         <div className="flex items-center gap-1 font-louisgeorgecafe">

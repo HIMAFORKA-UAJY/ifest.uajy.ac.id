@@ -18,7 +18,6 @@ const Publication: FC = () => {
       date: "28 Desember 2022, 12.00 WIB",
       address: "/welcome",
     },
-   
   ];
 
   return (

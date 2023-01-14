@@ -334,7 +334,7 @@ const NavBar: FC = () => {
                   <Link to="/i2c">I2C</Link>
                 </motion.button>
                 <motion.button
-                  whileTap={{ scale: 0.9 }} 
+                  whileTap={{ scale: 0.9 }}
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >

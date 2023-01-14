@@ -32,6 +32,7 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.2.1
   react: ^18.2.0
   react-chrono: ^1.20.0
+  react-countdown: ^2.3.5
   react-dom: ^18.2.0
   react-headless-accordion: ^1.0.2
   react-icons: ^4.7.1
@@ -55,6 +56,7 @@ dependencies:
   html-react-parser: 3.0.7_react@18.2.0
   react: 18.2.0
   react-chrono: 1.20.0_7i5myeigehqah43i5u7wbekgba
+  react-countdown: 2.3.5_biqbaboplfbrettd7655fr4n2y
   react-dom: 18.2.0_react@18.2.0
   react-headless-accordion: 1.0.2_react@18.2.0
   react-icons: 4.7.1_react@18.2.0
@@ -5369,6 +5371,20 @@ packages:
       styled-components: 5.3.6_7i5myeigehqah43i5u7wbekgba
     transitivePeerDependencies:
       - react-is
+    dev: false
+
+  /react-countdown/2.3.5_biqbaboplfbrettd7655fr4n2y:
+    resolution:
+      {
+        integrity: sha512-K26ENYEesMfPxhRRtm1r+Pf70SErrvW3g4CArLi/x6MPFjgfDFYePT4UghEj8p2nI0cqVV7/JjDgjyr//U60Og==,
+      }
+    peerDependencies:
+      react: ">= 15"
+      react-dom: ">= 15"
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:
