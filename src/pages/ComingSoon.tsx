@@ -21,7 +21,7 @@ const UnderDevelopment: FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.0, duration: 0.25 }}
-              className="rounded-[2.0em] bg-[#45AD49] bg-gradient-to-br from-[#77A648] px-5 py-3 font-retroica text-sm text-white lg:text-base"
+              className="rounded-[2.0em] bg-[#45AD49] bg-gradient-to-br from-[#77A648] px-5 py-3 font-retroica text-sm text-white lg:text-base transition-all hover:shadow-md hover:tracking-wider"
             >
               <Link to="/">Kembali ke Homepage</Link>
             </motion.button>
