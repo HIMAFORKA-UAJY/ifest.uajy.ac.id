@@ -53,8 +53,13 @@ const WDC: FC = () => {
 
   const tahapEliminasi = [
     {
-      title: "30 Januari - 16 Maret 2023",
-      cardTitle: "Pendaftaran Online dan Pengumpulan Karya",
+      title: "30 Januari - 8 Maret 2023",
+      cardTitle: "Pendaftaran Online",
+      cardDetailedText: "Dashboard IFest",
+    },
+    {
+      title: "8 Maret 2023",
+      cardTitle: "Batas Pengumpulan Karya",
       cardDetailedText: "Dashboard IFest",
     },
     {
@@ -76,7 +81,7 @@ const WDC: FC = () => {
     },
     {
       title: "31 Maret 2023",
-      cardTitle: "Final WDC",
+      cardTitle: "Presentasi Finalis",
       cardDetailedText:
         "Auditorium Lt. 4 Kampus 3 Gedung Bonaventura Universitas Atma Jaya Yogyakarta",
     },
@@ -131,7 +136,7 @@ const WDC: FC = () => {
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="relative bottom-16">
                 <motion.button
                   onClick={() => contentRef.current?.scrollIntoView({ behavior: "smooth" })}
                   initial={{ opacity: 0 }}
@@ -241,7 +246,7 @@ const WDC: FC = () => {
                   <strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana mahasiswa/i dalam sebuah tim yang terdiri dari maksimal
                   dua orang berlomba untuk membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna
                   web atau pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design Competition (WDC)
-                  2023 mengangkat tema “Embrace the Future of Local Economy with Technology” dengan harapan peserta akan mendesain
+                  2023 mengangkat tema <em>“Embrace the Future of Local Economy with Technology”</em> dengan harapan peserta akan mendesain
                   sebuah web yang akan mempromosikan dan menjual produk UMKM lokal di daerah mereka.
                 </div>
               </div>
@@ -348,7 +353,7 @@ const WDC: FC = () => {
                         Tidak diperkenankan ada peserta yang terdaftar dalam dua tim atau lebih yang berbeda.
                       </li>
                       <li>
-                        Melakukan pendaftaran online melalui <a href="/dash"><u>link pendaftaran</u></a>, pendaftaran akan 
+                        Melakukan pendaftaran online melalui <a href="/dashboard" className="text-[#E99CCE] hover:font-bold"><u>link pendaftaran</u></a>, pendaftaran akan 
                         dibuka mulai dari <strong>Senin, 30 Januari 2023</strong> sampai dengan <strong>Rabu, 8 Maret 2023</strong>.
                       </li>
                       <li>

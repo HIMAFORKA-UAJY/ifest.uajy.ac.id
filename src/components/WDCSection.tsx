@@ -49,7 +49,7 @@ const WDCSection: FC = () => {
               <p className="text-justify">
                 <strong>Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain visual yang 
                 ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema 
-                "Embrace the Future of Local Economy with Technology"
+                <em> "Embrace the Future of Local Economy with Technology"</em>
               </p>
             </div>
             <div className="pl-[1rem]">
@@ -117,7 +117,7 @@ const WDCSection: FC = () => {
           <p className="text-justify">
             <strong> Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain visual yang
             ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema
-            "Embrace the Future of Local Economy with Technology"
+            "<em>Embrace the Future of Local Economy with Technology</em>"
           </p>
         </div>
         <div>
