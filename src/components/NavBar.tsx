@@ -41,6 +41,10 @@ const NavBar: FC = () => {
         setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
         break;
 
+      case "/ComingSoon":
+        setColor({ bg1: "#173923", bg2: "#357C4D", fg: "#B5EC6F" });
+        break;
+
       default:
         setColor({ bg1: "#8E332DF2", bg2: "#DB7F58CC", fg: "#FFFFFF" });
         break;
@@ -114,7 +118,7 @@ const NavBar: FC = () => {
                 >
                   <Menu.Item>
                     {({ active }) => (
-                      <Link className={`${active && "text-[#fff]"}`} to="/wdc">
+                      <Link className={`${active && "text-[#fff]"}`} to="/ComingSoon">
                         WDC
                       </Link>
                     )}
@@ -337,7 +341,7 @@ const NavBar: FC = () => {
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
-                  <Link to="/wdc">WDC</Link>
+                  <Link to="/ComingSoon">WDC</Link>
                 </button>
                 <button
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"

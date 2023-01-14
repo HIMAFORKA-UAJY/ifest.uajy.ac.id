@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import I2C from "./pages/I2C";
 import Sponsor from "./pages/Sponsor";
 import UnderDevelopment from "./pages/UnderDevelopment";
+import ComingSoon from "./pages/ComingSoon";
 import WDC from "./pages/WDC";
 
 const App: FC = () => {
@@ -28,6 +29,7 @@ const App: FC = () => {
         <Route path="/ifest-store" element={<UnderDevelopment />} />
         <Route path="/sponsor" element={<Sponsor />} />
         <Route path="/blog/finalis-wdc" element={<Blog />} />
+        <Route path="/ComingSoon" element={<ComingSoon />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </AnimatePresence>
