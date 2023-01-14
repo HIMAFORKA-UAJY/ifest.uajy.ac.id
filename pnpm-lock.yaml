@@ -24,10 +24,10 @@ specifiers:
   eslint-plugin-react-hooks: ^4.6.0
   flowbite: ^1.6.2
   flowbite-react: ^0.3.7
-  framer-motion: ^8.4.2
+  framer-motion: ^8.4.3
   html-react-parser: ^3.0.7
   postcss: ^8.4.21
-  prettier: ^2.8.2
+  prettier: ^2.8.3
   prettier-plugin-packagejson: ^2.3.0
   prettier-plugin-tailwindcss: ^0.2.1
   react: ^18.2.0
@@ -51,7 +51,7 @@ dependencies:
   "@mui/material": 5.11.4_lskpmcsdi7ipu6qpuapyu56ihm
   flowbite: 1.6.2
   flowbite-react: 0.3.7_yxpgahbfy5vq4vthd54clpzluu
-  framer-motion: 8.4.2_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 8.4.3_biqbaboplfbrettd7655fr4n2y
   html-react-parser: 3.0.7_react@18.2.0
   react: 18.2.0
   react-chrono: 1.20.0_7i5myeigehqah43i5u7wbekgba
@@ -65,7 +65,7 @@ dependencies:
   swiper: 8.4.5
 
 devDependencies:
-  "@trivago/prettier-plugin-sort-imports": 4.0.0_bpy7jqxzjipbm7yazmajhmq2fa
+  "@trivago/prettier-plugin-sort-imports": 4.0.0_7yjediqwct5rofa5licti4izue
   "@types/react": 18.0.26
   "@types/react-dom": 18.0.10
   "@types/react-vertical-timeline-component": 3.3.3
@@ -79,13 +79,13 @@ devDependencies:
   eslint-config-prettier: 8.6.0_eslint@8.31.0
   eslint-plugin-import: 2.27.4_qdjeohovcytra7xto5vgmxssaq
   eslint-plugin-jsx-a11y: 6.7.1_eslint@8.31.0
-  eslint-plugin-prettier: 4.2.1_iu5s7nk6dw7o3tajefwfiqfmge
+  eslint-plugin-prettier: 4.2.1_do5yx3dogbskqc4h5x5ilvlwyy
   eslint-plugin-react: 7.32.0_eslint@8.31.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.31.0
   postcss: 8.4.21
-  prettier: 2.8.2
-  prettier-plugin-packagejson: 2.3.0_prettier@2.8.2
-  prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.2
+  prettier: 2.8.3
+  prettier-plugin-packagejson: 2.3.0_prettier@2.8.3
+  prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.3
   tailwindcss: 3.2.4_aesdjsunmf4wiehhujt67my7tu
   typescript: 4.9.4
   vite: 4.0.4_@types+node@18.11.18
@@ -1530,7 +1530,7 @@ packages:
     engines: { node: ">=14" }
     dev: false
 
-  /@trivago/prettier-plugin-sort-imports/4.0.0_bpy7jqxzjipbm7yazmajhmq2fa:
+  /@trivago/prettier-plugin-sort-imports/4.0.0_7yjediqwct5rofa5licti4izue:
     resolution:
       {
         integrity: sha512-Tyuk5ZY4a0e2MNFLdluQO9F6d1awFQYXVVujEPFfvKPPXz8DADNHzz73NMhwCSXGSuGGZcA/rKOyZBrxVNMxaA==,
@@ -1547,7 +1547,7 @@ packages:
       "@vue/compiler-sfc": 3.2.45
       javascript-natural-sort: 0.7.1
       lodash: 4.17.21
-      prettier: 2.8.2
+      prettier: 2.8.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3301,7 +3301,7 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_iu5s7nk6dw7o3tajefwfiqfmge:
+  /eslint-plugin-prettier/4.2.1_do5yx3dogbskqc4h5x5ilvlwyy:
     resolution:
       {
         integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==,
@@ -3317,7 +3317,7 @@ packages:
     dependencies:
       eslint: 8.31.0
       eslint-config-prettier: 8.6.0_eslint@8.31.0
-      prettier: 2.8.2
+      prettier: 2.8.3
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -3743,10 +3743,10 @@ packages:
       }
     dev: true
 
-  /framer-motion/8.4.2_biqbaboplfbrettd7655fr4n2y:
+  /framer-motion/8.4.3_biqbaboplfbrettd7655fr4n2y:
     resolution:
       {
-        integrity: sha512-AdYwbEZZ+6Z748A8JdNtwH7YR24HvXr/hJHL06ofipMyRchrf7Mzvk69zM24+rAm3SC3DCJK0WdbhpOLzroO+w==,
+        integrity: sha512-UMfJ8hEOlIObdJgI+U/VgaSSKY+W9/E0YtnFHPDsIE9rNPglaFZ+oycB0gj8ERuRBInGaIgNCFsil8iaJHZFgA==,
       }
     peerDependencies:
       react: ^18.0.0
@@ -5287,7 +5287,7 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-packagejson/2.3.0_prettier@2.8.2:
+  /prettier-plugin-packagejson/2.3.0_prettier@2.8.3:
     resolution:
       {
         integrity: sha512-2SAPMMk1UDkqsB7DifWKcwCm6VC52JXMrzLHfbcQHJRWhRCj9zziOy+s+2XOyPBeyqFqS+A/1IKzOrxKFTo6pw==,
@@ -5298,11 +5298,11 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 2.8.2
+      prettier: 2.8.3
       sort-package-json: 1.57.0
     dev: true
 
-  /prettier-plugin-tailwindcss/0.2.1_prettier@2.8.2:
+  /prettier-plugin-tailwindcss/0.2.1_prettier@2.8.3:
     resolution:
       {
         integrity: sha512-aIO8IguumORyRsmT+E7JfJ3A9FEoyhqZR7Au7TBOege3VZkgMvHJMkufeYp4zjnDK2iq4ktkvGMNOQR9T8lisQ==,
@@ -5311,13 +5311,13 @@ packages:
     peerDependencies:
       prettier: ">=2.2.0"
     dependencies:
-      prettier: 2.8.2
+      prettier: 2.8.3
     dev: true
 
-  /prettier/2.8.2:
+  /prettier/2.8.3:
     resolution:
       {
-        integrity: sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==,
+        integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==,
       }
     engines: { node: ">=10.13.0" }
     hasBin: true

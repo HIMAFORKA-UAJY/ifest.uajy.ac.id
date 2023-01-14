@@ -116,7 +116,6 @@ const WDC: FC = () => {
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#BED8FF] to-[#BAA2FF] p-1">
-                      
                       <div className="flex items-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.5rem]">
                         <FaWallet />
                         Rp. 50.000 / tim
@@ -238,11 +237,13 @@ const WDC: FC = () => {
                   MORE ABOUT WDC
                 </div>
                 <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
-                  <strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana mahasiswa/i dalam sebuah tim yang terdiri dari maksimal
-                  dua orang berlomba untuk membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna
-                  web atau pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design Competition (WDC)
-                  2023 mengangkat tema “Embrace the Future of Local Economy with Technology” dengan harapan peserta akan mendesain
-                  sebuah web yang akan mempromosikan dan menjual produk UMKM lokal di daerah mereka.
+                  <strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana
+                  mahasiswa/i dalam sebuah tim yang terdiri dari maksimal dua orang berlomba untuk
+                  membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau
+                  pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design
+                  Competition (WDC) 2023 mengangkat tema “Embrace the Future of Local Economy with
+                  Technology” dengan harapan peserta akan mendesain sebuah web yang akan
+                  mempromosikan dan menjual produk UMKM lokal di daerah mereka.
                 </div>
               </div>
               <div className="margin-auto flex-col items-center justify-center gap-4 font-louisgeorgecafe md:flex md:flex-row md:justify-center ">
@@ -333,38 +334,48 @@ const WDC: FC = () => {
                   <h3 className="pl-6 font-retroica text-2xl text-[#E99CCE]">Ketentuan Umum</h3>
                   <div className="p-6 font-louisgeorgecafe leading-loose text-white">
                     <ol className="list-outside list-decimal">
-                      <li>Peserta adalah mahasiswa/i aktif jenjang <strong>D3/D4/S1</strong> dari perguruan tinggi 
-                        di <strong>Daerah Istimewa Yogyakarta dan Jawa Tengah</strong>.
+                      <li>
+                        Peserta adalah mahasiswa/i aktif jenjang <strong>D3/D4/S1</strong> dari
+                        perguruan tinggi di{" "}
+                        <strong>Daerah Istimewa Yogyakarta dan Jawa Tengah</strong>.
                       </li>
                       <li>
-                        Peserta lomba adalah satu tim yang terdiri dari <strong>minimal 1 (satu) orang 
-                        dan maksimal 2 (dua) orang</strong>.
+                        Peserta lomba adalah satu tim yang terdiri dari{" "}
+                        <strong>minimal 1 (satu) orang dan maksimal 2 (dua) orang</strong>.
                       </li>
                       <li>
-                        Tim yang terdiri dari 2 (dua) orang peserta harus berasal dari 
+                        Tim yang terdiri dari 2 (dua) orang peserta harus berasal dari
                         institusi/perguruan tinggi yang sama.
                       </li>
                       <li>
-                        Tidak diperkenankan ada peserta yang terdaftar dalam dua tim atau lebih yang berbeda.
+                        Tidak diperkenankan ada peserta yang terdaftar dalam dua tim atau lebih yang
+                        berbeda.
                       </li>
                       <li>
-                        Melakukan pendaftaran online melalui <a href="/dash"><u>link pendaftaran</u></a>, pendaftaran akan 
-                        dibuka mulai dari <strong>Senin, 30 Januari 2023</strong> sampai dengan <strong>Rabu, 8 Maret 2023</strong>.
+                        Melakukan pendaftaran online melalui{" "}
+                        <a href="/dash">
+                          <u>link pendaftaran</u>
+                        </a>
+                        , pendaftaran akan dibuka mulai dari <strong>Senin, 30 Januari 2023</strong>{" "}
+                        sampai dengan <strong>Rabu, 8 Maret 2023</strong>.
                       </li>
                       <li>
-                        Melampirkan scan atau foto Kartu Tanda Mahasiswa serta 
-                        bukti pembayaran pada formulir pendaftaran
+                        Melampirkan scan atau foto Kartu Tanda Mahasiswa serta bukti pembayaran pada
+                        formulir pendaftaran
                       </li>
                       <li>
-                        Peserta yang sudah mendaftar tetapi tidak mengumpulkan hasil karya desain situs web setelah 
-                        batas waktu yang ditentukan dianggap mengundurkan diri dari perlombaan.
+                        Peserta yang sudah mendaftar tetapi tidak mengumpulkan hasil karya desain
+                        situs web setelah batas waktu yang ditentukan dianggap mengundurkan diri
+                        dari perlombaan.
                       </li>
                       <li>
-                        Panitia berhak untuk mengeleminasi peserta yang tidak mematuhi ketentuan di atas.
+                        Panitia berhak untuk mengeleminasi peserta yang tidak mematuhi ketentuan di
+                        atas.
                       </li>
                       <li>
-                        Setiap peserta Web Design Competition (WDC) 2023 <strong>wajib</strong> membaca, 
-                        memahami, dan mengikuti seluruh syarat dan ketentuan yang tercantum dalam rulebook.
+                        Setiap peserta Web Design Competition (WDC) 2023 <strong>wajib</strong>{" "}
+                        membaca, memahami, dan mengikuti seluruh syarat dan ketentuan yang tercantum
+                        dalam rulebook.
                       </li>
                     </ol>
                   </div>
@@ -377,32 +388,37 @@ const WDC: FC = () => {
                   <div className="p-6 font-louisgeorgecafe leading-loose text-white">
                     <ol className="list-outside list-decimal">
                       <li>Karya desain berupa situs web desktop.</li>
-                      <li>Peserta dibebaskan menggunakan software apapun dalam pembuatan desain. </li>
+                      <li>
+                        Peserta dibebaskan menggunakan software apapun dalam pembuatan desain.{" "}
+                      </li>
                       <li>Hasil karya harus sesuai dengan tema WDC 2023.</li>
                       <li>
-                        Web harus mengandung fungsi-fungsi esensial, jumlah halaman web maksimal 10 halaman.
+                        Web harus mengandung fungsi-fungsi esensial, jumlah halaman web maksimal 10
+                        halaman.
                       </li>
                       <li>
-                        Bahasa utama yang digunakan dalam pembuatan website adalah <strong>Bahasa Indonesia </strong>
+                        Bahasa utama yang digunakan dalam pembuatan website adalah{" "}
+                        <strong>Bahasa Indonesia </strong>
                         dan <strong>diperbolehkan</strong> menggunakan istilah dalam bahasa asing.
                       </li>
-                      <li>Peserta <strong>wajib</strong> menyertakan kode (code) desain web.</li>
                       <li>
-                        Desain situs web <strong>dilarang</strong> mengandung 
-                        unsur <strong>SARA, kekerasan, pornografi, dan melanggar UU yang berlaku</strong>.
-                      </li>
-                      <li>Desain situs web yang diperlombakan menjadi  hak panitia.</li>
-                      <li>
-                        Panitia WDC 2023 <strong>berhak</strong> mendiskualifikasi peserta jika diketahui Hak Atas Kekayaan Intelektualnya diragukan, 
-                        sedang dalam sengketa, mengambil karya orang lain, atau mendapat klaim 
-                        dari pihak lain.
+                        Peserta <strong>wajib</strong> menyertakan kode (code) desain web.
                       </li>
                       <li>
-                        Keputusan panitia <strong>bersifat mutlak</strong> dan tidak dapat diganggu gugat.
+                        Desain situs web <strong>dilarang</strong> mengandung unsur{" "}
+                        <strong>SARA, kekerasan, pornografi, dan melanggar UU yang berlaku</strong>.
+                      </li>
+                      <li>Desain situs web yang diperlombakan menjadi hak panitia.</li>
+                      <li>
+                        Panitia WDC 2023 <strong>berhak</strong> mendiskualifikasi peserta jika
+                        diketahui Hak Atas Kekayaan Intelektualnya diragukan, sedang dalam sengketa,
+                        mengambil karya orang lain, atau mendapat klaim dari pihak lain.
                       </li>
                       <li>
-                        Ketentuan yang lebih lengkap silahkan lihat Rulebook WDC 2023.
+                        Keputusan panitia <strong>bersifat mutlak</strong> dan tidak dapat diganggu
+                        gugat.
                       </li>
+                      <li>Ketentuan yang lebih lengkap silahkan lihat Rulebook WDC 2023.</li>
                     </ol>
                   </div>
                 </Card>

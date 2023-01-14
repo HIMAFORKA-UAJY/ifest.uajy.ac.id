@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CSSProperties, FC, useRef } from "react";
+import { CSSProperties, FC } from "react";
 import { FaBook, FaMale, FaWallet } from "react-icons/all";
 import { Link } from "react-router-dom";
 
@@ -53,10 +53,11 @@ const DonorDarahSection: FC = () => {
             </div>
             <div className="w-[32em] p-4 font-louisgeorgecafe text-white">
               <p className="text-justify">
-                <strong>Donor Darah</strong> ialah kegiatan mengambil darah seseorang yang dilaksanakan secara sukarela 
-                dan sadar untuk kemudian disimpan ke bank darah sebagai stok darah yang sewaktu-waktu 
-                dapat dipergunakan untuk transfusi darah. Dengan mendonorkan darah bukan hanya bermanfaat 
-                bagi kesehatan namun kita juga berkesempatan menjadi manfaat bagi orang lain.
+                <strong>Donor Darah</strong> ialah kegiatan mengambil darah seseorang yang
+                dilaksanakan secara sukarela dan sadar untuk kemudian disimpan ke bank darah sebagai
+                stok darah yang sewaktu-waktu dapat dipergunakan untuk transfusi darah. Dengan
+                mendonorkan darah bukan hanya bermanfaat bagi kesehatan namun kita juga
+                berkesempatan menjadi manfaat bagi orang lain.
               </p>
             </div>
             <div className="pl-[1rem]">
@@ -120,10 +121,11 @@ const DonorDarahSection: FC = () => {
         <div className="pt-2" />
         <div className="p-4 font-louisgeorgecafe text-white">
           <p className="text-justify">
-            <strong>Donor Darah</strong> ialah kegiatan mengambil darah seseorang yang dilaksanakan secara sukarela
-            dan sadar untuk kemudian disimpan ke bank darah sebagai stok darah yang sewaktu-waktu
-            dapat dipergunakan untuk transfusi darah. Dengan mendonorkan darah bukan hanya bermanfaat
-            bagi kesehatan namun kita juga berkesempatan menjadi manfaat bagi orang lain.
+            <strong>Donor Darah</strong> ialah kegiatan mengambil darah seseorang yang dilaksanakan
+            secara sukarela dan sadar untuk kemudian disimpan ke bank darah sebagai stok darah yang
+            sewaktu-waktu dapat dipergunakan untuk transfusi darah. Dengan mendonorkan darah bukan
+            hanya bermanfaat bagi kesehatan namun kita juga berkesempatan menjadi manfaat bagi orang
+            lain.
           </p>
         </div>
         <div>

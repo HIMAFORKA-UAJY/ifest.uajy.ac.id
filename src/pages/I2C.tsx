@@ -401,7 +401,7 @@ const I2C: FC = () => {
                       <li>Setiap karya harus sesuai dengan tema yang diberikan.</li>
                       <li>Setiap karya harus merupakan ide orisinal peserta.</li>
                       <li>
-                        Setiap karya tidak boleh menyinggung elemen yang berkaitan dengan etnis, 
+                        Setiap karya tidak boleh menyinggung elemen yang berkaitan dengan etnis,
                         suku, agama, tindakan perundangan, hingga SARA.
                       </li>
                       <li>

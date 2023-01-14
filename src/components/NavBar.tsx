@@ -17,36 +17,33 @@ const NavBar: FC = () => {
 
   useEffect(() => {
     switch (location.pathname) {
-      case "/":
-        setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
-        break;
+      // case "/":
+      //   setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
+      //   break;
 
-      case "/i2c":
-        setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
-        break;
+      // case "/i2c":
+      //   setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
+      //   break;
 
-      case "/wdc":
-        setColor({ bg1: "#311D38", bg2: "#4E4074", fg: "#E7A3FF" });
-        break;
+      // case "/wdc":
+      //   setColor({ bg1: "#311D38", bg2: "#4E4074", fg: "#E7A3FF" });
+      //   break;
 
-      case "/donor-darah":
-        setColor({ bg1: "#2d2544", bg2: "#54467d", fg: "#b7a5ec" });
-        break;
+      // case "/donor-darah":
+      //   setColor({ bg1: "#2d2544", bg2: "#54467d", fg: "#b7a5ec" });
+      //   break;
 
-      case "/sponsor":
-        setColor({ bg1: "#152435", bg2: "#182E47", fg: "#479EC6" });
-        break;
+      // case "/sponsor":
+      //   setColor({ bg1: "#152435", bg2: "#182E47", fg: "#479EC6" });
+      //   break;
 
-      case "/blog/finalis-wdc":
-        setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
-        break;
-
-      case "/ComingSoon":
-        setColor({ bg1: "#173923", bg2: "#357C4D", fg: "#B5EC6F" });
-        break;
+      // case "/blog/finalis-wdc":
+      //   setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
+      //   break;
 
       default:
-        setColor({ bg1: "#8E332DF2", bg2: "#DB7F58CC", fg: "#FFFFFF" });
+        setColor({ bg1: "#173923", bg2: "#357C4D", fg: "#B5EC6F" });
+        // setColor({ bg1: "#8E332DF2", bg2: "#DB7F58CC", fg: "#FFFFFF" });
         break;
     }
   }, [location.pathname]);

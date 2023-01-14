@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CSSProperties, FC, useRef } from "react";
+import { CSSProperties, FC } from "react";
 import { FaBook, FaMale, FaWallet } from "react-icons/all";
 import { Link } from "react-router-dom";
 
@@ -41,15 +41,18 @@ const WDCSection: FC = () => {
                   <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                     <FaMale />
                   </div>
-                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Max. 2 peserta / tim</p>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}>
+                    {" "}
+                    Max. 2 peserta / tim
+                  </p>
                 </div>
               </div>
             </div>
             <div className="w-[32em] p-4 font-louisgeorgecafe text-white">
               <p className="text-justify">
-                <strong>Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain visual yang 
-                ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema 
-                "Embrace the Future of Local Economy with Technology"
+                <strong>Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain
+                visual yang ditampilkan di media digital berupa situs web. Pada tahun ini, WDC
+                mengangkat tema "Embrace the Future of Local Economy with Technology"
               </p>
             </div>
             <div className="pl-[1rem]">
@@ -115,9 +118,9 @@ const WDCSection: FC = () => {
         <div className="pt-2" />
         <div className="p-4 font-louisgeorgecafe text-white">
           <p className="text-justify">
-            <strong> Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain visual yang
-            ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema
-            "Embrace the Future of Local Economy with Technology"
+            <strong> Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain
+            visual yang ditampilkan di media digital berupa situs web. Pada tahun ini, WDC
+            mengangkat tema "Embrace the Future of Local Economy with Technology"
           </p>
         </div>
         <div>

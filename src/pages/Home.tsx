@@ -9,11 +9,11 @@ import I2CSection from "../components/I2CSection";
 import Layout from "../components/Layout";
 import MediaPartner from "../components/MediaPartner";
 import Publication from "../components/Publication";
+import SemNasSection from "../components/SemNasSection";
 // import HackathonSection from "../components/HackathonSection";
 import ShootingStars from "../components/ShootingStars";
 import Sponsor from "../components/Sponsor";
 import WDCSection from "../components/WDCSection";
-import SemNasSection from "../components/SemNasSection"
 
 const Home: FC = () => {
   useEffect(() => {
