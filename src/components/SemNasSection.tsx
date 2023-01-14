@@ -64,7 +64,7 @@ const SemNasSection: FC = () => {
           </div>
           <img
             className="w-[600px] py-16 px-6"
-            src="/public/images/semnas_vector.png"
+            src="/images/semnas_vector.png"
             alt="Seminar Nasional"
           />
         </div>
@@ -72,7 +72,7 @@ const SemNasSection: FC = () => {
       <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
         <img
           className="mt-[-6rem] w-72 py-8"
-          src="/public/images/semnas_vector.png"
+          src="/images/semnas_vector.png"
           alt="Seminar Nasional"
         />
         <div className="text-center">
