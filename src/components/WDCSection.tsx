@@ -89,8 +89,8 @@ const WDCSection: FC = () => {
               className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center"
               style={{ padding: ".5rem" }}
             >
-              <FaWallet />
-              Rp. 50.000
+              <FaBook />
+              D3 / D4 / S1
             </div>
           </div>
           <div className="h-fit rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
@@ -98,8 +98,8 @@ const WDCSection: FC = () => {
               className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem]"
               style={{ padding: ".5rem" }}
             >
-              <FaBook />
-              Mahasiswa
+              <FaWallet />
+              Rp. 50K / tim
             </div>
           </div>
           <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
@@ -108,7 +108,7 @@ const WDCSection: FC = () => {
               style={{ padding: ".5rem" }}
             >
               <FaMale />
-              Max. 2 orang
+              Max. 2 peserta / tim
             </div>
           </div>
         </div>
