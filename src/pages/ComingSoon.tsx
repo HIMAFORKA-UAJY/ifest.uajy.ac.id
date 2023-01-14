@@ -3,19 +3,44 @@ import { FC } from "react";
 import { Link } from "react-router-dom";
 
 import Layout from "../components/Layout";
+import CustomCountDown from "../components/Countdown";
 
-const UnderDevelopment: FC = () => {
+const UnderDevelopment: FC = (props) => {
+  const {pageType} = props.property
+  
+  console.log(pageType.toString())
+  let timer;
+  switch (pageType){
+
+  
+    case 'ifest-store':
+      // udah lewat
+      timer=<CustomCountDown  eventDate="Feb 20, 2023" className='text-white'></CustomCountDown>  
+      break;
+    case 'seminar':
+      timer=<CustomCountDown  eventDate="Dec 25, 2023" className='text-white'></CustomCountDown>  
+      break;
+    case 'ui-ux':
+      timer=<CustomCountDown  eventDate="Feb 27, 2023" className='text-white'></CustomCountDown>
+      break;
+    default:
+      // for WDC
+      timer=<CustomCountDown  eventDate="Jan 30, 2023" className='text-white'></CustomCountDown>
+      break;
+  }
   return (
     <Layout>
       <div className="absolute top-0 -z-10 h-screen w-screen bg-[url('/images/bg-no-flip.png')] bg-cover bg-center bg-no-repeat">
         <div className="bg-gradient-to-b from-[#40BA62]/80 to-[#219068]/80 font-retroica">
           <motion.div className="flex h-screen flex-col items-center justify-center gap-6">
-            <div className="text-5xl font-bold text-white">(=^-ω-^=)</div>
-            <div className="text-5xl font-bold text-white">Coming Soon</div>
+          
+            <div className="text-5xl font-bold text-white text-center">Coming Soon</div>
+            
+            {timer}
             <div className="px-8 text-center text-lg text-white">
               Ditunggu yaa sampai event nya dibuka :D
               <br />
-              see you in... countdown
+              
             </div>
             <motion.button
               initial={{ opacity: 0 }}
