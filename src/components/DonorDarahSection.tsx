@@ -53,8 +53,10 @@ const DonorDarahSection: FC = () => {
             </div>
             <div className="w-[32em] p-4 font-louisgeorgecafe text-white">
               <p className="text-justify">
-                <strong>Donor darah </strong> adalah suatu aksi kebaikan yang dilakukan dengan cara
-                menyumbangkan sebagian darah kepada orang lain yang membutuhkan.
+                <strong>Donor Darah</strong> ialah kegiatan mengambil darah seseorang yang dilaksanakan secara sukarela 
+                dan sadar untuk kemudian disimpan ke bank darah sebagai stok darah yang sewaktu-waktu 
+                dapat dipergunakan untuk transfusi darah. Dengan mendonorkan darah bukan hanya bermanfaat 
+                bagi kesehatan namun kita juga berkesempatan menjadi manfaat bagi orang lain.
               </p>
             </div>
             <div className="pl-[1rem]">
@@ -64,7 +66,7 @@ const DonorDarahSection: FC = () => {
                 transition={{ delay: 0.0, duration: 0.25 }}
                 className="mt-7 rounded-[2.0em] bg-[#ff7676] bg-gradient-to-br from-[#fd9807] px-5 py-3 font-retroica text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#fd9807] lg:text-base"
               >
-                <Link to="/donor-darah">Read More</Link>
+                <Link to="/ComingSoon">Coming Soon</Link>
               </motion.button>
             </div>
           </div>
@@ -118,9 +120,10 @@ const DonorDarahSection: FC = () => {
         <div className="pt-2" />
         <div className="p-4 font-louisgeorgecafe text-white">
           <p className="text-justify">
-            <strong>Web Design Competition</strong> (WDC) 2022 adalah perlombaan merancang desain
-            visual yang ditampilkan di media digital yaitu situs web. WDC 2022 mengangkat tema
-            "Advancing Together With Credible Information".
+            <strong>Donor Darah</strong> ialah kegiatan mengambil darah seseorang yang dilaksanakan secara sukarela
+            dan sadar untuk kemudian disimpan ke bank darah sebagai stok darah yang sewaktu-waktu
+            dapat dipergunakan untuk transfusi darah. Dengan mendonorkan darah bukan hanya bermanfaat
+            bagi kesehatan namun kita juga berkesempatan menjadi manfaat bagi orang lain.
           </p>
         </div>
         <div>
@@ -130,7 +133,7 @@ const DonorDarahSection: FC = () => {
             transition={{ delay: 0.0, duration: 0.25 }}
             className="mt-7 rounded-[2.0em] bg-[#ff7676] bg-gradient-to-br from-[#fd9807] px-5 py-3 font-retroica text-sm text-white lg:text-base"
           >
-            <Link to="/wdc">Read More</Link>
+            <Link to="/ComingSoon">Coming Soon</Link>
           </motion.button>
         </div>
       </div>

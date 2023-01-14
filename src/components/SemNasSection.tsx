@@ -3,7 +3,7 @@ import { CSSProperties, FC, useRef } from "react";
 import { FaBook, FaMale, FaWallet } from "react-icons/all";
 import { Link } from "react-router-dom";
 
-const WDCSection: FC = () => {
+const SemNasSection: FC = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -15,41 +15,41 @@ const WDCSection: FC = () => {
       <div className="hidden w-screen flex-col items-center justify-center lg:flex">
         <div className="flex items-center justify-center">
           <div className="flex flex-col">
-            <div className="pl-[1rem] font-retroica text-4xl tracking-wide text-white">WDC</div>
+            <div className="pl-[1rem] font-retroica text-4xl tracking-wide text-white">Seminar Nasional</div>
             <div className="pl-[1rem] pb-[0.5rem] font-retroica text-2xl text-white">
-              Web Design Competition
+              subtitle
             </div>
             <div className="flex gap-4 pl-[1rem] font-retroica text-sm text-white">
-              <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
+              <div className="rounded-full bg-gradient-to-r from-[#5cc09f] to-[#4eb2b9] p-1">
                 <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
                   <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                     <FaBook />
                   </div>
-                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> D3 / D4 / S1 </p>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Umum </p>
                 </div>
               </div>
-              <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
+              {/* <div className="rounded-full bg-gradient-to-r from-[#5cc09f] to-[#4eb2b9] p-1">
                 <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
                   <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                     <FaWallet />
                   </div>
                   <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Rp. 50K / tim</p>
                 </div>
-              </div>
-              <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
+              </div> */}
+              <div className="rounded-full bg-gradient-to-r from-[#5cc09f] to-[#4eb2b9] p-1">
                 <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
                   <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                     <FaMale />
                   </div>
-                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Max. 2 peserta / tim</p>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Daftar Online</p>
                 </div>
               </div>
             </div>
             <div className="w-[32em] p-4 font-louisgeorgecafe text-white">
               <p className="text-justify">
-                <strong>Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain visual yang 
-                ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema 
-                "Embrace the Future of Local Economy with Technology"
+                Seminar nasional adalah seminar yang diselenggarakan berskala nasional 
+                sebagai media untuk menyampaikan aspirasi dan ide kepada peserta mengenai 
+                perkembangan ilmu dan teknologi di tengah kehidupan manusia, khususnya revolusi industri 4.0.
               </p>
             </div>
             <div className="pl-[1rem]">
@@ -64,51 +64,42 @@ const WDCSection: FC = () => {
             </div>
           </div>
           <img
-            className="w-[600px]"
-            src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png"
-            alt="wdc"
+            className="w-[600px] py-16 px-6"
+            src="/public/images/semnas_vector.png"
+            alt="Seminar Nasional"
           />
         </div>
       </div>
       <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
         <img
-          className="w-72"
-          src="https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png"
-          alt="wdc"
+          className="w-72 mt-[-6rem] py-8" 
+          src="/public/images/semnas_vector.png"
+          alt="Seminar Nasional"
         />
         <div className="text-center">
-          <div className="font-retroica text-4xl tracking-wide text-white">WDC</div>
-          <div className="pb-[1rem] font-retroica text-2xl text-white">Web Design Competition</div>
+          <div className="font-retroica text-4xl tracking-wide text-white">Seminar Nasional</div>
+          <div className="pb-[1rem] font-retroica text-2xl text-white">subtitle</div>
         </div>
         <div
           className="flex flex-col gap-2 px-2 font-retroica text-sm text-white"
           style={{ width: "70%" }}
         >
-          <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
-            <div
-              className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center"
-              style={{ padding: ".5rem" }}
-            >
-              <FaWallet />
-              Rp. 50.000
-            </div>
-          </div>
-          <div className="h-fit rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
+          <div className="h-fit rounded-full bg-gradient-to-r from-[#5cc09f] to-[#4eb2b9] p-1">
             <div
               className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem]"
               style={{ padding: ".5rem" }}
             >
               <FaBook />
-              Mahasiswa
+              Umum
             </div>
           </div>
-          <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
+          <div className="rounded-full bg-gradient-to-r from-[#5cc09f] to-[#4eb2b9] p-1">
             <div
               className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center"
               style={{ padding: ".5rem" }}
             >
               <FaMale />
-              Max. 2 orang
+              Daftar Online
             </div>
           </div>
         </div>
@@ -117,7 +108,7 @@ const WDCSection: FC = () => {
           <p className="text-justify">
             <strong> Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain visual yang
             ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema
-            "Embrace the Future of Local Economy with Technology"
+            "Embrace the Future of Local Economy with Technology”
           </p>
         </div>
         <div>
@@ -135,4 +126,4 @@ const WDCSection: FC = () => {
   );
 };
 
-export default WDCSection;
+export default SemNasSection;

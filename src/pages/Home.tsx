@@ -13,6 +13,7 @@ import Publication from "../components/Publication";
 import ShootingStars from "../components/ShootingStars";
 import Sponsor from "../components/Sponsor";
 import WDCSection from "../components/WDCSection";
+import SemNasSection from "../components/SemNasSection"
 
 const Home: FC = () => {
   useEffect(() => {
@@ -33,6 +34,7 @@ const Home: FC = () => {
         <I2CSection />
         <WDCSection />
         <DonorDarahSection />
+        <SemNasSection />
         {/* <HackathonSection /> */}
         <Publication />
         <FAQ />
