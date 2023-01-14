@@ -242,11 +242,14 @@ const WDC: FC = () => {
                   MORE ABOUT WDC
                 </div>
                 <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
-                  <strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana mahasiswa/i dalam sebuah tim yang terdiri dari maksimal
-                  dua orang berlomba untuk membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna
-                  web atau pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design Competition (WDC)
-                  2023 mengangkat tema <em>“Embrace the Future of Local Economy with Technology”</em> dengan harapan peserta akan mendesain
-                  sebuah web yang akan mempromosikan dan menjual produk UMKM lokal di daerah mereka.
+                  <strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana
+                  mahasiswa/i dalam sebuah tim yang terdiri dari maksimal dua orang berlomba untuk
+                  membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau
+                  pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design
+                  Competition (WDC) 2023 mengangkat tema{" "}
+                  <em>“Embrace the Future of Local Economy with Technology”</em> dengan harapan
+                  peserta akan mendesain sebuah web yang akan mempromosikan dan menjual produk UMKM
+                  lokal di daerah mereka.
                 </div>
               </div>
               <div className="margin-auto flex-col items-center justify-center gap-4 font-louisgeorgecafe md:flex md:flex-row md:justify-center ">
@@ -355,8 +358,12 @@ const WDC: FC = () => {
                         berbeda.
                       </li>
                       <li>
-                        Melakukan pendaftaran online melalui <a href="/dashboard" className="text-[#E99CCE] hover:font-bold"><u>link pendaftaran</u></a>, pendaftaran akan 
-                        dibuka mulai dari <strong>Senin, 30 Januari 2023</strong> sampai dengan <strong>Rabu, 8 Maret 2023</strong>.
+                        Melakukan pendaftaran online melalui{" "}
+                        <a href="/dashboard" className="text-[#E99CCE] hover:font-bold">
+                          <u>link pendaftaran</u>
+                        </a>
+                        , pendaftaran akan dibuka mulai dari <strong>Senin, 30 Januari 2023</strong>{" "}
+                        sampai dengan <strong>Rabu, 8 Maret 2023</strong>.
                       </li>
                       <li>
                         Melampirkan scan atau foto Kartu Tanda Mahasiswa serta bukti pembayaran pada

@@ -50,8 +50,9 @@ const WDCSection: FC = () => {
             </div>
             <div className="w-[32em] p-4 font-louisgeorgecafe text-white">
               <p className="text-justify">
-                <strong>Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain visual yang 
-                ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema 
+                <strong>Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain
+                visual yang ditampilkan di media digital berupa situs web. Pada tahun ini, WDC
+                mengangkat tema
                 <em> "Embrace the Future of Local Economy with Technology"</em>
               </p>
             </div>
@@ -118,9 +119,9 @@ const WDCSection: FC = () => {
         <div className="pt-2" />
         <div className="p-4 font-louisgeorgecafe text-white">
           <p className="text-justify">
-            <strong> Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain visual yang
-            ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema
-            "<em>Embrace the Future of Local Economy with Technology</em>"
+            <strong> Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain
+            visual yang ditampilkan di media digital berupa situs web. Pada tahun ini, WDC
+            mengangkat tema "<em>Embrace the Future of Local Economy with Technology</em>"
           </p>
         </div>
         <div>
