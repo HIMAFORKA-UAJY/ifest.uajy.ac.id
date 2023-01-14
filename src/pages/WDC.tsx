@@ -111,14 +111,15 @@ const WDC: FC = () => {
                   <div className="mt-8 flex gap-4 pl-[1rem] font-retroica text-sm text-white">
                     <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
                       <div className="flex items-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.5rem]">
-                        <FaWallet />
-                        Rp. 50.000
+                        <FaBook />
+                        D3 / D4 / S1
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#BED8FF] to-[#BAA2FF] p-1">
+                      
                       <div className="flex items-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.5rem]">
-                        <FaBook />
-                        SMA/Sederajat
+                        <FaWallet />
+                        Rp. 50.000 / tim
                       </div>
                     </div>
                     <div className="rounded-full bg-gradient-to-r from-[#FFECBC] to-[#FDCCA8] p-1">
@@ -176,8 +177,8 @@ const WDC: FC = () => {
                   className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]"
                   style={{ padding: "1rem" }}
                 >
-                  <FaWallet />
-                  Rp. 50.000
+                  <FaBook />
+                  D3 / D4 / S1
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
@@ -185,8 +186,8 @@ const WDC: FC = () => {
                   className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#311D38] p-1 px-[0.35rem]"
                   style={{ padding: "1rem" }}
                 >
-                  <FaBook />
-                  SMA/Sederajat
+                  <FaWallet />
+                  Rp. 50.000 / tim
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#C1ECD0] to-[#DBE6BA] p-1">
@@ -237,12 +238,11 @@ const WDC: FC = () => {
                   MORE ABOUT WDC
                 </div>
                 <div className="text-md my-4 w-screen px-8 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
-                  <strong>Web Design Competition</strong> (WDC) 2022 adalah sebuah lomba dimana para
-                  mahasiswa/i dalam sebuah tim yang terdiri dari dua orang berlomba untuk membuat
-                  desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau pencari
-                  informasi mendapatkan informasi yang jelas dan tepat. Dengan adanya Web Design
-                  Competition (WDC) 2022 diharapkan dapat menjadi wadah untuk para mahasiswa/i yang
-                  ada di Indonesia dalam menuangkan ide-ide kreatif mereka.
+                  <strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana mahasiswa/i dalam sebuah tim yang terdiri dari maksimal
+                  dua orang berlomba untuk membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna
+                  web atau pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design Competition (WDC)
+                  2023 mengangkat tema “Embrace the Future of Local Economy with Technology” dengan harapan peserta akan mendesain
+                  sebuah web yang akan mempromosikan dan menjual produk UMKM lokal di daerah mereka.
                 </div>
               </div>
               <div className="margin-auto flex-col items-center justify-center gap-4 font-louisgeorgecafe md:flex md:flex-row md:justify-center ">
@@ -327,95 +327,81 @@ const WDC: FC = () => {
             </div>
 
             {/* Ketentuan */}
-            <div className="flex flex-col justify-center gap-8 py-12 lg:flex-row">
-              <div className="w-screen px-4 lg:w-[40%]">
+            <div className="flex flex-col justify-center gap-8 py-12">
+              <div className="w-screen px-4 lg:w-[100%]">
                 <Card className="!border-gray-700 !bg-[#2C2E56]">
                   <h3 className="pl-6 font-retroica text-2xl text-[#E99CCE]">Ketentuan Umum</h3>
                   <div className="p-6 font-louisgeorgecafe leading-loose text-white">
                     <ol className="list-outside list-decimal">
-                      <li>Peserta adalah mahasiswa/i aktif perguruan tinggi seluruh Indonesia.</li>
-                      <li>
-                        Melakukan pendaftaran online melalui https://ifest.uajy.ac.id/dash/daftar,
-                        pendaftaraan akan dibuka dari 15 Februari 2022 sampai dengan 15 Maret 2022.
+                      <li>Peserta adalah mahasiswa/i aktif jenjang <strong>D3/D4/S1</strong> dari perguruan tinggi 
+                        di <strong>Daerah Istimewa Yogyakarta dan Jawa Tengah</strong>.
                       </li>
                       <li>
-                        Melampirkan scan atau foto Kartu Tanda Mahasiswa dan Bukti Pembayaran pada
-                        formulir pendaftaran online.
-                      </li>
-                      <li>Peserta lomba adalah satu tim (maksimal 2 orang).</li>
-                      <li>Biaya pendaftaran adalah Rp50.000,00 per tim.</li>
-                      <li>
-                        Tidak diperkenan ada peserta yang terdaftar dalam dua tim atau lebih yang
-                        berbeda.
+                        Peserta lomba adalah satu tim yang terdiri dari <strong>minimal 1 (satu) orang 
+                        dan maksimal 2 (dua) orang</strong>.
                       </li>
                       <li>
-                        Setiap perguruan tinggi yang berpartisipasi hanya dapat mengirimkan maksimal
-                        3 tim.
+                        Tim yang terdiri dari 2 (dua) orang peserta harus berasal dari 
+                        institusi/perguruan tinggi yang sama.
                       </li>
                       <li>
-                        Peserta yang telah mendaftar harus mengumpulkan hasil karya desain situs web
-                        berupa file web dan screenshot desain melalui
-                        https://ifest.uajy.ac.id/dash/masuk dengan format penamaan IFest#10_WDC_Nama
-                        Kelompok_NamaUniversitas.zip (Screenshot desain format jpg/png/dll)
+                        Tidak diperkenankan ada peserta yang terdaftar dalam dua tim atau lebih yang berbeda.
                       </li>
                       <li>
-                        Peserta yang sudah mendaftar tetapi tidak mengumpulkan hasil karya desain
-                        situs web setelah batas waktu yang ditentukan dianggap mengundurkan diri
-                        dari perlombaan.
+                        Melakukan pendaftaran online melalui <a href="/dash"><u>link pendaftaran</u></a>, pendaftaran akan 
+                        dibuka mulai dari <strong>Senin, 30 Januari 2023</strong> sampai dengan <strong>Rabu, 8 Maret 2023</strong>.
                       </li>
                       <li>
-                        Panitia berhak untuk mengeleminasi peserta yang tidak mematuhi ketentuan di
-                        atas.
+                        Melampirkan scan atau foto Kartu Tanda Mahasiswa serta 
+                        bukti pembayaran pada formulir pendaftaran
+                      </li>
+                      <li>
+                        Peserta yang sudah mendaftar tetapi tidak mengumpulkan hasil karya desain situs web setelah 
+                        batas waktu yang ditentukan dianggap mengundurkan diri dari perlombaan.
+                      </li>
+                      <li>
+                        Panitia berhak untuk mengeleminasi peserta yang tidak mematuhi ketentuan di atas.
+                      </li>
+                      <li>
+                        Setiap peserta Web Design Competition (WDC) 2023 <strong>wajib</strong> membaca, 
+                        memahami, dan mengikuti seluruh syarat dan ketentuan yang tercantum dalam rulebook.
                       </li>
                     </ol>
                   </div>
                 </Card>
               </div>
 
-              <div className="w-screen px-4 lg:w-[40%]">
+              <div className="w-screen px-4 lg:w-[100%]">
                 <Card className="!border-gray-700 !bg-[#2C2E56]">
                   <h3 className="pl-6 font-retroica text-2xl text-[#E99CCE]">Ketentuan Karya</h3>
                   <div className="p-6 font-louisgeorgecafe leading-loose text-white">
                     <ol className="list-outside list-decimal">
-                      <li>Bentuk desain merupakan situs web desktop.</li>
-                      <li>Teknik pembuatan desain bebas menggunakan software apapun.</li>
-                      <li>Peserta wajib menyertakan code desain situs web.</li>
-                      <li>Hasil karya sesuai dengan tema.</li>
+                      <li>Karya desain berupa situs web desktop.</li>
+                      <li>Peserta dibebaskan menggunakan software apapun dalam pembuatan desain. </li>
+                      <li>Hasil karya harus sesuai dengan tema WDC 2023.</li>
                       <li>
-                        Desain situs web dilarang mengandung unsur SARA, kekerasan, pornografi, dan
-                        melanggar UU yang berlaku.
-                      </li>
-                      <li>Desain situs web yang diperlombakan menjadi hak panitia.</li>
-                      <li>
-                        Panitia WDC 2022 berhak mendiskualifikasi peserta jika diketahui Hak Atas
-                        Kekayaan Intelektualnya diragukan, sedang dalam sengketa, mengambil karya
-                        orang lain, atau mendapat klaim dari pihak lain.
-                      </li>
-                      <li>Keputusan panitia bersifat mutlak dan tidak dapat diganggu gugat.</li>
-                      <li>
-                        Untuk menjaga independensi, maka dalam penjurian tidak akan ditampilkan
-                        identitas peserta.
+                        Web harus mengandung fungsi-fungsi esensial, jumlah halaman web maksimal 10 halaman.
                       </li>
                       <li>
-                        Kriteria penilaian:
-                        <ul className="list-inside list-disc pl-6">
-                          <li>
-                            Tampilan Layout/Antarmuka (30%) Menampilkan antarmuka situs web dengan
-                            struktur yang tepat.
-                          </li>
-                          <li>
-                            Kesesuaian Tema (30%) Situs web yang didesain berkaitan dengan tema yang
-                            telah diberikan.
-                          </li>
-                          <li>
-                            Daya Tarik dan Informatif (25%) Dapat menciptakan daya tarik dan
-                            memberikan pesan yang informatif.
-                          </li>
-                          <li>
-                            Responsif (15%) Browser dapat diakses dengan menyesuaikan ukuran pada
-                            mobile.
-                          </li>
-                        </ul>
+                        Bahasa utama yang digunakan dalam pembuatan website adalah <strong>Bahasa Indonesia </strong>
+                        dan <strong>diperbolehkan</strong> menggunakan istilah dalam bahasa asing.
+                      </li>
+                      <li>Peserta <strong>wajib</strong> menyertakan kode (code) desain web.</li>
+                      <li>
+                        Desain situs web <strong>dilarang</strong> mengandung 
+                        unsur <strong>SARA, kekerasan, pornografi, dan melanggar UU yang berlaku</strong>.
+                      </li>
+                      <li>Desain situs web yang diperlombakan menjadi  hak panitia.</li>
+                      <li>
+                        Panitia WDC 2023 <strong>berhak</strong> mendiskualifikasi peserta jika diketahui Hak Atas Kekayaan Intelektualnya diragukan, 
+                        sedang dalam sengketa, mengambil karya orang lain, atau mendapat klaim 
+                        dari pihak lain.
+                      </li>
+                      <li>
+                        Keputusan panitia <strong>bersifat mutlak</strong> dan tidak dapat diganggu gugat.
+                      </li>
+                      <li>
+                        Ketentuan yang lebih lengkap silahkan lihat Rulebook WDC 2023.
                       </li>
                     </ol>
                   </div>
