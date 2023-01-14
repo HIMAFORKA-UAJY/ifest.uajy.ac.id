@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FC } from "react";
+import { CSSProperties, FC, useRef } from "react";
 import { FaBook, FaMale, FaWallet } from "react-icons/all";
 import { Link } from "react-router-dom";
 
@@ -28,20 +28,26 @@ const DonorDarahSection: FC = () => {
             <div className="flex gap-4 pl-[1rem] font-retroica text-sm text-white">
               <div className="rounded-full bg-gradient-to-r from-[#fd9807] to-[#ff7676] p-1">
                 <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                  <FaWallet />
-                  Gratis
+                  <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
+                    <FaBook />
+                  </div>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Umum </p>
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#fd9807] to-[#ff7676] p-1">
                 <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                  <FaBook />
-                  Umum
+                  <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
+                    <FaWallet />
+                  </div>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Gratis </p>
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#fd9807] to-[#ff7676] p-1">
                 <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                  <FaMale />
-                  Daftar online / onsite
+                  <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
+                    <FaMale />
+                  </div>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Daftar online </p>
                 </div>
               </div>
             </div>
