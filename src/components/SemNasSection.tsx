@@ -15,10 +15,7 @@ const SemNasSection: FC = () => {
       <div className="hidden w-screen flex-col items-center justify-center lg:flex">
         <div className="flex items-center justify-center">
           <div className="flex flex-col">
-            <div className="pl-[1rem] font-retroica text-4xl tracking-wide text-white">Seminar Nasional</div>
-            <div className="pl-[1rem] pb-[0.5rem] font-retroica text-2xl text-white">
-              subtitle
-            </div>
+            <div className="pl-[1rem] pb-2 font-retroica text-4xl tracking-wide text-white">Seminar Nasional</div>
             <div className="flex gap-4 pl-[1rem] font-retroica text-sm text-white">
               <div className="rounded-full bg-gradient-to-r from-[#5cc09f] to-[#4eb2b9] p-1">
                 <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
@@ -77,8 +74,7 @@ const SemNasSection: FC = () => {
           alt="Seminar Nasional"
         />
         <div className="text-center">
-          <div className="font-retroica text-4xl tracking-wide text-white">Seminar Nasional</div>
-          <div className="pb-[1rem] font-retroica text-2xl text-white">subtitle?</div>
+          <div className="font-retroica text-4xl tracking-wide text-white pb-4">Seminar Nasional</div>
         </div>
         <div
           className="flex flex-col gap-2 px-2 font-retroica text-sm text-white"
