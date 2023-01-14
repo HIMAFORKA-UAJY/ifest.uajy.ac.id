@@ -15,17 +15,17 @@ const UnderDevelopment: FC = (props) => {
   
     case 'ifest-store':
       // udah lewat
-      timer=<CustomCountDown  eventDate="Jan 14, 2023 00:00:00" className='text-white'></CustomCountDown>  
+      timer=<CustomCountDown  eventDate="Feb 20, 2023" className='text-white'></CustomCountDown>  
       break;
     case 'seminar':
-      timer=<CustomCountDown  eventDate="Jan 25, 2023 00:00:00" className='text-white'></CustomCountDown>  
+      timer=<CustomCountDown  eventDate="Dec 25, 2023" className='text-white'></CustomCountDown>  
       break;
     case 'ui-ux':
-      timer=<CustomCountDown  eventDate="Jan 28, 2023 00:00:00" className='text-white'></CustomCountDown>
+      timer=<CustomCountDown  eventDate="Feb 27, 2023" className='text-white'></CustomCountDown>
       break;
     default:
       // for WDC
-      timer=<CustomCountDown  eventDate="Jan 30, 2023 00:00:00" className='text-white'></CustomCountDown>
+      timer=<CustomCountDown  eventDate="Jan 30, 2023" className='text-white'></CustomCountDown>
       break;
   }
   return (
@@ -35,6 +35,7 @@ const UnderDevelopment: FC = (props) => {
           <motion.div className="flex h-screen flex-col items-center justify-center gap-6">
           
             <div className="text-5xl font-bold text-white text-center">Coming Soon</div>
+            
             {timer}
             <div className="px-8 text-center text-lg text-white">
               Ditunggu yaa sampai event nya dibuka :D
