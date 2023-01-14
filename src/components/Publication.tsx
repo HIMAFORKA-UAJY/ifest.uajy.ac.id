@@ -18,20 +18,7 @@ const Publication: FC = () => {
       date: "28 Desember 2022, 12.00 WIB",
       address: "/welcome",
     },
-    {
-      img: "https://ifest.uajy.ac.id/assets/images/event/ill-wdc.png",
-      author: "Joshua Puniwan Yahya - Ketua",
-      title: "Pengumuman Finalis WDC",
-      date: "29 Desember 2022, 12.00 WIB",
-      address: "/blog/finalis-wdc",
-    },
-    {
-      img: "https://ifest.uajy.ac.id/assets/images/event/ill-cp.png",
-      author: "Joshua Puniwan Yahya - Ketua",
-      title: "Pengumuman Lolos Ke Tahap Virtual Expo I2C",
-      date: "30 Desember 2022, 12.00 WIB",
-      address: "/pengumuman-expo",
-    },
+   
   ];
 
   return (

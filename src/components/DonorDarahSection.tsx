@@ -67,7 +67,7 @@ const DonorDarahSection: FC = () => {
                 transition={{ delay: 0.0, duration: 0.25 }}
                 className="mt-7 rounded-[2.0em] bg-[#ff7676] bg-gradient-to-br from-[#fd9807] px-5 py-3 font-retroica text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#fd9807] lg:text-base"
               >
-                <Link to="/ComingSoon">Coming Soon</Link>
+                <Link to="/donor-darah">Read More</Link>
               </motion.button>
             </div>
           </div>

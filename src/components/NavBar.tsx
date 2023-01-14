@@ -17,29 +17,29 @@ const NavBar: FC = () => {
 
   useEffect(() => {
     switch (location.pathname) {
-      // case "/":
-      //   setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
-      //   break;
+      case "/":
+        setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
+        break;
 
-      // case "/i2c":
-      //   setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
-      //   break;
+      case "/i2c":
+        setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
+        break;
 
-      // case "/wdc":
-      //   setColor({ bg1: "#311D38", bg2: "#4E4074", fg: "#E7A3FF" });
-      //   break;
+      case "/wdc":
+        setColor({ bg1: "#311D38", bg2: "#4E4074", fg: "#E7A3FF" });
+        break;
 
-      // case "/donor-darah":
-      //   setColor({ bg1: "#2d2544", bg2: "#54467d", fg: "#b7a5ec" });
-      //   break;
+      case "/donor-darah":
+        setColor({ bg1: "#2d2544", bg2: "#54467d", fg: "#b7a5ec" });
+        break;
 
-      // case "/sponsor":
-      //   setColor({ bg1: "#152435", bg2: "#182E47", fg: "#479EC6" });
-      //   break;
+      case "/sponsor":
+        setColor({ bg1: "#152435", bg2: "#182E47", fg: "#479EC6" });
+        break;
 
-      // case "/blog/finalis-wdc":
-      //   setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
-      //   break;
+      case "/blog/finalis-wdc":
+        setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
+        break;
 
       default:
         setColor({ bg1: "#173923", bg2: "#357C4D", fg: "#B5EC6F" });
@@ -130,7 +130,7 @@ const NavBar: FC = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <Link className={`${active && "text-[#fff]"}`} to="/ui-ux">
-                        UI / UX ...
+                        MUC
                       </Link>
                     )}
                   </Menu.Item>
@@ -268,7 +268,7 @@ const NavBar: FC = () => {
             className="inline-block cursor-default rounded-[2.0em] px-4 py-2 font-retroica text-xl tracking-[0.2em]"
             style={{ backgroundColor: color.bg2, color: color.fg }}
           >
-            <a href="/dash" target="_blank" rel="noopener noreferrer">
+            <a href="https://ifest.uajy.ac.id/dash" target="_blank" rel="noopener noreferrer">
               Dashboard
             </a>
           </button>
