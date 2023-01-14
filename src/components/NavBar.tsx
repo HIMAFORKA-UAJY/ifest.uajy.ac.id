@@ -245,11 +245,11 @@ const NavBar: FC = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="cursor-default rounded-[0.7em] font-retroica text-xl"
-                style={{ color: "rgb(192,191,201)" }}
+                style={{ color: "#ffffffb5" }}
               >
                 <Menu.Item>
                   {({ active }) => (
-                    <Link className={`${active && "text-[#fff]"}`} to="/ifest-store">
+                    <Link className={`${active}`} to="/ifest-store">
                       IFEST Store
                     </Link>
                   )}
@@ -319,8 +319,6 @@ const NavBar: FC = () => {
                 style={{ color: color.fg }}
               >
                 <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
                   className="cursor-default rounded-[0.7em] font-retroica text-xl"
                   style={{ color: color.fg }}
                 >
@@ -328,24 +326,27 @@ const NavBar: FC = () => {
                 </motion.div>
               </div>
               <div className="flex gap-2">
-                <button
+                <motion.button
+                  whileTap={{ scale: 0.9 }}
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/i2c">I2C</Link>
-                </button>
-                <button
+                </motion.button>
+                <motion.button
+                  whileTap={{ scale: 0.9 }} 
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/ComingSoon">WDC</Link>
-                </button>
-                <button
+                </motion.button>
+                <motion.button
+                  whileTap={{ scale: 0.9 }}
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/ui-ux">UI / UX</Link>
-                </button>
+                </motion.button>
               </div>
             </div>
             <div className="flex flex-col items-center gap-2">
@@ -356,18 +357,20 @@ const NavBar: FC = () => {
                 Acara
               </div>
               <div className="flex gap-2">
-                <button
+                <motion.button
+                  whileTap={{ scale: 0.9 }}
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/donor-darah">Donor Darah</Link>
-                </button>
-                <button
+                </motion.button>
+                <motion.button
+                  whileTap={{ scale: 0.9 }}
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/seminar">Seminar Nasional</Link>
-                </button>
+                </motion.button>
               </div>
             </div>
             <div className="flex flex-col items-center gap-2">
@@ -378,12 +381,13 @@ const NavBar: FC = () => {
                 Belanja
               </div>
               <div className="flex gap-2">
-                <button
+                <motion.button
+                  whileTap={{ scale: 0.9 }}
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/ifest-store">IFEST Store</Link>
-                </button>
+                </motion.button>
               </div>
             </div>
             <div className="flex flex-col items-center gap-2">
@@ -393,12 +397,13 @@ const NavBar: FC = () => {
               >
                 Bisnis
               </div>
-              <button
+              <motion.button
+                whileTap={{ scale: 0.9 }}
                 className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                 style={{ borderColor: color.bg2, color: color.fg }}
               >
                 <Link to="/sponsor">Sponsor</Link>
-              </button>
+              </motion.button>
             </div>
             <div className="flex flex-col items-center gap-2">
               <div
@@ -407,14 +412,15 @@ const NavBar: FC = () => {
               >
                 Akses
               </div>
-              <button
+              <motion.button
+                whileTap={{ scale: 0.9 }}
                 className="inline-block w-full cursor-default rounded-[2.0em] px-4 py-2 font-retroica text-xl tracking-wide"
                 style={{ backgroundColor: color.bg2, color: color.fg }}
               >
                 <a href="/dash" target="_blank" rel="noopener noreferrer">
                   Dashboard
                 </a>
-              </button>
+              </motion.button>
             </div>
           </motion.div>
         </Popover.Panel>
