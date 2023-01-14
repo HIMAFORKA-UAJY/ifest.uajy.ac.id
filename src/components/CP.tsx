@@ -25,14 +25,16 @@ const CP: FC = () => {
         <div className="p-5 font-louisgeorgecafe text-base text-white">
           Ada pertanyaan? Silakan ajukan ^_^
         </div>
-        <div className="lg-flex h-[20rem] w-[24rem] lg:h-[20rem] lg:w-[48rem]">
+        <div className="lg-flex lg:w-[48rem] lg:h-[20rem] w-[28rem] h-[20rem]">
           <Swiper
             breakpoints={{
               640: {
-                width: 640,
                 slidesPerView: 1,
               },
               768: {
+                slidesPerView: 2,
+              },
+              1024: {
                 slidesPerView: 3,
               },
             }}
@@ -76,11 +78,11 @@ const CP: FC = () => {
                         </div>
                         <div className="flex items-center gap-1 font-louisgeorgecafe">
                           <FaLine />
-                          id_line
+                          lalariel
                         </div>
                       </div>
                       <button
-                        className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe"
+                        className="mx-auto rounded-2xl bg-[#976dce] bg-gradient-to-br from-[#5e78b9] px-2 font-louisgeorgecafe"
                         style={{ cursor: "default" }}
                       >
                         Ariel
@@ -107,11 +109,11 @@ const CP: FC = () => {
                         </div>
                         <div className="flex items-center gap-1 font-louisgeorgecafe">
                           <FaLine />
-                          id_line
+                          wibowolala31
                         </div>
                       </div>
                       <button
-                        className="mx-auto rounded-2xl bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-2 font-louisgeorgecafe"
+                        className="mx-auto rounded-2xl bg-[#976dce] bg-gradient-to-br from-[#5e78b9] px-2 font-louisgeorgecafe"
                         style={{ cursor: "default" }}
                       >
                         Lala
@@ -149,11 +151,11 @@ const CP: FC = () => {
                         </div>
                         <div className="flex items-center gap-1 font-louisgeorgecafe">
                           <FaLine />
-                          id_line
+                          thisispasha
                         </div>
                       </div>
                       <button
-                        className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe"
+                        className="mx-auto rounded-2xl bg-[#5d8e9b] bg-gradient-to-br from-[#7fa757] px-2 font-louisgeorgecafe"
                         style={{ cursor: "default" }}
                       >
                         Pasha
@@ -180,11 +182,11 @@ const CP: FC = () => {
                         </div>
                         <div className="flex items-center gap-1 font-louisgeorgecafe">
                           <FaLine />
-                          id_line
+                          ayas.23
                         </div>
                       </div>
                       <button
-                        className="mx-auto rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9DCE6D] px-2 font-louisgeorgecafe"
+                        className="mx-auto rounded-2xl bg-[#5d8e9b] bg-gradient-to-br from-[#7fa757] px-2 font-louisgeorgecafe"
                         style={{ cursor: "default" }}
                       >
                         Ayas
@@ -251,7 +253,7 @@ const CP: FC = () => {
                         </div>
                         <div className="flex items-center gap-1 font-louisgeorgecafe">
                           <FaLine />
-                          id_line
+                          metiu321
                         </div>
                       </div>
                       <button
@@ -282,7 +284,7 @@ const CP: FC = () => {
                         </div>
                         <div className="flex items-center gap-1 font-louisgeorgecafe">
                           <FaLine />
-                          id_line
+                          axel.ckd
                         </div>
                       </div>
                       <button
@@ -474,7 +476,7 @@ const CP: FC = () => {
                         </div>
                       </div>
                       <button
-                        className="mx-auto rounded-2xl bg-[#4aacca] bg-gradient-to-br from-[#3bc2b7] px-2 font-louisgeorgecafe"
+                        className="mx-auto rounded-2xl bg-[#3f90a8] bg-gradient-to-br from-[#30a097] px-2 font-louisgeorgecafe"
                         style={{ cursor: "default" }}
                       >
                         Radit
@@ -505,7 +507,7 @@ const CP: FC = () => {
                         </div>
                       </div>
                       <button
-                        className="mx-auto rounded-2xl bg-[#4aacca] bg-gradient-to-br from-[#3bc2b7] px-2 font-louisgeorgecafe"
+                        className="mx-auto rounded-2xl bg-[#3f90a8] bg-gradient-to-br from-[#30a097] px-2 font-louisgeorgecafe"
                         style={{ cursor: "default" }}
                       >
                         Thessa
@@ -519,7 +521,7 @@ const CP: FC = () => {
               <table className="table-cell border-separate rounded-xl border-[6px] border-[#b0c441] p-2">
                 <thead>
                   <tr>
-                    <th className="border-b-[6px] border-[#b0c441]">IFest Store</th>
+                    <th className="border-b-[6px] border-[#b0c441]">IFEST Store</th>
                   </tr>
                 </thead>
                 <tbody>

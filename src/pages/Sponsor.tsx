@@ -51,7 +51,7 @@ const Sponsor: FC = () => {
                 <div className="flex h-full flex-col items-center justify-start gap-2 text-center ">
                   <img
                     className="w-32"
-                    src="images/starslash.svg"
+                    src="images/icon-spons-kaisar.png"
                     style={{ width: "3rem" }}
                     alt="/"
                   />
@@ -138,7 +138,7 @@ const Sponsor: FC = () => {
                 <div className="flex h-full flex-col items-center justify-start gap-2 text-center ">
                   <img
                     className="w-32"
-                    src="images/starslash.svg"
+                    src="images/icon-spons-raja.png"
                     style={{ width: "3rem" }}
                     alt="/"
                   />
@@ -219,7 +219,7 @@ const Sponsor: FC = () => {
                 <div className="flex h-full flex-col items-center justify-start gap-2 text-center ">
                   <img
                     className="w-32"
-                    src="images/starslash.svg"
+                    src="images/icon-spons-sultan.png"
                     style={{ width: "3rem" }}
                     alt="/"
                   />
@@ -290,7 +290,7 @@ const Sponsor: FC = () => {
                 <div className="flex h-full flex-col items-center justify-start gap-2 text-center ">
                   <img
                     className="w-32"
-                    src="images/starslash.svg"
+                    src="images/icon-spons-bos.png"
                     style={{ width: "3rem" }}
                     alt="/"
                   />
