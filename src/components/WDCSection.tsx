@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FC } from "react";
+import { CSSProperties, FC, useRef } from "react";
 import { FaBook, FaMale, FaWallet } from "react-icons/all";
 import { Link } from "react-router-dom";
 
@@ -22,20 +22,26 @@ const WDCSection: FC = () => {
             <div className="flex gap-4 pl-[1rem] font-retroica text-sm text-white">
               <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
                 <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                  <FaWallet />
-                  Rp. 50.000
+                  <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
+                    <FaBook />
+                  </div>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> D3 / D4 / S1 </p>
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
                 <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                  <FaBook />
-                  Mahasiswa
+                  <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
+                    <FaWallet />
+                  </div>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Rp. 50K / tim</p>
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#9DCE6D] to-[#9DCE6D] p-1">
                 <div className="flex items-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.5rem]">
-                  <FaMale />
-                  Max. 2 orang
+                  <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
+                    <FaMale />
+                  </div>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Max. 2 peserta / tim</p>
                 </div>
               </div>
             </div>
@@ -53,7 +59,7 @@ const WDCSection: FC = () => {
                 transition={{ delay: 0.0, duration: 0.25 }}
                 className="mt-7 rounded-[2.0em] bg-[#4f7f8b] bg-gradient-to-br from-[#52aa59] px-5 py-3 font-retroica text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#59b667] lg:text-base"
               >
-                <Link to="/wdc">Read More</Link>
+                <Link to="/ComingSoon">Read More</Link>
               </motion.button>
             </div>
           </div>

@@ -41,6 +41,10 @@ const NavBar: FC = () => {
         setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
         break;
 
+      case "/ComingSoon":
+        setColor({ bg1: "#173923", bg2: "#357C4D", fg: "#B5EC6F" });
+        break;
+
       default:
         setColor({ bg1: "#8E332DF2", bg2: "#DB7F58CC", fg: "#FFFFFF" });
         break;
