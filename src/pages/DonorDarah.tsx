@@ -619,12 +619,10 @@ const DonorDarah: FC = () => {
             </div>
             <div className="h-64 w-64 py-5 lg:py-10">
               <div className="flex justify-center text-center text-white">
-                <table className="table-cell border-separate rounded-xl border-[6px] border-[#FF8064] p-5">
+                <table className="table-cell border-separate rounded-xl border-[6px] border-[#c47c41] p-2">
                   <thead>
                     <tr>
-                      <th className="border-b-[6px] border-[#FF8064] text-[#ffffffcc]">
-                        Donor Darah
-                      </th>
+                      <th className="border-b-[6px] border-[#c47c41]">Donor Darah</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -632,34 +630,61 @@ const DonorDarah: FC = () => {
                       <td>
                         <div className="flex flex-col items-center">
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
-                            <FaWhatsapp />
-                            0822 2555 3400
+                            <a
+                              style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                              }}
+                              href="https://wa.me/6285714080699 "
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaWhatsapp className="mr-2" />
+                              +62 857-1408-0699
+                            </a>
                           </div>
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
                             <FaLine />
-                            id_line
+                            angelinaderrel
                           </div>
                         </div>
-                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-[#000]">
-                          Lala
+                        <button
+                          className="mx-auto rounded-2xl bg-[#ca7f4a] bg-gradient-to-br from-[#c2533b] px-2 font-louisgeorgecafe"
+                          style={{ cursor: "default" }}
+                        >
+                          Derrel
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        ~
                         <div className="flex flex-col items-center">
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
-                            <FaWhatsapp />
-                            0822 2555 3400
+                            <a
+                              style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                              }}
+                              href="https://wa.me/6282334026619"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaWhatsapp className="mr-2" />
+                              +62 823-3402-6619
+                            </a>
                           </div>
                           <div className="flex items-center gap-1 font-louisgeorgecafe">
                             <FaLine />
-                            id_line
+                            sa2st2ra
                           </div>
                         </div>
-                        <button className="mx-auto rounded-2xl bg-[#FEB783] bg-gradient-to-br from-[#FE8064] px-2 font-louisgeorgecafe text-[#000]">
-                          Kevin
+                        <button
+                          className="mx-auto rounded-2xl bg-[#ca7f4a] bg-gradient-to-br from-[#c2533b] px-2 font-louisgeorgecafe"
+                          style={{ cursor: "default" }}
+                        >
+                          Deta
                         </button>
                       </td>
                     </tr>
