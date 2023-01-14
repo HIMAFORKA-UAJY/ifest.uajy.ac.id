@@ -8,7 +8,7 @@ const FAQ: FC = () => {
     {
       question: "Apa itu IFest?",
       answer: `
-      Informatics Festival atau IFest adalah acara tahunan Himpunan Mahasiswa Informatika (HIMAFORKA) Universitas Atma Jaya Yogyakarta. Pada tahun 2023 ini, IFest#10 mengambil tema "Higher Steps, Higher Purpose with Informatics" dengan berbagai susunan kompetisi dan acara yang tentunya menarik!
+      Informatics Festival atau IFest adalah acara tahunan Himpunan Mahasiswa Informatika (HIMAFORKA) Universitas Atma Jaya Yogyakarta. Pada tahun 2023 ini, IFest#11 mengambil tema "Higher Steps, Higher Purpose with Informatics" dengan berbagai susunan kompetisi dan acara yang tentunya menarik!
         `,
     },
     {
@@ -23,12 +23,13 @@ const FAQ: FC = () => {
           Web Design Competition (WDC)
         </li>
         <li>
-          Food Bazaar
+          Mobile UI/UX Competition (MUC)
         </li>
         <li>
           Donor Darah
         </li>
       </ul>
+      Selain itu IFest#11 juga menyediakan berbagai produk-produk menarik yang dapat dibeli hanya di IFEST Store
         `,
     },
     {
