@@ -20,16 +20,16 @@ const App: FC = () => {
   return (
     <AnimatePresence mode="wait">
       <Routes key={location.pathname} location={location}>
-        <Route path="*" element={<ComingSoon />} />
+        <Route path="*" element={<ComingSoon property={{pageType:'default'}}/>}/>
         <Route path="/" element={<Home />} />
         <Route path="/i2c" element={<I2C />} />
-        <Route path="/wdc" element={<ComingSoon />} />
-        <Route path="/ui-ux" element={<ComingSoon />} />
+        <Route path="/ui-ux" element={<ComingSoon property={{pageType:'ui-ux'}}/>} />
+        <Route path="/wdc" element={<ComingSoon property={{pageType:'wdc'}}/>} />
         <Route path="/donor-darah" element={<DonorDarah />} />
-        <Route path="/seminar" element={<ComingSoon />} />
-        <Route path="/ifest-store" element={<ComingSoon />} />
+        <Route path="/seminar" element={<ComingSoon property={{pageType:'seminar'}}/>} />
+        <Route path="/ifest-store" element={<ComingSoon property={{pageType:'ifest-store'}}/>} />
         <Route path="/sponsor" element={<Sponsor />} />
-        <Route path="/blog/finalis-wdc" element={<ComingSoon />} />
+        <Route path="/blog/finalis-wdc" element={<ComingSoon property={{pageType:'blog-finalis-wdc'}}/>}/>
         <Route path="*" element={<Error404 />} />
       </Routes>
     </AnimatePresence>
