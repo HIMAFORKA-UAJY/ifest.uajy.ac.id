@@ -24,73 +24,43 @@ const MediaPartner: FC = () => {
           <Carousel leftControl=" " rightControl=" " indicators={false}>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventlombaindo-medpart.png"
+                src="/images/medpart/lombasma2.png"
                 alt="/"
               />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/bncc-medpart.png"
+                src="/images/medpart/Edaranevent.png"
                 alt="/"
               />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventdetect-medpart.png"
+                src="/images/medpart/media event.png"
                 alt="/"
               />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventhunterid-medpart.png"
+                src="/images/medpart/infolomba.indonesia.jfif"
                 alt="/"
               />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/gudanglombaind-medpart.jpg"
+                src="/images/medpart/eventcampus.co.png"
                 alt="/"
               />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/infomahasiswa-medpart.png"
+                src="/images/medpart/seputar.infoid.jpg"
                 alt="/"
               />
             </div>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/infolombaeventid-medpart.png"
-                alt="/"
-              />
-            </div>
-            <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/beritalomba-medpart.png"
-                alt="/"
-              />
-            </div>
-            <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/madingeventgelap-medpart.png"
-                alt="/"
-              />
-            </div>
-            <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/edaranevent-medpart.png"
-                alt="/"
-              />
-            </div>
-            <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/lombasma2-medpart.png"
-                alt="/"
-              />
-            </div>
-            <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/webinargratis-medpart.png"
+                src="/images/medpart/eventcampus.png"
                 alt="/"
               />
             </div>
@@ -113,73 +83,45 @@ const MediaPartner: FC = () => {
           >
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventlombaindo-medpart.png"
+                src="/images/medpart/lombasma2.png"
                 alt="/"
               />
             </SwiperSlide>
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/bncc-medpart.png"
+                src="/images/medpart/Edaranevent.png"
                 alt="/"
               />
             </SwiperSlide>
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventdetect-medpart.png"
+                src="/images/medpart/media event.png"
                 alt="/"
               />
             </SwiperSlide>
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/eventhunterid-medpart.png"
+                src="/images/medpart/infolomba.indonesia.jfif"
+                alt="/"
+                className="h-[10rem] m-auto"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
+              <img
+                src="/images/medpart/eventcampus.co.png"
+                alt="/"
+                className="h-[10rem] m-auto"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
+              <img
+                src="/images/medpart/seputar.infoid.jpg"
                 alt="/"
               />
             </SwiperSlide>
             <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
               <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/gudanglombaind-medpart.jpg"
-                alt="/"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/infomahasiswa-medpart.png"
-                alt="/"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/infolombaeventid-medpart.png"
-                alt="/"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/beritalomba-medpart.png"
-                alt="/"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/madingeventgelap-medpart.png"
-                alt="/"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/edaranevent-medpart.png"
-                alt="/"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/lombasma2-medpart.png"
-                alt="/"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="flex h-[12rem] w-[12rem] items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/webinargratis-medpart.png"
+                src="/images/medpart/eventcampus.png"
                 alt="/"
               />
             </SwiperSlide>
