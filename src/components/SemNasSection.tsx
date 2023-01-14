@@ -57,7 +57,7 @@ const SemNasSection: FC = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.0, duration: 0.25 }}
-                className="mt-7 rounded-[2.0em] bg-[#4f7f8b] bg-gradient-to-br from-[#52aa59] px-5 py-3 font-retroica text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#59b667] lg:text-base"
+                className="mt-7 rounded-[2.0em] bg-[#56a09a] bg-gradient-to-br from-[#5bbb93] px-5 py-3 font-retroica text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#56a09a] lg:text-base"
               >
                 <Link to="/ComingSoon">Coming Soon</Link>
               </motion.button>
@@ -78,7 +78,7 @@ const SemNasSection: FC = () => {
         />
         <div className="text-center">
           <div className="font-retroica text-4xl tracking-wide text-white">Seminar Nasional</div>
-          <div className="pb-[1rem] font-retroica text-2xl text-white">subtitle</div>
+          <div className="pb-[1rem] font-retroica text-2xl text-white">subtitle?</div>
         </div>
         <div
           className="flex flex-col gap-2 px-2 font-retroica text-sm text-white"
@@ -106,9 +106,9 @@ const SemNasSection: FC = () => {
         <div className="pt-2" />
         <div className="p-4 font-louisgeorgecafe text-white">
           <p className="text-justify">
-            <strong> Web Design Competition (WDC)</strong> 2023 adalah kompetisi merancang desain visual yang
-            ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema
-            "Embrace the Future of Local Economy with Technology”
+            Seminar nasional adalah seminar yang diselenggarakan berskala nasional
+            sebagai media untuk menyampaikan aspirasi dan ide kepada peserta mengenai
+            perkembangan ilmu dan teknologi di tengah kehidupan manusia, khususnya revolusi industri 4.0.
           </p>
         </div>
         <div>
@@ -116,7 +116,7 @@ const SemNasSection: FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.0, duration: 0.25 }}
-            className="mt-7 rounded-[2.0em] bg-[#6ca0af] bg-gradient-to-br from-[#9dcd6c] px-5 py-3 font-retroica text-sm text-white lg:text-base"
+            className="mt-7 rounded-[2.0em] bg-[#56a09a] bg-gradient-to-br from-[#5bbb93] px-5 py-3 font-retroica text-sm text-white lg:text-base"
           >
             <Link to="/ComingSoon">Coming Soon</Link>
           </motion.button>
