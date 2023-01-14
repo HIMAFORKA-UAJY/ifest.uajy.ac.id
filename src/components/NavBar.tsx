@@ -322,7 +322,7 @@ const NavBar: FC = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   className="cursor-default rounded-[0.7em] font-retroica text-xl"
-                  style={{ color: "rgb(192,191,201)" }}
+                  style={{ color: color.fg }}
                 >
                   Kompetisi
                 </motion.div>
