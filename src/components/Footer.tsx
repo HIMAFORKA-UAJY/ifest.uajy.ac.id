@@ -51,6 +51,9 @@ const Footer: FC<Props> = ({ className }) => {
           <div className="font-louisgeorgecafe text-white opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90">
             <Link to="/sponsor">Sponsor</Link>
           </div>
+          <div className="font-louisgeorgecafe text-white opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90">
+            <Link to="/coming-soon">IFest Store</Link>
+          </div>
         </div>
         <div className="flex flex-col gap-2 text-left">
           <div className="font-retroica text-xl text-white">Akses</div>
