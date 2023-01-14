@@ -118,7 +118,7 @@ const NavBar: FC = () => {
                 >
                   <Menu.Item>
                     {({ active }) => (
-                      <Link className={`${active && "text-[#fff]"}`} to="/wdc">
+                      <Link className={`${active && "text-[#fff]"}`} to="/ComingSoon">
                         WDC
                       </Link>
                     )}
@@ -341,7 +341,7 @@ const NavBar: FC = () => {
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
-                  <Link to="/wdc">WDC</Link>
+                  <Link to="/ComingSoon">WDC</Link>
                 </button>
                 <button
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
