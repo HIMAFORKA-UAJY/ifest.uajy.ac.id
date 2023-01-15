@@ -25,7 +25,7 @@ const MUCSection: FC = () => {
                   <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                     <FaBook />
                   </div>
-                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Mahasiswa </p>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> D3 / D4 / S1 </p>
                 </div>
               </div>
               <div className="rounded-full bg-gradient-to-r from-[#fd9807] to-[#ff7676] p-1">
@@ -41,7 +41,7 @@ const MUCSection: FC = () => {
                   <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                     <FaMale />
                   </div>
-                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Max 2 Orang </p>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Max 2 Peserta / tim </p>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ const MUCSection: FC = () => {
           <img
             className="w-[500px]"
             style={{ marginRight: "2rem" }}
-            src="images/dondar-section-bg.png"
+            src="images/muc.png"
             alt="wdc"
           />
         </div>
@@ -103,7 +103,7 @@ const MUCSection: FC = () => {
               style={{ padding: ".5rem" }}
             >
               <FaBook />
-              Umum
+              D3 / D4 / S1
             </div>
           </div>
           <div className="rounded-full bg-gradient-to-r from-[#fd9807] to-[#ff7676] p-1">

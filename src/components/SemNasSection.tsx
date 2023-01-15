@@ -118,7 +118,7 @@ const SemNasSection: FC = () => {
             transition={{ delay: 0.0, duration: 0.25 }}
             className="mt-7 rounded-[2.0em] bg-[#56a09a] bg-gradient-to-br from-[#5bbb93] px-5 py-3 font-retroica text-sm text-white lg:text-base"
           >
-            <Link to="/ComingSoon">Coming Soon</Link>
+            <Link to="/seminar">Coming Soon</Link>
           </motion.button>
         </div>
       </div>
