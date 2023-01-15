@@ -32,10 +32,10 @@ const Blog: FC<Props> = ({ Blogs }: Props) => {
         style={{ background: "#202b3f", height: '50rem' }}
       >
         {/* <div className="flex justify-center h-screen w-screen flex-col pt-32 lg:flex-row bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${Background})`}}> */}
-        <div className="flex w-screen flex-col justify-center bg-cover bg-center bg-no-repeat pt-64 lg:flex-row">
+        <div className="flex w-screen flex-col justify-center bg-cover bg-center bg-no-repeat lg:flex-row" style={{paddingTop: '10rem'}}>
           <div
             className="text-center font-retroica text-white"
-            style={{ margin: "auto", fontSize: "3rem", wordWrap: "break-word" }}
+            style={{ margin: "auto", fontSize: "3rem", wordWrap: "break-word", marginBottom: '2rem' }}
           >
             {blog.judul}
           </div>
@@ -44,7 +44,7 @@ const Blog: FC<Props> = ({ Blogs }: Props) => {
             <img className="w-[30rem]" src="/images/blog-bg1.png" alt="" />
           </div> */}
         </div>
-        <div className="flex justify-center p-8 pb-24" >
+        <div className="flex justify-center p-6 pb-24" >
           <div className="z-10 h-fit w-[90%] bg-[#FAFAFA] p-12 drop-shadow-2xl lg:pr-40">
             <div className="mb-14 flex items-center gap-8">
               <img className="float-left w-20" src={logo} alt="ifest-logo" />
