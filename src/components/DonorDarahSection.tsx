@@ -114,7 +114,7 @@ const DonorDarahSection: FC = () => {
               style={{ padding: ".5rem" }}
             >
               <FaMale />
-              Daftar online / onsite
+              Daftar online
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ const DonorDarahSection: FC = () => {
             transition={{ delay: 0.0, duration: 0.25 }}
             className="mt-7 rounded-[2.0em] bg-[#ff7676] bg-gradient-to-br from-[#fd9807] px-5 py-3 font-retroica text-sm text-white lg:text-base"
           >
-            <Link to="/ComingSoon">Coming Soon</Link>
+            <Link to="/donor-darah">Coming Soon</Link>
           </motion.button>
         </div>
       </div>
