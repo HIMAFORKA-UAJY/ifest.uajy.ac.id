@@ -5,7 +5,7 @@ import { Carousel } from "flowbite-react";
 import parse from "html-react-parser";
 import { FC } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-
+import CP from "../components/CP";
 
 interface Props {
   Blogs: {
@@ -62,51 +62,7 @@ const Blog: FC<Props> = ({ Blogs }: Props) => {
           </div>
         </div>
         <div className="flex w-screen flex-col items-center justify-center gap-2 bg-[#1B1442] pt-12">
-          <div className="font-retron2000 text-5xl font-bold text-white">Contact Us</div>
-          <div className="font-retroica text-base text-white">
-            Masih ada yang bingung? Yuk kontak kami.
-          </div>
-          <div className="h-64 w-64">
-            <Carousel leftControl=" " rightControl=" " indicators={false}>
-              <div className="flex justify-center text-center text-white">
-                <table className="table-cell border-separate rounded-xl border-[6px] border-[#9DCE6D] p-2">
-                  <thead>
-                    <tr>
-                      <th>WDC</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <a href="#f" target="_blank">
-                          <div style={{ marginTop: ".5rem", marginBottom: ".5rem" }}>
-                            0812 3470 303
-                          </div>
-                          <button className="mx-auto flex items-center justify-center gap-1 rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9dcd6c] px-2">
-                            <FaWhatsapp />
-                            Andreas
-                          </button>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="#f" target="_blank">
-                          <div style={{ marginTop: ".5rem", marginBottom: ".5rem" }}>
-                            0812 3470 303
-                          </div>
-                          <button className="mx-auto flex items-center justify-center gap-1 rounded-2xl bg-[#6ca0af] bg-gradient-to-br from-[#9dcd6c] px-2">
-                            <FaWhatsapp />
-                            Andreas
-                          </button>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </Carousel>
-          </div>
+          <CP />
         </div>
         <Footer className="bg-[#1B1442] p-4" />
       </div>
