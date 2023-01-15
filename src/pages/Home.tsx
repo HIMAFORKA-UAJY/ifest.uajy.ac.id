@@ -16,7 +16,8 @@ import Sponsor from "../components/Sponsor";
 import WDCSection from "../components/WDCSection";
 import MUCSection from "../components/MUCSection";
 
-const Home: FC = () => {
+const Home: FC = (props) => {
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -38,7 +39,7 @@ const Home: FC = () => {
         <MUCSection></MUCSection>
         <SemNasSection />
         {/* <HackathonSection /> */}
-        <Publication />
+        <Publication {...props}/>
         <FAQ />
         <Sponsor />
         <MediaPartner />
