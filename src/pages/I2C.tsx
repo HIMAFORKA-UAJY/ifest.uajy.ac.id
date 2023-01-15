@@ -293,10 +293,9 @@ const I2C: FC = () => {
                     className="m-auto flex items-center justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
                     style={{ width: "100%" }}
                   >
-                    <a href="https://ifest.uajy.ac.id/dash" target='_blank'>
+                    <a href="https://ifest.uajy.ac.id/dash" target="_blank" rel="noreferrer">
                       <div className="m-auto text-white opacity-100">DAFTAR</div>
                     </a>
-                    
                   </button>
                 </div>
                 <div className="my-2 rounded-full bg-[#6c6486] p-1 lg:my-0">
@@ -639,7 +638,7 @@ const I2C: FC = () => {
                         <FaMoneyBillWave /> Rp2.000.000
                       </div>
                       <div className="flex gap-3 font-retroica">
-                        <FaTrophy/> Piala
+                        <FaTrophy /> Piala
                       </div>
                       <div className="flex gap-3 font-retroica">
                         <FaCertificate /> Sertifikat Nasional
