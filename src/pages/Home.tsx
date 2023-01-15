@@ -14,6 +14,7 @@ import SemNasSection from "../components/SemNasSection";
 import ShootingStars from "../components/ShootingStars";
 import Sponsor from "../components/Sponsor";
 import WDCSection from "../components/WDCSection";
+import MUCSection from "../components/MUCSection";
 
 const Home: FC = () => {
   useEffect(() => {
@@ -34,6 +35,7 @@ const Home: FC = () => {
         <I2CSection />
         <WDCSection />
         <DonorDarahSection />
+        <MUCSection></MUCSection>
         <SemNasSection />
         {/* <HackathonSection /> */}
         <Publication />
