@@ -329,10 +329,11 @@ const DonorDarah: FC = () => {
                     <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-12">
                       Daftar melalui{" "}
                       <a
-                        href="https://ifest.uajy.ac.id/dash/donor_darah"
+                        // href="https://ifest.uajy.ac.id/dash/donor_darah"
+                        href="/donor-darah/pendaftaran"
                         style={{ textDecoration: "underline" }}
                       >
-                        Dashboard
+                        Dashboard Donor Darah
                       </a>
                     </div>
                   </div>
