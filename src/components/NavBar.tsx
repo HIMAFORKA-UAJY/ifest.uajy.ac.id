@@ -40,6 +40,9 @@ const NavBar: FC = () => {
       case "/blog/finalis-wdc":
         setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
         break;
+      case "/blog/welcome":
+        setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
+        break;
 
       default:
         setColor({ bg1: "#173923", bg2: "#357C4D", fg: "#B5EC6F" });

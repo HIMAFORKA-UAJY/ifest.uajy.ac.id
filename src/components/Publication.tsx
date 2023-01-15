@@ -9,16 +9,16 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const Publication: FC = () => {
-  const publications = [
-    {
-      img: "https://ifest.uajy.ac.id/assets/images/event/ill-i2c.png",
-      author: "Joshua Puniwan Yahya - Ketua",
-      title: "Welcome to IFEST#11",
-      date: "28 Desember 2022, 12.00 WIB",
-      address: "/welcome",
-    },
-  ];
+const Publication: FC = (props) => {
+  
+  
+  
+  
+  const publication = [props]
+  
+  const publications = publication[0].Blog
+  
+  
 
   return (
     <motion.div
@@ -49,13 +49,15 @@ const Publication: FC = () => {
             className="mySwiper"
           >
             {publications.map((publication) => {
+              console.log(publication)
               return (
                 <SwiperSlide className="h-[32rem] w-[20rem]" key={publication.title}>
                   <div className="flex h-full flex-col items-center justify-center gap-2 bg-[#352A7C] text-center">
                     <img className="w-64" src={publication.img} alt="/" />
-                    <div className="font-retroica text-[#ffffff]">{publication.author}</div>
-                    <div className="font-retroica text-xl text-[#9C8DFC]">{publication.title}</div>
-                    <div className="font-retroica text-[#7364D2]">{publication.date}</div>
+                    <div className="font-retroica text-[#ffffff]">{publication.judul}</div>
+                    <div className="font-retroica text-xl text-[#9C8DFC]">{publication.jabatan}</div>
+                    <div className="font-retroica text-xl text-[#9C8DFC]">{publication.author}</div>
+                    <div className="font-retroica text-[#7364D2]">{publication.publication_date}</div>
                     <button className="pt-4 font-retroica text-[#9C8DFC]">
                       <Link to={publication.address}>Find out more</Link>
                     </button>
