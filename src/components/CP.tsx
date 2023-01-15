@@ -25,7 +25,7 @@ const CP: FC = () => {
         <div className="p-5 font-louisgeorgecafe text-base text-white">
           Ada pertanyaan? Silakan ajukan ^_^
         </div>
-        <div className="lg-flex h-[20rem] w-[28rem] lg:h-[20rem] lg:w-[48rem]">
+        <div className="lg-flex h-[20rem] w-[48rem] lg:w-[64rem]">
           <Swiper
             breakpoints={{
               640: {
