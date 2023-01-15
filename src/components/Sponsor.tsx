@@ -21,8 +21,8 @@ const Sponsor: FC = () => {
     >
       <div className="flex w-screen flex-col items-center justify-center gap-6 pb-24">
         <div className="text-center font-retroica text-4xl text-white">Sponsors IFEST # 10</div>
-        <div className="h-64 w-64 lg:hidden">
-          <Carousel leftControl=" " rightControl=" " indicators={false}>
+        <div className="h-64 w-96 lg:hidden">
+          {/* <Carousel slideInterval={4000} leftControl=" " rightControl=" " indicators={false}>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
               <img
                 src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/jagoanh-gold.png"
@@ -41,7 +41,31 @@ const Sponsor: FC = () => {
                 alt="dev-code"
               />
             </div>
-          </Carousel>
+          </Carousel> */}
+          <Swiper
+            slidesPerView={"auto"}
+            spaceBetween={10}
+            className="mySwiper"
+          >
+            <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
+              <img
+                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/jagoanh-gold.png"
+                alt="jagoan-hosting"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
+              <img
+                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/ajaib-silver.jpg"
+                alt="ajaib-silver"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
+              <img
+                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/devcode-color-silver.png"
+                alt="dev-code"
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div className="hidden lg:flex">
           <Swiper
