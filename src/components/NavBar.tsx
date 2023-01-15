@@ -138,22 +138,6 @@ const NavBar: FC = () => {
                     )}
                   </Menu.Item>
                 </motion.div>
-                {/* <motion.div
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
-                                >
-                                    <Menu.Item>
-                                        {({ active }) => (
-                                            <Link
-                                                className={`${active && 'text-[#fff]'}`}
-                                                to="/hackathon"
-                                            >
-                                                Hackathon
-                                            </Link>
-                                        )}
-                                    </Menu.Item>
-                                </motion.div> */}
               </motion.div>
             </Menu.Items>
           </Menu>
@@ -192,23 +176,6 @@ const NavBar: FC = () => {
                 className="absolute mt-4 flex cursor-default flex-col gap-3 rounded-[0.7em] px-8 py-4 font-retroica text-xl tracking-[0.2em] shadow-lg"
                 style={{ backgroundColor: color.bg1, color: color.fg }}
               >
-                {/* <motion.div
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    className="rounded-[0.7em] font-retroica text-xl cursor-default text-[#bfb2ff]"
-                                >
-                                    <Menu.Item>
-                                        {({ active }) => (
-                                            <Link
-                                                className={`${active && 'text-[#fff]'}`}
-                                                to="/seminar"
-                                            >
-                                                Seminar
-                                            </Link>
-                                        )}
-                                    </Menu.Item>
-                                </motion.div> */}
-
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -348,7 +315,7 @@ const NavBar: FC = () => {
                   className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
-                  <Link to="/ui-ux">UI / UX</Link>
+                  <Link to="/ui-ux">MUC</Link>
                 </motion.button>
               </div>
             </div>
