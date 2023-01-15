@@ -22,7 +22,7 @@ const UnderDevelopment: FC<Props> = ({ property }: Props) => {
       // udah lewat
       timer = <CustomCountDown eventDate="Feb 20, 2023" />;
       break;
-    case 'donor-darah-pendaftaran':
+    case "donor-darah-pendaftaran":
       timer = <CustomCountDown eventDate="Feb 20, 2023" />;
       break;
     case "seminar":

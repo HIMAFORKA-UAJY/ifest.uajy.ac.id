@@ -67,7 +67,6 @@ const SemNasSection: FC = () => {
               </motion.button>
             </div>
           </div>
-          
         </div>
       </div>
       <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">

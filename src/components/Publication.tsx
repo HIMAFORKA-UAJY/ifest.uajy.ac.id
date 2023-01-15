@@ -9,16 +9,20 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const Publication: FC = (props) => {
-  
-  
-  
-  
-  const publication = [props]
-  
-  const publications = publication[0].Blog
-  
-  
+interface Props {
+  Blog: {
+    author: string;
+    jabatan: string;
+    judul: string;
+    publication_date: string;
+    konten: string;
+    img: string;
+    address: string;
+  }[];
+}
+
+const Publication: FC<Props> = ({ Blog }: Props) => {
+  const publications = Blog;
 
   return (
     <motion.div
@@ -49,15 +53,18 @@ const Publication: FC = (props) => {
             className="mySwiper"
           >
             {publications.map((publication) => {
-              console.log(publication)
               return (
-                <SwiperSlide className="h-[32rem] w-[20rem]" key={publication.title}>
+                <SwiperSlide className="h-[32rem] w-[20rem]" key={publication.judul}>
                   <div className="flex h-full flex-col items-center justify-center gap-2 bg-[#352A7C] text-center">
                     <img className="w-64" src={publication.img} alt="/" />
                     <div className="font-retroica text-[#ffffff]">{publication.judul}</div>
-                    <div className="font-retroica text-xl text-[#9C8DFC]">{publication.jabatan}</div>
+                    <div className="font-retroica text-xl text-[#9C8DFC]">
+                      {publication.jabatan}
+                    </div>
                     <div className="font-retroica text-xl text-[#9C8DFC]">{publication.author}</div>
-                    <div className="font-retroica text-[#7364D2]">{publication.publication_date}</div>
+                    <div className="font-retroica text-[#7364D2]">
+                      {publication.publication_date}
+                    </div>
                     <button className="pt-4 font-retroica text-[#9C8DFC]">
                       <Link to={publication.address}>Find out more</Link>
                     </button>

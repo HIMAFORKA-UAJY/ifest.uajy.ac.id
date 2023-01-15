@@ -14,7 +14,6 @@ const MUCSection: FC = () => {
     >
       <div className="hidden w-screen flex-col items-center justify-center pb-24 pt-24 lg:flex">
         <div className="flex items-center justify-center">
-          
           <div className="flex flex-col">
             <div className="pl-[1rem] pb-4 font-retroica text-4xl tracking-wide text-white">
               MUC
@@ -48,7 +47,9 @@ const MUCSection: FC = () => {
             </div>
             <div className="w-[32em] p-4 font-louisgeorgecafe text-white">
               <p className="text-justify">
-                <strong>Mobile UI/UX Competition (MUC) 2023 </strong> adalah perlombaan untuk menampilkan interface dari sebuah aplikasi mobile yang diharapkan dapat membantu penggunaan dari aplikasi itu sendiri.
+                <strong>Mobile UI/UX Competition (MUC) 2023 </strong> adalah perlombaan untuk
+                menampilkan interface dari sebuah aplikasi mobile yang diharapkan dapat membantu
+                penggunaan dari aplikasi itu sendiri.
               </p>
             </div>
             <div className="pl-[1rem]">

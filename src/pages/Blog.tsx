@@ -1,32 +1,41 @@
+import { Carousel } from "flowbite-react";
+import parse from "html-react-parser";
+import { FC } from "react";
+import { FaWhatsapp } from "react-icons/fa";
+
 import logo from "../assets/images/logo.png";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
-import { Carousel } from "flowbite-react";
-import { FC } from "react";
-import { FaWhatsapp } from "react-icons/fa";
-import parse from 'html-react-parser'
 
 interface Props {
-  property: {
-    prop: object;
-  };
+  Blogs: {
+    author: string;
+    jabatan: string;
+    judul: string;
+    publication_date: string;
+    konten: string;
+    img: string;
+    address: string;
+  }[];
 }
 
-const Blog: FC<Props> = ({ property }: Props) => {
-  console.log(property)
-  const blog = property.prop
-  
-  const Background = "/images/blog-bg1.png";
-  const content = blog.konten
-  const table = blog.table
+const Blog: FC<Props> = ({ Blogs }: Props) => {
+  const blog = Blogs[0];
   return (
     <Layout>
-      <div className="absolute top-0 -z-10 h-screen w-screen bg-cover bg-center bg-no-repeat" style={{background: '#202b3f'}}>
+      <div
+        className="absolute top-0 -z-10 h-screen w-screen bg-cover bg-center bg-no-repeat"
+        style={{ background: "#202b3f" }}
+      >
         {/* <div className="flex justify-center h-screen w-screen flex-col pt-32 lg:flex-row bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${Background})`}}> */}
-        <div className="flex justify-center h-screen w-screen flex-col pt-32 lg:flex-row bg-cover bg-center bg-no-repeat">
-          
-          <div className="font-retroica text-white text-center" style={{margin: 'auto',fontSize: '3rem', wordWrap: 'break-word'}}>{blog.judul}</div>
-          
+        <div className="flex h-screen w-screen flex-col justify-center bg-cover bg-center bg-no-repeat pt-32 lg:flex-row">
+          <div
+            className="text-center font-retroica text-white"
+            style={{ margin: "auto", fontSize: "3rem", wordWrap: "break-word" }}
+          >
+            {blog.judul}
+          </div>
+
           {/* <div className="flex w-full justify-end pb-10 pr-8 text-right">
             <img className="w-[30rem]" src="/images/blog-bg1.png" alt="" />
           </div> */}
@@ -38,14 +47,14 @@ const Blog: FC<Props> = ({ property }: Props) => {
               <div>
                 <div className="font-retroica lg:text-lg">{blog.jabatan}</div>
                 <div className="font-louisgeorgecafe lg:text-lg">{blog.author}</div>
-                <div className="font-louisgeorgecafe" style={{color: '#c9c9c9'}}>{blog.publication_date}</div>
+                <div className="font-louisgeorgecafe" style={{ color: "#c9c9c9" }}>
+                  {blog.publication_date}
+                </div>
               </div>
             </div>
-            <p className="font-louisgeorgecafe lg:text-lg">
-              {parse(content)}
-            </p>
-            
-         {table && parse(table)}
+            <p className="font-louisgeorgecafe lg:text-lg">{parse(blog.konten)}</p>
+
+            {/* {table && parse(table)} */}
           </div>
         </div>
         <div className="flex w-screen flex-col items-center justify-center gap-2 bg-[#1B1442] pt-12">

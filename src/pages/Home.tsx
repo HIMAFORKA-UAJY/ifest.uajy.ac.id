@@ -7,6 +7,7 @@ import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import I2CSection from "../components/I2CSection";
 import Layout from "../components/Layout";
+import MUCSection from "../components/MUCSection";
 import MediaPartner from "../components/MediaPartner";
 import Publication from "../components/Publication";
 import SemNasSection from "../components/SemNasSection";
@@ -14,10 +15,20 @@ import SemNasSection from "../components/SemNasSection";
 import ShootingStars from "../components/ShootingStars";
 import Sponsor from "../components/Sponsor";
 import WDCSection from "../components/WDCSection";
-import MUCSection from "../components/MUCSection";
 
-const Home: FC = (props) => {
-  
+interface Props {
+  Blog: {
+    author: string;
+    jabatan: string;
+    judul: string;
+    publication_date: string;
+    konten: string;
+    img: string;
+    address: string;
+  }[];
+}
+
+const Home: FC<Props> = ({ Blog }: Props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -36,10 +47,10 @@ const Home: FC = (props) => {
         <I2CSection />
         <WDCSection />
         <DonorDarahSection />
-        <MUCSection></MUCSection>
+        <MUCSection />
         <SemNasSection />
         {/* <HackathonSection /> */}
-        <Publication {...props}/>
+        <Publication Blog={Blog} />
         <FAQ />
         <Sponsor />
         <MediaPartner />
