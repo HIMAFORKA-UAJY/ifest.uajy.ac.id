@@ -55,11 +55,8 @@ const Sponsor: FC = () => {
                     style={{ width: "3rem" }}
                     alt="/"
                   />
-                  <div className="text-center font-louisgeorgecafe text-[#ffffff62]">
+                  <div className="text-center font-louisgeorgecafe text-[#ffffffdd] font-bold">
                     Sponsor Kaisar
-                  </div>
-                  <div className="text-center font-louisgeorgecafe font-bold text-[#fff]">
-                    Platinum
                   </div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">
                     <span className="font-louisgeorgecafe text-sm">Rp</span>6.000.000
@@ -142,10 +139,9 @@ const Sponsor: FC = () => {
                     style={{ width: "3rem" }}
                     alt="/"
                   />
-                  <div className="text-center font-louisgeorgecafe text-[#ffffff62]">
+                  <div className="text-center font-louisgeorgecafe text-[#ffffffdd] font-bold">
                     Sponsor Raja
                   </div>
-                  <div className="text-center font-louisgeorgecafe font-bold text-[#fff]">Gold</div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">
                     <span className="font-louisgeorgecafe text-sm">Rp</span>4.000.000
                   </div>
@@ -223,11 +219,8 @@ const Sponsor: FC = () => {
                     style={{ width: "3rem" }}
                     alt="/"
                   />
-                  <div className="text-center font-louisgeorgecafe text-[#ffffff62]">
+                  <div className="text-center font-louisgeorgecafe text-[#ffffffdd] font-bold">
                     Sponsor Sultan
-                  </div>
-                  <div className="text-center font-louisgeorgecafe font-bold text-[#fff]">
-                    Silver
                   </div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">
                     <span className="font-louisgeorgecafe text-sm">Rp</span>2.500.000
@@ -294,11 +287,8 @@ const Sponsor: FC = () => {
                     style={{ width: "3rem" }}
                     alt="/"
                   />
-                  <div className="text-center font-louisgeorgecafe text-[#ffffff62]">
+                  <div className="text-center font-louisgeorgecafe text-[#ffffffdd] font-bold">
                     Sponsor Bos
-                  </div>
-                  <div className="text-center font-louisgeorgecafe font-bold text-[#fff]">
-                    Bronze
                   </div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">
                     <span className="font-louisgeorgecafe text-sm">Rp</span>1.500.000
