@@ -55,7 +55,7 @@ const Sponsor: FC = () => {
                     style={{ width: "3rem" }}
                     alt="/"
                   />
-                  <div className="text-center font-louisgeorgecafe text-[#ffffffdd] font-bold">
+                  <div className="text-center font-louisgeorgecafe font-bold text-[#ffffffdd]">
                     Sponsor Kaisar
                   </div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">
@@ -139,7 +139,7 @@ const Sponsor: FC = () => {
                     style={{ width: "3rem" }}
                     alt="/"
                   />
-                  <div className="text-center font-louisgeorgecafe text-[#ffffffdd] font-bold">
+                  <div className="text-center font-louisgeorgecafe font-bold text-[#ffffffdd]">
                     Sponsor Raja
                   </div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">
@@ -219,7 +219,7 @@ const Sponsor: FC = () => {
                     style={{ width: "3rem" }}
                     alt="/"
                   />
-                  <div className="text-center font-louisgeorgecafe text-[#ffffffdd] font-bold">
+                  <div className="text-center font-louisgeorgecafe font-bold text-[#ffffffdd]">
                     Sponsor Sultan
                   </div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">
@@ -287,7 +287,7 @@ const Sponsor: FC = () => {
                     style={{ width: "3rem" }}
                     alt="/"
                   />
-                  <div className="text-center font-louisgeorgecafe text-[#ffffffdd] font-bold">
+                  <div className="text-center font-louisgeorgecafe font-bold text-[#ffffffdd]">
                     Sponsor Bos
                   </div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">

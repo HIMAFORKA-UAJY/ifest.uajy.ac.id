@@ -77,12 +77,7 @@ const MUCSection: FC = () => {
         </div>
       </div>
       <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
-        <img
-          className="w-72"
-          src="images/muc.png"
-          style={{ marginBottom: "3rem" }}
-          alt="wdc"
-        />
+        <img className="w-72" src="images/muc.png" style={{ marginBottom: "3rem" }} alt="wdc" />
         <div className="text-center">
           <div className="pb-4 font-retroica text-4xl tracking-wide text-white">MUC</div>
         </div>

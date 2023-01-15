@@ -1,4 +1,3 @@
-import { Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { CSSProperties, FC } from "react";
 import { Grid, Navigation, Pagination } from "swiper";
@@ -44,11 +43,7 @@ const MediaPartner: FC = () => {
               <img src="/images/medpart/eventcampus.png" alt="/" />
             </div>
           </Carousel> */}
-          <Swiper
-            slidesPerView={"auto"}
-            spaceBetween={10}
-            className="mySwiper"
-          >
+          <Swiper slidesPerView="auto" spaceBetween={10} className="mySwiper">
             <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
               <img src="/images/medpart/lombasma2.png" alt="/" />
             </SwiperSlide>

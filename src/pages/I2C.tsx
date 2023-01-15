@@ -572,7 +572,7 @@ const I2C: FC = () => {
                   backgroundSize: "cover",
                 }}
               >
-                <div className="font-retroica text-6xl text-center tracking-widest text-[#87bbeb]">
+                <div className="text-center font-retroica text-6xl tracking-widest text-[#87bbeb]">
                   PRIZE POOL
                 </div>
                 <div className="text-center font-retroica text-3xl text-[#ffba57]">

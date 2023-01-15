@@ -31,20 +31,20 @@ const CP: FC = () => {
               640: {
                 slidesPerView: 1,
                 navigation: {
-                  enabled: false
-                }
+                  enabled: false,
+                },
               },
               768: {
                 slidesPerView: 2,
                 navigation: {
-                  enabled: true
-                }
+                  enabled: true,
+                },
               },
               1024: {
                 slidesPerView: 3,
                 navigation: {
-                  enabled: true
-                }
+                  enabled: true,
+                },
               },
             }}
             grid={{

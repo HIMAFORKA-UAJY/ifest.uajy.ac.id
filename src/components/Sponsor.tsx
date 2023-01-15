@@ -1,4 +1,3 @@
-import { Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FC } from "react";
 import { Link } from "react-router-dom";
@@ -42,11 +41,7 @@ const Sponsor: FC = () => {
               />
             </div>
           </Carousel> */}
-          <Swiper
-            slidesPerView={"auto"}
-            spaceBetween={10}
-            className="mySwiper"
-          >
+          <Swiper slidesPerView="auto" spaceBetween={10} className="mySwiper">
             <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
               <img
                 src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/jagoanh-gold.png"
