@@ -99,14 +99,16 @@ const Sponsor: FC = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <motion.button
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.0, duration: 0.25 }}
-          className="mt-7 rounded-[2.0em] bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-5 py-3 font-retroica text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#886fcb] lg:text-base"
-        >
-          <Link to="/sponsor">Become our Sponsor</Link>
-        </motion.button>
+        <Link to="/sponsor">
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.0, duration: 0.25 }}
+            className="mt-7 rounded-[2.0em] bg-[#ba87fb] bg-gradient-to-br from-[#7fa2fe] px-5 py-3 font-retroica text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#886fcb] lg:text-base"
+          >
+            Become our Sponsor
+          </motion.button>
+        </Link>
       </div>
     </motion.div>
   );
