@@ -20,7 +20,7 @@ const Sponsor: FC = () => {
       className="bg-[#2b2265] pt-20"
     >
       <div className="flex w-screen flex-col items-center justify-center gap-6 pb-24">
-        <div className="font-retroica text-4xl text-white">Sponsors</div>
+        <div className="font-retroica text-4xl text-white">Sponsors IFEST # 10</div>
         <div className="h-64 w-64 lg:hidden">
           <Carousel leftControl=" " rightControl=" " indicators={false}>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">

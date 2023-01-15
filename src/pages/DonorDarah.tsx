@@ -329,10 +329,11 @@ const DonorDarah: FC = () => {
                     <div className="mt-2 text-center font-louisgeorgecafe text-sm text-[#fff] lg:px-12">
                       Daftar melalui{" "}
                       <a
-                        href="https://ifest.uajy.ac.id/dash/donor_darah"
+                        // href="https://ifest.uajy.ac.id/dash/donor_darah"
+                        href="/donor-darah/pendaftaran"
                         style={{ textDecoration: "underline" }}
                       >
-                        Dashboard
+                        Dashboard Donor Darah
                       </a>
                     </div>
                   </div>
@@ -373,8 +374,8 @@ const DonorDarah: FC = () => {
                 </div>
               </div>
             </div>
-            <h1 className="font-retroica text-3xl font-bold text-[#fff]">ATAU</h1>
-            <div className="lg:grid lg:grid-cols-3 lg:gap-4">
+            {/* <h1 className="font-retroica text-3xl font-bold text-[#fff]">ATAU</h1> */}
+            {/* <div className="lg:grid lg:grid-cols-3 lg:gap-4">
               <div className="flex flex-col items-center justify-center p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
@@ -426,7 +427,7 @@ const DonorDarah: FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex flex-col items-center justify-center">

@@ -19,6 +19,7 @@ const App: FC = () => {
         <Route path="/ui-ux" element={<ComingSoon property={{ pageType: "ui-ux" }} />} />
         <Route path="/wdc" element={<ComingSoon property={{ pageType: "wdc" }} />} />
         <Route path="/donor-darah" element={<DonorDarah />} />
+        <Route path="/donor-darah/pendaftaran" element={<ComingSoon property={{ pageType: "donor-darah-pendaftaran" }} />}/>
         <Route path="/seminar" element={<ComingSoon property={{ pageType: "seminar" }} />} />
         <Route
           path="/ifest-store"
