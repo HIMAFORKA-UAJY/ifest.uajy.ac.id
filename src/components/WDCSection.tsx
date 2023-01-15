@@ -57,14 +57,16 @@ const WDCSection: FC = () => {
               </p>
             </div>
             <div className="pl-[1rem]">
-              <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.0, duration: 0.25 }}
-                className="mt-7 rounded-[2.0em] bg-[#4f7f8b] bg-gradient-to-br from-[#52aa59] px-5 py-3 font-retroica text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#59b667] lg:text-base"
-              >
-                <Link to="/wdc">Coming Soon</Link>
-              </motion.button>
+              <Link to="/wdc">
+                <motion.button
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.0, duration: 0.25 }}
+                  className="mt-7 rounded-[2.0em] bg-[#4f7f8b] bg-gradient-to-br from-[#52aa59] px-5 py-3 font-retroica text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#59b667] lg:text-base"
+                >
+                  Coming Soon
+                </motion.button>
+              </Link>
             </div>
           </div>
           <img
@@ -125,14 +127,16 @@ const WDCSection: FC = () => {
           </p>
         </div>
         <div>
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.0, duration: 0.25 }}
-            className="mt-7 rounded-[2.0em] bg-[#6ca0af] bg-gradient-to-br from-[#9dcd6c] px-5 py-3 font-retroica text-sm text-white lg:text-base"
-          >
-            <Link to="/wdc">Coming Soon</Link>
-          </motion.button>
+          <Link to="/wdc">
+            <motion.button
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.0, duration: 0.25 }}
+              className="mt-7 rounded-[2.0em] bg-[#6ca0af] bg-gradient-to-br from-[#9dcd6c] px-5 py-3 font-retroica text-sm text-white lg:text-base"
+            >
+              Coming Soon
+            </motion.button>
+          </Link>
         </div>
       </div>
     </motion.div>
