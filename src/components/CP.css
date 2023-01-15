@@ -10,6 +10,14 @@
 
 @media screen and (min-width: 768px) {
   .swiper-container {
-    width: 1024px;
+    width: 768;
+  }
+}
+
+@media screen and (min-width: 1024px)
+{
+  .swiper-container
+  {
+    width: 1024;
   }
 }
