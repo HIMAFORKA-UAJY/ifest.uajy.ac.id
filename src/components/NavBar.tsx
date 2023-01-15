@@ -25,13 +25,13 @@ const NavBar: FC = () => {
         setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
         break;
 
-      case "/wdc":
+      // case "/wdc":
         // setColor({ bg1: "#311D38", bg2: "#4E4074", fg: "#E7A3FF" });
-        break;
+        // break;
 
-      case "/donor-darah":
+      // case "/donor-darah":
         // setColor({ bg1: "#2d2544", bg2: "#54467d", fg: "#b7a5ec" });
-        break;
+        // break;
 
       case "/sponsor":
         setColor({ bg1: "#152435", bg2: "#182E47", fg: "#479EC6" });
