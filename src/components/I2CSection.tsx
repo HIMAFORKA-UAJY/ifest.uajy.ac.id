@@ -18,7 +18,7 @@ const I2CSection: FC = () => {
         ref={i2cRef}
         className="h-screen w-screen bg-[url('/images/bg-flip-fix.png')] bg-cover bg-center bg-no-repeat"
       >
-        <div className="hidden w-screen flex-col items-center justify-center  lg:flex">
+        <div className="hidden w-screen flex-col items-center justify-center lg:flex">
           <div className="flex items-center justify-center">
             <img className="w-[600px]" src="/images/ill-i2c.png" alt="i2c" />
             <div className="flex flex-col">
@@ -91,7 +91,7 @@ const I2CSection: FC = () => {
             <div className="h-fit rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
               <div
                 className="flex flex-col flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center"
-                style={{ padding: "1rem" }}
+                style={{ padding: ".5rem" }}
               >
                 <FaBook />
                 SMA / Sederajat
@@ -100,7 +100,7 @@ const I2CSection: FC = () => {
             <div className="h-fit rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
               <div
                 className="flex flex-col flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center"
-                style={{ padding: "1rem" }}
+                style={{ padding: ".5rem" }}
               >
                 <FaWallet />
                 Rp. 150k / tim
@@ -109,7 +109,7 @@ const I2CSection: FC = () => {
             <div className="h-fit rounded-full bg-gradient-to-r from-[#ba87fb] to-[#ba87fb] p-1">
               <div
                 className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#2b2265] p-1 px-[0.35rem] text-center"
-                style={{ padding: "1rem" }}
+                style={{ padding: ".5rem" }}
               >
                 <FaMale />3 peserta / tim
               </div>

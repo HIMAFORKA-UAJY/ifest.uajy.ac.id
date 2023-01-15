@@ -44,17 +44,18 @@ const Home: FC<Props> = ({ Blog }: Props) => {
           <ShootingStars />
         </motion.div>
 
-        <I2CSection />
-        <WDCSection />
-        <DonorDarahSection />
-        <MUCSection />
-        <SemNasSection />
-        {/* <HackathonSection /> */}
-        <Publication Blog={Blog} />
-        <FAQ />
-        <Sponsor />
-        <MediaPartner />
-        <CP />
+        <div className="overflow-x-hidden">
+          <I2CSection />
+          <WDCSection />
+          <DonorDarahSection />
+          <MUCSection />
+          <SemNasSection />
+          <Publication Blog={Blog} />
+          <FAQ />
+          <Sponsor />
+          <MediaPartner />
+          <CP />
+        </div>
 
         <motion.div
           initial={{ opacity: 0 }}
