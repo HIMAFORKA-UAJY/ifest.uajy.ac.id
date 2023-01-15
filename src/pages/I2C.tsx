@@ -284,7 +284,7 @@ const I2C: FC = () => {
                           <FaRegWindowClose />{" "}
                         </button>
                       </Typography>
-                      <img src="images/poster-dondar.jpeg" style={{ margin: "auto" }} alt="" />
+                      <img src="images/POSTER_I2C.jpg" className="m-auto lg:mx-40 lg:pr-80" alt="" />
                     </Box>
                   </Modal>
                 </div>
