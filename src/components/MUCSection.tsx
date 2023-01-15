@@ -41,7 +41,10 @@ const MUCSection: FC = () => {
                   <div style={{ "margin-top": `${-0.1}rem` } as CSSProperties}>
                     <FaMale />
                   </div>
-                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}> Max 2 Peserta / tim </p>
+                  <p style={{ "margin-top": `${0.1}rem` } as CSSProperties}>
+                    {" "}
+                    Max 2 Peserta / tim{" "}
+                  </p>
                 </div>
               </div>
             </div>
