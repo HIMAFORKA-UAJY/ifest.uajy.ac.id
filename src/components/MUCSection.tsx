@@ -77,7 +77,7 @@ const MUCSection: FC = () => {
       <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
         <img
           className="w-72"
-          src="images/dondar-section-bg.png"
+          src="images/muc.png"
           style={{ marginBottom: "3rem" }}
           alt="wdc"
         />
