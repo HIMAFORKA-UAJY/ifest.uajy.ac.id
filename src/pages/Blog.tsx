@@ -1,11 +1,11 @@
+import logo from "../assets/images/logo.png";
+import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 import { Carousel } from "flowbite-react";
 import parse from "html-react-parser";
 import { FC } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
-import logo from "../assets/images/logo.png";
-import Footer from "../components/Footer";
-import Layout from "../components/Layout";
 
 interface Props {
   Blogs: {
@@ -16,19 +16,23 @@ interface Props {
     konten: string;
     img: string;
     address: string;
+    table: string;
   }[];
 }
 
 const Blog: FC<Props> = ({ Blogs }: Props) => {
-  const blog = Blogs[0];
+  const blog = Blogs;
+  
+  
+  
   return (
     <Layout>
       <div
-        className="absolute top-0 -z-10 h-screen w-screen bg-cover bg-center bg-no-repeat"
-        style={{ background: "#202b3f" }}
+        className="absolute top-0 -z-10 w-screen bg-cover bg-center bg-no-repeat"
+        style={{ background: "#202b3f", height: '50rem' }}
       >
         {/* <div className="flex justify-center h-screen w-screen flex-col pt-32 lg:flex-row bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${Background})`}}> */}
-        <div className="flex h-screen w-screen flex-col justify-center bg-cover bg-center bg-no-repeat pt-32 lg:flex-row">
+        <div className="flex w-screen flex-col justify-center bg-cover bg-center bg-no-repeat pt-64 lg:flex-row">
           <div
             className="text-center font-retroica text-white"
             style={{ margin: "auto", fontSize: "3rem", wordWrap: "break-word" }}
@@ -40,8 +44,8 @@ const Blog: FC<Props> = ({ Blogs }: Props) => {
             <img className="w-[30rem]" src="/images/blog-bg1.png" alt="" />
           </div> */}
         </div>
-        <div className="relative h-[60rem]">
-          <div className="absolute left-[50%] -top-24 z-10 -ml-[45%] h-fit w-[90%] bg-[#FAFAFA] p-12 drop-shadow-2xl lg:pr-40">
+        <div className="flex justify-center p-8 pb-24" >
+          <div className="z-10 h-fit w-[90%] bg-[#FAFAFA] p-12 drop-shadow-2xl lg:pr-40">
             <div className="mb-14 flex items-center gap-8">
               <img className="float-left w-20" src={logo} alt="ifest-logo" />
               <div>
@@ -54,7 +58,7 @@ const Blog: FC<Props> = ({ Blogs }: Props) => {
             </div>
             <p className="font-louisgeorgecafe lg:text-lg">{parse(blog.konten)}</p>
 
-            {/* {table && parse(table)} */}
+            {blog.table && parse(blog.table)}
           </div>
         </div>
         <div className="flex w-screen flex-col items-center justify-center gap-2 bg-[#1B1442] pt-12">
