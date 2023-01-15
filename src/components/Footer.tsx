@@ -31,7 +31,7 @@ const Footer: FC<Props> = ({ className }) => {
             <Link to="/wdc">Web Design Competition (WDC)</Link>
           </div>
           <div className="font-louisgeorgecafe text-white opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90">
-            <Link to="/ui-ux">UI / UX ..</Link>
+            <Link to="/ui-ux">Mobile UI/UX Competition (MUC)</Link>
           </div>
         </div>
         <div className="flex flex-col gap-2 text-left">

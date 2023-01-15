@@ -119,11 +119,9 @@ const MUCSection: FC = () => {
         <div className="pt-2" />
         <div className="p-4 font-louisgeorgecafe text-white">
           <p className="text-justify">
-            <strong>Donor Darah</strong> ialah kegiatan mengambil darah seseorang yang dilaksanakan
-            secara sukarela dan sadar untuk kemudian disimpan ke bank darah sebagai stok darah yang
-            sewaktu-waktu dapat dipergunakan untuk transfusi darah. Dengan mendonorkan darah bukan
-            hanya bermanfaat bagi kesehatan namun kita juga berkesempatan menjadi manfaat bagi orang
-            lain.
+            <strong>Mobile UI/UX Competition (MUC) 2023 </strong> adalah perlombaan untuk
+            menampilkan interface dari sebuah aplikasi mobile yang diharapkan dapat membantu
+            penggunaan dari aplikasi itu sendiri.
           </p>
         </div>
         <div>
@@ -133,7 +131,7 @@ const MUCSection: FC = () => {
             transition={{ delay: 0.0, duration: 0.25 }}
             className="mt-7 rounded-[2.0em] bg-[#ff7676] bg-gradient-to-br from-[#fd9807] px-5 py-3 font-retroica text-sm text-white lg:text-base"
           >
-            <Link to="/ComingSoon">Coming Soon</Link>
+            <Link to="/ui-ux">Coming Soon</Link>
           </motion.button>
         </div>
       </div>

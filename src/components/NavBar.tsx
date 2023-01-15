@@ -26,11 +26,11 @@ const NavBar: FC = () => {
         break;
 
       case "/wdc":
-        setColor({ bg1: "#311D38", bg2: "#4E4074", fg: "#E7A3FF" });
+        // setColor({ bg1: "#311D38", bg2: "#4E4074", fg: "#E7A3FF" });
         break;
 
       case "/donor-darah":
-        setColor({ bg1: "#2d2544", bg2: "#54467d", fg: "#b7a5ec" });
+        // setColor({ bg1: "#2d2544", bg2: "#54467d", fg: "#b7a5ec" });
         break;
 
       case "/sponsor":
@@ -40,6 +40,7 @@ const NavBar: FC = () => {
       case "/blog/finalis-wdc":
         setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
         break;
+
       case "/blog/welcome":
         setColor({ bg1: "#211A44", bg2: "#3D3474", fg: "#BFB2FF" });
         break;
@@ -118,7 +119,7 @@ const NavBar: FC = () => {
                 >
                   <Menu.Item>
                     {({ active }) => (
-                      <Link className={`${active && "text-[#fff]"}`} to="/ComingSoon">
+                      <Link className={`${active && "text-[#fff]"}`} to="/wdc">
                         WDC
                       </Link>
                     )}
