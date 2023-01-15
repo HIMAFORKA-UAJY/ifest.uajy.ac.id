@@ -292,9 +292,10 @@ const I2C: FC = () => {
                     className="m-auto flex items-center justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
                     style={{ width: "100%" }}
                   >
-                    <Link to="/dashboard">
+                    <a href="https://ifest.uajy.ac.id/dash" target='_blank'>
                       <div className="m-auto text-white opacity-100">DAFTAR</div>
-                    </Link>
+                    </a>
+                    
                   </button>
                 </div>
                 <div className="my-2 rounded-full bg-[#6c6486] p-1 lg:my-0">
