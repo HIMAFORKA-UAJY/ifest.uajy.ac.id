@@ -373,8 +373,8 @@ const DonorDarah: FC = () => {
                 </div>
               </div>
             </div>
-            <h1 className="font-retroica text-3xl font-bold text-[#fff]">ATAU</h1>
-            <div className="lg:grid lg:grid-cols-3 lg:gap-4">
+            {/* <h1 className="font-retroica text-3xl font-bold text-[#fff]">ATAU</h1> */}
+            {/* <div className="lg:grid lg:grid-cols-3 lg:gap-4">
               <div className="flex flex-col items-center justify-center p-20">
                 <div className="items-center justify-center">
                   <div className="flex items-center justify-center">
@@ -426,7 +426,7 @@ const DonorDarah: FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex flex-col items-center justify-center">
