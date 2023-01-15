@@ -10,6 +10,7 @@ import {
   FaMale,
   FaMoneyBillWave,
   FaRegWindowClose,
+  FaTrophy,
   FaWallet,
   FaWhatsapp,
 } from "react-icons/all";
@@ -47,12 +48,12 @@ const I2C: FC = () => {
   const dataSeleksi = [
     {
       title: "16 Januari - 16 Februari 2023",
-      cardTitle: "Pendaftaran, Pengumpulan Berkas, dan Pengumpulan Proposal & Poster",
+      cardTitle: "Pendaftaran",
       cardDetailedText: "Website I2C",
     },
     {
       title: "16 Februari 2023",
-      cardTitle: "Batas Pengumpulan Proposal",
+      cardTitle: "Batas Pengumpulan Proposal | poster",
       cardDetailedText: "Website I2C",
     },
     {
@@ -86,7 +87,7 @@ const I2C: FC = () => {
   ];
   const dataFinal = [
     {
-      title: "11 Maret 2023",
+      title: "10 Maret 2023",
       cardTitle: "Pengumuman Babak Semifinal, Presentasi Pitch Deck, dan Pengumuman Pemenang",
       cardSubtitle: "Pengumuman Babak Semifinal, Presentasi Pitch Deck, dan Pengumuman Pemenang",
       cardDetailedText:
@@ -597,6 +598,9 @@ const I2C: FC = () => {
                         <FaMoneyBillWave /> Rp4.000.000
                       </div>
                       <div className="flex gap-3 font-retroica">
+                        <FaTrophy /> Piala
+                      </div>
+                      <div className="flex gap-3 font-retroica">
                         <FaCertificate /> Sertifikat Nasional
                       </div>
                     </Card>
@@ -616,6 +620,9 @@ const I2C: FC = () => {
                         <FaMoneyBillWave /> Rp3.000.000
                       </div>
                       <div className="flex gap-3 font-retroica">
+                        <FaTrophy /> Piala
+                      </div>
+                      <div className="flex gap-3 font-retroica">
                         <FaCertificate /> Sertifikat Nasional
                       </div>
                     </Card>
@@ -632,6 +639,9 @@ const I2C: FC = () => {
                         <FaMoneyBillWave /> Rp2.000.000
                       </div>
                       <div className="flex gap-3 font-retroica">
+                        <FaTrophy/> Piala
+                      </div>
+                      <div className="flex gap-3 font-retroica">
                         <FaCertificate /> Sertifikat Nasional
                       </div>
                     </Card>
@@ -646,6 +656,9 @@ const I2C: FC = () => {
                       <div className="text-center font-retroica text-2xl">Juara Favorit</div>
                       <div className="flex gap-3 font-retroica">
                         <FaMoneyBillWave /> Rp500.000
+                      </div>
+                      <div className="flex gap-3 font-retroica">
+                        <FaTrophy /> Piala
                       </div>
                       <div className="flex gap-3 font-retroica">
                         <FaCertificate /> Sertifikat Nasional
@@ -671,6 +684,9 @@ const I2C: FC = () => {
                             <FaMoneyBillWave /> Rp4.000.000
                           </div>
                           <div className="flex gap-3 font-retroica">
+                            <FaTrophy /> Piala
+                          </div>
+                          <div className="flex gap-3 font-retroica">
                             <FaCertificate /> Sertifikat Nasional
                           </div>
                         </div>
@@ -685,6 +701,9 @@ const I2C: FC = () => {
                           <div className="text-right font-retroica text-2xl">Juara II</div>
                           <div className="flex gap-3 font-retroica">
                             <FaMoneyBillWave /> Rp3.000.000
+                          </div>
+                          <div className="flex gap-3 font-retroica">
+                            <FaTrophy /> Piala
                           </div>
                           <div className="flex gap-3 font-retroica">
                             <FaCertificate /> Sertifikat Nasional
@@ -717,6 +736,9 @@ const I2C: FC = () => {
                             <FaMoneyBillWave /> Rp2.000.000
                           </div>
                           <div className="flex gap-3 font-retroica">
+                            <FaTrophy /> Piala
+                          </div>
+                          <div className="flex gap-3 font-retroica">
                             <FaCertificate /> Sertifikat Nasional
                           </div>
                         </div>
@@ -731,6 +753,9 @@ const I2C: FC = () => {
                           <div className="text-right font-retroica text-2xl">Juara Favorit</div>
                           <div className="flex gap-3 font-retroica">
                             <FaMoneyBillWave /> Rp500.000
+                          </div>
+                          <div className="flex gap-3 font-retroica">
+                            <FaTrophy /> Piala
                           </div>
                           <div className="flex gap-3 font-retroica">
                             <FaCertificate /> Sertifikat Nasional
