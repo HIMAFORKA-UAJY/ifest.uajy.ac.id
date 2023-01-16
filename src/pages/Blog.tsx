@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import { Carousel } from "flowbite-react";
 import parse from "html-react-parser";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
 
@@ -21,8 +21,13 @@ interface Props {
 }
 
 const Blog: FC<Props> = ({ Blogs }: Props) => {
+
   const blog = Blogs;
   
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <Layout>
       <div
