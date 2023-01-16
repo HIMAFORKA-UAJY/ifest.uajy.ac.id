@@ -23,8 +23,6 @@ interface Props {
 const Blog: FC<Props> = ({ Blogs }: Props) => {
   const blog = Blogs;
   
-  
-  
   return (
     <Layout>
       <div
