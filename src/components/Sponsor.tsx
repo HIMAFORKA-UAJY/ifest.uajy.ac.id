@@ -19,28 +19,9 @@ const Sponsor: FC = () => {
       className="bg-[#2b2265] pt-20"
     >
       <div className="flex w-screen flex-col items-center justify-center gap-6 pb-24">
-        <div className="text-center font-retroica text-4xl text-white">Sponsors IFEST # 10</div>
+        <div className="text-center font-retroica text-4xl text-white">Our Sponsors</div>
+        <div className="text-center font-retroica text-2xl text-white">Sponsor IFEST # 10</div>
         <div className="h-64 w-96 lg:hidden">
-          {/* <Carousel slideInterval={4000} leftControl=" " rightControl=" " indicators={false}>
-            <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/jagoanh-gold.png"
-                alt="jagoan-hosting"
-              />
-            </div>
-            <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/ajaib-silver.jpg"
-                alt="ajaib-silver"
-              />
-            </div>
-            <div className="flex h-64 items-center bg-[#352a7c] p-2">
-              <img
-                src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/devcode-color-silver.png"
-                alt="dev-code"
-              />
-            </div>
-          </Carousel> */}
           <Swiper slidesPerView="auto" spaceBetween={10} className="mySwiper">
             <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
               <img
@@ -85,13 +66,13 @@ const Sponsor: FC = () => {
                 alt="jagoan-hosting"
               />
             </SwiperSlide>
-            <SwiperSlide className="flex h-[19rem] w-[19rem] items-center bg-[#352a7c] p-2">
+            <SwiperSlide className="flex h-[15rem] w-[15rem] items-center bg-[#352a7c] p-2">
               <img
                 src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/ajaib-silver.jpg"
                 alt="ajaib-silver"
               />
             </SwiperSlide>
-            <SwiperSlide className="flex h-[19rem] w-[19rem] items-center bg-[#352a7c] p-2">
+            <SwiperSlide className="flex h-[11rem] w-[11rem] items-center bg-[#352a7c] p-2">
               <img
                 src="https://ifest.uajy.ac.id/assets/images/sponsor-medpart/devcode-color-silver.png"
                 alt="dev-code"
