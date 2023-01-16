@@ -795,11 +795,9 @@ const I2C: FC = () => {
                       Ayo buktikan bakat dan kreativitasmu! Jangan cepat berpuas diri!
                     </div>
                     <div className="w-fit rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
-                      <button className="flex items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent">
-                        <Link to="/dashboard">
+                      <a href="https://ifest.uajy.ac.id/dash" className="flex items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent">
                           <div className="font-retroica text-white opacity-100">DAFTAR</div>
-                        </Link>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
