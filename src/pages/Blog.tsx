@@ -26,7 +26,6 @@ const Blog: FC<Props> = ({ Blogs }: Props) => {
     window.scrollTo(0, 0);
   }, []);
 
-  
   return (
     <Layout>
       <div
