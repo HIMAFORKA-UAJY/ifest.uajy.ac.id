@@ -294,13 +294,13 @@ const I2C: FC = () => {
                 </div>
                 <div className="rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
                   <a href="https://ifest.uajy.ac.id/dash" target="_blank" rel="noreferrer">
-                  <button
-                    className="m-auto flex items-center justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
-                    style={{ width: "100%" }}
-                  >
+                    <button
+                      className="m-auto flex items-center justify-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent lg:flex lg:items-center"
+                      style={{ width: "100%" }}
+                    >
                       <div className="m-auto text-white opacity-100">DAFTAR</div>
-                  </button>
-                    </a>
+                    </button>
+                  </a>
                 </div>
                 <div className="my-2 rounded-full bg-[#6c6486] p-1 lg:my-0">
                   {/* <React.Fragment>
