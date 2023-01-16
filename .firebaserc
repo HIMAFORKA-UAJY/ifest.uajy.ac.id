@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "himaforka-uajy-1994"
+  },
+  "targets": {
+    "himaforka-uajy-1994": {
+      "hosting": {
+        "ifest11": [
+          "ifest11"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
