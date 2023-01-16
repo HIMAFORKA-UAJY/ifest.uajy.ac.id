@@ -65,7 +65,7 @@ const Blog: FC<Props> = ({ Blogs }: Props) => {
             {blog.table && parse(blog.table)}
           </div>
         </div>
-        <div className="flex w-full flex-col items-center justify-center gap-2 bg-[#1B1442] overflow-x-hidden">
+        <div className="flex w-full flex-col items-center justify-center gap-2 overflow-x-hidden bg-[#1B1442]">
           <CP />
         </div>
         <Footer className="bg-[#1B1442] p-4" />
