@@ -56,7 +56,7 @@ const Sponsor: FC = () => {
                     alt="/"
                   />
                   <div className="text-center font-louisgeorgecafe font-bold text-[#ffffffdd]">
-                    Sponsor Kaisar
+                    Sponsor Platinum
                   </div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">
                     <span className="font-louisgeorgecafe text-sm">Rp</span>6.000.000
@@ -118,7 +118,7 @@ const Sponsor: FC = () => {
                   <div className="rounded-md bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] p-1">
                     <button className="flex items-center gap-1 rounded-md bg-[#0A1828] px-4 py-1 font-retroica text-white transition hover:bg-transparent">
                       <a
-                        href="https://wa.me/628993694969?text=Halo%20Admin%20Sponsor%20IFest%2311%2C%20kami%20dari%20%28Nama%20perusahaan%20%2F%20organisasi%29%20ingin%20menjadi%20sponsor%20pada%20acara%20IFest%2311.%20Paket%20sponsor%20yang%20kami%20pilih%20adalah%20%22Paket%20Kaisar%22.%0ABerikut%20kami%20sertakan%20MoU%20sebagai%20bentuk%20kerjasama%20kami%20dengan%20pihak%20panitia%20IFest%2311%2C%20atas%20kerjasamanya%20kami%20ucapkan%20terima%20kasih."
+                        href="https://wa.me/628993694969?text=Halo%20Admin%20Sponsor%20IFest%2311%2C%20kami%20dari%20%28Nama%20perusahaan%20%2F%20organisasi%29%20ingin%20menjadi%20sponsor%20pada%20acara%20IFest%2311.%20Paket%20sponsor%20yang%20kami%20pilih%20adalah%20%22Paket%20Platinum%22.%0ABerikut%20kami%20sertakan%20MoU%20sebagai%20bentuk%20kerjasama%20kami%20dengan%20pihak%20panitia%20IFest%2311%2C%20atas%20kerjasamanya%20kami%20ucapkan%20terima%20kasih."
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -140,7 +140,7 @@ const Sponsor: FC = () => {
                     alt="/"
                   />
                   <div className="text-center font-louisgeorgecafe font-bold text-[#ffffffdd]">
-                    Sponsor Raja
+                    Sponsor Gold
                   </div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">
                     <span className="font-louisgeorgecafe text-sm">Rp</span>4.000.000
@@ -198,7 +198,7 @@ const Sponsor: FC = () => {
                   <div className="rounded-md bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] p-1">
                     <button className="flex items-center gap-1 rounded-md bg-[#0A1828] px-4 py-1 font-retroica text-white transition hover:bg-transparent">
                       <a
-                        href="https://wa.me/628993694969?text=Halo%20Admin%20Sponsor%20IFest%2311%2C%20kami%20dari%20%28Nama%20perusahaan%20%2F%20organisasi%29%20ingin%20menjadi%20sponsor%20pada%20acara%20IFest%2311.%20Paket%20sponsor%20yang%20kami%20pilih%20adalah%20%22Paket%20Raja%22.%0ABerikut%20kami%20sertakan%20MoU%20sebagai%20bentuk%20kerjasama%20kami%20dengan%20pihak%20panitia%20IFest%2311%2C%20atas%20kerjasamanya%20kami%20ucapkan%20terima%20kasih."
+                        href="https://wa.me/628993694969?text=Halo%20Admin%20Sponsor%20IFest%2311%2C%20kami%20dari%20%28Nama%20perusahaan%20%2F%20organisasi%29%20ingin%20menjadi%20sponsor%20pada%20acara%20IFest%2311.%20Paket%20sponsor%20yang%20kami%20pilih%20adalah%20%22Paket%20Gold%22.%0ABerikut%20kami%20sertakan%20MoU%20sebagai%20bentuk%20kerjasama%20kami%20dengan%20pihak%20panitia%20IFest%2311%2C%20atas%20kerjasamanya%20kami%20ucapkan%20terima%20kasih."
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -220,7 +220,7 @@ const Sponsor: FC = () => {
                     alt="/"
                   />
                   <div className="text-center font-louisgeorgecafe font-bold text-[#ffffffdd]">
-                    Sponsor Sultan
+                    Sponsor Silver
                   </div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">
                     <span className="font-louisgeorgecafe text-sm">Rp</span>2.500.000
@@ -266,7 +266,7 @@ const Sponsor: FC = () => {
                   <div className="rounded-md bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] p-1">
                     <button className="flex items-center gap-1 rounded-md bg-[#0A1828] px-4 py-1 font-retroica text-white transition hover:bg-transparent">
                       <a
-                        href="https://wa.me/628993694969?text=Halo%20Admin%20Sponsor%20IFest%2311%2C%20kami%20dari%20%28Nama%20perusahaan%20%2F%20organisasi%29%20ingin%20menjadi%20sponsor%20pada%20acara%20IFest%2311.%20Paket%20sponsor%20yang%20kami%20pilih%20adalah%20%22Paket%20Sultan%22.%0ABerikut%20kami%20sertakan%20MoU%20sebagai%20bentuk%20kerjasama%20kami%20dengan%20pihak%20panitia%20IFest%2311%2C%20atas%20kerjasamanya%20kami%20ucapkan%20terima%20kasih."
+                        href="https://wa.me/628993694969?text=Halo%20Admin%20Sponsor%20IFest%2311%2C%20kami%20dari%20%28Nama%20perusahaan%20%2F%20organisasi%29%20ingin%20menjadi%20sponsor%20pada%20acara%20IFest%2311.%20Paket%20sponsor%20yang%20kami%20pilih%20adalah%20%22Paket%20Silver%22.%0ABerikut%20kami%20sertakan%20MoU%20sebagai%20bentuk%20kerjasama%20kami%20dengan%20pihak%20panitia%20IFest%2311%2C%20atas%20kerjasamanya%20kami%20ucapkan%20terima%20kasih."
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -288,7 +288,7 @@ const Sponsor: FC = () => {
                     alt="/"
                   />
                   <div className="text-center font-louisgeorgecafe font-bold text-[#ffffffdd]">
-                    Sponsor Bos
+                    Sponsor Bronze
                   </div>
                   <div className="font-retroica text-2xl text-[#ff69b4]">
                     <span className="font-louisgeorgecafe text-sm">Rp</span>1.500.000
@@ -334,7 +334,7 @@ const Sponsor: FC = () => {
                   <div className="rounded-md bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] p-1">
                     <button className="flex items-center gap-1 rounded-md bg-[#0A1828] px-4 py-1 font-retroica text-white transition hover:bg-transparent">
                       <a
-                        href="https://wa.me/628993694969?text=Halo%20Admin%20Sponsor%20IFest%2311%2C%20kami%20dari%20%28Nama%20perusahaan%20%2F%20organisasi%29%20ingin%20menjadi%20sponsor%20pada%20acara%20IFest%2311.%20Paket%20sponsor%20yang%20kami%20pilih%20adalah%20%22Paket%20Bos%22.%0ABerikut%20kami%20sertakan%20MoU%20sebagai%20bentuk%20kerjasama%20kami%20dengan%20pihak%20panitia%20IFest%2311%2C%20atas%20kerjasamanya%20kami%20ucapkan%20terima%20kasih."
+                        href="https://wa.me/628993694969?text=Halo%20Admin%20Sponsor%20IFest%2311%2C%20kami%20dari%20%28Nama%20perusahaan%20%2F%20organisasi%29%20ingin%20menjadi%20sponsor%20pada%20acara%20IFest%2311.%20Paket%20sponsor%20yang%20kami%20pilih%20adalah%20%22Paket%20Bronze%22.%0ABerikut%20kami%20sertakan%20MoU%20sebagai%20bentuk%20kerjasama%20kami%20dengan%20pihak%20panitia%20IFest%2311%2C%20atas%20kerjasamanya%20kami%20ucapkan%20terima%20kasih."
                         target="_blank"
                         rel="noreferrer"
                       >
