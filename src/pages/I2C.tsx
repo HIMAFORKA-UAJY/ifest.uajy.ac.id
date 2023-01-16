@@ -14,7 +14,7 @@ import {
   FaWallet,
   FaWhatsapp,
 } from "react-icons/all";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
 
 import Footer from "../components/Footer";
@@ -309,7 +309,7 @@ const I2C: FC = () => {
                                       </button>
                                       <Modal
                                           show={open}
-                                          onClose={handleClose}       
+                                          onClose={handleClose}
                                       >
                                           <Modal.Header>
                                               Aturan Innovative Informatics Contest
@@ -795,8 +795,11 @@ const I2C: FC = () => {
                       Ayo buktikan bakat dan kreativitasmu! Jangan cepat berpuas diri!
                     </div>
                     <div className="w-fit rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
-                      <a href="https://ifest.uajy.ac.id/dash" className="flex items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent">
-                          <div className="font-retroica text-white opacity-100">DAFTAR</div>
+                      <a
+                        href="https://ifest.uajy.ac.id/dash"
+                        className="flex items-center gap-1 rounded-full bg-[#332550] p-2 transition hover:bg-transparent"
+                      >
+                        <div className="font-retroica text-white opacity-100">DAFTAR</div>
                       </a>
                     </div>
                   </div>
