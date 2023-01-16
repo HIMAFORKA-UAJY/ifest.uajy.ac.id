@@ -56,14 +56,16 @@ const MUCSection: FC = () => {
               </p>
             </div>
             <div className="pl-[1rem]">
-              <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.0, duration: 0.25 }}
-                className="mt-7 rounded-[2.0em] bg-[#ff7676] bg-gradient-to-br from-[#fd9807] px-5 py-3 font-retroica text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#fd9807] lg:text-base"
-              >
-                <Link to="/ui-ux">Coming Soon</Link>
-              </motion.button>
+              <Link to="/ui-ux">
+                <motion.button
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.0, duration: 0.25 }}
+                  className="mt-7 rounded-[2.0em] bg-[#ff7676] bg-gradient-to-br from-[#fd9807] px-5 py-3 font-retroica text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#fd9807] lg:text-base"
+                >
+                  Coming Soon
+                </motion.button>
+              </Link>
             </div>
           </div>
           <img
@@ -75,12 +77,7 @@ const MUCSection: FC = () => {
         </div>
       </div>
       <div className="flex h-screen w-screen flex-col items-center justify-center px-4 lg:hidden">
-        <img
-          className="w-72"
-          src="images/muc.png"
-          style={{ marginBottom: "3rem" }}
-          alt="wdc"
-        />
+        <img className="w-72" src="images/muc.png" style={{ marginBottom: "3rem" }} alt="wdc" />
         <div className="text-center">
           <div className="pb-4 font-retroica text-4xl tracking-wide text-white">MUC</div>
         </div>
@@ -128,14 +125,16 @@ const MUCSection: FC = () => {
           </p>
         </div>
         <div>
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.0, duration: 0.25 }}
-            className="mt-7 rounded-[2.0em] bg-[#ff7676] bg-gradient-to-br from-[#fd9807] px-5 py-3 font-retroica text-sm text-white lg:text-base"
-          >
-            <Link to="/ui-ux">Coming Soon</Link>
-          </motion.button>
+          <Link to="/ui-ux">
+            <motion.button
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.0, duration: 0.25 }}
+              className="mt-7 rounded-[2.0em] bg-[#ff7676] bg-gradient-to-br from-[#fd9807] px-5 py-3 font-retroica text-sm text-white lg:text-base"
+            >
+              Coming Soon
+            </motion.button>
+          </Link>
         </div>
       </div>
     </motion.div>

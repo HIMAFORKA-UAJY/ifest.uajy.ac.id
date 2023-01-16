@@ -299,21 +299,21 @@ const NavBar: FC = () => {
               <div className="flex gap-2">
                 <motion.button
                   whileTap={{ scale: 0.9 }}
-                  className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
+                  className="cursor-default rounded-full border-4 px-4 pt-[0.2rem] font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/i2c">I2C</Link>
                 </motion.button>
                 <motion.button
                   whileTap={{ scale: 0.9 }}
-                  className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
+                  className="cursor-default rounded-full border-4 px-4 pt-[0.2rem] font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/ComingSoon">WDC</Link>
                 </motion.button>
                 <motion.button
                   whileTap={{ scale: 0.9 }}
-                  className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
+                  className="pt-[0.2rem]cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/ui-ux">MUC</Link>
@@ -330,14 +330,14 @@ const NavBar: FC = () => {
               <div className="flex gap-2">
                 <motion.button
                   whileTap={{ scale: 0.9 }}
-                  className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
+                  className="cursor-default rounded-full border-4 px-4 pt-[0.2rem] font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/donor-darah">Donor Darah</Link>
                 </motion.button>
                 <motion.button
                   whileTap={{ scale: 0.9 }}
-                  className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
+                  className="cursor-default rounded-full border-4 px-4 pt-[0.2rem] font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/seminar">Seminar Nasional</Link>
@@ -354,7 +354,7 @@ const NavBar: FC = () => {
               <div className="flex gap-2">
                 <motion.button
                   whileTap={{ scale: 0.9 }}
-                  className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
+                  className="cursor-default rounded-full border-4 px-4 pt-[0.2rem] font-retroica text-xl tracking-wide"
                   style={{ borderColor: color.bg2, color: color.fg }}
                 >
                   <Link to="/ifest-store">IFEST Store</Link>
@@ -370,7 +370,7 @@ const NavBar: FC = () => {
               </div>
               <motion.button
                 whileTap={{ scale: 0.9 }}
-                className="py- cursor-default rounded-full border-4 px-4 font-retroica text-xl tracking-wide"
+                className="cursor-default rounded-full border-4 px-4 pt-[0.2rem] font-retroica text-xl tracking-wide"
                 style={{ borderColor: color.bg2, color: color.fg }}
               >
                 <Link to="/sponsor">Sponsor</Link>
@@ -385,7 +385,7 @@ const NavBar: FC = () => {
               </div>
               <motion.button
                 whileTap={{ scale: 0.9 }}
-                className="inline-block w-full cursor-default rounded-[2.0em] px-4 py-2 font-retroica text-xl tracking-wide"
+                className="pt-[0.2rem]2 inline-block w-full cursor-default rounded-[2.0em] px-4 pt-[0.2rem] font-retroica text-xl tracking-wide"
                 style={{ backgroundColor: color.bg2, color: color.fg }}
               >
                 <a href="/dash" target="_blank" rel="noopener noreferrer">

@@ -1,13 +1,13 @@
+import { AnimatePresence } from "framer-motion";
+import { FC } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+
 import Blog from "./pages/Blog";
 import ComingSoon from "./pages/ComingSoon";
 import Error404 from "./pages/Error404";
 import Home from "./pages/Home";
 import I2C from "./pages/I2C";
 import Sponsor from "./pages/Sponsor";
-import { AnimatePresence } from "framer-motion";
-import { FC } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
-
 
 const BlogWelcome = [
   {
@@ -38,7 +38,7 @@ const BlogWelcome = [
   //     Halo semuanya 👋👋<br>
   //     Perkenalkan saya Joshua Puniwan Yahya, tahun ini saya dipercaya oleh semesta (Ciailah semesta) untuk menjadi Ketua I-Fest 11.<br><br>
 
-  //     Disini saya ingin mengucapkan Terima kasih kepada Tuhan Yang Maha Esa atas berkat rahmatNya I-Fest ini sudah bisa menginjak ke I-Fest 11. Semoga pada I-Fest tahun ini dapat menjadi festival yang benar-benar bisa menaungi serta menjadi ajang untuk unjuk diri mahasiwa internal UAJY maupun luar UAJY. Dengan dihadirkannya berbagai lomba dan acara-acara yang ada, saya harap semuanya dapat berjalan lancar dan tentunya dapat bermanfaat juga bagi nusa dan bangsa. 
+  //     Disini saya ingin mengucapkan Terima kasih kepada Tuhan Yang Maha Esa atas berkat rahmatNya I-Fest ini sudah bisa menginjak ke I-Fest 11. Semoga pada I-Fest tahun ini dapat menjadi festival yang benar-benar bisa menaungi serta menjadi ajang untuk unjuk diri mahasiwa internal UAJY maupun luar UAJY. Dengan dihadirkannya berbagai lomba dan acara-acara yang ada, saya harap semuanya dapat berjalan lancar dan tentunya dapat bermanfaat juga bagi nusa dan bangsa.
   //     <br><br>Mungkin itu saja dari saya, dan jangan lupa ya teman-teman untuk pantau terus semua medsos I-Fest dan website ini. Nantikan semua keseruan I-Fest 11 ini yaa
   //     <br><br>
   //     <b>IFEST #11 !!! HIGHER STEP, HIGHER PURPOSE WITH INFORMATICS</b>
@@ -106,7 +106,8 @@ const App: FC = () => {
         <Route
           path="/blog/finalis-wdc"
           // element={<ComingSoon property={{ pageType: "blog-finalis-wdc" }} />}
-          element={<Blog Blogs={BlogWelcome[1]} />}/>
+          element={<Blog Blogs={BlogWelcome[1]} />}
+        />
         <Route path="/blog/welcome" element={<Blog Blogs={BlogWelcome[0]} />} />
 
         <Route path="*" element={<ComingSoon property={{ pageType: "default" }} />} />

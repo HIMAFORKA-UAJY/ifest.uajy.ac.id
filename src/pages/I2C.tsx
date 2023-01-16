@@ -284,7 +284,11 @@ const I2C: FC = () => {
                           <FaRegWindowClose />{" "}
                         </button>
                       </Typography>
-                      <img src="images/poster-dondar.jpeg" style={{ margin: "auto" }} alt="" />
+                      <img
+                        src="images/POSTER_I2C.jpg"
+                        className="m-auto lg:mx-40 lg:pr-80"
+                        alt=""
+                      />
                     </Box>
                   </Modal>
                 </div>
@@ -572,7 +576,7 @@ const I2C: FC = () => {
                   backgroundSize: "cover",
                 }}
               >
-                <div className="font-retroica text-6xl tracking-widest text-[#87bbeb]">
+                <div className="text-center font-retroica text-6xl tracking-widest text-[#87bbeb]">
                   PRIZE POOL
                 </div>
                 <div className="text-center font-retroica text-3xl text-[#ffba57]">

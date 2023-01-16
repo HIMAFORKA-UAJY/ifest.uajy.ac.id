@@ -1,4 +1,3 @@
-import { Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
 import { CSSProperties, FC } from "react";
 import { Grid, Navigation, Pagination } from "swiper";
@@ -20,8 +19,8 @@ const MediaPartner: FC = () => {
     >
       <div className="flex w-screen flex-col items-center justify-center gap-6">
         <div className="font-retroica text-4xl text-white">Media Partners</div>
-        <div className="h-64 w-64 lg:hidden">
-          <Carousel leftControl=" " rightControl=" " indicators={false}>
+        <div className="h-64 w-96 lg:hidden">
+          {/* <Carousel leftControl=" " rightControl=" " indicators={false}>
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
               <img src="/images/medpart/lombasma2.png" alt="/" />
             </div>
@@ -43,7 +42,34 @@ const MediaPartner: FC = () => {
             <div className="flex h-64 items-center bg-[#352a7c] p-2">
               <img src="/images/medpart/eventcampus.png" alt="/" />
             </div>
-          </Carousel>
+          </Carousel> */}
+          <Swiper slidesPerView="auto" spaceBetween={10} className="mySwiper">
+            <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
+              <img src="/images/medpart/lombasma2.png" alt="/" />
+            </SwiperSlide>
+            <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
+              <img src="/images/medpart/Edaranevent.png" alt="/" />
+            </SwiperSlide>
+            <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
+              <img src="/images/medpart/media event.png" alt="/" />
+            </SwiperSlide>
+            <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
+              <img
+                src="/images/medpart/infolomba.indonesia.jfif"
+                alt="/"
+                className="m-auto h-[10rem]"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
+              <img src="/images/medpart/eventcampus.co.png" alt="/" className="m-auto h-[10rem]" />
+            </SwiperSlide>
+            <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
+              <img src="/images/medpart/seputar.infoid.jpg" alt="/" />
+            </SwiperSlide>
+            <SwiperSlide className="flex h-64 w-64 items-center bg-[#352a7c] p-2">
+              <img src="/images/medpart/eventcampus.png" alt="/" />
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div className="hidden lg:flex lg:h-[30rem] lg:w-[60rem]">
           <Swiper
