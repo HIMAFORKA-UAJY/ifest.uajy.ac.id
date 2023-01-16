@@ -1,5 +1,5 @@
 import parse from "html-react-parser";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 
 import logo from "../assets/images/logo.png";
 import CP from "../components/CP";
@@ -21,6 +21,12 @@ interface Props {
 
 const Blog: FC<Props> = ({ Blogs }: Props) => {
   const blog = Blogs;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   return (
     <Layout>
       <div
