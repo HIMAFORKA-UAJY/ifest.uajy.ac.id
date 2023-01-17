@@ -1,0 +1,149 @@
+[
+  {
+    "name": "I2C",
+    "data": [
+      {
+        "name": "Ariel",
+        "whatsapp": {
+          "phone": "+62 822-5975-1239",
+          "url": "https://wa.me/6282259751239"
+        },
+        "line": "lalariel"
+      },
+      {
+        "name": "Lala",
+        "whatsapp": {
+          "phone": "+62 822-2555-3400",
+          "url": "https://wa.me/6282225553400"
+        },
+        "line": "wibowolala31"
+      }
+    ]
+  },
+  {
+    "name": "WDC",
+    "data": [
+      {
+        "name": "Pasha",
+        "whatsapp": {
+          "phone": "+62 821-5117-2630",
+          "url": "https://wa.me/6282151172630"
+        },
+        "line": "thisispasha"
+      },
+      {
+        "name": "Ayas",
+        "whatsapp": {
+          "phone": "+62 812-3470-303",
+          "url": "https://wa.me/628123470303"
+        },
+        "line": "ayas.23"
+      }
+    ]
+  },
+  {
+    "name": "MUC",
+    "data": [
+      {
+        "name": "Tedja",
+        "whatsapp": {
+          "phone": "+62 822-2307-2235",
+          "url": "https://wa.me/6282223072235"
+        },
+        "line": "nick_tedja"
+      },
+      {
+        "name": "Joshua",
+        "whatsapp": {
+          "phone": "+62 895-3695-59006",
+          "url": "https://wa.me/62895369559006"
+        },
+        "line": "joshuapuniwan"
+      }
+    ]
+  },
+  {
+    "name": "Donor Darah",
+    "data": [
+      {
+        "name": "Derrel",
+        "whatsapp": {
+          "phone": "+62 857-1408-0699",
+          "url": "https://wa.me/6285714080699"
+        },
+        "line": "angelinaderrel"
+      },
+      {
+        "name": "Deta",
+        "whatsapp": {
+          "phone": "+62 823-3402-6619",
+          "url": "https://wa.me/6282334026619"
+        },
+        "line": "sa2st2ra"
+      }
+    ]
+  },
+  {
+    "name": "Seminar Nasional",
+    "data": [
+      {
+        "name": "Radit",
+        "whatsapp": {
+          "phone": "+62 877-3139-8107",
+          "url": "https://wa.me/6287731398107"
+        },
+        "line": "bagasrraditya"
+      },
+      {
+        "name": "Tessa",
+        "whatsapp": {
+          "phone": "+62 882-1609-9529",
+          "url": "https://wa.me/6288216099529"
+        },
+        "line": "thessangelina"
+      }
+    ]
+  },
+  {
+    "name": "Sponsorship",
+    "data": [
+      {
+        "name": "Matthew",
+        "whatsapp": {
+          "phone": "+62 899-3694-969",
+          "url": "https://wa.me/628993694969"
+        },
+        "line": "metiu321"
+      },
+      {
+        "name": "Axel",
+        "whatsapp": {
+          "phone": "+62 816-4258-899",
+          "url": "https://wa.me/628164258899"
+        },
+        "line": "axel.ckd"
+      }
+    ]
+  },
+  {
+    "name": "IFest Store",
+    "data": [
+      {
+        "name": "Jeany",
+        "whatsapp": {
+          "phone": "+62 821-5177-9891",
+          "url": "https://wa.me/6282151779891"
+        },
+        "line": "jeanflo"
+      },
+      {
+        "name": "Dewi",
+        "whatsapp": {
+          "phone": "+62 856-0011-9070",
+          "url": "https://wa.me/6285600119070"
+        },
+        "line": "vriyasdewi"
+      }
+    ]
+  }
+]

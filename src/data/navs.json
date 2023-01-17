@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Kompetisi",
+    "data": [
+      {
+        "name": "I2C",
+        "link": "/kompetisi/i2c"
+      },
+      {
+        "name": "WDC",
+        "link": "/kompetisi/wdc"
+      },
+      {
+        "name": "MUC",
+        "link": "/kompetisi/muc"
+      }
+    ]
+  },
+  {
+    "name": "Acara",
+    "data": [
+      {
+        "name": "Donor Darah",
+        "link": "/acara/donor-darah"
+      },
+      {
+        "name": "Seminar Nasional",
+        "link": "/acara/seminar-nasional"
+      }
+    ]
+  },
+  {
+    "name": "Bisnis",
+    "data": [
+      {
+        "name": "Sponsor",
+        "link": "/bisnis/sponsor"
+      },
+      {
+        "name": "IFest Store",
+        "link": "/bisnis/ifest-store"
+      }
+    ]
+  },
+  {
+    "name": "Akses",
+    "data": [
+      {
+        "name": "Dashboard",
+        "link": "/dash"
+      }
+    ]
+  }
+]

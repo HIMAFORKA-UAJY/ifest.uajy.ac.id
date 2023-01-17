@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Kompetisi",
+    "data": [
+      {
+        "name": "Innovative Informatics Contest (I2C)",
+        "link": "/kompetisi/i2c"
+      },
+      {
+        "name": "Web Design Competition (WDC)",
+        "link": "/kompetisi/wdc"
+      },
+      {
+        "name": "Mobile UI/UX Competition (MUC)",
+        "link": "/kompetisi/muc"
+      }
+    ]
+  },
+  {
+    "name": "Acara",
+    "data": [
+      {
+        "name": "Donor Darah",
+        "link": "/acara/donor-darah"
+      },
+      {
+        "name": "Seminar Nasional",
+        "link": "/acara/seminar-nasional"
+      }
+    ]
+  },
+  {
+    "name": "Bisnis",
+    "data": [
+      {
+        "name": "Sponsor",
+        "link": "/bisnis/sponsor"
+      },
+      {
+        "name": "IFest Store",
+        "link": "/bisnis/ifest-store"
+      }
+    ]
+  },
+  {
+    "name": "Akses",
+    "data": [
+      {
+        "name": "Daftar",
+        "link": "/dash/register"
+      },
+      {
+        "name": "Masuk",
+        "link": "/dash/masuk"
+      }
+    ]
+  },
+  {
+    "name": "Sosial Media",
+    "data": [
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/ifest_uajy"
+      },
+      {
+        "name": "LINE",
+        "link": "https://line.me/ti/p/~@ykb1847q"
+      },
+      {
+        "name": "Email",
+        "link": "mailto:ifest@uajy.ac.id"
+      }
+    ]
+  }
+]

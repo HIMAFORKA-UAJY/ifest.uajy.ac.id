@@ -1,0 +1,26 @@
+{
+  "i2c": {
+    "id": 1,
+    "abbreviation": "I2C",
+    "name": "Innovative Informatics Contest",
+    "img": "/images/kompetisi/ill-i2c.png",
+    "description": "adalah sebuah kompetisi yang menguji kemampuan peserta dalam menyusun ide untuk memecahkan berbagai permasalahan yang ada di dunia dengan memberikan solusi melalui pendekatan Teknologi Informasi.",
+    "requirements": ["SMA / Sederajat", "Rp. 150k / tim", "3 peserta / tim"]
+  },
+  "wdc": {
+    "id": 2,
+    "abbreviation": "WDC",
+    "name": "Web Design Competition",
+    "img": "/images/kompetisi/ill-wdc.png",
+    "description": "adalah kompetisi merancang desain visual yang ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema \"Embrace the Future of Local Economy with Technology\"",
+    "requirements": ["SMA / Sederajat", "Rp. 50k / tim", "2 peserta / tim"]
+  },
+  "muc": {
+    "id": 3,
+    "abbreviation": "MUC",
+    "name": "Mobile UI/UX Competition",
+    "img": "/images/kompetisi/ill-muc.png",
+    "description": "adalah perlombaan untuk menampilkan interface dari sebuah aplikasi mobile yang diharapkan dapat membantu penggunaan dari aplikasi itu sendiri.",
+    "requirements": ["D3 / D4 / S1", "Gratis", "Max. 2 peserta / tim"]
+  }
+}
