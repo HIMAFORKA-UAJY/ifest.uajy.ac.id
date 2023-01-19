@@ -1,11 +1,9 @@
 import mediapartners from "@/data/media-partners.json";
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { Autoplay, EffectCoverflow, Grid, Navigation, Pagination } from "swiper";
+import { Autoplay, Grid } from "swiper";
 import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// ! Fix the swiper issue later.
 
 const MediaPartner: FC = () => {
   return (
@@ -20,27 +18,27 @@ const MediaPartner: FC = () => {
         <div className="text-center font-retroica text-4xl tracking-[0.15em] text-white">
           Media Partners
         </div>
-        <div className="w-3/4 py-4 lg:w-1/2">
+        <div className="w-3/4 py-4 lg:w-10/12 2xl:w-7/12">
           <Swiper
-            // autoplay={{ delay: 2000 }}
-            // breakpoints={{
-            //   1024: { slidesPerView: 4 },
-            // }}
-            className="mySwiper"
-            // grabCursor={false}
-            grid={{
-              rows: 2,
+            autoplay={{ delay: 2000 }}
+            breakpoints={{
+              1024: { slidesPerView: 4, grid: { rows: 2 } },
             }}
-            // navigation={false}
-            slidesPerView={2}
-            spaceBetween={30}
-            modules={[Grid, Pagination, Navigation]}
+            className="mySwiper"
+            grid={{
+              rows: 1,
+              fill: "row",
+            }}
+            grabCursor={false}
+            slidesPerView={1}
+            spaceBetween={32}
+            modules={[Autoplay, Grid]}
           >
             {mediapartners.map((mp) => {
               return (
                 <SwiperSlide className="bg-[#352a7c]" key={mp.id}>
-                  <div className="mx-auto flex h-64 w-64 items-center p-4">
-                    <img src={mp.image} alt={mp.name} />
+                  <div className="mx-auto flex h-64 w-64 items-center justify-center p-4 lg:h-48 lg:w-48">
+                    <img className="h-full w-full" src={mp.image} alt={mp.name} />
                   </div>
                 </SwiperSlide>
               );

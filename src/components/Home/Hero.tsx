@@ -24,7 +24,7 @@ const Hero: FC = () => {
         onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 4.5, duration: 0.25 }}
+        transition={{ delay: 4.5, duration: 1.0 }}
         className="transition-transform hover:scale-125"
       >
         <svg
@@ -33,7 +33,7 @@ const Hero: FC = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="h-10 w-10 stroke-white"
+          className="w-12 stroke-white"
         >
           <path
             strokeLinecap="round"

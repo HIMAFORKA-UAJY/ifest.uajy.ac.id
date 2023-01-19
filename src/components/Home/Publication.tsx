@@ -21,7 +21,7 @@ const Publication: FC = () => {
     >
       <div className="flex flex-col items-center justify-center gap-2 py-10">
         <div className="font-retroica text-4xl tracking-[0.15em] text-white">Publikasi</div>
-        <div className="w-full lg:w-1/4">
+        <div className="w-full lg:w-1/2 2xl:w-1/4">
           <Swiper
             effect="coverflow"
             navigation
@@ -51,8 +51,8 @@ const Publication: FC = () => {
                       <div className="text-[#7364D2]">{post.date}</div>
                     </div>
                     <div className="py-2"></div>
-                    <Link href={`/blog/${post.slug}`}>
-                      <button className="text-[#9c8dfc]">Find out more</button>
+                    <Link className="transition-all hover:scale-125" href={`/blog/${post.slug}`}>
+                      <button className="tracking-wide text-[#9c8dfc]">Find out more</button>
                     </Link>
                   </div>
                 </SwiperSlide>

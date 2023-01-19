@@ -3,24 +3,316 @@
     "id": 1,
     "abbreviation": "I2C",
     "name": "Innovative Informatics Contest",
+    "url": "/kompetisi/i2c",
     "img": "/images/kompetisi/ill-i2c.png",
+    "poster": "/images/kompetisi/poster-i2c.jpg",
+    "rulebook": "/documents/rulebook-i2c.pdf",
+    "requirements": ["SMA / Sederajat", "Rp. 150k / tim", "3 peserta / tim"],
     "description": "adalah sebuah kompetisi yang menguji kemampuan peserta dalam menyusun ide untuk memecahkan berbagai permasalahan yang ada di dunia dengan memberikan solusi melalui pendekatan Teknologi Informasi.",
-    "requirements": ["SMA / Sederajat", "Rp. 150k / tim", "3 peserta / tim"]
+    "long_description": "<strong>Innovative Informatics Contest</strong> adalah sebuah kompetisi yang menguji kemampuan peserta dalam menyusun ide untuk memecahkan berbagai permasalahan yang ada di dunia dengan memberikan solusi melalui pendekatan Teknologi Informasi, yang dapat berbentuk aplikasi, web, dan juga <i>IoT</i>. Pada tahun ini, I2C mengangkat tema \"A Step Closer to Perfection\" dengan harapan peserta dapat membuat produk inovatif yang dapat membantu pengguna menguasai berbagai disiplin ilmu, baik akademik maupun nonakademik, melalui media Teknologi Informasi.",
+    "provision": [
+      {
+        "type": "Ketentuan Umum",
+        "data": [
+          "Setiap peserta harus merupakan siswa aktif SMA/sederajat.",
+          "Setiap peserta harus tergabung dalam tim yang beranggotakan tiga (3) orang.",
+          "Setiap peserta hanya boleh terdaftar dalam satu (1) tim.",
+          "Setiap anggota tim harus berasal dari sekolah yang sama.",
+          "Setiap tim harus memenuhi prosedur pendaftaran yang telah ditetapkan.",
+          "Setiap tim tidak boleh mengganti anggota yang sudah terdaftar pada formulir pendaftaran.",
+          "Setiap tim harus membayar biaya pendaftaran lomba sebesar Rp 150.000.",
+          "Pengembalian (refund) biaya pendaftaran tidak dapat dilakukan dalam keadaan apa pun.",
+          "Setiap tim yang lolos ke tahap semifinal wajib berangkat ke Universitas Atma Jaya Yogyakarta.",
+          "Setiap tim yang lolos ke tahap semifinal wajib didampingi oleh guru pembimbing yang berasal dari sekolah yang sama.",
+          "Setiap tim hanya boleh didampingi oleh satu (1) guru pembimbing.",
+          "Setiap guru dapat membimbing lebih dari satu (1) tim, selama tim berasal dari sekolah yang sama.",
+          "Setiap sekolah bebas untuk mendaftarkan lebih dari satu (1) tim."
+        ]
+      },
+      {
+        "type": "Ketentuan Karya",
+        "data": [
+          "Setiap karya harus berkaitan dengan Teknologi Informasi.",
+          "Setiap karya harus sesuai dengan tema yang diberikan.",
+          "Setiap karya harus merupakan ide orisinal peserta.",
+          "Setiap karya tidak boleh menyinggung elemen yang berkaitan dengan etnis, suku, agama, tindakan perundangan, hingga SARA.",
+          "Setiap karya belum pernah dimasukkan dalam lomba yang sejenis sebelumnya."
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "name": "Proposal Selection",
+        "data": [
+          {
+            "name": "Pendaftaran",
+            "date": "16 Januari - 16 Februari 2023"
+          },
+          {
+            "name": "Batas Pengumpulan Proposal / Karya",
+            "date": "16 Februari 2023"
+          },
+          {
+            "name": "Pengumuman Seleksi",
+            "date": "1 Maret 2023"
+          }
+        ]
+      },
+      {
+        "name": "Inventor Expo",
+        "data": [
+          {
+            "name": "Technical Meeting",
+            "date": "2 Maret 2023"
+          },
+          {
+            "name": "Pameran Poster",
+            "date": "5 Maret - 8 Maret 2023"
+          },
+          {
+            "name": "Pengumpulan Pitch Deck",
+            "date": "9 Maret 2023"
+          },
+          {
+            "name": "Pameran Produk",
+            "date": "9 Maret 2023"
+          }
+        ]
+      },
+      {
+        "name": "Final Pitch Deck",
+        "data": [
+          {
+            "name": "Pengumuman Babak Semifinal, Presentasi Pitch Deck, dan Pengumuman Pemenang",
+            "date": "10 Maret 2023"
+          }
+        ]
+      }
+    ],
+    "prizepool": {
+      "total": "Rp 9.500.000",
+      "distribution": [
+        {
+          "type": "Juara 1",
+          "image": "/images/medal-1.png",
+          "rewards": ["Rp 4.000.000", "Piala", "Sertifikat Nasional"]
+        },
+        {
+          "type": "Juara 2",
+          "image": "/images/medal-2.png",
+          "rewards": ["Rp 3.000.000", "Piala", "Sertifikat Nasional"]
+        },
+        {
+          "type": "Juara 3",
+          "image": "/images/medal-3.png",
+          "rewards": ["Rp 2.000.000", "Piala", "Sertifikat Nasional"]
+        },
+        {
+          "type": "Juara Favorit",
+          "image": "/images/medal-favorit.png",
+          "rewards": ["Rp 500.000", "Piala", "Sertifikat Nasional"]
+        }
+      ]
+    }
   },
   "wdc": {
     "id": 2,
     "abbreviation": "WDC",
     "name": "Web Design Competition",
+    "url": "/kompetisi/wdc",
     "img": "/images/kompetisi/ill-wdc.png",
+    "poster": "/images/kompetisi/poster-i2c.jpg",
+    "rulebook": "/documents/rulebook-i2c.pdf",
+    "requirements": ["SMA / Sederajat", "Rp. 50k / tim", "2 peserta / tim"],
     "description": "adalah kompetisi merancang desain visual yang ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema \"Embrace the Future of Local Economy with Technology\"",
-    "requirements": ["SMA / Sederajat", "Rp. 50k / tim", "2 peserta / tim"]
+    "long_description": "<strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana mahasiswa/i dalam sebuah tim yang terdiri dari maksimal dua orang berlomba untuk membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design Competition (WDC) 2023 mengangkat tema <em>“Embrace the Future of Local Economy with Technology”</em> dengan harapan peserta akan mendesain sebuah web yang akan mempromosikan dan menjual produk UMKM lokal di daerah mereka.",
+    "provision": [
+      {
+        "type": "Ketentuan Umum",
+        "data": [
+          "Peserta adalah mahasiswa/i aktif jenjang D3/D4/S1 dari perguruan tinggi di Daerah Istimewa Yogyakarta dan Jawa Tengah.",
+          "Peserta lomba adalah satu tim yang terdiri dari minimal 1 (satu) orang dan maksimal 2 (dua) orang.",
+          "Tim yang terdiri dari 2 (dua) orang peserta harus berasal dari institusi/perguruan tinggi yang sama.",
+          "Tidak diperkenankan ada peserta yang terdaftar dalam dua tim atau lebih yang berbeda.",
+          "Melakukan pendaftaran online melalui link pendaftaran, pendaftaran akan dibuka mulai dari Senin, 30 Januari 2023 sampai dengan Rabu, 8 Maret 2023.",
+          "Melampirkan scan atau foto Kartu Tanda Mahasiswa serta bukti pembayaran pada formulir pendaftaran",
+          "Peserta yang sudah mendaftar tetapi tidak mengumpulkan hasil karya desain situs web setelah batas waktu yang ditentukan dianggap mengundurkan diri dari perlombaan.",
+          "Panitia berhak untuk mengeleminasi peserta yang tidak mematuhi ketentuan di atas.",
+          "Setiap peserta Web Design Competition (WDC) 2023 wajib membaca, memahami, dan mengikuti seluruh syarat dan ketentuan yang tercantum dalam rulebook."
+        ]
+      },
+      {
+        "type": "Ketentuan Karya",
+        "data": [
+          "Karya desain berupa situs web desktop.",
+          "Peserta dibebaskan menggunakan software apapun dalam pembuatan desain.",
+          "Hasil karya harus sesuai dengan tema WDC 2023.",
+          "Web harus mengandung fungsi-fungsi esensial, jumlah halaman web maksimal 10 halaman.",
+          "Bahasa utama yang digunakan dalam pembuatan website adalah Bahasa Indonesia dan diperbolehkan menggunakan istilah dalam bahasa asing.",
+          "Peserta wajib menyertakan kode (code) desain web.",
+          "Desain situs web dilarang mengandung unsur SARA, kekerasan, pornografi, dan melanggar UU yang berlaku.",
+          "Desain situs web yang diperlombakan menjadi hak panitia.",
+          "Panitia WDC 2023 berhak mendiskualifikasi peserta jika diketahui Hak Atas Kekayaan Intelektualnya diragukan, sedang dalam sengketa, mengambil karya orang lain, atau mendapat klaim dari pihak lain.",
+          "Keputusan panitia bersifat mutlak dan tidak dapat diganggu gugat.",
+          "Ketentuan yang lebih lengkap silahkan lihat Rulebook WDC 2023."
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "name": "Tahap Eliminasi",
+        "data": [
+          {
+            "name": "Pendaftaran Online",
+            "date": "30 Januari - 8 Maret 2023"
+          },
+          {
+            "name": "Batas Pengumpulan Karya",
+            "date": "8 Maret 2023"
+          },
+          {
+            "name": "Seleksi / Penilaian",
+            "date": "17 Maret - 22 Maret 2023"
+          },
+          {
+            "name": "Pengumuman 5 Karya Terbaik",
+            "date": "23 Maret 2023"
+          }
+        ]
+      },
+      {
+        "name": "Inventor Expo",
+        "data": [
+          {
+            "name": "Technical Meeting",
+            "date": "24 Maret 2023"
+          },
+          {
+            "name": "Presentasi Finalis",
+            "date": "31 Maret 2023"
+          }
+        ]
+      }
+    ],
+    "prizepool": {
+      "total": "Rp 6.000.000",
+      "distribution": [
+        {
+          "type": "Juara 1",
+          "image": "/images/medal-1.png",
+          "rewards": ["Rp 3.000.000", "Piala", "Sertifikat Nasional"]
+        },
+        {
+          "type": "Juara 2",
+          "image": "/images/medal-2.png",
+          "rewards": ["Rp 2.000.000", "Piala", "Sertifikat Nasional"]
+        },
+        {
+          "type": "Juara 3",
+          "image": "/images/medal-3.png",
+          "rewards": ["Rp 1.000.000", "Piala", "Sertifikat Nasional"]
+        }
+      ]
+    }
   },
   "muc": {
     "id": 3,
     "abbreviation": "MUC",
     "name": "Mobile UI/UX Competition",
+    "url": "/kompetisi/muc",
     "img": "/images/kompetisi/ill-muc.png",
+    "poster": "/images/kompetisi/poster-i2c.jpg",
+    "rulebook": "/documents/rulebook-i2c.pdf",
     "description": "adalah perlombaan untuk menampilkan interface dari sebuah aplikasi mobile yang diharapkan dapat membantu penggunaan dari aplikasi itu sendiri.",
-    "requirements": ["D3 / D4 / S1", "Gratis", "Max. 2 peserta / tim"]
+    "requirements": ["D3 / D4 / S1", "Gratis", "Max. 2 peserta / tim"],
+    "long_description": "<strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana mahasiswa/i dalam sebuah tim yang terdiri dari maksimal dua orang berlomba untuk membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design Competition (WDC) 2023 mengangkat tema <em>“Embrace the Future of Local Economy with Technology”</em> dengan harapan peserta akan mendesain sebuah web yang akan mempromosikan dan menjual produk UMKM lokal di daerah mereka.",
+    "provision": [
+      {
+        "type": "Ketentuan Umum",
+        "data": [
+          "Peserta adalah mahasiswa/i aktif jenjang D3/D4/S1 dari perguruan tinggi di Daerah Istimewa Yogyakarta dan Jawa Tengah.",
+          "Peserta lomba adalah satu tim yang terdiri dari minimal 1 (satu) orang dan maksimal 2 (dua) orang.",
+          "Tim yang terdiri dari 2 (dua) orang peserta harus berasal dari institusi/perguruan tinggi yang sama.",
+          "Tidak diperkenankan ada peserta yang terdaftar dalam dua tim atau lebih yang berbeda.",
+          "Melakukan pendaftaran online melalui link pendaftaran, pendaftaran akan dibuka mulai dari Senin, 30 Januari 2023 sampai dengan Rabu, 8 Maret 2023.",
+          "Melampirkan scan atau foto Kartu Tanda Mahasiswa serta bukti pembayaran pada formulir pendaftaran",
+          "Peserta yang sudah mendaftar tetapi tidak mengumpulkan hasil karya desain situs web setelah batas waktu yang ditentukan dianggap mengundurkan diri dari perlombaan.",
+          "Panitia berhak untuk mengeleminasi peserta yang tidak mematuhi ketentuan di atas.",
+          "Setiap peserta Web Design Competition (WDC) 2023 wajib membaca, memahami, dan mengikuti seluruh syarat dan ketentuan yang tercantum dalam rulebook."
+        ]
+      },
+      {
+        "type": "Ketentuan Karya",
+        "data": [
+          "Karya desain berupa situs web desktop.",
+          "Peserta dibebaskan menggunakan software apapun dalam pembuatan desain.",
+          "Hasil karya harus sesuai dengan tema WDC 2023.",
+          "Web harus mengandung fungsi-fungsi esensial, jumlah halaman web maksimal 10 halaman.",
+          "Bahasa utama yang digunakan dalam pembuatan website adalah Bahasa Indonesia dan diperbolehkan menggunakan istilah dalam bahasa asing.",
+          "Peserta wajib menyertakan kode (code) desain web.",
+          "Desain situs web dilarang mengandung unsur SARA, kekerasan, pornografi, dan melanggar UU yang berlaku.",
+          "Desain situs web yang diperlombakan menjadi hak panitia.",
+          "Panitia WDC 2023 berhak mendiskualifikasi peserta jika diketahui Hak Atas Kekayaan Intelektualnya diragukan, sedang dalam sengketa, mengambil karya orang lain, atau mendapat klaim dari pihak lain.",
+          "Keputusan panitia bersifat mutlak dan tidak dapat diganggu gugat.",
+          "Ketentuan yang lebih lengkap silahkan lihat Rulebook WDC 2023."
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "name": "Tahap Eliminasi",
+        "data": [
+          {
+            "name": "Pendaftaran Online",
+            "date": "30 Januari - 8 Maret 2023"
+          },
+          {
+            "name": "Batas Pengumpulan Karya",
+            "date": "8 Maret 2023"
+          },
+          {
+            "name": "Seleksi / Penilaian",
+            "date": "17 Maret - 22 Maret 2023"
+          },
+          {
+            "name": "Pengumuman 5 Karya Terbaik",
+            "date": "23 Maret 2023"
+          }
+        ]
+      },
+      {
+        "name": "Inventor Expo",
+        "data": [
+          {
+            "name": "Technical Meeting",
+            "date": "24 Maret 2023"
+          },
+          {
+            "name": "Presentasi Finalis",
+            "date": "31 Maret 2023"
+          }
+        ]
+      }
+    ],
+    "prizepool": {
+      "total": "Rp 6.000.000",
+      "distribution": [
+        {
+          "type": "Juara 1",
+          "image": "/images/medal-1.png",
+          "rewards": ["Rp 3.000.000", "Piala", "Sertifikat Nasional"]
+        },
+        {
+          "type": "Juara 2",
+          "image": "/images/medal-2.png",
+          "rewards": ["Rp 2.000.000", "Piala", "Sertifikat Nasional"]
+        },
+        {
+          "type": "Juara 3",
+          "image": "/images/medal-3.png",
+          "rewards": ["Rp 1.000.000", "Piala", "Sertifikat Nasional"]
+        }
+      ]
+    }
   }
 }

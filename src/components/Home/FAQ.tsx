@@ -1,81 +1,10 @@
-import { motion } from "framer-motion";
+import faq from "@/data/faq.json";
+import { Disclosure } from "@headlessui/react";
+import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import parse from "html-react-parser";
 import { FC } from "react";
-import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
-
-// ! Fix accordion componenent later.
 
 const FAQ: FC = () => {
-  const faqs = [
-    {
-      question: "Apa itu IFest?",
-      answer: `
-      Informatics Festival atau IFest adalah acara tahunan Himpunan Mahasiswa Informatika (HIMAFORKA) Universitas Atma Jaya Yogyakarta. Pada tahun 2023 ini, IFest#11 mengambil tema "Higher Steps, Higher Purpose with Informatics" dengan berbagai susunan kompetisi dan acara yang tentunya menarik!
-        `,
-    },
-    {
-      question: "Apa saja yang diselenggarakan di IFest#11 ini?",
-      answer: `
-      IFest#11 menyelenggarakan beberapa kompetisi dan acara, antara lain:
-      <ul className="list-outside list-disc pl-4">
-        <li>
-          Innovative Informatics Contest (I2C)
-        </li>
-        <li>
-          Web Design Competition (WDC)
-        </li>
-        <li>
-          Mobile UI/UX Competition (MUC)
-        </li>
-        <li>
-          Donor Darah
-        </li>
-      </ul>
-      Selain itu IFest#11 juga menyediakan berbagai produk-produk menarik yang dapat dibeli hanya di IFEST Store
-        `,
-    },
-    {
-      question: "Bagaimana cara mendaftar untuk setiap event IFest?",
-      answer: `
-      Pendaftaran diri dan tim dapat dilakukan melalui situs https://ifest.uajy.ac.id/dash/register. Kamu bisa mendaftarkan diri dan tim selama masa pendaftaran (masa pendaftaran untuk setiap kompetisi dan acara berbeda-beda).
-      `,
-    },
-    {
-      question: "Apa tujuan diselenggarakannya IFest?",
-      answer: `
-      IFest diselenggarakan dengan tujuan sebagai berikut:
-      <ul className="list-outside list-disc pl-4">
-        <li>
-          Dapat memupuk dan mengembangkan minat dan bakat generasi muda dalam bidang teknologi informasi,
-        </li>
-        <li>
-          Dapat mengembangkan pola pikir yang maju terhadap teknologi tanpa mengesampingkan nilai-nilai kemanusiaan,
-        </li>
-        <li>
-          Membangun semangat berkompetisi yang positif sebagai manusia yang utuh dan sebagai generasi penerus bangsa yang menjunjung nilai kejujuran,
-        </li>
-        <li>
-          Sebagai sarana untuk menuangkan ide-ide dan kreatifitas peserta, serta
-        </li>
-        <li>
-          Menggali, menampung, menyalurkan, dan mengembangkan kemampuan serta pengetahuan mahasiswa sekaligus mencari bibit-bibit unggul.
-        </li>
-      </ul>
-        `,
-    },
-    {
-      question: "Dimana bisa mencari informasi seputar IFest?",
-      answer: `
-        Situs web ini telah menyajikan informasi mendetil terkait event-event yang diselenggarakan. Namun untuk mengajukan pertanyaan dan informasi lebih lanjut silakan hubungi kami melalui Instagram @ifest_uajy atau melalui LINE OA @ykb1847q. 
-        `,
-    },
-    {
-      question: "Siapa penyelenggara IFest#11 2023?",
-      answer: `
-        Rangkaian kegiatan Informatics Festival (IFest) #11 tahun 2023 diselenggarakan oleh Program Studi Informatika Universitas Atma Jaya Yogyakarta, bekerjasama dengan Himpunan Mahasiswa Informatika (HIMAFORKA).
-        `,
-    },
-  ];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -85,17 +14,18 @@ const FAQ: FC = () => {
       className="bg-[#2b2265]"
     >
       <div className="flex flex-col items-center justify-center gap-2 py-10">
-        <div className="font-retroica text-4xl tracking-[0.15em] text-white">FAQ</div>
-        <div className="font-retroica text-base text-white">Pertanyaan yang sering diajukan</div>
-        <div className="w-11/12 bg-[#3b3275] p-4 lg:w-1/2">
-          <div className="bg-[#41387e] p-3 shadow-lg">
-            <Accordion className="overflow-hidden rounded-md border-[#3b3275]" alwaysOpen={false}>
-              {faqs.map((data, index) => {
-                return (
-                  <AccordionItem key={index}>
-                    {({ open }: { open: boolean }) => (
+        <div className="w-11/12 bg-[#3b3275] p-4 text-center lg:w-1/2">
+          <div className="font-retroica text-4xl tracking-[0.15em] text-white">FAQ</div>
+          <div className="font-retroica text-base text-white">Pertanyaan yang sering diajukan</div>
+          <div className="pt-4"></div>
+          <div className="bg-[#41387e] p-4 shadow-lg">
+            {faq.map((data, index) => {
+              return (
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} key={index}>
+                  <Disclosure defaultOpen={index == 0 ? true : false}>
+                    {({ open }) => (
                       <>
-                        <AccordionHeader
+                        <Disclosure.Button
                           className={`flex w-full items-center justify-between px-4 py-3 transition-[background] ${
                             open ? "bg-gray-400/30" : "bg-[#41387e]"
                           }`}
@@ -108,7 +38,7 @@ const FAQ: FC = () => {
                             {data.question}
                           </span>
                           <svg
-                            className={`h-6 w-6 text-gray-500 transition duration-300 ${
+                            className={`h-8 w-8 text-gray-500 transition duration-300 ${
                               open ? "rotate-90" : ""
                             }`}
                             fill="currentColor"
@@ -121,18 +51,27 @@ const FAQ: FC = () => {
                               clipRule="evenodd"
                             />
                           </svg>
-                        </AccordionHeader>
-                        <AccordionBody className={`open ? "" : ""`}>
-                          <div className="p-4 text-left font-louisgeorgecafe text-sm text-gray-200">
-                            {parse(data.answer)}
-                          </div>
-                        </AccordionBody>
+                        </Disclosure.Button>
+                        <AnimatePresence>
+                          {open && (
+                            <Disclosure.Panel static>
+                              <motion.div
+                                initial={{ y: -10, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                exit={{ y: -10, opacity: 0 }}
+                                className="p-4 text-left font-louisgeorgecafe text-sm text-gray-200"
+                              >
+                                {parse(data.answer)}
+                              </motion.div>
+                            </Disclosure.Panel>
+                          )}
+                        </AnimatePresence>
                       </>
                     )}
-                  </AccordionItem>
-                );
-              })}
-            </Accordion>
+                  </Disclosure>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>

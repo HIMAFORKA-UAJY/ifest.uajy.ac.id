@@ -21,3 +21,7 @@
   font-family: "Louis George Cafe";
   src: url("/fonts/Louis George Cafe.ttf") format("truetype");
 }
+
+:root {
+  --swiper-navigation-color: #ffffff80;
+}

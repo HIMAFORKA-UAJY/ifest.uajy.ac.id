@@ -10,8 +10,9 @@ import Sponsor from "@/components/Home/Sponsor";
 import acara from "@/data/acara.json";
 import kompetisi from "@/data/kompetisi.json";
 import Head from "next/head";
+import { FC } from "react";
 
-const Home = () => {
+const Home: FC = () => {
   return (
     <>
       <Head>

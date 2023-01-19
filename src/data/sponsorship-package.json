@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Platinum",
+    "image": "/images/sponsors/icon-sponsor-Platinum.png",
+    "price": "Rp. 6.000.000",
+    "benefits": [
+      "Penempatan logo pada website IFest #11 dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman link website atau akun sosial media pada website IFest #11.",
+      "Pencantuman logo pada poster pada seluruh event IFest #11 dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman logo pada cocard dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman logo pada spanduk dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman logo pada backdrop panggung dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman logo di photobooth.",
+      "Pencantuman logo pada after movie IFest #11.",
+      "Pencantuman logo pada backdrop panggung dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman logo pada sertifikat pada seluruh event IFest #11 dengan ukuran setara dengan pihak penyelenggara.",
+      "Paid promote pada seluruh akun Instagram panitia IFest #11 dengan ketentuan yang ditetapkan pada MOU.",
+      "Iklan adlibs oleh MC saat acara berlangsung pada semua event IFest #11 dengan materi iklan disediakan oleh pihak sponsor.",
+      "Penayangan Iklan dalam bentuk video dan atau gambar saat break (istirahat) acara pada semua event IFest #11 dengan durasi yang ditetapkan pada MOU.",
+      "Mendapatkan tempat untuk mengadakan stand secara mandiri dalam rangka ajang promosi di Innovative Informatics Contest dan Web Design Competition.",
+      "Spesial di Hackathon/ Seminar Nasional."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Gold",
+    "image": "/images/sponsors/icon-sponsor-Gold.png",
+    "price": "Rp. 4.000.000",
+    "benefits": [
+      "Penempatan logo pada website IFest #11 dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman link website atau akun sosial media pada website IFest #11.",
+      "Pencantuman logo pada poster pada seluruh event IFest #11 dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman logo pada cocard dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman logo pada spanduk dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman logo pada backdrop panggung dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman logo di photobooth.",
+      "Pencantuman logo pada after movie IFest #11.",
+      "Pencantuman logo pada backdrop panggung dengan ukuran setara dengan pihak penyelenggara.",
+      "Pencantuman logo pada sertifikat pada seluruh event IFest #11 dengan ukuran setara dengan pihak penyelenggara.",
+      "Paid promote pada seluruh akun Instagram panitia IFest #11 dengan ketentuan yang ditetapkan pada MOU.",
+      "Iklan adlibs oleh MC saat acara berlangsung pada semua event IFest #11 dengan materi iklan disediakan oleh pihak sponsor.",
+      "Penayangan Iklan dalam bentuk video dan atau gambar saat break (istirahat) acara pada semua event IFest #11 dengan durasi durasi yang ditetapkan pada MOU."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Silver",
+    "image": "/images/sponsors/icon-sponsor-Silver.png",
+    "price": "Rp. 2.500.000",
+    "benefits": [
+      "Penempatan logo pada website IFest #11 dengan ukuran 50% dengan pihak penyelenggara.",
+      "Pencantuman link website atau akun sosial media pada website IFest #11.",
+      "Pencantuman logo pada poster pada seluruh event IFest #11 dengan ukuran 50% dengan pihak penyelenggara.",
+      "Pencantuman logo pada cocard dengan ukuran 50% dengan pihak penyelenggara.",
+      "Pencantuman logo pada spanduk dengan ukuran 50% dengan pihak penyelenggara.",
+      "Pencantuman logo pada backdrop panggung dengan ukuran 50% dengan pihak penyelenggara.",
+      "Pencantuman logo pada after movie IFest #11.",
+      "Pencantuman logo pada backdrop panggung dengan ukuran 50% dengan pihak penyelenggara.",
+      "Pencantuman logo pada sertifikat pada seluruh event IFest #11 dengan ukuran 50% dengan pihak penyelenggara.",
+      "Iklan adlibs oleh MC saat acara berlangsung pada semua event IFest #11 dengan materi iklan disediakan oleh pihak sponsor."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Bronze",
+    "image": "/images/sponsors/icon-sponsor-Bronze.png",
+    "price": "Rp. 1.500.000",
+    "benefits": [
+      "Penempatan logo pada website IFest #11 dengan ukuran 25% dengan pihak penyelenggara.",
+      "Pencantuman link website atau akun sosial media pada website IFest #11.",
+      "Pencantuman logo pada poster pada seluruh event IFest #11 dengan ukuran 25% dengan pihak penyelenggara.",
+      "Pencantuman logo pada cocard dengan ukuran 25% dengan pihak penyelenggara.",
+      "Pencantuman logo pada spanduk dengan ukuran 25% dengan pihak penyelenggara.",
+      "Pencantuman logo pada backdrop panggung dengan ukuran 25% dengan pihak penyelenggara.",
+      "Pencantuman logo pada after movie IFest #11.",
+      "Pencantuman logo pada backdrop panggung dengan ukuran 25% dengan pihak penyelenggara.",
+      "Pencantuman logo pada sertifikat pada seluruh event IFest #11 dengan ukuran 25% dengan pihak penyelenggara.",
+      "Promosi (penyebutan) nama pihak sponsor oleh MC saat acara berlangsung pada semua event IFest #11 dengan ketentuan yang ditetapkan pada MOU."
+    ]
+  }
+]

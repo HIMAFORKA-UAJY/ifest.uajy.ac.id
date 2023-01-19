@@ -3,14 +3,38 @@
     "id": 4,
     "abbreviation": "",
     "name": "Donor Darah",
+    "url": "/acara/donor-darah",
     "img": "/images/acara/ill-donor-darah.png",
     "description": "ialah kegiatan mengambil darah seseorang yang dilaksanakan secara sukarela dan sadar untuk kemudian disimpan ke bank darah sebagai stok darah yang sewaktu-waktu dapat dipergunakan untuk transfusi darah. Dengan mendonorkan darah bukan hanya bermanfaat bagi kesehatan namun kita juga berkesempatan menjadi manfaat bagi orang lain.",
-    "requirements": ["Umum", "Gratis", "Pendaftaran Online"]
+    "requirements": ["Umum", "Gratis", "Pendaftaran Online"],
+    "manfaat": [
+      [
+        "Mendeteksi penyakit serius",
+        "Meningkatkan produksi sel darah",
+        "Panjang umur",
+        "Menjaga kesehatan jantung"
+      ],
+      [
+        "Karena sebelum dilakukan proses donor, ada pengetesan untuk beberapa penyakit. Hal ini dilakukan agar kualitas darah yang didonasikan terjaga.",
+        "Karena saat donasi darah, tubuh kita akan membentuk sel darah merah yang baru. Donor darah secara rutin dapat menstimulasi pembentukan darah baru.",
+        "Karena menurut penelitian, berbuat baik dapat memperpanjang usia. Menurut penelitian, donor darah dapat menjaga kesehatan emosional seseorang.",
+        "Karena donor darah dapat memperlancar dan mencegah penyumbatan arteri. Selain itu, donor darah juga dapat meringankan resiko kanker, stroke, dan serangan jantung."
+      ]
+    ],
+    "steps": [
+      ["Pergi ke Dashboard", "Isi form pendaftaran", "Donor darah"],
+      [
+        "Daftar melalui <LINK Dashboard Donor Darah>",
+        "Isi form secara online dan dapatkan bukti registrasi melalui email",
+        "Menunjukkan bukti registrasi dan melakukan donor darah"
+      ]
+    ]
   },
   "seminar-nasional": {
     "id": 5,
     "abbreviation": "",
     "name": "Seminar Nasional",
+    "url": "/acara/seminar-nasional",
     "img": "/images/acara/ill-seminar-nasional.png",
     "description": "adalah seminar yang diselenggarakan berskala nasional sebagai media untuk menyampaikan aspirasi dan ide kepada peserta mengenai perkembangan ilmu dan teknologi di tengah kehidupan manusia, khususnya revolusi industri 4.0.",
     "requirements": ["Umum", "Gratis", "Pendaftaran Online"]

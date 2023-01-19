@@ -8,6 +8,7 @@ interface Props {
     id: number;
     abbreviation: string;
     name: string;
+    url: string;
     img: string;
     description: string;
     requirements: string[];
@@ -55,7 +56,7 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
           : "bg-[#2b2265]"
       }`}
     >
-      <div className="mx-auto flex flex-col items-center justify-center px-6 py-10 lg:w-7/12 lg:flex-row lg:gap-8">
+      <div className="mx-auto flex flex-col items-center justify-center px-6 py-10 lg:w-11/12 lg:flex-row lg:gap-8 2xl:w-7/12">
         <img
           className={`${content.id % 2 == 0 ? "lg:order-1" : "lg:order-0"} w-72 basis-1/2`}
           src={content.img}
@@ -70,7 +71,7 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
               {content.name}
             </div>
           </div>
-          <div className="flex flex-col gap-2 py-4 text-center font-retroica text-sm text-white lg:w-full lg:flex-row lg:gap-6">
+          <div className="flex flex-col flex-wrap gap-2 py-4 text-center font-retroica text-sm text-white lg:w-full lg:flex-row lg:gap-6">
             {content.requirements.map((requirement, index) => {
               return (
                 <div
@@ -96,7 +97,7 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
           </div>
           <div className="pt-10"></div>
           <div className="flex justify-center lg:justify-start">
-            <Link href="/kompetisi/i2c">
+            <Link href={content.url}>
               <button
                 className="rounded-[2.0em] px-5 py-3 font-retroica text-sm tracking-widest text-white hover:shadow-[0_0px_80px_0px_#886fcb] lg:text-base"
                 style={{ backgroundColor: getColor(content.id) }}

@@ -1,14 +1,9 @@
-// import "./CP.css";
 import cp from "@/data/cp.json";
 import { motion } from "framer-motion";
 import { CSSProperties, FC, useEffect, useState } from "react";
 import { FaLine, FaWhatsapp } from "react-icons/fa";
 import { Grid, Navigation, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/grid";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 interface Props {
@@ -94,25 +89,27 @@ const CP: FC<Props> = ({ get }: Props) => {
       transition={{ duration: 1, ease: "easeInOut" }}
       className="bg-[#3b3275]"
     >
-      <div className="flex w-screen flex-col items-center justify-center gap-2 py-10">
+      <div className="flex w-full flex-col items-center justify-center gap-2 py-10">
         <div className="font-retron2000 text-4xl font-bold tracking-[0.15em] text-white">
           Contact Us
         </div>
         <div className="font-louisgeorgecafe text-base text-white">
           Ada pertanyaan? Silakan ajukan ^_^
         </div>
-        <div className="w-full py-4 lg:w-1/2">
+        <div
+          className={`w-full py-4 ${
+            get == "all" ? "lg:w-10/12 2xl:w-7/12" : "lg:w-4/12 2xl:w-2/12"
+          }`}
+        >
           <Swiper
             breakpoints={{
               1024: {
-                slidesPerView: 3,
-                navigation: {
-                  enabled: true,
-                },
+                slidesPerView: get == "all" ? 3 : 1,
               },
             }}
             grid={{
               rows: 1,
+              fill: "row",
             }}
             spaceBetween={8}
             pagination={{
