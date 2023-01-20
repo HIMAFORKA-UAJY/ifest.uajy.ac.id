@@ -17,8 +17,6 @@ const NavBar: FC = () => {
   const router = useRouter();
   const [color, setColor] = useState<Color>({ bg1: "", bg2: "", fg: "" });
 
-  console.log(router);
-
   useEffect(() => {
     switch (router.pathname) {
       case "/":
