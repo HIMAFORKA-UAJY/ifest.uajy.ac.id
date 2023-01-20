@@ -1,9 +1,11 @@
 import CP from "@/components/CP";
+import ComingSoon from "@/components/ComingSoon";
 import Footer from "@/components/Footer";
 import kompetisi from "@/data/kompetisi.json";
 import { Dialog } from "@headlessui/react";
 import { motion } from "framer-motion";
 import parse from "html-react-parser";
+import moment from "moment-timezone";
 import { useRouter } from "next/router";
 import { FC, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
@@ -16,6 +18,7 @@ interface Kompetisi {
   img: string;
   poster: string;
   rulebook: string;
+  date_available: string | null;
   requirements: string[];
   description: string;
   long_description: string;
@@ -70,6 +73,7 @@ export const getStaticProps = async () => {
 const Index: FC<Props> = ({ kompetisi }: Props) => {
   const router = useRouter();
   const { id } = router.query;
+  const k: Kompetisi = kompetisi[id as keyof typeof kompetisi];
 
   const getColor = (index: number) => {
     switch (index) {
@@ -103,25 +107,23 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
   const [openPoster, setOpenPoster] = useState<boolean>(false);
   const [openRuleBook, setOpenRulebook] = useState<boolean>(false);
 
+  if (
+    k.date_available == null ||
+    moment().tz("Asia/Jakarta").diff(moment(k.date_available).tz("Asia/Jakarta")) < 0
+  )
+    return <ComingSoon date={k.date_available} />;
+
   return (
     <div className="absolute top-0 -z-10 min-h-screen w-full bg-gradient-to-b from-[#2a2f59] to-[#332550]">
       <div className="flex h-screen flex-col items-center justify-center gap-4 px-4 lg:flex-row">
-        <img
-          className="w-72 lg:w-1/4"
-          src={kompetisi[id as keyof typeof kompetisi].img}
-          alt={kompetisi[id as keyof typeof kompetisi].name.toLowerCase()}
-        />
+        <img className="w-72 lg:w-1/4" src={k.img} alt={k.name.toLowerCase()} />
         <div className="flex flex-col items-center justify-center gap-8">
           <div className="text-center text-white">
-            <div className="font-retroica text-4xl tracking-wide lg:hidden">
-              {kompetisi[id as keyof typeof kompetisi].abbreviation}
-            </div>
-            <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">
-              {kompetisi[id as keyof typeof kompetisi].name}
-            </div>
+            <div className="font-retroica text-4xl tracking-wide lg:hidden">{k.abbreviation}</div>
+            <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">{k.name}</div>
           </div>
           <div className="flex w-9/12 flex-col gap-2 font-retroica text-sm text-white lg:w-full lg:flex-row lg:justify-center lg:gap-6">
-            {kompetisi[id as keyof typeof kompetisi].requirements.map((r, index) => {
+            {k.requirements.map((r, index) => {
               return (
                 <div
                   className="rounded-full p-1"
@@ -165,10 +167,10 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
         <div className="border-gray-700 bg-[#241f3d] p-8">
           <div className="flex flex-col items-center gap-4">
             <div className="font-retroica text-3xl tracking-wider text-white">
-              MORE ABOUT {kompetisi[id as keyof typeof kompetisi].abbreviation}
+              MORE ABOUT {k.abbreviation}
             </div>
             <div className="text-md w-full px-2 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
-              {parse(String(kompetisi[id as keyof typeof kompetisi].long_description))}
+              {parse(String(k.long_description))}
             </div>
           </div>
           <div className="flex flex-col pt-4 font-louisgeorgecafe text-white lg:flex-row lg:items-center lg:justify-center lg:gap-6">
@@ -190,7 +192,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                 <Dialog.Panel className="flex h-full w-11/12 flex-col items-center justify-center gap-2 overflow-auto p-8">
                   <img
                     className="h-full w-full object-contain object-center"
-                    src={kompetisi[id as keyof typeof kompetisi].poster}
+                    src={k.poster}
                     alt="poster"
                     onClick={() => setOpenPoster(false)}
                   />
@@ -224,7 +226,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                 <Dialog.Panel className="flex h-full w-11/12 flex-col items-center justify-center gap-0 overflow-auto p-8">
                   <iframe
                     className="h-screen w-full py-10"
-                    src={kompetisi[id as keyof typeof kompetisi].rulebook}
+                    src={k.rulebook}
                     onClick={() => setOpenRulebook(false)}
                   ></iframe>
                 </Dialog.Panel>
@@ -234,7 +236,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
         </div>
 
         <div className="flex flex-col justify-center gap-8 p-8 lg:flex-row">
-          {kompetisi[id as keyof typeof kompetisi].provision.map((provision, index) => {
+          {k.provision.map((provision, index) => {
             return (
               <div className="rounded-lg border border-gray-700 bg-[#241f3d] p-4" key={index}>
                 <h3 className="pl-6 font-retroica text-2xl text-[#87bbeb]">{provision.type}</h3>
@@ -252,7 +254,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
 
         <div className="flex flex-col items-center justify-center">
           <div className="text-center font-retroica text-4xl text-[#87bbeb]">Timeline</div>
-          {kompetisi[id as keyof typeof kompetisi].timeline.map((timeline, index) => {
+          {k.timeline.map((timeline, index) => {
             return (
               <div className="flex w-full flex-col items-center justify-center" key={index}>
                 <div className="w-fit rounded-xl bg-[#241f3d] pb-1">
@@ -292,46 +294,41 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
             PRIZE POOL
           </div>
           <div className="text-center font-retroica text-3xl text-[#ffba57]">
-            {kompetisi[id as keyof typeof kompetisi].prizepool.total}
+            {k.prizepool.total}
           </div>
           <div id="fika" className="grid gap-8 lg:grid-cols-3 lg:grid-rows-2">
-            {kompetisi[id as keyof typeof kompetisi].prizepool.distribution.map(
-              (distribution, index) => {
-                return (
-                  <div
-                    className={`${
-                      kompetisi[id as keyof typeof kompetisi].prizepool.distribution.length % 2 ==
-                        0 && index == 0
-                        ? "col-span-full"
-                        : "fika"
-                    }`}
-                    key={index}
-                  >
-                    <div className="flex flex-row items-center justify-center rounded-xl border border-gray-700 bg-[#241f3d] p-4 text-white transition duration-300 ease-in hover:scale-110 hover:text-[#241f3d] lg:flex-col">
-                      <img
-                        className={`${
-                          index % 2 == 0 ? "order-0" : "order-1"
-                        } w-32 lg:-order-none lg:w-48`}
-                        src={distribution.image}
-                        alt="/"
-                      />
-                      <div>
-                        <div className="text-center font-retroica text-2xl">
-                          {distribution.type}
-                        </div>
-                        {distribution.rewards.map((reward, index) => {
-                          return (
-                            <div className="flex gap-3 font-retroica" key={index}>
-                              {getIcon(index + 3)} {reward}
-                            </div>
-                          );
-                        })}
-                      </div>
+            {k.prizepool.distribution.map((distribution, index) => {
+              return (
+                <div
+                  className={`${
+                    k.prizepool.distribution.length % 2 == 0 && index == 0
+                      ? "col-span-full"
+                      : "fika"
+                  }`}
+                  key={index}
+                >
+                  <div className="flex flex-row items-center justify-center rounded-xl border border-gray-700 bg-[#241f3d] p-4 text-white transition duration-300 ease-in hover:scale-110 hover:text-[#241f3d] lg:flex-col">
+                    <img
+                      className={`${
+                        index % 2 == 0 ? "order-0" : "order-1"
+                      } w-32 lg:-order-none lg:w-48`}
+                      src={distribution.image}
+                      alt="/"
+                    />
+                    <div>
+                      <div className="text-center font-retroica text-2xl">{distribution.type}</div>
+                      {distribution.rewards.map((reward, index) => {
+                        return (
+                          <div className="flex gap-3 font-retroica" key={index}>
+                            {getIcon(index + 3)} {reward}
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
-                );
-              }
-            )}
+                </div>
+              );
+            })}
           </div>
         </div>
 

@@ -14,6 +14,7 @@ specifiers:
   framer-motion: ^8.4.6
   html-react-parser: ^3.0.8
   husky: ^8.0.3
+  moment-timezone: ^0.5.40
   next: 13.1.2
   postcss: ^8.4.21
   prettier: ^2.8.3
@@ -21,6 +22,7 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.2.1
   react: 18.2.0
   react-chrono: ^1.20.0
+  react-countdown: ^2.3.5
   react-dom: 18.2.0
   react-icons: ^4.7.1
   react-type-animation: ^2.1.2
@@ -37,9 +39,11 @@ dependencies:
   eslint-config-next: 13.1.2_7uibuqfxkfaozanbtbziikiqje
   framer-motion: 8.4.6_biqbaboplfbrettd7655fr4n2y
   html-react-parser: 3.0.8_react@18.2.0
+  moment-timezone: 0.5.40
   next: 13.1.2_65aaefrptgalbi6a2fwpzxfmae
   react: 18.2.0
   react-chrono: 1.20.0_vtcxgy2wlmese7djxl6h7ok674
+  react-countdown: 2.3.5_biqbaboplfbrettd7655fr4n2y
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.7.1_react@18.2.0
   react-type-animation: 2.1.2_v2m5e27vhdewzwhryxwfaorcca
@@ -3269,6 +3273,22 @@ packages:
         integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==,
       }
 
+  /moment-timezone/0.5.40:
+    resolution:
+      {
+        integrity: sha512-tWfmNkRYmBkPJz5mr9GVDn9vRlVZOTe6yqY92rFxiOdWXbjaR0+9LwQnZGGuNR63X456NqmEkbskte8tWL5ePg==,
+      }
+    dependencies:
+      moment: 2.29.4
+    dev: false
+
+  /moment/2.29.4:
+    resolution:
+      {
+        integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==,
+      }
+    dev: false
+
   /ms/2.1.2:
     resolution:
       {
@@ -3785,6 +3805,20 @@ packages:
       styled-components: 5.3.6_vtcxgy2wlmese7djxl6h7ok674
     transitivePeerDependencies:
       - react-is
+    dev: false
+
+  /react-countdown/2.3.5_biqbaboplfbrettd7655fr4n2y:
+    resolution:
+      {
+        integrity: sha512-K26ENYEesMfPxhRRtm1r+Pf70SErrvW3g4CArLi/x6MPFjgfDFYePT4UghEj8p2nI0cqVV7/JjDgjyr//U60Og==,
+      }
+    peerDependencies:
+      react: ">= 15"
+      react-dom: ">= 15"
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:

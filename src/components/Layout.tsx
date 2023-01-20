@@ -11,7 +11,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="layout">
+    <div className="layout cursor-default">
       <NavBar />
       <main>{children}</main>
     </div>
