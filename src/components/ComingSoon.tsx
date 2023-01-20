@@ -1,14 +1,16 @@
+import { navColors } from "@/recoil/atoms";
 import { motion } from "framer-motion";
 import moment from "moment-timezone";
-import Link from "next/link";
 import { FC } from "react";
 import Countdown from "react-countdown";
+import { useSetRecoilState } from "recoil";
 
 interface Props {
   date: string | null;
 }
 
 const ComingSoon: FC<Props> = ({ date }: Props) => {
+  useSetRecoilState(navColors)({ bg1: "#173923", bg2: "#357c4d", fg: "#b5ec6f" });
   return (
     <div className="absolute top-0 -z-10 min-h-screen w-full bg-[url('/images/bg-no-flip.png')] bg-cover bg-center bg-no-repeat">
       <div className="bg-gradient-to-b from-[#40ba62]/80 to-[#219068]/80 font-retroica">
@@ -22,7 +24,7 @@ const ComingSoon: FC<Props> = ({ date }: Props) => {
                 date={moment(date).tz("Asia/Jakarta").toDate()}
                 renderer={({ days, hours, minutes, seconds }) => {
                   return (
-                    <div className="grid justify-items-center gap-6 text-center text-xl tracking-[0.1em] text-white lg:grid-cols-4">
+                    <div className="grid justify-items-center gap-6 text-center font-louisgeorgecafe text-2xl tracking-[0.1em] text-white lg:grid-cols-4">
                       <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -69,7 +71,7 @@ const ComingSoon: FC<Props> = ({ date }: Props) => {
             whileTap={{ scale: 0.9 }}
             className="rounded-[2.0em] bg-[#45AD49] bg-gradient-to-br from-[#77A648] px-5 py-3 font-retroica text-sm tracking-wide text-white transition-all hover:shadow-md lg:text-base"
           >
-            <Link href="/">Stay Tuned . .</Link>
+            <a href="/">Stay Tuned . .</a>
           </motion.button>
         </div>
       </div>

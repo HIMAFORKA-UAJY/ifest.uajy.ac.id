@@ -1,6 +1,5 @@
 import sponsors from "@/data/sponsors.json";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { FC } from "react";
 import { Autoplay, EffectCoverflow, Navigation, Pagination } from "swiper";
 import "swiper/css/bundle";
@@ -51,7 +50,7 @@ const Sponsor: FC = () => {
             })}
           </Swiper>
         </div>
-        <Link href="/bisnis/sponsor">
+        <a href="/bisnis/sponsor">
           <motion.button
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -60,7 +59,7 @@ const Sponsor: FC = () => {
           >
             Become our Sponsor
           </motion.button>
-        </Link>
+        </a>
       </div>
     </motion.div>
   );

@@ -5,29 +5,100 @@
     "name": "Donor Darah",
     "url": "/acara/donor-darah",
     "img": "/images/acara/ill-donor-darah.png",
+    "poster": "/images/acara/poster-donor-darah.jpeg",
     "description": "ialah kegiatan mengambil darah seseorang yang dilaksanakan secara sukarela dan sadar untuk kemudian disimpan ke bank darah sebagai stok darah yang sewaktu-waktu dapat dipergunakan untuk transfusi darah. Dengan mendonorkan darah bukan hanya bermanfaat bagi kesehatan namun kita juga berkesempatan menjadi manfaat bagi orang lain.",
+    "short_description": "Donor darah adalah suatu aksi kebaikan yang dilakukan dengan cara menyumbangkan sebagian darah kepada orang lain yang membutuhkan.",
     "requirements": ["Umum", "Gratis", "Pendaftaran Online"],
-    "manfaat": [
-      [
-        "Mendeteksi penyakit serius",
-        "Meningkatkan produksi sel darah",
-        "Panjang umur",
-        "Menjaga kesehatan jantung"
-      ],
-      [
-        "Karena sebelum dilakukan proses donor, ada pengetesan untuk beberapa penyakit. Hal ini dilakukan agar kualitas darah yang didonasikan terjaga.",
-        "Karena saat donasi darah, tubuh kita akan membentuk sel darah merah yang baru. Donor darah secara rutin dapat menstimulasi pembentukan darah baru.",
-        "Karena menurut penelitian, berbuat baik dapat memperpanjang usia. Menurut penelitian, donor darah dapat menjaga kesehatan emosional seseorang.",
-        "Karena donor darah dapat memperlancar dan mencegah penyumbatan arteri. Selain itu, donor darah juga dapat meringankan resiko kanker, stroke, dan serangan jantung."
-      ]
+    "sponsors": [
+      {
+        "name": "HIMAFORKA UAJY",
+        "img": "/images/acara/donor-darah/sponsor-1.png"
+      },
+      {
+        "name": "iFest#11",
+        "img": "/images/acara/donor-darah/sponsor-2.png"
+      },
+      {
+        "name": "Palang Merah Indonesia",
+        "img": "/images/acara/donor-darah/sponsor-3.png"
+      }
+    ],
+    "benefits": [
+      {
+        "benefit": "Mendeteksi penyakit serius",
+        "description": "Karena sebelum dilakukan proses donor, ada pengetesan untuk beberapa penyakit. Hal ini dilakukan agar kualitas darah yang didonasikan terjaga.",
+        "icon": "/images/acara/donor-darah/icon-dondar-1.svg"
+      },
+      {
+        "benefit": "Meningkatkan produksi sel darah",
+        "description": "Karena saat donasi darah, tubuh kita akan membentuk sel darah merah yang baru. Donor darah secara rutin dapat menstimulasi pembentukan darah baru.",
+        "icon": "/images/acara/donor-darah/icon-dondar-2.svg"
+      },
+      {
+        "benefit": "Panjang umur",
+        "description": "Karena menurut penelitian, berbuat baik dapat memperpanjang usia. Menurut penelitian, donor darah dapat menjaga kesehatan emosional seseorang.",
+        "icon": "/images/acara/donor-darah/icon-dondar-3.svg"
+      },
+      {
+        "benefit": "Menjaga kesehatan jantung",
+        "description": "Karena donor darah dapat memperlancar dan mencegah penyumbatan arteri. Selain itu, donor darah juga dapat meringankan resiko kanker, stroke, dan serangan jantung.",
+        "icon": "/images/acara/donor-darah/icon-dondar-4.svg"
+      }
     ],
     "steps": [
-      ["Pergi ke Dashboard", "Isi form pendaftaran", "Donor darah"],
-      [
-        "Daftar melalui <LINK Dashboard Donor Darah>",
-        "Isi form secara online dan dapatkan bukti registrasi melalui email",
-        "Menunjukkan bukti registrasi dan melakukan donor darah"
-      ]
+      {
+        "step": "Pergi ke Dashboard",
+        "description": "Daftar melalui Dashboard Donor Darah.",
+        "icon": "/images/acara/donor-darah/step-1.png"
+      },
+      {
+        "step": "Isi form pendaftaran",
+        "description": "Isi form secara online dan dapatkan bukti registrasi melalui email",
+        "icon": "/images/acara/donor-darah/step-2.png"
+      },
+      {
+        "step": "Donor darah",
+        "description": "Menunjukkan bukti registrasi dan melakukan donor darah",
+        "icon": "/images/acara/donor-darah/step-3.png"
+      }
+    ],
+    "timeline": [
+      {
+        "name": "Pendaftaran",
+        "data": [
+          {
+            "name": "Pendaftaran Online",
+            "date": "17 Maret - 24 Maret 2023"
+          }
+        ]
+      },
+      {
+        "name": "Aksi Donor Darah Hari Pertama",
+        "data": [
+          {
+            "name": "Donor Darah Hari Pertama",
+            "date": "29 Maret 2023"
+          }
+        ]
+      },
+      {
+        "name": "Aksi Donor Darah Hari Kedua",
+        "data": [
+          {
+            "name": "Donor Darah Hari Kedua",
+            "date": "30 Maret 2023"
+          }
+        ]
+      },
+      {
+        "name": "Aksi Donor Darah Hari Ketiga",
+        "data": [
+          {
+            "name": "Donor Darah Hari Ketiga",
+            "date": "31 Maret 2023"
+          }
+        ]
+      }
     ]
   },
   "seminar-nasional": {

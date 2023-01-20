@@ -1,10 +1,13 @@
 import logo from "@/assets/images/logo.png";
+import CP from "@/components/CP";
 import Footer from "@/components/Footer";
 import posts from "@/data/posts.json";
+import { navColors } from "@/recoil/atoms";
 import parse from "html-react-parser";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { FC } from "react";
+import { useSetRecoilState } from "recoil";
 
 interface Post {
   id: number;
@@ -37,6 +40,7 @@ export const getStaticProps = async () => {
 };
 
 const Index: FC<Props> = ({ posts }: Props) => {
+  useSetRecoilState(navColors)({ bg1: "#18293f", bg2: "#2a548c", fg: "#92b9ec" });
   const router = useRouter();
   const { slug } = router.query;
   let post: Post | undefined = posts.find((post) => post.slug === slug);
@@ -59,8 +63,8 @@ const Index: FC<Props> = ({ posts }: Props) => {
             {parse(String(post?.content))}
           </p>
         </div>
-        <div className="h-8 w-full bg-white"></div>
       </div>
+      <CP get="all" />
       <Footer />
     </div>
   );

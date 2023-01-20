@@ -1,10 +1,15 @@
+import CP from "@/components/CP";
+import Footer from "@/components/Footer";
 import sponsorshipPackages from "@/data/sponsorship-package.json";
+import { navColors } from "@/recoil/atoms";
 import { FC } from "react";
+import { useSetRecoilState } from "recoil";
 import { Autoplay, EffectCoverflow } from "swiper";
 import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Index: FC = () => {
+  useSetRecoilState(navColors)({ bg1: "#152435", bg2: "#182e47", fg: "#479ec6" });
   return (
     <div className="absolute top-0 -z-10 min-h-screen w-full bg-[#0A1828] pt-48">
       <div className="flex flex-col items-center justify-center gap-4">
@@ -37,7 +42,7 @@ const Index: FC = () => {
             {sponsorshipPackages.map((p) => {
               return (
                 <SwiperSlide key={p.id}>
-                  <div className="flex h-[32rem] w-72 flex-col items-center gap-2 rounded-xl border border-[#5aa7c0] p-4">
+                  <div className="flex h-[32rem] w-72 flex-col items-center gap-2 rounded-xl border-4 border-[#26667F] p-4">
                     <img className="w-32" src={p.image} alt="/" />
                     <div className="text-center font-louisgeorgecafe font-bold text-[#ffffffdd]">
                       {p.name}
@@ -70,6 +75,8 @@ const Index: FC = () => {
           </Swiper>
         </div>
       </div>
+      <CP get="sponsorship" />
+      <Footer className="bg-[#0a1828]" />
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import logo from "@/assets/images/logo.png";
 import navs from "@/data/navs.json";
+import { navColors } from "@/recoil/atoms";
 import { Menu, Popover } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
+import { useRecoilValue } from "recoil";
 
 interface Color {
   bg1: string;
@@ -14,31 +14,9 @@ interface Color {
 }
 
 const NavBar: FC = () => {
-  const router = useRouter();
-  const [color, setColor] = useState<Color>({ bg1: "", bg2: "", fg: "" });
-
-  useEffect(() => {
-    switch (router.pathname) {
-      case "/":
-        setColor({ bg1: "#211a44", bg2: "#3d3474", fg: "#bfb2ff" });
-        break;
-      case "/kompetisi/[id]":
-        setColor({ bg1: "#211a44", bg2: "#3d3474", fg: "#bfb2ff" });
-        break;
-      case "/bisnis/sponsor":
-        setColor({ bg1: "#152435", bg2: "#182e47", fg: "#479ec6" });
-        break;
-      case "/blog/[slug]":
-        setColor({ bg1: "#18293f", bg2: "#2a548c", fg: "#92b9ec" });
-        break;
-      default:
-        setColor({ bg1: "#173923", bg2: "#357c4d", fg: "#b5ec6f" });
-        break;
-    }
-  }, [router.pathname]);
-
+  const color: Color = useRecoilValue(navColors);
   return (
-    <motion.div className="z-10 flex items-center justify-between p-4 lg:px-8 2xl:px-32">
+    <div className="z-10 flex items-center justify-between p-4 lg:px-16 2xl:px-32">
       <motion.a
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -116,12 +94,12 @@ const NavBar: FC = () => {
                                           {item.name}
                                         </a>
                                       ) : (
-                                        <Link
+                                        <a
                                           className={`${active && "text-[#fff]"}`}
                                           href={item.link}
                                         >
                                           {item.name}
-                                        </Link>
+                                        </a>
                                       );
                                     }}
                                   </Menu.Item>
@@ -226,7 +204,7 @@ const NavBar: FC = () => {
                                     </motion.button>
                                   </a>
                                 ) : (
-                                  <Link href={item.link} key={index}>
+                                  <a href={item.link} key={index}>
                                     <motion.button
                                       className="cursor-default rounded-full border-4 px-4 py-1 font-retroica text-xl tracking-wide"
                                       whileTap={{ scale: 0.9 }}
@@ -239,7 +217,7 @@ const NavBar: FC = () => {
                                     >
                                       {item.name}
                                     </motion.button>
-                                  </Link>
+                                  </a>
                                 );
                               })}
                             </>
@@ -254,7 +232,7 @@ const NavBar: FC = () => {
           </>
         )}
       </Popover>
-    </motion.div>
+    </div>
   );
 };
 

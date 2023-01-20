@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FC, ReactNode, useEffect } from "react";
 
 import NavBar from "./NavBar";
@@ -11,10 +12,12 @@ const Layout: FC<Props> = ({ children }: Props) => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="layout cursor-default">
-      <NavBar />
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="layout cursor-default">
+      <nav>
+        <NavBar />
+      </nav>
       <main>{children}</main>
-    </div>
+    </motion.div>
   );
 };
 

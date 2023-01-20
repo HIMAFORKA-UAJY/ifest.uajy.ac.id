@@ -10,6 +10,8 @@ import { useRouter } from "next/router";
 import { FC, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
 import { FaBook, FaCertificate, FaMale, FaMoneyBill, FaTrophy, FaWallet } from "react-icons/fa";
+import { useSetRecoilState } from "recoil";
+import { navColors } from "src/recoil/atoms";
 
 interface Kompetisi {
   id: number;
@@ -71,6 +73,8 @@ export const getStaticProps = async () => {
 };
 
 const Index: FC<Props> = ({ kompetisi }: Props) => {
+  useSetRecoilState(navColors)({ bg1: "#211a44", bg2: "#3d3474", fg: "#bfb2ff" });
+
   const router = useRouter();
   const { id } = router.query;
   const k: Kompetisi = kompetisi[id as keyof typeof kompetisi];

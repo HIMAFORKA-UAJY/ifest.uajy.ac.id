@@ -1,6 +1,5 @@
 import posts from "@/data/posts.json";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { FC } from "react";
 import { EffectCoverflow, Navigation, Pagination } from "swiper";
 import "swiper/css";
@@ -51,9 +50,9 @@ const Publication: FC = () => {
                       <div className="text-[#7364D2]">{post.date}</div>
                     </div>
                     <div className="py-2"></div>
-                    <Link className="transition-all hover:scale-125" href={`/blog/${post.slug}`}>
+                    <a className="transition-all hover:scale-125" href={`/blog/${post.slug}`}>
                       <button className="tracking-wide text-[#9c8dfc]">Find out more</button>
-                    </Link>
+                    </a>
                   </div>
                 </SwiperSlide>
               );

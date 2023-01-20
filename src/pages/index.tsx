@@ -9,10 +9,13 @@ import ShootingStars from "@/components/Home/ShootingStars";
 import Sponsor from "@/components/Home/Sponsor";
 import acara from "@/data/acara.json";
 import kompetisi from "@/data/kompetisi.json";
+import { navColors } from "@/recoil/atoms";
 import Head from "next/head";
 import { FC } from "react";
+import { useSetRecoilState } from "recoil";
 
 const Home: FC = () => {
+  useSetRecoilState(navColors)({ bg1: "#211a44", bg2: "#3d3474", fg: "#bfb2ff" });
   return (
     <>
       <Head>
@@ -38,7 +41,7 @@ const Home: FC = () => {
         <FAQ />
         <Sponsor />
         <MediaPartner />
-        <CP get="all" />
+        <CP className="bg-[#3b3275]" get="all" />
       </Container>
     </>
   );

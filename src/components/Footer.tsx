@@ -1,24 +1,15 @@
 import logo from "@/assets/images/logo.png";
 import footer from "@/data/footer.json";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import { SiInstagram, SiLine } from "react-icons/Si";
 import { MdEmail } from "react-icons/md";
 
-const Footer: FC = () => {
-  const router = useRouter();
-  const [color, setColor] = useState<string>("");
+interface Props {
+  className?: string;
+}
 
-  useEffect(() => {
-    switch (router.pathname) {
-      case "/":
-        setColor("#2b2265");
-        break;
-    }
-  }, [router.pathname]);
-
+const Footer: FC<Props> = ({ className }: Props) => {
   const getIcon = (index: number) => {
     switch (index) {
       case 0:
@@ -29,12 +20,10 @@ const Footer: FC = () => {
         return <MdEmail />;
     }
   };
-
   return (
     <>
       <div
-        className="grid justify-center gap-3 pt-10 pb-4 pl-2 lg:grid-cols-7 lg:gap-8 lg:px-8"
-        style={{ backgroundColor: color }}
+        className={`${className} grid justify-center gap-3 px-6 pt-10 pb-4 lg:grid-cols-7 lg:gap-8 lg:px-8`}
       >
         <div>
           <Image
@@ -55,7 +44,7 @@ const Footer: FC = () => {
               <div className="font-retroica text-xl">{nav.name}</div>
               {nav.data.map((item, index) => {
                 return nav.name === "Akses" ? (
-                  <Link
+                  <a
                     className="flex w-fit items-center gap-2 font-louisgeorgecafe opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90"
                     href={`https://ifest.uajy.ac.id${item.link}`}
                     key={index}
@@ -63,16 +52,16 @@ const Footer: FC = () => {
                     rel="noreferrer"
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 ) : (
-                  <Link
+                  <a
                     className="flex w-fit items-center gap-2 font-louisgeorgecafe opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90"
                     href={item.link}
                     key={index}
                   >
                     {nav.name === "Sosial Media" ? getIcon(index) : ""}
                     {item.name}
-                  </Link>
+                  </a>
                 );
               })}
             </div>

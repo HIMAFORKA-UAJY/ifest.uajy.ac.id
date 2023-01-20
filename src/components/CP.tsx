@@ -1,12 +1,13 @@
 import cp from "@/data/cp.json";
 import { motion } from "framer-motion";
-import { CSSProperties, FC, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { FaLine, FaWhatsapp } from "react-icons/fa";
 import { Grid, Navigation, Pagination } from "swiper";
 import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 interface Props {
+  className?: string;
   get:
     | "i2c"
     | "wdc"
@@ -18,7 +19,7 @@ interface Props {
     | "all";
 }
 
-const CP: FC<Props> = ({ get }: Props) => {
+const CP: FC<Props> = ({ className, get }: Props) => {
   const [p, setP] = useState<
     {
       name: string;
@@ -87,7 +88,7 @@ const CP: FC<Props> = ({ get }: Props) => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1, ease: "easeInOut" }}
-      className="bg-[#3b3275]"
+      className={`${className}`}
     >
       <div className="flex w-full flex-col items-center justify-center gap-2 py-10">
         <div className="font-retron2000 text-4xl font-bold tracking-[0.15em] text-white">
@@ -117,7 +118,6 @@ const CP: FC<Props> = ({ get }: Props) => {
             }}
             navigation
             modules={[Grid, Pagination, Navigation]}
-            style={{ "--swiper-pagination-color": "#C3AEFF" } as CSSProperties}
             className="mySwiper classes.swiper-button-prev classes.swiper-button-next"
           >
             {p?.map((q, index) => {
@@ -136,7 +136,7 @@ const CP: FC<Props> = ({ get }: Props) => {
                       </div>
                       {q.data.map((r, index) => {
                         return (
-                          <div className="flex flex-col items-center py-2" key={index}>
+                          <div className="flex flex-col items-center py-4" key={index}>
                             <a
                               className="flex flex-wrap items-center justify-center gap-1"
                               href={r.whatsapp.url}

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { FC } from "react";
 import { FaBook, FaMale, FaWallet } from "react-icons/fa";
 
@@ -21,9 +20,9 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
       case 0:
         return <FaBook />;
       case 1:
-        return <FaMale />;
-      case 2:
         return <FaWallet />;
+      case 2:
+        return <FaMale />;
     }
   };
 
@@ -97,14 +96,14 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
           </div>
           <div className="pt-10"></div>
           <div className="flex justify-center lg:justify-start">
-            <Link href={content.url}>
+            <a href={content.url}>
               <button
-                className="rounded-[2.0em] px-5 py-3 font-retroica text-sm tracking-widest text-white hover:shadow-[0_0px_80px_0px_#886fcb] lg:text-base"
+                className="rounded-[2.0em] px-5 py-3 font-retroica text-sm tracking-widest text-white transition-all hover:shadow-[0_0px_80px_0px_#886fcb] lg:text-base"
                 style={{ backgroundColor: getColor(content.id) }}
               >
                 Read More
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
