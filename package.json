@@ -1,7 +1,21 @@
 {
   "name": "ifest.uajy.ac.id",
-  "version": "0.1.0",
+  "version": "1.0.0-rc.6",
   "private": true,
+  "description": "iFest#11 main website.",
+  "homepage": "https://github.com/vt92i/ifest.uajy.ac.id",
+  "bugs": "https://github.com/vt92i/ifest.uajy.ac.id/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vt92i/ifest.uajy.ac.id.git"
+  },
+  "author": "Vila <benidiktusvio@gmail.com> (https://github.com/vt92i)",
+  "contributors": [
+    "Gabriel Allba Shemi Yuma (https://github.com/GabrielAllba)",
+    "FrienDotJava (https://github.com/FrienDotJava)",
+    "Christopher Hartono (https://github.com/bootloopmaster636)",
+    "Ferdy (https://github.com/ApocalCrk)"
+  ],
   "scripts": {
     "build": "next build && next export",
     "dev": "next dev",
