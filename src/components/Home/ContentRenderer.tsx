@@ -49,7 +49,7 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
       transition={{ duration: 1, ease: "easeInOut" }}
       className={`${
         content.id == 1
-          ? "bg-[url('/images/bg-flip.png')] bg-cover bg-center bg-no-repeat"
+          ? "bg-[url('/images/bg-flip.webp')] bg-cover bg-center bg-no-repeat"
           : content.id % 2 == 0
           ? "bg-[#3b3275]"
           : "bg-[#2b2265]"

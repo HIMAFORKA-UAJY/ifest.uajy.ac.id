@@ -2,41 +2,41 @@
   {
     "id": 1,
     "name": "Edaran Event",
-    "image": "/images/media-partners/edaranevent.png"
+    "image": "/images/media-partners/edaranevent.webp"
   },
   {
     "id": 2,
     "name": "Event Campus Co",
-    "image": "/images/media-partners/eventcampus.co.png"
+    "image": "/images/media-partners/eventcampus.co.webp"
   },
   {
     "id": 3,
     "name": "Event Campus",
-    "image": "/images/media-partners/eventcampus.png"
+    "image": "/images/media-partners/eventcampus.webp"
   },
   {
     "id": 4,
     "name": "Info Event",
-    "image": "/images/media-partners/infoevent.png"
+    "image": "/images/media-partners/infoevent.webp"
   },
   {
     "id": 5,
     "name": "Info Lomba Indonesia",
-    "image": "/images/media-partners/infolomba.indonesia.jfif"
+    "image": "/images/media-partners/infolomba.indonesia.webp"
   },
   {
     "id": 6,
     "name": "Lomba SMA",
-    "image": "/images/media-partners/lombasma.png"
+    "image": "/images/media-partners/lombasma.webp"
   },
   {
     "id": 7,
     "name": "Media Event",
-    "image": "/images/media-partners/mediaevent.png"
+    "image": "/images/media-partners/mediaevent.webp"
   },
   {
     "id": 8,
     "name": "Seputar Info ID",
-    "image": "/images/media-partners/seputar.infoid.jpg"
+    "image": "/images/media-partners/seputar.infoid.webp"
   }
 ]

@@ -12,7 +12,7 @@ interface Props {
 const ComingSoon: FC<Props> = ({ date }: Props) => {
   useSetRecoilState(navColors)({ bg1: "#173923", bg2: "#357c4d", fg: "#b5ec6f" });
   return (
-    <div className="absolute top-0 -z-10 min-h-screen w-full bg-[url('/images/bg-no-flip.png')] bg-cover bg-center bg-no-repeat">
+    <div className="absolute top-0 -z-10 min-h-screen w-full bg-[url('/images/bg-no-flip.webp')] bg-cover bg-center bg-no-repeat">
       <div className="bg-gradient-to-b from-[#40ba62]/80 to-[#219068]/80 font-retroica">
         <div className="flex min-h-screen flex-col items-center justify-center gap-8 px-4 pt-32 pb-8">
           <div className="text-center text-4xl font-bold tracking-[0.1em] text-white lg:text-5xl">

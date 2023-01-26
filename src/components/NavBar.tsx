@@ -1,9 +1,8 @@
-import logo from "@/assets/images/logo.png";
 import navs from "@/data/navs.json";
 import { navColors } from "@/recoil/atoms";
 import { Menu, Popover } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 import { useRecoilValue } from "recoil";
 
@@ -25,7 +24,7 @@ const NavBar: FC = () => {
         className="w-16"
         href={"/"}
       >
-        <Image src={logo} alt="ifest-logo" />
+        <img src="/images/logo.webp" alt="ifest-logo" />
       </motion.a>
 
       <div className="hidden gap-16 lg:flex">
@@ -85,21 +84,21 @@ const NavBar: FC = () => {
                                   <Menu.Item>
                                     {({ active }) => {
                                       return item.name === "Dashboard" ? (
-                                        <a
+                                        <Link
                                           className={`${active && "text-[#fff]"}`}
                                           href="https://ifest.uajy.ac.id/dash"
                                           target="_blank"
                                           rel="noreferrer"
                                         >
                                           {item.name}
-                                        </a>
+                                        </Link>
                                       ) : (
-                                        <a
+                                        <Link
                                           className={`${active && "text-[#fff]"}`}
                                           href={item.link}
                                         >
                                           {item.name}
-                                        </a>
+                                        </Link>
                                       );
                                     }}
                                   </Menu.Item>
@@ -184,7 +183,7 @@ const NavBar: FC = () => {
                             <>
                               {nav.data.map((item, index) => {
                                 return item.name === "Dashboard" ? (
-                                  <a
+                                  <Link
                                     href="https://ifest.uajy.ac.id/dash/"
                                     key={index}
                                     target="_blank"
@@ -202,9 +201,9 @@ const NavBar: FC = () => {
                                     >
                                       {item.name}
                                     </motion.button>
-                                  </a>
+                                  </Link>
                                 ) : (
-                                  <a href={item.link} key={index}>
+                                  <Link href={item.link} key={index}>
                                     <motion.button
                                       className="cursor-default rounded-full border-4 px-4 py-1 font-retroica text-xl tracking-wide"
                                       whileTap={{ scale: 0.9 }}
@@ -217,7 +216,7 @@ const NavBar: FC = () => {
                                     >
                                       {item.name}
                                     </motion.button>
-                                  </a>
+                                  </Link>
                                 );
                               })}
                             </>

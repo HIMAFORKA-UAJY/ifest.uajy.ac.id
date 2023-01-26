@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Platinum",
-    "image": "/images/sponsors/sponsor-diamond.png",
+    "image": "/images/sponsors/sponsor-diamond.webp",
     "price": "Rp. 6.000.000",
     "benefits": [
       "Penempatan logo pada website IFest #11 dengan ukuran setara dengan pihak penyelenggara.",
@@ -25,7 +25,7 @@
   {
     "id": 2,
     "name": "Gold",
-    "image": "/images/sponsors/sponsor-gold.png",
+    "image": "/images/sponsors/sponsor-gold.webp",
     "price": "Rp. 4.000.000",
     "benefits": [
       "Penempatan logo pada website IFest #11 dengan ukuran setara dengan pihak penyelenggara.",
@@ -46,7 +46,7 @@
   {
     "id": 3,
     "name": "Silver",
-    "image": "/images/sponsors/sponsor-silver.png",
+    "image": "/images/sponsors/sponsor-silver.webp",
     "price": "Rp. 2.500.000",
     "benefits": [
       "Penempatan logo pada website IFest #11 dengan ukuran 50% dengan pihak penyelenggara.",
@@ -64,7 +64,7 @@
   {
     "id": 4,
     "name": "Bronze",
-    "image": "/images/sponsors/sponsor-bronze.png",
+    "image": "/images/sponsors/sponsor-bronze.webp",
     "price": "Rp. 1.500.000",
     "benefits": [
       "Penempatan logo pada website IFest #11 dengan ukuran 25% dengan pihak penyelenggara.",

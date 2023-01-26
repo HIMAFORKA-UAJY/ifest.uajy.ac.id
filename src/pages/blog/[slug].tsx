@@ -1,10 +1,8 @@
-import logo from "@/assets/images/logo.png";
 import CP from "@/components/CP";
 import Footer from "@/components/Footer";
 import posts from "@/data/posts.json";
 import { navColors } from "@/recoil/atoms";
 import parse from "html-react-parser";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { FC } from "react";
 import { useSetRecoilState } from "recoil";
@@ -52,7 +50,7 @@ const Index: FC<Props> = ({ posts }: Props) => {
         </div>
         <div className="flex w-10/12 flex-col gap-8 rounded-xl bg-white p-8 drop-shadow-2xl">
           <div className="flex flex-wrap items-center gap-8">
-            <Image src={logo} className="w-20" alt="ifest-logo" />
+            <img className="w-20" src="/images/logo.webp" alt="ifest-logo" />
             <div>
               <div className="font-retroica text-lg">{post?.author.jabatan}</div>
               <div className="font-louisgeorgecafe text-lg">{post?.author.name}</div>

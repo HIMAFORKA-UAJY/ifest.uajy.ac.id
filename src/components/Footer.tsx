@@ -1,6 +1,5 @@
-import logo from "@/assets/images/logo.png";
 import footer from "@/data/footer.json";
-import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 import { MdEmail } from "react-icons/md";
 import { SiInstagram, SiLine } from "react-icons/si";
@@ -26,9 +25,9 @@ const Footer: FC<Props> = ({ className }: Props) => {
         className={`${className} grid justify-center gap-3 px-6 pt-10 pb-4 lg:grid-cols-7 lg:gap-8 lg:px-8`}
       >
         <div>
-          <Image
+          <img
             className="w-24 transition-transform hover:scale-110"
-            src={logo}
+            src="/images/logo.webp"
             alt="ifest-logo"
           />
         </div>
@@ -44,7 +43,7 @@ const Footer: FC<Props> = ({ className }: Props) => {
               <div className="font-retroica text-xl">{nav.name}</div>
               {nav.data.map((item, index) => {
                 return nav.name === "Akses" ? (
-                  <a
+                  <Link
                     className="flex w-fit items-center gap-2 font-louisgeorgecafe opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90"
                     href={`https://ifest.uajy.ac.id${item.link}`}
                     key={index}
@@ -52,16 +51,16 @@ const Footer: FC<Props> = ({ className }: Props) => {
                     rel="noreferrer"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ) : (
-                  <a
+                  <Link
                     className="flex w-fit items-center gap-2 font-louisgeorgecafe opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90"
                     href={item.link}
                     key={index}
                   >
                     {nav.name === "Sosial Media" ? getIcon(index) : ""}
                     {item.name}
-                  </a>
+                  </Link>
                 );
               })}
             </div>

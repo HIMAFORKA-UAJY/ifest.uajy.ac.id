@@ -4,8 +4,8 @@
     "abbreviation": "I2C",
     "name": "Innovative Informatics Contest",
     "url": "/kompetisi/i2c",
-    "img": "/images/kompetisi/ill-i2c.png",
-    "poster": "/images/kompetisi/poster-i2c.jpg",
+    "img": "/images/kompetisi/ill-i2c.webp",
+    "poster": "/images/kompetisi/poster-i2c.webp",
     "rulebook": "/documents/rulebook-i2c.pdf",
     "date_available": "2023-01-16",
     "requirements": ["SMA / Sederajat", "Rp. 150k / tim", "3 peserta / tim"],
@@ -95,22 +95,22 @@
       "distribution": [
         {
           "type": "Juara 1",
-          "image": "/images/medal-1.png",
+          "image": "/images/medal-1.webp",
           "rewards": ["Rp 4.000.000", "Piala", "Sertifikat Nasional"]
         },
         {
           "type": "Juara 2",
-          "image": "/images/medal-2.png",
+          "image": "/images/medal-2.webp",
           "rewards": ["Rp 3.000.000", "Piala", "Sertifikat Nasional"]
         },
         {
           "type": "Juara 3",
-          "image": "/images/medal-3.png",
+          "image": "/images/medal-3.webp",
           "rewards": ["Rp 2.000.000", "Piala", "Sertifikat Nasional"]
         },
         {
           "type": "Juara Favorit",
-          "image": "/images/medal-favorit.png",
+          "image": "/images/medal-favorit.webp",
           "rewards": ["Rp 500.000", "Piala", "Sertifikat Nasional"]
         }
       ]
@@ -121,8 +121,8 @@
     "abbreviation": "WDC",
     "name": "Web Design Competition",
     "url": "/kompetisi/wdc",
-    "img": "/images/kompetisi/ill-wdc.png",
-    "poster": "/images/kompetisi/poster-i2c.jpg",
+    "img": "/images/kompetisi/ill-wdc.webp",
+    "poster": "/images/kompetisi/poster-i2c.webp",
     "rulebook": "/documents/rulebook-i2c.pdf",
     "date_available": "2023-01-20",
     "requirements": ["SMA / Sederajat", "Rp. 50k / tim", "2 peserta / tim"],
@@ -201,17 +201,17 @@
       "distribution": [
         {
           "type": "Juara 1",
-          "image": "/images/medal-1.png",
+          "image": "/images/medal-1.webp",
           "rewards": ["Rp 3.000.000", "Piala", "Sertifikat Nasional"]
         },
         {
           "type": "Juara 2",
-          "image": "/images/medal-2.png",
+          "image": "/images/medal-2.webp",
           "rewards": ["Rp 2.000.000", "Piala", "Sertifikat Nasional"]
         },
         {
           "type": "Juara 3",
-          "image": "/images/medal-3.png",
+          "image": "/images/medal-3.webp",
           "rewards": ["Rp 1.000.000", "Piala", "Sertifikat Nasional"]
         }
       ]
@@ -222,8 +222,8 @@
     "abbreviation": "MUC",
     "name": "Mobile UI/UX Competition",
     "url": "/kompetisi/muc",
-    "img": "/images/kompetisi/ill-muc.png",
-    "poster": "/images/kompetisi/poster-i2c.jpg",
+    "img": "/images/kompetisi/ill-muc.webp",
+    "poster": "/images/kompetisi/poster-i2c.webp",
     "rulebook": "/documents/rulebook-i2c.pdf",
     "date_available": "2023-02-27",
     "description": "adalah perlombaan untuk menampilkan interface dari sebuah aplikasi mobile yang diharapkan dapat membantu penggunaan dari aplikasi itu sendiri.",
@@ -302,17 +302,17 @@
       "distribution": [
         {
           "type": "Juara 1",
-          "image": "/images/medal-1.png",
+          "image": "/images/medal-1.webp",
           "rewards": ["Rp 3.000.000", "Piala", "Sertifikat Nasional"]
         },
         {
           "type": "Juara 2",
-          "image": "/images/medal-2.png",
+          "image": "/images/medal-2.webp",
           "rewards": ["Rp 2.000.000", "Piala", "Sertifikat Nasional"]
         },
         {
           "type": "Juara 3",
-          "image": "/images/medal-3.png",
+          "image": "/images/medal-3.webp",
           "rewards": ["Rp 1.000.000", "Piala", "Sertifikat Nasional"]
         }
       ]
