@@ -6,6 +6,7 @@ import { Dialog } from "@headlessui/react";
 import { motion } from "framer-motion";
 import parse from "html-react-parser";
 import moment from "moment-timezone";
+import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 import { FC, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
@@ -115,254 +116,270 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
     k.date_available == null ||
     moment().tz("Asia/Jakarta").diff(moment(k.date_available).tz("Asia/Jakarta")) < 0
   )
-    return <ComingSoon date={k.date_available} />;
+    return (
+      <>
+        <NextSeo
+          description={`${k.abbreviation} ${k.description}`}
+          title={`${k.abbreviation} - IFest#11`}
+        />
+        <ComingSoon date={k.date_available} />;
+      </>
+    );
 
   return (
-    <div className="absolute top-0 -z-10 min-h-screen w-full bg-gradient-to-b from-[#2a2f59] to-[#332550]">
-      <div className="flex h-screen flex-col items-center justify-center gap-4 px-4 lg:flex-row">
-        <img alt={k.name.toLowerCase()} className="w-72 lg:w-1/4" src={k.img} />
-        <div className="flex flex-col items-center justify-center gap-8">
-          <div className="bg-gradient-to-r from-[#c6aeff] to-[#aec9ff] bg-clip-text text-center text-transparent">
-            <div className="font-retroica text-4xl tracking-wide lg:hidden">{k.abbreviation}</div>
-            <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">{k.name}</div>
-          </div>
-          <div className="flex w-9/12 flex-col gap-2 font-retroica text-sm text-white lg:w-full lg:flex-row lg:justify-center lg:gap-6">
-            {k.requirements.map((r, index) => {
-              return (
-                <div
-                  className="rounded-full p-1"
-                  key={index}
-                  style={{ backgroundColor: getColor(index) }}
-                >
-                  <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-4">
-                    {getIcon(index)}
-                    {r}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          <motion.button
-            animate={{ opacity: 0.75 }}
-            className="transition-transform hover:scale-125"
-            initial={{ opacity: 0 }}
-            onClick={() => contentRef.current?.scrollIntoView({ behavior: "smooth" })}
-            transition={{ duration: 0.25 }}
-          >
-            <svg
-              className="h-10 w-10 stroke-white"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={1.5}
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </motion.button>
-        </div>
-      </div>
-
-      <div className="bg-gradient-to-t from-[#2a2f59] to-[#332550]" ref={contentRef}>
-        <div className="border-gray-700 bg-[#241f3d] p-8">
-          <div className="flex flex-col items-center gap-4">
-            <div className="font-retroica text-3xl tracking-wider text-white">
-              MORE ABOUT {k.abbreviation}
+    <>
+      <NextSeo
+        description={`${k.abbreviation} ${k.description}`}
+        title={`${k.abbreviation} - IFest#11`}
+      />
+      <div className="absolute top-0 -z-10 min-h-screen w-full bg-gradient-to-b from-[#2a2f59] to-[#332550]">
+        <div className="flex h-screen flex-col items-center justify-center gap-4 px-4 lg:flex-row">
+          <img alt={k.name.toLowerCase()} className="w-72 lg:w-1/4" src={k.img} />
+          <div className="flex flex-col items-center justify-center gap-8">
+            <div className="bg-gradient-to-r from-[#c6aeff] to-[#aec9ff] bg-clip-text text-center text-transparent">
+              <div className="font-retroica text-4xl tracking-wide lg:hidden">{k.abbreviation}</div>
+              <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">{k.name}</div>
             </div>
-            <div className="text-md w-full px-2 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
-              {parse(String(k.long_description))}
-            </div>
-          </div>
-          <div className="flex flex-col pt-4 font-louisgeorgecafe text-white lg:flex-row lg:items-center lg:justify-center lg:gap-6">
-            <div className="rounded-full bg-[#6c6486] p-1">
-              <button
-                className="flex w-full justify-center gap-1 rounded-full bg-[#332550] p-2 transition-all hover:bg-transparent"
-                onClick={() => setOpenPoster(true)}
-              >
-                <div className="tracking-widest opacity-70">Lihat Poster</div>
-              </button>
-            </div>
-            <Dialog
-              className="relative z-50"
-              onClose={() => setOpenPoster(false)}
-              open={openPoster}
-            >
-              <div aria-hidden="true" className="fixed inset-0 bg-black/50" />
-              <div className="fixed inset-0 flex items-center justify-center">
-                <Dialog.Panel className="flex h-full w-11/12 flex-col items-center justify-center gap-2 overflow-auto p-8">
-                  <img
-                    alt="poster"
-                    className="h-full w-full object-contain object-center"
-                    onClick={() => setOpenPoster(false)}
-                    src={k.poster}
-                  />
-                </Dialog.Panel>
-              </div>
-            </Dialog>
-            <div className="py-2">
-              <div className="rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
-                <a href="https://ifest.uajy.ac.id/dash" rel="noreferrer" target="_blank">
-                  <button className="flex w-full justify-center gap-1 rounded-full bg-[#332550] p-2 transition-all hover:bg-transparent">
-                    <div className="tracking-widest opacity-100">DAFTAR</div>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="rounded-full bg-[#6c6486] p-1">
-              <button
-                className="flex w-full justify-center gap-1 rounded-full bg-[#332550] p-2 transition-all hover:bg-transparent"
-                onClick={() => setOpenRulebook(true)}
-              >
-                <div className="tracking-widest opacity-70">Lihat Rulebook</div>
-              </button>
-            </div>
-            <Dialog
-              className="relative z-50"
-              onClose={() => setOpenRulebook(false)}
-              open={openRuleBook}
-            >
-              <div aria-hidden="true" className="fixed inset-0 bg-black/50" />
-              <div className="fixed inset-0 flex items-center justify-center">
-                <Dialog.Panel className="flex h-full w-11/12 flex-col items-center justify-center gap-0 overflow-auto p-8">
-                  <iframe
-                    className="h-screen w-full py-10"
-                    onClick={() => setOpenRulebook(false)}
-                    src={k.rulebook}
-                  ></iframe>
-                </Dialog.Panel>
-              </div>
-            </Dialog>
-          </div>
-        </div>
-
-        <div className="flex flex-col justify-center gap-8 p-8 lg:px-24">
-          {k.provision.map((provision, index) => {
-            return (
-              <div className="rounded-lg border border-gray-700 bg-[#241f3d] p-4" key={index}>
-                <h3 className="pl-6 font-retroica text-2xl text-[#87bbeb]">{provision.type}</h3>
-                <div className="p-6 font-louisgeorgecafe leading-loose text-white">
-                  <ol className="list-outside list-decimal">
-                    {provision.data.map((item, index) => {
-                      return <li key={index}>{item}</li>;
-                    })}
-                  </ol>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="flex flex-col items-center justify-center py-8">
-          <div className="text-center font-retroica text-4xl text-[#87bbeb]">Timeline</div>
-          {k.timeline.map((timeline, index) => {
-            return (
-              <div className="flex w-full flex-col items-center justify-center" key={index}>
-                <div className="w-fit rounded-xl bg-[#241f3d] pb-1">
-                  <div className="rounded-xl bg-[#716B90] p-4 font-retroica text-white shadow-inner">
-                    {timeline.name}
-                  </div>
-                </div>
-                <div className="w-full lg:w-10/12 2xl:w-1/2">
-                  <Chrono
-                    cardHeight={50}
-                    disableClickOnCircle
-                    hideControls
-                    items={timeline.data.map((item) => {
-                      return {
-                        title: item.name,
-                        cardTitle: item.date,
-                      };
-                    })}
-                    mode="VERTICAL_ALTERNATING"
-                    theme={{
-                      primary: "#716b90",
-                      secondary: "transparent",
-                      cardBgColor: "#241f3d",
-                      cardForeColor: "white",
-                      titleColor: "white",
-                      titleColorActive: "white",
-                    }}
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="flex w-full flex-col items-center justify-center bg-[url('/images/bg-prizepool.png')] bg-cover bg-center bg-no-repeat py-10">
-          <div className="text-center font-retroica text-5xl tracking-widest text-[#87bbeb]">
-            PRIZE POOL
-          </div>
-          <div className="pb-6 pt-2 text-center font-retroica text-3xl text-[#ffba57]">
-            {k.prizepool.total}
-          </div>
-          <div className="grid gap-8 lg:grid-cols-3" id="fika">
-            {k.prizepool.distribution.map((distribution, index) => {
-              return (
-                <div
-                  className={`${
-                    k.prizepool.distribution.length % 2 == 0 && index == 0
-                      ? "col-span-full"
-                      : "fika"
-                  }`}
-                  key={index}
-                >
-                  <div className="flex flex-row items-center justify-center rounded-xl border border-gray-700 bg-[#241f3d] p-4 text-white transition duration-300 ease-in hover:scale-105 hover:text-[#241f3d] lg:flex-col">
-                    <img
-                      alt="/"
-                      className={`${
-                        index % 2 == 0 ? "order-0" : "order-1"
-                      } w-32 p-4 lg:-order-none lg:w-48`}
-                      src={distribution.image}
-                    />
-                    <div>
-                      <div className="text-center font-retroica text-2xl">{distribution.type}</div>
-                      {distribution.rewards.map((reward, index) => {
-                        return (
-                          <div className="flex gap-3 font-retroica" key={index}>
-                            {getIcon(index + 3)} {reward}
-                          </div>
-                        );
-                      })}
+            <div className="flex w-9/12 flex-col gap-2 font-retroica text-sm text-white lg:w-full lg:flex-row lg:justify-center lg:gap-6">
+              {k.requirements.map((r, index) => {
+                return (
+                  <div
+                    className="rounded-full p-1"
+                    key={index}
+                    style={{ backgroundColor: getColor(index) }}
+                  >
+                    <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-4">
+                      {getIcon(index)}
+                      {r}
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
+            <motion.button
+              animate={{ opacity: 0.75 }}
+              className="transition-transform hover:scale-125"
+              initial={{ opacity: 0 }}
+              onClick={() => contentRef.current?.scrollIntoView({ behavior: "smooth" })}
+              transition={{ duration: 0.25 }}
+            >
+              <svg
+                className="h-10 w-10 stroke-white"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.5}
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </motion.button>
           </div>
         </div>
 
-        <div className="flex w-full flex-col items-center justify-center p-10">
-          <div className="w-full rounded-xl border-gray-200 bg-gradient-to-br from-[#463e74] to-[#332550] p-4 lg:w-10/12 2xl:w-1/2">
-            <div className="flex flex-col items-center justify-center text-center lg:flex-row lg:justify-start">
-              <img alt="/" className="w-48" src="/images/announce.webp" />
-              <div className="flex flex-col items-center gap-4 lg:items-start">
-                <div className="font-retroica text-2xl text-[#87bbeb]">
-                  Tertarik? Ayo mendaftar!
+        <div className="bg-gradient-to-t from-[#2a2f59] to-[#332550]" ref={contentRef}>
+          <div className="border-gray-700 bg-[#241f3d] p-8">
+            <div className="flex flex-col items-center gap-4">
+              <div className="font-retroica text-3xl tracking-wider text-white">
+                MORE ABOUT {k.abbreviation}
+              </div>
+              <div className="text-md w-full px-2 text-justify font-louisgeorgecafe font-thin text-white lg:px-[10rem] lg:text-center">
+                {parse(String(k.long_description))}
+              </div>
+            </div>
+            <div className="flex flex-col pt-4 font-louisgeorgecafe text-white lg:flex-row lg:items-center lg:justify-center lg:gap-6">
+              <div className="rounded-full bg-[#6c6486] p-1">
+                <button
+                  className="flex w-full justify-center gap-1 rounded-full bg-[#332550] p-2 transition-all hover:bg-transparent"
+                  onClick={() => setOpenPoster(true)}
+                >
+                  <div className="tracking-widest opacity-70">Lihat Poster</div>
+                </button>
+              </div>
+              <Dialog
+                className="relative z-50"
+                onClose={() => setOpenPoster(false)}
+                open={openPoster}
+              >
+                <div aria-hidden="true" className="fixed inset-0 bg-black/50" />
+                <div className="fixed inset-0 flex items-center justify-center">
+                  <Dialog.Panel className="flex h-full w-11/12 flex-col items-center justify-center gap-2 overflow-auto p-8">
+                    <img
+                      alt="poster"
+                      className="h-full w-full object-contain object-center"
+                      onClick={() => setOpenPoster(false)}
+                      src={k.poster}
+                    />
+                  </Dialog.Panel>
                 </div>
-                <div className="text-center font-louisgeorgecafe text-white">
-                  Ayo buktikan bakat dan kreativitasmu! Jangan cepat berpuas diri!
-                </div>
+              </Dialog>
+              <div className="py-2">
                 <div className="rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
                   <a href="https://ifest.uajy.ac.id/dash" rel="noreferrer" target="_blank">
-                    <button className="flex items-center gap-1 rounded-full bg-[#332550] p-2 font-retroica tracking-widest text-white opacity-100 transition hover:bg-transparent">
-                      DAFTAR
+                    <button className="flex w-full justify-center gap-1 rounded-full bg-[#332550] p-2 transition-all hover:bg-transparent">
+                      <div className="tracking-widest opacity-100">DAFTAR</div>
                     </button>
                   </a>
                 </div>
               </div>
+              <div className="rounded-full bg-[#6c6486] p-1">
+                <button
+                  className="flex w-full justify-center gap-1 rounded-full bg-[#332550] p-2 transition-all hover:bg-transparent"
+                  onClick={() => setOpenRulebook(true)}
+                >
+                  <div className="tracking-widest opacity-70">Lihat Rulebook</div>
+                </button>
+              </div>
+              <Dialog
+                className="relative z-50"
+                onClose={() => setOpenRulebook(false)}
+                open={openRuleBook}
+              >
+                <div aria-hidden="true" className="fixed inset-0 bg-black/50" />
+                <div className="fixed inset-0 flex items-center justify-center">
+                  <Dialog.Panel className="flex h-full w-11/12 flex-col items-center justify-center gap-0 overflow-auto p-8">
+                    <iframe
+                      className="h-screen w-full py-10"
+                      onClick={() => setOpenRulebook(false)}
+                      src={k.rulebook}
+                    ></iframe>
+                  </Dialog.Panel>
+                </div>
+              </Dialog>
             </div>
           </div>
-        </div>
 
-        <CP get={id as "i2c" | "wdc" | "muc"} />
-        <Footer />
+          <div className="flex flex-col justify-center gap-8 p-8 lg:px-24">
+            {k.provision.map((provision, index) => {
+              return (
+                <div className="rounded-lg border border-gray-700 bg-[#241f3d] p-4" key={index}>
+                  <h3 className="pl-6 font-retroica text-2xl text-[#87bbeb]">{provision.type}</h3>
+                  <div className="p-6 font-louisgeorgecafe leading-loose text-white">
+                    <ol className="list-outside list-decimal">
+                      {provision.data.map((item, index) => {
+                        return <li key={index}>{item}</li>;
+                      })}
+                    </ol>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="flex flex-col items-center justify-center py-8">
+            <div className="text-center font-retroica text-4xl text-[#87bbeb]">Timeline</div>
+            {k.timeline.map((timeline, index) => {
+              return (
+                <div className="flex w-full flex-col items-center justify-center" key={index}>
+                  <div className="w-fit rounded-xl bg-[#241f3d] pb-1">
+                    <div className="rounded-xl bg-[#716B90] p-4 font-retroica text-white shadow-inner">
+                      {timeline.name}
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-10/12 2xl:w-1/2">
+                    <Chrono
+                      cardHeight={50}
+                      disableClickOnCircle
+                      hideControls
+                      items={timeline.data.map((item) => {
+                        return {
+                          title: item.name,
+                          cardTitle: item.date,
+                        };
+                      })}
+                      mode="VERTICAL_ALTERNATING"
+                      theme={{
+                        primary: "#716b90",
+                        secondary: "transparent",
+                        cardBgColor: "#241f3d",
+                        cardForeColor: "white",
+                        titleColor: "white",
+                        titleColorActive: "white",
+                      }}
+                    />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="flex w-full flex-col items-center justify-center bg-[url('/images/bg-prizepool.png')] bg-cover bg-center bg-no-repeat py-10">
+            <div className="text-center font-retroica text-5xl tracking-widest text-[#87bbeb]">
+              PRIZE POOL
+            </div>
+            <div className="pb-6 pt-2 text-center font-retroica text-3xl text-[#ffba57]">
+              {k.prizepool.total}
+            </div>
+            <div className="grid gap-8 lg:grid-cols-3" id="fika">
+              {k.prizepool.distribution.map((distribution, index) => {
+                return (
+                  <div
+                    className={`${
+                      k.prizepool.distribution.length % 2 == 0 && index == 0
+                        ? "col-span-full"
+                        : "fika"
+                    }`}
+                    key={index}
+                  >
+                    <div className="flex flex-row items-center justify-center rounded-xl border border-gray-700 bg-[#241f3d] p-4 text-white transition duration-300 ease-in hover:scale-105 hover:text-[#241f3d] lg:flex-col">
+                      <img
+                        alt="/"
+                        className={`${
+                          index % 2 == 0 ? "order-0" : "order-1"
+                        } w-32 p-4 lg:-order-none lg:w-48`}
+                        src={distribution.image}
+                      />
+                      <div>
+                        <div className="text-center font-retroica text-2xl">
+                          {distribution.type}
+                        </div>
+                        {distribution.rewards.map((reward, index) => {
+                          return (
+                            <div className="flex gap-3 font-retroica" key={index}>
+                              {getIcon(index + 3)} {reward}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="flex w-full flex-col items-center justify-center p-10">
+            <div className="w-full rounded-xl border-gray-200 bg-gradient-to-br from-[#463e74] to-[#332550] p-4 lg:w-10/12 2xl:w-1/2">
+              <div className="flex flex-col items-center justify-center text-center lg:flex-row lg:justify-start">
+                <img alt="/" className="w-48" src="/images/announce.webp" />
+                <div className="flex flex-col items-center gap-4 lg:items-start">
+                  <div className="font-retroica text-2xl text-[#87bbeb]">
+                    Tertarik? Ayo mendaftar!
+                  </div>
+                  <div className="text-center font-louisgeorgecafe text-white">
+                    Ayo buktikan bakat dan kreativitasmu! Jangan cepat berpuas diri!
+                  </div>
+                  <div className="rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
+                    <a href="https://ifest.uajy.ac.id/dash" rel="noreferrer" target="_blank">
+                      <button className="flex items-center gap-1 rounded-full bg-[#332550] p-2 font-retroica tracking-widest text-white opacity-100 transition hover:bg-transparent">
+                        DAFTAR
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <CP get={id as "i2c" | "wdc" | "muc"} />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

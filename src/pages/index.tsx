@@ -10,7 +10,7 @@ import Sponsor from "@/components/Home/Sponsor";
 import acara from "@/data/acara.json";
 import kompetisi from "@/data/kompetisi.json";
 import { navColors } from "@/recoil/atoms";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import { FC } from "react";
 import { useSetRecoilState } from "recoil";
 
@@ -18,17 +18,11 @@ const Home: FC = () => {
   useSetRecoilState(navColors)({ bg1: "#211a44", bg2: "#3d3474", fg: "#bfb2ff" });
   return (
     <>
-      <Head>
-        <title>IFest#11 - Higher Steps, Higher Purpose with Informatics</title>
-        <link href="/images/logo.png" rel="icon" type="image/png" />
-        <meta charSet="UTF-8" />
-        <meta content="IFest#11 - Higher Steps, Higher Purpose with Informatics" name="title" />
-        <meta
-          content="IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak tahun 2013 yang lalu."
-          name="description"
-        />
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      </Head>
+      <NextSeo
+        canonical="https://ifest.uajy.ac.id"
+        description="IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak tahun 2013 yang lalu."
+        title="IFest#11 - Higher Steps, Higher Purpose with Informatics"
+      />
       <Container>
         <ShootingStars />
         <Hero />
