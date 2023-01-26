@@ -12,21 +12,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const Publication: FC = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1, ease: "easeInOut" }}
       className="bg-[#3b3275]"
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1 }}
     >
       <div className="flex flex-col items-center justify-center gap-2 py-10">
         <div className="font-retroica text-4xl tracking-[0.15em] text-white">Publikasi</div>
         <div className="w-full lg:w-1/2 2xl:w-1/4">
           <Swiper
-            effect="coverflow"
-            navigation
-            grabCursor={false}
             centeredSlides
-            slidesPerView="auto"
+            className="mySwiper"
             coverflowEffect={{
               rotate: 50,
               stretch: 0,
@@ -34,15 +31,18 @@ const Publication: FC = () => {
               modifier: 1,
               slideShadows: true,
             }}
-            pagination
+            effect="coverflow"
+            grabCursor={false}
             modules={[EffectCoverflow, Pagination, Navigation]}
-            className="mySwiper"
+            navigation
+            pagination
+            slidesPerView="auto"
           >
             {posts.map((post) => {
               return (
                 <SwiperSlide className="px-12" key={post.slug}>
                   <div className="flex h-[32rem] flex-col items-center justify-center gap-1 bg-[#352a7c] p-6 text-center font-retroica">
-                    <img className="w-48" src={post.thumbnail} alt="/" />
+                    <img alt="/" className="w-48" src={post.thumbnail} />
                     <div className="py-2">
                       <div className="tracking-widest text-white">{post.title}</div>
                       <div className="text-xl text-[#9c8dfc]">{post.author.jabatan}</div>

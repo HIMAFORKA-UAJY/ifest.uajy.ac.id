@@ -20,14 +20,14 @@ const Home: FC = () => {
     <>
       <Head>
         <title>IFest#11 - Higher Steps, Higher Purpose with Informatics</title>
-        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <link href="/images/logo.png" rel="icon" type="image/png" />
         <meta charSet="UTF-8" />
-        <meta name="title" content="IFest#11 - Higher Steps, Higher Purpose with Informatics" />
+        <meta content="IFest#11 - Higher Steps, Higher Purpose with Informatics" name="title" />
         <meta
-          name="description"
           content="IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak tahun 2013 yang lalu."
+          name="description"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
       </Head>
       <Container>
         <ShootingStars />

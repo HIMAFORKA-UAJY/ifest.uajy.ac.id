@@ -17,24 +17,24 @@ const NavBar: FC = () => {
   return (
     <div className="z-10 flex items-center justify-between p-4 lg:px-16 2xl:px-32">
       <motion.a
-        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
         className="w-16"
         href={"/"}
+        initial={{ opacity: 0 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
       >
-        <img src="/images/logo.webp" alt="ifest-logo" />
+        <img alt="ifest-logo" src="/images/logo.webp" />
       </motion.a>
 
       <div className="hidden gap-16 lg:flex">
         {navs.map((nav, index) => {
           return (
             <motion.div
-              initial={{ y: -1024 }}
               animate={{ y: 0 }}
-              transition={{ type: "spring", stiffness: 100, damping: 18, delay: index * 0.5 }}
+              initial={{ y: -1024 }}
               key={index}
+              transition={{ type: "spring", stiffness: 100, damping: 18, delay: index * 0.5 }}
             >
               <Menu>
                 {({ open }) => (
@@ -47,10 +47,10 @@ const NavBar: FC = () => {
                       <Menu.Button className="flex cursor-pointer items-center gap-2 font-retroica text-xl tracking-[0.2em] text-[#ffffffb5]">
                         {nav.name}
                         <svg
-                          width="16"
+                          fill="none"
                           height="17"
                           viewBox="0 0 16 17"
-                          fill="none"
+                          width="16"
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
@@ -65,21 +65,21 @@ const NavBar: FC = () => {
                       {open && (
                         <Menu.Items static>
                           <motion.div
-                            className="absolute mt-2 flex cursor-pointer flex-col gap-2 rounded-[0.7em] px-8 py-4 font-retroica text-xl tracking-[0.2em] shadow-lg"
-                            initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
+                            className="absolute mt-2 flex cursor-pointer flex-col gap-2 rounded-[0.7em] px-8 py-4 font-retroica text-xl tracking-[0.2em] shadow-lg"
                             exit={{ opacity: 0 }}
-                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                            initial={{ opacity: 0 }}
                             style={{ backgroundColor: color.bg1, color: color.fg }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
                           >
                             {nav.data.map((item, index) => {
                               return (
                                 <motion.div
+                                  className="cursor-default rounded-[0.7em] font-retroica text-xl"
+                                  key={index}
+                                  style={{ color: color.fg }}
                                   whileHover={{ scale: 1.1 }}
                                   whileTap={{ scale: 0.9 }}
-                                  className="cursor-default rounded-[0.7em] font-retroica text-xl"
-                                  style={{ color: color.fg }}
-                                  key={index}
                                 >
                                   <Menu.Item>
                                     {({ active }) => {
@@ -87,8 +87,8 @@ const NavBar: FC = () => {
                                         <Link
                                           className={`${active && "text-[#fff]"}`}
                                           href="https://ifest.uajy.ac.id/dash"
-                                          target="_blank"
                                           rel="noreferrer"
+                                          target="_blank"
                                         >
                                           {item.name}
                                         </Link>
@@ -126,19 +126,19 @@ const NavBar: FC = () => {
           <>
             <Popover.Button>
               <motion.svg
-                initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
                 className="w-10"
+                fill="none"
+                initial={{ opacity: 0 }}
+                stroke="currentColor"
+                strokeWidth={1.5}
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                 />
               </motion.svg>
             </Popover.Button>
@@ -146,27 +146,27 @@ const NavBar: FC = () => {
               {open && (
                 <Popover.Panel static>
                   <motion.div
-                    initial={{ y: -1024 }}
                     animate={{ y: 0 }}
-                    exit={{ y: -1024 }}
-                    transition={{ type: "spring", stiffness: 100, damping: 25 }}
-                    style={{ backgroundColor: color.bg1 }}
                     className="fixed inset-0 z-50 flex min-h-screen w-full flex-col items-center justify-center gap-10 px-4"
+                    exit={{ y: -1024 }}
+                    initial={{ y: -1024 }}
+                    style={{ backgroundColor: color.bg1 }}
+                    transition={{ type: "spring", stiffness: 100, damping: 25 }}
                   >
                     <Popover.Button>
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
                         className="h-8 w-8"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={1.5}
                         style={{ color: color.fg }}
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
+                          d="M6 18L18 6M6 6l12 12"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          d="M6 18L18 6M6 6l12 12"
                         />
                       </svg>
                     </Popover.Button>
@@ -186,18 +186,18 @@ const NavBar: FC = () => {
                                   <Link
                                     href="https://ifest.uajy.ac.id/dash/"
                                     key={index}
-                                    target="_blank"
                                     rel="noreferrer"
+                                    target="_blank"
                                   >
                                     <motion.button
                                       className="cursor-default rounded-full border-4 px-4 py-1 font-retroica text-xl tracking-wide"
-                                      whileTap={{ scale: 0.9 }}
                                       style={{
                                         backgroundColor:
                                           item.name === "Dashboard" ? color.bg2 : color.bg1,
                                         borderColor: color.bg2,
                                         color: color.fg,
                                       }}
+                                      whileTap={{ scale: 0.9 }}
                                     >
                                       {item.name}
                                     </motion.button>
@@ -206,13 +206,13 @@ const NavBar: FC = () => {
                                   <Link href={item.link} key={index}>
                                     <motion.button
                                       className="cursor-default rounded-full border-4 px-4 py-1 font-retroica text-xl tracking-wide"
-                                      whileTap={{ scale: 0.9 }}
                                       style={{
                                         backgroundColor:
                                           item.name === "Dashboard" ? color.bg2 : color.bg1,
                                         borderColor: color.bg2,
                                         color: color.fg,
                                       }}
+                                      whileTap={{ scale: 0.9 }}
                                     >
                                       {item.name}
                                     </motion.button>

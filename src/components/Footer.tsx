@@ -26,9 +26,9 @@ const Footer: FC<Props> = ({ className }: Props) => {
       >
         <div>
           <img
+            alt="ifest-logo"
             className="w-24 transition-transform hover:scale-110"
             src="/images/logo.webp"
-            alt="ifest-logo"
           />
         </div>
         <div className="flex flex-col gap-2 text-left text-white">
@@ -47,8 +47,8 @@ const Footer: FC<Props> = ({ className }: Props) => {
                     className="flex w-fit items-center gap-2 font-louisgeorgecafe opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90"
                     href={`https://ifest.uajy.ac.id${item.link}`}
                     key={index}
-                    target="_blank"
                     rel="noreferrer"
+                    target="_blank"
                   >
                     {item.name}
                   </Link>

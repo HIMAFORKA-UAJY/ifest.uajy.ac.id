@@ -43,10 +43,6 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1, ease: "easeInOut" }}
       className={`${
         content.id == 1
           ? "bg-[url('/images/bg-flip.webp')] bg-cover bg-center bg-no-repeat"
@@ -54,12 +50,16 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
           ? "bg-[#3b3275]"
           : "bg-[#2b2265]"
       }`}
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1 }}
     >
       <div className="mx-auto flex flex-col items-center justify-center px-6 py-10 lg:w-11/12 lg:flex-row lg:gap-8 2xl:w-7/12">
         <img
+          alt={content.abbreviation.toLowerCase()}
           className={`${content.id % 2 == 0 ? "lg:order-1" : "lg:order-0"} w-72 basis-1/2`}
           src={content.img}
-          alt={content.abbreviation.toLowerCase()}
         />
         <div className="flex-col lg:basis-1/2">
           <div className="text-center font-retroica text-white lg:text-left">
@@ -75,8 +75,8 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
               return (
                 <div
                   className="rounded-full p-1"
-                  style={{ backgroundColor: getColor(content.id) }}
                   key={index}
+                  style={{ backgroundColor: getColor(content.id) }}
                 >
                   <div
                     className="flex flex-col items-center gap-1 rounded-full bg-[#2b2265] p-2 lg:flex-row lg:text-sm lg:tracking-wide"

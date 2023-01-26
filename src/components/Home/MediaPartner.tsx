@@ -8,11 +8,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const MediaPartner: FC = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1, ease: "easeInOut" }}
       className="bg-[#2b2265]"
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1 }}
     >
       <div className="flex flex-col items-center justify-center gap-2 py-10">
         <div className="text-center font-retroica text-4xl tracking-[0.15em] text-white">
@@ -25,20 +25,20 @@ const MediaPartner: FC = () => {
               1024: { slidesPerView: 4, grid: { rows: 2 } },
             }}
             className="mySwiper"
+            grabCursor={false}
             grid={{
               rows: 1,
               fill: "row",
             }}
-            grabCursor={false}
+            modules={[Autoplay, Grid]}
             slidesPerView={1}
             spaceBetween={32}
-            modules={[Autoplay, Grid]}
           >
             {mediapartners.map((mp) => {
               return (
                 <SwiperSlide className="bg-[#352a7c]" key={mp.id}>
                   <div className="mx-auto flex h-64 w-64 items-center justify-center p-4 lg:h-48 lg:w-48">
-                    <img className="h-full w-full" src={mp.image} alt={mp.name} />
+                    <img alt={mp.name} className="h-full w-full" src={mp.image} />
                   </div>
                 </SwiperSlide>
               );

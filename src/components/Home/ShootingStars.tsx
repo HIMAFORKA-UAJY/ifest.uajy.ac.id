@@ -6,9 +6,9 @@ const ShootingStars: FC = () => {
     <motion.div
       className="relative"
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false }}
       transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: false }}
+      whileInView={{ opacity: 1 }}
     >
       <span className="shooting-star" />
       <span className="shooting-star" />

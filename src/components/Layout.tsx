@@ -5,14 +5,22 @@ import NavBar from "./NavBar";
 
 interface Props {
   children: ReactNode;
+  route: string;
 }
 
-const Layout: FC<Props> = ({ children }: Props) => {
+const Layout: FC<Props> = ({ children, route }: Props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="layout cursor-default">
+    <motion.div
+      animate={{ opacity: 1 }}
+      className="layout cursor-default"
+      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      key={route}
+      transition={{ duration: 1 }}
+    >
       <nav>
         <NavBar />
       </nav>

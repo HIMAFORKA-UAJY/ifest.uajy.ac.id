@@ -7,11 +7,11 @@ import { FC } from "react";
 const FAQ: FC = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1, ease: "easeInOut" }}
       className="bg-[#2b2265]"
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1 }}
     >
       <div className="flex flex-col items-center justify-center gap-2 py-10">
         <div className="w-11/12 bg-[#3b3275] p-4 text-center lg:w-1/2">
@@ -21,7 +21,7 @@ const FAQ: FC = () => {
           <div className="bg-[#41387e] p-4 shadow-lg">
             {faq.map((data, index) => {
               return (
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} key={index}>
+                <motion.div initial={{ opacity: 0 }} key={index} whileInView={{ opacity: 1 }}>
                   <Disclosure defaultOpen={index == 0 ? true : false}>
                     {({ open }) => (
                       <>
@@ -46,9 +46,9 @@ const FAQ: FC = () => {
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
-                              fillRule="evenodd"
-                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                               clipRule="evenodd"
+                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                              fillRule="evenodd"
                             />
                           </svg>
                         </Disclosure.Button>
@@ -56,10 +56,10 @@ const FAQ: FC = () => {
                           {open && (
                             <Disclosure.Panel static>
                               <motion.div
-                                initial={{ y: -10, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
-                                exit={{ y: -10, opacity: 0 }}
                                 className="p-4 text-left font-louisgeorgecafe text-sm text-gray-200"
+                                exit={{ y: -10, opacity: 0 }}
+                                initial={{ y: -10, opacity: 0 }}
                               >
                                 {parse(data.answer)}
                               </motion.div>

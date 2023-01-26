@@ -84,11 +84,11 @@ const CP: FC<Props> = ({ className, get }: Props) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1, ease: "easeInOut" }}
       className={`${className}`}
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1 }}
     >
       <div className="flex w-full flex-col items-center justify-center gap-2 py-10">
         <div className="font-retron2000 text-4xl font-bold tracking-[0.15em] text-white">
@@ -108,17 +108,17 @@ const CP: FC<Props> = ({ className, get }: Props) => {
                 slidesPerView: get == "all" ? 3 : 1,
               },
             }}
+            className="mySwiper classes.swiper-button-prev classes.swiper-button-next"
             grid={{
               rows: 1,
               fill: "row",
             }}
-            spaceBetween={8}
+            modules={[Grid, Pagination, Navigation]}
+            navigation
             pagination={{
               clickable: true,
             }}
-            navigation
-            modules={[Grid, Pagination, Navigation]}
-            className="mySwiper classes.swiper-button-prev classes.swiper-button-next"
+            spaceBetween={8}
           >
             {p?.map((q, index) => {
               return (
@@ -140,8 +140,8 @@ const CP: FC<Props> = ({ className, get }: Props) => {
                             <a
                               className="flex flex-wrap items-center justify-center gap-1"
                               href={r.whatsapp.url}
-                              target="_blank"
                               rel="noreferrer"
+                              target="_blank"
                             >
                               <FaWhatsapp />
                               {r.whatsapp.phone}

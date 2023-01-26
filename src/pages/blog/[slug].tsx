@@ -50,7 +50,7 @@ const Index: FC<Props> = ({ posts }: Props) => {
         </div>
         <div className="flex w-10/12 flex-col gap-8 rounded-xl bg-white p-8 drop-shadow-2xl">
           <div className="flex flex-wrap items-center gap-8">
-            <img className="w-20" src="/images/logo.webp" alt="ifest-logo" />
+            <img alt="ifest-logo" className="w-20" src="/images/logo.webp" />
             <div>
               <div className="font-retroica text-lg">{post?.author.jabatan}</div>
               <div className="font-louisgeorgecafe text-lg">{post?.author.name}</div>

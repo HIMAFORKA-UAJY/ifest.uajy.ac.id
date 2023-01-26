@@ -17,10 +17,10 @@ const Error404: FC = () => {
           </div>
           <a href="/">
             <motion.button
-              initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.25 }}
               className="hover:shadow-l rounded-[2.0em] bg-[#e45d6d] bg-gradient-to-br from-[#db7f58] px-5 py-3 font-retroica text-sm tracking-wide transition-all hover:tracking-widest lg:text-base"
+              initial={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
             >
               Kembali ke Homepage
             </motion.button>

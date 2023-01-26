@@ -120,7 +120,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
   return (
     <div className="absolute top-0 -z-10 min-h-screen w-full bg-gradient-to-b from-[#2a2f59] to-[#332550]">
       <div className="flex h-screen flex-col items-center justify-center gap-4 px-4 lg:flex-row">
-        <img className="w-72 lg:w-1/4" src={k.img} alt={k.name.toLowerCase()} />
+        <img alt={k.name.toLowerCase()} className="w-72 lg:w-1/4" src={k.img} />
         <div className="flex flex-col items-center justify-center gap-8">
           <div className="bg-gradient-to-r from-[#c6aeff] to-[#aec9ff] bg-clip-text text-center text-transparent">
             <div className="font-retroica text-4xl tracking-wide lg:hidden">{k.abbreviation}</div>
@@ -143,31 +143,31 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
             })}
           </div>
           <motion.button
-            onClick={() => contentRef.current?.scrollIntoView({ behavior: "smooth" })}
-            initial={{ opacity: 0 }}
             animate={{ opacity: 0.75 }}
-            transition={{ duration: 0.25 }}
             className="transition-transform hover:scale-125"
+            initial={{ opacity: 0 }}
+            onClick={() => contentRef.current?.scrollIntoView({ behavior: "smooth" })}
+            transition={{ duration: 0.25 }}
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
               className="h-10 w-10 stroke-white"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={1.5}
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
+                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
               />
             </svg>
           </motion.button>
         </div>
       </div>
 
-      <div ref={contentRef} className="bg-gradient-to-t from-[#2a2f59] to-[#332550]">
+      <div className="bg-gradient-to-t from-[#2a2f59] to-[#332550]" ref={contentRef}>
         <div className="border-gray-700 bg-[#241f3d] p-8">
           <div className="flex flex-col items-center gap-4">
             <div className="font-retroica text-3xl tracking-wider text-white">
@@ -187,25 +187,25 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
               </button>
             </div>
             <Dialog
-              open={openPoster}
-              onClose={() => setOpenPoster(false)}
               className="relative z-50"
+              onClose={() => setOpenPoster(false)}
+              open={openPoster}
             >
-              <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
+              <div aria-hidden="true" className="fixed inset-0 bg-black/50" />
               <div className="fixed inset-0 flex items-center justify-center">
                 <Dialog.Panel className="flex h-full w-11/12 flex-col items-center justify-center gap-2 overflow-auto p-8">
                   <img
-                    className="h-full w-full object-contain object-center"
-                    src={k.poster}
                     alt="poster"
+                    className="h-full w-full object-contain object-center"
                     onClick={() => setOpenPoster(false)}
+                    src={k.poster}
                   />
                 </Dialog.Panel>
               </div>
             </Dialog>
             <div className="py-2">
               <div className="rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
-                <a href="https://ifest.uajy.ac.id/dash" target="_blank" rel="noreferrer">
+                <a href="https://ifest.uajy.ac.id/dash" rel="noreferrer" target="_blank">
                   <button className="flex w-full justify-center gap-1 rounded-full bg-[#332550] p-2 transition-all hover:bg-transparent">
                     <div className="tracking-widest opacity-100">DAFTAR</div>
                   </button>
@@ -221,17 +221,17 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
               </button>
             </div>
             <Dialog
-              open={openRuleBook}
-              onClose={() => setOpenRulebook(false)}
               className="relative z-50"
+              onClose={() => setOpenRulebook(false)}
+              open={openRuleBook}
             >
-              <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
+              <div aria-hidden="true" className="fixed inset-0 bg-black/50" />
               <div className="fixed inset-0 flex items-center justify-center">
                 <Dialog.Panel className="flex h-full w-11/12 flex-col items-center justify-center gap-0 overflow-auto p-8">
                   <iframe
                     className="h-screen w-full py-10"
-                    src={k.rulebook}
                     onClick={() => setOpenRulebook(false)}
+                    src={k.rulebook}
                   ></iframe>
                 </Dialog.Panel>
               </div>
@@ -268,6 +268,9 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                 </div>
                 <div className="w-full lg:w-10/12 2xl:w-1/2">
                   <Chrono
+                    cardHeight={50}
+                    disableClickOnCircle
+                    hideControls
                     items={timeline.data.map((item) => {
                       return {
                         title: item.name,
@@ -275,9 +278,6 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                       };
                     })}
                     mode="VERTICAL_ALTERNATING"
-                    cardHeight={50}
-                    hideControls
-                    disableClickOnCircle
                     theme={{
                       primary: "#716b90",
                       secondary: "transparent",
@@ -300,7 +300,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
           <div className="pb-6 pt-2 text-center font-retroica text-3xl text-[#ffba57]">
             {k.prizepool.total}
           </div>
-          <div id="fika" className="grid gap-8 lg:grid-cols-3">
+          <div className="grid gap-8 lg:grid-cols-3" id="fika">
             {k.prizepool.distribution.map((distribution, index) => {
               return (
                 <div
@@ -313,11 +313,11 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                 >
                   <div className="flex flex-row items-center justify-center rounded-xl border border-gray-700 bg-[#241f3d] p-4 text-white transition duration-300 ease-in hover:scale-105 hover:text-[#241f3d] lg:flex-col">
                     <img
+                      alt="/"
                       className={`${
                         index % 2 == 0 ? "order-0" : "order-1"
                       } w-32 p-4 lg:-order-none lg:w-48`}
                       src={distribution.image}
-                      alt="/"
                     />
                     <div>
                       <div className="text-center font-retroica text-2xl">{distribution.type}</div>
@@ -339,7 +339,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
         <div className="flex w-full flex-col items-center justify-center p-10">
           <div className="w-full rounded-xl border-gray-200 bg-gradient-to-br from-[#463e74] to-[#332550] p-4 lg:w-10/12 2xl:w-1/2">
             <div className="flex flex-col items-center justify-center text-center lg:flex-row lg:justify-start">
-              <img className="w-48" src="/images/announce.webp" alt="/" />
+              <img alt="/" className="w-48" src="/images/announce.webp" />
               <div className="flex flex-col items-center gap-4 lg:items-start">
                 <div className="font-retroica text-2xl text-[#87bbeb]">
                   Tertarik? Ayo mendaftar!
@@ -348,7 +348,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                   Ayo buktikan bakat dan kreativitasmu! Jangan cepat berpuas diri!
                 </div>
                 <div className="rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
-                  <a href="https://ifest.uajy.ac.id/dash" target="_blank" rel="noreferrer">
+                  <a href="https://ifest.uajy.ac.id/dash" rel="noreferrer" target="_blank">
                     <button className="flex items-center gap-1 rounded-full bg-[#332550] p-2 font-retroica tracking-widest text-white opacity-100 transition hover:bg-transparent">
                       DAFTAR
                     </button>
