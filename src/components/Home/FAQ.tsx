@@ -1,6 +1,6 @@
 import faq from "@/data/faq.json";
 import { Disclosure } from "@headlessui/react";
-import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import parse from "html-react-parser";
 import { FC } from "react";
 
