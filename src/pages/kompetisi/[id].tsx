@@ -122,7 +122,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
       <div className="flex h-screen flex-col items-center justify-center gap-4 px-4 lg:flex-row">
         <img className="w-72 lg:w-1/4" src={k.img} alt={k.name.toLowerCase()} />
         <div className="flex flex-col items-center justify-center gap-8">
-          <div className="text-center text-white">
+          <div className="bg-gradient-to-r from-[#c6aeff] to-[#aec9ff] bg-clip-text text-center text-transparent">
             <div className="font-retroica text-4xl tracking-wide lg:hidden">{k.abbreviation}</div>
             <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">{k.name}</div>
           </div>
@@ -239,7 +239,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center gap-8 p-8 lg:flex-row">
+        <div className="flex flex-col justify-center gap-8 p-8 lg:px-24">
           {k.provision.map((provision, index) => {
             return (
               <div className="rounded-lg border border-gray-700 bg-[#241f3d] p-4" key={index}>
@@ -256,7 +256,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
           })}
         </div>
 
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center py-8">
           <div className="text-center font-retroica text-4xl text-[#87bbeb]">Timeline</div>
           {k.timeline.map((timeline, index) => {
             return (
@@ -279,7 +279,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                     hideControls
                     disableClickOnCircle
                     theme={{
-                      primary: "#716B90",
+                      primary: "#716b90",
                       secondary: "transparent",
                       cardBgColor: "#241f3d",
                       cardForeColor: "white",
@@ -294,13 +294,13 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
         </div>
 
         <div className="flex w-full flex-col items-center justify-center bg-[url('/images/bg-prizepool.png')] bg-cover bg-center bg-no-repeat py-10">
-          <div className="text-center font-retroica text-6xl tracking-widest text-[#87bbeb]">
+          <div className="text-center font-retroica text-5xl tracking-widest text-[#87bbeb]">
             PRIZE POOL
           </div>
-          <div className="text-center font-retroica text-3xl text-[#ffba57]">
+          <div className="pb-6 pt-2 text-center font-retroica text-3xl text-[#ffba57]">
             {k.prizepool.total}
           </div>
-          <div id="fika" className="grid gap-8 lg:grid-cols-3 lg:grid-rows-2">
+          <div id="fika" className="grid gap-8 lg:grid-cols-3">
             {k.prizepool.distribution.map((distribution, index) => {
               return (
                 <div
@@ -311,11 +311,11 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                   }`}
                   key={index}
                 >
-                  <div className="flex flex-row items-center justify-center rounded-xl border border-gray-700 bg-[#241f3d] p-4 text-white transition duration-300 ease-in hover:scale-110 hover:text-[#241f3d] lg:flex-col">
+                  <div className="flex flex-row items-center justify-center rounded-xl border border-gray-700 bg-[#241f3d] p-4 text-white transition duration-300 ease-in hover:scale-105 hover:text-[#241f3d] lg:flex-col">
                     <img
                       className={`${
                         index % 2 == 0 ? "order-0" : "order-1"
-                      } w-32 lg:-order-none lg:w-48`}
+                      } w-32 p-4 lg:-order-none lg:w-48`}
                       src={distribution.image}
                       alt="/"
                     />
@@ -339,11 +339,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
         <div className="flex w-full flex-col items-center justify-center p-10">
           <div className="w-full rounded-xl border-gray-200 bg-gradient-to-br from-[#463e74] to-[#332550] p-4 lg:w-10/12 2xl:w-1/2">
             <div className="flex flex-col items-center justify-center text-center lg:flex-row lg:justify-start">
-              <img
-                className="w-48"
-                src="https://ifest.uajy.ac.id/assets/images/ill4-icon.png"
-                alt="/"
-              />
+              <img className="w-48" src="/images/announce.webp" alt="/" />
               <div className="flex flex-col items-center gap-4 lg:items-start">
                 <div className="font-retroica text-2xl text-[#87bbeb]">
                   Tertarik? Ayo mendaftar!

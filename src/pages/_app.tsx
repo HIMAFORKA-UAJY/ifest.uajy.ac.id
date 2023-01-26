@@ -4,7 +4,9 @@ import "@/styles/globals.css";
 import "@/styles/scrollbar.css";
 import "@/styles/shooting-stars.css";
 import type { AppProps } from "next/app";
-import { RecoilRoot } from "recoil";
+import { RecoilEnv, RecoilRoot } from "recoil";
+
+RecoilEnv.RECOIL_DUPLICATE_ATOM_KEY_CHECKING_ENABLED = false;
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (

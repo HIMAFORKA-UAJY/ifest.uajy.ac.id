@@ -2,8 +2,8 @@ import logo from "@/assets/images/logo.png";
 import footer from "@/data/footer.json";
 import Image from "next/image";
 import { FC } from "react";
-import { SiInstagram, SiLine } from "react-icons/Si";
 import { MdEmail } from "react-icons/md";
+import { SiInstagram, SiLine } from "react-icons/si";
 
 interface Props {
   className?: string;

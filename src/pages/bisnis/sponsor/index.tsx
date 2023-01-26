@@ -9,7 +9,7 @@ import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Index: FC = () => {
-  useSetRecoilState(navColors)({ bg1: "#152435", bg2: "#182e47", fg: "#479ec6" });
+  useSetRecoilState(navColors)({ bg1: "#152435", bg2: "#27536d", fg: "#479ec6" });
   return (
     <div className="absolute top-0 -z-10 min-h-screen w-full bg-[#0A1828] pt-48">
       <div className="flex flex-col items-center justify-center gap-4">
@@ -42,7 +42,7 @@ const Index: FC = () => {
             {sponsorshipPackages.map((p) => {
               return (
                 <SwiperSlide key={p.id}>
-                  <div className="flex h-[32rem] w-72 flex-col items-center gap-2 rounded-xl border-4 border-[#26667F] p-4">
+                  <div className="flex h-[32rem] w-72 flex-col items-center gap-2 rounded-xl border-4 border-[#26667f] p-4">
                     <img className="w-32" src={p.image} alt="/" />
                     <div className="text-center font-louisgeorgecafe font-bold text-[#ffffffdd]">
                       {p.name}
@@ -57,7 +57,7 @@ const Index: FC = () => {
                         })}
                       </ul>
                     </div>
-                    <div className="rounded-md bg-gradient-to-br from-[#5AA7C0] via-[#926DAE] to-[#C76F89] p-1">
+                    <div className="rounded-md bg-gradient-to-br from-[#5aa7c0] via-[#926dae] to-[#c76f89] p-1">
                       <a
                         href="https://wa.me/628993694969?text=Halo%20Admin%20Sponsor%20IFest%2311%2C%20kami%20dari%20%28Nama%20perusahaan%20%2F%20organisasi%29%20ingin%20menjadi%20sponsor%20pada%20acara%20IFest%2311.%20Paket%20sponsor%20yang%20kami%20pilih%20adalah%20%22Paket%20Platinum%22.%0ABerikut%20kami%20sertakan%20MoU%20sebagai%20bentuk%20kerjasama%20kami%20dengan%20pihak%20panitia%20IFest%2311%2C%20atas%20kerjasamanya%20kami%20ucapkan%20terima%20kasih."
                         target="_blank"

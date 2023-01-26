@@ -1,12 +1,12 @@
 #fika > div:nth-of-type(1) > div:hover {
-  background-color: #ffba57;
+  background-color: #f1c650;
 }
 #fika > div:nth-of-type(2) > div:hover {
-  background-color: #9e9e9e;
+  background-color: #91a4af;
 }
 #fika > div:nth-of-type(3) > div:hover {
-  background-color: #ce7430;
+  background-color: #d38a51;
 }
 #fika > div:nth-of-type(4) > div:hover {
-  background-color: #00b8b0;
+  background-color: #d1889a;
 }

@@ -4,7 +4,7 @@ import { FC } from "react";
 import { useSetRecoilState } from "recoil";
 
 const Error404: FC = () => {
-  useSetRecoilState(navColors)({ bg1: "#173923", bg2: "#357c4d", fg: "#b5ec6f" });
+  useSetRecoilState(navColors)({ bg1: "#410e24", bg2: "#87234e", fg: "#f56ba6" });
   return (
     <div className="absolute top-0 -z-10 min-h-screen w-full bg-[url('/images/bg-no-flip.png')] bg-cover bg-center bg-no-repeat">
       <div className="bg-gradient-to-b from-[#83204a]/80 to-[#8e332d]/80 font-retroica">
