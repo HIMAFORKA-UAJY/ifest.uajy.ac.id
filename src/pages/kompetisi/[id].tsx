@@ -340,7 +340,12 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                         {distribution.rewards.map((reward, index) => {
                           return (
                             <div className="flex gap-3 font-retroica" key={index}>
-                              {getIcon(index + 3)} {reward}
+                              {reward === "Piala"
+                                ? getIcon(4)
+                                : reward === "Sertifikat Nasional"
+                                ? getIcon(5)
+                                : getIcon(index + 3)}
+                              {reward}
                             </div>
                           );
                         })}

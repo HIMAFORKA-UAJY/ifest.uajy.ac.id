@@ -16,7 +16,9 @@ const Index: FC = () => {
       <NextSeo nofollow={true} noindex={true} title={`Sponsor Us - IFest#11`} />
       <div className="absolute top-0 -z-10 min-h-screen w-full bg-[#0A1828] pt-48">
         <div className="flex flex-col items-center justify-center gap-4">
-          <div className="font-louisgeorgecafe text-4xl text-white">IFEST#11 SPONSORSHIP</div>
+          <div className="text-center font-louisgeorgecafe text-4xl text-white">
+            IFEST#11 SPONSORSHIP
+          </div>
           <div className="text-center font-louisgeorgecafe text-xl text-white">
             Tertarik dengan acara kami? Dukung kami dengan menjadi sponsor!
           </div>
@@ -24,9 +26,6 @@ const Index: FC = () => {
           <div className="w-3/4 py-4 lg:w-10/12">
             <Swiper
               autoplay={{ delay: 2000 }}
-              breakpoints={{
-                1024: { slidesPerView: 4 },
-              }}
               centeredSlides
               className="mySwiper"
               coverflowEffect={{
@@ -39,13 +38,15 @@ const Index: FC = () => {
               effect="coverflow"
               grabCursor={false}
               modules={[Autoplay, EffectCoverflow]}
-              slidesPerView={1}
-              spaceBetween={0}
+              slidesPerView="auto"
             >
               {sponsorshipPackages.map((p) => {
                 return (
-                  <SwiperSlide key={p.id}>
-                    <div className="flex h-[32rem] w-72 flex-col items-center gap-2 rounded-xl border-4 border-[#26667f] p-4">
+                  <SwiperSlide
+                    className="!h-[32rem] !w-[20rem] rounded-xl border-4 border-[#26667f] p-4"
+                    key={p.id}
+                  >
+                    <div className="flex h-full flex-col items-center justify-start gap-2 text-center">
                       <img alt="/" className="w-32" src={p.image} />
                       <div className="text-center font-louisgeorgecafe font-bold text-[#ffffffdd]">
                         {p.name}

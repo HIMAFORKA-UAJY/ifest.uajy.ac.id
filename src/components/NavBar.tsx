@@ -16,16 +16,17 @@ const NavBar: FC = () => {
   const color: Color = useRecoilValue(navColors);
   return (
     <div className="z-10 flex items-center justify-between p-4 lg:px-16 2xl:px-32">
-      <motion.a
+      <motion.div
         animate={{ opacity: 1 }}
         className="w-16"
-        href={"/"}
         initial={{ opacity: 0 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        <img alt="ifest-logo" src="/images/logo.webp" />
-      </motion.a>
+        <Link href={"/"}>
+          <img alt="ifest-logo" src="/images/logo.webp" />
+        </Link>
+      </motion.div>
 
       <div className="hidden gap-16 lg:flex">
         {navs.map((nav, index) => {

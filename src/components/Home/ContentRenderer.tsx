@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { FC } from "react";
 import { FaBook, FaMale, FaWallet } from "react-icons/fa";
 
@@ -29,13 +30,13 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
   const getColor = (id: number) => {
     switch (id) {
       case 1:
-        return "#ba87fb";
+        return "#a276db";
       case 2:
-        return "#9dce6d";
+        return "#83c261";
       case 3:
-        return "#fd9807";
+        return "#df8255";
       case 4:
-        return "#ff7676";
+        return "#de6666";
       case 5:
         return "#5cc09f";
     }
@@ -66,7 +67,7 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
             <div className="text-4xl font-light tracking-[0.25em] lg:tracking-[0.10em]">
               {content.abbreviation}
             </div>
-            <div className="text-2xl font-bold tracking-[0.10em] lg:tracking-[0.20em]">
+            <div className="text-2xl font-bold tracking-[0.10em] lg:tracking-[0.12em]">
               {content.name}
             </div>
           </div>
@@ -96,14 +97,16 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
           </div>
           <div className="pt-10"></div>
           <div className="flex justify-center lg:justify-start">
-            <a href={content.url}>
+            <Link href={content.url}>
               <button
-                className="rounded-[2.0em] px-5 py-3 font-retroica text-sm tracking-widest text-white transition-all hover:shadow-[0_0px_80px_0px_#886fcb] lg:text-base"
-                style={{ backgroundColor: getColor(content.id) }}
+                className="rounded-[2.0em] px-5 py-3 font-retroica text-sm tracking-widest text-white transition-all hover:shadow-[0px_0px_40px_8px_#6959d480] lg:text-base"
+                style={{
+                  backgroundColor: getColor(content.id),
+                }}
               >
                 Read More
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

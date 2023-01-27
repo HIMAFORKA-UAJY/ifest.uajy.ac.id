@@ -1,7 +1,7 @@
 import sponsors from "@/data/sponsors.json";
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { Autoplay, EffectCoverflow, Navigation, Pagination } from "swiper";
+import { Autoplay, EffectCoverflow } from "swiper";
 import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,16 +14,33 @@ const Sponsor: FC = () => {
       viewport={{ once: true }}
       whileInView={{ opacity: 1 }}
     >
-      <div className="flex flex-col items-center justify-center gap-2 py-10">
+      <div className="flex flex-col items-center justify-center gap-4 py-10">
         <div className="text-center font-retroica text-4xl tracking-[0.15em] text-white">
           Sponsors IFEST#10
         </div>
-        <div className="w-3/4 py-4 lg:w-1/2">
+        <div className="h-fit w-96 py-4 lg:hidden">
           <Swiper
             autoplay={{ delay: 2000 }}
-            breakpoints={{
-              1024: { slidesPerView: 2 },
-            }}
+            className="mySwiper"
+            modules={[Autoplay]}
+            slidesPerView="auto"
+            spaceBetween={10}
+          >
+            {sponsors.map((sponsor) => {
+              return (
+                <SwiperSlide
+                  className="flex !h-64 !w-64 items-center rounded-lg bg-[#2b2265] p-2"
+                  key={sponsor.id}
+                >
+                  <img alt={sponsor.name} src={sponsor.image} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
+        <div className="hidden lg:flex lg:w-1/2 lg:py-4">
+          <Swiper
+            autoplay={{ delay: 2000 }}
             centeredSlides
             className="mySwiper"
             coverflowEffect={{
@@ -35,16 +52,16 @@ const Sponsor: FC = () => {
             }}
             effect="coverflow"
             grabCursor={false}
-            modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
-            navigation={false}
-            slidesPerView={1}
+            modules={[EffectCoverflow, Autoplay]}
+            slidesPerView="auto"
           >
             {sponsors.map((sponsor) => {
               return (
-                <SwiperSlide className="bg-[#352a7c]" key={sponsor.id}>
-                  <div className="mx-auto flex h-64 w-64 items-center p-4">
-                    <img alt={sponsor.name} src={sponsor.image} />
-                  </div>
+                <SwiperSlide
+                  className="flex !h-[19rem] !w-[19rem] items-center bg-[#2b2265] p-8"
+                  key={sponsor.id}
+                >
+                  <img alt={sponsor.name} src={sponsor.image} />
                 </SwiperSlide>
               );
             })}

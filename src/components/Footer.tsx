@@ -1,4 +1,5 @@
 import footer from "@/data/footer.json";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { FC } from "react";
 import { MdEmail } from "react-icons/md";
@@ -24,13 +25,17 @@ const Footer: FC<Props> = ({ className }: Props) => {
       <div
         className={`${className} grid justify-center gap-3 px-6 pt-10 pb-4 lg:grid-cols-7 lg:gap-8 lg:px-8`}
       >
-        <div>
-          <img
-            alt="ifest-logo"
-            className="w-24 transition-transform hover:scale-110"
-            src="/images/logo.webp"
-          />
-        </div>
+        <motion.div
+          animate={{ opacity: 1 }}
+          className="w-24"
+          initial={{ opacity: 0 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <Link href={"/"}>
+            <img alt="ifest-logo" src="/images/logo.webp" />
+          </Link>
+        </motion.div>
         <div className="flex flex-col gap-2 text-left text-white">
           <div className="font-retroica text-xl tracking-widest">IFest#11</div>
           <div className="font-louisgeorgecafe opacity-70">

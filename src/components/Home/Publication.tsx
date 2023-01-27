@@ -1,5 +1,6 @@
 import posts from "@/data/posts.json";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { FC } from "react";
 import { EffectCoverflow, Navigation, Pagination } from "swiper";
 import "swiper/css";
@@ -41,7 +42,7 @@ const Publication: FC = () => {
             {posts.map((post) => {
               return (
                 <SwiperSlide className="px-12" key={post.slug}>
-                  <div className="flex h-[32rem] flex-col items-center justify-center gap-1 bg-[#352a7c] p-6 text-center font-retroica">
+                  <div className="flex h-[32rem] flex-col items-center justify-center gap-1 rounded-lg bg-[#352a7c] p-6 text-center font-retroica">
                     <img alt="/" className="w-48" src={post.thumbnail} />
                     <div className="py-2">
                       <div className="tracking-widest text-white">{post.title}</div>
@@ -50,9 +51,9 @@ const Publication: FC = () => {
                       <div className="text-[#7364D2]">{post.date}</div>
                     </div>
                     <div className="py-2"></div>
-                    <a className="transition-all hover:scale-125" href={`/blog/${post.slug}`}>
+                    <Link className="transition-all hover:scale-125" href={`/blog/${post.slug}`}>
                       <button className="tracking-wide text-[#9c8dfc]">Find out more</button>
-                    </a>
+                    </Link>
                   </div>
                 </SwiperSlide>
               );

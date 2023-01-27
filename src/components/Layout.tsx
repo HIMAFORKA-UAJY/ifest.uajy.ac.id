@@ -19,7 +19,7 @@ const Layout: FC<Props> = ({ children, route }: Props) => {
       exit={{ opacity: 0 }}
       initial={{ opacity: 0 }}
       key={route}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <nav>
         <NavBar />

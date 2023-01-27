@@ -14,11 +14,11 @@ const FAQ: FC = () => {
       whileInView={{ opacity: 1 }}
     >
       <div className="flex flex-col items-center justify-center gap-2 py-10">
-        <div className="w-11/12 bg-[#3b3275] p-4 text-center lg:w-1/2">
+        <div className="w-11/12 rounded-lg bg-[#3b3275] p-4 text-center lg:w-1/2">
           <div className="font-retroica text-4xl tracking-[0.15em] text-white">FAQ</div>
           <div className="font-retroica text-base text-white">Pertanyaan yang sering diajukan</div>
           <div className="pt-4"></div>
-          <div className="bg-[#41387e] p-4 shadow-lg">
+          <div className="rounded-md bg-[#443a85] p-4 shadow-lg">
             {faq.map((data, index) => {
               return (
                 <motion.div initial={{ opacity: 0 }} key={index} whileInView={{ opacity: 1 }}>
@@ -27,7 +27,7 @@ const FAQ: FC = () => {
                       <>
                         <Disclosure.Button
                           className={`flex w-full items-center justify-between px-4 py-3 transition-[background] ${
-                            open ? "bg-gray-400/30" : "bg-[#41387e]"
+                            open ? "bg-gray-400/30" : "bg-[#443a85]"
                           }`}
                         >
                           <span

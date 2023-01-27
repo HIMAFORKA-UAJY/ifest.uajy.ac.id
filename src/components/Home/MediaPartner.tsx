@@ -18,20 +18,37 @@ const MediaPartner: FC = () => {
         <div className="text-center font-retroica text-4xl tracking-[0.15em] text-white">
           Media Partners
         </div>
-        <div className="w-3/4 py-4 lg:w-10/12 2xl:w-7/12">
+        <div className="h-64 w-96 lg:hidden">
           <Swiper
             autoplay={{ delay: 2000 }}
-            breakpoints={{
-              1024: { slidesPerView: 4, grid: { rows: 2 } },
-            }}
+            className="mySwiper"
+            modules={[Autoplay]}
+            slidesPerView="auto"
+            spaceBetween={10}
+          >
+            {mediapartners.map((mp) => {
+              return (
+                <SwiperSlide
+                  className="flex !h-64 !w-64 items-center rounded-lg bg-[#352a7c] p-4"
+                  key={mp.id}
+                >
+                  <img alt={mp.name} src={mp.image} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
+        <div className="hidden lg:block lg:w-10/12 lg:py-4 2xl:w-7/12">
+          <Swiper
+            autoplay={{ delay: 2000 }}
             className="mySwiper"
             grabCursor={false}
             grid={{
-              rows: 1,
+              rows: 2,
               fill: "row",
             }}
             modules={[Autoplay, Grid]}
-            slidesPerView={1}
+            slidesPerView={4}
             spaceBetween={32}
           >
             {mediapartners.map((mp) => {

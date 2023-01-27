@@ -136,7 +136,7 @@ const CP: FC<Props> = ({ className, get }: Props) => {
                       </div>
                       {q.data.map((r, index) => {
                         return (
-                          <div className="flex flex-col items-center py-4" key={index}>
+                          <div className="flex flex-col items-center gap-1 py-4" key={index}>
                             <a
                               className="flex flex-wrap items-center justify-center gap-1"
                               href={r.whatsapp.url}
@@ -146,10 +146,15 @@ const CP: FC<Props> = ({ className, get }: Props) => {
                               <FaWhatsapp />
                               {r.whatsapp.phone}
                             </a>
-                            <div className="flex items-center gap-1 font-louisgeorgecafe">
+                            <a
+                              className="flex flex-wrap items-center justify-center gap-1"
+                              href={`https://line.me/ti/p/~${r.line}`}
+                              rel="noreferrer"
+                              target="_blank"
+                            >
                               <FaLine />
                               {r.line}
-                            </div>
+                            </a>
                             <button
                               className="cursor-default rounded-2xl px-4 font-louisgeorgecafe"
                               style={{ backgroundColor: getColor(q.name) + "cc" }}
