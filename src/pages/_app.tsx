@@ -30,35 +30,35 @@ const App = ({ Component, pageProps, router }: AppProps) => {
     };
   }, []);
 
-  return (
+  return loading ? (
+    <AnimatePresence mode="wait">
+      <motion.div
+        animate={{ opacity: 1 }}
+        className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-r from-[#29456c] to-[#261750]"
+        exit={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        key={router.asPath}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.div
+          animate={{ opacity: 1 }}
+          className="text-center font-gameofsquids text-6xl font-bold tracking-[0.1em] text-white lg:text-8xl"
+          initial={{ opacity: 0.2 }}
+          transition={{ repeat: Infinity, repeatType: "reverse", duration: 1.5 }}
+        >
+          IFest#11
+        </motion.div>
+        <div className="pt-6 font-louisgeorgecafe text-lg tracking-widest text-white opacity-80">
+          Fetching data...
+        </div>
+      </motion.div>
+    </AnimatePresence>
+  ) : (
     <RecoilRoot>
       <AnimatePresence mode="wait">
-        {loading ? (
-          <motion.div
-            animate={{ opacity: 1 }}
-            className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-r from-[#29456c] to-[#261750]"
-            exit={{ opacity: 1 }}
-            initial={{ opacity: 0 }}
-            key={router.asPath}
-            transition={{ duration: 0.5 }}
-          >
-            <motion.div
-              animate={{ opacity: 1 }}
-              className="text-center font-gameofsquids text-6xl font-bold tracking-[0.1em] text-white lg:text-8xl"
-              initial={{ opacity: 0.2 }}
-              transition={{ repeat: Infinity, repeatType: "reverse", duration: 1.5 }}
-            >
-              IFest#11
-            </motion.div>
-            <div className="pt-6 font-louisgeorgecafe text-lg tracking-widest text-white opacity-80">
-              Fetching data...
-            </div>
-          </motion.div>
-        ) : (
-          <Layout route={router.asPath}>
-            <Component {...pageProps} />
-          </Layout>
-        )}
+        <Layout route={router.asPath}>
+          <Component {...pageProps} />
+        </Layout>
       </AnimatePresence>
     </RecoilRoot>
   );
