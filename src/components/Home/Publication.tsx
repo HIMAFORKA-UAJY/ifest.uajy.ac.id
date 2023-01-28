@@ -51,8 +51,8 @@ const Publication: FC = () => {
                       <div className="text-[#978ae9]">{post.date}</div>
                     </div>
                     <div className="py-2"></div>
-                    <Link className="transition-all hover:scale-110" href={`/blog/${post.slug}`}>
-                      <button className="rounded-full bg-[#655bac] p-3 px-4 tracking-wide text-[#c8c1f3]">
+                    <Link href={`/blog/${post.slug}`}>
+                      <button className="rounded-full bg-[#655bac] p-3 px-4 tracking-wide text-[#c8c1f3] transition-all hover:scale-105 hover:shadow-[0px_0px_60px_0px_#675499]">
                         Find out more
                       </button>
                     </Link>

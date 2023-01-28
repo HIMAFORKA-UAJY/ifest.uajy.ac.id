@@ -99,7 +99,7 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
           <div className="flex justify-center lg:justify-start">
             <Link href={content.url}>
               <button
-                className="rounded-[2.0em] px-5 py-3 font-retroica text-sm tracking-widest text-white transition-all hover:shadow-[0px_0px_40px_8px_#6959d480] lg:text-base"
+                className="rounded-[2.0em] px-5 py-3 font-retroica text-sm tracking-widest text-white transition-all hover:scale-105 hover:shadow-[0px_0px_60px_0px_#9696d680] lg:text-base"
                 style={{
                   backgroundColor: getColor(content.id),
                 }}
