@@ -49,7 +49,7 @@ const Footer: FC<Props> = ({ className }: Props) => {
               {nav.data.map((item, index) => {
                 return nav.name === "Akses" ? (
                   <Link
-                    className="flex w-fit items-center gap-2 font-louisgeorgecafe opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90"
+                    className="flex w-fit items-center gap-2 font-louisgeorgecafe opacity-60 transition ease-in-out hover:translate-x-2 hover:opacity-90"
                     href={`https://ifest.uajy.ac.id${item.link}`}
                     key={index}
                     rel="noreferrer"
@@ -59,7 +59,7 @@ const Footer: FC<Props> = ({ className }: Props) => {
                   </Link>
                 ) : (
                   <Link
-                    className="flex w-fit items-center gap-2 font-louisgeorgecafe opacity-40 transition ease-in-out hover:translate-x-2 hover:opacity-90"
+                    className="flex w-fit items-center gap-2 font-louisgeorgecafe opacity-60 transition ease-in-out hover:translate-x-2 hover:opacity-90"
                     href={item.link}
                     key={index}
                   >
