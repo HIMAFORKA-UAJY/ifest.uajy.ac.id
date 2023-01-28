@@ -71,7 +71,7 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
               {content.name}
             </div>
           </div>
-          <div className="flex flex-col flex-wrap gap-2 py-4 text-center font-retroica text-sm text-white lg:w-full lg:flex-row lg:gap-6">
+          <div className="flex flex-col flex-wrap gap-2 py-4 px-10 text-center font-retroica text-sm text-white lg:w-full lg:flex-row lg:gap-6 lg:px-0">
             {content.requirements.map((requirement, index) => {
               return (
                 <div
