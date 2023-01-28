@@ -45,10 +45,10 @@ const Publication: FC = () => {
                   <div className="flex h-[32rem] flex-col items-center justify-center gap-1 rounded-lg bg-[#4a418a] p-6 text-center font-retroica">
                     <img alt="/" className="w-48" src={post.thumbnail} />
                     <div className="py-2">
-                      <div className="tracking-widest text-white">{post.title}</div>
-                      <div className="text-xl text-[#bcb2fd]">{post.author.jabatan}</div>
-                      <div className="text-xl text-[#bcb2fd]">{post.author.name}</div>
-                      <div className="text-[#978ae9]">{post.date}</div>
+                      <div className="text-2xl tracking-widest text-white">{post.title}</div>
+                      <div className="text-l text-[#c6befc]">{post.author.jabatan}</div>
+                      <div className="text-l text-[#c6befc]">{post.author.name}</div>
+                      <div className="text-sm text-[#8f85d1]">{post.date}</div>
                     </div>
                     <div className="py-2"></div>
                     <Link href={`/blog/${post.slug}`}>
