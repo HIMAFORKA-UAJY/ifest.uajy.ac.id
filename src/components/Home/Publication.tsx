@@ -42,17 +42,19 @@ const Publication: FC = () => {
             {posts.map((post) => {
               return (
                 <SwiperSlide className="px-12" key={post.slug}>
-                  <div className="flex h-[32rem] flex-col items-center justify-center gap-1 rounded-lg bg-[#352a7c] p-6 text-center font-retroica">
+                  <div className="flex h-[32rem] flex-col items-center justify-center gap-1 rounded-lg bg-[#4a418a] p-6 text-center font-retroica">
                     <img alt="/" className="w-48" src={post.thumbnail} />
                     <div className="py-2">
-                      <div className="tracking-widest text-white">{post.title}</div>
-                      <div className="text-xl text-[#9c8dfc]">{post.author.jabatan}</div>
-                      <div className="text-xl text-[#9c8dfc]">{post.author.name}</div>
-                      <div className="text-[#7364D2]">{post.date}</div>
+                      <div className="text-2xl tracking-widest text-white">{post.title}</div>
+                      <div className="text-l text-[#c6befc]">{post.author.jabatan}</div>
+                      <div className="text-l text-[#c6befc]">{post.author.name}</div>
+                      <div className="text-sm text-[#8f85d1]">{post.date}</div>
                     </div>
                     <div className="py-2"></div>
-                    <Link className="transition-all hover:scale-125" href={`/blog/${post.slug}`}>
-                      <button className="tracking-wide text-[#9c8dfc]">Find out more</button>
+                    <Link href={`/blog/${post.slug}`}>
+                      <button className="rounded-full bg-[#655bac] p-3 px-4 tracking-wide text-[#c8c1f3] transition-all hover:scale-105 hover:shadow-[0px_0px_60px_0px_#675499]">
+                        Find out more
+                      </button>
                     </Link>
                   </div>
                 </SwiperSlide>
