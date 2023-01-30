@@ -122,9 +122,9 @@
     "name": "Web Design Competition",
     "url": "/kompetisi/wdc",
     "img": "/images/kompetisi/ill-wdc.webp",
-    "poster": "/images/kompetisi/poster-i2c.webp",
-    "rulebook": "/documents/rulebook-i2c.pdf",
-    "date_available": "2023-01-20",
+    "poster": "/images/kompetisi/poster-wdc.webp",
+    "rulebook": "/documents/rulebook-wdc.pdf",
+    "date_available": "2023-01-30",
     "requirements": ["Mahasiswa/i D3/D4/S1", "Rp. 50k / tim", "Max. 2 peserta / tim"],
     "description": "adalah kompetisi merancang desain visual yang ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema \"Embrace the Future of Local Economy with Technology\"",
     "long_description": "<strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana mahasiswa/i dalam sebuah tim yang terdiri dari maksimal dua orang berlomba untuk membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design Competition (WDC) 2023 mengangkat tema <em>“Embrace the Future of Local Economy with Technology”</em> dengan harapan peserta akan mendesain sebuah web yang akan mempromosikan dan menjual produk UMKM lokal di daerah mereka.",
@@ -137,7 +137,7 @@
           "Tim yang terdiri dari 2 (dua) orang peserta harus berasal dari institusi/perguruan tinggi yang sama.",
           "Tidak diperkenankan ada peserta yang terdaftar dalam dua tim atau lebih yang berbeda.",
           "Melakukan pendaftaran online melalui link pendaftaran, pendaftaran akan dibuka mulai dari Senin, 30 Januari 2023 sampai dengan Rabu, 8 Maret 2023.",
-          "Melampirkan scan atau foto Kartu Tanda Mahasiswa serta bukti pembayaran pada formulir pendaftaran",
+          "Melampirkan scan atau foto Kartu Tanda Mahasiswa, Surat Persetujuan Universitas, serta bukti pembayaran pada formulir pendaftaran.",
           "Peserta yang sudah mendaftar tetapi tidak mengumpulkan hasil karya desain situs web setelah batas waktu yang ditentukan dianggap mengundurkan diri dari perlombaan.",
           "Panitia berhak untuk mengeleminasi peserta yang tidak mematuhi ketentuan di atas.",
           "Setiap peserta Web Design Competition (WDC) 2023 wajib membaca, memahami, dan mengikuti seluruh syarat dan ketentuan yang tercantum dalam rulebook."
@@ -179,7 +179,7 @@
         ]
       },
       {
-        "name": "Inventor Expo",
+        "name": "Tahap Final",
         "data": [
           {
             "name": "Technical Meeting",
@@ -198,17 +198,17 @@
         {
           "type": "Juara 1",
           "image": "/images/medal-1.webp",
-          "rewards": ["Rp 2.000.000", "Sertifikat Nasional"]
+          "rewards": ["Rp 3.000.000", "Piala", "Sertifikat Nasional"]
         },
         {
           "type": "Juara 2",
           "image": "/images/medal-2.webp",
-          "rewards": ["Rp 2.000.000", "Sertifikat Nasional"]
+          "rewards": ["Rp 2.000.000", "Piala", "Sertifikat Nasional"]
         },
         {
           "type": "Juara 3",
           "image": "/images/medal-3.webp",
-          "rewards": ["Rp 1.000.000", "Sertifikat Nasional"]
+          "rewards": ["Rp 1.000.000", "Piala", "Sertifikat Nasional"]
         }
       ]
     }
