@@ -1,9 +1,11 @@
 import CP from "@/components/CP";
+import ComingSoon from "@/components/ComingSoon";
 import Footer from "@/components/Footer";
 import acara from "@/data/acara.json";
 import { navColors } from "@/recoil/atoms";
 import { Dialog } from "@headlessui/react";
 import { motion } from "framer-motion";
+import moment from "moment-timezone";
 import { NextSeo } from "next-seo";
 import { useRef, useState } from "react";
 import { Chrono } from "react-chrono";
@@ -14,6 +16,22 @@ const Index = () => {
   const registrationContentRef = useRef<HTMLDivElement>(null);
   const benefitsContentRef = useRef<HTMLDivElement>(null);
   const [openPoster, setOpenPoster] = useState<boolean>(false);
+
+  if (
+    acara["donor-darah"].date_available == null ||
+    moment()
+      .tz("Asia/Jakarta")
+      .diff(moment(acara["donor-darah"].date_available).tz("Asia/Jakarta")) < 0
+  )
+    return (
+      <>
+        <NextSeo
+          description={`${acara["donor-darah"].name} ${acara["donor-darah"].description}`}
+          title={`${acara["donor-darah"].name} - IFest#11`}
+        />
+        <ComingSoon date={acara["donor-darah"].date_available} />;
+      </>
+    );
   return (
     <>
       <NextSeo

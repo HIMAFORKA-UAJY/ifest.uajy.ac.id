@@ -6,6 +6,7 @@
     "url": "/acara/donor-darah",
     "img": "/images/acara/ill-donor-darah.webp",
     "poster": "/images/acara/poster-donor-darah.webp",
+    "date_available": "2023-03-17",
     "description": "ialah kegiatan mengambil darah seseorang yang dilaksanakan secara sukarela dan sadar untuk kemudian disimpan ke bank darah sebagai stok darah yang sewaktu-waktu dapat dipergunakan untuk transfusi darah. Dengan mendonorkan darah bukan hanya bermanfaat bagi kesehatan namun kita juga berkesempatan menjadi manfaat bagi orang lain.",
     "short_description": "Donor darah adalah suatu aksi kebaikan yang dilakukan dengan cara menyumbangkan sebagian darah kepada orang lain yang membutuhkan.",
     "requirements": ["Umum", "Gratis", "Pendaftaran Online"],

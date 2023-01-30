@@ -104,7 +104,11 @@ const ContentRenderer: FC<Props> = ({ content }: Props) => {
                   backgroundColor: getColor(content.id),
                 }}
               >
-                Read More
+                {content.abbreviation === "MUC" ||
+                content.name === "Donor Darah" ||
+                content.name === "Seminar Nasional"
+                  ? "Coming Soon"
+                  : "Read More"}
               </button>
             </Link>
           </div>

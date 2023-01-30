@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import "@/styles/scrollbar.css";
 import "@/styles/shooting-stars.css";
 import { AnimatePresence, motion } from "framer-motion";
+import { NextSeo } from "next-seo";
 import type { AppProps } from "next/app";
 import Router from "next/router";
 import { useEffect, useState } from "react";
@@ -31,28 +32,31 @@ const App = ({ Component, pageProps, router }: AppProps) => {
   }, []);
 
   return loading ? (
-    <AnimatePresence mode="wait">
-      <motion.div
-        animate={{ opacity: 1 }}
-        className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-r from-[#29456c] to-[#261750]"
-        exit={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        key={router.asPath}
-        transition={{ duration: 0.5 }}
-      >
+    <>
+      <NextSeo title={`Loading...`} />
+      <AnimatePresence mode="wait">
         <motion.div
           animate={{ opacity: 1 }}
-          className="text-center font-gameofsquids text-6xl font-bold tracking-[0.1em] text-white lg:text-8xl"
-          initial={{ opacity: 0.2 }}
-          transition={{ repeat: Infinity, repeatType: "reverse", duration: 1.5 }}
+          className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-r from-[#29456c] to-[#261750]"
+          exit={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          key={router.asPath}
+          transition={{ duration: 0.5 }}
         >
-          IFest#11
+          <motion.div
+            animate={{ opacity: 1 }}
+            className="text-center font-gameofsquids text-6xl font-bold tracking-[0.1em] text-white lg:text-8xl"
+            initial={{ opacity: 0.2 }}
+            transition={{ repeat: Infinity, repeatType: "reverse", duration: 1.5 }}
+          >
+            IFest#11
+          </motion.div>
+          <div className="pt-6 font-louisgeorgecafe text-lg tracking-widest text-white opacity-80">
+            Fetching data...
+          </div>
         </motion.div>
-        <div className="pt-6 font-louisgeorgecafe text-lg tracking-widest text-white opacity-80">
-          Fetching data...
-        </div>
-      </motion.div>
-    </AnimatePresence>
+      </AnimatePresence>
+    </>
   ) : (
     <RecoilRoot>
       <AnimatePresence mode="wait">
