@@ -125,7 +125,7 @@
     "poster": "/images/kompetisi/poster-i2c.webp",
     "rulebook": "/documents/rulebook-i2c.pdf",
     "date_available": "2023-01-20",
-    "requirements": ["Mahasiswa/i D3/D4/S1", "Rp. 50k / tim", "Max. 2 peserta / tim"],
+    "requirements": ["Mahasiswa/i D3 / D4 / S1", "Rp. 50k / tim", "Max. 2 peserta / tim"],
     "description": "adalah kompetisi merancang desain visual yang ditampilkan di media digital berupa situs web. Pada tahun ini, WDC mengangkat tema \"Embrace the Future of Local Economy with Technology\"",
     "long_description": "<strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana mahasiswa/i dalam sebuah tim yang terdiri dari maksimal dua orang berlomba untuk membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design Competition (WDC) 2023 mengangkat tema <em>“Embrace the Future of Local Economy with Technology”</em> dengan harapan peserta akan mendesain sebuah web yang akan mempromosikan dan menjual produk UMKM lokal di daerah mereka.",
     "provision": [
@@ -223,7 +223,7 @@
     "rulebook": "/documents/rulebook-i2c.pdf",
     "date_available": "2023-02-27",
     "description": "adalah perlombaan untuk menampilkan interface dari sebuah aplikasi mobile yang diharapkan dapat membantu penggunaan dari aplikasi itu sendiri.",
-    "requirements": ["D3 / D4 / S1", "Gratis", "Max. 2 peserta / tim"],
+    "requirements": ["Mahasiswa/i D3 / D4 / S1", "Gratis", "Max. 2 peserta / tim"],
     "long_description": "<strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana mahasiswa/i dalam sebuah tim yang terdiri dari maksimal dua orang berlomba untuk membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design Competition (WDC) 2023 mengangkat tema <em>“Embrace the Future of Local Economy with Technology”</em> dengan harapan peserta akan mendesain sebuah web yang akan mempromosikan dan menjual produk UMKM lokal di daerah mereka.",
     "provision": [
       {
