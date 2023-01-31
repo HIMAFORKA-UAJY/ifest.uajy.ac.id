@@ -10,7 +10,7 @@ const Index: FC = () => {
         description={`${acara["seminar-nasional"].name} ${acara["seminar-nasional"].description}`}
         title={`${acara["seminar-nasional"].name} - IFest#11`}
       />
-      <ComingSoon date={null} />;
+      <ComingSoon date={null} />
     </>
   );
 };

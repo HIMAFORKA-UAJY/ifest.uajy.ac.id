@@ -6,7 +6,7 @@ const Index: FC = () => {
   return (
     <>
       <NextSeo title={`IFest Store - IFest#11`} />
-      <ComingSoon date={"2023-02-20"} />;
+      <ComingSoon date={"2023-02-20"} />
     </>
   );
 };
