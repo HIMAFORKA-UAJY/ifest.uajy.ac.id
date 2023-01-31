@@ -122,7 +122,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
           description={`${k.abbreviation} ${k.description}`}
           title={`${k.abbreviation} - IFest#11`}
         />
-        <ComingSoon date={k.date_available} />;
+        <ComingSoon date={k.date_available} />
       </>
     );
 

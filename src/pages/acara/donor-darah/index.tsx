@@ -29,7 +29,7 @@ const Index = () => {
           description={`${acara["donor-darah"].name} ${acara["donor-darah"].description}`}
           title={`${acara["donor-darah"].name} - IFest#11`}
         />
-        <ComingSoon date={acara["donor-darah"].date_available} />;
+        <ComingSoon date={acara["donor-darah"].date_available} />
       </>
     );
   return (
