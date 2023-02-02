@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "himaforka-uajy-1994"
+    "default": "himaforka-uajy-id"
   },
   "targets": {
-    "himaforka-uajy-1994": {
+    "himaforka-uajy-id": {
       "hosting": {
-        "ifest11": [
-          "ifest11"
+        "ifest": [
+          "ifest"
         ]
       }
     }

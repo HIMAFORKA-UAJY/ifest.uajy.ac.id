@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "ifest11",
+    "target": "ifest",
     "public": "out",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
