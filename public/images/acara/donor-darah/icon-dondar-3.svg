@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="999.99988mm"
+   width="1000mm"
    height="1000.0001mm"
-   viewBox="0 0 999.99988 1000.0001"
+   viewBox="0 0 1000 1000.0001"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="ikon ifest.svg"
+   sodipodi:docname="icon_dondar_4.svg"
    inkscape:export-filename="mencegah penyakit serius.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -27,9 +27,9 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.028544589"
-     inkscape:cx="-87.582274"
-     inkscape:cy="2469.8201"
+     inkscape:zoom="0.08073629"
+     inkscape:cx="464.47514"
+     inkscape:cy="2087.0417"
      inkscape:window-width="1366"
      inkscape:window-height="720"
      inkscape:window-x="0"
@@ -40,7 +40,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-1122.2365,-1098.1171)"><g
+     transform="translate(-17.439263,-1098.1171)"><g
        id="g3956"
        transform="translate(36.040206,33.812648)"><g
          id="g888"
@@ -67,18 +67,19 @@
            cx="-539.56281"
            cy="572.29346"
            r="17.735437"
-           transform="scale(-1,1)" /><text
-           xml:space="preserve"
-           style="font-size:296.696px;letter-spacing:41.7209px;fill:none;stroke:#ff95c1;stroke-width:28.0342;stroke-dasharray:none"
-           x="-54.439846"
-           y="278.18219"
-           id="text1098"><tspan
-             sodipodi:role="line"
-             id="tspan1096"
-             style="font-size:296.696px;fill:none;fill-opacity:1;stroke:#ff95c1;stroke-width:28.0342;stroke-dasharray:none;stroke-opacity:1"
-             x="-54.439846"
-             y="278.18219"
-             dx="80">+xx</tspan></text><g
+           transform="scale(-1,1)" /><g
+           aria-label="+xx"
+           id="text1098"
+           style="font-size:296.696px;letter-spacing:41.7209px;fill:#ff95c1;stroke:#ff95c1;stroke-width:15.7685368;stroke-dasharray:none"><path
+             d="M 162.02873,92.167697 V 172.8609 h 80.6932 v 24.62809 h -80.6932 v 80.6932 h -24.33834 v -80.6932 H 56.997183 V 172.8609 H 137.69039 V 92.167697 Z"
+             id="path301"
+             style="stroke-width:15.7685368;stroke-dasharray:none" /><path
+             d="m 478.71497,115.92656 -58.67279,78.95475 61.71509,83.30088 h -31.43703 l -47.22798,-63.74328 -47.22798,63.74328 h -31.43703 l 63.01893,-84.89447 -57.6587,-77.36116 h 31.43703 l 43.02672,57.80357 43.02671,-57.80357 z"
+             id="path303"
+             style="stroke-width:15.7685368;stroke-dasharray:none" /><path
+             d="m 696.01966,115.92656 -58.67279,78.95475 61.71508,83.30088 h -31.43702 l -47.22798,-63.74328 -47.22798,63.74328 h -31.43703 l 63.01893,-84.89447 -57.6587,-77.36116 h 31.43703 l 43.02672,57.80357 43.02671,-57.80357 z"
+             id="path305"
+             style="stroke-width:15.7685368;stroke-dasharray:none" /></g><g
            style="fill:#000000"
            id="g4024"
            transform="matrix(0.44223905,0,0,0.44223905,900.86746,-126.88183)"><g

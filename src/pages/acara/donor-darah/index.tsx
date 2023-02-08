@@ -39,7 +39,7 @@ const Index = () => {
         title={`${acara["donor-darah"].name} - IFest#11`}
       />
       <div className="absolute top-0 -z-10 h-screen w-full bg-[url('/images/acara/donor-darah/bg-donor-darah.webp')] bg-cover bg-center bg-no-repeat">
-        <div className="mx-auto flex h-full w-full flex-col items-center justify-center gap-8 border-b border-b-white px-8 lg:w-8/12">
+        <div className="mx-auto flex h-full w-full flex-col items-center justify-center gap-8 px-8 lg:w-8/12">
           <div className="text-center font-retroica text-4xl font-bold text-white lg:text-5xl">
             <p className="inline text-[#ce5866]">Satu </p>
             <p className="inline">donasi Anda </p>
