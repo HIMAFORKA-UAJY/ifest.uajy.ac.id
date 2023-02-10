@@ -224,37 +224,26 @@
     "date_available": "2023-02-27",
     "description": "adalah perlombaan untuk menampilkan interface dari sebuah aplikasi mobile yang diharapkan dapat membantu penggunaan dari aplikasi itu sendiri.",
     "requirements": ["D3 / D4 / S1", "Gratis", "Max. 2 peserta / tim"],
-    "long_description": "<strong>Web Design Competition (WDC)</strong> adalah sebuah kompetisi di mana mahasiswa/i dalam sebuah tim yang terdiri dari maksimal dua orang berlomba untuk membuat desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau pencari informasi mendapatkan informasi yang jelas dan tepat. Web Design Competition (WDC) 2023 mengangkat tema <em>“Embrace the Future of Local Economy with Technology”</em> dengan harapan peserta akan mendesain sebuah web yang akan mempromosikan dan menjual produk UMKM lokal di daerah mereka.",
+    "long_description": "<em>Mobile UI/UX Competition</em> (MUC) 2023 merupakan sebuah kompetisi / perlombaan terkhusus untuk mahasiswa/i dimana akan membuat serta menampilkan sebuah desain visual / <em>interface</em> dari sebuah aplikasi mobile supaya dapat digunakan lebih efektif serta menarik bagi para pengguna aplikasi tersebut. Tema yang diangkat <em>Mobile UI/UX Competition</em> 2023 ini yaitu <em>“Develop Innovation and Ideas for Mobile UI/UX in Student Portal Application”</em>, yang menunjukkan lomba ini dapat digunakan sebagai wadah untuk menampung segala inovasi dan ide - ide dari para mahasiswa/i yang tentunya sangat beragam.",
     "provision": [
       {
         "type": "Ketentuan Umum",
         "data": [
-          "Peserta adalah mahasiswa/i aktif jenjang D3/D4/S1 dari perguruan tinggi di Daerah Istimewa Yogyakarta dan Jawa Tengah.",
+          "Peserta adalah mahasiswa/i aktif jenjang D3/D4/S1 dari perguruan tinggi Seluruh Indonesia.",
           "Peserta lomba adalah satu tim yang terdiri dari minimal 1 (satu) orang dan maksimal 2 (dua) orang.",
           "Tim yang terdiri dari 2 (dua) orang peserta harus berasal dari institusi/perguruan tinggi yang sama.",
           "Tidak diperkenankan ada peserta yang terdaftar dalam dua tim atau lebih yang berbeda.",
-          "Melakukan pendaftaran online melalui link pendaftaran, pendaftaran akan dibuka mulai dari Senin, 30 Januari 2023 sampai dengan Rabu, 8 Maret 2023.",
-          "Melampirkan scan atau foto Kartu Tanda Mahasiswa serta bukti pembayaran pada formulir pendaftaran",
-          "Peserta yang sudah mendaftar tetapi tidak mengumpulkan hasil karya desain situs web setelah batas waktu yang ditentukan dianggap mengundurkan diri dari perlombaan.",
+          "Melakukan pendaftaran online melalui https://ifest.uajy.ac.id/dash/, pendaftaran akan dibuka mulai Senin, 27 Februari 2023 sampai dengan Sabtu, 1 April 2023 pukul 23.59 WIB.",
+          "Melampirkan scan atau foto Kartu Tanda Mahasiswa, Surat persetujuan Universitas pada formulir pendaftaran.",
+          "Seluruh peserta yang mengirimkan hasil karya akan mendapatkan e-certificate.",
+          "Peserta yang sudah mendaftar tetapi tidak mengumpulkan hasil karya deskripsi fitur tampilan aplikasi mobile (HandPhone) setelah batas waktu yang ditentukan dianggap mengundurkan diri dari perlombaan.",
           "Panitia berhak untuk mengeleminasi peserta yang tidak mematuhi ketentuan di atas.",
-          "Setiap peserta Web Design Competition (WDC) 2023 wajib membaca, memahami, dan mengikuti seluruh syarat dan ketentuan yang tercantum dalam rulebook."
+          "Setiap peserta Mobile UI/UX Competition (MUC) 2023 wajib membaca, memahami, dan mengikuti seluruh syarat dan ketentuan yang tercantum dalam rulebook."
         ]
       },
       {
         "type": "Ketentuan Karya",
-        "data": [
-          "Karya desain berupa situs web desktop.",
-          "Peserta dibebaskan menggunakan software apapun dalam pembuatan desain.",
-          "Hasil karya harus sesuai dengan tema WDC 2023.",
-          "Web harus mengandung fungsi-fungsi esensial, jumlah halaman web maksimal 10 halaman.",
-          "Bahasa utama yang digunakan dalam pembuatan website adalah Bahasa Indonesia dan diperbolehkan menggunakan istilah dalam bahasa asing.",
-          "Peserta wajib menyertakan kode (code) desain web.",
-          "Desain situs web dilarang mengandung unsur SARA, kekerasan, pornografi, dan melanggar UU yang berlaku.",
-          "Desain situs web yang diperlombakan menjadi hak panitia.",
-          "Panitia WDC 2023 berhak mendiskualifikasi peserta jika diketahui Hak Atas Kekayaan Intelektualnya diragukan, sedang dalam sengketa, mengambil karya orang lain, atau mendapat klaim dari pihak lain.",
-          "Keputusan panitia bersifat mutlak dan tidak dapat diganggu gugat.",
-          "Ketentuan yang lebih lengkap silahkan lihat Rulebook WDC 2023."
-        ]
+        "data": ["To Be Announced"]
       }
     ],
     "timeline": [
@@ -263,53 +252,49 @@
         "data": [
           {
             "name": "Pendaftaran Online",
-            "date": "30 Januari - 8 Maret 2023"
+            "date": "27 Februari - 1 April 2023"
           },
           {
             "name": "Batas Pengumpulan Karya",
-            "date": "8 Maret 2023"
+            "date": "1 April 2023"
           },
           {
-            "name": "Seleksi / Penilaian",
-            "date": "17 Maret - 22 Maret 2023"
-          },
-          {
-            "name": "Pengumuman 5 Karya Terbaik",
-            "date": "23 Maret 2023"
+            "name": "Pengumuman Finalis",
+            "date": "26 April 2023"
           }
         ]
       },
       {
-        "name": "Inventor Expo",
+        "name": "Tahap Final",
         "data": [
           {
             "name": "Technical Meeting",
-            "date": "24 Maret 2023"
+            "date": "28 April 2023"
           },
           {
             "name": "Presentasi Finalis",
-            "date": "31 Maret 2023"
+            "date": "6 Mei 2023"
           }
         ]
       }
     ],
     "prizepool": {
-      "total": "Rp 6.000.000",
+      "total": "Rp 4.000.000",
       "distribution": [
         {
           "type": "Juara 1",
           "image": "/images/medal-1.webp",
-          "rewards": ["Rp 3.000.000", "Piala", "Sertifikat Nasional"]
+          "rewards": ["Rp 2.000.000", "E-certificate Nasional"]
         },
         {
           "type": "Juara 2",
           "image": "/images/medal-2.webp",
-          "rewards": ["Rp 2.000.000", "Piala", "Sertifikat Nasional"]
+          "rewards": ["Rp 1.250.000", "E-certificate Nasional"]
         },
         {
           "type": "Juara 3",
           "image": "/images/medal-3.webp",
-          "rewards": ["Rp 1.000.000", "Piala", "Sertifikat Nasional"]
+          "rewards": ["Rp 750.000", "E-certificate Nasional"]
         }
       ]
     }
