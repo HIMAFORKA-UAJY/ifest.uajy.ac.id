@@ -8,7 +8,7 @@ import parse from "html-react-parser";
 import moment from "moment-timezone";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
-import { FC, useRef, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
 import { FaBook, FaCertificate, FaMale, FaMoneyBill, FaTrophy, FaWallet } from "react-icons/fa";
 import { useSetRecoilState } from "recoil";
@@ -60,6 +60,18 @@ interface Props {
   };
 }
 
+interface PageColor {
+  pg1: string; // page gradient a
+  pg2: string; // page gradient b
+  bg1: string; // section bg odd
+  bg2: string; // section bg even
+  el1: string; // element gradient a
+  el2: string; // element gradient b
+  txt1: string; // text gradient a
+  txt2: string; // text gradient b
+  accent: string; // buttons
+}
+
 export const getStaticPaths = async () => {
   return {
     paths: Object.keys(kompetisi).map((k) => ({ params: { id: k } })),
@@ -75,10 +87,65 @@ export const getStaticProps = async () => {
 
 const Index: FC<Props> = ({ kompetisi }: Props) => {
   useSetRecoilState(navColors)({ bg1: "#211a44", bg2: "#3d3474", fg: "#bfb2ff" });
+  const [pageColor, setPageColor] = useState<PageColor>({
+    pg1: "",
+    pg2: "",
+    bg1: "",
+    bg2: "",
+    el1: "",
+    el2: "",
+    txt1: "",
+    txt2: "",
+    accent: "",
+  });
 
   const router = useRouter();
   const { id } = router.query;
   const k: Kompetisi = kompetisi[id as keyof typeof kompetisi];
+
+  useEffect(() => {
+    switch (id) {
+      case "i2c":
+        setPageColor({
+          pg1: "#ff00ff",
+          pg2: "#ffffff",
+          bg1: "#ffff00",
+          bg2: "#00ffff",
+          el1: "#00ff00",
+          el2: "#0000ff",
+          txt1: "#00ff00",
+          txt2: "#0000ff",
+          accent: "#ff0000",
+        });
+        break;
+      case "wdc":
+        setPageColor({
+          pg1: "#ffffff",
+          pg2: "#ffffff",
+          bg1: "#ffffff",
+          bg2: "#ffffff",
+          el1: "#ffffff",
+          el2: "#ffffff",
+          txt1: "#00ff00",
+          txt2: "#0000ff",
+          accent: "#ffffff",
+        });
+        break;
+      case "muc":
+        setPageColor({
+          pg1: "#400E09",
+          pg2: "#570815",
+          bg1: "#78191D",
+          bg2: "#783419",
+          el1: "#94300C",
+          el2: "#940C2A",
+          txt1: "#F78468",
+          txt2: "#F567A6",
+          accent: "#FCA22B",
+        });
+        break;
+    }
+  }, [id]);
 
   const getColor = (index: number) => {
     switch (index) {
@@ -132,11 +199,20 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
         description={`${k.abbreviation} ${k.description}`}
         title={`${k.abbreviation} - IFest#11`}
       />
-      <div className="absolute top-0 -z-10 min-h-screen w-full bg-gradient-to-b from-[#2a2f59] to-[#332550]">
+      <div
+        className="absolute top-0 -z-10 min-h-screen w-full"
+        style={{ background: `linear-gradient(90deg, ${pageColor.pg1}, ${pageColor.pg2})` }}
+      >
         <div className="flex h-screen flex-col items-center justify-center gap-4 px-4 lg:flex-row">
           <img alt={k.name.toLowerCase()} className="w-72 lg:w-1/4" src={k.img} />
           <div className="flex flex-col items-center justify-center gap-8">
-            <div className="bg-gradient-to-r from-[#c6aeff] to-[#aec9ff] bg-clip-text text-center text-transparent">
+            <div
+              className="text-center text-transparent"
+              style={{
+                background: `linear-gradient(90deg, ${pageColor.txt1}, ${pageColor.txt2})`,
+                WebkitBackgroundClip: "text",
+              }}
+            >
               <div className="font-retroica text-4xl tracking-wide lg:hidden">{k.abbreviation}</div>
               <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">{k.name}</div>
             </div>
@@ -148,7 +224,10 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                     key={index}
                     style={{ backgroundColor: getColor(index) }}
                   >
-                    <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-[#332550] p-4">
+                    <div
+                      className="flex flex-wrap items-center justify-center gap-1 rounded-full p-4"
+                      style={{ backgroundColor: pageColor.pg1 }}
+                    >
                       {getIcon(index)}
                       {r}
                     </div>
@@ -181,8 +260,12 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-t from-[#2a2f59] to-[#332550]" ref={contentRef}>
-          <div className="border-gray-700 bg-[#241f3d] p-8">
+        <div
+          className=""
+          ref={contentRef}
+          style={{ background: `linear-gradient(180deg, ${pageColor.pg1}, ${pageColor.pg2})` }}
+        >
+          <div className="border-gray-700 p-8" style={{ backgroundColor: pageColor.bg1 }}>
             <div className="flex flex-col items-center gap-4">
               <div className="font-retroica text-3xl tracking-wider text-white">
                 MORE ABOUT {k.abbreviation}
@@ -194,8 +277,11 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
             <div className="flex flex-col pt-4 font-louisgeorgecafe text-white lg:flex-row lg:items-center lg:justify-center lg:gap-6">
               <div className="rounded-full bg-[#6c6486] p-1">
                 <button
-                  className="flex w-full justify-center gap-1 rounded-full bg-[#332550] p-2 transition-all hover:bg-transparent"
+                  className="flex w-full justify-center gap-1 rounded-full p-2 transition-all hover:bg-transparent"
                   onClick={() => setOpenPoster(true)}
+                  style={{
+                    background: `linear-gradient(180deg, ${pageColor.pg1}, ${pageColor.pg2})`,
+                  }}
                 >
                   <div className="tracking-widest opacity-70">Lihat Poster</div>
                 </button>
@@ -256,7 +342,11 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
           <div className="flex flex-col justify-center gap-8 p-8 lg:px-24">
             {k.provision.map((provision, index) => {
               return (
-                <div className="rounded-lg border border-gray-700 bg-[#241f3d] p-4" key={index}>
+                <div
+                  className="rounded-lg border border-gray-700 p-4"
+                  key={index}
+                  style={{ backgroundColor: pageColor.bg2 }}
+                >
                   <h3 className="pl-6 font-retroica text-2xl text-[#87bbeb]">{provision.type}</h3>
                   <div className="p-6 font-louisgeorgecafe leading-loose text-white">
                     <ol className="list-outside list-decimal">
@@ -275,8 +365,11 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
             {k.timeline.map((timeline, index) => {
               return (
                 <div className="flex w-full flex-col items-center justify-center" key={index}>
-                  <div className="w-fit rounded-xl bg-[#241f3d] pb-1">
-                    <div className="rounded-xl bg-[#716B90] p-4 font-retroica text-white shadow-inner">
+                  <div className="w-fit rounded-xl pb-1" style={{ backgroundColor: pageColor.el2 }}>
+                    <div
+                      className="rounded-xl p-4 font-retroica text-white shadow-inner"
+                      style={{ backgroundColor: pageColor.el2 }}
+                    >
                       {timeline.name}
                     </div>
                   </div>
@@ -295,7 +388,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                       theme={{
                         primary: "#716b90",
                         secondary: "transparent",
-                        cardBgColor: "#241f3d",
+                        cardBgColor: `${pageColor.bg1}`,
                         cardForeColor: "white",
                         titleColor: "white",
                         titleColorActive: "white",
@@ -325,7 +418,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                     }`}
                     key={index}
                   >
-                    <div className="flex flex-row items-center justify-center rounded-xl border border-gray-700 bg-[#241f3d] p-4 text-white transition duration-300 ease-in hover:scale-105 hover:text-[#241f3d] lg:flex-col">
+                    <div className="flex flex-row items-center justify-center rounded-xl border border-gray-700 bg-[#111111] p-4 text-white transition duration-300 ease-in hover:scale-105 hover:text-[#241f3d] lg:flex-col">
                       <img
                         alt="/"
                         className={`${
@@ -358,7 +451,12 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
           </div>
 
           <div className="flex w-full flex-col items-center justify-center p-10">
-            <div className="w-full rounded-xl border-gray-200 bg-gradient-to-br from-[#463e74] to-[#332550] p-4 lg:w-10/12 2xl:w-1/2">
+            <div
+              className="w-full rounded-xl border-gray-200 p-4 lg:w-10/12 2xl:w-1/2"
+              style={{
+                background: `linear-gradient(90deg, ${pageColor.el1}, ${pageColor.el2})`,
+              }}
+            >
               <div className="flex flex-col items-center justify-center text-center lg:flex-row lg:justify-start">
                 <img alt="/" className="w-48" src="/images/announce.webp" />
                 <div className="flex flex-col items-center gap-4 lg:items-start">
