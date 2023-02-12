@@ -435,19 +435,17 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
               {k.prizepool.distribution.map((distribution, index) => {
                 return (
                   <div
-                    className={`${
-                      k.prizepool.distribution.length % 2 == 0 && index == 0
+                    className={`${k.prizepool.distribution.length % 2 == 0 && index == 0
                         ? "col-span-full"
                         : "fika"
-                    }`}
+                      }`}
                     key={index}
                   >
                     <div className="flex flex-row items-center justify-center rounded-xl border border-gray-700 bg-[#111111] p-4 text-white transition duration-300 ease-in hover:scale-105 hover:text-[#241f3d] lg:flex-col">
                       <img
                         alt="/"
-                        className={`${
-                          index % 2 == 0 ? "order-0" : "order-1"
-                        } w-32 p-4 lg:-order-none lg:w-48`}
+                        className={`${index % 2 == 0 ? "order-0" : "order-1"
+                          } w-32 p-4 lg:-order-none lg:w-48`}
                         src={distribution.image}
                       />
                       <div>
@@ -460,8 +458,8 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                               {reward === "Piala"
                                 ? getIcon(4)
                                 : reward === "Sertifikat Nasional"
-                                ? getIcon(5)
-                                : getIcon(index + 3)}
+                                  ? getIcon(5)
+                                  : getIcon(index + 3)}
                               {reward}
                             </div>
                           );
