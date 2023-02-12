@@ -107,28 +107,28 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
     switch (id) {
       case "i2c":
         setPageColor({
-          pg1: "#ff00ff",
-          pg2: "#ffffff",
-          bg1: "#ffff00",
-          bg2: "#00ffff",
-          el1: "#00ff00",
-          el2: "#0000ff",
-          txt1: "#00ff00",
-          txt2: "#0000ff",
-          accent: "#ff0000",
+          pg1: "#311b4a",
+          pg2: "#1c1045 ",
+          bg1: "#462f69",
+          bg2: "#43306e",
+          el1: "#7156b0",
+          el2: "#8c56b0",
+          txt1: "#c289e8",
+          txt2: "#a289e8",
+          accent: "#703dfc",
         });
         break;
       case "wdc":
         setPageColor({
-          pg1: "#ffffff",
-          pg2: "#ffffff",
-          bg1: "#ffffff",
-          bg2: "#ffffff",
-          el1: "#ffffff",
-          el2: "#ffffff",
-          txt1: "#00ff00",
-          txt2: "#0000ff",
-          accent: "#ffffff",
+          pg1: "#095947",
+          pg2: "#094959",
+          bg1: "#227365",
+          bg2: "#227370",
+          el1: "#51b0ad",
+          el2: "#51b097",
+          txt1: "#95edd6",
+          txt2: "#95e7ed",
+          accent: "#38fcbb",
         });
         break;
       case "muc":
@@ -137,8 +137,8 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
           pg2: "#570815",
           bg1: "#78191D",
           bg2: "#783419",
-          el1: "#94300C",
-          el2: "#940C2A",
+          el1: "#ba3e11",
+          el2: "#ba0d33",
           txt1: "#F78468",
           txt2: "#F567A6",
           accent: "#FCA22B",
@@ -211,6 +211,7 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
               style={{
                 background: `linear-gradient(90deg, ${pageColor.txt1}, ${pageColor.txt2})`,
                 WebkitBackgroundClip: "text",
+                backgroundClip: "text",
               }}
             >
               <div className="font-retroica text-4xl tracking-wide lg:hidden">{k.abbreviation}</div>
@@ -275,15 +276,17 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
               </div>
             </div>
             <div className="flex flex-col pt-4 font-louisgeorgecafe text-white lg:flex-row lg:items-center lg:justify-center lg:gap-6">
-              <div className="rounded-full bg-[#6c6486] p-1">
+              <div
+                className="rounded-full p-1"
+                style={{
+                  background: `linear-gradient(90deg, ${pageColor.el1}, ${pageColor.el2})`,
+                }}
+              >
                 <button
-                  className="flex w-full justify-center gap-1 rounded-full p-2 transition-all hover:bg-transparent"
+                  className="flex w-full justify-center gap-1 rounded-full bg-[#272629] p-2 transition-all hover:bg-transparent"
                   onClick={() => setOpenPoster(true)}
-                  style={{
-                    background: `linear-gradient(180deg, ${pageColor.pg1}, ${pageColor.pg2})`,
-                  }}
                 >
-                  <div className="tracking-widest opacity-70">Lihat Poster</div>
+                  <div className="tracking-widest opacity-80">Lihat Poster</div>
                 </button>
               </div>
               <Dialog
@@ -304,20 +307,30 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                 </div>
               </Dialog>
               <div className="py-2">
-                <div className="rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
+                <div
+                  className="rounded-full p-1 transition-all hover:scale-105 hover:shadow-[0px_0px_60px_20px_#ffffff10]"
+                  style={{
+                    background: `linear-gradient(90deg, ${pageColor.el1}, ${pageColor.el2})`,
+                  }}
+                >
                   <a href="https://ifest.uajy.ac.id/dash" rel="noreferrer" target="_blank">
-                    <button className="flex w-full justify-center gap-1 rounded-full bg-[#332550] p-2 transition-all hover:bg-transparent">
+                    <button className="flex w-full justify-center gap-1 rounded-full p-2 ">
                       <div className="tracking-widest opacity-100">DAFTAR</div>
                     </button>
                   </a>
                 </div>
               </div>
-              <div className="rounded-full bg-[#6c6486] p-1">
+              <div
+                className="rounded-full p-1 "
+                style={{
+                  background: `linear-gradient(90deg, ${pageColor.el1}, ${pageColor.el2})`,
+                }}
+              >
                 <button
-                  className="flex w-full justify-center gap-1 rounded-full bg-[#332550] p-2 transition-all hover:bg-transparent"
+                  className="flex w-full justify-center gap-1 rounded-full bg-[#272629] p-2 transition-all hover:bg-transparent"
                   onClick={() => setOpenRulebook(true)}
                 >
-                  <div className="tracking-widest opacity-70">Lihat Rulebook</div>
+                  <div className="tracking-widest opacity-70 ">Lihat Rulebook</div>
                 </button>
               </div>
               <Dialog
@@ -347,7 +360,9 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                   key={index}
                   style={{ backgroundColor: pageColor.bg2 }}
                 >
-                  <h3 className="pl-6 font-retroica text-2xl text-[#87bbeb]">{provision.type}</h3>
+                  <h3 className="pl-6 font-retroica text-2xl" style={{ color: pageColor.txt1 }}>
+                    {provision.type}
+                  </h3>
                   <div className="p-6 font-louisgeorgecafe leading-loose text-white">
                     <ol className="list-outside list-decimal">
                       {provision.data.map((item, index) => {
@@ -361,7 +376,9 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
           </div>
 
           <div className="flex flex-col items-center justify-center py-8">
-            <div className="text-center font-retroica text-4xl text-[#87bbeb]">Timeline</div>
+            <div className="text-center font-retroica text-4xl" style={{ color: pageColor.txt1 }}>
+              Timeline
+            </div>
             {k.timeline.map((timeline, index) => {
               return (
                 <div className="flex w-full flex-col items-center justify-center" key={index}>
@@ -401,10 +418,16 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
           </div>
 
           <div className="flex w-full flex-col items-center justify-center bg-[url('/images/bg-prizepool.png')] bg-cover bg-center bg-no-repeat py-10">
-            <div className="text-center font-retroica text-5xl tracking-widest text-[#87bbeb]">
+            <div
+              className="tracking-widest] text-center font-retroica text-5xl"
+              style={{ color: pageColor.txt1 }}
+            >
               PRIZE POOL
             </div>
-            <div className="pb-6 pt-2 text-center font-retroica text-3xl text-[#ffba57]">
+            <div
+              className="pb-6 pt-2 text-center font-retroica text-3xl"
+              style={{ color: pageColor.txt2 }}
+            >
               {k.prizepool.total}
             </div>
             <div className="grid gap-8 lg:grid-cols-3" id="fika">
@@ -454,21 +477,26 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
             <div
               className="w-full rounded-xl border-gray-200 p-4 lg:w-10/12 2xl:w-1/2"
               style={{
-                background: `linear-gradient(90deg, ${pageColor.el1}, ${pageColor.el2})`,
+                background: `linear-gradient(90deg, ${pageColor.bg1}, ${pageColor.bg2})`,
               }}
             >
               <div className="flex flex-col items-center justify-center text-center lg:flex-row lg:justify-start">
                 <img alt="/" className="w-48" src="/images/announce.webp" />
                 <div className="flex flex-col items-center gap-4 lg:items-start">
-                  <div className="font-retroica text-2xl text-[#87bbeb]">
+                  <div className="font-retroica text-2xl" style={{ color: pageColor.txt1 }}>
                     Tertarik? Ayo mendaftar!
                   </div>
                   <div className="text-center font-louisgeorgecafe text-white">
                     Ayo buktikan bakat dan kreativitasmu! Jangan cepat berpuas diri!
                   </div>
-                  <div className="rounded-full bg-gradient-to-r from-[#6ea5b1] to-[#9b68ce] p-1">
+                  <div
+                    className="rounded-full p-1"
+                    style={{
+                      background: `linear-gradient(90deg, ${pageColor.el1}, ${pageColor.el2})`,
+                    }}
+                  >
                     <a href="https://ifest.uajy.ac.id/dash" rel="noreferrer" target="_blank">
-                      <button className="flex items-center gap-1 rounded-full bg-[#332550] p-2 font-retroica tracking-widest text-white opacity-100 transition hover:bg-transparent">
+                      <button className="flex items-center gap-1 rounded-full bg-[#272629] p-2 font-retroica tracking-widest text-white opacity-100 transition hover:bg-transparent">
                         DAFTAR
                       </button>
                     </a>
