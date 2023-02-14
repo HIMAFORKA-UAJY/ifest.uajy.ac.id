@@ -41,9 +41,10 @@
     "react-chrono": "^1.22.0",
     "react-countdown": "^2.3.5",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
-    "react-type-animation": "^3.0.1",
-    "recoil": "^0.7.7",
+    "react-icons": "^4.7.1",
+    "react-text-gradients": "^1.0.2",
+    "react-type-animation": "^2.1.2",
+    "recoil": "^0.7.6",
     "sharp": "^0.31.3",
     "swiper": "^9.1.1",
     "typescript": "5.0.2"
@@ -55,9 +56,10 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "postcss": "^8.4.21",
-    "prettier": "^2.8.6",
-    "prettier-plugin-packagejson": "^2.4.3",
-    "prettier-plugin-tailwindcss": "^0.2.5",
-    "tailwindcss": "^3.2.7"
+    "prettier": "^2.8.3",
+    "prettier-plugin-packagejson": "^2.4.0",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "rgt": "^1.0.7",
+    "tailwindcss": "^3.2.4"
   }
 }

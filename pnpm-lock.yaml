@@ -25,9 +25,11 @@ specifiers:
   react-chrono: ^1.22.0
   react-countdown: ^2.3.5
   react-dom: 18.2.0
-  react-icons: ^4.8.0
-  react-type-animation: ^3.0.1
-  recoil: ^0.7.7
+  react-icons: ^4.7.1
+  react-text-gradients: ^1.0.2
+  react-type-animation: ^2.1.2
+  recoil: ^0.7.6
+  rgt: ^1.0.7
   sharp: ^0.31.3
   swiper: ^9.1.1
   tailwindcss: ^3.2.7
@@ -49,9 +51,10 @@ dependencies:
   react-chrono: 1.22.0_7i5myeigehqah43i5u7wbekgba
   react-countdown: 2.3.5_biqbaboplfbrettd7655fr4n2y
   react-dom: 18.2.0_react@18.2.0
-  react-icons: 4.8.0_react@18.2.0
-  react-type-animation: 3.0.1_v2m5e27vhdewzwhryxwfaorcca
-  recoil: 0.7.7_biqbaboplfbrettd7655fr4n2y
+  react-icons: 4.7.1_react@18.2.0
+  react-text-gradients: 1.0.2_react@18.2.0
+  react-type-animation: 2.1.2_v2m5e27vhdewzwhryxwfaorcca
+  recoil: 0.7.6_biqbaboplfbrettd7655fr4n2y
   sharp: 0.31.3
   swiper: 9.1.1
   typescript: 5.0.2
@@ -63,10 +66,11 @@ devDependencies:
   eslint-plugin-prettier: 4.2.1_ose2zoovovx4ulolhifz3tfzx4
   husky: 8.0.3
   postcss: 8.4.21
-  prettier: 2.8.6
-  prettier-plugin-packagejson: 2.4.3_prettier@2.8.6
-  prettier-plugin-tailwindcss: 0.2.5_c5px7p3j4kcmt2ngqd44w4h7we
-  tailwindcss: 3.2.7_postcss@8.4.21
+  prettier: 2.8.3
+  prettier-plugin-packagejson: 2.4.0_prettier@2.8.3
+  prettier-plugin-tailwindcss: 0.2.2_ijmykednqrx66bjm6h37cegrgq
+  rgt: 1.0.7_biqbaboplfbrettd7655fr4n2y
+  tailwindcss: 3.2.4_postcss@8.4.21
 
 packages:
   /@babel/code-frame/7.18.6:
@@ -3074,7 +3078,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: false
 
   /lru-cache/6.0.0:
     resolution:
@@ -3826,7 +3829,6 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
-    dev: false
 
   /react-icons/4.8.0_react@18.2.0:
     resolution:
@@ -3860,7 +3862,18 @@ packages:
       }
     dev: false
 
-  /react-type-animation/3.0.1_v2m5e27vhdewzwhryxwfaorcca:
+  /react-text-gradients/1.0.2_react@18.2.0:
+    resolution:
+      {
+        integrity: sha512-K4+6UVmYTP7R3JchrudjmjV72H7L7xXExm18nvuGkWItL4gFPQ7eGP9ZQHDYCfd0zWQndqADZiSASrTyMHLsoA==,
+      }
+    peerDependencies:
+      react: ">=16.8.0"
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /react-type-animation/2.1.2_v2m5e27vhdewzwhryxwfaorcca:
     resolution:
       {
         integrity: sha512-n6erVzng071lN8A0UbNT9Q7m5D6puaa9OE1lakwu5UKxMkEnUbjs2MLT3jN/SUjuxNtKmDP2GqJKb3uQ5wZNkQ==,
@@ -3883,7 +3896,6 @@ packages:
     engines: { node: ">=0.10.0" }
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /read-cache/1.0.0:
     resolution:
@@ -3991,6 +4003,19 @@ packages:
       }
     engines: { iojs: ">=1.0.0", node: ">=0.10.0" }
 
+  /rgt/1.0.7_biqbaboplfbrettd7655fr4n2y:
+    resolution:
+      {
+        integrity: sha512-ZviNzOf7HgVSnU0PRRoO9IKCD+7TSFLdy8Q7nFCaFYRY0ei6AfsjM4VOHxI5TsiOSEVculIyZSiTO26ivtkZ4g==,
+      }
+    peerDependencies:
+      react: ^17.0.2
+      react-dom: ^17.0.2
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: true
+
   /rimraf/3.0.2:
     resolution:
       {
@@ -4046,7 +4071,6 @@ packages:
       }
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /semver/6.3.0:
     resolution:
