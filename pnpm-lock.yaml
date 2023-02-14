@@ -28,6 +28,7 @@ specifiers:
   react-icons: ^4.7.1
   react-type-animation: ^2.1.2
   recoil: ^0.7.6
+  rgt: ^1.0.7
   sharp: ^0.31.3
   swiper: ^8.4.6
   tailwindcss: ^3.2.4
@@ -52,6 +53,7 @@ dependencies:
   react-icons: 4.7.1_react@18.2.0
   react-type-animation: 2.1.2_v2m5e27vhdewzwhryxwfaorcca
   recoil: 0.7.6_biqbaboplfbrettd7655fr4n2y
+  rgt: 1.0.7_biqbaboplfbrettd7655fr4n2y
   sharp: 0.31.3
   swiper: 8.4.6
   typescript: 4.9.4
@@ -4294,6 +4296,19 @@ packages:
         integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==,
       }
     engines: { iojs: ">=1.0.0", node: ">=0.10.0" }
+
+  /rgt/1.0.7_biqbaboplfbrettd7655fr4n2y:
+    resolution:
+      {
+        integrity: sha512-ZviNzOf7HgVSnU0PRRoO9IKCD+7TSFLdy8Q7nFCaFYRY0ei6AfsjM4VOHxI5TsiOSEVculIyZSiTO26ivtkZ4g==,
+      }
+    peerDependencies:
+      react: ^17.0.2
+      react-dom: ^17.0.2
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /rimraf/3.0.2:
     resolution:

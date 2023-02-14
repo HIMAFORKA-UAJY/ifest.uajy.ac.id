@@ -44,6 +44,7 @@
     "react-icons": "^4.7.1",
     "react-type-animation": "^2.1.2",
     "recoil": "^0.7.6",
+    "rgt": "^1.0.7",
     "sharp": "^0.31.3",
     "swiper": "^8.4.6",
     "typescript": "4.9.4"
