@@ -11,7 +11,7 @@ import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Index: FC = () => {
-  useSetRecoilState(navColors)({ bg1: "#2d2a42", bg2: "#1A1538", fg: "#8379C0" });
+  useSetRecoilState(navColors)({ bg1: "#211a44", bg2: "#3d3474", fg: "#bfb2ff" });
   return (
     <>
       <NextSeo title={`IFest Store - IFest#11`} />
@@ -57,7 +57,11 @@ const Index: FC = () => {
                       </a>
                     </div>
                     <div className="flex justify-center">
-                      <img alt="" className="max-h-[17rem] rounded-xl" src={i.image} />
+                      <img
+                        alt=""
+                        className="max-h-[17rem] rounded-xl rounded-b-none"
+                        src={i.image}
+                      />
                     </div>
                     <div className="p-8">
                       <div className="w-fit text-xs text-[#FFA1A1]">
