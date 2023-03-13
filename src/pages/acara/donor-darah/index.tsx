@@ -1,6 +1,7 @@
 import CP from "@/components/CP";
 import ComingSoon from "@/components/ComingSoon";
 import Footer from "@/components/Footer";
+import RegistrationClosed from "@/components/RegistrationClosed";
 import acara from "@/data/acara.json";
 import { navColors } from "@/recoil/atoms";
 import { Dialog } from "@headlessui/react";
@@ -33,6 +34,20 @@ const Index = () => {
         <ComingSoon date={acara["donor-darah"].date_available} />
       </>
     );
+
+  if (
+    moment().tz("Asia/Jakarta").diff(moment(acara["donor-darah"].date_end).tz("Asia/Jakarta")) > 0
+  )
+    return (
+      <>
+        <NextSeo
+          description={`${acara["donor-darah"].name} ${acara["donor-darah"].description}`}
+          title={`${acara["donor-darah"].name} - IFest#11`}
+        />
+        <RegistrationClosed />
+      </>
+    );
+
   return (
     <>
       <NextSeo
