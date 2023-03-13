@@ -5,6 +5,7 @@ import acara from "@/data/acara.json";
 import { navColors } from "@/recoil/atoms";
 import { Dialog } from "@headlessui/react";
 import { motion } from "framer-motion";
+import parse from "html-react-parser";
 import moment from "moment-timezone";
 import { NextSeo } from "next-seo";
 import { useRef, useState } from "react";
@@ -194,8 +195,9 @@ const Index = () => {
                     <img alt="step" className="w-10" src={step.icon} />
                     <div className="text-center font-retroica text-2xl text-white">{step.step}</div>
                     <div className="text-center font-louisgeorgecafe text-sm text-white">
-                      {step.description}
+                      {parse(step.description)}
                     </div>
+                    <span className="underline"></span>
                   </div>
                 );
               })}

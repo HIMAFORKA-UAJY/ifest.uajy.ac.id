@@ -26,27 +26,27 @@
     "start": "next start"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.7",
-    "@types/node": "18.11.18",
-    "@types/react": "18.0.27",
-    "@types/react-dom": "18.0.10",
-    "eslint": "8.32.0",
-    "eslint-config-next": "13.1.5",
-    "framer-motion": "^8.5.3",
-    "html-react-parser": "^3.0.8",
+    "@headlessui/react": "^1.7.11",
+    "@types/node": "18.14.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "framer-motion": "^9.0.4",
+    "html-react-parser": "^3.0.9",
     "moment-timezone": "^0.5.40",
-    "next": "13.1.5",
+    "next": "13.1.6",
     "next-seo": "^5.15.0",
     "react": "18.2.0",
-    "react-chrono": "^1.20.0",
+    "react-chrono": "^1.22.0",
     "react-countdown": "^2.3.5",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-type-animation": "^2.1.2",
     "recoil": "^0.7.6",
     "sharp": "^0.31.3",
-    "swiper": "^8.4.6",
-    "typescript": "4.9.4"
+    "swiper": "^9.0.5",
+    "typescript": "4.9.5"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.0.0",
@@ -55,9 +55,9 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "postcss": "^8.4.21",
-    "prettier": "^2.8.3",
-    "prettier-plugin-packagejson": "^2.4.0",
-    "prettier-plugin-tailwindcss": "^0.2.2",
-    "tailwindcss": "^3.2.4"
+    "prettier": "^2.8.4",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "prettier-plugin-tailwindcss": "^0.2.3",
+    "tailwindcss": "^3.2.7"
   }
 }

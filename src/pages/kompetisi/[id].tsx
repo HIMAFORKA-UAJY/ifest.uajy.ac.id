@@ -86,7 +86,6 @@ export const getStaticProps = async () => {
 };
 
 const Index: FC<Props> = ({ kompetisi }: Props) => {
-  useSetRecoilState(navColors)({ bg1: "#211a44", bg2: "#3d3474", fg: "#bfb2ff" });
   const [pageColor, setPageColor] = useState<PageColor>({
     pg1: "",
     pg2: "",
@@ -146,6 +145,8 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
         break;
     }
   }, [id]);
+
+  useSetRecoilState(navColors)({ bg1: pageColor.pg2, bg2: pageColor.el1, fg: pageColor.txt1 });
 
   const getColor = (index: number) => {
     switch (index) {
@@ -209,9 +210,9 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
             <div
               className="text-center text-transparent"
               style={{
-                background: `linear-gradient(90deg, ${pageColor.txt1}, ${pageColor.txt2})`,
+                backgroundImage: `linear-gradient(90deg, ${pageColor.txt1}, ${pageColor.txt2})`,
                 WebkitBackgroundClip: "text",
-                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
               }}
             >
               <div className="font-retroica text-4xl tracking-wide lg:hidden">{k.abbreviation}</div>
