@@ -49,7 +49,7 @@
     "steps": [
       {
         "step": "Pergi ke Dashboard",
-        "description": "Daftar melalui <strong><a className=\"underline\" href=\"https://ifest.uajy.ac.id/dash/donor_darah\" target=\"_blank\" rel=\"noopener noreferrer\">Dashboard Donor Darah</a></strong>.",
+        "description": "Daftar melalui <strong><a className=\"underline\" href=\"/close-reg\" target=\"_self\" rel=\"noopener noreferrer\">Dashboard Donor Darah</a></strong>.",
         "icon": "/images/acara/donor-darah/step-1.webp"
       },
       {
