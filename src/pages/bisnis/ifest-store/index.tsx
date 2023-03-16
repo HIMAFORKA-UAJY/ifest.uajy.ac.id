@@ -1,4 +1,6 @@
+/* eslint-disable no-unreachable */
 import CP from "@/components/CP";
+import ComingSoon from "@/components/ComingSoon";
 import Footer from "@/components/Footer";
 import ifestStore from "@/data/ifest-store.json";
 import { navColors } from "@/recoil/atoms";
@@ -15,7 +17,12 @@ const Index: FC = () => {
   return (
     <>
       <NextSeo title={`IFest Store - IFest#11`} />
-      {/* <ComingSoon date={"2023-02-20"} /> */}
+      <ComingSoon date={null} />
+    </>
+  );
+  return (
+    <>
+      <NextSeo title={`IFest Store - IFest#11`} />
       <div className="absolute top-0 -z-10 min-h-screen w-full bg-[#010822] pt-48">
         <div className="mx-12 text-center font-retroica text-4xl text-white">
           Informatics Festival Store
