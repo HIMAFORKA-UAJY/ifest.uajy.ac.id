@@ -16,7 +16,7 @@ const Sponsor: FC = () => {
     >
       <div className="flex flex-col items-center justify-center gap-4 py-10">
         <div className="text-center font-retroica text-4xl tracking-[0.15em] text-white">
-          Sponsors IFEST#10
+          Sponsors IFEST#11
         </div>
         <div className="h-fit w-96 py-4 lg:hidden">
           <Swiper
