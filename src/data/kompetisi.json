@@ -47,11 +47,11 @@
         "data": [
           {
             "name": "Pendaftaran",
-            "date": "16 Januari - 16 Februari 2023"
+            "date": "16 Januari - 25 Februari 2023"
           },
           {
             "name": "Batas Pengumpulan Proposal / Karya",
-            "date": "16 Februari 2023"
+            "date": "25 Februari 2023"
           },
           {
             "name": "Pengumuman Seleksi",
@@ -138,6 +138,7 @@
           "Tidak diperkenankan ada peserta yang terdaftar dalam dua tim atau lebih yang berbeda.",
           "Melakukan pendaftaran online melalui link pendaftaran, pendaftaran akan dibuka mulai dari Senin, 30 Januari 2023 sampai dengan Rabu, 8 Maret 2023.",
           "Melampirkan scan atau foto Kartu Tanda Mahasiswa, Surat Persetujuan Universitas, serta bukti pembayaran pada formulir pendaftaran.",
+          "Pengembalian (refund) biaya pendaftaran tidak dapat dilakukan dalam keadaan apapun.",
           "Peserta yang sudah mendaftar tetapi tidak mengumpulkan hasil karya desain situs web setelah batas waktu yang ditentukan dianggap mengundurkan diri dari perlombaan.",
           "Panitia berhak untuk mengeleminasi peserta yang tidak mematuhi ketentuan di atas.",
           "Setiap peserta Web Design Competition (WDC) 2023 wajib membaca, memahami, dan mengikuti seluruh syarat dan ketentuan yang tercantum dalam rulebook."
@@ -221,7 +222,7 @@
     "img": "/images/kompetisi/ill-muc.webp",
     "poster": "/images/kompetisi/poster-i2c.webp",
     "rulebook": "/documents/rulebook-i2c.pdf",
-    "date_available": "2023-02-10",
+    "date_available": null,
     "description": "adalah perlombaan untuk menampilkan interface dari sebuah aplikasi mobile yang diharapkan dapat membantu penggunaan dari aplikasi itu sendiri.",
     "requirements": ["Mahasiswa/i D3/D4/S1", "Gratis", "Max. 2 peserta / tim"],
     "long_description": "<em>Mobile UI/UX Competition</em> (MUC) 2023 merupakan sebuah kompetisi / perlombaan terkhusus untuk mahasiswa/i dimana akan membuat serta menampilkan sebuah desain visual / <em>interface</em> dari sebuah aplikasi mobile supaya dapat digunakan lebih efektif serta menarik bagi para pengguna aplikasi tersebut. Tema yang diangkat <em>Mobile UI/UX Competition</em> 2023 ini yaitu <em>“Develop Innovation and Ideas for Mobile UI/UX in Student Portal Application”</em>, yang menunjukkan lomba ini dapat digunakan sebagai wadah untuk menampung segala inovasi dan ide - ide dari para mahasiswa/i yang tentunya sangat beragam.",

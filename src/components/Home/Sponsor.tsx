@@ -16,9 +16,9 @@ const Sponsor: FC = () => {
     >
       <div className="flex flex-col items-center justify-center gap-4 py-10">
         <div className="text-center font-retroica text-4xl tracking-[0.15em] text-white">
-          Sponsors IFEST#10
+          Sponsors IFEST#11
         </div>
-        <div className="h-fit w-96 py-4 lg:hidden">
+        <div className="flex h-fit w-96 py-4 lg:hidden">
           <Swiper
             autoplay={{ delay: 2000 }}
             className="mySwiper"
@@ -27,14 +27,16 @@ const Sponsor: FC = () => {
             spaceBetween={10}
           >
             {sponsors.map((sponsor) => {
-              return (
-                <SwiperSlide
-                  className="flex !h-64 !w-64 items-center rounded-lg bg-[#2b2265] p-2"
-                  key={sponsor.id}
-                >
-                  <img alt={sponsor.name} src={sponsor.image} />
-                </SwiperSlide>
-              );
+              if (sponsor.id === 4) {
+                return (
+                  <SwiperSlide
+                    className="flex !h-64 !w-64 items-center rounded-lg bg-[#2b2265] p-2"
+                    key={sponsor.id}
+                  >
+                    <img alt={sponsor.name} src={sponsor.image} />
+                  </SwiperSlide>
+                );
+              }
             })}
           </Swiper>
         </div>
@@ -56,14 +58,16 @@ const Sponsor: FC = () => {
             slidesPerView="auto"
           >
             {sponsors.map((sponsor) => {
-              return (
-                <SwiperSlide
-                  className="flex !h-[19rem] !w-[19rem] items-center bg-[#2b2265] p-8"
-                  key={sponsor.id}
-                >
-                  <img alt={sponsor.name} src={sponsor.image} />
-                </SwiperSlide>
-              );
+              if (sponsor.id === 4) {
+                return (
+                  <SwiperSlide
+                    className="flex !h-[19rem] !w-[19rem] items-center bg-[#2b2265] p-8"
+                    key={sponsor.id}
+                  >
+                    <img alt={sponsor.name} src={sponsor.image} />
+                  </SwiperSlide>
+                );
+              }
             })}
           </Swiper>
         </div>

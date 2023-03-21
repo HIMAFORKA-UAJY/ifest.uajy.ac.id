@@ -87,7 +87,6 @@ export const getStaticProps = async () => {
 };
 
 const Index: FC<Props> = ({ kompetisi }: Props) => {
-  useSetRecoilState(navColors)({ bg1: "#211a44", bg2: "#3d3474", fg: "#bfb2ff" });
   const [pageColor, setPageColor] = useState<PageColor>({
     pg1: "",
     pg2: "",
@@ -148,6 +147,8 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
     }
   }, [id]);
 
+  useSetRecoilState(navColors)({ bg1: pageColor.pg2, bg2: pageColor.el1, fg: pageColor.txt1 });
+
   const getColor = (index: number) => {
     switch (index) {
       case 0:
@@ -207,49 +208,16 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
         <div className="flex h-screen flex-col items-center justify-center gap-4 px-4 lg:flex-row">
           <img alt={k.name.toLowerCase()} className="w-72 lg:w-1/4" src={k.img} />
           <div className="flex flex-col items-center justify-center gap-8">
-            <div className="">
-              {id === "i2c" && (
-                <div>
-                  <div className="text-center font-retroica text-4xl tracking-wide lg:hidden">
-                    <LinearGradient gradient={["to left", "#c289e8, #a289e8"]}>
-                      {k.abbreviation}
-                    </LinearGradient>
-                  </div>
-                  <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">
-                    <LinearGradient gradient={["to left", "#c289e8, #a289e8"]}>
-                      {k.name}
-                    </LinearGradient>
-                  </div>
-                </div>
-              )}
-              {id === "wdc" && (
-                <div>
-                  <div className="text-center font-retroica text-4xl tracking-wide lg:hidden">
-                    <LinearGradient gradient={["to left", "#95edd6, #95e7ed"]}>
-                      {k.abbreviation}
-                    </LinearGradient>
-                  </div>
-                  <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">
-                    <LinearGradient gradient={["to left", "#95edd6, #95e7ed"]}>
-                      {k.name}
-                    </LinearGradient>
-                  </div>
-                </div>
-              )}
-              {id === "muc" && (
-                <div>
-                  <div className="text-center font-retroica text-4xl tracking-wide lg:hidden">
-                    <LinearGradient gradient={["to left", "#F78468, #F567A6"]}>
-                      {k.abbreviation}
-                    </LinearGradient>
-                  </div>
-                  <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">
-                    <LinearGradient gradient={["to left", "#F78468, #F567A6"]}>
-                      {k.name}
-                    </LinearGradient>
-                  </div>
-                </div>
-              )}
+            <div
+              className="text-center text-transparent"
+              style={{
+                backgroundImage: `linear-gradient(90deg, ${pageColor.txt1}, ${pageColor.txt2})`,
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              <div className="font-retroica text-4xl tracking-wide lg:hidden">{k.abbreviation}</div>
+              <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">{k.name}</div>
             </div>
             <div className="flex w-9/12 flex-col gap-2 font-retroica text-sm text-white lg:w-full lg:flex-row lg:justify-center lg:gap-6">
               {k.requirements.map((r, index) => {

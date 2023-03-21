@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "T-Shirt IFest#11",
+    "image": "/images/ifest-store/kaos-hitam.webp",
+    "prevPrice": "Rp100.000,-",
+    "currentPrice": "Rp50.000,-",
+    "desc": "Lengkapi koleksi baju Anda dengan baju keren IFest#11 ini! Desainnya kekinian dan bajunya sejuk. Terbuat dari katun pilihan.",
+    "tags": ["Kaos", "Hitam"]
+  },
+  {
+    "id": 2,
+    "name": "Jacket IFest#11",
+    "image": "/images/ifest-store/jacket.webp",
+    "prevPrice": "Rp200.000,-",
+    "currentPrice": "Rp170.000,-",
+    "desc": "Lengkapi koleksi baju Anda dengan jaket keren IFest#11 ini! Desainnya kekinian dan bajunya sejuk. Terbuat dari katun pilihan.",
+    "tags": ["Jaket", "Cream"]
+  },
+  {
+    "id": 3,
+    "name": "T-Shirt IFest#11",
+    "image": "/images/ifest-store/kaos-hitam.webp",
+    "prevPrice": "Rp100.000,-",
+    "currentPrice": "Rp50.000,-",
+    "desc": "Lengkapi koleksi baju Anda dengan baju keren IFest#11 ini! Desainnya kekinian dan bajunya sejuk. Terbuat dari katun pilihan.",
+    "tags": ["Kaos", "Hitam"]
+  },
+  {
+    "id": 4,
+    "name": "Jacket IFest#11",
+    "image": "/images/ifest-store/jacket.webp",
+    "prevPrice": "Rp200.000,-",
+    "currentPrice": "Rp170.000,-",
+    "desc": "Lengkapi koleksi baju Anda dengan jaket keren IFest#11 ini! Desainnya kekinian dan bajunya sejuk. Terbuat dari katun pilihan.",
+    "tags": ["Jaket", "Cream"]
+  }
+]

@@ -18,6 +18,8 @@ const Footer: FC<Props> = ({ className }: Props) => {
         return <SiLine />;
       case 2:
         return <MdEmail />;
+      case 3:
+        return <img alt="" className="w-[15px]" src="/images/sponsors/ifest11/dewaweb-icon.png" />;
     }
   };
   return (
