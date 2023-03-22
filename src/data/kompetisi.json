@@ -323,12 +323,16 @@
         "name": "Tahap Final",
         "data": [
           {
-            "name": "Technical Meeting",
-            "date": "28 April 2023"
+            "name": "Persiapan Final",
+            "date": "9 Mei - 12 Mei 2023"
           },
           {
-            "name": "Presentasi Finalis",
-            "date": "6 Mei 2023"
+            "name": "Technical Meeting",
+            "date": "12 Mei 2023"
+          },
+          {
+            "name": "Presentasi Final",
+            "date": "13 Mei 2023"
           }
         ]
       }
