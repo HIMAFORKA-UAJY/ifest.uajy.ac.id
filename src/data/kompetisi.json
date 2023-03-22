@@ -230,9 +230,9 @@
       {
         "type": "Ketentuan Pengumpulan Karya",
         "data": [
-          "Peserta yang telah mendaftar wajib mengumpulkan file deskripsi fungsi dan prototype Mobile UI/UX menjadi satu file PDF melalui https://ifest.uajy.ac.id/dash/..",
-          "File PDF yang dikumpulkan berisi deskripsi fungsi disertai screenshot desain, surat pernyataan orisinalitas dan link prototype dari desain keseluruhan Mobile UI/UX..",
-          "File PDF berukuran maksimal 25 MB dengan format penamaan IFest#11_MUC_Nama Tim_Nama Universitas.pdf",
+          "Peserta yang telah mendaftar wajib mengumpulkan file deskripsi fungsi dan prototype Mobile UI/UX menjadi satu file PDF melalui https://ifest.uajy.ac.id/dash/ .",
+          "File PDF yang dikumpulkan berisi deskripsi fungsi disertai screenshot desain, surat pernyataan orisinalitas dan link prototype dari desain keseluruhan Mobile UI/UX.",
+          "File PDF berukuran maksimal 25 MB dengan format penamaan IFest#11_MUC_Nama Tim_Nama Universitas.pdf .",
           "Peserta diperbolehkan untuk mengumpulkan desain dengan sistem back-end mobile development tetapi tidak ada penambahan penilaian dalam penjurian.",
           "Hasil karya yang dikumpulkan belum terdaftar dalam perlombaan serupa ataupun memperoleh penghargaan sebagai pemenang.",
           "Peserta tidak diperbolehkan mempublikasikan hasil karya yang dimilikinya melalui media online atau offline atau media lainnya hingga lomba yang diselenggarakan panitia berakhir.",
@@ -269,29 +269,53 @@
         "type": "Format Dokumen Karya",
         "data": [
           "Memperhatikan ketentuan pengumpulan karya dan ketentuan karya",
-          "Format Dokumen yang digunakan adalah .pdf dengan struktur yang ada seperti nomor 3 sampai 6 di bawah ini",
-          "Cover: berisi nama aplikasi, identitas tim dan anggotanya, asal instansi asal peserta",
-          "Deskripsi Fungsi: berisi segala fungsi/fitur yang mampu dilakukan aplikasi mobile dijabarkan secara lengkap dan detail dan disertai screenshot frame/tampilan yang dimaksudkan",
+          "Format Dokumen yang digunakan adalah .pdf dengan struktur yang ada seperti nomor 3 sampai 6 dibawah ini",
+          "Cover: berisi nama aplikasi, identitas tim dan anggotanya, asal instansi asal peserta.",
+          "Deskripsi Fungsi: berisi segala fungsi/fitur yang mampu dilakukan aplikasi mobile dijabarkan secara lengkap dan detail dan disertai screenshot frame/tampilan yang dimaksudkan.",
           "Lampiran: melampirkan link prototype desain aplikasi mobile, memuat keseluruhan user flows dan wireframes lengkap. Desain high fidelity mockup minimal terdiri dari 15 screens.",
-          "Surat Pernyataan Orisinalitas: melampirkan surat pernyataan orisinalitas di halaman akhir pelaporan deskripsi fungsi"
+          "Surat Pernyataan Orisinalitas: melampirkan surat pernyataan orisinalitas di halaman akhir pelaporan deskripsi fungsi."
+        ]
+      },
+      {
+        "type": "Kriteria Penilaian Karya (Babak Penyisihan)",
+        "data": [
+          "Tampilan Layout/Antarmuka (30%): Memperhatikan tampilan antarmuka desain aplikasi mobile dengan struktur yang tepat. Hal ini berkaitan dengan estetika user interface dan konsistensi komponen desain.",
+          "Tema dan Brand Guidelines (40%): Desain aplikasi yang didesain berkaitan dengan tema yang telah ditentukan beserta ketentuan penggunaan brand dari Universitas Atma Jaya Yogyakarta.",
+          "Skenario Penggunaan (30%): Memperhatikan penguraian peserta dalam bagaimana menyampaikan deskripsi fungsi penjelasan tekstual yang menyajikan sudut pandang pengguna"
+        ]
+      },
+      {
+        "type": "Kriteria Penilaian Karya (Babak Final)",
+        "data": [
+          "Demo Prototype (30%): Finalis melakukan demontrasi karya/prototype keseluruhan desain high fidelity mockup yang telah dibuat dihadapan dewan juri.",
+          "Presentasi (50%): Penjelasan peserta mengenai karya kepada dewan juri.",
+          "Tanya Jawab (20%): Finalis menjawab pertanyaan dari dewan juri mengenai hasil karya dengan baik dan sesuai konteks"
         ]
       }
     ],
     "timeline": [
       {
-        "name": "Tahap Eliminasi",
+        "name": "Tahap Seleksi",
         "data": [
           {
             "name": "Pendaftaran Online",
-            "date": "27 Februari - 1 April 2023"
+            "date": "22 Maret - 22 April 2023"
           },
           {
-            "name": "Batas Pengumpulan Karya",
-            "date": "1 April 2023"
+            "name": "Pengumpulan Berkas Pendaftaran",
+            "date": "22 Maret - 22 April 2023"
+          },
+          {
+            "name": "Pengumpulan Karya Deskripsi Fitur",
+            "date": "22 Maret - 22 April 2023"
+          },
+          {
+            "name": "Penjurian",
+            "date": "1 Mei 2023 - 7 Mei 2023"
           },
           {
             "name": "Pengumuman Finalis",
-            "date": "26 April 2023"
+            "date": "8 Mei 2023"
           }
         ]
       },
