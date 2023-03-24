@@ -220,48 +220,102 @@
     "name": "Mobile UI/UX Competition",
     "url": "/kompetisi/muc",
     "img": "/images/kompetisi/ill-muc.webp",
-    "poster": "/images/kompetisi/poster-i2c.webp",
-    "rulebook": "/documents/rulebook-i2c.pdf",
-    "date_available": null,
+    "poster": "/images/kompetisi/poster-muc.webp",
+    "rulebook": "/documents/rulebook-muc.pdf",
+    "date_available": "2023-03-22",
     "description": "adalah perlombaan untuk menampilkan interface dari sebuah aplikasi mobile yang diharapkan dapat membantu penggunaan dari aplikasi itu sendiri.",
     "requirements": ["Mahasiswa/i D3/D4/S1", "Gratis", "Max. 2 peserta / tim"],
     "long_description": "<em>Mobile UI/UX Competition</em> (MUC) 2023 merupakan sebuah kompetisi / perlombaan terkhusus untuk mahasiswa/i dimana akan membuat serta menampilkan sebuah desain visual / <em>interface</em> dari sebuah aplikasi mobile supaya dapat digunakan lebih efektif serta menarik bagi para pengguna aplikasi tersebut. Tema yang diangkat <em>Mobile UI/UX Competition</em> 2023 ini yaitu <em>“Develop Innovation and Ideas for Mobile UI/UX in Student Portal Application”</em>, yang menunjukkan lomba ini dapat digunakan sebagai wadah untuk menampung segala inovasi dan ide - ide dari para mahasiswa/i yang tentunya sangat beragam.",
     "provision": [
       {
-        "type": "Ketentuan Umum",
+        "type": "Ketentuan Pengumpulan Karya",
         "data": [
-          "Peserta adalah mahasiswa/i aktif jenjang D3/D4/S1 dari perguruan tinggi Seluruh Indonesia.",
-          "Peserta lomba adalah satu tim yang terdiri dari minimal 1 (satu) orang dan maksimal 2 (dua) orang.",
-          "Tim yang terdiri dari 2 (dua) orang peserta harus berasal dari institusi/perguruan tinggi yang sama.",
-          "Tidak diperkenankan ada peserta yang terdaftar dalam dua tim atau lebih yang berbeda.",
-          "Melakukan pendaftaran online melalui https://ifest.uajy.ac.id/dash/, pendaftaran akan dibuka mulai Senin, 27 Februari 2023 sampai dengan Sabtu, 1 April 2023 pukul 23.59 WIB.",
-          "Melampirkan scan atau foto Kartu Tanda Mahasiswa, Surat persetujuan Universitas pada formulir pendaftaran.",
-          "Seluruh peserta yang mengirimkan hasil karya akan mendapatkan e-certificate.",
-          "Peserta yang sudah mendaftar tetapi tidak mengumpulkan hasil karya deskripsi fitur tampilan aplikasi mobile (HandPhone) setelah batas waktu yang ditentukan dianggap mengundurkan diri dari perlombaan.",
-          "Panitia berhak untuk mengeleminasi peserta yang tidak mematuhi ketentuan di atas.",
-          "Setiap peserta Mobile UI/UX Competition (MUC) 2023 wajib membaca, memahami, dan mengikuti seluruh syarat dan ketentuan yang tercantum dalam rulebook."
+          "Peserta yang telah mendaftar wajib mengumpulkan file deskripsi fungsi dan prototype Mobile UI/UX menjadi satu file PDF melalui https://ifest.uajy.ac.id/dash/ .",
+          "File PDF yang dikumpulkan berisi deskripsi fungsi disertai screenshot desain, surat pernyataan orisinalitas dan link prototype dari desain keseluruhan Mobile UI/UX.",
+          "File PDF berukuran maksimal 25 MB dengan format penamaan IFest#11_MUC_Nama Tim_Nama Universitas.pdf .",
+          "Peserta diperbolehkan untuk mengumpulkan desain dengan sistem back-end mobile development tetapi tidak ada penambahan penilaian dalam penjurian.",
+          "Hasil karya yang dikumpulkan belum terdaftar dalam perlombaan serupa ataupun memperoleh penghargaan sebagai pemenang.",
+          "Peserta tidak diperbolehkan mempublikasikan hasil karya yang dimilikinya melalui media online atau offline atau media lainnya hingga lomba yang diselenggarakan panitia berakhir.",
+          "Panitia berhak melakukan diskualifikasi kepada peserta jika melakukan tindakan plagiat, mengambil karya orang lain, atau mendapatkan klaim dari pihak lain",
+          "Bahasa utama yang digunakan dalam pembuatan desain aplikasi mobile adalah Bahasa Indonesia dan diperbolehkan menggunakan istilah dalam bahasa asing.",
+          "Desain aplikasi mobile dilarang mengandung unsur SARA, kekerasan, pornografi, dan melanggar UU yang berlaku.",
+          "Hasil karya pemenang menjadi hak milik Kantor Sistem Informasi Universitas Atma Jaya Yogyakarta dan memiliki kesempatan untuk diimplementasikan di Universitas Atma Jaya Yogyakarta.",
+          "5 peserta terbaik akan mengikuti babak final pada hari yang ditentukan oleh penyelenggara secara online dengan mempresentasikan hasil karyanya dihadapan dewan juri.",
+          "Panitia tidak menerima segala bentuk kecurangan yang berakibat pada pengurangan nilai, diskualifikasi maupun pembatalan juara lomba setelah ditetapkan.",
+          "Keputusan dewan juri tidak dapat diganggu gugat serta bersifat mutlak dan mengikat."
         ]
       },
       {
         "type": "Ketentuan Karya",
-        "data": ["To Be Announced"]
+        "data": [
+          "Karya desain berupa desain aplikasi mobile.",
+          "Hasil karya harus sesuai dengan tema dan sub tema “Student Portal Application” MUC 2023.",
+          "Mobile UI/UX mengandung konten sesuai sub tema, diantaranya mencakup ketentuan 4 sampai 12 dibawah ini.",
+          "Tampilan Profil Mahasiswa: Berisikan informasi penting seperti data diri mahasiswa beserta data administrasi dari universitas.",
+          "Tampilan Jadwal Kuliah dan Ujian Mahasiswa: Berisikan informasi mengenai jadwal kuliah dan ujian dari mata kuliah yang diambil mahasiswa terkait.",
+          "Tampilan Nilai: Berisikan transkip data hasil studi mahasiswa terkait selama menempuh setiap semester masa perkuliahan",
+          "Tampilan Informasi Tambahan atau Pengumuman: Berisikan informasi terkini ataupun pengumuman penting yang dimana bersifat wajib diketahui oleh para mahasiswa terkait.",
+          "Bimbingan Akademik dan Kartu Rencana Studi: Berisikan bimbingan oleh dosen pembimbing mahasiswa terkait masa perkuliahan serta pengambilan mata kuliah dari mahasiswa terkait",
+          "Rekap Kehadiran: Berisikan fitur scan presensi dan rekap kehadiran dari mahasiswa terkait disetiap jadwal yang telah diambil.",
+          "Tagihan Pembayaran dan Beasiswa: Berisikan informasi pembayaran baik itu tata cara pembayaran, tagihan pembayaran, maupun informasi beasiswa yang dapat diperoleh mahasiswa terkait.",
+          "Evaluasi dan Aspirasi: Berisikan formulir terkait evaluasi kinerja universitas serta menampung aspirasi mahasiswa dalam bentuk formulir.",
+          "Konten-konten diatas bersifat penggambaran dari maksud “Student Portal Application” sebagai sub tema. Peserta dibebaskan menyempurnakan pembuatan desain dengan kreativitas masing-masing selama memuat kurang lebih konten diatas.",
+          "Peserta wajib membuat prototype keseluruhan desain high fidelity mockup beserta interactions antar frame, sehingga membentuk skenario penggunaan aplikasi mobile tersebut.",
+          "Clickable prototype peserta dapat menggunakan Marvel, Adobe XD, InVision, Principle, Protopie, Framer X, Flinto, Figma, dan sebagainya.",
+          "PENTING! Dalam pembuatan prototype keseluruhan desain high fidelity mockup wajib memperhatikan ketentuan https://logo.uajy.ac.id/ . Terdapat ketentuan warna, tiporafi, dan penempatan yang harus menyesuaikan brand guidelines."
+        ]
+      },
+      {
+        "type": "Format Dokumen Karya",
+        "data": [
+          "Memperhatikan ketentuan pengumpulan karya dan ketentuan karya",
+          "Format Dokumen yang digunakan adalah .pdf dengan struktur yang ada seperti nomor 3 sampai 6 dibawah ini",
+          "Cover: berisi nama aplikasi, identitas tim dan anggotanya, asal instansi asal peserta.",
+          "Deskripsi Fungsi: berisi segala fungsi/fitur yang mampu dilakukan aplikasi mobile dijabarkan secara lengkap dan detail dan disertai screenshot frame/tampilan yang dimaksudkan.",
+          "Lampiran: melampirkan link prototype desain aplikasi mobile, memuat keseluruhan user flows dan wireframes lengkap. Desain high fidelity mockup minimal terdiri dari 15 screens.",
+          "Surat Pernyataan Orisinalitas: melampirkan surat pernyataan orisinalitas di halaman akhir pelaporan deskripsi fungsi."
+        ]
+      },
+      {
+        "type": "Kriteria Penilaian Karya (Babak Penyisihan)",
+        "data": [
+          "Tampilan Layout/Antarmuka (30%): Memperhatikan tampilan antarmuka desain aplikasi mobile dengan struktur yang tepat. Hal ini berkaitan dengan estetika user interface dan konsistensi komponen desain.",
+          "Tema dan Brand Guidelines (40%): Desain aplikasi yang didesain berkaitan dengan tema yang telah ditentukan beserta ketentuan penggunaan brand dari Universitas Atma Jaya Yogyakarta.",
+          "Skenario Penggunaan (30%): Memperhatikan penguraian peserta dalam bagaimana menyampaikan deskripsi fungsi penjelasan tekstual yang menyajikan sudut pandang pengguna"
+        ]
+      },
+      {
+        "type": "Kriteria Penilaian Karya (Babak Final)",
+        "data": [
+          "Demo Prototype (30%): Finalis melakukan demontrasi karya/prototype keseluruhan desain high fidelity mockup yang telah dibuat dihadapan dewan juri.",
+          "Presentasi (50%): Penjelasan peserta mengenai karya kepada dewan juri.",
+          "Tanya Jawab (20%): Finalis menjawab pertanyaan dari dewan juri mengenai hasil karya dengan baik dan sesuai konteks"
+        ]
       }
     ],
     "timeline": [
       {
-        "name": "Tahap Eliminasi",
+        "name": "Tahap Seleksi",
         "data": [
           {
             "name": "Pendaftaran Online",
-            "date": "27 Februari - 1 April 2023"
+            "date": "22 Maret - 22 April 2023"
           },
           {
-            "name": "Batas Pengumpulan Karya",
-            "date": "1 April 2023"
+            "name": "Pengumpulan Berkas Pendaftaran",
+            "date": "22 Maret - 22 April 2023"
+          },
+          {
+            "name": "Pengumpulan Karya Deskripsi Fitur",
+            "date": "22 Maret - 22 April 2023"
+          },
+          {
+            "name": "Penjurian",
+            "date": "1 Mei 2023 - 7 Mei 2023"
           },
           {
             "name": "Pengumuman Finalis",
-            "date": "26 April 2023"
+            "date": "8 Mei 2023"
           }
         ]
       },
@@ -269,12 +323,16 @@
         "name": "Tahap Final",
         "data": [
           {
-            "name": "Technical Meeting",
-            "date": "28 April 2023"
+            "name": "Persiapan Final",
+            "date": "9 Mei - 12 Mei 2023"
           },
           {
-            "name": "Presentasi Finalis",
-            "date": "6 Mei 2023"
+            "name": "Technical Meeting",
+            "date": "9 Mei 2023"
+          },
+          {
+            "name": "Presentasi Final",
+            "date": "13 Mei 2023"
           }
         ]
       }
