@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import { FC, useEffect, useRef, useState } from "react";
 import { Chrono } from "react-chrono";
 import { FaBook, FaCertificate, FaMale, FaMoneyBill, FaTrophy, FaWallet } from "react-icons/fa";
+import { LinearGradient } from "react-text-gradients";
 import { useSetRecoilState } from "recoil";
 import { navColors } from "src/recoil/atoms";
 
@@ -207,16 +208,49 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
         <div className="flex h-screen flex-col items-center justify-center gap-4 px-4 lg:flex-row">
           <img alt={k.name.toLowerCase()} className="w-72 lg:w-1/4" src={k.img} />
           <div className="flex flex-col items-center justify-center gap-8">
-            <div
-              className="text-center text-transparent"
-              style={{
-                backgroundImage: `linear-gradient(90deg, ${pageColor.txt1}, ${pageColor.txt2})`,
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              <div className="font-retroica text-4xl tracking-wide lg:hidden">{k.abbreviation}</div>
-              <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">{k.name}</div>
+            <div className="">
+              {id === "i2c" && (
+                <div>
+                  <div className="text-center font-retroica text-4xl tracking-wide lg:hidden">
+                    <LinearGradient gradient={["to left", "#c289e8, #a289e8"]}>
+                      {k.abbreviation}
+                    </LinearGradient>
+                  </div>
+                  <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">
+                    <LinearGradient gradient={["to left", "#c289e8, #a289e8"]}>
+                      {k.name}
+                    </LinearGradient>
+                  </div>
+                </div>
+              )}
+              {id === "wdc" && (
+                <div>
+                  <div className="text-center font-retroica text-4xl tracking-wide lg:hidden">
+                    <LinearGradient gradient={["to left", "#95edd6, #95e7ed"]}>
+                      {k.abbreviation}
+                    </LinearGradient>
+                  </div>
+                  <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">
+                    <LinearGradient gradient={["to left", "#95edd6, #95e7ed"]}>
+                      {k.name}
+                    </LinearGradient>
+                  </div>
+                </div>
+              )}
+              {id === "muc" && (
+                <div>
+                  <div className="text-center font-retroica text-4xl tracking-wide lg:hidden">
+                    <LinearGradient gradient={["to left", "#F78468, #F567A6"]}>
+                      {k.abbreviation}
+                    </LinearGradient>
+                  </div>
+                  <div className="font-retroica text-2xl lg:text-4xl lg:tracking-[0.1em]">
+                    <LinearGradient gradient={["to left", "#F78468, #F567A6"]}>
+                      {k.name}
+                    </LinearGradient>
+                  </div>
+                </div>
+              )}
             </div>
             <div className="flex w-9/12 flex-col gap-2 font-retroica text-sm text-white lg:w-full lg:flex-row lg:justify-center lg:gap-6">
               {k.requirements.map((r, index) => {
@@ -435,19 +469,17 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
               {k.prizepool.distribution.map((distribution, index) => {
                 return (
                   <div
-                    className={`${
-                      k.prizepool.distribution.length % 2 == 0 && index == 0
-                        ? "col-span-full"
-                        : "fika"
-                    }`}
+                    className={`${k.prizepool.distribution.length % 2 == 0 && index == 0
+                      ? "col-span-full"
+                      : "fika"
+                      }`}
                     key={index}
                   >
                     <div className="flex flex-row items-center justify-center rounded-xl border border-gray-700 bg-[#111111] p-4 text-white transition duration-300 ease-in hover:scale-105 hover:text-[#241f3d] lg:flex-col">
                       <img
                         alt="/"
-                        className={`${
-                          index % 2 == 0 ? "order-0" : "order-1"
-                        } w-32 p-4 lg:-order-none lg:w-48`}
+                        className={`${index % 2 == 0 ? "order-0" : "order-1"
+                          } w-32 p-4 lg:-order-none lg:w-48`}
                         src={distribution.image}
                       />
                       <div>
@@ -460,8 +492,8 @@ const Index: FC<Props> = ({ kompetisi }: Props) => {
                               {reward === "Piala"
                                 ? getIcon(4)
                                 : reward === "Sertifikat Nasional"
-                                ? getIcon(5)
-                                : getIcon(index + 3)}
+                                  ? getIcon(5)
+                                  : getIcon(index + 3)}
                               {reward}
                             </div>
                           );

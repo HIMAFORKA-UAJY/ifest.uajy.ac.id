@@ -87,7 +87,7 @@ const NavBar: FC = () => {
                                       return item.name === "Dashboard" ? (
                                         <Link
                                           className={`${active && "text-[#fff]"}`}
-                                          href="https://ifest.uajy.ac.id/dash"
+                                          href="https://ifestuajy.com/dash"
                                           rel="noreferrer"
                                           target="_blank"
                                         >
